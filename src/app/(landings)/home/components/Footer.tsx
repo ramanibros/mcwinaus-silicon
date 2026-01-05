@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
 import logo from '@/assets/img/mcwinItechLogo.png';
+import logoLight from '@/assets/img/mcwinItechLogoLight.png';
 import IconifyIcon from '@/components/IconifyIcon';
 import {Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
-import visa from "@/assets/img/landing/product/payments/visa.png";
-import masterCard from "@/assets/img/landing/product/payments/mastercard.png";
-import paypal from "@/assets/img/landing/product/payments/paypal.png";
 
 type LanguageOption = {
     value: string;
@@ -133,34 +131,24 @@ const integrations: Resource[] = [
         title: 'Email / Chat apps',
         description: 'Gmail, MailChimp, Telegram...',
         icon: 'bx:envelope',
-    },
-    {
-        title: 'Code editors',
-        description: 'VS Code, Web Storm, Atom...',
-        icon: 'bx:code-alt',
-    },
+    }
 ];
 const resources: Resource[] = [
     {
-        title: 'Documentation',
-        description: 'API, knowledge base, tutorials',
-        icon: 'bx:file',
+        title: 'Address',
+        description: '3517 W. Gray St. Utica Pennsylvania 57867',
+        icon: 'bx:map',
     },
     {
-        title: 'Help center',
-        description: 'FAQs, articles, community forum',
-        icon: 'bx:info-circle',
+        title: 'Phone',
+        description: '(406) 555‑0120',
+        icon: 'bx:phone-call',
     },
     {
-        title: 'Blog articles',
-        description: 'Recent news and updates',
-        icon: 'bx:edit',
-    },
-    {
-        title: 'GitHub projects',
-        description: 'Use our open source projects',
-        icon: 'bxl:github',
-    },
+        title: 'Email',
+        description: 'email@example.com',
+        icon: 'bx:envelope',
+    }
 ];
 const copyright: Copyright = {
     text: 'All rights reserved. Made by',
@@ -179,39 +167,43 @@ const Footer = () => {
             <div className="d-md-none" style={{marginTop: '-130px'}}></div>
             <Container>
                 <Row>
-                    <Col xs={12} xl={4} className="pb-sm-2 pb-md-3 mb-4 mb-lg-5 mb-xl-0">
+                    <Col xs={12} xl={3} className="pb-sm-2 pb-md-3 mb-4 mb-lg-5 mb-xl-0">
                         <div className="d-flex align-items-center mb-3 mb-xl-0">
-                            <div className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0">
+                            <div className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0 d-dark-mode-none d-block">
                                 <Image src={logo} width={logoWidth} alt={companyName}/>
+                            </div>
+
+                            <div className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0 d-dark-mode-block d-none">
+                                <Image src={logoLight} width={logoWidth} alt={companyName}/>
                             </div>
                         </div>
                         <p className="fs-sm pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium
                             platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat
                             egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
 
-                      <div className="mt-n3 ms-n3">
-                        <Link
-                            href="#"
-                            className="btn btn-icon btn-secondary btn-facebook rounded-circle mt-3 ms-3"
-                            aria-label="Facebook"
-                        >
-                          <IconifyIcon icon="bxl:facebook" fontSize={20} />
-                        </Link>
-                        <Link
-                            href="#"
-                            className="btn btn-icon btn-secondary btn-instagram rounded-circle mt-3 ms-3"
-                            aria-label="Instagram"
-                        >
-                          <IconifyIcon icon="bxl:instagram" fontSize={20} />
-                        </Link>
-                        <Link
-                            href="#"
-                            className="btn btn-icon btn-secondary btn-twitter rounded-circle mt-3 ms-3"
-                            aria-label="Twitter"
-                        >
-                          <IconifyIcon icon="bxl:twitter" fontSize={20} />
-                        </Link>
-                      </div>
+                        <div className="mt-n3 ms-n3">
+                            <Link
+                                href="#"
+                                className="btn btn-icon btn-secondary btn-facebook rounded-circle mt-3 ms-3"
+                                aria-label="Facebook"
+                            >
+                                <IconifyIcon icon="bxl:facebook" fontSize={20}/>
+                            </Link>
+                            <Link
+                                href="#"
+                                className="btn btn-icon btn-secondary btn-instagram rounded-circle mt-3 ms-3"
+                                aria-label="Instagram"
+                            >
+                                <IconifyIcon icon="bxl:instagram" fontSize={20}/>
+                            </Link>
+                            <Link
+                                href="#"
+                                className="btn btn-icon btn-secondary btn-twitter rounded-circle mt-3 ms-3"
+                                aria-label="Twitter"
+                            >
+                                <IconifyIcon icon="bxl:twitter" fontSize={20}/>
+                            </Link>
+                        </div>
 
                     </Col>
 
@@ -244,67 +236,38 @@ const Footer = () => {
                         ))}
                     </Col>
 
-                  <Col xs={12} xl={3} className="pb-1 mb-4">
-                    {aiModels.map((model, index) => (
-                        <div key={index} className="position-relative d-flex align-items-center py-2 my-1">
-                          <div
-                              className={`position-relative flex-shrink-0 p-3 ${model.gradient ? '' : `bg-${model.bgColor} bg-opacity-10 rounded-circle lh-1`}`}
-                          >
-                            {model.gradient ? (
-                                <>
-                                            <span
-                                                className="position-absolute top-0 start-0 w-100 h-100 rounded-circle bg-gradient-primary opacity-10"></span>
-                                  <span className="position-relative d-flex zindex-2">{model.icon}</span>
-                                </>
-                            ) : (
-                                <IconifyIcon
-                                    icon={model.icon as string}
-                                    className={`text-${model.bgColor} fs-4 lh-1`}
-                                />
-                            )}
-                          </div>
-                          <div className="nav flex-column ps-3">
-                            <Link href="#" className="nav-link fw-bold stretched-link p-0">
-                              {model.title}
-                            </Link>
-                            <div className="fs-xs">{model.description}</div>
-                          </div>
-                        </div>
-                    ))}
-                  </Col>
-
-                  <Col xs={12} xl={2}>
-                        <div className="d-flex flex-lg-row flex-column justify-content-lg-between mt-n4 mx-n2">
-                            <div className="mt-4 px-2">
-                                <h3 className="mb-4 pb-lg-2">Our office</h3>
-                                <ul className="nav flex-column mb-0">
-                                    <li className="mb-1">
-                                        <Link href="#" className="nav-link align-items-start fw-normal px-0 py-1">
-                                            <IconifyIcon icon="bx:map" className="fs-5 text-primary me-2"/>
-                                            3517 W. Gray St. Utica, <br/> Pennsylvania 57867
-                                        </Link>
-                                    </li>
-                                    <li className="mb-1">
-                                        <Link
-                                            href="tel:4065550120"
-                                            className="nav-link align-items-start fw-normal px-0 py-1"
-                                        >
-                                            <IconifyIcon icon="bx:phone-call" className="fs-5 text-primary me-2"/>
-                                            (406)&nbsp;555&#8209;0120
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="mailto:email@example.com"
-                                            className="nav-link align-items-start fw-normal px-0 py-1"
-                                        >
-                                            <IconifyIcon icon="bx:envelope" className="fs-5 text-primary me-2"/>
-                                            email@example.com
-                                        </Link>
-                                    </li>
-                                </ul>
+                    <Col sm={6} md={4} xl={3} className="pb-1 mb-4">
+                        {/*<h5 className="pb-md-1">Integrations</h5>*/}
+                        {integrations.map((integration, index) => (
+                            <div key={index} className="position-relative d-flex align-items-center py-2 my-1">
+                                <div className="bg-secondary rounded-circle lh-1 p-3">
+                                    <IconifyIcon icon={integration.icon} className="text-primary fs-4 lh-1"/>
+                                </div>
+                                <div className="nav flex-column ps-3">
+                                    <a href="#" className="nav-link fw-bold stretched-link p-0">
+                                        {integration.title}
+                                    </a>
+                                    <div className="fs-xs">{integration.description}</div>
+                                </div>
                             </div>
-                        </div>
+                        ))}
+                    </Col>
+
+                    <Col md={4} xl={3} className="pb-1 mb-4">
+                        <h5 className="pb-md-1">Contact US</h5>
+                        {resources.map((resource, index) => (
+                            <div key={index} className="position-relative d-flex align-items-center py-2 my-1">
+                                <div className="bg-secondary rounded-circle lh-1 p-3">
+                                    <IconifyIcon icon={resource.icon} className="text-primary fs-4 lh-1"/>
+                                </div>
+                                <div className="nav flex-column ps-3">
+                                    <Link href="#" className="nav-link fw-bold stretched-link p-0">
+                                        {resource.title}
+                                    </Link>
+                                    <div className="fs-xs">{resource.description}</div>
+                                </div>
+                            </div>
+                        ))}
                     </Col>
 
                 </Row>

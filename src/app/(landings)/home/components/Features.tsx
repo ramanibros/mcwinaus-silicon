@@ -3,17 +3,12 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
-import doctorIcon from '@/assets/img/landing/medical/icons/doctor.svg';
-import ambulanceIcon from '@/assets/img/landing/medical/icons/ambulance.svg';
-import virusIcon from '@/assets/img/landing/medical/icons/virus.svg';
+import brandIcon from '@/assets/img/services/brand.png';
+import growIcon from '@/assets/img/services/grow.png';
+import buildIcon from '@/assets/img/services/build.png';
+import scaleIcon from '@/assets/img/services/scale.png';
 import IconifyIcon from '@/components/IconifyIcon';
 import Link from 'next/link';
-import vueLight from '@/assets/img/landing/software-agency-2/services/vue-light.png';
-import vueDark from '@/assets/img/landing/software-agency-2/services/vue-dark.png';
-import nodeLight from '@/assets/img/landing/software-agency-2/services/node-light.png';
-import nodeDark from '@/assets/img/landing/software-agency-2/services/node-dark.png';
-import javaLogo from '@/assets/img/landing/software-agency-2/services/java.png';
-import reactLogo from '@/assets/img/landing/software-agency-2/services/react.png';
 
 type Feature = {
   id: number;
@@ -34,13 +29,7 @@ const features: Feature[] = [
       'Web Design, Branding & App Design that elevates your business.',
     link: '#',
     linkText: 'Read More',
-    icon: doctorIcon,
-    techStack: [
-      { light: vueLight, dark: vueDark, alt: 'Vue.js', width: 92 },
-      { light: nodeLight, dark: nodeDark, alt: 'Node.js', width: 77 },
-      { light: javaLogo, alt: 'Java', width: 77 },
-      { light: reactLogo, alt: 'React', width: 104 },
-    ],
+    icon: brandIcon,
   },
   {
     id: 2,
@@ -49,13 +38,7 @@ const features: Feature[] = [
       'SEO, SMM, SEM & Automation that drive real growth.',
     link: '#',
     linkText: 'Read More',
-    icon: ambulanceIcon,
-    techStack: [
-      { light: vueLight, dark: vueDark, alt: 'Vue.js', width: 92 },
-      { light: nodeLight, dark: nodeDark, alt: 'Node.js', width: 77 },
-      { light: javaLogo, alt: 'Java', width: 77 },
-      { light: reactLogo, alt: 'React', width: 104 },
-    ],
+    icon: buildIcon,
   },
   {
     id: 3,
@@ -64,13 +47,7 @@ const features: Feature[] = [
       'Scalable Web, App & eCommerce Development services.',
     link: '#',
     linkText: 'Read More',
-    icon: virusIcon,
-    techStack: [
-      { light: vueLight, dark: vueDark, alt: 'Vue.js', width: 92 },
-      { light: nodeLight, dark: nodeDark, alt: 'Node.js', width: 77 },
-      { light: javaLogo, alt: 'Java', width: 77 },
-      { light: reactLogo, alt: 'React', width: 104 },
-    ],
+    icon: growIcon,
   },
   {
     id: 4,
@@ -79,7 +56,7 @@ const features: Feature[] = [
       'PickFlow, your trusted Fleet Management Specialists.',
     link: '#',
     linkText: 'Read More',
-    icon: virusIcon
+    icon: scaleIcon
   },
 ];
 
@@ -101,7 +78,7 @@ const Features = () => {
           {features.map(feature => (
             <Col key={feature.id}>
               <Card className="flex-column flex-sm-row flex-md-column flex-xxl-row align-items-center card-hover border-primary h-100">
-                <Image src={feature.icon} alt={feature.title} width={168} height={168} priority />
+                <Image style={{margin:"20px 20px auto 20px",maxWidth:"80px"}}  src={feature.icon} alt={feature.title} width={100} height={100} priority />
                 <Card.Body className="text-center text-sm-start text-md-center text-xxl-start pb-3 pb-sm-2 pb-md-3 pb-xxl-2">
                   <h3 className="mb-2 mt-n4 mt-sm-0 mt-md-n4 mt-xxl-0">{feature.title}</h3>
                   <div className="hr-indicator mb-2" />
