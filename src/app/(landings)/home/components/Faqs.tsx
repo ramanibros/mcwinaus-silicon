@@ -155,11 +155,11 @@ const Faqs = () => {
               <Card className="card-hover">
                 <CardBody className="pb-3">
                   <span className="d-block fs-2 text-primary mb-2 py-1">
-                    <IconifyIcon icon="bxs:phone-call" className="w-100" />
+                    <IconifyIcon icon="bxl:whatsapp" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
                   <Link href="#" className="btn btn-link stretched-link px-0">
-                    Call us
+                    Whatsapp us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
                 </CardBody>
@@ -169,11 +169,11 @@ const Faqs = () => {
               <Card className="card-hover">
                 <CardBody className="pb-3">
                   <span className="d-block fs-2 text-success mb-2 py-1">
-                    <IconifyIcon icon="bx:message-rounded-dots" className="w-100" />
+                    <IconifyIcon icon="bx:envelope" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
                   <Link href="#" className="btn btn-link text-success stretched-link px-0">
-                    Chat with us
+                   Mail Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
                 </CardBody>
