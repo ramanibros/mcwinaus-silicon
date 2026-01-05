@@ -4,7 +4,6 @@ import CaseStudies from './components/CaseStudies';
 import Clients from './components/Clients';
 import Navbar from '@/components/navbar/Navbar';
 import {Metadata} from 'next';
-import Integration from '@/app/(landings)/home/components/Integration';
 import Features from '@/app/(landings)/home/components/Features';
 import Choose from '@/app/(landings)/home/components/Choose';
 import About from '@/app/(landings)/home/components/About';
@@ -18,6 +17,7 @@ import Brands from "@/app/(landings)/home/components/Brands";
 import NewsSlider from "@/app/(landings)/home/components/NewsSlider";
 import Industry from "@/app/(landings)/home/components/Industry";
 import Faqs from "@/app/(landings)/home/components/Faqs";
+import Integrations from "@/app/(landings)/home/components/Integrations";
 
 export const metadata: Metadata = {title: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services'};
 
@@ -30,7 +30,7 @@ const Page = () => {
                 isNavDark={true}
             />
             <Hero/>
-            <Integration/>
+            <Integrations/>
             <Features/>
             <About/>
             <Choose/>
