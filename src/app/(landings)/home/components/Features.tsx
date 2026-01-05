@@ -64,7 +64,7 @@ const Features = () => {
   return (
     <section className="mb-2 mb-md-4 mb-lg-5">
       <Container>
-        <h2 className="h1 mb-md-4 mb-3 pt-xl-3">Your brand, built to scale.</h2>
+        <h2 className="h1 mb-md-4 mb-3 pt-xl-3">Your brand, <span className="text-gradient-primary">built to scale.</span></h2>
         <Row className="gy-sm-4 gy-3 pb-xl-2 pb-md-0 pb-sm-2">
           <Col md={6} xs={12}>
             <p className="mb-0 fs-lg">

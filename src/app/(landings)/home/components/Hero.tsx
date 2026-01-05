@@ -26,7 +26,7 @@ const Hero = () => {
         <Container className="position-relative text-center zindex-5 pt-4 pt-md-5 pb-5 mt-auto">
           <Row className="mt-5">
             <Col xl={10} className="mx-auto">
-              <h1 className="display-1 mb-md-4 pb-3">Software Development Experts</h1>
+              <h1 className="display-1 mb-md-4 pb-3"><span className="text-gradient-primary">Software</span> Development Experts</h1>
               <p
                 className="text-body mx-auto mb-md-5 mb-4 pb-xl-2 pb-md-0 pb-sm-2 fs-5"
                 style={{ maxWidth: '36.5rem' }}
