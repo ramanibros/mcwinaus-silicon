@@ -1,6 +1,5 @@
 import React from 'react';
-/*import herobg from '@/assets/img/landing/software-agency-2/hero-bg.png';*/
-import herobg from '@/assets/img/landing/home/5073198.jpg';
+import herobg from '@/assets/img/landing/software-agency-2/hero-bg.png';
 import Rating from '@/assets/img/landing/software-agency-2/clutch-rating.png';
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
