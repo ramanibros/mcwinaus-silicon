@@ -79,13 +79,7 @@ const features: Feature[] = [
       'PickFlow, your trusted Fleet Management Specialists.',
     link: '#',
     linkText: 'Read More',
-    icon: virusIcon,
-    techStack: [
-      { light: vueLight, dark: vueDark, alt: 'Vue.js', width: 92 },
-      { light: nodeLight, dark: nodeDark, alt: 'Node.js', width: 77 },
-      { light: javaLogo, alt: 'Java', width: 77 },
-      { light: reactLogo, alt: 'React', width: 104 },
-    ],
+    icon: virusIcon
   },
 ];
 
@@ -118,34 +112,6 @@ const Features = () => {
                     </p>
                   ) : (
                     <p className="fs-sm mb-1">{feature.description}</p>
-                  )}
-
-                  {feature.techStack && (
-                    <>
-                      <hr className="mt-2 mb-2" />
-                      <div className="d-flex align-items-center mt-n3 ms-n4 pb-lg-4 pb-md-2">
-                        {feature.techStack.map((tech, i) => (
-                          <div key={i} className="mt-3 ms-4 pe-md-2">
-                            <Image
-                              src={tech.light}
-                              alt={tech.alt}
-                              width={tech.width}
-                              height={tech.width}
-                              className="d-dark-mode-none d-block me-sm-1"
-                            />
-                            {tech.dark && (
-                              <Image
-                                src={tech.dark}
-                                alt={tech.alt}
-                                width={tech.width}
-                                height={tech.width}
-                                className="d-dark-mode-block d-none me-sm-1"
-                              />
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </>
                   )}
 
                   <div className="text-end">

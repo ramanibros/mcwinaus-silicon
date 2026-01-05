@@ -14,33 +14,27 @@ import integration04Dark from '@/assets/img/landing/saas-4/integrations/04-dark.
 import integration05Light from '@/assets/img/landing/saas-4/integrations/05-light.png';
 import integration05Dark from '@/assets/img/landing/saas-4/integrations/05-dark.png';
 import { Card } from 'react-bootstrap';
+import vueLight from "@/assets/img/landing/software-agency-2/services/vue-light.png";
+import vueDark from "@/assets/img/landing/software-agency-2/services/vue-dark.png";
+import nodeLight from "@/assets/img/landing/software-agency-2/services/node-light.png";
+import nodeDark from "@/assets/img/landing/software-agency-2/services/node-dark.png";
+import javaLogo from "@/assets/img/landing/software-agency-2/services/java.png";
+import reactLogo from "@/assets/img/landing/software-agency-2/services/react.png";
 
 const integrationsData = [
-  { light: integration01Light, dark: integration01Dark, width: 153 },
-  { light: integration02Light, dark: integration02Dark, width: 121 },
-  { light: integration03Light, dark: integration03Dark, width: 128 },
-  { light: integration04Light, dark: integration04Dark, width: 138 },
-  { light: integration05Light, dark: integration05Dark, width: 164 },
-  { light: integration01Light, dark: integration01Dark, width: 153 },
-  { light: integration02Light, dark: integration02Dark, width: 121 },
-  { light: integration03Light, dark: integration03Dark, width: 128 },
-  { light: integration04Light, dark: integration04Dark, width: 138 },
-  { light: integration05Light, dark: integration05Dark, width: 164 },
-];
+    { light: vueLight, dark: vueDark, alt: 'Vue.js', width: 110 },
+    { light: nodeLight, dark: nodeDark, alt: 'Node.js', width: 100 },
+    { light: javaLogo, dark: javaLogo, alt: 'Java', width: 100 },
+    { light: reactLogo, dark: reactLogo, alt: 'React', width: 110 },
+    { light: vueLight, dark: vueDark, alt: 'Vue.js', width: 110 },
+    { light: nodeLight, dark: nodeDark, alt: 'Node.js', width: 100 },
+    { light: javaLogo, dark: javaLogo, alt: 'Java', width: 100 },
+    { light: reactLogo, dark: reactLogo, alt: 'React', width: 110 }
+]
 
 const Integration = () => {
   return (
     <section className="container pb-lg-5 pb-md-4 pb-3 mt-5">
-      {/* <h2 className="h1 mb-lg-4 mb-3 text-center">Simple Integration with Popular Tools</h2>
-      <p
-        className="mb-lg-5 mb-4 pb-lg-0 pb-md-2 mx-auto text-center"
-        style={{ maxWidth: '40.75rem' }}
-      >
-        In blandit luctus proin mauris a commodo, dolor diam tempus, aenean magna fusce eu. Id
-        porttitor aliquam eget aliquet sagittis eu aut diam ut phasellus sed convallis iaculis neque
-        ultricies convallis sed enim.
-      </p>*/}
-
       <Swiper
         modules={[Autoplay, FreeMode]}
         loop={true}
@@ -67,7 +61,7 @@ const Integration = () => {
               as="a"
               className="card-body card-hover h-100 py-sm-4 py-3 px-3 mx-2 border-0 shadow-sm rounded-pill"
             >
-              <div className="d-block d-dark-mode-none">
+              <div className="d-block d-dark-mode-none" style={{margin:"auto"}}>
                 <Image
                   src={integration.light}
                   alt={`Integration ${idx + 1}`}
@@ -75,7 +69,7 @@ const Integration = () => {
                   className="mx-auto my-1 my-sm-0"
                 />
               </div>
-              <div className="d-none d-dark-mode-block">
+              <div className="d-none d-dark-mode-block" style={{margin:"auto"}}>
                 <Image
                   src={integration.dark}
                   alt={`Integration ${idx + 1} Dark`}
