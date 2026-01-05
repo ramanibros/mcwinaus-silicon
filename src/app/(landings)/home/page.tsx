@@ -12,6 +12,7 @@ import Counter from '@/app/(landings)/home/components/Counter';
 import Footer from '@/app/(landings)/home/components/Footer';
 import Pricing from '@/app/(landings)/home/components/Pricing';
 import Banner from "@/app/(landings)/home/components/Banner";
+import Work from "@/app/(landings)/home/components/Work";
 
 export const metadata: Metadata = { title: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services' };
 
@@ -30,6 +31,7 @@ const Page = () => {
       <Choose />
       <Counter />
         <Banner />
+        <Work />
       {/*<CaseStudies />*/}
       <Clients />
       <Pricing />
