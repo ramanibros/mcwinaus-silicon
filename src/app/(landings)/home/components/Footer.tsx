@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '@/assets/img/logo.svg';
+import logo from '@/assets/img/mcwinItechLogo.png';
 import IconifyIcon from '@/components/IconifyIcon';
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
@@ -37,7 +37,7 @@ type Copyright = {
 };
 
 const companyName: string = 'Silicon';
-const logoWidth: number = 47;
+const logoWidth: number = 200;
 const languageOptions: LanguageOption[] = [
   { value: 'English', label: 'English' },
   { value: 'Français', label: 'Français' },
@@ -186,7 +186,6 @@ const Footer = () => {
             <div className="d-flex align-items-center mb-3 mb-xl-0">
               <div className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0">
                 <Image src={logo} width={logoWidth} alt={companyName} />
-                {companyName}
               </div>
               <select
                 className="form-select form-select-sm d-xl-none"

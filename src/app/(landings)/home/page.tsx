@@ -11,6 +11,7 @@ import About from '@/app/(landings)/home/components/About';
 import Counter from '@/app/(landings)/home/components/Counter';
 import Footer from '@/app/(landings)/home/components/Footer';
 import Pricing from '@/app/(landings)/home/components/Pricing';
+import Banner from "@/app/(landings)/home/components/Banner";
 
 export const metadata: Metadata = { title: 'Silicon - Multipurpose Technology Bootstrap Template' };
 
@@ -28,6 +29,7 @@ const Page = () => {
       <About />
       <Choose />
       <Counter />
+        <Banner />
       <CaseStudies />
       <Clients />
       <Pricing />
