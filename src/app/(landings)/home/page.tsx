@@ -13,7 +13,7 @@ import Footer from '@/app/(landings)/home/components/Footer';
 import Pricing from '@/app/(landings)/home/components/Pricing';
 import Banner from "@/app/(landings)/home/components/Banner";
 
-export const metadata: Metadata = { title: 'Silicon - Multipurpose Technology Bootstrap Template' };
+export const metadata: Metadata = { title: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services' };
 
 const Page = () => {
   return (
@@ -30,7 +30,7 @@ const Page = () => {
       <Choose />
       <Counter />
         <Banner />
-      <CaseStudies />
+      {/*<CaseStudies />*/}
       <Clients />
       <Pricing />
       <Footer />

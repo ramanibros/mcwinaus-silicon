@@ -18,7 +18,7 @@ import IconifyIcon from '@/components/IconifyIcon';
 
 const Clients = () => {
   return (
-    <section className="container mb-5 pb-lg-5 pb-md-4 pb-3">
+    <section className="container mb-5 pb-lg-5 pb-md-4 pb-3 mt-5">
       <div className="mb-xl-3">
         <h2 className="h1 mb-md-5 mb-4 pb-xl-3 pb-lg-2 pb-md-0 pb-sm-2">
           What Our Clients Say About Us
