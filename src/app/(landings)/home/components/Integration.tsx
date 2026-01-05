@@ -59,7 +59,7 @@ const Integration = () => {
           <SwiperSlide key={idx} className="h-auto py-2">
             <Card
               as="a"
-              className="card-body card-hover h-100 py-sm-4 py-3 px-3 mx-2 border-0 shadow-sm rounded-pill"
+              className="card-body card-hover h-100 py-sm-4 py-3 px-3 mx-2 border-0 shadow-sm"
             >
               <div className="d-block d-dark-mode-none" style={{margin:"auto"}}>
                 <Image
