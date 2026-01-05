@@ -113,24 +113,24 @@ const aiModels: AIModel[] = [
 ];
 const integrations: Resource[] = [
     {
-        title: 'Social networks',
+        title: 'LinkedIn',
         description: 'Facebook, Instagram, Twitter...',
-        icon: 'bx:share-alt',
+        icon: 'bxl:linkedin',
     },
     {
-        title: 'E-commerce',
+        title: 'Youtube',
         description: 'Shopify, WordPress, Magento...',
-        icon: 'bx:cart-alt',
+        icon: 'bxl:youtube',
     },
     {
-        title: 'Task / time management',
+        title: 'Facebook',
         description: 'Trello, Notion, Asana, Teams...',
-        icon: 'bx:calendar',
+        icon: 'bxl:facebook',
     },
     {
-        title: 'Email / Chat apps',
+        title: 'Instagram',
         description: 'Gmail, MailChimp, Telegram...',
-        icon: 'bx:envelope',
+        icon: 'bxl:instagram',
     }
 ];
 const resources: Resource[] = [
