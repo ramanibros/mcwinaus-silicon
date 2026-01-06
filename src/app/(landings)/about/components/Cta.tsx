@@ -1,0 +1,31 @@
+import React from 'react';
+import ContactBg from '@/assets/img/landing/digital-agency/contact-bg.png';
+import { Card, CardBody } from 'react-bootstrap';
+import Link from 'next/link';
+
+const Cta = () => {
+  return (
+    <section className="container mt-n2">
+      <Card className="border-0 bg-gradient-primary">
+        <CardBody
+          className="p-md-5 p-4 bg-size-cover"
+          style={{ backgroundImage: `url(${ContactBg.src})` }}
+        >
+          <div className="py-md-5 py-4 text-center">
+            <h3 className="h4 fw-normal text-light opacity-75">Want to work with us? Let’s talk</h3>
+            <Link href="mailto:info@mcwinitech.com.au" className="display-6 text-light">
+              info@mcwinitech.com.au
+            </Link>
+            <div className="pt-md-5 pt-4 pb-md-2">
+              <Link href="/contacts" className="btn btn-lg btn-light">
+                Contact us
+              </Link>
+            </div>
+          </div>
+        </CardBody>
+      </Card>
+    </section>
+  );
+};
+
+export default Cta;

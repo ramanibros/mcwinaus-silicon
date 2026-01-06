@@ -180,31 +180,6 @@ const Footer = () => {
                         <p className="fs-sm pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium
                             platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat
                             egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
-
-                        <div className="mt-n3 ms-n3">
-                            <Link
-                                href="#"
-                                className="btn btn-icon btn-secondary btn-facebook rounded-circle mt-3 ms-3"
-                                aria-label="Facebook"
-                            >
-                                <IconifyIcon icon="bxl:facebook" fontSize={20}/>
-                            </Link>
-                            <Link
-                                href="#"
-                                className="btn btn-icon btn-secondary btn-instagram rounded-circle mt-3 ms-3"
-                                aria-label="Instagram"
-                            >
-                                <IconifyIcon icon="bxl:instagram" fontSize={20}/>
-                            </Link>
-                            <Link
-                                href="#"
-                                className="btn btn-icon btn-secondary btn-twitter rounded-circle mt-3 ms-3"
-                                aria-label="Twitter"
-                            >
-                                <IconifyIcon icon="bxl:twitter" fontSize={20}/>
-                            </Link>
-                        </div>
-
                     </Col>
 
                     <Col xs={12} xl={3} className="pb-1 mb-4">
@@ -240,7 +215,7 @@ const Footer = () => {
                         {/*<h5 className="pb-md-1">Integrations</h5>*/}
                         {integrations.map((integration, index) => (
                             <div key={index} className="position-relative d-flex align-items-center py-2 my-1">
-                                <div className="bg-secondary rounded-circle lh-1 p-3">
+                                <div className="bg-secondary btn-facebook rounded-circle lh-1 p-3">
                                     <IconifyIcon icon={integration.icon} className="text-primary fs-4 lh-1"/>
                                 </div>
                                 <div className="nav flex-column ps-3">

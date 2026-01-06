@@ -6,8 +6,6 @@ import Features from '@/app/(landings)/home/components/Features';
 import Choose from '@/app/(landings)/home/components/Choose';
 import About from '@/app/(landings)/home/components/About';
 import Counter from '@/app/(landings)/home/components/Counter';
-import Footer from '@/app/(landings)/home/components/Footer';
-import Pricing from '@/app/(landings)/home/components/Pricing';
 import Banner from "@/app/(landings)/home/components/Banner";
 import Work from "@/app/(landings)/home/components/Work";
 import Testimonials from "@/app/(landings)/home/components/Testimonials";
@@ -16,6 +14,8 @@ import NewsSlider from "@/app/(landings)/home/components/NewsSlider";
 import Industry from "@/app/(landings)/home/components/Industry";
 import Faqs from "@/app/(landings)/home/components/Faqs";
 import Integrations from "@/app/(landings)/home/components/Integrations";
+import Pricing from "@/components/common/Pricing";
+import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {title: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services'};
 

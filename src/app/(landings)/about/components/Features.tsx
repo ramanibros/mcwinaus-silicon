@@ -24,29 +24,55 @@ type Feature = {
 const features: Feature[] = [
   {
     id: 1,
-    title: 'Our Mission',
+    title: 'BRAND',
     description:
-      'At Genesis Envision, our mission is to provide businesses with customizable, future-ready software solutions that remove complexity, increase efficiency, and drive success. Our mission is to help businesses improve their operational efficiency, automate business processes, and make decisions with confidence using expense management system and financial analytics tools.',
+      'Web Design, Branding & App Design that elevates your business.',
     link: '#',
     linkText: 'Read More',
     icon: brandIcon,
   },
   {
     id: 2,
-    title: 'Our Vision',
+    title: 'BUILD',
     description:
-      'We see ourselves as the global leader in custom software development, and our mission is to transform challenges into solutions that count. At Genesis Envision, we are not only creating software, we are creating opportunities, making processes simpler, and initiating digital transformation through workforce management software and best efficient hr.',
+      'SEO, SMM, SEM & Automation that drive real growth.',
     link: '#',
     linkText: 'Read More',
     icon: buildIcon,
-  }
+  },
+  {
+    id: 3,
+    title: 'GROW',
+    description:
+      'Scalable Web, App & eCommerce Development services.',
+    link: '#',
+    linkText: 'Read More',
+    icon: growIcon,
+  },
+  {
+    id: 4,
+    title: 'SCALE',
+    description:
+      'PickFlow, your trusted Fleet Management Specialists.',
+    link: '#',
+    linkText: 'Read More',
+    icon: scaleIcon
+  },
 ];
 
 const Features = () => {
   return (
     <section className="mb-2 mb-md-4 mb-lg-5">
       <Container>
-        <h2 className="h1 mb-md-4 mb-3 pt-xl-3"><span className="text-gradient-primary">Revolutionizing</span> The Way Businesses Operate</h2>
+        <h2 className="h1 mb-md-4 mb-3 pt-xl-3">Your brand, <span className="text-gradient-primary">built to scale.</span></h2>
+        <Row className="gy-sm-4 gy-3 pb-xl-2 pb-md-0 pb-sm-2">
+          <Col md={6} xs={12}>
+            <p className="mb-0 fs-lg">
+              We bring real solutions to each client&apos;s problems through a deep understanding of
+              their market, solution, and vision.
+            </p>
+          </Col>
+        </Row>
 
         <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {features.map(feature => (
@@ -64,6 +90,13 @@ const Features = () => {
                   ) : (
                     <p className="fs-sm mb-1">{feature.description}</p>
                   )}
+
+                  <div className="text-end">
+                    <Link href={feature.link} className="btn btn-link stretched-link px-0">
+                      {feature.linkText}
+                      <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-1" />
+                    </Link>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

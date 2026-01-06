@@ -1,6 +1,7 @@
 'use client';
 import Landings from '@/assets/img/landings.jpg';
-import Logo from '@/assets/img/mcwinItechLogoLight.png';
+import Logo from '@/assets/img/mcwinItechLogo.png';
+import LogoLight from '@/assets/img/mcwinItechLogoLight.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import {useEffect, useState} from 'react';
@@ -189,8 +190,12 @@ const Navbar = ({
     return (
         <header className={`${Headerclass} ${isSticky && headerSticky ? headerSticky : ''}`}>
             <div className="container px-3">
-                <Link href="/home" className="navbar-brand pe-3">
+                <Link href="/home" className="navbar-brand pe-3 d-dark-mode-none d-block">
                     <Image src={Logo} width={150} alt="Silicon"/>
+                </Link>
+
+                <Link href="/home" className="navbar-brand pe-3 d-dark-mode-block d-none">
+                    <Image src={LogoLight} width={150} alt="Silicon"/>
                 </Link>
 
                 <Offcanvas
