@@ -74,7 +74,7 @@ const Industry = () => {
     <section className="bg-secondary pb-md-2 pb-lg-5">
       <Container className="pb-4">
 
-        <h2 className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Industries we specialise in.</h2>
+        <h2 className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4"><span className="text-gradient-primary">Industries</span> we specialise in.</h2>
 
         <Row className="align-items-center pb-5 mb-lg-2">
           <Col md={8} className="text-center text-md-start">

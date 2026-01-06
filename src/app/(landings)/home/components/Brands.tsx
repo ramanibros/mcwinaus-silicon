@@ -38,7 +38,7 @@ const Brands = () => {
     <section className="pb-4 pb-lg-5 mb-3 mt-5">
       <Container>
         <div className="d-flex align-items-center justify-content-md-between justify-content-center mb-md-4 mb-3">
-          <h2 className="mb-0">Trusted by Awesome Clients</h2>
+          <h2 className="mb-0">Trusted by <span className="text-gradient-primary">Clients</span></h2>
 
           <div className="d-md-flex d-none ms-4">
             <Button

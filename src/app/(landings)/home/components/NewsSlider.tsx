@@ -86,7 +86,7 @@ const NewsSlider = () => {
   return (
     <section className="bg-secondary border-bottom border-light py-5">
       <Container className="py-md-3 py-lg-5">
-        <h2 className="h1 text-center pb-2">News &amp; Insights</h2>
+        <h2 className="h1 text-center pb-2">News &amp; <span className="text-gradient-primary">Insights</span></h2>
 
         <div className="position-relative mx-md-2 px-md-5">
           <button

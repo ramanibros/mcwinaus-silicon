@@ -42,7 +42,7 @@ const Testimonials = () => {
             <span className="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100 opacity-10 d-none d-md-block"></span>
             <CardBody className="d-flex flex-column align-items-center justify-content-center position-relative zindex-2 p-0 pb-2 p-lg-4">
               <h2 className="h1 text-center text-md-start p-lg-4">
-                What Our Client Say About Our Service
+                What Our Client Say About <span className="text-gradient-primary">Our Service</span>
               </h2>
             </CardBody>
           </Card>

@@ -48,7 +48,7 @@ const Choose = () => {
       <div className="d-none d-lg-block" style={{ marginTop: '-60px', paddingTop: '60px' }}></div>
 
       <Container className="pt-5">
-        <h2 className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Why Choose Us?</h2>
+        <h2 className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Why Choose <span className="text-gradient-primary">Us?</span></h2>
 
         <Row className="align-items-center pb-5 mb-lg-2">
           <Col md={8} className="text-center text-md-start">

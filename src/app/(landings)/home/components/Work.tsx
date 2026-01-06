@@ -13,7 +13,7 @@ import Step4Light from '@/assets/img/landing/online-courses/steps/04-light.svg';
 const Work = () => {
   return (
     <section className="container pt-4 pt-lg-0 pb-4 pb-lg-5 mt-5">
-      <h2 className="h1 text-center pb-3 pb-md-0 mb-md-5">How Does It Work?</h2>
+      <h2 className="h1 text-center pb-3 pb-md-0 mb-md-5">How Does It <span className="text-gradient-primary">Work?</span></h2>
       <div className="steps">
         <div className="step pt-0 pt-md-3 pb-5">
           <div className="step-number">
