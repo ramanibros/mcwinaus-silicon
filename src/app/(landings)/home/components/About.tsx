@@ -1,6 +1,5 @@
 import React from 'react';
-import awards from '@/assets/img/landing/software-agency-1/awards.svg';
-import about from '@/assets/img/landing/software-agency-1/about-img.jpg';
+import about from '@/assets/img/landing/home/about us.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Col, Row } from 'react-bootstrap';

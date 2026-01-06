@@ -1,3 +1,13 @@
+// Utilities
+// Extend / update default Bootstrap's utility classes
+
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+
 @keyframes hero-spin {
   100% {
     transform: rotate(360deg);
@@ -157,5 +167,9 @@
   height: 4px;
   background-color: #6366f1;
   border-radius: 999px;
+}
+
+.bg_gradient_primary{
+  background: linear-gradient(to right, $primary, #8b5cf6, #d946ef) !important;
 }
 
