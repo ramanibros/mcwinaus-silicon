@@ -1,7 +1,5 @@
 import React from 'react';
 import Hero from './components/Hero';
-import CaseStudies from './components/CaseStudies';
-import Clients from './components/Clients';
 import Navbar from '@/components/navbar/Navbar';
 import {Metadata} from 'next';
 import Features from '@/app/(landings)/home/components/Features';

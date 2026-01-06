@@ -1,5 +1,5 @@
 import React from 'react';
-import about from '@/assets/img/landing/home/about us.jpg';
+import about from '@/assets/img/landing/home/about_us.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Col, Row } from 'react-bootstrap';
