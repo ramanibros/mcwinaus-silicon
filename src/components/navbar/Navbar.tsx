@@ -311,7 +311,7 @@ const Navbar = ({
                                     aria-expanded={openMobileDropdown === 'account'}
                                 >
                   <span className="d-flex gap-1 align-items-center">
-                    Account
+                    Services
                     <IconifyIcon icon="bx:chevron-down" fontSize={18}/>
                   </span>
                                 </button>

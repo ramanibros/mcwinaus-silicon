@@ -11,7 +11,7 @@ import Work from "@/app/(landings)/brand/components/Work";
 import Faqs from "@/app/(landings)/brand/components/Faqs";
 import HowWork from "@/app/(landings)/brand/components/HowWork";
 
-export const metadata: Metadata = {title: 'Silicon | SaasS Landing v.4'};
+export const metadata: Metadata = {title: 'Brand | McWIN iTECH'};
 
 const Page = () => {
     return (
