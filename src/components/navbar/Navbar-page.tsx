@@ -167,15 +167,10 @@ const Navbar = ({
     ];
 
     const accountMenu: AccountLink[] = [
-        {label: 'Account Details', href: '/account-details'},
-        {label: 'Security', href: '/account-security'},
-        {label: 'Notifications', href: '/account-notifications'},
-        {label: 'Messages', href: '/account-messages'},
-        {label: 'Saved Items', href: '/account-saved-items'},
-        {label: 'My Collections', href: '/account-collections'},
-        {label: 'Payment Details', href: '/account-payment'},
-        {label: 'Sign In', href: '/account-signin'},
-        {label: 'Sign Up', href: '/account-signup'},
+        {label: 'Brand', href: '/brand'},
+        {label: 'Build', href: '/build'},
+        {label: 'Grow', href: '/grow'},
+        {label: 'Scale', href: '/scale'},
     ];
 
     const allLandingsLinks = landingsMenu.flat();
@@ -321,7 +316,7 @@ const Navbar = ({
                                     aria-expanded={openMobileDropdown === 'account'}
                                 >
                   <span className="d-flex gap-1 align-items-center">
-                    Account
+                    Service
                     <IconifyIcon icon="bx:chevron-down" fontSize={18}/>
                   </span>
                                 </button>

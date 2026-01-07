@@ -35,7 +35,6 @@ const Page = () => {
             <Counter/>
             <Banner/>
             <Work/>
-            {/*<CaseStudies />*/}
             <NewsSlider/>
             <Brands/>
             <Testimonials/>

@@ -157,7 +157,7 @@ const Partners = () => {
                   <Image
                     src={logo}
                     className="d-block mx-auto my-2"
-                    width="130"
+                    width="120"
                     alt={`Brand ${index + 1}`}
                   />
                 </Link>
