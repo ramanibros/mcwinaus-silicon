@@ -10,7 +10,7 @@ import brand4 from '@/assets/img/client/cl-4.png';
 import brand5 from '@/assets/img/client/cl-5.png';
 import brand6 from '@/assets/img/client/cl-6.png';
 import brand7 from '@/assets/img/client/cl-7.png';
-import brand8 from '@/assets/img/client/cl-8.webp';
+import brand8 from '@/assets/img/client/cl-8.png';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import IconifyIcon from '@/components/IconifyIcon';

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import clutchDark from '@/assets/img/about/clutch-logo-dark.svg';
 import clutchLight from '@/assets/img/about/clutch-logo-light.svg';
 import membersLight from '@/assets/img/about/members-light.png';
@@ -10,18 +10,21 @@ import chatLight from '@/assets/img/about/chat-light.svg';
 import chatDark from '@/assets/img/about/chat-dark.svg';
 import graphBg from '@/assets/img/about/graph.svg';
 
-import brand01 from '@/assets/img/brands/01.svg';
-import brand02 from '@/assets/img/brands/02.svg';
-import brand03 from '@/assets/img/brands/03.svg';
-import brand04 from '@/assets/img/brands/04.svg';
-import brand05 from '@/assets/img/brands/05.svg';
-import brand06 from '@/assets/img/brands/06.svg';
+import brand01 from '@/assets/img/client/cl-1.png';
+import brand02 from '@/assets/img/client/cl-2.png';
+import brand03 from '@/assets/img/client/cl-3.png';
+import brand04 from '@/assets/img/client/cl-4.png';
+import brand05 from '@/assets/img/client/cl-5.png';
+import brand06 from '@/assets/img/client/cl-6.png';
+import brand07 from '@/assets/img/client/cl-7.png';
+import brand08 from '@/assets/img/client/cl-8.png';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardBody, Col, Container, Row } from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 
-const brandLogos = [brand01, brand02, brand03, brand04, brand05, brand06];
+const brandLogos = [brand01, brand02, brand03, brand04, brand05, brand06, brand07, brand08];
 
 const Partners = () => {
   return (
@@ -121,17 +124,32 @@ const Partners = () => {
 
         <div className="mt-lg-5 mt-sm-2 mt-md-4 pt-4">
           <Swiper
-            modules={[Autoplay]}
-            spaceBetween={8}
-            slidesPerView={2}
-            loop
-            autoplay={{ delay: 6000, disableOnInteraction: false }}
-            breakpoints={{
-              500: { slidesPerView: 3, spaceBetween: 8 },
-              650: { slidesPerView: 4, spaceBetween: 8 },
-              900: { slidesPerView: 5, spaceBetween: 8 },
-              1100: { slidesPerView: 6, spaceBetween: 8 },
-            }}
+              modules={[Autoplay, Navigation, Pagination]}
+              navigation={{
+                prevEl: '#prev-brand',
+                nextEl: '#next-brand',
+              }}
+              pagination={{
+                el: '.brands-pagination',
+                clickable: true,
+              }}
+              loop={true}
+              breakpoints={{
+                0: { slidesPerView: 2, spaceBetween: 8 },
+                500: { slidesPerView: 3, spaceBetween: 8 },
+                650: { slidesPerView: 4, spaceBetween: 8 },
+                900: { slidesPerView: 5, spaceBetween: 8 },
+                1100: { slidesPerView: 6, spaceBetween: 8 },
+              }}
+              freeMode={{
+                enabled: true,
+                momentum: false, // IMPORTANT for smooth flow
+              }}
+              autoplay={{
+                delay: 0, // no stop between slides
+                disableOnInteraction: false,
+              }}
+              speed={6000} // higher = smoother & slower movement
           >
             {brandLogos.map((logo, index) => (
               <SwiperSlide key={index}>
@@ -139,7 +157,7 @@ const Partners = () => {
                   <Image
                     src={logo}
                     className="d-block mx-auto my-2"
-                    width="154"
+                    width="130"
                     alt={`Brand ${index + 1}`}
                   />
                 </Link>
