@@ -21,7 +21,17 @@ import IconifyIcon from '@/components/IconifyIcon';
 const About = () => {
   return (
     <Container className=" pt-xl-5 pt-lg-4 pt-md-3 pb-lg-5 pb-md-4 pb-3">
-      <h2 className="h1 mt-xl-3 mb-4 pb-3 text-center">Why   <span className="text-gradient-primary">McWIN iTECH</span> ?</h2>
+      <Row className="justify-content-center pt-1 pb-1 mb-2 mb-md-3 mb-lg-4">
+        <Col lg={8} md={9} className="text-center">
+          <h2 className="h1 mb-4">Why   <span className="text-gradient-primary">McWIN iTECH</span> ?</h2>
+          <p className="fs-lg text-muted mb-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas.
+            Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at
+            nec lacus.
+          </p>
+        </Col>
+      </Row>
+
       <TabContainer defaultActiveKey="#economic-analysis">
         <Nav
           className="nav nav-tabs flex-nowrap justify-content-sm-center overflow-auto mb-lg-4 mb-3 pb-md-3 pb-2 text-nowrap"

@@ -1,9 +1,5 @@
-import GlightBox from '@/components/GlightBox';
-import IconifyIcon from '@/components/IconifyIcon';
-import videoColor from '@/assets/img/landing/saas-3/video-cover.png';
 import React from 'react';
-import Image from 'next/image';
-import { Container } from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 const Work = () => {
   return (
