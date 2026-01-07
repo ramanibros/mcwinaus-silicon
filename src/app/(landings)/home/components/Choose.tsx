@@ -4,12 +4,8 @@ import Image from 'next/image';
 import cms from '@/assets/img/services/icons/cms.svg';
 import rocket from '@/assets/img/services/icons/rocket.svg';
 import mobileApp from '@/assets/img/services/icons/mobile-app.svg';
-import analytics from '@/assets/img/services/icons/analytics.svg';
-import search from '@/assets/img/services/icons/web-search.svg';
-import timer from '@/assets/img/services/icons/timer.svg';
-import { Col, Container, Row } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
-import IconifyIcon from '@/components/IconifyIcon';
 
 type Service = {
   title: string;

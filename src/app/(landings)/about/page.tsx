@@ -5,10 +5,10 @@ import Testimonials from './components/Testimonials';
 import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Partners from "@/app/(landings)/about/components/Partners";
-import Features from "@/app/(landings)/home/components/Features";
 import Faqs from "@/app/(landings)/about/components/Faqs";
 import Pricing from "@/components/common/Pricing";
 import Footer from "@/components/common/Footer";
+import Features from "@/app/(landings)/about/components/Features";
 
 export const metadata: Metadata = {title: 'McWIN iTECH | About Us'};
 
