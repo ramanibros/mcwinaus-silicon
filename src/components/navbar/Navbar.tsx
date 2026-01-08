@@ -185,7 +185,7 @@ const Navbar = ({
         <header className={`${Headerclass} ${isSticky && headerSticky ? headerSticky : ''}`}>
             <div className="container px-3">
                 <Link href="/home" className="navbar-brand pe-3">
-                    <Image src={Logo} width={150} alt="Silicon"/>
+                    <Image src={Logo} width={200} alt="Silicon"/>
                 </Link>
 
                 <Offcanvas
