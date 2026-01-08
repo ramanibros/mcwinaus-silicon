@@ -26,8 +26,8 @@ const features: Feature[] = [
     id: 1,
     title: 'BRAND',
     description:
-      'Web Design, Branding & App Design that elevates your business.',
-    link: '#',
+      'Branding, Web Design, UI/UX & Mobile App Design that boosts authority 3x faster.',
+    link: '/brand',
     linkText: 'Read More',
     icon: brandIcon,
   },
@@ -35,8 +35,8 @@ const features: Feature[] = [
     id: 2,
     title: 'BUILD',
     description:
-      'SEO, SMM, SEM & Automation that drive real growth.',
-    link: '#',
+      'Websites, eCommerce, Apps & Custom Software that increase conversions without spending thousands.',
+    link: '/build',
     linkText: 'Read More',
     icon: buildIcon,
   },
@@ -44,8 +44,8 @@ const features: Feature[] = [
     id: 3,
     title: 'GROW',
     description:
-      'Scalable Web, App & eCommerce Development services.',
-    link: '#',
+      'SMM, SEO, SEM & Pay-Per-Click that drive qualified leads—proof not promises.',
+    link: '/grow',
     linkText: 'Read More',
     icon: growIcon,
   },
@@ -53,8 +53,8 @@ const features: Feature[] = [
     id: 4,
     title: 'SCALE',
     description:
-      'PickFlow, your trusted Fleet Management Specialists.',
-    link: '#',
+      'Integrations, Optimisation & 24/7 Support for businesses ready to scale big.',
+    link: '/scale',
     linkText: 'Read More',
     icon: scaleIcon
   },
@@ -68,8 +68,7 @@ const Features = () => {
         <Row className="gy-sm-4 gy-3 pb-xl-2 pb-md-0 pb-sm-2">
           <Col md={6} xs={12}>
             <p className="mb-0 fs-lg">
-              We bring real solutions to each client&apos;s problems through a deep understanding of
-              their market, solution, and vision.
+              Get award-winning digital solutions with real insight into Perth's market. <b>We've got you covered</b> from vision to long-term results.
             </p>
           </Col>
         </Row>

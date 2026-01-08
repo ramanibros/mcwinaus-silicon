@@ -20,121 +20,75 @@ type FaqType = {
 };
 
 const faqs: FaqType[] = [
-  {
-    question: 'Is any of my personal information stored in the App?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'What formats can I download my transaction history in?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'Can I schedule future transfers?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'When can I use Banking App services?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'Can I create my own password that is easy for me to remember?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'What happens if I forget or lose my password?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-];
+      {
+        question: 'Do you have packages?',
+        answer: (
+            <>
+              <p className="mb-0">
+                Yes! We offer cost-effective packages customised for Perth businesses—covering Branding,
+                Websites, SEO, and more. Our solutions start affordably and scale seamlessly up to
+                enterprise-level needs.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'What services drive Perth business growth?',
+        answer: (
+            <>
+              <p className="mb-0">
+                We deliver high-impact digital services including Websites, eCommerce, Mobile Apps,
+                Custom Software, Branding, SEO, and Social Media Marketing—everything Perth SMEs need
+                to dominate their local market.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'How quickly will I see results?',
+        answer: (
+            <>
+              <p className="mb-0">
+                Websites typically go live within 4–8 weeks. SEO rankings begin improving within
+                90 days. We commit to clear timelines—no excuses, no delays.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'Do you serve beyond Perth?',
+        answer: (
+            <>
+              <p className="mb-0">
+                Yes. While our headquarters are in Perth, we proudly serve businesses across
+                Western Australia and nationwide—combining local insight with national reach.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'What makes your SEO different?',
+        answer: (
+            <>
+              <p className="mb-0">
+                Our SEO focuses on Perth-specific keyword mastery, Google Business Profile domination,
+                and high-quality content that ranks, converts, and delivers long-term growth.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'Design and development under one roof?',
+        answer: (
+            <>
+              <p className="mb-0">
+                100% yes. Strategy, design, development, and marketing—all handled by Perth’s top
+                digital team for a seamless, results-driven experience.
+              </p>
+            </>
+        ),
+      },
+    ];
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');
@@ -158,7 +112,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bxl:whatsapp" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link stretched-link px-0">
+                  <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
                     Whatsapp us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
@@ -172,7 +126,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bx:envelope" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link text-success stretched-link px-0">
+                  <Link href="mailto:hello@mcwinitech.com.au" className="btn btn-link text-success stretched-link px-0">
                    Mail Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>

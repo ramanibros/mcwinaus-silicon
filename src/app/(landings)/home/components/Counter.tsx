@@ -14,33 +14,28 @@ import IconifyIcon from '@/components/IconifyIcon';
 type Service = {
   title: string;
   description: string;
-  link: string;
   icon: string;
 };
 
 const services: Service[] = [
   {
-    title: '40+',
-    description: 'Experts. Infinite possibilities. One integrated team.',
-    link: '/services-single-v1',
+    title: '3x',
+    description: 'More Qualified Leads',
     icon: cms,
   },
   {
-    title: '350+',
-    description: 'Websites built for growth, not just presence.',
-    link: '/services-single-v1',
+    title: '67%',
+    description: 'Higher Conversion Rates',
     icon: rocket,
   },
   {
-    title: '15+',
-    description: 'Years of trusted experience in creative, marketing, and tech.',
-    link: '/services-single-v1',
+    title: '2x',
+    description: 'Faster Projects Live',
     icon: mobileApp,
   },
   {
-    title: '400+',
-    description: 'Success stories and more in the making.',
-    link: '/services-single-v1',
+    title: '24/7',
+    description: 'Perth Team Support',
     icon: mobileApp,
   },
 ];
@@ -53,7 +48,7 @@ const Counter = () => {
           {services.map((service, index) => (
             <Col key={index} className="py-4 my-2 my-sm-3">
               <Link
-                href={service.link}
+                href="#"
                 className="card card-hover h-100 border-0 shadow-sm text-decoration-none px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
               >
                 <div className="card-body">

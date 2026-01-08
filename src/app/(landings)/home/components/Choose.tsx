@@ -10,32 +10,34 @@ import Link from 'next/link';
 type Service = {
   title: string;
   description: string;
-  link: string;
   icon: string;
 };
 
 const services: Service[] = [
   {
-    title: 'No Lock-in Contracts',
+    title: 'Certified Digital Experts',
     description:
-      'Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa.',
-    link: '/services-single-v1',
+      '20+ Perth IT professionals with 5+ years delivering 3x faster project turnaround than competitors.',
     icon: cms,
   },
   {
-    title: '100% Transpatency',
+    title: 'Genuine Hands-On Partnership',
     description:
-      'Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst. Risus pretium eget at viverra eget.',
-    link: '/services-single-v1',
+      'We genuinely care—no cookie-cutter templates. Every project gets personal collaboration and 24/7 local support.',
     icon: rocket,
   },
   {
-    title: 'Local Item',
+    title: 'Future-Proof Technology Stack',
     description:
-      'Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est. Integer fames placerat turpis.',
-    link: '/services-single-v1',
+      'React, MySQL, Java, Oracle, AWS—scalable solutions that grow with your business for the long haul.',
     icon: mobileApp,
-  }
+  }/*,
+  {
+    title: 'What Makes Us Different',
+    description:
+        'Local Perth team who understand WA market dynamics. Your growth partner delivering guaranteed results, not empty promises.\n',
+    icon: mobileApp,
+  }*/
 ];
 
 const Choose = () => {
@@ -44,14 +46,12 @@ const Choose = () => {
       <div className="d-none d-lg-block" style={{ marginTop: '-60px', paddingTop: '60px' }}></div>
 
       <Container className="pt-5">
-        <h2 className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Why Choose <span className="text-gradient-primary">Us?</span></h2>
+        <h2 className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">Why Perth Businesses Choose <span className="text-gradient-primary">McWIN iTECH</span></h2>
 
         <Row className="align-items-center pb-5 mb-lg-2">
           <Col md={8} className="text-center text-md-start">
             <p className="fs-lg text-muted mb-md-0">
-              We are focused on helping brands grow through digital transformation services. We
-              bring real solutions to each client’s problems through a deep understanding of their
-              market, solution, and vision.
+              Transform enquiries into customers with Perth's most trusted digital team. Local team, global results—high-performing websites built to increase conversions and stay on top of Google rankings.
             </p>
           </Col>
         </Row>
@@ -60,7 +60,7 @@ const Choose = () => {
           {services.map((service, index) => (
             <Col key={index} className="py-4 my-2 my-sm-3">
               <Link
-                href={service.link}
+                href="#"
                 className="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
               >
                 <div className="card-body pt-3 ">

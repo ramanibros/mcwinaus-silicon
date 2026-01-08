@@ -135,18 +135,18 @@ const integrations: Resource[] = [
 ];
 const resources: Resource[] = [
     {
-        title: 'Address',
-        description: '3517 W. Gray St. Utica Pennsylvania 57867',
-        icon: 'bx:map',
+        title: 'Whatsapp',
+        description: '(+61) 466 953 095',
+        icon: 'bxl:whatsapp',
     },
     {
         title: 'Phone',
-        description: '(406) 555‑0120',
+        description: '(+61) 422 698 645',
         icon: 'bx:phone-call',
     },
     {
         title: 'Email',
-        description: 'email@example.com',
+        description: 'hello@mcwinitech.com.au',
         icon: 'bx:envelope',
     }
 ];
