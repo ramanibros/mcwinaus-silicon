@@ -31,10 +31,10 @@ const Pricing = () => {
           <Col xl={8} md={10} sm={12} className="text-center">
             <h2 className="h1 text-light mb-4">Ready To 3x Your Business Growth?</h2>
             <p className="fs-lg text-light opacity-70 pb-4 mb-3">
-              McWIN iTECH – Perth's local growth partner delivering award-winning websites, SEO & apps that increase conversions and build trust with Australian customers.
+              Write your email address so we can contact you
             </p>
 
-            {/*<form
+            <form
               className="input-group input-group-lg d-none d-sm-flex needs-validation mb-3"
               noValidate
             >
@@ -75,7 +75,7 @@ const Pricing = () => {
               <button type="submit" className="btn btn-primary btn-lg w-100">
                 Get in touch
               </button>
-            </form>*/}
+            </form>
             <p className="fs-sm text-light opacity-50 mb-0">
               Local team. Long-term results. Your success is guaranteed.
             </p>

@@ -38,7 +38,7 @@ type Copyright = {
 };
 
 const companyName: string = 'Silicon';
-const logoWidth: number = 200;
+const logoWidth: number = 250;
 const languageOptions: LanguageOption[] = [
     {value: 'English', label: 'English'},
     {value: 'Français', label: 'Français'},
@@ -177,9 +177,9 @@ const Footer = () => {
                                 <Image src={logoLight} width={logoWidth} alt={companyName}/>
                             </div>
                         </div>
-                        <p className="fs-sm pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium
-                            platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat
-                            egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+                        <p className="fs-sm pb-lg-3 mb-4">
+                            McWIN iTECH – Perth's local growth partner delivering award-winning websites, SEO & apps that increase conversions and build trust with Australian customers.
+                        </p>
                     </Col>
 
                     <Col xs={12} xl={3} className="pb-1 mb-4">
