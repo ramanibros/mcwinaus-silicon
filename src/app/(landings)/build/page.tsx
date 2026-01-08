@@ -12,6 +12,8 @@ import Iconboxes from "@/app/(landings)/build/components/Iconboxes";
 import HowWork from "@/app/(landings)/build/components/HowWork";
 import Offer from "@/app/(landings)/build/components/Offer";
 import Faqs from "@/app/(landings)/build/components/Faqs";
+import Solutions from "@/app/(landings)/build/components/Solutions";
+import Benefits from "@/app/(landings)/build/components/Benefits";
 
 export const metadata: Metadata = {title: 'Build | McWIN iTECH'};
 
@@ -41,10 +43,11 @@ const Page = () => {
                 <Hero/>
             </section>
             <Work/>
-            <Iconboxes/>
+            <Solutions/>
             <Offer/>
             <HowWork/>
             <Faqs/>
+            <Benefits/>
             <Pricing/>
             <Footer/>
         </>
