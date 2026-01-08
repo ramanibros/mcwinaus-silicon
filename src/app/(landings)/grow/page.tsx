@@ -11,7 +11,7 @@ import HowWork from "@/app/(landings)/grow/components/HowWork";
 import Faqs from "@/app/(landings)/grow/components/Faqs";
 import Navbar from "@/components/navbar/Navbar";
 
-export const metadata: Metadata = {title: 'Silicon | Software Dev Agency Landing v.3'};
+export const metadata: Metadata = {title: 'Grow | McWIN iTECH'};
 
 const Page = () => {
     return (
