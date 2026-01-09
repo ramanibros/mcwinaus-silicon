@@ -50,10 +50,10 @@ const Work = () => {
                             data-rellax-speed="0.4"
                             data-disable-parallax-down="lg"
                         >
-                            <h3 className="h4">Plan & Discover (Week 1)</h3>
+                            <h3 className="h4">Plan & Discover</h3>
                             <p className="mb-0">
-                                A Quick strategy session maps your goals, the Perth market, and your budget. Get a
-                                custom roadmap without the guesswork.
+                                A Quick strategy session maps your goals, the Perth market, and your budget. <b>Get a
+                                custom roadmap</b> without the guesswork.
                             </p>
                         </div>
                     </div>
@@ -84,9 +84,9 @@ const Work = () => {
                             data-rellax-speed="0.5"
                             data-disable-parallax-down="lg"
                         >
-                            <h3 className="h4">Design & Prototype (Weeks 2-3)</h3>
+                            <h3 className="h4">Design & Prototype</h3>
                             <p className="mb-0">
-                                Visualise success first—wireframes and mockups approved before we code a single line.
+                                <b>Visualise success first</b>—wireframes and mockups approved before we code a single line.
                             </p>
                         </div>
                     </div>
@@ -117,9 +117,9 @@ const Work = () => {
                             data-rellax-speed="0.4"
                             data-disable-parallax-down="lg"
                         >
-                            <h3 className="h4">Build & Optimise (Weeks 4-6)</h3>
+                            <h3 className="h4">Build & Optimise</h3>
                             <p className="mb-0">
-                                Speed and conversions guaranteed. Mobile-first, SEO-ready, and built to 3x your online
+                                <b>Speed and conversions guaranteed.</b> Mobile-first, SEO-ready, and built to 3x your online
                                 performance.
                             </p>
                         </div>
@@ -153,7 +153,7 @@ const Work = () => {
                         >
                             <h3 className="h4">Launch & Scale (Week 7+)</h3>
                             <p className="mb-0">
-                                Go live with confidence. Ongoing optimisation, support, and growth strategies are
+                               <b>Go live with confidence.</b> Ongoing optimisation, support, and growth strategies are
                                 included.
                             </p>
                         </div>

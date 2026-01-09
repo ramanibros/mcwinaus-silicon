@@ -20,95 +20,80 @@ type FaqItem = {
 };
 
 const faqs: FaqItem[] = [
-  {
-    id: 'q1',
-    question: "What if I don't have any professional background?",
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit.
-        </p>
-        <p>
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate.
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 'q2',
-    question: 'How is this different from other courses on the market?',
-    answer: (
-      <>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in facilisis nibh.
-          Vestibulum ac porttitor sapien. Curabitur laoreet malesuada gravida.
-        </p>
-        <p>
-          Nunc dolor velit, interdum finibus bibendum vel, mattis a magna. Mauris mollis sapien ac
-          mi aliquet varius.
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 'q3',
-    question: "How much time does it take to do my homework per week? What if I don't like it?",
-    answer: (
-      <p>
-        Suspendisse viverra volutpat eros. Curabitur in scelerisque lacus, quis fringilla sem. Nunc
-        rutrum vel magna et ullamcorper. Sed consectetur augue vitae ligula consectetur, eu dapibus
-        justo molestie.
-      </p>
-    ),
-  },
-  {
-    id: 'q4',
-    question: 'Is there any kind of certificate of completion?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit.
-        </p>
-        <p>
-          Quis egestas aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing
-          massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 'q5',
-    question:
-      'YouTube is full of free tutorials, videos and courses. Why should I take any courses here?',
-    answer: (
-      <>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in facilisis nibh.
-          Vestibulum ac porttitor sapien. Curabitur laoreet malesuada gravida.
-        </p>
-        <p>
-          Nunc dolor velit, interdum finibus bibendum vel, mattis a magna. Mauris mollis sapien ac
-          mi aliquet varius.
-        </p>
-      </>
-    ),
-  },
-  {
-    id: 'q6',
-    question: 'What happens if I forget or lose my password?',
-    answer: (
-      <p>
-        Suspendisse viverra volutpat eros. Curabitur in scelerisque lacus, quis fringilla sem. Nunc
-        rutrum vel magna et ullamcorper. Sed consectetur augue vitae ligula consectetur, eu dapibus
-        justo molestie.
-      </p>
-    ),
-  },
+    {
+        id: 'q1',
+        question: 'Why choose a local Perth digital agency?',
+        answer: (
+            <>
+                <p>
+                    Local team advantage—we understand Perth market nuances, deliver 2x faster,
+                    and provide 24/7 hands-on support that other agencies can't match.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 'q2',
+        question: 'What makes McWIN iTECH different from others?',
+        answer: (
+            <>
+                <p>
+                    Proof, not promises. Guaranteed results through 3x lead growth,
+                    award-winning designs, and personal partnership—we genuinely care
+                    about your success.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 'q3',
+        question: 'Do you guarantee Google ranking improvements?',
+        answer: (
+            <>
+                <p>
+                    Yes, ranking guarantee. Local Perth SEO mastery gets you Google's
+                    top spots, or we keep working for free. Expect the unexpected.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 'q4',
+        question: 'How quickly will my website be live?',
+        answer: (
+            <>
+                <p>
+                    Projects go live 2x faster than the industry average with our
+                    Perth-based team. Ready to scale from day one.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 'q5',
+        question: 'Do you offer cost-effective packages?',
+        answer: (
+            <>
+                <p>
+                    Yes! Flexible packages for Perth SMEs—branding, websites, and SEO
+                    starting at an affordable price, delivering enterprise-level results
+                    without spending thousands.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 'q6',
+        question: 'Can you handle both design and development?',
+        answer: (
+            <>
+                <p>
+                    100% yes. Perth's best team delivering strategy → design → build →
+                    marketing seamlessly. Full-stack digital solutions under one roof.
+                </p>
+            </>
+        ),
+    },
 ];
 
 const Faqs = () => {

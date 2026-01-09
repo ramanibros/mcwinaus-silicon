@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import clutchDark from '@/assets/img/about/clutch-logo-dark.svg';
 import clutchLight from '@/assets/img/about/clutch-logo-light.svg';
@@ -21,153 +21,154 @@ import brand08 from '@/assets/img/client/cl-8.png';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card, CardBody, Col, Container, Row } from 'react-bootstrap';
+import {Card, CardBody, Col, Container, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 
 const brandLogos = [brand01, brand02, brand03, brand04, brand05, brand06, brand07, brand08];
 
 const Partners = () => {
-  return (
-    <section className="bg-secondary mb-5 py-lg-4 py-xl-5">
-      <Container className="pt-5">
-        <Row className="align-items-center gy-5 pt-2 pt-sm-3 pt-md-4">
-          <Col lg={5} className="text-lg-start text-center">
-            <h2 className="h1 mb-4 pb-lg-2">Company built by a global team of <span className="text-gradient-primary">innovators</span></h2>
-            <p className="mb-4 pb-1 pb-sm-2 pb-lg-3">
-              In blandit luctus proin mauris a commodo, dolor diam tempus, aenean magna fusce eu. Id
-              porttitor aliquam eget aliquet sagittis eu aut diam ut phasellus sed convallis iaculis
-              neque ultricies convallis sed enim
-            </p>
-            <Link href="/contacts-v2" className="btn btn-primary">
-              Contact us
-            </Link>
-          </Col>
-          <Col lg={6} className="offset-lg-1">
-            <Row className="row-cols-sm-2 row-cols-1 g-4 align-items-center">
-              <Col>
-                <Card className="border-0">
-                  <CardBody className="m-xl-3 m-1 text-center">
-                    <Link href="#" className="d-inline-block mb-4 pb-2">
-                      <Image
-                        src={clutchDark}
-                        width="116"
-                        alt="Clutch"
-                        className="d-dark-mode-none d-block"
-                      />
-                      <Image
-                        src={clutchLight}
-                        width="116"
-                        alt="Clutch"
-                        className="d-dark-mode-block d-none"
-                      />
-                    </Link>
-                    <h5 className="mb-3 fs-lg fw-normal lh-1">
-                      <span className="h1 d-block w-100 mb-0">100%</span>
-                      Positive Feedback
-                    </h5>
-                    <div className="mb-3 text-nowrap">
-                      {[...Array(5)].map((_, i) => (
-                        <IconifyIcon key={i} icon="bxs:star" className="text-warning fs-sm" />
-                      ))}
-                    </div>
-                    <Image
-                      src={membersDark}
-                      width="168"
-                      alt="Members"
-                      className="d-dark-mode-none d-block mx-auto"
-                    />
-                    <Image
-                      src={membersLight}
-                      width="168"
-                      alt="Members"
-                      className="d-dark-mode-block d-none mx-auto"
-                    />
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col>
-                <Card className="border-0">
-                  <CardBody className="m-xl-3 m-1 text-center">
-                    <Image
-                      src={chatLight}
-                      width="56"
-                      alt="Icon"
-                      className="d-dark-mode-none d-block mx-auto mb-4"
-                    />
-                    <Image
-                      src={chatDark}
-                      width="56"
-                      alt="Icon"
-                      className="d-dark-mode-block d-none mx-auto mb-4"
-                    />
-                    <h5 className="mb-3 fs-lg fw-normal lh-1">
-                      <span className="h1 d-block w-100 mb-0">24/7</span>
-                      Customer support
-                    </h5>
-                  </CardBody>
-                </Card>
-                <Card className="border-0 mt-4">
-                  <CardBody
-                    className="m-xl-3 m-1 bg-repeat-0 bg-position-top-end"
-                    style={{ backgroundImage: `url(${graphBg.src})` }}
-                  >
-                    <h5 className="mb-3 fs-lg fw-normal lh-1 mt-5">
-                      <span className="h1 d-block w-100 mb-0">+12k</span>
-                      new leads for clients
-                    </h5>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+    return (
+        <section className="bg-secondary mb-5 py-lg-4 py-xl-5">
+            <Container className="pt-5">
+                <Row className="align-items-center gy-5 pt-2 pt-sm-3 pt-md-4">
+                    <Col lg={5} className="text-lg-start text-center">
+                        <h2 className="h1 mb-4 pb-lg-2">Company built by <span className="text-gradient-primary">Perth innovators</span>
+                        </h2>
+                        <p className="mb-4 pb-1 pb-sm-2 pb-lg-3">
+                            McWIN iTECH was founded by local Perth entrepreneurs who understand WA market dynamics.
+                            We're <b>your growth partner</b>, not just another agency—delivering <b>proof, not
+                            promises,</b> through measurable results that scale with your business.
+                        </p>
+                        <Link href="/contact" className="btn btn-primary">
+                            Contact us
+                        </Link>
+                    </Col>
+                    <Col lg={6} className="offset-lg-1">
+                        <Row className="row-cols-sm-2 row-cols-1 g-4 align-items-center">
+                            <Col>
+                                <Card className="border-0">
+                                    <CardBody className="m-xl-3 m-1 text-center">
+                                        <Link href="#" className="d-inline-block mb-4 pb-2">
+                                            <Image
+                                                src={clutchDark}
+                                                width="116"
+                                                alt="Clutch"
+                                                className="d-dark-mode-none d-block"
+                                            />
+                                            <Image
+                                                src={clutchLight}
+                                                width="116"
+                                                alt="Clutch"
+                                                className="d-dark-mode-block d-none"
+                                            />
+                                        </Link>
+                                        <h5 className="mb-3 fs-lg fw-normal lh-1">
+                                            <span className="h1 d-block w-100 mb-0">100%</span>
+                                            Positive Feedback
+                                        </h5>
+                                        <div className="mb-3 text-nowrap">
+                                            {[...Array(5)].map((_, i) => (
+                                                <IconifyIcon key={i} icon="bxs:star" className="text-warning fs-sm"/>
+                                            ))}
+                                        </div>
+                                        <Image
+                                            src={membersDark}
+                                            width="168"
+                                            alt="Members"
+                                            className="d-dark-mode-none d-block mx-auto"
+                                        />
+                                        <Image
+                                            src={membersLight}
+                                            width="168"
+                                            alt="Members"
+                                            className="d-dark-mode-block d-none mx-auto"
+                                        />
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                            <Col>
+                                <Card className="border-0">
+                                    <CardBody className="m-xl-3 m-1 text-center">
+                                        <Image
+                                            src={chatLight}
+                                            width="56"
+                                            alt="Icon"
+                                            className="d-dark-mode-none d-block mx-auto mb-4"
+                                        />
+                                        <Image
+                                            src={chatDark}
+                                            width="56"
+                                            alt="Icon"
+                                            className="d-dark-mode-block d-none mx-auto mb-4"
+                                        />
+                                        <h5 className="mb-3 fs-lg fw-normal lh-1">
+                                            <span className="h1 d-block w-100 mb-0">24/7</span>
+                                            Customer support
+                                        </h5>
+                                    </CardBody>
+                                </Card>
+                                <Card className="border-0 mt-4">
+                                    <CardBody
+                                        className="m-xl-3 m-1 bg-repeat-0 bg-position-top-end"
+                                        style={{backgroundImage: `url(${graphBg.src})`}}
+                                    >
+                                        <h5 className="mb-3 fs-lg fw-normal lh-1 mt-5">
+                                            <span className="h1 d-block w-100 mb-0">+12k</span>
+                                            new leads for clients
+                                        </h5>
+                                    </CardBody>
+                                </Card>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
 
-        <div className="mt-lg-5 mt-sm-2 mt-md-4 pt-4">
-          <Swiper
-              modules={[Autoplay, Navigation, Pagination]}
-              navigation={{
-                prevEl: '#prev-brand',
-                nextEl: '#next-brand',
-              }}
-              pagination={{
-                el: '.brands-pagination',
-                clickable: true,
-              }}
-              loop={true}
-              breakpoints={{
-                0: { slidesPerView: 2, spaceBetween: 8 },
-                500: { slidesPerView: 3, spaceBetween: 8 },
-                650: { slidesPerView: 4, spaceBetween: 8 },
-                900: { slidesPerView: 5, spaceBetween: 8 },
-                1100: { slidesPerView: 6, spaceBetween: 8 },
-              }}
-              freeMode={{
-                enabled: true,
-                momentum: false, // IMPORTANT for smooth flow
-              }}
-              autoplay={{
-                delay: 0, // no stop between slides
-                disableOnInteraction: false,
-              }}
-              speed={6000} // higher = smoother & slower movement
-          >
-            {brandLogos.map((logo, index) => (
-              <SwiperSlide key={index}>
-                <Link href="#" className="card card-body bg-none border-0 px-2 mx-2">
-                  <Image
-                    src={logo}
-                    className="d-block mx-auto my-2"
-                    width="120"
-                    alt={`Brand ${index + 1}`}
-                  />
-                </Link>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </Container>
-    </section>
-  );
+                <div className="mt-lg-5 mt-sm-2 mt-md-4 pt-4">
+                    <Swiper
+                        modules={[Autoplay, Navigation, Pagination]}
+                        navigation={{
+                            prevEl: '#prev-brand',
+                            nextEl: '#next-brand',
+                        }}
+                        pagination={{
+                            el: '.brands-pagination',
+                            clickable: true,
+                        }}
+                        loop={true}
+                        breakpoints={{
+                            0: {slidesPerView: 2, spaceBetween: 8},
+                            500: {slidesPerView: 3, spaceBetween: 8},
+                            650: {slidesPerView: 4, spaceBetween: 8},
+                            900: {slidesPerView: 5, spaceBetween: 8},
+                            1100: {slidesPerView: 6, spaceBetween: 8},
+                        }}
+                        freeMode={{
+                            enabled: true,
+                            momentum: false, // IMPORTANT for smooth flow
+                        }}
+                        autoplay={{
+                            delay: 0, // no stop between slides
+                            disableOnInteraction: false,
+                        }}
+                        speed={6000} // higher = smoother & slower movement
+                    >
+                        {brandLogos.map((logo, index) => (
+                            <SwiperSlide key={index}>
+                                <Link href="#" className="card card-body bg-none border-0 px-2 mx-2">
+                                    <Image
+                                        src={logo}
+                                        className="d-block mx-auto my-2"
+                                        width="120"
+                                        alt={`Brand ${index + 1}`}
+                                    />
+                                </Link>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </Container>
+        </section>
+    );
 };
 
 export default Partners;

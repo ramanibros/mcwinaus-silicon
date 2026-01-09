@@ -141,12 +141,12 @@ const integrations: Resource[] = [
 const resources: Resource[] = [
     {
         title: 'Whatsapp',
-        description: '(+61) 466 953 095',
+        description: '0466 953 095',
         icon: 'bxl:whatsapp',
     },
     {
         title: 'Phone',
-        description: '(+61) 422 698 645',
+        description: '0422 698 645',
         icon: 'bx:phone-call',
     },
     {

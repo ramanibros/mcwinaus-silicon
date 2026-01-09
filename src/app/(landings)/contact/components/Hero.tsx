@@ -30,18 +30,18 @@ const Hero = () => {
 
         <Row className="pt-md-2 pt-lg-5 pb-2 pb-md-4">
           <Col xxl={4} xl={5} lg={6} className="pt-3 mt-3">
-            <h1 className="h3 mb-2">Want to work with us?</h1>
+            <h1 className="h3 mb-2">Ready to grow your Perth business?</h1>
             <h2 className="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">
-              Let&apos;s talk!
+              Let&apos;s chat!
             </h2>
             <div className="nav d-block lead pt-lg-5">
               <Link
-                href="mailto:email@example.com"
+                href="mailto:hello@McWIN iTECH.com.au"
                 className="nav-link fw-normal text-decoration-underline p-0 mb-4"
               >
-                email@example.com
+                hello@McWIN iTECH.com.au
               </Link>
-              <div className="text-nav">+1 406 555-0120</div>
+              <div className="text-nav">0422 698 645</div>
             </div>
           </Col>
 

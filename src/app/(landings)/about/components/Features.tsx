@@ -26,7 +26,7 @@ const features: Feature[] = [
     id: 1,
     title: 'Our Mission',
     description:
-      'At Genesis Envision, our mission is to provide businesses with customizable, future-ready software solutions that remove complexity, increase efficiency, and drive success. Our mission is to help businesses improve their operational efficiency, automate business processes, and make decisions with confidence using expense management system and financial analytics tools.',
+      'McWIN iTECH exists to transform Perth businesses into market leaders with custom websites, SEO mastery, mobile apps, and digital strategies that increase conversions 3x faster while building sustainable growth.\n',
     link: '#',
     linkText: 'Read More',
     icon: brandIcon,
@@ -35,7 +35,7 @@ const features: Feature[] = [
     id: 2,
     title: 'Our Vision',
     description:
-      'We see ourselves as the global leader in custom software development, and our mission is to transform challenges into solutions that count. At Genesis Envision, we are not only creating software, we are creating opportunities, making processes simpler, and initiating digital transformation through workforce management software and best efficient hr.',
+      'To be Perth\'s go-to digital partner, helping Australian brands stay on top of Google, scale without limits, and achieve long-term results through genuine partnerships and proven technology.',
     link: '#',
     linkText: 'Read More',
     icon: buildIcon,
@@ -46,7 +46,7 @@ const Features = () => {
   return (
     <section className="mb-2 mb-md-4 mb-lg-5">
       <Container>
-        <h2 className="h1 mb-md-4 mb-3 pt-xl-3"><span className="text-gradient-primary">Revolutionizing</span> The Way Businesses Operate</h2>
+        <h2 className="h1 mb-md-4 mb-3 pt-xl-3"><span className="text-gradient-primary">Revolutionizing</span> Perth Business Growth</h2>
 
         <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {features.map(feature => (

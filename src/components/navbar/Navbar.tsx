@@ -334,8 +334,8 @@ const Navbar = ({
                             <li className={`nav-item dropdown ${pathname === '/about' ? 'active' : ""}`}>
                                 <Link href="/about" className="nav-link">About Us</Link>
                             </li>
-                            <li className={`nav-item dropdown ${pathname === '/contacts' ? 'active' : ""}`}>
-                                <Link href="/contacts" className="nav-link">Contact</Link>
+                            <li className={`nav-item dropdown ${pathname === '/contact' ? 'active' : ""}`}>
+                                <Link href="/contact" className="nav-link">Contact</Link>
                             </li>
                         </ul>
                     </OffcanvasBody>

@@ -13,7 +13,7 @@ import Link from 'next/link';
 type Feature = {
   id: number;
   title: string;
-  description?: string;
+  description: React.ReactNode;
   link: string;
   linkText: string;
   icon: StaticImageData;
@@ -26,7 +26,11 @@ const features: Feature[] = [
     id: 1,
     title: 'BRAND',
     description:
-      'Branding, Web Design, UI/UX & Mobile App Design that boosts authority 3x faster.',
+        (
+            <>
+              Branding, Web Design, UI/UX & Mobile App Design that <b>boosts authority 3x faster.</b>
+            </>
+        ),
     link: '/brand',
     linkText: 'Read More',
     icon: brandIcon,
@@ -35,7 +39,11 @@ const features: Feature[] = [
     id: 2,
     title: 'BUILD',
     description:
-      'Websites, eCommerce, Apps & Custom Software that increase conversions without spending thousands.',
+        (
+            <>
+              Websites, eCommerce, Apps & Custom Software that <b>increase conversions without spending thousands.</b>
+            </>
+        ),
     link: '/build',
     linkText: 'Read More',
     icon: buildIcon,
@@ -44,7 +52,11 @@ const features: Feature[] = [
     id: 3,
     title: 'GROW',
     description:
-      'SMM, SEO, SEM & Pay-Per-Click that drive qualified leads—proof not promises.',
+        (
+            <>
+              SMM, SEO, SEM & Pay-Per-Click that <b>drive qualified leads</b>—proof not promises.
+            </>
+        ),
     link: '/grow',
     linkText: 'Read More',
     icon: growIcon,
@@ -53,7 +65,11 @@ const features: Feature[] = [
     id: 4,
     title: 'SCALE',
     description:
-      'Integrations, Optimisation & 24/7 Support for businesses ready to scale big.',
+        (
+            <>
+              Integrations, Optimisation & 24/7 Support for <b>businesses ready to scale big.</b>
+            </>
+        ),
     link: '/scale',
     linkText: 'Read More',
     icon: scaleIcon

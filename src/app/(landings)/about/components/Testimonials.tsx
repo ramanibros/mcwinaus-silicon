@@ -13,6 +13,9 @@ import { Card, Col, Row } from 'react-bootstrap';
 import Link from 'next/link';
 import clutchLight from '@/assets/img/about/clutch-logo.svg';
 import IconifyIcon from '@/components/IconifyIcon';
+import avatar1 from "@/assets/img/avatar/13.jpg";
+import avatar2 from "@/assets/img/avatar/14.jpg";
+import avatar3 from "@/assets/img/avatar/11.jpg";
 
 type Testimonial = {
   id: number;
@@ -22,28 +25,43 @@ type Testimonial = {
   avatar: StaticImageData;
 };
 
-const testimonials: Testimonial[] = [
+
+const testimonials = [
   {
     id: 1,
-    text: 'Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim',
-    name: 'Ralph Edwards',
-    role: 'Head of Marketing at Lorem Company',
-    avatar: avatr05,
+    text: "McWIN iTECH is Perth's best digital company! Their services are awesome, professional, 24/7 support and affordable pricing, making them a big advantage. Highly recommended!",
+    author: "Courtenay Holgate",
+    role: "Owner",
+    avatar: avatar1,
   },
   {
     id: 2,
-    text: 'Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet',
-    name: 'Annette Black',
-    role: 'Strategic Advisor at Ipsum Ltd.',
-    avatar: avatar06,
+    text: "Very pleased with the work; helped with putting my ideas on paper when it came to rebranding my business, doing a complete new website and also managing my business's social media.",
+    author: "Alysha Cheetham",
+    role: "Client",
+    avatar: avatar2,
   },
   {
     id: 3,
-    text: 'Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam pellentesque sed aliquet integer massa. Orci leo tortor ornare id mattis auctor aliquam volutpat aliquet. Odio lectus viverra eu blandit nunc malesuada vitae eleifend pulvinar',
-    name: 'Darrell Steward',
-    role: 'Project Manager at Company Ltd.',
-    avatar: avatar01,
+    text: "Very good service. Completed a job for me on very short notice and at a very high standard. I would highly recommend them.",
+    author: "Jaymie Andersen",
+    role: "Client",
+    avatar: avatar3,
   },
+  {
+    id: 4,
+    text: "Very helpful, worked through with me step by step till we got what I wanted.",
+    author: "All Right Towing",
+    role: "Business Owner",
+    avatar: avatar1,
+  },
+  {
+    id: 5,
+    text: "Very happy with their service 😊 highly professional team",
+    author: "Cristina Kennedy",
+    role: "Client",
+    avatar: avatar2,
+  }
 ];
 
 const Testimonials = () => {
@@ -120,13 +138,13 @@ const Testimonials = () => {
                     <figcaption className="card-footer border-0 d-flex align-items-center w-100 pb-2">
                       <Image
                         src={t.avatar}
-                        alt={t.name}
+                        alt={t.author}
                         width={48}
                         height={48}
                         className="rounded-circle"
                       />
                       <div className="ps-3">
-                        <h5 className="fw-semibold lh-base mb-0">{t.name}</h5>
+                        <h5 className="fw-semibold lh-base mb-0">{t.author}</h5>
                         <span className="fs-sm text-muted">{t.role}</span>
                       </div>
                     </figcaption>
