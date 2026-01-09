@@ -4,10 +4,10 @@ import ClutchDark from '@/assets/img/about/clutch-dark.png';
 import ClutchLight from '@/assets/img/about/clutch-light.png';
 import Image from 'next/image';
 import IconifyIcon from '@/components/IconifyIcon';
-import about01 from '@/assets/img/about/hero/01.jpg';
-import about02 from '@/assets/img/about/hero/02.jpg';
-import hero03 from '@/assets/img/about/hero/03.jpg';
-import hero04 from '@/assets/img/about/hero/04.jpg';
+import about01 from '@/assets/img/about/hero/Gemini_Generated_Image_k4mhhik4mhhik4mh.png';
+import about02 from '@/assets/img/about/hero/Gemini_Generated_Image_a36tgka36tgka36t.png';
+import hero03 from '@/assets/img/about/hero/Gemini_Generated_Image_k5c2csk5c2csk5c2.png';
+import hero04 from '@/assets/img/about/hero/Gemini_Generated_Image_wris3bwris3bwris.png';
 import {Breadcrumb, BreadcrumbItem, Col, Container, Nav, Row} from 'react-bootstrap';
 import Link from 'next/link';
 
