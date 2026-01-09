@@ -21,117 +21,94 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Is any of my personal information stored in the App?',
+    question: 'Does branding really increase sales?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Absolutely. Strong branding builds trust, credibility, and emotional connection with your
+            audience. Our clients consistently see up to 3x more qualified leads when their brand feels
+            cohesive and professional.
+          </p>
+          <p className="mb-0">
+            A well-defined brand identity converts better than generic logos by clearly communicating
+            value, positioning, and authority—turning interest into action.
+          </p>
+        </>
     ),
   },
   {
-    question: 'What formats can I download my transaction history in?',
+    question: 'How much does Perth web design cost?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Perth web design doesn’t have to cost thousands. Our custom-built websites start at affordable
+            rates while still delivering high performance and modern design.
+          </p>
+          <p className="mb-0">
+            With conversion-focused layouts proven to drive up to 67% higher engagement, our tiered
+            packages are designed to fit every business size and budget.
+          </p>
+        </>
     ),
   },
   {
-    question: 'Can I schedule future transfers?',
+    question: 'What’s the difference between UI and UX?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            UI (User Interface) focuses on how your product looks—colors, typography, and visual appeal.
+            UX (User Experience) focuses on how it works—flow, usability, and ease of use.
+          </p>
+          <p className="mb-0">
+            When combined, UI and UX can drive up to 4x higher engagement. Our Perth-based team masters
+            both to create designs that look great and perform even better.
+          </p>
+        </>
     ),
   },
   {
-    question: 'When can I use Banking App services?',
+    question: 'Do you design for both iOS and Android?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Yes, we design native app experiences for both iOS and Android platforms, ensuring consistency
+            and performance across devices.
+          </p>
+          <p className="mb-0">
+            Our platform-optimised designs support up to 85% higher app retention, giving your users a
+            seamless experience wherever they are.
+          </p>
+        </>
     ),
   },
   {
-    question: 'Can I create my own password that is easy for me to remember?',
+    question: 'What makes your designs different?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            We’re a local Perth team that understands Australian audiences, trends, and expectations.
+            Every design is built with long-term relevance and scalability in mind.
+          </p>
+          <p className="mb-0">
+            Expect the unexpected—our designs stay competitive and impactful for 3+ years, not just
+            launch day.
+          </p>
+        </>
     ),
   },
   {
-    question: 'What happens if I forget or lose my password?',
+    question: 'What results can Perth businesses expect?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Our process is results-driven. Businesses working with us typically experience up to 3x brand
+            recognition and a 67% increase in conversions.
+          </p>
+          <p className="mb-0">
+            With projects delivered up to 2x faster by our local team, you get measurable growth and
+            long-term value—not just good-looking design.
+          </p>
+        </>
     ),
   },
 ];
@@ -158,7 +135,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bxl:whatsapp" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link stretched-link px-0">
+                  <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
                     Whatsapp us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
@@ -172,7 +149,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bx:envelope" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link text-success stretched-link px-0">
+                  <Link href="mailto:hello@mcwinitech.com.au" className="btn btn-link text-success stretched-link px-0">
                    Mail Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>

@@ -9,10 +9,9 @@ const Work = () => {
   return (
     <Container>
       <div className="text-center pb-4 pb-md-0 mb-2 mb-md-5 mx-auto" style={{ maxWidth: '530px' }}>
-        <h2 className="h1">How Does It   <span className="text-gradient-primary">Work?</span></h2>
+        <h2 className="h1">Our Proven 4-Step <span className="text-gradient-primary">Brand Process</span></h2>
         <p className="mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit volutpat mollis egestas nam luctus
-          facilisis ultrices
+          Clear, collaborative, results-driven—how Perth businesses get award-winning brands that deliver.
         </p>
       </div>
 
@@ -22,8 +21,8 @@ const Work = () => {
             <div className="step-number-inner">1</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Registration </h3>
-            <p className="mb-0">Massa enim libero dictumst consectetur in convallis lobortis</p>
+            <h3 className="h4 mb-3">Discovery </h3>
+            <p className="mb-0">Deep-dive into your Perth market, audience, and vision. Custom strategy mapped in 48 hours.</p>
           </div>
         </div>
         <div className="step">
@@ -31,8 +30,8 @@ const Work = () => {
             <div className="step-number-inner">2</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Identity verification</h3>
-            <p className="mb-0">At ultricies id non quisque integer eget velit. Facilisis enim</p>
+            <h3 className="h4 mb-3">Design & Concepts</h3>
+            <p className="mb-0">3 unique concepts presented—pick your winner with stakeholder feedback built-in.</p>
           </div>
         </div>
         <div className="step">
@@ -40,8 +39,8 @@ const Work = () => {
             <div className="step-number-inner">3</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Start trading</h3>
-            <p className="mb-0">Pellentesque rhoncus viverra vestibulum, purus purus</p>
+            <h3 className="h4 mb-3">Refinement & Assets</h3>
+            <p className="mb-0">Perfect your brand with unlimited revisions plus complete digital asset delivery.</p>
           </div>
         </div>
         <div className="step">
@@ -49,8 +48,8 @@ const Work = () => {
             <div className="step-number-inner">4</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Earn with Silicon</h3>
-            <p className="mb-0">Massa enim libero dictumst consectetur in convallis lobortis</p>
+            <h3 className="h4 mb-3">Launch & Scale</h3>
+            <p className="mb-0">Brand guidelines & coaching sessions to ensure long-term consistency across all channels.</p>
           </div>
         </div>
       </div>

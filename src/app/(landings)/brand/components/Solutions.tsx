@@ -20,41 +20,28 @@ const solutionsData: Solution[] = [
   {
     id: 1,
     icon: icon1,
-    title: 'Software Development',
+    title: 'Branding',
     description:
-      'Commodo senectus massa est urna mi. Mattis dis arcu aenean libero viverra gravida.',
+      'Complete brand identity packages delivering 3x more recognition—logos, colour systems, typography, guidelines, etc., that position Perth businesses as industry leaders without agency overheads.\n',
   },
   {
     id: 2,
     icon: icon2,
-    title: 'App Development',
-    description: 'Enim vehicula integer mattis morbi risus. Hendrerit pharetra arcu quam viverra.',
+    title: 'Web Design',
+    description: 'Conversion-optimised websites built 67% faster with mobile-first design, loading in under 2 seconds, with an SEO-ready structure—driving 3x more leads for Perth SMEs from day one.\n',
   },
   {
     id: 3,
     icon: icon3,
-    title: 'Support & Maintenance',
+    title: 'UI/UX Design',
     description:
-      'Turpis ultrices lacinia ut placerat dignissim morbi. Amet lectus sed tortor in elit adipiscing magnis.',
+      'User journeys crafted to boost engagement 4x—intuitive navigation, micro-interactions, and accessibility compliance that keep Australian customers on-site longer and convert better.\n',
   },
   {
     id: 4,
     icon: icon4,
-    title: 'Software QA & Testing',
-    description: 'Amet felis viverra proin feugiat. Eget metus metus lorem dolor pellentesque.',
-  },
-  {
-    id: 5,
-    icon: icon1,
-    title: 'Software Development',
-    description:
-        'Commodo senectus massa est urna mi. Mattis dis arcu aenean libero viverra gravida.',
-  },
-  {
-    id: 6,
-    icon: icon2,
-    title: 'App Development',
-    description: 'Enim vehicula integer mattis morbi risus. Hendrerit pharetra arcu quam viverra.',
+    title: 'Mobile App Design',
+    description: 'Native iOS/Android interfaces designed for 85% retention—App Store optimised, push notification flows, and onboarding that drives daily active users for Perth businesses.\n',
   }
 ];
 
@@ -62,8 +49,8 @@ const Solutions = () => {
   return (
     <section className="mb-5 pb-lg-5 pb-md-4 pb-3">
       <Container>
-        <h2 className="h1 pb-4 pb-lg-5">How our <span className="text-gradient-primary">Digital Marketing</span> Agency Help you Grow.</h2>
-        <Row xs={1} md={3} className="g-4 pt-2 pt-md-4 pb-lg-2">
+        <h2 className="h1 pb-4 pb-lg-5">How our <span className="text-gradient-primary">Perth Brand</span> Agency Drives Growth.</h2>
+        <Row xs={1} md={4} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {solutionsData.map(item => (
               <Col key={item.id}>
                 <Card className="card-hover h-100 mx-2">
