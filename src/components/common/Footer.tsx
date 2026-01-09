@@ -24,6 +24,7 @@ type AIModel = {
     icon: string | React.ReactNode;
     bgColor: string;
     gradient?: boolean;
+    link: string;
 };
 
 type Resource = {
@@ -91,24 +92,28 @@ const aiModels: AIModel[] = [
         ),
         bgColor: 'primary',
         gradient: true,
+        link: '/brand'
     },
     {
         title: 'Build',
         description: 'Transforms voice speech into text',
         icon: 'bx:message-dots',
         bgColor: 'warning',
+        link: '/build'
     },
     {
         title: 'Grow',
         description: 'Converts different types of files',
         icon: 'bx:file-find',
         bgColor: 'success',
+        link: '/grow'
     },
     {
         title: 'Scale',
         description: 'Autocompletion and generation',
         icon: 'bx:terminal',
         bgColor: 'info',
+        link: '/scale'
     }
 ];
 const integrations: Resource[] = [
@@ -202,7 +207,7 @@ const Footer = () => {
                                     )}
                                 </div>
                                 <div className="nav flex-column ps-3">
-                                    <Link href="#" className="nav-link fw-bold stretched-link p-0">
+                                    <Link href={model.link} className="nav-link fw-bold stretched-link p-0">
                                         {model.title}
                                     </Link>
                                     <div className="fs-xs">{model.description}</div>
