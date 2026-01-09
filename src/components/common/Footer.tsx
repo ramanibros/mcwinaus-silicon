@@ -31,6 +31,7 @@ type Resource = {
     title: string;
     description: string;
     icon: string;
+    link: string;
 };
 
 type Copyright = {
@@ -121,21 +122,25 @@ const integrations: Resource[] = [
         title: 'LinkedIn',
         description: 'Facebook, Instagram, Twitter...',
         icon: 'bxl:linkedin',
+        link: 'https://www.linkedin.com/company/mcwin-itech/'
     },
     {
         title: 'Youtube',
         description: 'Shopify, WordPress, Magento...',
         icon: 'bxl:youtube',
+        link: 'https://www.youtube.com/channel/UCnhwLr_0AnNkEJBDFcZeDHw'
     },
     {
         title: 'Facebook',
         description: 'Trello, Notion, Asana, Teams...',
         icon: 'bxl:facebook',
+        link: 'https://www.facebook.com/mcwinitech.aus/'
     },
     {
         title: 'Instagram',
         description: 'Gmail, MailChimp, Telegram...',
         icon: 'bxl:instagram',
+        link: 'https://www.instagram.com/mcwinitech.aus/'
     }
 ];
 const resources: Resource[] = [
@@ -143,16 +148,19 @@ const resources: Resource[] = [
         title: 'Whatsapp',
         description: '0466 953 095',
         icon: 'bxl:whatsapp',
+        link: '#'
     },
     {
         title: 'Phone',
         description: '0422 698 645',
         icon: 'bx:phone-call',
+        link: '#'
     },
     {
         title: 'Email',
         description: 'hello@mcwinitech.com.au',
         icon: 'bx:envelope',
+        link: '#'
     }
 ];
 const copyright: Copyright = {
@@ -224,7 +232,7 @@ const Footer = () => {
                                     <IconifyIcon icon={integration.icon} className="text-primary fs-4 lh-1"/>
                                 </div>
                                 <div className="nav flex-column ps-3">
-                                    <a href="#" className="nav-link fw-bold stretched-link p-0">
+                                    <a href={integration.link} target="_blank" className="nav-link fw-bold stretched-link p-0">
                                         {integration.title}
                                     </a>
                                     <div className="fs-xs">{integration.description}</div>
