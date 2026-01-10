@@ -14,28 +14,28 @@ type Benefit = {
 const benefitsData: Benefit[] = [
     {
         id: 1,
-        title: '3x Brand Authority',
+        title: '67% Higher Conversions',
         description:
-            'Instant industry leadership through a cohesive visual identity and strategic brand positioning that builds trust and credibility.',
+            'Proven design patterns and A/B testing create high-performing sales pages that resonate with Perth customers and drive measurable results.',
     },
     {
         id: 2,
-        title: '67% Higher Conversions',
+        title: '3x Faster Project Delivery',
         description:
-            'Performance-driven designs proven to outperform competitors and turn visitors into measurable sales growth.',
+            'A local Perth team means no timezone delays—your project goes live faster, so you start generating revenue sooner.',
     },
     {
         id: 3,
-        title: 'Projects 2x Faster',
+        title: 'Future-Proof Investment',
         description:
-            'Award-winning delivery that goes live sooner—without compromising quality or long-term performance.',
+            'Scalable architecture built to grow from 1K to 100K monthly visitors without costly rebuilds or performance issues.',
     },
     {
         id: 4,
         title: '24/7 Perth Support',
         description:
-            'A dedicated local Perth team available anytime, offering a genuine partnership from strategy through launch.',
-    },
+            'Direct access to your dedicated team—not a call centre. Support is always available when Australian businesses need it most.',
+    }
 ];
 
 const Benefits = () => {

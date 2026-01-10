@@ -50,7 +50,7 @@ const Solutions = () => {
     <section className="mb-5 pb-lg-5 pb-md-4 pb-3">
       <Container>
         <h2 className="h1 pb-4 pb-lg-5">How our <span className="text-gradient-primary">Perth Brand</span> Agency Drives Growth.</h2>
-        <Row xs={1} md={4} className="g-4 pt-2 pt-md-4 pb-lg-2">
+        <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {solutionsData.map(item => (
               <Col key={item.id}>
                 <Card className="card-hover h-100 mx-2">

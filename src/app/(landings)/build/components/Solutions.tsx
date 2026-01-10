@@ -20,41 +20,30 @@ const solutionsData: Solution[] = [
   {
     id: 1,
     icon: icon1,
-    title: 'Software Development',
+    title: 'Websites',
     description:
-      'Commodo senectus massa est urna mi. Mattis dis arcu aenean libero viverra gravida.',
+        'Award-winning Perth websites that convert 67% better. Mobile-first design, local SEO built-in, and lightning-fast performance—driving 3x more leads without wasted ad spend.',
   },
   {
     id: 2,
     icon: icon2,
-    title: 'App Development',
-    description: 'Enim vehicula integer mattis morbi risus. Hendrerit pharetra arcu quam viverra.',
+    title: 'eCommerce',
+    description:
+        'High-converting online stores delivering 3x sales growth. Australia Post integration, abandoned cart recovery, and secure payments—no useless plugins, just long-term results.',
   },
   {
     id: 3,
     icon: icon3,
-    title: 'Support & Maintenance',
+    title: 'Mobile Apps',
     description:
-      'Turpis ultrices lacinia ut placerat dignissim morbi. Amet lectus sed tortor in elit adipiscing magnis.',
+        'iOS and Android apps that double customer retention. Perth-focused push notifications, offline access, and performance so strong competitors try to copy it.',
   },
   {
     id: 4,
     icon: icon4,
-    title: 'Software QA & Testing',
-    description: 'Amet felis viverra proin feugiat. Eget metus metus lorem dolor pellentesque.',
-  },
-  {
-    id: 5,
-    icon: icon1,
-    title: 'Software Development',
+    title: 'Custom Software',
     description:
-        'Commodo senectus massa est urna mi. Mattis dis arcu aenean libero viverra gravida.',
-  },
-  {
-    id: 6,
-    icon: icon2,
-    title: 'App Development',
-    description: 'Enim vehicula integer mattis morbi risus. Hendrerit pharetra arcu quam viverra.',
+        'Bespoke software cutting admin time by 50%. Custom inventory, CRM, and workflow systems built for Perth businesses—solving real operational challenges permanently.',
   }
 ];
 
@@ -62,8 +51,8 @@ const Solutions = () => {
   return (
     <section className="mb-5 pb-lg-5 pb-md-4 pb-3">
       <Container>
-        <h2 className="h1 pb-3 pb-md-0 mb-md-5">How our <span className="text-gradient-primary">Developing</span> Help you to build.</h2>
-        <Row xs={1} md={3} className="g-4 pt-2 pt-md-4 pb-lg-2">
+        <h2 className="h1 pb-3 pb-md-0 mb-md-5">How <span className="text-gradient-primary">McWIN iTECH</span> Powers Your Growth</h2>
+        <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {solutionsData.map(item => (
               <Col key={item.id}>
                 <Card className="card-hover h-100 mx-2">

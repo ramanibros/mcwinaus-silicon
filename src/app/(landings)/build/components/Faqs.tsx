@@ -21,119 +21,72 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Is any of my personal information stored in the App?',
+    question: 'Do you build mobile-first websites?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
+            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
+          </p>
+        </>
     ),
   },
   {
-    question: 'What formats can I download my transaction history in?',
+    question: 'Can you connect my software to existing tools?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
+            business tools—eliminating data silos and manual work for Perth businesses.
+          </p>
+        </>
     ),
   },
   {
-    question: 'Can I schedule future transfers?',
+    question: 'What makes your websites rank faster on Google?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
+            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
+            there.
+          </p>
+        </>
     ),
   },
   {
-    question: 'When can I use Banking App services?',
+    question: 'Can you rebuild my existing website?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
+            The result is a faster, more modern website with significantly better conversion rates.
+          </p>
+        </>
     ),
   },
   {
-    question: 'Can I create my own password that is easy for me to remember?',
+    question: 'How secure are your custom apps?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Security is enterprise-grade. We follow best practices, run regular penetration testing,
+            and implement robust data protection—trusted by Perth businesses across industries.
+          </p>
+        </>
     ),
   },
   {
-    question: 'What happens if I forget or lose my password?',
+    question: 'What happens after the software launch?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p className="mb-0">
+            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
+            and long-term support ensure your software continues delivering results.
+          </p>
+        </>
     ),
-  },
+  }
 ];
 
 const Faqs = () => {
@@ -158,7 +111,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bxl:whatsapp" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link stretched-link px-0">
+                  <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
                     Whatsapp us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
@@ -172,7 +125,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bx:envelope" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link text-success stretched-link px-0">
+                  <Link href="mailto:hello@mcwinitech.com.au" className="btn btn-link text-success stretched-link px-0">
                    Mail Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>

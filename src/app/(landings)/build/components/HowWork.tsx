@@ -7,8 +7,8 @@ const Work = () => {
       <div className="text-center pb-4 pb-md-0 mb-2 mb-md-5 mx-auto" style={{ maxWidth: '530px' }}>
         <h2 className="h1">How Does It   <span className="text-gradient-primary">Work?</span></h2>
         <p className="mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit volutpat mollis egestas nam luctus
-          facilisis ultrices
+          Clear 4-step process delivering guaranteed results for Perth businesses—no surprises, just success.
+
         </p>
       </div>
 
@@ -18,8 +18,9 @@ const Work = () => {
             <div className="step-number-inner">1</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Registration </h3>
-            <p className="mb-0">Massa enim libero dictumst consectetur in convallis lobortis</p>
+            <h3 className="h4 mb-3">Strategy Session </h3>
+            <p className="mb-0">A quick discovery call maps your goals, Perth market gaps, and budget. Custom roadmap ready in 48 hours.
+            </p>
           </div>
         </div>
         <div className="step">
@@ -27,8 +28,9 @@ const Work = () => {
             <div className="step-number-inner">2</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Identity verification</h3>
-            <p className="mb-0">At ultricies id non quisque integer eget velit. Facilisis enim</p>
+            <h3 className="h4 mb-3">Design Approval</h3>
+            <p className="mb-0">Interactive prototypes you approve before code. Visualise success—zero guesswork.
+            </p>
           </div>
         </div>
         <div className="step">
@@ -36,8 +38,8 @@ const Work = () => {
             <div className="step-number-inner">3</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Start trading</h3>
-            <p className="mb-0">Pellentesque rhoncus viverra vestibulum, purus purus</p>
+            <h3 className="h4 mb-3">Lightning Build</h3>
+            <p className="mb-0">2x faster delivery with daily updates. Mobile-first, SEO-ready, conversion-optimised.</p>
           </div>
         </div>
         <div className="step">
@@ -45,8 +47,8 @@ const Work = () => {
             <div className="step-number-inner">4</div>
           </div>
           <div className="step-body">
-            <h3 className="h4 mb-3">Earn with Silicon</h3>
-            <p className="mb-0">Massa enim libero dictumst consectetur in convallis lobortis</p>
+            <h3 className="h4 mb-3">Launch & Scale</h3>
+            <p className="mb-0">Go live with confidence. 24/7 Perth support and performance guarantees are included.</p>
           </div>
         </div>
       </div>
