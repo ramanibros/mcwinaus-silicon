@@ -28,6 +28,7 @@ type DropdownLink = {
 type DropdownSection = {
     title: string;
     icon: StaticImageData;
+    url: string
     links: DropdownLink[];
 };
 
@@ -80,11 +81,14 @@ const Navbar = ({
             {
                 title: 'Brand',
                 icon: brandIcon,
+                url: '/brand',
                 links: [
-                    {label: 'Branding', href: '/brand'},
-                    {label: 'Web Design', href: '/brand'},
-                    {label: 'UI/UX Design', href: '/brand'},
-                    {label: 'Mobile App Design', href: '/brand'},
+                    {label: 'Brand Strategy & Positioning', href: '#'},
+                    {label: 'Visual Identity & Logo Design', href: '#'},
+                    {label: 'Website & UI/UX Design (Brand-Led)', href: '#'},
+                    {label: 'Mobile App UI/UX & Product Branding', href: '#'},
+                    {label: 'Brand Collateral & Marketing Creatives', href: '#'},
+                    {label: 'Brand Implementation', href: '#'},
                 ],
             },
         ],
@@ -92,11 +96,12 @@ const Navbar = ({
             {
                 title: 'Build',
                 icon: buildIcon,
+                url: '/build',
                 links: [
-                    {label: 'Websites', href: '/build'},
-                    {label: 'eCommerce', href: '/build'},
-                    {label: 'Mobile Apps', href: '/build'},
-                    {label: 'Custom Software', href: '/build'},
+                    {label: 'Websites', href: '#'},
+                    {label: 'eCommerce', href: '#'},
+                    {label: 'Mobile Apps', href: '#'},
+                    {label: 'Custom Software', href: '#'},
                 ],
             },
         ],
@@ -104,11 +109,12 @@ const Navbar = ({
             {
                 title: 'Grow',
                 icon: growIcon,
+                url: '/grow',
                 links: [
-                    {label: 'Social Media Marketing', href: '/grow'},
-                    {label: 'Search Engine Optimisation', href: '/grow'},
-                    {label: 'Search Engine Marketing', href: '/grow'},
-                    {label: 'Pay-Per-Click', href: '/grow'},
+                    {label: 'Search Engine Optimisation (SEO)', href: '#'},
+                    {label: 'Social Media Marketing (SMM)', href: '#'},
+                    {label: 'Search Engine Marketing (SEM)', href: '#'},
+                    {label: 'Pay-Per-Click (PPC)', href: '#'},
                 ],
             },
         ],
@@ -116,27 +122,19 @@ const Navbar = ({
             {
                 title: 'Scale',
                 icon: scaleIcon,
+                url: '/scale',
                 links: [
-                    {label: 'Growth Accelerator', href: '/scale'},
-                    {label: 'Business Scaling Solutions', href: '/scale'},
-                    {label: 'Revenue Growth Engine', href: '/scale'},
-                    {label: 'Market Expansion Services', href: '/scale'},
+                    {label: 'Integrations', href: '#'},
+                    {label: 'Optimisation', href: '#'},
+                    {label: '24/7 Support', href: '#'},
+                    {label: 'Advanced Scale Services', href: '#'},
                 ],
             },
         ],
     ];
 
-    const accountMenu: AccountLink[] = [
-        {label: 'Brand', href: '/brand'},
-        {label: 'Build', href: '/build'},
-        {label: 'Grow', href: '/grow'},
-        {label: 'Scale', href: '/scale'},
-    ];
 
     const allPagesLinks = pagesMenu.flat().flatMap(section => section.links);
-    const allAccountLinks = accountMenu;
-
-
     const isPagesActive = isParentActive(allPagesLinks, pathname);
 
     return (
@@ -188,16 +186,23 @@ const Navbar = ({
                                                 <div key={colIndex} className="mega-dropdown-column">
                                                     {column.map((section, secIndex) => (
                                                         <div key={secIndex}>
-                                                            <div className="d-flex align-items-center" style={{paddingLeft: "10px" }}>
+                                                            <div className="d-flex align-items-center"
+                                                                 style={{paddingLeft: "12px"}}>
                                                                 <Image
-                                                                    style={{ paddingRight: "5px", maxWidth: "100px", marginTop: "-2px" }}
+                                                                    style={{
+                                                                        paddingRight: "5px",
+                                                                        maxWidth: "100px",
+                                                                        marginTop: "-2px"
+                                                                    }}
                                                                     src={section.icon}
                                                                     alt={section.title}
                                                                     width={35}
                                                                     height={35}
                                                                     priority
                                                                 />
-                                                                <h4 className="mb-2">{section.title}</h4>
+                                                                <Link href={section.url} style={{ textDecoration: 'none' }}>
+                                                                    <h4 className="mb-2">{section.title}</h4>
+                                                                </Link>
                                                             </div>
                                                             {/*<div className="hr-indicator mb-2" style={{paddingLeft: "55px" }}/>*/}
                                                             <ul className="list-unstyled mb-3">
