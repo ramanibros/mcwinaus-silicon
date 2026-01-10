@@ -595,7 +595,8 @@ $navbar-dark-brand-color: $white !default;
 $navbar-dark-brand-hover-color: $white !default;
 
 // Mega dropdown
-$mega-dropdown-column-width: 14rem !default;
+/*$mega-dropdown-column-width: 14rem !default;*/
+$mega-dropdown-column-width: auto !default;
 
 // Dropdowns
 

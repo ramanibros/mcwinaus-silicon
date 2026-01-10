@@ -80,10 +80,12 @@ const Navbar = ({
                 title: 'Brand',
                 icon: brandIcon,
                 links: [
-                    {label: 'Branding', href: '/brand'},
-                    {label: 'Web Design', href: '/brand'},
-                    {label: 'UI/UX Design', href: '/brand'},
-                    {label: 'Mobile App Design', href: '/brand'},
+                    {label: 'Brand Strategy & Positioning', href: '/brand'},
+                    {label: 'Visual Identity & Logo Design', href: '/brand'},
+                    {label: 'Website & UI/UX Design (Brand-Led)', href: '/brand'},
+                    {label: 'Mobile App UI/UX & Product Branding', href: '/brand'},
+                    {label: 'Brand Collateral & Marketing Creatives', href: '/brand'},
+                    {label: 'Brand Implementation', href: '/brand'},
                 ],
             },
         ],
@@ -104,10 +106,10 @@ const Navbar = ({
                 title: 'Grow',
                 icon: growIcon,
                 links: [
-                    {label: 'Social Media Marketing', href: '/grow'},
-                    {label: 'Search Engine Optimisation', href: '/grow'},
-                    {label: 'Search Engine Marketing', href: '/grow'},
-                    {label: 'Pay-Per-Click', href: '/grow'},
+                    {label: 'Search Engine Optimisation (SEO)', href: '/grow'},
+                    {label: 'Social Media Marketing (SMM)', href: '/grow'},
+                    {label: 'Search Engine Marketing (SEM)', href: '/grow'},
+                    {label: 'Pay-Per-Click (PPC)', href: '/grow'},
                 ],
             },
         ],
@@ -116,26 +118,17 @@ const Navbar = ({
                 title: 'Scale',
                 icon: scaleIcon,
                 links: [
-                    {label: 'Growth Accelerator', href: '/scale'},
-                    {label: 'Business Scaling Solutions', href: '/scale'},
-                    {label: 'Revenue Growth Engine', href: '/scale'},
-                    {label: 'Market Expansion Services', href: '/scale'},
+                    {label: 'Integrations', href: '/scale'},
+                    {label: 'Optimisation', href: '/scale'},
+                    {label: '24/7 Support', href: '/scale'},
+                    {label: 'Advanced Scale Services', href: '/scale'},
                 ],
             },
         ],
     ];
 
-    const accountMenu: AccountLink[] = [
-        {label: 'Brand', href: '/brand'},
-        {label: 'Build', href: '/build'},
-        {label: 'Grow', href: '/grow'},
-        {label: 'Scale', href: '/scale'},
-    ];
 
     const allPagesLinks = pagesMenu.flat().flatMap(section => section.links);
-    const allAccountLinks = accountMenu;
-
-
     const isPagesActive = isParentActive(allPagesLinks, pathname);
 
     return (
