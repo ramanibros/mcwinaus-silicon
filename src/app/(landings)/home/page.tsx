@@ -16,6 +16,7 @@ import Faqs from "@/app/(landings)/home/components/Faqs";
 import Integrations from "@/app/(landings)/home/components/Integrations";
 import Pricing from "@/components/common/Pricing";
 import Footer from "@/components/common/Footer";
+import Portfolio from "@/app/(landings)/home/components/Portfolio";
 
 export const metadata: Metadata = {title: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services'};
 
@@ -39,6 +40,7 @@ const Page = () => {
             <Brands/>
             <Testimonials/>
             <Industry/>
+            <Portfolio/>
             <Faqs/>
             <Pricing/>
             <Footer/>
