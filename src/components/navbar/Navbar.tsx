@@ -162,7 +162,7 @@ const Navbar = ({
                     <OffcanvasBody className="offcanvas-body">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className={`nav-item dropdown ${pathname === '/home' ? 'active' : ""}`}>
-                                <Link href="/about" className="nav-link">Home</Link>
+                                <Link href="/" className="nav-link">Home</Link>
                             </li>
                             <li className={`nav-item dropdown ${isPagesActive ? 'active' : ''}`}>
                                 <button
