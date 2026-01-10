@@ -21,119 +21,74 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Is any of my personal information stored in the App?',
+    question: 'Can you fix websites not converting from traffic?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Yes. We audit user behaviour, rebuild landing pages, optimise messaging, and improve page
+            speed and CTAs. Our conversion-focused approach has boosted conversion rates by up to 67%
+            for Perth businesses.
+          </p>
+        </>
     ),
   },
   {
-    question: 'What formats can I download my transaction history in?',
+    question: "What's included in your SEO packages?",
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Our SEO packages include local Perth keyword research, Google Business Profile optimisation,
+            on-page SEO, content strategy, technical fixes, and high-quality backlink building for
+            long-term ranking growth.
+          </p>
+        </>
     ),
   },
   {
-    question: 'Can I schedule future transfers?',
+    question: 'Do you manage full Google Ads campaigns?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Absolutely. We handle everything—keyword research, ad copywriting, landing page optimisation,
+            conversion tracking, and continuous performance optimisation to maximise ROI.
+          </p>
+        </>
     ),
   },
   {
-    question: 'When can I use Banking App services?',
+    question: 'How do you target Perth customers specifically?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            We use geo-fencing, Perth-specific and WA-based keywords, location targeting, and
+            suburb-level audience segmentation to ensure your ads reach only local, high-intent
+            customers—no wasted spend.
+          </p>
+        </>
     ),
   },
   {
-    question: 'Can I create my own password that is easy for me to remember?',
+    question: 'Can you handle all social platforms?',
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            Yes. We manage Facebook, Instagram, LinkedIn, and TikTok with platform-specific strategies,
+            creative formats, and audience targeting designed to maximise engagement and conversions.
+          </p>
+        </>
     ),
   },
   {
-    question: 'What happens if I forget or lose my password?',
+    question: "What's your minimum ad spend requirement?",
     answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
+        <>
+          <p>
+            There’s no minimum ad spend. Whether your budget is small or large, we optimise every dollar
+            to deliver measurable growth for Perth businesses.
+          </p>
+        </>
     ),
-  },
+  }
 ];
 
 const Faqs = () => {
@@ -158,7 +113,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bxl:whatsapp" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link stretched-link px-0">
+                  <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
                     Whatsapp us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
@@ -172,7 +127,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bx:envelope" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link text-success stretched-link px-0">
+                  <Link href="mailto:hello@mcwinitech.com.au" className="btn btn-link text-success stretched-link px-0">
                    Mail Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>

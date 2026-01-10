@@ -19,35 +19,34 @@ type Industry = {
 const industriesData: Industry[] = [
   {
     id: 1,
-    title: 'Finance and insurance',
+    title: 'Healthcare',
     description:
-      'Risus massa fames metus lectus diam maecenas dui. Nibh morbi id purus eget tellus diam, integer blandit. Ac condimentum a nisl sagittis, interdum. Et viverra maecenas quis cras sed gravida volutpat, cursus enim.',
+        'Patient bookings tripled through local SEO and targeted Facebook ads reaching Perth families actively seeking care.',
     image: industry1,
   },
   {
     id: 2,
-    title: 'Startup and technology',
+    title: 'Trades',
     description:
-      'Interdum amet lobortis viverra et sapien aliquam nunc amet. Bibendum eu pellentesque sit risus leo commodo. Nibh dictum tellus lectus in risus eget cursus vitae nisi lacinia aliquam utuismod cras pellentesque.',
+        '40% more jobs generated using Google Ads and Instagram campaigns showcasing real Perth projects to local homeowners.',
     image: industry2,
   },
   {
     id: 3,
-    title: 'E-commerce',
+    title: 'eCommerce',
     description:
-      'Egestas nunc eleifend lacinia suspendisse bibendum ultrices risus. Facilisis neque eleifend diam orci id. Iaculis dignissim sed malesuada porttitor ac iaculis nullam donec sed volutpat quis vulputate sollicitudin tincidunt.',
+        '3x sales growth achieved by combining SEO-optimised product pages with retargeting ads to recover abandoned carts.',
     image: industry3,
-  },
+  }
 ];
 
 const Industries = () => {
   return (
     <section className="mb-5 pb-lg-5 pb-md-4 pb-3">
       <Container>
-        <h2 className="h1 mb-4 text-center d-lg-none">Industries We Serve</h2>
         <Row className="gy-md-5 gy-4 mb-xl-3">
           <Col xl={4} lg={5} className="d-flex flex-column order-2 order-lg-1">
-            <h2 className="h1 mb-4 pb-3 pt-2 d-none d-lg-block">Industries We Serve</h2>
+            <h2 className="h1 mb-4 pb-3 pt-2 d-none d-lg-block">Industries We <span className="text-gradient-primary">Grow</span></h2>
 
             <Swiper
               modules={[Navigation]}
@@ -102,7 +101,7 @@ const Industries = () => {
             >
               {industriesData.map(industry => (
                 <SwiperSlide key={industry.id}>
-                  <Image src={industry.image} alt={industry.title} className="rounded-3" />
+                  <Image src={industry.image} alt={industry.title} className="rounded-3" style={{ width: '800px', height: '300px' }} />
                 </SwiperSlide>
               ))}
             </Swiper>

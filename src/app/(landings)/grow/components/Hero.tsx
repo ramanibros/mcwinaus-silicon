@@ -16,8 +16,8 @@ const Hero = () => {
         <Row className="gy-5">
           <Col xl={5} lg={6}>
             <div className="position-relative zindex-5 text-lg-start text-center">
-              <h1 className="display-2 mb-4 pb-lg-3 pb-md-2">
-                Top <span className="text-primary">software</span> engineering company
+              <h1 className="display-2 mb-4 pb-lg-3 pb-md-2" style={{ fontSize: '65px' }}>
+                Perth's Leading <span className="text-primary">Growth</span> Partner
               </h1>
               <p className="mb-4 pb-lg-3 pb-md-2 d-flex align-items-center justify-content-center justify-content-lg-start">
                 <span className="me-2 text-light">We are the Top Rated agency on</span>
