@@ -183,9 +183,9 @@ const Navbar = ({
                                                 <div key={colIndex} className="mega-dropdown-column">
                                                     {column.map((section, secIndex) => (
                                                         <div key={secIndex}>
-                                                            <div className="d-flex align-items-center">
+                                                            <div className="d-flex align-items-center" style={{paddingLeft: "12px" }}>
                                                                 <Image
-                                                                    style={{ paddingRight: "8px", maxWidth: "100px", marginTop: "-2px" }}
+                                                                    style={{ paddingRight: "5px", maxWidth: "100px", marginTop: "-2px" }}
                                                                     src={section.icon}
                                                                     alt={section.title}
                                                                     width={35}
@@ -194,6 +194,7 @@ const Navbar = ({
                                                                 />
                                                                 <h4 className="mb-2">{section.title}</h4>
                                                             </div>
+                                                            {/*<div className="hr-indicator mb-2" style={{paddingLeft: "55px" }}/>*/}
                                                             <ul className="list-unstyled mb-3">
                                                                 {section.links.map((link, linkIndex) => (
                                                                     <li key={linkIndex}>
