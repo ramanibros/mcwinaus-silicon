@@ -17,7 +17,7 @@ const services: Service[] = [
   {
     title: 'Certified Digital Experts',
     description:
-      '20+ Perth IT professionals with 5+ years delivering 3x faster project turnaround than competitors.',
+      '30+ IT professionals with 5+ years delivering 3x faster project turnaround than competitors.',
     icon: cms,
   },
   {
@@ -31,13 +31,7 @@ const services: Service[] = [
     description:
       'React, MySQL, Java, Oracle, AWS—scalable solutions that grow with your business for the long haul.',
     icon: mobileApp,
-  }/*,
-  {
-    title: 'What Makes Us Different',
-    description:
-        'Local Perth team who understand WA market dynamics. Your growth partner delivering guaranteed results, not empty promises.\n',
-    icon: mobileApp,
-  }*/
+  }
 ];
 
 const Choose = () => {

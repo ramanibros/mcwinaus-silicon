@@ -10,7 +10,7 @@ const About = () => {
             <Row className="pt-xl-3">
                 <Col md={5} className="text-center text-md-start pb-5">
                     <h1 className="mb-4"><span className="text-gradient-primary">Digital Solutions</span> That Deliver
-                        Real Perth Growth</h1>
+                        Real Business Growth</h1>
                     <p className="fs-lg pb-lg-3 mb-4">
                         McWIN iTECH—your <b>growth partner, not just another agency.</b> We build high-performing
                         websites, SEO strategies, mobile apps, and custom software that turn Perth businesses into

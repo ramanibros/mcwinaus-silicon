@@ -20,27 +20,27 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: '40+',
-    description: 'Experts. Infinite possibilities. One integrated team.',
-    link: '/services-single-v1',
+    title: '30+',
+    description: 'IT Professionals. Infinite possibilities. One integrated team.',
+    link: '#',
     icon: cms,
   },
   {
     title: '350+',
     description: 'Websites built for growth, not just presence.',
-    link: '/services-single-v1',
+    link: '#',
     icon: rocket,
   },
   {
-    title: '15+',
+    title: '10+',
     description: 'Years of trusted experience in creative, marketing, and tech.',
-    link: '/services-single-v1',
+    link: '#',
     icon: mobileApp,
   },
   {
-    title: '400+',
-    description: 'Success stories and more in the making.',
-    link: '/services-single-v1',
+    title: '30+',
+    description: 'Proven expertise in modern technologies and languages',
+    link: '#',
     icon: mobileApp,
   },
 ];

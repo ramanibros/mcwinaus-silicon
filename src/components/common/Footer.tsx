@@ -120,25 +120,25 @@ const aiModels: AIModel[] = [
 const integrations: Resource[] = [
     {
         title: 'LinkedIn',
-        description: 'Facebook, Instagram, Twitter...',
+        description: 'Tech Expertise',
         icon: 'bxl:linkedin',
         link: 'https://www.linkedin.com/company/mcwin-itech/'
     },
     {
         title: 'Youtube',
-        description: 'Shopify, WordPress, Magento...',
+        description: 'Tech Insights',
         icon: 'bxl:youtube',
         link: 'https://www.youtube.com/channel/UCnhwLr_0AnNkEJBDFcZeDHw'
     },
     {
         title: 'Facebook',
-        description: 'Trello, Notion, Asana, Teams...',
+        description: 'Tech Solutions',
         icon: 'bxl:facebook',
         link: 'https://www.facebook.com/mcwinitech.aus/'
     },
     {
         title: 'Instagram',
-        description: 'Gmail, MailChimp, Telegram...',
+        description: 'Tech Vibes',
         icon: 'bxl:instagram',
         link: 'https://www.instagram.com/mcwinitech.aus/'
     }

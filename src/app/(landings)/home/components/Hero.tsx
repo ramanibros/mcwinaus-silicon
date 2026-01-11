@@ -34,7 +34,7 @@ const Hero = () => {
                 Local expertise, proven tech, and custom strategies delivering <b>3x more sales</b> for Australian brands—without wasting ad spend.
               </p>
               <Link href="#" className="btn btn-lg btn-primary shadow-primary">
-                Start your project
+                Book Free Consultation
               </Link>
             </Col>
           </Row>
@@ -47,7 +47,7 @@ const Hero = () => {
             </li>
             <li className="d-flex align-items-center text-body mt-md-4 mt-sm-3 mt-2 ms-md-4 ms-3">
               <IconifyIcon icon="bx:check-circle" className="me-2 fs-5 text-primary" />
-              Trusted Perth Team
+              Trusted Experienced Team
             </li>
             <li className="d-flex align-items-center text-body mt-md-4 mt-sm-3 mt-2 ms-md-4 ms-3">
               <IconifyIcon icon="bx:check-circle" className="me-2 fs-5 text-primary" />
