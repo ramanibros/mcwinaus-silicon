@@ -58,19 +58,19 @@ const Hero = () => {
                         />
                         <Row className="row-cols-3 pt-4 pt-md-5 mt-2 mt-xl-4">
                             <Col>
-                                <h3 className="h2 mb-2">2,480</h3>
+                                <h3 className="h2 mb-2">30+</h3>
                                 <p className="mb-0">
-                                    <strong>Remote</strong> Sales Experts
+                                    <strong>IT</strong> Experts
                                 </p>
                             </Col>
                             <Col>
-                                <h3 className="h2 mb-2">760</h3>
+                                <h3 className="h2 mb-2">100+</h3>
                                 <p className="mb-0">
-                                    <strong>New Clients</strong> per Month
+                                    <strong>Clients</strong> per Month
                                 </p>
                             </Col>
                             <Col>
-                                <h3 className="h2 mb-2">1,200</h3>
+                                <h3 className="h2 mb-2">500+</h3>
                                 <p className="mb-0">
                                     <strong>Requests</strong> per Week
                                 </p>
