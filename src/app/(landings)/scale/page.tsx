@@ -10,6 +10,7 @@ import Faqs from "@/app/(landings)/scale/components/Faqs";
 import Benefits from "@/app/(landings)/scale/components/Benefits";
 import Features from "@/app/(landings)/scale/components/Features";
 import Portfolio from "@/app/(landings)/scale/components/Portfolio";
+import Package from "@/app/(landings)/scale/components/package";
 
 export const metadata: Metadata = {title: 'Scale | McWIN iTECH'};
 
@@ -28,6 +29,7 @@ const Page = () => {
             <Features/>
             <Faqs/>
             <Benefits/>
+            <Package/>
             <Pricing/>
             <Footer/>
         </>

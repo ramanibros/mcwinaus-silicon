@@ -10,6 +10,7 @@ import HowWork from "@/app/(landings)/grow/components/HowWork";
 import Faqs from "@/app/(landings)/grow/components/Faqs";
 import Navbar from "@/components/navbar/Navbar";
 import Portfolio from "@/app/(landings)/grow/components/Portfolio";
+import Package from "@/app/(landings)/grow/components/package";
 
 export const metadata: Metadata = {title: 'Grow | McWIN iTECH'};
 
@@ -28,6 +29,7 @@ const Page = () => {
             <HowWork/>
             <Faqs/>
             <Benefits/>
+            <Package/>
             <Pricing/>
             <Footer/>
         </>

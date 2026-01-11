@@ -10,6 +10,7 @@ import HowWork from "@/app/(landings)/brand/components/HowWork";
 import Solutions from "@/app/(landings)/brand/components/Solutions";
 import Benefits from "@/app/(landings)/brand/components/Benefits";
 import Portfolio from "@/app/(landings)/brand/components/Portfolio";
+import Package from "@/app/(landings)/brand/components/package";
 
 export const metadata: Metadata = {title: 'Brand | McWIN iTECH'};
 
@@ -27,6 +28,7 @@ const Page = () => {
             <HowWork/>
             <Faqs/>
             <Benefits/>
+            <Package/>
             <Pricing/>
             <Footer/>
         </>
