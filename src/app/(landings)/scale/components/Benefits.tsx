@@ -12,31 +12,31 @@ type Benefit = {
 };
 
 const benefitsData: Benefit[] = [
-  {
-    id: 1,
-    title: 'Prototype in 24 hrs',
-    description:
-      'Commodo senectus massa est urna mi. Mattis dis arcu aenean libero viverra gravida id. Imperdiet elit integer elit.',
-  },
-  {
-    id: 2,
-    title: 'MVP within two weeks',
-    description:
-      'Purus netus eget facilisis morbi pellentesque. Fermentum mi sit a mi ebentot pellentesque.',
-  },
-  {
-    id: 3,
-    title: 'Kickstart development',
-    description:
-      'Purus netus eget facilisis morbi pellentesque. Fermentum mi sit a mi ebentot pellentesque.',
-  },
-  {
-    id: 4,
-    title: '24/7 Tech support',
-    description:
-      'Commodo senectus massa est urna mi. Mattis dis arcu aenean libero viverra gravida id. Imperdiet elit integer elit.',
-  },
-];
+        {
+            id: 1,
+            title: '67% Faster Platforms',
+            description:
+                'Core Web Vitals optimisation that delivers lightning-fast performance and up to 3× higher conversions.',
+        },
+        {
+            id: 2,
+            title: '50% Admin Reduction',
+            description:
+                'Seamless CRM, payment, and accounting integrations that eliminate manual data entry.',
+        },
+        {
+            id: 3,
+            title: '99.9% Uptime Guaranteed',
+            description:
+                '24/7 Perth-based monitoring ensures your platform stays online and never misses a sale.',
+        },
+        {
+            id: 4,
+            title: '10× Scale Ready',
+            description:
+                'Future-proof architecture built to handle massive growth without costly rebuilds.',
+        },
+    ];
 
 const Benefits = () => {
   return (

@@ -27,10 +27,10 @@ const Hero = () => {
           <Row className="justify-content-center text-center pt-4 pb-sm-2 py-lg-5">
             <Col xl={8} lg={9} md={19} className="py-5">
               <h1 className="display-4 text-light pt-sm-2 pb-1 pb-sm-3 mb-3">
-                <span className="text-gradient-primary">Scaling</span> businesses with confidence.
+                Perth's Leading <span className="text-gradient-primary">Scale</span> Partner
               </h1>
               <p className="fs-lg text-light opacity-70 pb-2 pb-sm-0 mb-4 mb-sm-5">
-                We combine strategy, technology, and execution to help organizations grow smoothly, sustainably, and without disruption.
+                Integrations, optimisation & 24/7 support delivering 3x growth capacity for Australian businesses—local team, proven systems, your success guaranteed.
               </p>
              {/* <Link href="#" className="btn btn-primary shadow-primary btn-lg">
                 Get early access

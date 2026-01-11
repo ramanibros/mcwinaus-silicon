@@ -10,39 +10,45 @@ type featureType = {
   id: number;
   icon: StaticImageData;
   title: string;
+  description: string
 };
 
-const features: featureType[] = [
+const features: featureType[] =[
   {
     id: 1,
     icon: features1,
-    title: 'Build a functional prototype in 24 hrs',
+    title: 'Perth scale specialists',
+    description: '25+ local experts delivering 3x faster scaling than offshore agencies with guaranteed results.',
   },
   {
     id: 2,
     icon: features2,
-    title: 'Create an MVP within two weeks',
+    title: 'No vendor lock-in',
+    description: 'Clean code, full documentation, and easy migration—your product always stays in your control.',
   },
   {
     id: 3,
     icon: features3,
-    title: 'Kickstart software development',
+    title: 'Future-proof architecture',
+    description: 'React, AWS, and API-first systems built to scale 10x without breaking for long-term ROI.',
   },
   {
     id: 4,
     icon: features4,
-    title: 'Get 24/7 tech & business support',
+    title: 'Perth-based growth partner',
+    description: 'A WA-focused team that understands local business growth—not just tech support.',
   },
-];
+]
+
 
 const Features = () => {
   return (
     <section className="py-5 my-2 my-md-4 my-lg-5">
       <Container>
-        <h2 className="h1 text-center pt-1 pt-xl-2 mb-4">Why Choose   <span className="text-gradient-primary">McWIN iTECH?</span></h2>
+        <h2 className="h1 text-center pt-1 pt-xl-2 mb-4">
+          Why Perth Businesses Choose  <span className="text-gradient-primary">McWIN iTECH to Scale</span></h2>
         <p className="fs-lg text-muted text-center pb-4 mb-2 mb-lg-3">
-          We personalize how we work to fit your project needs. Our approach helps augment
-          innovation.
+          Scale without limits with Perth's most trusted tech team. Local expertise, global results—systems engineered to increase conversions 3x and stay on top.
         </p>
 
         <Row xs={1} sm={2} lg={4} className="g-4 pb-xl-3">
@@ -55,6 +61,7 @@ const Features = () => {
                 <Image src={feature.icon} width={32} height={32} alt={feature.title} />
               </Card>
               <h3 className="h5 mb-2 mb-lg-0">{feature.title}</h3>
+              <p className="mb-0">{feature.description}</p>
             </Col>
           ))}
         </Row>

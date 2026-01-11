@@ -20,121 +20,74 @@ type FaqType = {
 };
 
 const faqs: FaqType[] = [
-  {
-    question: 'Is any of my personal information stored in the App?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'What formats can I download my transaction history in?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'Can I schedule future transfers?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'When can I use Banking App services?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'Can I create my own password that is easy for me to remember?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-  {
-    question: 'What happens if I forget or lose my password?',
-    answer: (
-      <>
-        <p>
-          Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu,
-          viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu
-          velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem
-          scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis
-          egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-        </p>
-        <p className="mb-0">
-          Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
-          posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
-          aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.
-        </p>
-      </>
-    ),
-  },
-];
+      {
+        question: 'Will integrations save my team time?',
+        answer: (
+            <>
+              <p className="mb-0">
+                Yes—up to a <strong>50% reduction in admin work</strong>. CRM, payment gateways, and Xero
+                integrations eliminate manual data entry and streamline your workflows permanently.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'How much faster will my website load?',
+        answer: (
+            <>
+              <p className="mb-0">
+                <strong>67% faster guaranteed.</strong> We optimise Core Web Vitals to improve performance,
+                user experience, and conversions—resulting in up to <strong>3× more sales</strong> from the
+                same traffic.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'How much does scaling cost?',
+        answer: (
+            <>
+              <p className="mb-0">
+                We offer <strong>cost-effective packages</strong> that scale with your business. No wasted
+                spend—just maximum ROI aligned with your growth stage.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'Can you connect my Shopify & Xero?',
+        answer: (
+            <>
+              <p className="mb-0">
+                <strong>Absolutely.</strong> Enjoy real-time inventory sync, automated invoicing, and
+                seamless payment reconciliation for flawless eCommerce operations.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'Do I get locked into your systems?',
+        answer: (
+            <>
+              <p className="mb-0">
+                <strong>Never.</strong> We deliver clean code, full documentation, and easy migration.
+                Your data and systems always remain under your control.
+              </p>
+            </>
+        ),
+      },
+      {
+        question: 'Do you train my team on new systems?',
+        answer: (
+            <>
+              <p className="mb-0">
+                Yes. We provide <strong>complete onboarding and documentation</strong> so your team can
+                confidently use every feature with zero learning curve.
+              </p>
+            </>
+        ),
+      },
+    ];
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');
@@ -158,7 +111,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bxl:whatsapp" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link stretched-link px-0">
+                  <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
                     Whatsapp us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
@@ -172,7 +125,7 @@ const Faqs = () => {
                     <IconifyIcon icon="bx:envelope" className="w-100" />
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
-                  <Link href="#" className="btn btn-link text-success stretched-link px-0">
+                  <Link href="mailto:hello@mcwinitech.com.au" className="btn btn-link text-success stretched-link px-0">
                    Mail Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>

@@ -27,52 +27,29 @@ const solutionsData: Solution[] =[
     id: 1,
     icon: icon1,
     title: 'Integrations',
-    points: [
-      { title: 'CRM Integration (HubSpot, Salesforce, Zoho)' },
-      { title: 'Payment Gateways (Stripe, PayPal, Afterpay)' },
-      { title: 'Accounting Sync (Xero, MYOB)' },
-      { title: 'E-commerce Platforms (Shopify, WooCommerce)' },
-    ],
-    description: ''
+    points: [],
+    description: 'CRM, payments, Xero, Shopify sync—50% admin slashed. Local Perth experts eliminate data chaos, automate workflows, and increase efficiency 3x without wasting ad spend on manual processes.'
   },
   {
     id: 2,
     icon: icon2,
     title: 'Optimisation',
-    points: [
-      { title: 'Website Speed Optimisation (67% faster load times)' },
-      { title: 'Conversion Rate Optimisation (A/B testing)' },
-      { title: 'Mobile Performance Tuning' },
-      { title: 'SEO Technical Audits' },
-      { title: 'Server & Hosting Optimisation' },
-    ],
-    description: ''
+    points: [],
+    description: '67% faster websites, Core Web Vitals domination—3x sales from the same traffic. Perth performance specialists guarantee conversion growth that stays on top of Google rankings.'
   },
   {
     id: 3,
     icon: icon3,
     title: '24/7 Support',
-    points: [
-      { title: 'Monthly Performance Reviews' },
-      { title: 'Security Monitoring & Updates' },
-      { title: 'Uptime Guarantee (99.9%)' },
-      { title: 'Feature Requests & Upgrades' },
-      { title: 'Training & Documentation' },
-    ],
-    description: ''
+    points: [],
+    description: 'Under 30-min response guaranteed—local Perth team who genuinely care. 99.9% uptime, security monitoring, feature upgrades—your growth partner keeping platforms revenue-ready always.'
   },
   {
     id: 4,
     icon: icon4,
     title: 'Advanced Scale Services',
-    points: [
-      { title: 'Cloud Migration (AWS, Azure)' },
-      { title: 'API Development' },
-      { title: 'Data Migration' },
-      { title: 'Multi-location Setup' },
-      { title: 'White-label Solutions' },
-    ],
-    description: ''
+    points: [],
+    description: 'AWS migration & custom APIs—10x scale ready. What makes us different: Perth-based foresight, building future-proof systems that grow without rebuilds—proof not promises.'
   }
 ];
 
@@ -80,8 +57,8 @@ const Solutions = () => {
   return (
       <section className="mb-5 pb-lg-5 pb-md-4 pb-3">
         <Container>
-          <h2 className="h1 pb-4 pb-lg-5">How our <span
-              className="text-gradient-primary">Perth Brand</span> Agency Drives Growth.</h2>
+          <h2 className="h1 pb-4 pb-lg-5">
+              How Our <span className="text-gradient-primary">Scale Services</span> Unlock Your Growth</h2>
           <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
             {solutionsData.map(item => (
                 <Col key={item.id}>
@@ -99,6 +76,7 @@ const Solutions = () => {
                             className="bg-primary position-absolute top-0 start-0 w-100 h-100 rounded-circle opacity-8"></span>
                       </div>
                       <h3 className="h5 pb-1 mb-2">{item.title}</h3>
+                      <p className="mb-0">{item.description}</p>
                       <ul className="list-unstyled mb-0">
                         {item.points.map(point => (
                             <li className="d-flex mb-2">
