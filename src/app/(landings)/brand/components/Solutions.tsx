@@ -23,73 +23,34 @@ type Solution = {
 };
 
 const solutionsData: Solution[] = [
-  {
-    id: 1,
-    icon: icon1,
-    title: 'Brand Strategy & Positioning',
-    points: [
-      { title: 'Brand discovery consultation' },
-      { title: 'Market and competitor analysis' },
-      { title: 'Brand vision & mission' },
-    ],
-    description: ''
-  },
-  {
-    id: 2,
-    icon: icon2,
-    title: 'Visual Identity & Logo Design',
-    points: [
-      { title: 'Logo concepts and refinements' },
-      { title: 'Colour palette and typography systems' },
-      { title: 'Rebranding and visual refresh projects' },
-    ],
-    description: ''
-  },
-  {
-    id: 3,
-    icon: icon3,
-    title: 'Website & UI/UX Design (Brand-Led)',
-    points: [
-      { title: 'Brand-focused website UI design' },
-      { title: 'Landing page design for campaigns' },
-      { title: 'UX wireframes and user journey mapping' },
-    ],
-    description: ''
-  },
-  {
-    id: 4,
-    icon: icon4,
-    title: 'Mobile App UI/UX & Product Branding',
-    points: [
-      { title: 'App interface design (iOS & Android)' },
-      { title: 'Onboarding flows and in-app journeys' },
-      { title: 'App icon and store listing creatives' },
-    ],
-    description: ''
-  },
-  {
-    id: 5,
-    icon: icon1,
-    title: 'Brand Collateral & Marketing Creatives',
-    points: [
-      { title: 'Brochures, flyers, pull-up banners' },
-      { title: 'Social media templates and post designs' },
-      { title: 'Ad creatives for Google & Meta campaigns' },
-    ],
-    description: ''
-  },
-  {
-    id: 6,
-    icon: icon2,
-    title: 'Brand Implementation',
-    points: [
-      { title: 'Cross-platform consistency (web, app, social)' },
-      { title: 'Full asset library handover (vectors, fonts, files)' },
-      { title: 'Team-ready style guides & brand manuals' },
-      { title: 'Ongoing creative refresh support' },
-    ],
-    description: ''
-  }
+    {
+        id: 1,
+        icon: icon1,
+        title: 'Brand Strategy & Positioning',
+        points: [],
+        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger. Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
+    },
+    {
+        id: 2,
+        icon: icon2,
+        title: 'Visual Identity & Logo Design',
+        points: [],
+        description: 'Award-winning logos, custom colour systems, typography—instant authority boost. Perth businesses stand out 3x more with visual identities that build trust and drive referrals immediately.'
+    },
+    {
+        id: 3,
+        icon: icon3,
+        title: 'Digital Product UI/UX Design',
+        points: [],
+        description: 'Brand-led websites, iOS/Android apps, landing pages—67% higher conversions guaranteed. Perth-first UX mapping turns visitors into customers with seamless, on-brand digital experiences.'
+    },
+    {
+        id: 4,
+        icon: icon4,
+        title: 'Brand Implementation',
+        points: [],
+        description: 'Cross-platform consistency, style guides, asset libraries—we\'ve got you covered. Local Perth team ensures perfect execution across web, app, social—long-term brand value guaranteed.'
+    },
 ];
 
 const Solutions = () => {
@@ -98,7 +59,7 @@ const Solutions = () => {
             <Container>
                 <h2 className="h1 pb-4 pb-lg-5">How our <span
                     className="text-gradient-primary">Perth Brand</span> Agency Drives Growth.</h2>
-                <Row xs={1} md={3} className="g-4 pt-2 pt-md-4 pb-lg-2">
+                <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
                     {solutionsData.map(item => (
                         <Col key={item.id}>
                             <Card className="card-hover h-100 mx-2">
@@ -115,11 +76,12 @@ const Solutions = () => {
                                             className="bg-primary position-absolute top-0 start-0 w-100 h-100 rounded-circle opacity-8"></span>
                                     </div>
                                     <h3 className="h5 pb-1 mb-2">{item.title}</h3>
+                                    <p className="mb-0">{item.description}</p>
                                     <ul className="list-unstyled mb-0">
                                         {item.points.map(point => (
                                             <li className="d-flex mb-2">
                                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                              {point.title}
+                                                {point.title}
                                             </li>
                                         ))}
                                     </ul>

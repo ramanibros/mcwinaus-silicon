@@ -195,7 +195,7 @@ const Navbar = ({
                                                                     height={35}
                                                                     priority
                                                                 />
-                                                                <Link href={section.url}>
+                                                                <Link href={section.url} style={{ textDecoration: 'none' }}>
                                                                     <h4 className="mb-2">{section.title}</h4>
                                                                 </Link>
                                                             </div>
