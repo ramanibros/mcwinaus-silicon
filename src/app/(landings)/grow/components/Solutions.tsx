@@ -27,54 +27,29 @@ const solutionsData: Solution[] =[
         id: 1,
         icon: icon1,
         title: 'Search Engine Optimisation (SEO)',
-        points: [
-            { title: 'Local Perth keyword research' },
-            { title: 'Google Business Profile optimisation' },
-            { title: 'On-page technical SEO' },
-            { title: 'Content strategy & blogging' },
-            { title: 'Local link building' },
-        ],
-        description: ''
+        points: [],
+        description: 'Local Perth is SEO dominating Google rankings, with 3x more organic traffic and sustainable growth without ad dependency.'
     },
     {
         id: 2,
         icon: icon2,
         title: 'Social Media Marketing (SMM)',
-        points: [
-            { title: 'Facebook & Instagram content' },
-            { title: 'LinkedIn business posts' },
-            { title: 'Social media ad campaigns' },
-            { title: 'Content calendars & scheduling' },
-            { title: 'Community engagement' },
-            { title: 'Hashtag strategy' },
-        ],
-        description: ''
+        points: [],
+        description: 'Engaging content and targeted ads are driving 40% more engagement across Instagram, Facebook and LinkedIn for Perth brands.'
     },
     {
         id: 3,
         icon: icon3,
         title: 'Search Engine Marketing (SEM)',
-        points: [
-            { title: 'Google Ads campaign management' },
-            { title: 'Remarketing campaigns' },
-            { title: 'Conversion tracking setup' },
-            { title: 'Landing page optimisation' },
-            { title: 'A/B testing' },
-        ],
-        description: ''
+        points: [],
+        description: 'Google Ads mastery delivers 67% higher conversions, precision targeting and maximum ROI for Australian businesses.'
     },
     {
         id: 4,
         icon: icon4,
         title: 'Pay-Per-Click (PPC)',
-        points: [
-            { title: 'Google Ads (Search, Shopping, Display)' },
-            { title: 'Smart bidding strategies' },
-            { title: 'Negative keyword management' },
-            { title: 'Geo-targeted Perth campaigns' },
-            { title: 'Performance reporting' },
-        ],
-        description: ''
+        points: [],
+        description: 'High-performance campaigns without wasting ad spend—targeted clicks converting to revenue immediately.'
     }
 ];
 
@@ -101,6 +76,7 @@ const Solutions = () => {
                                             className="bg-primary position-absolute top-0 start-0 w-100 h-100 rounded-circle opacity-8"></span>
                                     </div>
                                     <h3 className="h5 pb-1 mb-2">{item.title}</h3>
+                                    <p className="mb-0">{item.description}</p>
                                     <ul className="list-unstyled mb-0">
                                         {item.points.map(point => (
                                             <li className="d-flex mb-2">
