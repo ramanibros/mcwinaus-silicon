@@ -24,7 +24,7 @@ const Page = () => {
             <Hero/>
             <Work/>
             <Solutions/>
-            <Comparison/>
+            {/*<Comparison/>*/}
             <Features/>
             <Faqs/>
             <Benefits/>
