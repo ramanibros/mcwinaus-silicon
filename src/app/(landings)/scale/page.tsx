@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './components/Hero';
-import Comparison from './components/Comparison';
 import Work from './components/Work';
 import Navbar from '@/components/navbar/Navbar';
 import {Metadata} from 'next';
@@ -10,6 +9,7 @@ import Footer from "@/components/common/Footer";
 import Faqs from "@/app/(landings)/scale/components/Faqs";
 import Benefits from "@/app/(landings)/scale/components/Benefits";
 import Features from "@/app/(landings)/scale/components/Features";
+import Portfolio from "@/app/(landings)/scale/components/Portfolio";
 
 export const metadata: Metadata = {title: 'Scale | McWIN iTECH'};
 
@@ -24,7 +24,7 @@ const Page = () => {
             <Hero/>
             <Work/>
             <Solutions/>
-            {/*<Comparison/>*/}
+            <Portfolio/>
             <Features/>
             <Faqs/>
             <Benefits/>

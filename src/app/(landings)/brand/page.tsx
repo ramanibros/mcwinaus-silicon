@@ -1,10 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero';
-import About from './components/About';
-import Industries from './components/Industries';
 import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Features from "@/app/(landings)/brand/components/Features";
 import Pricing from "@/components/common/Pricing";
 import Footer from "@/components/common/Footer";
 import Work from "@/app/(landings)/brand/components/Work";
@@ -12,6 +9,7 @@ import Faqs from "@/app/(landings)/brand/components/Faqs";
 import HowWork from "@/app/(landings)/brand/components/HowWork";
 import Solutions from "@/app/(landings)/brand/components/Solutions";
 import Benefits from "@/app/(landings)/brand/components/Benefits";
+import Portfolio from "@/app/(landings)/brand/components/Portfolio";
 
 export const metadata: Metadata = {title: 'Brand | McWIN iTECH'};
 
@@ -25,7 +23,7 @@ const Page = () => {
             <Hero/>
             <Work/>
             <Solutions/>
-            <About/>
+            <Portfolio/>
             <HowWork/>
             <Faqs/>
             <Benefits/>

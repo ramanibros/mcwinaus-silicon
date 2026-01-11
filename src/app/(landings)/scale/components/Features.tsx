@@ -46,7 +46,7 @@ const Features = () => {
     <section className="py-5 my-2 my-md-4 my-lg-5">
       <Container>
         <h2 className="h1 text-center pt-1 pt-xl-2 mb-4">
-          Why Perth Businesses Choose  <span className="text-gradient-primary">McWIN iTECH to Scale</span></h2>
+          Why Perth Businesses Choose  <span className="text-gradient-primary">McWIN iTECH</span> to Scale</h2>
         <p className="fs-lg text-muted text-center pb-4 mb-2 mb-lg-3">
           Scale without limits with Perth's most trusted tech team. Local expertise, global results—systems engineered to increase conversions 3x and stay on top.
         </p>

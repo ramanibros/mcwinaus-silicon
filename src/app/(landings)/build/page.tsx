@@ -10,6 +10,7 @@ import Offer from "@/app/(landings)/build/components/Offer";
 import Faqs from "@/app/(landings)/build/components/Faqs";
 import Solutions from "@/app/(landings)/build/components/Solutions";
 import Benefits from "@/app/(landings)/build/components/Benefits";
+import Portfolio from "@/app/(landings)/build/components/Portfolio";
 
 export const metadata: Metadata = {title: 'Build | McWIN iTECH'};
 
@@ -41,6 +42,7 @@ const Page = () => {
             <Work/>
             <Solutions/>
             <Offer/>
+            <Portfolio/>
             <HowWork/>
             <Faqs/>
             <Benefits/>

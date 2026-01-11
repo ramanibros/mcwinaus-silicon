@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Solutions from './components/Solutions';
-import Industries from './components/Industries';
 import Benefits from './components/Benefits';
 import {Metadata} from 'next';
 import Work from "@/app/(landings)/grow/components/Work";
@@ -10,6 +9,7 @@ import Footer from "@/components/common/Footer";
 import HowWork from "@/app/(landings)/grow/components/HowWork";
 import Faqs from "@/app/(landings)/grow/components/Faqs";
 import Navbar from "@/components/navbar/Navbar";
+import Portfolio from "@/app/(landings)/grow/components/Portfolio";
 
 export const metadata: Metadata = {title: 'Grow | McWIN iTECH'};
 
@@ -24,7 +24,7 @@ const Page = () => {
             <Hero/>
             <Work/>
             <Solutions/>
-            <Industries/>
+            <Portfolio/>
             <HowWork/>
             <Faqs/>
             <Benefits/>
