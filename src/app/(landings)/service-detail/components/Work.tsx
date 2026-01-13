@@ -2,40 +2,32 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
-import ass1 from '@/assets/img/brand-service/tools/figma_5968705.png';
-import ass2 from '@/assets/img/brand-service/tools/hatchful.png';
-import ass3 from '@/assets/img/brand-service/tools/illustrator_5611037.png';
-import ass4 from '@/assets/img/brand-service/tools/logo_10651757.png';
-import ass5 from '@/assets/img/brand-service/tools/looka.png';
-import ass6 from '@/assets/img/brand-service/tools/after-effects_5968428.png';
-
+import google from '@/assets/img/brands/google.svg';
+import zoom from '@/assets/img/brands/zoom.svg';
+import slack from '@/assets/img/brands/slack.svg';
+import gmail from '@/assets/img/brands/gmail.svg';
+import trello from '@/assets/img/brands/trello.svg';
+import mailChimp from '@/assets/img/brands/mailchimp.svg';
+import dropbox from '@/assets/img/brands/dropbox.svg';
+import evernote from '@/assets/img/brands/evernote.svg';
 import Link from 'next/link';
 import {Col, Container, Row} from 'react-bootstrap';
 import Image from 'next/image';
 
 const brands = [
-    {name: 'ass1', image: ass1},
-    {name: 'ass2', image: ass2},
-    {name: 'ass3', image: ass3},
-    {name: 'ass4', image: ass4},
-    {name: 'ass5', image: ass5},
-    {name: 'ass6', image: ass6},
+    {name: 'Google', image: google},
+    {name: 'Zoom', image: zoom},
+    {name: 'Slack', image: slack},
+    {name: 'Gmail', image: gmail},
+    {name: 'Trello', image: trello},
+    {name: 'Mailchimp', image: mailChimp},
+    {name: 'Dropbox', image: dropbox},
+    {name: 'Evernote', image: evernote},
 ];
 
 const Work = () => {
     return (
-        <Container className="py-5 my-md-2 my-lg-4 my-xl-5">
-            <Row className="justify-content-center pt-1 pb-1 mb-2 mb-md-3 mb-lg-4">
-                <Col lg={8} md={9} className="text-center">
-                    <h2 className="h1 mb-4">Integrate Top <span className="text-gradient-primary">Design</span> Tools
-                    </h2>
-                    <p className="fs-lg text-muted mb-0">
-                        Streamline your Perth brand with tools that 3x workflow efficiency—Figma, Adobe XD, Sketch,
-                        Framer, Webflow, etc. No learning curve, instant professional results.
-                    </p>
-                </Col>
-            </Row>
-
+        <Container className="my-lg-4 my-xl-5" style={{marginTop:'0 !important', paddingTop:'0 !important'}}>
             <Swiper
                 modules={[Pagination]}
                 pagination={{clickable: true}}

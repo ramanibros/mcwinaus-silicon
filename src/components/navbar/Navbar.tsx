@@ -82,12 +82,12 @@ const Navbar = ({
                 icon: brandIcon,
                 url: '/brand',
                 links: [
-                    {label: 'Brand Strategy & Positioning', href: '#'},
-                    {label: 'Visual Identity & Logo Design', href: '#'},
-                    {label: 'Website & UI/UX Design (Brand-Led)', href: '#'},
-                    {label: 'Mobile App UI/UX & Product Branding', href: '#'},
-                    {label: 'Brand Collateral & Marketing Creatives', href: '#'},
-                    {label: 'Brand Implementation', href: '#'},
+                    {label: 'Brand Strategy & Positioning', href: '/service-detail'},
+                    {label: 'Visual Identity & Logo Design', href: '/service-detail'},
+                    {label: 'Website & UI/UX Design (Brand-Led)', href: '/service-detail'},
+                    {label: 'Mobile App UI/UX & Product Branding', href: '/service-detail'},
+                    {label: 'Brand Collateral & Marketing Creatives', href: '/service-detail'},
+                    {label: 'Brand Implementation', href: '/service-detail'},
                 ],
             },
         ],
@@ -97,10 +97,10 @@ const Navbar = ({
                 icon: buildIcon,
                 url: '/build',
                 links: [
-                    {label: 'Websites', href: '#'},
-                    {label: 'eCommerce', href: '#'},
-                    {label: 'Mobile Apps', href: '#'},
-                    {label: 'Custom Software', href: '#'},
+                    {label: 'Websites', href: '/service-detail'},
+                    {label: 'eCommerce', href: '/service-detail'},
+                    {label: 'Mobile Apps', href: '/service-detail'},
+                    {label: 'Custom Software', href: '/service-detail'},
                 ],
             },
         ],
@@ -110,9 +110,9 @@ const Navbar = ({
                 icon: growIcon,
                 url: '/grow',
                 links: [
-                    {label: 'Search Engine Optimisation (SEO)', href: '#'},
-                    {label: 'Social Media Marketing (SMM)', href: '#'},
-                    {label: 'Search Engine Marketing (SEM)', href: '#'},
+                    {label: 'Search Engine Optimisation (SEO)', href: '/service-detail'},
+                    {label: 'Social Media Marketing (SMM)', href: '/service-detail'},
+                    {label: 'Search Engine Marketing (SEM)', href: '/service-detail'},
                     {label: 'Paid Marketing', href: '#'},
                 ],
             },
@@ -123,10 +123,10 @@ const Navbar = ({
                 icon: scaleIcon,
                 url: '/scale',
                 links: [
-                    {label: 'Integrations', href: '#'},
-                    {label: 'Optimisation', href: '#'},
-                    {label: '24/7 Support', href: '#'},
-                    {label: 'Advanced Scale Services', href: '#'},
+                    {label: 'Integrations', href: '/service-detail'},
+                    {label: 'Optimisation', href: '/service-detail'},
+                    {label: '24/7 Support', href: '/service-detail'},
+                    {label: 'Advanced Scale Services', href: '/service-detail'},
                 ],
             },
         ],
@@ -181,7 +181,7 @@ const Navbar = ({
                                                 <div key={colIndex} className="mega-dropdown-column">
                                                     {column.map((section, secIndex) => (
                                                         <div key={secIndex}>
-                                                            <div className="d-flex align-items-center"
+                                                            {/*<div className="d-flex align-items-center"
                                                                  style={{paddingLeft: "12px"}}>
                                                                 <Image
                                                                     style={{
@@ -198,8 +198,11 @@ const Navbar = ({
                                                                 <Link href={section.url} style={{ textDecoration: 'none' }}>
                                                                     <h4 className="mb-2">{section.title}</h4>
                                                                 </Link>
-                                                            </div>
-                                                            {/*<div className="hr-indicator mb-2" style={{paddingLeft: "55px" }}/>*/}
+                                                            </div>*/}
+                                                            <Link href={section.url} style={{ textDecoration: 'none' }}>
+                                                                <h4 className="mb-2" style={{paddingLeft: "12px"}}>{section.title}</h4>
+                                                            </Link>
+                                                            <div className="hr-indicator mb-2" style={{paddingLeft: "14px" }}/>
                                                             <ul className="list-unstyled mb-3">
                                                                 {section.links.map((link, linkIndex) => (
                                                                     <li key={linkIndex}>
