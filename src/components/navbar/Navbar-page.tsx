@@ -114,7 +114,7 @@ const Navbar = ({
                     {label: 'Search Engine Optimisation (SEO)', href: '#'},
                     {label: 'Social Media Marketing (SMM)', href: '#'},
                     {label: 'Search Engine Marketing (SEM)', href: '#'},
-                    {label: 'Pay-Per-Click (PPC)', href: '#'},
+                    {label: 'Paid Marketing', href: '#'},
                 ],
             },
         ],

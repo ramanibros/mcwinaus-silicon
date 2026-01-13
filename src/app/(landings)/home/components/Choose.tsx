@@ -15,9 +15,9 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: 'Certified Digital Experts',
+    title: 'Certified Digital PerthExperts',
     description:
-      '30+ IT professionals with 5+ years delivering 3x faster project turnaround than competitors.',
+      '30+ local IT specialists with 5+ years delivering 3x faster projects—Perth\'s trusted growth team.',
     icon: cms,
   },
   {
@@ -45,7 +45,7 @@ const Choose = () => {
         <Row className="align-items-center pb-5 mb-lg-2">
           <Col md={8} className="text-center text-md-start">
             <p className="fs-lg text-muted mb-md-0">
-              Transform enquiries into customers with Perth's most trusted digital team. Local team, global results—high-performing websites built to increase conversions and stay on top of Google rankings.
+              Convert browsers to buyers with Perth's most trusted digital team. Local expertise, global results—high-performing websites that boost conversions 67% higher, dominate Google #1 rankings, and deliver long-term scalable growth.
             </p>
           </Col>
         </Row>

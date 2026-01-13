@@ -48,7 +48,7 @@ const Hero = () => {
                       style={{ minHeight: '176px', backdropFilter: 'blur(6px)' }}
                     >
                       <div className="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
-                        <span className="hero-animation-fade text-white">I need AI engineers</span>
+                        <span className="hero-animation-fade text-white">Local SEO Domination</span>
                       </div>
                     </div>
                     <div
@@ -57,7 +57,7 @@ const Hero = () => {
                     >
                       <div className="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
                         <span className="hero-animation-fade hero-animation-delay-2 text-white">
-                          We are looking for Shopify Experts
+                          Meta Ads Mastery
                         </span>
                       </div>
                     </div>
@@ -72,7 +72,7 @@ const Hero = () => {
                     >
                       <div className="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
                         <span className="hero-animation-fade hero-animation-delay-1 text-white">
-                          I need MVP for startup
+                          Google Ads Precision
                         </span>
                       </div>
                     </div>
@@ -82,7 +82,7 @@ const Hero = () => {
                     >
                       <div className="p-xl-4 p-sm-3 p-2 fs-xl fw-semibold text-center">
                         <span className="hero-animation-fade hero-animation-delay-3 text-white">
-                          I need web development
+                          LinkedIn Lead Machine
                         </span>
                       </div>
                     </div>

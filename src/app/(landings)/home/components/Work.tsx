@@ -19,8 +19,7 @@ const Work = () => {
             <Row className="align-items-center pb-5 mb-lg-2 text-center">
                 <Col md={12} className="text-center">
                     <p className="fs-lg text-muted mb-md-0">
-                        Clear, transparent, results-focused— that’s how we deliver long-term success for Perth
-                        businesses.
+                        Clear, transparent, results-focused—Perth's most reliable path to 3x business growth. Local team delivers guaranteed long-term success without wasting time or budget.
                     </p>
                 </Col>
             </Row>
@@ -52,8 +51,7 @@ const Work = () => {
                         >
                             <h3 className="h4">Plan & Discover</h3>
                             <p className="mb-0">
-                                A Quick strategy session maps your goals, the Perth market, and your budget. <b>Get a
-                                custom roadmap</b> without the guesswork.
+                                Deep-dive strategy session uncovers your goals, maps Perth market dynamics, and aligns budget reality. Custom growth roadmap eliminates guesswork—your success blueprint approved before work begins.
                             </p>
                         </div>
                     </div>
@@ -86,7 +84,7 @@ const Work = () => {
                         >
                             <h3 className="h4">Design & Prototype</h3>
                             <p className="mb-0">
-                                <b>Visualise success first</b>—wireframes and mockups approved before we code a single line.
+                                Visualise revenue first—interactive wireframes, mockups, and user journeys, client-approved before coding starts. 67% higher conversion designs locked in, no surprises, Perth-first aesthetics guaranteed.
                             </p>
                         </div>
                     </div>
@@ -119,8 +117,7 @@ const Work = () => {
                         >
                             <h3 className="h4">Build & Optimise</h3>
                             <p className="mb-0">
-                                <b>Speed and conversions guaranteed.</b> Mobile-first, SEO-ready, and built to 3x your online
-                                performance.
+                                Speed and conversions guaranteed. Mobile-first, SEO-optimised, Core Web Vitals domination—platforms delivering 3x online performance. Award-winning Perth developers perfect every pixel and function.
                             </p>
                         </div>
                     </div>
@@ -153,8 +150,7 @@ const Work = () => {
                         >
                             <h3 className="h4">Launch & Scale (Week 7+)</h3>
                             <p className="mb-0">
-                               <b>Go live with confidence.</b> Ongoing optimisation, support, and growth strategies are
-                                included.
+                                Go live with total confidence. 99.9% uptime, 24/7 monitoring, continuous A/B testing, and growth strategies included. Your growth partner ensures platforms scale 10x seamlessly.
                             </p>
                         </div>
                     </div>

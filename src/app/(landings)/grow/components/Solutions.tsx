@@ -47,9 +47,9 @@ const solutionsData: Solution[] =[
     {
         id: 4,
         icon: icon4,
-        title: 'Pay-Per-Click (PPC)',
+        title: 'Paid Marketing',
         points: [],
-        description: 'High-performance campaigns without wasting ad spend—targeted clicks converting to revenue immediately.'
+        description: 'Google Ads & Meta campaigns delivering 5x ROI, 67% lower costs, 3x conversions—precision targeting for Perth businesses.'
     }
 ];
 

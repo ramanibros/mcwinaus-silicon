@@ -25,6 +25,10 @@ import angularDark from '@/assets/img/landing/app-showcase-3/integrations/angula
 import wooGray from '@/assets/img/landing/app-showcase-3/integrations/woocommerce-gray.svg';
 import wooLight from '@/assets/img/landing/app-showcase-3/integrations/woocommerce-color-light.svg';
 import wooDark from '@/assets/img/landing/app-showcase-3/integrations/woocommerce-color-dark.svg';
+
+/*import shopifyGray from '@/assets/img/landing/app-showcase-3/integrations/shopify-gray.png';
+import shopifyLight from '@/assets/img/landing/app-showcase-3/integrations/shopify-light.png';
+import shopifyDark from '@/assets/img/landing/app-showcase-3/integrations/shopify-dark.png';*/
 import Link from 'next/link';
 
 type IntegrationsType = {
