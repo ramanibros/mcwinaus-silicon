@@ -12,6 +12,7 @@ import ass4 from "@/assets/img/scale-service/tools/digitalocean.png";
 import ass5 from "@/assets/img/scale-service/tools/gcp.png";
 import ass6 from "@/assets/img/scale-service/tools/ibm.png";
 import ass7 from "@/assets/img/scale-service/tools/oracle.png";
+import ass8 from "@/assets/img/scale-service/tools/cloudjiffy.png";
 
 const brands = [
     {name: 'ass1', image: ass1},
@@ -21,6 +22,7 @@ const brands = [
     {name: 'ass5', image: ass5},
     {name: 'ass6', image: ass6},
     {name: 'ass7', image: ass7},
+    {name: 'ass8', image: ass8},
 ];
 
 const Work = () => {
