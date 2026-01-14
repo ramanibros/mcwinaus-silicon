@@ -2,27 +2,25 @@
 import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
-import google from '@/assets/img/brands/google.svg';
-import zoom from '@/assets/img/brands/zoom.svg';
-import slack from '@/assets/img/brands/slack.svg';
-import gmail from '@/assets/img/brands/gmail.svg';
-import trello from '@/assets/img/brands/trello.svg';
-import mailChimp from '@/assets/img/brands/mailchimp.svg';
-import dropbox from '@/assets/img/brands/dropbox.svg';
-import evernote from '@/assets/img/brands/evernote.svg';
 import Link from 'next/link';
 import {Col, Container, Row} from 'react-bootstrap';
 import Image from 'next/image';
+import ass1 from "@/assets/img/scale-service/tools/alibabacloud.png";
+import ass2 from "@/assets/img/scale-service/tools/aws.png";
+import ass3 from "@/assets/img/scale-service/tools/azure.png";
+import ass4 from "@/assets/img/scale-service/tools/digitalocean.png";
+import ass5 from "@/assets/img/scale-service/tools/gcp.png";
+import ass6 from "@/assets/img/scale-service/tools/ibm.png";
+import ass7 from "@/assets/img/scale-service/tools/oracle.png";
 
 const brands = [
-    {name: 'Google', image: google},
-    {name: 'Zoom', image: zoom},
-    {name: 'Slack', image: slack},
-    {name: 'Gmail', image: gmail},
-    {name: 'Trello', image: trello},
-    {name: 'Mailchimp', image: mailChimp},
-    {name: 'Dropbox', image: dropbox},
-    {name: 'Evernote', image: evernote},
+    {name: 'ass1', image: ass1},
+    {name: 'ass2', image: ass2},
+    {name: 'ass3', image: ass3},
+    {name: 'ass4', image: ass4},
+    {name: 'ass5', image: ass5},
+    {name: 'ass6', image: ass6},
+    {name: 'ass7', image: ass7},
 ];
 
 const Work = () => {
@@ -55,7 +53,7 @@ const Work = () => {
             >
                 {brands.map((brand, i) => (
                     <SwiperSlide key={i} className="py-3">
-                        <Link href="#" className="card card-hover border-0 shadow-sm py-3 mx-2">
+                        <Link href="#" className="card card-hover border-0 shadow-sm mx-2">
                             <div className="card-body">
                                 <Image src={brand.image} alt={brand.name} className="d-block mx-auto"/>
                             </div>
