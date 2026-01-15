@@ -4,10 +4,11 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import clutchRating from '@/assets/img/landing/software-agency-3/clutch-rating.png';
 import heroBg from '@/assets/img/landing/software-agency-3/hero-bg.png';
+import herobg from "@/assets/img/landing/software-agency-2/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="position-relative d-flex align-items-center min-vh-100 py-5 bg-dark overflow-hidden">
+    <section className="position-relative d-flex align-items-center min-vh-100 py-5 overflow-hidden jarallax-img" style={{ backgroundImage: `url(${herobg.src})` }}>
       <span className="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
       <Container
         className="position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3"
