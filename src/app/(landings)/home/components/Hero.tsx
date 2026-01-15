@@ -33,7 +33,7 @@ const Hero = () => {
               >
                 Local expertise, proven tech, and custom strategies delivering <b>3x more sales</b> for Australian brands—without wasting ad spend.
               </p>
-              <Link href="#" className="btn btn-lg btn-primary shadow-primary">
+              <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                 Book Free Consultation
               </Link>
             </Col>

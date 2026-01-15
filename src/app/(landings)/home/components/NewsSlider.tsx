@@ -21,64 +21,64 @@ type NewsItem = {
 
 const newsData: NewsItem[] = [
   {
-    id: 1,
-    category: 'Tech',
-    date: '1 day ago',
-    title: 'How the Millennial Lifestyle Changes as Service Prices Rise',
-    link: '/blog-single',
+    id: 5,
+    category: 'Social Media Marketing',
+    date: 'Sept 10, 2025',
+    title: 'Local Link Building: Perth-Focused Strategies That Actually Work',
+    link: '/blog/local-link-building-perth-strategies',
     description:
-      'Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet. Mauris duis eleifend faucibus amet sagittis.',
-    likes: 2,
-    comments: 0,
-    shares: 3,
-  },
-  {
-    id: 2,
-    category: 'Strategy',
-    date: '12 hours ago',
-    title: 'Mobile App Generates Data for the Energy Management',
-    link: '/blog-single',
-    description:
-      'Sociis sit risus id. Sit facilisis dolor arcu, fermentum vestibulum arcu ele. Pulvinar at maecenas.',
-    likes: 8,
-    comments: 4,
-    shares: 2,
-  },
-  {
-    id: 3,
-    category: 'Software',
-    date: 'May 24, 2023',
-    title: 'What the Software Stock Slump Means for the Market',
-    link: '/blog-single',
-    description:
-      'Id mollis consectetur congue egestas egestas suspendisse blandit justo. Tellus augue commodo id quis tempus etiam.',
-    likes: 6,
-    comments: 1,
-    shares: 5,
+        'In the competitive Perth digital landscape, local SEO and smart link building are crucial for outperforming rivals and attracting real',
+    likes: 5,
+    comments: 3,
+    shares: 9,
   },
   {
     id: 4,
-    category: 'Startups',
-    date: 'Sep 3, 2023',
-    title: '5 Bad Landing Page Examples & How We Would Fix Them',
-    link: '/blog-single',
+    category: 'Digital Marketing',
+    date: 'Sept 9, 2025',
+    title: 'Why Businesses in Perth Should Choose a Local SEO Agency',
+    link: '/blog/why-perth-businesses-should-choose-local-seo-agency',
     description:
-      'Totam, soluta placeat hic adipisci reprehenderit iusto est nulla dolorum doloremque inventore suscipit consequuntur.',
+        'In today’s digital environment, every Perth business owner recognizes the challenge: standing out online isn’t easy. Yet, with nearly half',
     likes: 8,
     comments: 7,
     shares: 3,
   },
   {
-    id: 5,
-    category: 'Technology',
-    date: 'Aug 19, 2023',
-    title: 'Why UX Design Matters and How it Affects Ranking',
-    link: '/blog-single',
+    id: 3,
+    category: 'Digital Marketing',
+    date: 'Aug 30, 2025',
+    title: 'Digital Marketing Tips for Perth-Based Businesses: Grow Smarter in 2025',
+    link: '/blog/digital-marketing-tips-for-perth-based-businesses-grow-smarter-in-2025',
     description:
-      'Quaerat quos assumenda numquam dolorem, repellendus est, itaque sint et odio perferendis laudantium laboriosam.',
-    likes: 5,
-    comments: 3,
-    shares: 9,
+        'In 2025, digital marketing isn’t just a side strategy — it’s the backbone of business growth. For Perth-based businesses',
+    likes: 6,
+    comments: 1,
+    shares: 5,
+  },
+  {
+    id: 2,
+    category: 'Web Design & Development',
+    date: 'Aug 22, 2025',
+    title: 'Custom Website vs. Template: Which Is Right for Your Business?',
+    link: '/blog/custom-website-vs-template-right-for-business',
+    description:
+        'In 2025, your website isn’t just a digital presence — it’s your first impression, sales channel, and brand identity all',
+    likes: 8,
+    comments: 4,
+    shares: 2,
+  },
+  {
+    id: 1,
+    category: 'Social Media Markting',
+    date: 'July 30, 2025',
+    title: 'The Ultimate Digital Marketing Checklist for Australian Startups',
+    link: '/blog/digital-marketing-checklist-australian-startups',
+    description:
+        'Launching a startup in Australia in 2025? Whether you’re bootstrapped or backed by funding, digital marketing is your lifeline for',
+    likes: 2,
+    comments: 0,
+    shares: 3,
   },
 ];
 
@@ -125,7 +125,7 @@ const NewsSlider = () => {
             {newsData.map(item => (
               <SwiperSlide key={item.id} className="h-auto py-3">
                 <Card className="p-md-3 p-2 border-0 shadow-sm card-hover-primary h-100 mx-2">
-                  <CardBody className="pb-0">
+                  <CardBody className="pb-4">
                     <div className="d-flex align-items-center justify-content-between mb-3">
                       <Badge
                         bg="secondary"
@@ -135,14 +135,14 @@ const NewsSlider = () => {
                       </Badge>
                       <span className="fs-sm text-muted">{item.date}</span>
                     </div>
-                    <h3 className="h4">
+                    <h3 className="h6">
                       <Link href={item.link} className="stretched-link">
                         {item.title}
                       </Link>
                     </h3>
                     <p className="mb-0">{item.description}</p>
                   </CardBody>
-                  <CardFooter className="d-flex align-items-center py-4 text-muted border-top-0">
+                  {/*<CardFooter className="d-flex align-items-center py-4 text-muted border-top-0">
                     <div className="d-flex align-items-center me-3">
                       <IconifyIcon icon="bx:like" className="fs-lg me-1" />
                       <span className="fs-sm">{item.likes}</span>
@@ -155,7 +155,7 @@ const NewsSlider = () => {
                       <IconifyIcon icon="bx:share-alt" className="fs-lg me-1" />
                       <span className="fs-sm">{item.shares}</span>
                     </div>
-                  </CardFooter>
+                  </CardFooter>*/}
                 </Card>
               </SwiperSlide>
             ))}

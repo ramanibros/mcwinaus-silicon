@@ -226,6 +226,9 @@ const Navbar = ({
                                 </Collapse>
                             </li>
 
+                            <li className={`nav-item dropdown ${pathname === '/blog' ? 'active' : ""}`}>
+                                <Link href="/blog" className="nav-link">Blog</Link>
+                            </li>
                             <li className={`nav-item dropdown ${pathname === '/about' ? 'active' : ""}`}>
                                 <Link href="/about" className="nav-link">About Us</Link>
                             </li>
