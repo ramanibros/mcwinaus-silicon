@@ -50,7 +50,7 @@ const Page = () => {
             {/*<Offer/>*/}
             <Description/>
             <Portfolio/>
-            <HowWeWork/>
+            {/*<HowWeWork/>*/}
             <TextSession/>
             <Faqs/>
             <Package/>
