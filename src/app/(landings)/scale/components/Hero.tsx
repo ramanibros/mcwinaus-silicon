@@ -1,12 +1,11 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import Image from 'next/image';
-import layer01 from '@/assets/img/landing/saas-2/hero/layer01.png';
+import layer01 from '@/assets/img/scale-service/scale.png';
 import layer02 from '@/assets/img/landing/saas-2/hero/layer02.png';
 import VanillaTilt from 'vanilla-tilt';
-import { Col, Container, Row } from 'react-bootstrap';
-import Link from 'next/link';
+import {Col, Container, Row} from 'react-bootstrap';
 
 const Hero = () => {
   useEffect(() => {
@@ -74,9 +73,9 @@ const Hero = () => {
 
         <div className="tilt-3d" >
           <Image src={layer01} alt="Dashboard" priority />
-          <div className="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100">
+         {/* <div className="tilt-3d-inner position-absolute top-0 start-0 w-100 h-100">
             <Image src={layer02} alt="Cards" priority />
-          </div>
+          </div>*/}
         </div>
       </div>
 
