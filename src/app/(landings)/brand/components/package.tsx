@@ -4,7 +4,7 @@ import standard from '@/assets/img/landing/saas-1/pricing/standard.png';
 import ultimate from '@/assets/img/landing/saas-1/pricing/ultimate.png';
 import IconifyIcon from '@/components/IconifyIcon';
 import Image, { StaticImageData } from 'next/image';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   Button,
   Card,
@@ -31,44 +31,47 @@ type PricingPlan = {
 const plans: PricingPlan[] = [
   {
     name: 'Basic',
-    monthly: 6,
-    annually: 5.4,
+    monthly: 150,
+    annually: 150,
     image: basic,
     featured: false,
     features: [
-      { text: 'Aenean neque tortor, purus faucibus', available: true },
-      { text: 'Nullam augue vitae et volutpat sagittis', available: true },
-      { text: 'Mauris massa penatibus enim elit quam', available: false },
-      { text: 'Nec ac sagittis nunc bibendum', available: false },
-      { text: 'Odio ut orci volutpat ultricies eleifend', available: false },
+      { text: 'Business Logo', available: true },
+      { text: 'Brand Color Guide', available: true },
+      { text: 'Business Card Design', available: false },
+      { text: 'Letter Head Design', available: false },
+      { text: 'Envelope Design', available: false },
+      { text: 'Brochure/Flyer Design', available: false },
     ],
   },
   {
     name: 'Standard',
-    monthly: 12,
-    annually: 10.8,
+    monthly: 299,
+    annually: 299,
     image: standard,
     featured: true,
     features: [
-      { text: 'Aenean neque tortor, purus faucibus', available: true },
-      { text: 'Nullam augue vitae et volutpat sagittis', available: true },
-      { text: 'Mauris massa penatibus enim elit quam', available: true },
-      { text: 'Nec ac sagittis nunc bibendum', available: true },
-      { text: 'Odio ut orci volutpat ultricies eleifend', available: false },
+      { text: 'Business Logo', available: true },
+      { text: 'Brand Color Guide', available: true },
+      { text: 'Business Card Design', available: true },
+      { text: 'Letter Head Design', available: true },
+      { text: 'Envelope Design', available: false },
+      { text: 'Brochure/Flyer Design', available: false },
     ],
   },
   {
     name: 'Ultimate',
-    monthly: 18,
-    annually: 16.2,
+    monthly: 350,
+    annually: 350,
     image: ultimate,
     featured: false,
     features: [
-      { text: 'Aenean neque tortor, purus faucibus', available: true },
-      { text: 'Nullam augue vitae et volutpat sagittis', available: true },
-      { text: 'Mauris massa penatibus enim elit quam', available: true },
-      { text: 'Nec ac sagittis nunc bibendum', available: true },
-      { text: 'Odio ut orci volutpat ultricies eleifend', available: true },
+      { text: 'Business Logo', available: true },
+      { text: 'Brand Color Guide', available: true },
+      { text: 'Business Card Design', available: true },
+      { text: 'Letter Head Design', available: true },
+      { text: 'Envelope Design', available: true },
+      { text: 'Brochure/Flyer Design', available: true },
     ],
   },
 ];
@@ -78,9 +81,10 @@ const Package = () => {
 
   return (
     <Container className="py-5 my-md-2 my-lg-4 my-xl-5">
-      <h2 className="h1 text-center pb-3 pb-md-4">Transparent Pricing for You</h2>
+      <h2 className="h1">Our <span className="text-gradient-primary">Pricing</span></h2>
+      <div className="hr-indicator mb-4" />
 
-      <div className="form-check form-switch price-switch justify-content-center mt-2 mb-4">
+     {/* <div className="form-check form-switch price-switch justify-content-center mt-2 mb-4">
         <input
           type="checkbox"
           className="form-check-input"
@@ -94,7 +98,7 @@ const Package = () => {
         <label className="form-check-label d-flex align-items-start" htmlFor="pricing">
           Annually <span className="text-danger fs-xs fw-semibold mt-n2 ms-2">-10%</span>
         </label>
-      </div>
+      </div>*/}
 
       <Row className="g-4 flex-nowrap overflow-auto pb-3">
         {plans.map((plan, idx) => (
@@ -123,7 +127,7 @@ const Package = () => {
                     </h3>
                     <h4 className={`h3 lh-1 mb-0 ${plan.featured ? 'text-light' : 'text-body'}`}>
                       ${isAnnual ? plan.annually : plan.monthly}
-                      <span className="fs-sm fw-normal opacity-70"> / per month</span>
+                      {/*<span className="fs-sm fw-normal opacity-70"> / per month</span>*/}
                     </h4>
                   </div>
                 </div>
@@ -144,7 +148,8 @@ const Package = () => {
                     >
                       <IconifyIcon
                         icon={f.available ? 'bx:check' : 'bx:x'}
-                        className={`fs-xl me-1 ${f.available ? 'text-primary' : 'text-danger'}`}
+                        className={`fs-xl me-1 ${f.available ? 'text-success' : 'text-danger'}`}
+                        style={{ fontWeight: "bold" }}
                       />
                       <span className={plan.featured ? 'opacity-75' : ''}>{f.text}</span>
                     </li>
@@ -154,7 +159,7 @@ const Package = () => {
 
               <CardFooter className="border-0 pt-0 pb-4">
                 <Button variant={plan.featured ? 'light' : 'outline-primary'} className="w-100">
-                  Start free trial
+                   Contact Now
                 </Button>
               </CardFooter>
             </Card>

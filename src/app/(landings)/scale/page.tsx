@@ -29,7 +29,7 @@ const Page = () => {
             <Features/>
             <Faqs/>
             <Benefits/>
-            <Package/>
+            {/*<Package/>*/}
             <Pricing/>
             <Footer/>
         </>
