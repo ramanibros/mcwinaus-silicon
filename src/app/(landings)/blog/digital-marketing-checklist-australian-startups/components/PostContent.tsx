@@ -6,7 +6,7 @@ const PostContent = () => {
     <section className="container mb-5 pt-4 pb-2 py-mg-4">
       <Row className="gy-4">
         <Col lg={12}>
-          <article style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px', color: '#0f172a', fontFamily: 'Arial, sans-serif', lineHeight: 1.7 }}>
+          <article style={{ fontFamily: 'Arial, sans-serif', lineHeight: 1.7 }}>
 
             {/* Intro */}
             <p style={{ fontSize: '18px', marginBottom: '24px' }}>

@@ -7,7 +7,7 @@ const PostContent = () => {
       <Row className="gy-4">
         <Col lg={12}>
 
-          <article style={{color: '#0f172a', lineHeight: 1.7, fontFamily: 'sans-serif' }}>
+          <article style={{ lineHeight: 1.7, fontFamily: 'sans-serif' }}>
 
             {/* Intro */}
             <p style={{ fontSize: '18px', marginBottom: '20px' }}>
