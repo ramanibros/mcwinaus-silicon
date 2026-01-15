@@ -137,8 +137,8 @@ const PostContent = () => {
             </ul>
 
             {/* Conclusion */}
-            <div style={{ padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', marginBottom: '40px', borderRadius: '4px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>Conclusion</h2>
+            <div style={{ padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', marginBottom: '40px', borderRadius: '4px', color: 'black' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: 'black' }}>Conclusion</h2>
               <p style={{ marginBottom: '12px' }}>
                 For Perth businesses, local SEO is no longer optional — it’s critical. Partnering with
                 a trusted local SEO agency like <strong>McWIN iTECH</strong> unlocks expert strategies,

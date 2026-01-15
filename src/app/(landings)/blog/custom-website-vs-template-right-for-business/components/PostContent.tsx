@@ -149,8 +149,8 @@ const PostContent = () => {
             </ul>
 
             {/* Final Thoughts */}
-            <div style={{ padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', borderRadius: '4px', marginBottom: '32px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>Final Thoughts</h2>
+            <div style={{ padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', borderRadius: '4px', marginBottom: '32px', color: 'black' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: 'black' }}>Final Thoughts</h2>
               <p style={{ marginBottom: '12px' }}>
                 When it comes to Custom Website vs. Template, there’s no universal winner.
                 The right choice depends on your timeline, resources, and long-term goals.

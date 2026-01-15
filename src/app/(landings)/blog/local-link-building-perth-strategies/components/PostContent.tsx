@@ -145,8 +145,8 @@ const PostContent = () => {
             </p>
 
             {/* Conclusion */}
-            <div style={{ padding: '20px', background: '#f1f5f9', borderLeft: '4px solid #16a34a', marginBottom: '40px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>Conclusion: Start Building Perth Connections Today</h2>
+            <div style={{ padding: '20px', background: '#f1f5f9', borderLeft: '4px solid #16a34a', marginBottom: '40px', color: 'black' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: 'black' }}>Conclusion: Start Building Perth Connections Today</h2>
               <p style={{ marginBottom: '12px' }}>
                 Don’t rely on generic SEO. Perth’s market rewards businesses committed to building authentic local relationships and authoritative links.
               </p>

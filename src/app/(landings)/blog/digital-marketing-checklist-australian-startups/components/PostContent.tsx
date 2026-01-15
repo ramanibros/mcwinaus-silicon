@@ -129,8 +129,8 @@ const PostContent = () => {
             </ul>
 
             {/* Final Thoughts */}
-            <div style={{ marginTop: '48px', padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', borderRadius: '4px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>Final Thoughts</h2>
+            <div style={{ marginTop: '48px', padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', borderRadius: '4px', color: 'black' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: 'black' }}>Final Thoughts</h2>
               <p style={{ marginBottom: '12px' }}>
                 Starting a business is hard enough — your marketing shouldn’t be. With this checklist,
                 your startup can grow faster and smarter in Australia’s competitive digital market.

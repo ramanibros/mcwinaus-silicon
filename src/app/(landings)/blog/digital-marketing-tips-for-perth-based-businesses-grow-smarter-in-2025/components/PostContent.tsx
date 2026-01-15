@@ -124,8 +124,8 @@ const PostContent = () => {
             </ul>
 
             {/* Final Thoughts */}
-            <div style={{ padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', borderRadius: '4px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px' }}>Final Thoughts</h2>
+            <div style={{ padding: '24px', backgroundColor: '#f1f5f9', borderLeft: '4px solid #16a34a', borderRadius: '4px', color: 'black' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 600, marginBottom: '12px', color: 'black' }}>Final Thoughts</h2>
               <p style={{ marginBottom: '12px' }}>
                 Digital marketing is no longer optional for Perth businesses. From local SEO to paid ads
                 and content marketing, every strategy should connect with your audience and deliver
