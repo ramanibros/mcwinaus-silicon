@@ -14,7 +14,7 @@ import HowWeWork from "@/app/(landings)/service-detail/components/HowWeWork";
 import Description from "@/app/(landings)/service-detail/components/Description";
 import Package from "@/app/(landings)/service-detail/components/package";
 
-export const metadata: Metadata = {title: 'Mobile Apps | McWIN iTECH'};
+export const metadata: Metadata = {title: 'Social Media Marketing | McWIN iTECH'};
 
 const Page = () => {
     return (
@@ -35,13 +35,13 @@ const Page = () => {
             <IconifyIcon icon="bx:chevrons-right"/>
           </span>
                     <li className="breadcrumb-item">
-                        <Link href="/build">Build</Link>
+                        <Link href="/grow">Grow</Link>
                     </li>
                     <span className="d-flex align-items-center mx-2">
             <IconifyIcon icon="bx:chevrons-right"/>
           </span>
                     <li className="breadcrumb-item active" aria-current="page">
-                        Mobile Apps
+                        Social Media Marketing
                     </li>
                 </ol>
             </nav>

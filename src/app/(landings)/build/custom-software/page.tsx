@@ -35,7 +35,7 @@ const Page = () => {
             <IconifyIcon icon="bx:chevrons-right"/>
           </span>
                     <li className="breadcrumb-item">
-                        <Link href="/build">build</Link>
+                        <Link href="/build">Build</Link>
                     </li>
                     <span className="d-flex align-items-center mx-2">
             <IconifyIcon icon="bx:chevrons-right"/>
