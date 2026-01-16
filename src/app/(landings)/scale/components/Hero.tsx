@@ -2,7 +2,7 @@
 
 import React, {useEffect} from 'react';
 import Image from 'next/image';
-import layer01 from '@/assets/img/scale-service/scale-1.jpeg';
+import layer01 from '@/assets/img/scale-service/scale-2.jpg';
 import layer02 from '@/assets/img/landing/saas-2/hero/layer02.png';
 import VanillaTilt from 'vanilla-tilt';
 import {Col, Container, Row} from 'react-bootstrap';
