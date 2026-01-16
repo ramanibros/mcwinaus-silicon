@@ -31,54 +31,70 @@ type PricingPlan = {
 const plans: PricingPlan[] = [
   {
     name: 'Basic',
-    monthly: 350,
-    annually: 350,
+    monthly: 399,
+    annually: 399,
     image: basic,
     featured: false,
     features: [
-      { text: '10 Keywords', available: true },
-      { text: 'Keyword research & strategy', available: true },
-      { text: 'Analytics & conversion tracking', available: true },
-      { text: 'Google Business optimisation & posting', available: true },
-      { text: 'Local Link Building', available: true },
-      { text: 'On-page optimisation', available: true },
-      { text: 'Technical optimisation', available: true },
-      { text: 'Monthly reporting', available: true }
+      { text: 'Number of Keyphrases Optimized – 10', available: true },
+      { text: 'Pages Optimized Up To – 10', available: true },
+      { text: 'Local SEO Audit', available: true },
+      { text: 'Google My Business Optimization', available: true },
+      { text: 'Yelp Local Business Listing', available: true },
+      { text: 'Bing Local Business Listing', available: true },
+      { text: 'Yellow Pages Creation', available: true },
+      { text: 'Reviews Monitoring', available: true },
+      { text: 'Claim, Verify & Publish Top 20 Local Listings', available: false },
+      { text: 'Submission to 200+ Business Directories', available: false },
+      { text: 'Yext PowerListings Subscription', available: false },
+      { text: 'Apple Map Listing', available: false },
+      { text: 'Google My Business Weekly Post / Image Upload', available: true }
     ]
   },
   {
     name: 'Standard',
-    monthly: 450,
-    annually: 450,
+    monthly: 699,
+    annually: 699,
     image: standard,
     featured: true,
     features: [
-      { text: '20 Keywords', available: true },
-      { text: 'Keyword research & strategy', available: true },
-      { text: 'Analytics & conversion tracking', available: true },
-      { text: 'Google Business optimisation & posting', available: true },
-      { text: 'Local Link Building', available: true },
-      { text: 'On-page optimisation', available: true },
-      { text: 'Technical optimisation', available: true },
-      { text: 'Monthly reporting', available: true }
+      { text: 'Number of Keyphrases Optimized – 20', available: true },
+      { text: 'Pages Optimized Up To – 20', available: true },
+      { text: 'Local SEO Audit', available: true },
+      { text: 'Google My Business Optimization', available: true },
+      { text: 'Yelp Local Business Listing', available: true },
+      { text: 'Bing Local Business Listing', available: true },
+      { text: 'Yellow Pages Creation', available: true },
+      { text: 'Reviews Monitoring', available: true },
+      { text: 'Claim, Verify & Publish Top 20 Local Listings', available: true },
+      { text: 'Submission to 200+ Business Directories', available: true },
+      { text: 'Yext PowerListings Subscription', available: false },
+      { text: 'Apple Map Listing', available: false },
+      { text: 'Google My Business Weekly Post / Image Upload', available: true }
     ]
   },
   {
     name: 'Ultimate',
-    monthly: 599,
-    annually: 599,
+    monthly: 1499,
+    annually: 1499,
     image: ultimate,
     featured: false,
     features: [
-      { text: '30 Keywords', available: true },
-      { text: 'Keyword research & strategy', available: true },
-      { text: 'Analytics & conversion tracking', available: true },
-      { text: 'Google Business optimisation & posting', available: true },
-      { text: 'Local Link Building', available: true },
-      { text: 'On-page optimisation', available: true },
-      { text: 'Technical optimisation', available: true },
-      { text: 'Monthly reporting', available: true }
+      { text: 'Number of Keyphrases Optimized – 50', available: true },
+      { text: 'Pages Optimized Up To – 50', available: true },
+      { text: 'Local SEO Audit', available: true },
+      { text: 'Google My Business Optimization', available: true },
+      { text: 'Yelp Local Business Listing', available: true },
+      { text: 'Bing Local Business Listing', available: true },
+      { text: 'Yellow Pages Creation', available: true },
+      { text: 'Reviews Monitoring', available: true },
+      { text: 'Claim, Verify & Publish Top 20 Local Listings', available: true },
+      { text: 'Submission to 200+ Business Directories', available: true },
+      { text: 'Yext PowerListings Subscription', available: true },
+      { text: 'Apple Map Listing', available: true },
+      { text: 'Google My Business Weekly Post / Image Upload', available: true }
     ]
+
   },
 ];
 

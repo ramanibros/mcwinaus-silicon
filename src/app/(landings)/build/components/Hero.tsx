@@ -1,4 +1,5 @@
 import React from 'react';
+import layer from '@/assets/img/build-service/build.png';
 import layer01 from '@/assets/img/landing/app-showcase-3/hero/layer01.png';
 import layer02 from '@/assets/img/landing/app-showcase-3/hero/layer02.png';
 import layer03 from '@/assets/img/landing/app-showcase-3/hero/layer03.png';
@@ -11,16 +12,16 @@ import Parallax from '@/components/Parallax';
 
 const Hero = () => {
     return (
-        <section className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5">
+        <section className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5 mt-5 pb-5">
             <Container>
                 <Row className="justify-content-center align-items-center">
                     <Parallax>
                         <Col xl={6} lg={7} md={6} sm={8} xs={10} className="offset-xl-1 order-md-2">
                             <div className="parallax mx-auto" style={{maxWidth: '556px'}}>
                                 <div className="parallax-layer" data-depth="0.1">
-                                    <Image src={layer01} alt="Bubble"/>
+                                    <Image src={layer} alt="Bubble"/>
                                 </div>
-                                <div className="parallax-layer" data-depth="-0.2">
+                                {/*<div className="parallax-layer" data-depth="-0.2">
                                     <Image src={layer02} alt="Bubble"/>
                                 </div>
                                 <div className="parallax-layer" data-depth="-0.3">
@@ -34,7 +35,7 @@ const Hero = () => {
                                 </div>
                                 <div className="parallax-layer" data-depth="0.2">
                                     <Image src={layer06} alt="Screen"/>
-                                </div>
+                                </div>*/}
                             </div>
                         </Col>
                     </Parallax>
