@@ -21,73 +21,72 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Why bother with positioning?',
+    question: 'Do you build mobile-first websites?',
     answer: (
         <>
           <p>
-            Positioned brands win. Without clear positioning, brands get lost in the noise.
-            Strong positioning delivers up to 3× stronger market presence—helping you own
-            your space long-term instead of competing on price.
+            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
+            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
           </p>
         </>
     ),
   },
   {
-    question: 'How do you beat competitors?',
+    question: 'Can you connect my software to existing tools?',
     answer: (
         <>
           <p>
-            Through smart competitor and market analysis. We uncover unique winning angles
-            that competitors miss—so you can claim a clear niche while others chase trends.
+            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
+            business tools—eliminating data silos and manual work for Perth businesses.
           </p>
         </>
     ),
   },
   {
-    question: 'Can you reposition established brands?',
+    question: 'What makes your websites rank faster on Google?',
     answer: (
         <>
           <p>
-            Absolutely. This is one of our core strengths. With decades of experience, we
-            transform good, established brands into clear category leaders without losing
-            existing brand equity.
+            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
+            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
+            there.
           </p>
         </>
     ),
   },
   {
-    question: 'Do you work Australia-wide?',
+    question: 'Can you rebuild my existing website?',
     answer: (
         <>
           <p>
-            Yes—100%. Headquartered in Perth with national delivery across Australia,
-            supporting businesses coast to coast with the same strategic depth.
+            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
+            The result is a faster, more modern website with significantly better conversion rates.
           </p>
         </>
     ),
   },
   {
-    question: 'What makes you different?',
+    question: 'How secure are your custom apps?',
     answer: (
         <>
           <p>
-            No cookie-cutter strategies. We genuinely care about outcomes—every positioning
-            framework is custom-built to create real differentiation and lasting impact.
+            Security is enterprise-grade. We follow best practices, run regular penetration testing,
+            and implement robust data protection—trusted by Perth businesses across industries.
           </p>
         </>
     ),
   },
   {
-    question: 'Will this boost our sales?',
+    question: 'What happens after the software launch?',
     answer: (
         <>
           <p className="mb-0">
-            Yes. Proven results show up to 67% conversion improvement. Strong positioning
-            attracts higher-value Australian customers who are ready to buy—not just browse.
+            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
+            and long-term support ensure your software continues delivering results.
           </p>
         </>
     ),
-  },
+  }
 ];
 
 const Faqs = () => {

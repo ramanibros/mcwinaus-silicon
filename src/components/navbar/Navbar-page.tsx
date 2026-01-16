@@ -83,7 +83,7 @@ const Navbar = ({
                 icon: brandIcon,
                 url: '/brand',
                 links: [
-                    {label: 'Brand Strategy & Positioning', href: '/service-detail'},
+                    {label: 'Brand Strategy & Positioning', href: '/brand/brand-strategy-and-positioning'},
                     {label: 'Visual Identity & Logo Design', href: '/service-detail'},
                     {label: 'Website & UI/UX Design (Brand-Led)', href: '/service-detail'},
                     {label: 'Mobile App UI/UX & Product Branding', href: '/service-detail'},

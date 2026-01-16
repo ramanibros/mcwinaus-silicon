@@ -9,6 +9,7 @@ import icon2 from '@/assets/img/landing/software-agency-3/icons/02.svg';
 import icon3 from '@/assets/img/landing/software-agency-3/icons/03.svg';
 import icon4 from '@/assets/img/landing/software-agency-3/icons/04.svg';
 import IconifyIcon from "@/components/IconifyIcon";
+import Link from "next/link";
 
 type PointsItem = {
     title: string;
@@ -20,6 +21,7 @@ type Solution = {
     title: string;
     description: string;
     points: PointsItem[];
+    url: string;
 };
 
 const solutionsData: Solution[] = [
@@ -28,6 +30,7 @@ const solutionsData: Solution[] = [
         icon: icon1,
         title: 'Brand Strategy & Positioning',
         points: [],
+        url: "/brand/brand-strategy-and-positioning",
         description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger. Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
     },
     {
@@ -35,6 +38,7 @@ const solutionsData: Solution[] = [
         icon: icon2,
         title: 'Visual Identity & Logo Design',
         points: [],
+        url: "#",
         description: 'Award-winning logos, custom colour systems, typography—instant authority boost. Perth businesses stand out 3x more with visual identities that build trust and drive referrals immediately.'
     },
     {
@@ -42,6 +46,7 @@ const solutionsData: Solution[] = [
         icon: icon3,
         title: 'Digital Product UI/UX Design',
         points: [],
+        url: "#",
         description: 'Brand-led websites, iOS/Android apps, landing pages—67% higher conversions guaranteed. Perth-first UX mapping turns visitors into customers with seamless, on-brand digital experiences.'
     },
     {
@@ -49,6 +54,7 @@ const solutionsData: Solution[] = [
         icon: icon4,
         title: 'Brand Implementation',
         points: [],
+        url: "#",
         description: 'Cross-platform consistency, style guides, asset libraries—we\'ve got you covered. Local Perth team ensures perfect execution across web, app, social—long-term brand value guaranteed.'
     },
 ];
@@ -62,7 +68,8 @@ const Solutions = () => {
                 <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
                     {solutionsData.map(item => (
                         <Col key={item.id}>
-                            <Card className="card-hover h-100 mx-2">
+                            <Link href={item.url} className="text-decoration-none">
+                                <Card className="card-hover h-100 mx-2">
                                 <CardBody>
                                     <div className="d-table position-relative p-3 mb-4">
                                         <Image
@@ -87,6 +94,7 @@ const Solutions = () => {
                                     </ul>
                                 </CardBody>
                             </Card>
+                            </Link>
                         </Col>
                     ))}
                 </Row>
