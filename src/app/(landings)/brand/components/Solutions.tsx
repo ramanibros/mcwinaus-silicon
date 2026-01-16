@@ -38,7 +38,7 @@ const solutionsData: Solution[] = [
         icon: icon2,
         title: 'Visual Identity & Logo Design',
         points: [],
-        url: "#",
+        url: "/brand/visual-identity-logo-design",
         description: 'Award-winning logos, custom colour systems, typography—instant authority boost. Perth businesses stand out 3x more with visual identities that build trust and drive referrals immediately.'
     },
     {
@@ -46,7 +46,7 @@ const solutionsData: Solution[] = [
         icon: icon3,
         title: 'Digital Product UI/UX Design',
         points: [],
-        url: "#",
+        url: "/brand/digital-product-ui-ux-design",
         description: 'Brand-led websites, iOS/Android apps, landing pages—67% higher conversions guaranteed. Perth-first UX mapping turns visitors into customers with seamless, on-brand digital experiences.'
     },
     {
@@ -54,7 +54,7 @@ const solutionsData: Solution[] = [
         icon: icon4,
         title: 'Brand Implementation',
         points: [],
-        url: "#",
+        url: "/brand/brand-implementation",
         description: 'Cross-platform consistency, style guides, asset libraries—we\'ve got you covered. Local Perth team ensures perfect execution across web, app, social—long-term brand value guaranteed.'
     },
 ];
