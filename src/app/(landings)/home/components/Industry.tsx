@@ -4,6 +4,62 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
+import cms from '@/assets/img/services/icons/cms.svg';
+import rocket from '@/assets/img/services/icons/rocket.svg';
+import mobileApp from '@/assets/img/services/icons/mobile-app.svg';
+import analytics from '@/assets/img/services/icons/analytics.svg';
+import search from '@/assets/img/services/icons/web-search.svg';
+import timer from '@/assets/img/services/icons/timer.svg';
+
+
+type Service = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
+const services: Service[] = [
+  {
+    title: 'Government',
+    description: 'Experts. Infinite possibilities. One integrated team.',
+    icon: cms,
+  },
+  {
+    title: 'Healthcare',
+    description: '3x more patient bookings with compliant apps and local SEO that fills appointment schedules.',
+    icon: rocket,
+  },
+  {
+    title: 'Trades',
+    description: '40% more jobs from local SEO and instant booking sites—Perth contractors are winning bigger.',
+    icon: mobileApp,
+  },
+  {
+    title: 'eCommerce',
+    description: 'Online stores are boosting sales 3x with fast payments and abandoned cart recovery systems.',
+    icon: mobileApp,
+  },
+  {
+    title: 'Real Estate',
+    description: 'Property sites are converting 2x better with virtual tours and instant agent lead capture.',
+    icon: analytics,
+  },
+  {
+    title: 'Hospitality',
+    description: 'Tables filled year-round with reservation platforms and review-driven marketing campaigns.',
+    icon: search,
+  },
+  {
+    title: 'Finance',
+    description: 'Secure fintech tools bringing high-value clients through compliant, trust-building websites.',
+    icon: timer,
+  },
+  {
+    title: 'Education',
+    description: 'Course platforms are driving 50% more enrolments with engaging student funnels.',
+    icon: analytics,
+  }
+];
 
 const Industry = () => {
   // Added refs for animation
@@ -265,7 +321,7 @@ const Industry = () => {
           </Row>
 
           <Row className="row-cols-1 row-cols-md-4">
-            {[1,2,3,4,5,6,7,8].map((index) => (
+            {services.map((service, index) => (
               <Col key={index} className="my-2 my-sm-3">
                 <Link
                   href="#"
@@ -273,10 +329,10 @@ const Industry = () => {
                 >
                   <div className="card-body">
                     <h2 className="h5 d-inline-flex align-items-center">
-                      Industry {index}
+                      {service.title}
                     </h2>
-                    <div className="hr-indicator mb-2" />
-                    <p className="fs-sm text-body mb-0">Description for industry {index}</p>
+                    <div className="hr-indicator mb-2 m-0" />
+                    <p className="fs-sm text-body mb-0">{service.description}</p>
                   </div>
                 </Link>
               </Col>
