@@ -55,10 +55,11 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Brand Discovery & Research</h4>
+                <h4 className="mb-2">Website Brand Integration</h4>
                 <p className="mb-0">
-                  We dig deep into your business, audience, and market to uncover what truly
-                  sets you apart—no fluff, just clear insights designed for immediate impact.
+                  Your brand strategy embedded across every page—from hero sections to CTAs and
+                  messaging—creating up to 3× stronger trust signals that convert visitors into
+                  loyal customers.
                 </p>
               </div>
             </div>
@@ -68,10 +69,11 @@ const Description = () => {
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Competitor & Market Analysis</h4>
+                <h4 className="mb-2">Social Media Asset Deployment</h4>
                 <p className="mb-0">
-                  Identify exactly where you can outperform competitors with Australia-wide
-                  market intelligence—stay ahead while others scramble to catch up.
+                  Profile banners, post templates, and story graphics deployed across platforms—
+                  delivering up to 67% higher engagement through a consistent, scroll-stopping
+                  visual language.
                 </p>
               </div>
             </div>
@@ -81,10 +83,10 @@ const Description = () => {
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Core Purpose & Narrative</h4>
+                <h4 className="mb-2">Email & Marketing Materials</h4>
                 <p className="mb-0">
-                  Craft a compelling brand story that connects with both customers and staff,
-                  building trust, loyalty, and long-term engagement.
+                  Brand-perfect email templates, newsletters, and ad creatives that cut production
+                  time by up to 50% while significantly improving open rates and click-throughs.
                 </p>
               </div>
             </div>
@@ -94,10 +96,10 @@ const Description = () => {
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Positioning Strategy Framework</h4>
+                <h4 className="mb-2">Digital Asset Rollout</h4>
                 <p className="mb-0">
-                  A custom-built roadmap to own your niche—designed to attract up to 3× more
-                  premium leads through focused, strategic positioning.
+                  Favicons, app icons, and browser assets implemented flawlessly—delivering
+                  professional polish and instant credibility across every digital touchpoint.
                 </p>
               </div>
             </div>
@@ -107,10 +109,10 @@ const Description = () => {
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Messaging & Tone System</h4>
+                <h4 className="mb-2">Team Brand Guidelines</h4>
                 <p className="mb-0">
-                  Define a consistent brand voice across every channel for up to 67% higher
-                  engagement—reduce ad waste and drive real business results.
+                  Simple, actionable brand playbooks that keep teams aligned—eliminating
+                  inconsistency and preserving long-term brand equity across all departments.
                 </p>
               </div>
             </div>
@@ -120,10 +122,10 @@ const Description = () => {
                 <div className="step-number-inner">6</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Implementation Roadmap</h4>
+                <h4 className="mb-2">Performance Tracking Setup</h4>
                 <p className="mb-0">
-                  Clear, step-by-step execution plans to help you launch fast and scale
-                  confidently—combining local expertise with national reach.
+                  Analytics dashboards that track brand impact, conversions, and engagement—proving
+                  ROI daily with clear data tied directly to real revenue.
                 </p>
               </div>
             </div>
