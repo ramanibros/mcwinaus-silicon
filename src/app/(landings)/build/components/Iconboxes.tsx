@@ -1,8 +1,6 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination} from 'swiper/modules';
 import icon01 from '@/assets/img/landing/online-courses/icons/01.svg';
 import icon02 from '@/assets/img/landing/online-courses/icons/02.svg';
 import icon03 from '@/assets/img/landing/online-courses/icons/03.svg';

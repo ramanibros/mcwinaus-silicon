@@ -4,7 +4,7 @@ import avatar52 from '@/assets/img/avatar/52.jpg';
 import avatar53 from '@/assets/img/avatar/53.jpg';
 import React from 'react';
 import Image from 'next/image';
-import { Card, CardBody, Col, Container, Row } from 'react-bootstrap';
+import {Card, CardBody, Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
 
 const testimonialsData = [

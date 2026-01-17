@@ -1,17 +1,17 @@
 'use client';
 import IconifyIcon from '@/components/IconifyIcon';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
-  Card,
-  CardBody,
-  Col,
-  Container,
-  Row,
+    Accordion,
+    AccordionBody,
+    AccordionHeader,
+    AccordionItem,
+    Card,
+    CardBody,
+    Col,
+    Container,
+    Row,
 } from 'react-bootstrap';
 
 type FaqType = {

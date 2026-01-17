@@ -1,9 +1,7 @@
 'use client';
 import React from 'react';
 import Image, {StaticImageData} from 'next/image';
-import {Container, Card, CardBody, Col, Row} from 'react-bootstrap';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination} from 'swiper/modules';
+import {Card, CardBody, Col, Container, Row} from 'react-bootstrap';
 import icon1 from '@/assets/img/landing/software-agency-3/icons/01.svg';
 import icon2 from '@/assets/img/landing/software-agency-3/icons/02.svg';
 import icon3 from '@/assets/img/landing/software-agency-3/icons/03.svg';

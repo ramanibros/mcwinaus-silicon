@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Image, {StaticImageData} from 'next/image';
+import {Col, Container, Row} from 'react-bootstrap';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import jsLight from '@/assets/img/landing/software-agency-3/technologies/js-light.svg';
 import jsDark from '@/assets/img/landing/software-agency-3/technologies/js-dark.svg';
 import nodeLight from '@/assets/img/landing/software-agency-3/technologies/node-light.svg';

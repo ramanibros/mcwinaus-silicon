@@ -1,6 +1,6 @@
 'use client';
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, {useState} from 'react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Navigation} from 'swiper/modules';
 import testi1 from '@/assets/img/portfolio/aspireuniforms.png';
 import testi2 from '@/assets/img/portfolio/austaire.png';
@@ -12,7 +12,7 @@ import testi7 from '@/assets/img/portfolio/levitaactive.png';
 import testi8 from '@/assets/img/portfolio/quinnsrockstoolhire.png';
 import testi9 from '@/assets/img/portfolio/sfeg.png';
 
-import { Card, CardBody, Col, Row } from 'react-bootstrap';
+import {Card, CardBody, Col, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 
 const testimonials = [

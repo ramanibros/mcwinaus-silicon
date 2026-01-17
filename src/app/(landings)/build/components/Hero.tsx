@@ -1,11 +1,5 @@
 import React from 'react';
 import layer from '@/assets/img/build-service/build.png';
-import layer01 from '@/assets/img/landing/app-showcase-3/hero/layer01.png';
-import layer02 from '@/assets/img/landing/app-showcase-3/hero/layer02.png';
-import layer03 from '@/assets/img/landing/app-showcase-3/hero/layer03.png';
-import layer04 from '@/assets/img/landing/app-showcase-3/hero/layer04.png';
-import layer05 from '@/assets/img/landing/app-showcase-3/hero/layer05.png';
-import layer06 from '@/assets/img/landing/app-showcase-3/hero/layer06.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
 import Parallax from '@/components/Parallax';

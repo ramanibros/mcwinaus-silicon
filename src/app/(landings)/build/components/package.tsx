@@ -3,17 +3,9 @@ import basic from '@/assets/img/landing/saas-1/pricing/basic.png';
 import standard from '@/assets/img/landing/saas-1/pricing/standard.png';
 import ultimate from '@/assets/img/landing/saas-1/pricing/ultimate.png';
 import IconifyIcon from '@/components/IconifyIcon';
-import Image, { StaticImageData } from 'next/image';
-import React, { useState } from 'react';
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  Col,
-  Container,
-  Row,
-} from 'react-bootstrap';
+import Image, {StaticImageData} from 'next/image';
+import React, {useState} from 'react';
+import {Button, Card, CardBody, CardFooter, Col, Container, Row,} from 'react-bootstrap';
 
 type Feature = {
   text: string;
