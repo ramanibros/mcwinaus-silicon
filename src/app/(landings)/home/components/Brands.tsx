@@ -1,5 +1,7 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Container, Button } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
@@ -34,11 +36,80 @@ const brands: Brand[] = [
 ];
 
 const Brands = () => {
+  // Added refs for animation
+  const h2Ref = useRef<HTMLHeadingElement>(null);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  // Added animation effect
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    if (h2Ref.current && spanRef.current) {
+      const h2Text = h2Ref.current;
+      const spanText = spanRef.current;
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: h2Ref.current,
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1,
+          markers: false,
+        }
+      });
+
+      // Animate the entire h2
+      tl.fromTo(h2Text,
+        {
+          opacity: 0,
+          y: 50
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out"
+        }
+      );
+
+      // Animate the gradient span with a different effect
+      tl.fromTo(spanText,
+        {
+          opacity: 0,
+          scale: 0.8,
+          backgroundSize: "200% 200%",
+          backgroundPosition: "100% 0%"
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "back.out(1.7)",
+          backgroundPosition: "0% 100%",
+        },
+        "-=0.8"
+      );
+    }
+
+    // Cleanup
+    return () => {
+      const triggers = ScrollTrigger.getAll();
+      triggers.forEach(trigger => {
+        if (h2Ref.current && trigger.trigger === h2Ref.current) {
+          trigger.kill();
+        }
+      });
+    };
+  }, []);
+
   return (
     <section className="pb-4 pb-lg-5 mb-3 mt-5">
       <Container>
         <div className="d-flex align-items-center justify-content-md-between justify-content-center mb-md-4 mb-3">
-          <h2 className="mb-0">Trusted by <span className="text-gradient-primary">Clients</span></h2>
+          {/* Updated h2 with refs */}
+          <h2 ref={h2Ref} className="mb-0">
+            Trusted by <span ref={spanRef} className="text-gradient-primary">Clients</span>
+          </h2>
 
           <div className="d-md-flex d-none ms-4">
             <Button

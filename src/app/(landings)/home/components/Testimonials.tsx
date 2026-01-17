@@ -1,5 +1,7 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Pagination} from 'swiper/modules';
@@ -48,6 +50,72 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+    // Added refs for animation
+    const h2Ref = useRef<HTMLHeadingElement>(null);
+    const spanRef = useRef<HTMLSpanElement>(null);
+
+    // Added animation effect
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+
+        if (h2Ref.current && spanRef.current) {
+            const h2Text = h2Ref.current;
+            const spanText = spanRef.current;
+            
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: h2Ref.current,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: 1,
+                    markers: false,
+                }
+            });
+
+            // Animate the entire h2
+            tl.fromTo(h2Text,
+                {
+                    opacity: 0,
+                    y: 50
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                }
+            );
+
+            // Animate the gradient span with a different effect
+            tl.fromTo(spanText,
+                {
+                    opacity: 0,
+                    scale: 0.8,
+                    backgroundSize: "200% 200%",
+                    backgroundPosition: "100% 0%"
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "back.out(1.7)",
+                    backgroundPosition: "0% 100%",
+                },
+                "-=0.8"
+            );
+        }
+
+        // Cleanup
+        return () => {
+            const triggers = ScrollTrigger.getAll();
+            triggers.forEach(trigger => {
+                if (h2Ref.current && trigger.trigger === h2Ref.current) {
+                    trigger.kill();
+                }
+            });
+        };
+    }, []);
+
     return (
         <section className="container pb-5">
             <Row>
@@ -57,8 +125,9 @@ const Testimonials = () => {
                             className="bg-gradient-primary position-absolute top-0 start-0 w-100 h-100 opacity-10 d-none d-md-block"></span>
                         <CardBody
                             className="d-flex flex-column align-items-center justify-content-center position-relative zindex-2 p-0 pb-2 p-lg-4">
-                            <h2 className="h1 text-center text-md-start p-lg-4">
-                                Real Results From <span className="text-gradient-primary">Perth Clients</span>
+                            {/* Updated h2 with refs */}
+                            <h2 ref={h2Ref} className="h1 text-center text-md-start p-lg-4">
+                                Real Results From <span ref={spanRef} className="text-gradient-primary">Perth Clients</span>
                             </h2>
                         </CardBody>
                     </Card>

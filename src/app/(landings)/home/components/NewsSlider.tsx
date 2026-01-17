@@ -1,6 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Container, Card, Badge, CardBody, CardFooter } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -83,10 +85,81 @@ const newsData: NewsItem[] = [
 ];
 
 const NewsSlider = () => {
+  // Added refs for animation
+  const h2Ref = useRef<HTMLHeadingElement>(null);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  // Added animation effect
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    if (h2Ref.current && spanRef.current) {
+      const h2Text = h2Ref.current;
+      const spanText = spanRef.current;
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: h2Ref.current,
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1,
+          markers: false,
+        }
+      });
+
+      // Animate the entire h2
+      tl.fromTo(h2Text,
+        {
+          opacity: 0,
+          y: 50
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out"
+        }
+      );
+
+      // Animate the gradient span with a different effect
+      tl.fromTo(spanText,
+        {
+          opacity: 0,
+          scale: 0.8,
+          backgroundSize: "200% 200%",
+          backgroundPosition: "100% 0%"
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "back.out(1.7)",
+          backgroundPosition: "0% 100%",
+        },
+        "-=0.8"
+      );
+    }
+
+    // Cleanup
+    return () => {
+      const triggers = ScrollTrigger.getAll();
+      triggers.forEach(trigger => {
+        if (h2Ref.current && trigger.trigger === h2Ref.current) {
+          trigger.kill();
+        }
+      });
+    };
+  }, []);
+
   return (
-    <section className="bg-secondary border-bottom border-light py-5">
+    <section className=" border-bottom border-light py-5"  style={{
+    background: 'linear-gradient(127deg,rgba(255, 255, 255, 0) 0%, rgba(247, 215, 255, 0.4) 54%, rgba(195, 186, 255, 1) 100%);',
+  }}>
       <Container className="py-md-3 py-lg-5">
-        <h2 className="h1 text-center pb-2">News &amp; <span className="text-gradient-primary">Insights</span></h2>
+        {/* Updated h2 with refs */}
+        <h2 ref={h2Ref} className="h1 text-center pb-2">
+          News &amp; <span ref={spanRef} className="text-gradient-primary">Insights</span>
+        </h2>
 
         <div className="position-relative mx-md-2 px-md-5">
           <button

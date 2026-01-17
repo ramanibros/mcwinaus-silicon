@@ -33,8 +33,8 @@ const Page = () => {
             <Features/>
             <About/>
             <Choose/>
-            <Counter/>
             <Banner/>
+            <Counter/>
             <Work/>
             <NewsSlider/>
             <Brands/>

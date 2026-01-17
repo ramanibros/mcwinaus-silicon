@@ -1,7 +1,9 @@
 'use client';
 import IconifyIcon from '@/components/IconifyIcon';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react'; // Added useEffect, useRef
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
   Accordion,
   AccordionBody,
@@ -82,7 +84,7 @@ const faqs: FaqType[] = [
         answer: (
             <>
               <p className="mb-0">
-                100% yes. Strategy, design, development, and marketing—all handled by Perth’s top
+                100% yes. Strategy, design, development, and marketing—all handled by Perth's top
                 digital team for a seamless, results-driven experience.
               </p>
             </>
@@ -92,13 +94,80 @@ const faqs: FaqType[] = [
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');
+  
+  // Added refs for animation
+  const h2Ref = useRef<HTMLHeadingElement>(null);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  // Added animation effect
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    if (h2Ref.current && spanRef.current) {
+      const h2Text = h2Ref.current;
+      const spanText = spanRef.current;
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: h2Ref.current,
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1,
+          markers: false,
+        }
+      });
+
+      // Animate the entire h2
+      tl.fromTo(h2Text,
+        {
+          opacity: 0,
+          y: 50
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out"
+        }
+      );
+
+      // Animate the gradient span with a different effect
+      tl.fromTo(spanText,
+        {
+          opacity: 0,
+          scale: 0.8,
+          backgroundSize: "200% 200%",
+          backgroundPosition: "100% 0%"
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "back.out(1.7)",
+          backgroundPosition: "0% 100%",
+        },
+        "-=0.8"
+      );
+    }
+
+    // Cleanup
+    return () => {
+      const triggers = ScrollTrigger.getAll();
+      triggers.forEach(trigger => {
+        if (h2Ref.current && trigger.trigger === h2Ref.current) {
+          trigger.kill();
+        }
+      });
+    };
+  }, []);
 
   return (
     <Container className="py-5 mb-lg-2">
       <Row className="py-2 py-md-4 py-lg-5">
         <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
-          <h2 className="pb-3 mb-1 mb-lg-3">
-            <span className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
+          {/* Updated h2 with refs */}
+          <h2 ref={h2Ref} className="pb-3 mb-1 mb-lg-3">
+            <span ref={spanRef} className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
             Check out the FAQs
           </h2>
           <p className="fs-lg pb-3 mb-2 mb-lg-3">
