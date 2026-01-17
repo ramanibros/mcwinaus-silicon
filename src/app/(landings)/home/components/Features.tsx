@@ -240,7 +240,7 @@ const Features = () => {
             ref={h1Ref}
             className="h1 mb-md-4 mb-3 pt-xl-3 h1-animated"
           >
-            Your brand, <span ref={spanRef} className="text-gradient-primary">Your Growth Partner.</span>
+            <span ref={spanRef} className="text-gradient-primary">Your brand,</span> Your Growth Partner.
           </h2>
           <Row className="gy-sm-4 gy-3 pb-xl-2 pb-md-0 pb-sm-2">
             <Col md={6} xs={12}>
