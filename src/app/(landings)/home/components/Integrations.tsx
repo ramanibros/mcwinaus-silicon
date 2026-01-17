@@ -18,10 +18,6 @@ import magentoGray from '@/assets/img/landing/app-showcase-3/integrations/magent
 import magentoLight from '@/assets/img/landing/app-showcase-3/integrations/magento-color-light.svg';
 import magentoDark from '@/assets/img/landing/app-showcase-3/integrations/magento-color-dark.svg';
 
-import pingdomGray from '@/assets/img/landing/app-showcase-3/integrations/pingdom-gray.svg';
-import pingdomLight from '@/assets/img/landing/app-showcase-3/integrations/pingdom-color-light.svg';
-import pingdomDark from '@/assets/img/landing/app-showcase-3/integrations/pingdom-color-dark.svg';
-
 import angularGray from '@/assets/img/landing/app-showcase-3/integrations/angular-gray.svg';
 import angularLight from '@/assets/img/landing/app-showcase-3/integrations/angular-color-light.svg';
 import angularDark from '@/assets/img/landing/app-showcase-3/integrations/angular-color-dark.svg';
@@ -117,12 +113,6 @@ const integrations: IntegrationsType[] = [
         gray: magentoGray,
         light: magentoLight,
         dark: magentoDark,
-    },
-    {
-        name: 'Pingdom',
-        gray: pingdomGray,
-        light: pingdomLight,
-        dark: pingdomDark,
     },
     {
         name: 'Angular',
