@@ -45,6 +45,9 @@ import nodeColor from '@/assets/img/landing/app-showcase-3/integrations/nodejs-c
 import reactGray from '@/assets/img/landing/app-showcase-3/integrations/reactjs-gray.svg';
 import reactColor from '@/assets/img/landing/app-showcase-3/integrations/reactjs-color.svg';
 
+import nextGray from '@/assets/img/landing/app-showcase-3/integrations/nextjs-gray.svg';
+import nextColor from '@/assets/img/landing/app-showcase-3/integrations/nextjs-color.svg';
+
 import Link from 'next/link';
 
 type IntegrationsType = {
@@ -84,6 +87,12 @@ const integrations: IntegrationsType[] = [
         gray: nodeGray,
         light: nodeColor,
         dark: nodeColor,
+    },
+    {
+        name: 'NextJS',
+        gray: nextGray,
+        light: nextColor,
+        dark: nextColor,
     },
     {
         name: 'Envato',
