@@ -1,7 +1,6 @@
 import IconifyIcon from '@/components/IconifyIcon';
 import {Metadata} from 'next';
 import Link from 'next/link';
-import Offer from './components/Offer';
 import PageTitle from './components/PageTitle';
 import TextSession from './components/TextSession';
 import Work from './components/Work';
@@ -10,7 +9,6 @@ import Portfolio from "@/app/(landings)/service-detail/components/Portfolio";
 import Pricing from "@/components/common/Pricing";
 import Footer from "@/components/common/Footer";
 import Faqs from "@/app/(landings)/service-detail/components/Faqs";
-import HowWeWork from "@/app/(landings)/service-detail/components/HowWeWork";
 import Description from "@/app/(landings)/service-detail/components/Description";
 import Package from "@/app/(landings)/service-detail/components/package";
 
@@ -47,10 +45,8 @@ const Page = () => {
             </nav>
             <PageTitle/>
             <Work/>
-            {/*<Offer/>*/}
             <Description/>
             <Portfolio/>
-            {/*<HowWeWork/>*/}
             <TextSession/>
             <Faqs/>
             <Package/>

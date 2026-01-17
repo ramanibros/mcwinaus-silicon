@@ -1,7 +1,7 @@
 'use client';
-import { Autoplay, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { StaticImageData } from 'next/image';
+import {Autoplay, Pagination} from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {StaticImageData} from 'next/image';
 import React from "react";
 
 type Benefit = {

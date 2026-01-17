@@ -15,25 +15,24 @@ const TextSession = () => {
                 </Col>
                 <Col md={6} className="order-md-2">
                     <div className="pe-xl-5 me-md-2 me-lg-4">
-                        <h2 className="h1 mb-3 mb-sm-4">Australia's Smartest Brand PositioningAustralia's Smartest Brand
-                            Positioning</h2>
+                        <h2 className="h1 mb-3 mb-sm-4">Australia's Brand Execution Experts</h2>
                         <p className="mb-3 mb-sm-4">
-                            Positioning that actually grows your business—not just pretty logos. What sets us apart:
-                            Perth locals who actually care about your success. Real results guaranteed, no endless
-                            revisions.
+                            Strategy-to-revenue activation—not just planning documents. What sets us apart: Perth locals
+                            who genuinely care about consistent execution. Proof, not promises: 67% performance
+                            guaranteed.
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Australia-Wide Market Know-How
+                                Nationwide Consistency
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Competitor-Beating Intelligence
+                                Zero Execution Waste
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Profit-First Positioning
+                                Revenue Attribution Clarity
                             </li>
                         </ul>
                     </div>

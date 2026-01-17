@@ -60,7 +60,7 @@ const Work = () => {
                     <SwiperSlide key={i} className="py-3">
                         <Link href="#" className="card card-hover border-0 shadow-sm mx-2">
                             <div className="card-body">
-                                <Image src={brand.image} alt={brand.name} className="d-block mx-auto"/>
+                                <Image src={brand.image} alt={brand.name} className="d-block mx-auto service_tools"/>
                             </div>
                         </Link>
                     </SwiperSlide>

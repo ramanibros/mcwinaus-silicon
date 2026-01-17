@@ -21,69 +21,93 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Why bother with positioning?',
+    question: 'Why does implementation matter most?',
     answer: (
         <>
           <p>
-            Positioned brands win. Without clear positioning, brands get lost in the noise.
-            Strong positioning delivers up to 3× stronger market presence—helping you own
-            your space long-term instead of competing on price.
+            Because strategy without execution is wasted spend. There’s up to a 67% conversion
+            gap between great ideas and poor rollout—flawless implementation unlocks up to
+            3× revenue by turning strategy into real-world results.
           </p>
         </>
     ),
   },
   {
-    question: 'How do you beat competitors?',
+    question: 'Can you fix inconsistent existing brands?',
     answer: (
         <>
           <p>
-            Through smart competitor and market analysis. We uncover unique winning angles
-            that competitors miss—so you can claim a clear niche while others chase trends.
+            Yes. This is a core speciality. We audit fragmented brands, eliminate inconsistency,
+            and realign everything fast—turning chaos into a conversion-focused system within
+            weeks, not months.
           </p>
         </>
     ),
   },
   {
-    question: 'Can you reposition established brands?',
+    question: 'Do you cover all digital channels?',
     answer: (
         <>
           <p>
-            Absolutely. This is one of our core strengths. With decades of experience, we
-            transform good, established brands into clear category leaders without losing
-            existing brand equity.
+            Absolutely. Website, social media, email, ads, and digital assets—100% coverage
+            across every platform Australians engage with, ensuring one cohesive brand
+            experience everywhere.
           </p>
         </>
     ),
   },
   {
-    question: 'Do you work Australia-wide?',
+    question: 'Can you work with our existing assets?',
     answer: (
         <>
           <p>
-            Yes—100%. Headquartered in Perth with national delivery across Australia,
-            supporting businesses coast to coast with the same strategic depth.
+            Yes. We keep what’s working and upgrade what isn’t. The result is a smooth
+            transition that maintains momentum while instantly elevating quality and
+            performance.
           </p>
         </>
     ),
   },
   {
-    question: 'What makes you different?',
+    question: 'What makes your rollout genuinely different?',
     answer: (
         <>
           <p>
-            No cookie-cutter strategies. We genuinely care about outcomes—every positioning
-            framework is custom-built to create real differentiation and lasting impact.
+            Revenue-first execution. Every rollout is tracked, measured, and optimised—we care
+            about performance, not just delivery. If it doesn’t drive ROI, it doesn’t ship.
           </p>
         </>
     ),
   },
   {
-    question: 'Will this boost our sales?',
+    question: 'Can you guarantee brand consistency?',
+    answer: (
+        <>
+          <p>
+            Yes—100% adherence. We ensure flawless execution across every team member, partner,
+            and channel, protecting your brand equity at every touchpoint.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Do you track actual revenue impact?',
+    answer: (
+        <>
+          <p>
+            From day one. Full attribution dashboards track conversions, engagement, and
+            revenue—proving brand ROI with hard data, not opinions or assumptions.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Is this scalable as the business grows?',
     answer: (
         <>
           <p className="mb-0">
-            Yes. Proven results show up to 67% conversion improvement. Strong positioning
-            attracts higher-value Australian customers who are ready to buy—not just browse.
+            Completely. Our systems are built to scale effortlessly—from MVP to enterprise—
+            so you can grow without rebuilding or redoing your core brand implementation.
           </p>
         </>
     ),

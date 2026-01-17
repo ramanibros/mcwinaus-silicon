@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import {Button, Col, Container, Row} from 'react-bootstrap';
 
 import aboutImg from '@/assets/img/landing/software-agency-1/about-img.jpg';
 import clutchLight from '@/assets/img/landing/software-agency-3/awards/clutch-light.png';

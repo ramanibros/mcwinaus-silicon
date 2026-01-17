@@ -1,9 +1,7 @@
 import React from 'react';
-import image01 from '@/assets/img/services/single/image01.jpg';
 import image02 from '@/assets/img/services/single/image02.jpg';
 import Image from 'next/image';
 import {Col, Row} from 'react-bootstrap';
-import Link from 'next/link';
 import IconifyIcon from '@/components/IconifyIcon';
 
 const TextSession = () => {

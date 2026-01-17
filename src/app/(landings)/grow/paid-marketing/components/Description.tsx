@@ -1,6 +1,6 @@
 import IconifyIcon from '@/components/IconifyIcon';
 import React from 'react';
-import { Card, CardBody, Col, Row } from 'react-bootstrap';
+import {Card, CardBody, Col, Row} from 'react-bootstrap';
 
 const Description = () => {
   return (

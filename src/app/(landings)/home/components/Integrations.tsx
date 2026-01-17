@@ -18,10 +18,6 @@ import magentoGray from '@/assets/img/landing/app-showcase-3/integrations/magent
 import magentoLight from '@/assets/img/landing/app-showcase-3/integrations/magento-color-light.svg';
 import magentoDark from '@/assets/img/landing/app-showcase-3/integrations/magento-color-dark.svg';
 
-import pingdomGray from '@/assets/img/landing/app-showcase-3/integrations/pingdom-gray.svg';
-import pingdomLight from '@/assets/img/landing/app-showcase-3/integrations/pingdom-color-light.svg';
-import pingdomDark from '@/assets/img/landing/app-showcase-3/integrations/pingdom-color-dark.svg';
-
 import angularGray from '@/assets/img/landing/app-showcase-3/integrations/angular-gray.svg';
 import angularLight from '@/assets/img/landing/app-showcase-3/integrations/angular-color-light.svg';
 import angularDark from '@/assets/img/landing/app-showcase-3/integrations/angular-color-dark.svg';
@@ -29,6 +25,24 @@ import angularDark from '@/assets/img/landing/app-showcase-3/integrations/angula
 import wooGray from '@/assets/img/landing/app-showcase-3/integrations/woocommerce-gray.svg';
 import wooLight from '@/assets/img/landing/app-showcase-3/integrations/woocommerce-color-light.svg';
 import wooDark from '@/assets/img/landing/app-showcase-3/integrations/woocommerce-color-dark.svg';
+
+import wordGray from '@/assets/img/landing/app-showcase-3/integrations/wordpress-gray.svg';
+import wordColor from '@/assets/img/landing/app-showcase-3/integrations/wordpress-color.svg';
+
+import shopifyGray from '@/assets/img/landing/app-showcase-3/integrations/shopify-gray.svg';
+import shopifyColor from '@/assets/img/landing/app-showcase-3/integrations/shopify-color.svg';
+
+import pythonGray from '@/assets/img/landing/app-showcase-3/integrations/python-gray.svg';
+import pythonColor from '@/assets/img/landing/app-showcase-3/integrations/python-color.svg';
+
+import nodeGray from '@/assets/img/landing/app-showcase-3/integrations/nodejs-gray.svg';
+import nodeColor from '@/assets/img/landing/app-showcase-3/integrations/nodejs-color.svg';
+
+import reactGray from '@/assets/img/landing/app-showcase-3/integrations/reactjs-gray.svg';
+import reactColor from '@/assets/img/landing/app-showcase-3/integrations/reactjs-color.svg';
+
+import nextGray from '@/assets/img/landing/app-showcase-3/integrations/nextjs-gray.svg';
+import nextColor from '@/assets/img/landing/app-showcase-3/integrations/nextjs-color.svg';
 
 import Link from 'next/link';
 
@@ -47,10 +61,46 @@ const integrations: IntegrationsType[] = [
         dark: javaColor,
     },
     {
+        name: 'Wordpress',
+        gray: wordGray,
+        light: wordColor,
+        dark: wordColor,
+    },
+    {
+        name: 'Shopify',
+        gray: shopifyGray,
+        light: shopifyColor,
+        dark: shopifyColor,
+    },
+    {
+        name: 'Python',
+        gray: pythonGray,
+        light: pythonColor,
+        dark: pythonColor,
+    },
+    {
+        name: 'NodeJs',
+        gray: nodeGray,
+        light: nodeColor,
+        dark: nodeColor,
+    },
+    {
+        name: 'NextJS',
+        gray: nextGray,
+        light: nextColor,
+        dark: nextColor,
+    },
+    {
         name: 'Envato',
         gray: envatoGray,
         light: envatoLight,
         dark: envatoDark,
+    },
+    {
+        name: 'React',
+        gray: reactGray,
+        light: reactColor,
+        dark: reactColor,
     },
     {
         name: 'Laravel',
@@ -63,12 +113,6 @@ const integrations: IntegrationsType[] = [
         gray: magentoGray,
         light: magentoLight,
         dark: magentoDark,
-    },
-    {
-        name: 'Pingdom',
-        gray: pingdomGray,
-        light: pingdomLight,
-        dark: pingdomDark,
     },
     {
         name: 'Angular',

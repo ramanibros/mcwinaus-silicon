@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import Image, {StaticImageData} from 'next/image';
+import {Button, Col, Container, Row} from 'react-bootstrap';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Navigation} from 'swiper/modules';
 import industry1 from '@/assets/img/landing/software-agency-3/industries/01.jpg';
 import industry2 from '@/assets/img/landing/software-agency-3/industries/02.jpg';
 import industry3 from '@/assets/img/landing/software-agency-3/industries/03.jpg';

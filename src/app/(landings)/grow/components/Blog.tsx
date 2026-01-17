@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import { CardBody, Container } from 'react-bootstrap';
-import Image, { StaticImageData } from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import {CardBody, Container} from 'react-bootstrap';
+import Image, {StaticImageData} from 'next/image';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Autoplay, Pagination} from 'swiper/modules';
 import blog05 from '@/assets/img/blog/05.jpg';
 import blog07 from '@/assets/img/blog/07.jpg';
 import blog08 from '@/assets/img/blog/08.jpg';

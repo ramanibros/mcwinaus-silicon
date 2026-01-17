@@ -1,7 +1,7 @@
 import React from 'react';
 import video from '@/assets/img/landing/app-showcase-3/video-cover.jpg';
 import Image from 'next/image';
-import { Col, Container, Row } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 import GlightBox from '@/components/GlightBox';
 

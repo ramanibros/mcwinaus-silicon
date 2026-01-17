@@ -4,10 +4,10 @@ import step02 from '@/assets/img/landing/app-showcase-3/steps/02.png';
 import step03 from '@/assets/img/landing/app-showcase-3/steps/03.png';
 import IconifyIcon from '@/components/IconifyIcon';
 import Image from 'next/image';
-import { useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
+import {useState} from 'react';
+import {Col, Container, Row} from 'react-bootstrap';
+import {Navigation, Pagination} from 'swiper/modules';
+import {Swiper, SwiperClass, SwiperSlide} from 'swiper/react';
 
 const Works = () => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);

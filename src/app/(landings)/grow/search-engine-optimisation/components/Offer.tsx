@@ -1,7 +1,7 @@
 import React from 'react';
 import dashboard from '@/assets/img/services/single/dashboard.png';
 import Image from 'next/image';
-import { Col, Container, Row } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 
 const Offer = () => {

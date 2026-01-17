@@ -1,5 +1,5 @@
-import Image, { StaticImageData } from 'next/image';
-import { Col, Row } from 'react-bootstrap';
+import Image, {StaticImageData} from 'next/image';
+import {Col, Row} from 'react-bootstrap';
 
 import project1 from '@/assets/img/landing/software-agency-3/projects/01.png';
 import project2 from '@/assets/img/landing/software-agency-3/projects/02.png';

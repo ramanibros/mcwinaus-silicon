@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import {Button, Col, Container, Row} from 'react-bootstrap';
 
 import clutchRating from '@/assets/img/landing/software-agency-3/clutch-rating.png';
 import heroBg from '@/assets/img/landing/software-agency-3/hero-bg.png';

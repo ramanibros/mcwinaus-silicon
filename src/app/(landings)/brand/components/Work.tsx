@@ -8,7 +8,7 @@ import ass3 from '@/assets/img/brand-service/tools/illustrator_5611037.png';
 import ass4 from '@/assets/img/brand-service/tools/logo_10651757.png';
 import ass5 from '@/assets/img/brand-service/tools/looka.png';
 import ass6 from '@/assets/img/brand-service/tools/after-effects_5968428.png';
-import ass7 from '@/assets/img/brand-service/tools/canva.png';
+import ass7 from '@/assets/img/brand-service/tools/photoshop.png';
 import ass8 from '@/assets/img/brand-service/tools/kittl.png';
 
 import Link from 'next/link';
@@ -59,7 +59,7 @@ const Work = () => {
                     <SwiperSlide key={i} className="py-3">
                         <Link href="#" className="card card-hover border-0 shadow-sm mx-2">
                             <div className="card-body">
-                                <Image src={brand.image} alt={brand.name} className="d-block mx-auto"/>
+                                <Image src={brand.image} alt={brand.name} className="d-block mx-auto service_tools"/>
                             </div>
                         </Link>
                     </SwiperSlide>

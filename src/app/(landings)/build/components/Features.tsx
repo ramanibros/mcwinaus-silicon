@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 import Image from 'next/image';
 
 import scooterIcon from '@/assets/img/landing/startup/icons/riding-scooter.svg';

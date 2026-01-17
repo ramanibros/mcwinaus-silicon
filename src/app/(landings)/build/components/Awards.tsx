@@ -5,7 +5,7 @@ import palmLeftLight from '@/assets/img/landing/app-showcase-3/palm-branch-left-
 import palmLeftDark from '@/assets/img/landing/app-showcase-3/palm-branch-left-dark.svg';
 import palmRightLight from '@/assets/img/landing/app-showcase-3/palm-branch-right-light.svg';
 import palmRightDark from '@/assets/img/landing/app-showcase-3/palm-branch-right-dark.svg';
-import { Col, Container, Row } from 'react-bootstrap';
+import {Col, Container, Row} from 'react-bootstrap';
 
 type CardType = {
   id: number;

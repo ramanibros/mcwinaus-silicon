@@ -1,18 +1,12 @@
 import React from 'react';
-import layer from '@/assets/img/build-service/build.png';
-import layer01 from '@/assets/img/landing/app-showcase-3/hero/layer01.png';
-import layer02 from '@/assets/img/landing/app-showcase-3/hero/layer02.png';
-import layer03 from '@/assets/img/landing/app-showcase-3/hero/layer03.png';
-import layer04 from '@/assets/img/landing/app-showcase-3/hero/layer04.png';
-import layer05 from '@/assets/img/landing/app-showcase-3/hero/layer05.png';
-import layer06 from '@/assets/img/landing/app-showcase-3/hero/layer06.png';
+import layer from '@/assets/img/build-service/build-2.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
 import Parallax from '@/components/Parallax';
 
 const Hero = () => {
     return (
-        <section className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5 mt-5 pb-5">
+        <section className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5 mt-5 pb-5" style={{marginTop:"80px !important"}}>
             <Container>
                 <Row className="justify-content-center align-items-center">
                     <Parallax>

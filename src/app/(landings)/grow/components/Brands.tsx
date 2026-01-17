@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import Image, { StaticImageData } from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import {Container} from 'react-bootstrap';
+import Image, {StaticImageData} from 'next/image';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Pagination} from 'swiper/modules';
 import brand01 from '@/assets/img/brands/01.svg';
 import brand02 from '@/assets/img/brands/01.svg';
 import brand03 from '@/assets/img/brands/01.svg';
