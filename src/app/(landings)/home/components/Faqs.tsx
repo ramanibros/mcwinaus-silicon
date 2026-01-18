@@ -1,9 +1,9 @@
 'use client';
 import IconifyIcon from '@/components/IconifyIcon';
 import Link from 'next/link';
-import React, {useState, useEffect, useRef} from 'react'; // Added useEffect, useRef
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import React, { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
     Accordion,
     AccordionBody,
@@ -96,15 +96,12 @@ const faqs: FaqType[] = [
     },
 ];
 
-
 const Faqs = () => {
     const [activeKey, setActiveKey] = useState<string | null>('0');
-
-    // Added refs for animation
+    
     const h2Ref = useRef<HTMLHeadingElement>(null);
     const spanRef = useRef<HTMLSpanElement>(null);
 
-    // Added animation effect
     useEffect(() => {
         if (typeof window === 'undefined') return;
 
@@ -122,47 +119,20 @@ const Faqs = () => {
                 }
             });
 
-            // Animate the entire h2
             tl.fromTo(h2Text,
-                {
-                    opacity: 0,
-                    y: 50
-                },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
-                    ease: "power2.out"
-                }
+                { opacity: 0, y: 50 },
+                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
             );
 
-            // Animate the gradient span with a different effect
             tl.fromTo(spanText,
-                {
-                    opacity: 0,
-                    scale: 0.8,
-                    backgroundSize: "200% 200%",
-                    backgroundPosition: "100% 0%"
-                },
-                {
-                    opacity: 1,
-                    scale: 1,
-                    duration: 1.2,
-                    ease: "back.out(1.7)",
-                    backgroundPosition: "0% 100%",
-                },
+                { opacity: 0, scale: 0.8 },
+                { opacity: 1, scale: 1, duration: 1.2, ease: "back.out(1.7)" },
                 "-=0.8"
             );
         }
 
-        // Cleanup
         return () => {
-            const triggers = ScrollTrigger.getAll();
-            triggers.forEach(trigger => {
-                if (h2Ref.current && trigger.trigger === h2Ref.current) {
-                    trigger.kill();
-                }
-            });
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
 
@@ -170,7 +140,6 @@ const Faqs = () => {
         <Container className="py-5 mb-lg-2">
             <Row className="py-2 py-md-4 py-lg-5">
                 <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
-                    {/* Updated h2 with refs */}
                     <h2 ref={h2Ref} className="pb-3 mb-1 mb-lg-3">
                         <span ref={spanRef} className="text-gradient-primary">Any questions?</span> <br
                         className="d-none d-md-inline"/>
@@ -179,39 +148,61 @@ const Faqs = () => {
                     <p className="fs-lg pb-3 mb-2 mb-lg-3">
                         Still have unanswered questions and need to get in touch?
                     </p>
+                    
+                    {/* CLEAN PROFESSIONAL BOX DESIGN */}
                     <Row className="row-cols-1 row-cols-sm-2 g-3 g-sm-4">
+                        {/* WhatsApp Box */}
                         <Col>
-                            <Card className="card-hover">
-                                <CardBody className="pb-3">
-                  <span className="d-block fs-2 text-primary mb-2 py-1">
-                    <IconifyIcon icon="bxl:whatsapp" className="w-100"/>
-                  </span>
-                                    <p className="fs-sm mb-2">Still have questions?</p>
-                                    <Link href="https://wa.me/+61466953095" target="_blank"
-                                          className="btn btn-link stretched-link px-0">
+                            <Card className="border-0 shadow-sm bg-light hover-shadow transition-all">
+                                <CardBody className="p-4 text-center">
+                                    <div className="mb-3">
+                                        <div className="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
+                                            <IconifyIcon 
+                                                icon="bxl:whatsapp" 
+                                                className="fs-2 text-success"
+                                            />
+                                        </div>
+                                    </div>
+                                    <p className="fs-sm text-muted mb-2">Still have questions?</p>
+                                    <Link 
+                                        href="https://wa.me/+61466953095" 
+                                        target="_blank"
+                                        className="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center"
+                                    >
                                         WhatsApp Us
-                                        <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2"/>
+                                        <IconifyIcon icon="bx:right-arrow-alt" className="ms-2" />
                                     </Link>
                                 </CardBody>
                             </Card>
                         </Col>
+                        
+                        {/* Email Box */}
                         <Col>
-                            <Card className="card-hover">
-                                <CardBody className="pb-3">
-                  <span className="d-block fs-2 text-success mb-2 py-1">
-                    <IconifyIcon icon="bx:envelope" className="w-100"/>
-                  </span>
-                                    <p className="fs-sm mb-2">Still have questions?</p>
-                                    <Link href="mailto:hello@mcwinitech.com.au"
-                                          className="btn btn-link text-success stretched-link px-0">
+                            <Card className="border-0 shadow-sm bg-light hover-shadow transition-all">
+                                <CardBody className="p-4 text-center">
+                                    <div className="mb-3">
+                                        <div className="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
+                                            <IconifyIcon 
+                                                icon="bx:envelope" 
+                                                className="fs-2 text-primary"
+                                            />
+                                        </div>
+                                    </div>
+                                    <p className="fs-sm text-muted mb-2">Still have questions?</p>
+                                    <Link 
+                                        href="mailto:hello@mcwinitech.com.au"
+                                        className="btn btn-primary btn-sm rounded-pill px-3 d-inline-flex align-items-center"
+                                    >
                                         Mail Us
-                                        <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2"/>
+                                        <IconifyIcon icon="bx:right-arrow-alt" className="ms-2" />
                                     </Link>
                                 </CardBody>
                             </Card>
                         </Col>
                     </Row>
                 </Col>
+                
+                {/* FAQs Section */}
                 <Col md={7} className="offset-xl-1">
                     <Accordion activeKey={activeKey} onSelect={k => setActiveKey(k as string)}>
                         {faqs.map((faq, idx) => (

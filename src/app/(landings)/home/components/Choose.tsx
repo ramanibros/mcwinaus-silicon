@@ -131,7 +131,7 @@ const Choose = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(169deg, #fff0 0%, #e7edff 100%);
+          background: linear-gradient(169deg, #ffc4f824 0%, #e3ceff 100%);
           z-index: -1;
         }
         
