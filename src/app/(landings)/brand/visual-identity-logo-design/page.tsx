@@ -45,13 +45,11 @@ const Page = () => {
             </nav>
             <PageTitle/>
             <Work/>
-            {/*<Offer/>*/}
             <Description/>
             <Portfolio/>
-            {/*<HowWeWork/>*/}
             <TextSession/>
             <Faqs/>
-            <Package/>
+            {/*<Package/>*/}
             <Subscribe/>
             <Footer/>
         </>

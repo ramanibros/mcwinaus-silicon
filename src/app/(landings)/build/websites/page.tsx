@@ -49,7 +49,7 @@ const Page = () => {
             <Portfolio/>
             <TextSession/>
             <Faqs/>
-            <Package/>
+            {/*<Package/>*/}
             <Subscribe/>
             <Footer/>
         </>

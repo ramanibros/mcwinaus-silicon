@@ -527,13 +527,12 @@ const Navbar = ({
                                                                 />
                                                             </div>
                                                             <div>
-                                                                <h4 className="mb-1">{section.title}</h4>
                                                                 <Link 
                                                                     href={section.url}
                                                                     className="text-primary text-decoration-none small"
                                                                     onClick={() => setShowMenu(false)}
                                                                 >
-                                                                    
+                                                                    <h4 className="mb-1">{section.title}</h4>
                                                                 </Link>
                                                             </div>
                                                         </div>
@@ -655,7 +654,7 @@ const Navbar = ({
                         </div>
                     </Offcanvas>
 
-                    <ThemeToggle themeToggle={isNavDark ?? false}/>
+                   {/* <ThemeToggle themeToggle={isNavDark ?? false}/>
                     <button
                         type="button"
                         className="navbar-toggler"
@@ -663,7 +662,7 @@ const Navbar = ({
                         onClick={() => setShowMenu(true)}
                     >
                         <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button>*/}
                     <Button
                         as="a"
                         href="/contact"
