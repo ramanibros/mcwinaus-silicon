@@ -16,31 +16,31 @@ const Description = () => {
                                     <ul className="list-unstyled pb-3">
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1"/>
-                                            220 hours on-demand video
+                                            Paid Marketing Strategy
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1"/>
-                                            18 articles
+                                            Campaign Setup & Management
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:download" className="fs-xl text-muted me-2 pe-1"/>
-                                            25 downloadable resources
+                                            Ad Creative & Copy
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:infinite" className="fs-xl text-muted me-2 pe-1"/>
-                                            Full lifetime access
+                                            Landing Page Optimisation
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:trophy" className="fs-xl text-muted me-2 pe-1"/>
-                                            Certificate of completion
+                                            Reporting & Insights
                                         </li>
                                     </ul>
-                                    <div className="h2 d-flex align-items-center mb-4">
+                                    {/*<div className="h2 d-flex align-items-center mb-4">
                                         $28.99
                                         <del className="text-muted fs-xl fw-normal ms-2">49.99</del>
-                                    </div>
-                                    <a href="#" className="btn btn-primary btn-lg shadow-primary">
-                                        Join the course
+                                    </div>*/}
+                                    <a href="/contact" className="btn btn-primary btn-lg shadow-primary">
+                                        Contact To Sales
                                     </a>
                                 </CardBody>
                             </Card>

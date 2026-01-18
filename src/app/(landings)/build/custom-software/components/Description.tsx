@@ -35,12 +35,12 @@ const Description = () => {
                                             Deployment & Launch & Support
                                         </li>
                                     </ul>
-                                    <div className="h2 d-flex align-items-center mb-4">
+                                    {/*<div className="h2 d-flex align-items-center mb-4">
                                         $20000
                                         <del className="text-muted fs-xl fw-normal ms-2">25000</del>
-                                    </div>
+                                    </div>*/}
                                     <a href="/contact" className="btn btn-primary btn-lg shadow-primary">
-                                        Contact Now
+                                        Contact To Sales
                                     </a>
                                 </CardBody>
                             </Card>
