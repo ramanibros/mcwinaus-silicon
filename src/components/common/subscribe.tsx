@@ -29,7 +29,7 @@ const Subscribe = () => {
       <Container className="position-relative zindex-2 pt-5" data-bs-theme="dark">
         <div className="position-relative row justify-content-center">
           <Col xl={8} md={10} sm={12} className="text-center">
-            <h2 className="h1 text-light mb-4">Ready To 3x Your <span className="text-gradient-primary">Business Growth?</span></h2>
+            <h2 className="h1 text-light mb-4">Ready to 3x Your <span className="text-gradient-primary">Business Growth?</span></h2>
             <p className="fs-lg text-light opacity-70 pb-4 mb-3">
               Write your email address so we can contact you
             </p>

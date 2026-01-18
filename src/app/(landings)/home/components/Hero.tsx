@@ -143,7 +143,7 @@ const Hero = () => {
                 className="text-body mx-auto mb-md-5 mb-4 pb-xl-2 pb-md-0 pb-sm-2 fs-5"
                 style={{ maxWidth: '36.5rem' }}
               >
-                Local expertise, proven tech, and custom strategies delivering <b>3x more sales</b> for Australian brands—without wasting ad spend.
+                Local expertise, proven tech, and custom strategies delivering <b>3x more sales</b> for Australian brands—without wasting adspend.
               </p>
               <Link 
                 href="/contact" 

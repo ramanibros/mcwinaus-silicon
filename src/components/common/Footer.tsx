@@ -5,6 +5,9 @@ import logoLight from '@/assets/img/mcwinItechLogoLight.png';
 import IconifyIcon from '@/components/IconifyIcon';
 import {Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
+import meta from '@/assets/img/footer/meta.png';
+import google from '@/assets/img/footer/google.png';
+import clutch from '@/assets/img/footer/clutch.png';
 
 type LanguageOption = {
     value: string;
@@ -125,7 +128,7 @@ const integrations: Resource[] = [
         link: 'https://www.linkedin.com/company/mcwin-itech/'
     },
     {
-        title: 'Youtube',
+        title: 'YouTube',
         description: 'Tech Insights',
         icon: 'bxl:youtube',
         link: 'https://www.youtube.com/channel/UCnhwLr_0AnNkEJBDFcZeDHw'
@@ -145,22 +148,22 @@ const integrations: Resource[] = [
 ];
 const resources: Resource[] = [
     {
-        title: 'Whatsapp',
+        title: 'WhatsApp',
         description: '0466 953 095',
         icon: 'bxl:whatsapp',
-        link: '#'
+        link: 'https://wa.me/+61466953095'
     },
     {
         title: 'Phone',
         description: '0422 698 645',
         icon: 'bx:phone-call',
-        link: '#'
+        link: 'tel:+61422698645'
     },
     {
         title: 'Email',
         description: 'hello@mcwinitech.com.au',
         icon: 'bx:envelope',
-        link: '#'
+        link: 'mailto:hello@mcwinitech.com.au'
     }
 ];
 const copyright: Copyright = {
@@ -180,19 +183,41 @@ const Footer = () => {
             <div className="d-md-none" style={{marginTop: '-130px'}}></div>
             <Container>
                 <Row>
-                    <Col xs={12} xl={3} className="pb-sm-2 pb-md-3 mb-4 mb-lg-5 mb-xl-0">
+                    <Col xs={12} xl={3} className="pb-sm-2 pb-md-3 mb-lg-5 mb-xl-0">
                         <div className="d-flex align-items-center mb-3 mb-xl-0">
-                            <div className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0 d-dark-mode-none d-block">
+                            <div
+                                className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0 d-dark-mode-none d-block">
                                 <Image src={logo} width={logoWidth} alt={companyName}/>
                             </div>
 
-                            <div className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0 d-dark-mode-block d-none">
+                            <div
+                                className="navbar-brand text-dark pb-xl-3 pe-2 pe-xl-0 mb-xl-2 me-4 me-xl-0 d-dark-mode-block d-none">
                                 <Image src={logoLight} width={logoWidth} alt={companyName}/>
                             </div>
                         </div>
-                        <p className="fs-sm pb-lg-3 mb-4">
-                            McWIN iTECH – Perth's local growth partner delivering award-winning websites, SEO & apps that increase conversions and build trust with Australian customers.
+                        <p className="fs-sm pb-lg-3 justify-txt" style={{paddingBottom: "0", marginBottom: "0"}}>
+                            McWIN iTECH – Perth's local growth partner delivering award-winning websites, SEO & apps
+                            that increase conversions and build trust with Australian customers.
                         </p>
+
+                        <div className="mt-n3 ms-n3 pt-3">
+
+                            <a className="mt-3 ms-3 d-inline-block"
+                               href="#" data-discover="true"><Image
+                                style={{width: "60px"}} alt="Meta"
+                                src={meta}/></a>
+
+                            <a className="mt-3 ms-3 d-inline-block"
+                               href="#" data-discover="true"><Image
+                                style={{width: "80px"}} alt="Google"
+                                src={google}/></a>
+
+                            <a className="mt-3 ms-3 d-inline-block"
+                               href="#" data-discover="true"><Image
+                                style={{width: "80px"}} alt="Clutch"
+                                src={clutch}/></a>
+
+                        </div>
                     </Col>
 
                     <Col xs={12} xl={3} className="pb-1 mb-4">
@@ -232,7 +257,8 @@ const Footer = () => {
                                     <IconifyIcon icon={integration.icon} className="text-primary fs-4 lh-1"/>
                                 </div>
                                 <div className="nav flex-column ps-3">
-                                    <a href={integration.link} target="_blank" className="nav-link fw-bold stretched-link p-0">
+                                    <a href={integration.link} target="_blank"
+                                       className="nav-link fw-bold stretched-link p-0">
                                         {integration.title}
                                     </a>
                                     <div className="fs-xs">{integration.description}</div>
@@ -249,7 +275,8 @@ const Footer = () => {
                                     <IconifyIcon icon={resource.icon} className="text-primary fs-4 lh-1"/>
                                 </div>
                                 <div className="nav flex-column ps-3">
-                                    <Link href="#" className="nav-link fw-bold stretched-link p-0">
+                                    <Link href={resource.link} className="nav-link fw-bold stretched-link p-0"
+                                          target="_blank">
                                         {resource.title}
                                     </Link>
                                     <div className="fs-xs">{resource.description}</div>
