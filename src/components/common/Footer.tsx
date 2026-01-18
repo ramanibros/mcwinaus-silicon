@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '@/assets/img/mcwinItechLogo.png';
+/*import logo from '@/assets/img/mcwinItechLogo.png';
+import logoLight from '@/assets/img/mcwinItechLogoLight.png';*/
+
+import logo from '@/assets/img/footer/McWIN_iTECH_verticle.png';
 import logoLight from '@/assets/img/mcwinItechLogoLight.png';
+
 import IconifyIcon from '@/components/IconifyIcon';
 import {Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
@@ -200,7 +204,7 @@ const Footer = () => {
                             that increase conversions and build trust with Australian customers.
                         </p>
 
-                        <div className="mt-n3 ms-n3 pt-3">
+                        <div className="mt-n3 ms-n3">
 
                             <a className="mt-3 ms-3 d-inline-block"
                                href="#" data-discover="true"><Image
