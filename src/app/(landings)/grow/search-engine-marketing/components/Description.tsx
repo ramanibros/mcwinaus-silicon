@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -55,11 +55,9 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Google Search Ads Mastery</h4>
+                <h4 className="mb-2">Google Search Campaign Management</h4>
                 <p className="mb-0">
-                  Bottom-of-funnel keywords and dynamic search ads driving up to 3× ROAS.
-                  Australian location targeting brings high-intent traffic that converts
-                  instantly into sales.
+                 High-intent Google Search campaigns targeting users actively looking for your products or services. Keyword strategy, ad copy, and bidding are structured to maximise return while controlling cost per acquisition.
                 </p>
               </div>
             </div>
@@ -71,9 +69,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Google Shopping Campaigns</h4>
                 <p className="mb-0">
-                  Product feed optimisation and Smart Shopping automation—delivering up to
-                  40% lower CPC. Australian retail pricing strategies outperform Amazon
-                  on profitability.
+            Optimised Google Shopping campaigns including product feed structuring, bidding strategy, and performance monitoring—designed to improve visibility and efficiency for Australian eCommerce businesses.
                 </p>
               </div>
             </div>
@@ -83,11 +79,9 @@ const Description = () => {
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Remarketing That Works</h4>
+                <h4 className="mb-2">Remarketing & Audience Re-Engagement</h4>
                 <p className="mb-0">
-                  Abandoned cart and dynamic product ads recover up to 30% of lost revenue.
-                  Pixel-perfect tracking ensures every dollar is spent targeting
-                  high-value prospects.
+                 Remarketing strategies targeting previous visitors, abandoned carts, and high-intent users. Designed to recover lost opportunities and improve conversion efficiency across search and display networks.
                 </p>
               </div>
             </div>
@@ -99,9 +93,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Conversion Tracking Setup</h4>
                 <p className="mb-0">
-                  Google Analytics 4, Enhanced Conversions, and offline tracking provide
-                  100% revenue visibility. No black-box budgets—see every sale clearly
-                  attributed.
+                  End-to-end conversion tracking setup including GA4, enhanced conversions, and event tracking—ensuring accurate measurement of leads, sales, and campaign performance.
                 </p>
               </div>
             </div>
@@ -113,9 +105,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Smart Bidding Strategies</h4>
                 <p className="mb-0">
-                  Target ROAS and Maximise Conversion Value bidding improves efficiency
-                  by up to 67%. Australian market data powers bid decisions that win
-                  profitably every time.
+                 Data-driven bidding strategies such as Target ROAS and Conversion Value optimisation, aligned with your business goals and budget efficiency requirements.
                 </p>
               </div>
             </div>
@@ -127,9 +117,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Monthly Campaign Optimisation</h4>
                 <p className="mb-0">
-                  Weekly A/B testing, negative keyword mining, and bid adjustments deliver
-                  consistent performance lifts. Stay ahead of competitors without wasting
-                  time on outdated strategies.
+                 Ongoing campaign optimisation including keyword refinement, bid adjustments, and performance review. Campaigns are refined regularly to adapt to market changes and maintain efficiency.
                 </p>
               </div>
             </div>

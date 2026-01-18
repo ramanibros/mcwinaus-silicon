@@ -17,9 +17,7 @@ const TextSession = () => {
                     <div className="pe-xl-5 me-md-2 me-lg-4">
                         <h2 className="h1 mb-3 mb-sm-4">Australia's Brand Execution Experts</h2>
                         <p className="mb-3 mb-sm-4">
-                            Strategy-to-revenue activation—not just planning documents. What sets us apart: Perth locals
-                            who genuinely care about consistent execution. Proof, not promises: 67% performance
-                            guaranteed.
+                           End-to-end brand execution that bridges the gap between strategy and real-world application. Our Perth-based team focuses on accuracy, consistency, and accountability—ensuring your brand performs as intended across every channel.
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">

@@ -26,7 +26,7 @@ const features: Feature[] = [
     id: 1,
     title: 'Our Mission',
     description:
-      'McWIN iTECH exists to transform Perth businesses into market leaders with custom websites, SEO mastery, mobile apps, and digital strategies that increase conversions 3x faster while building sustainable growth.\n',
+      'McWIN iTECH exists to transform Perth businesses into market leaders with custom Websites, SEO mastery, mobile apps, and digital strategies that increase conversions 3x faster while building sustainable growth.\n',
     link: '#',
     linkText: 'Read More',
     icon: brandIcon,
@@ -46,7 +46,7 @@ const Features = () => {
   return (
     <section className="mb-2 mb-md-4 mb-lg-5">
       <Container>
-        <h2 className="h1 mb-md-4 mb-3 pt-xl-3"><span className="text-gradient-primary">Revolutionizing</span> Perth Business Growth</h2>
+        <h2 className="h1 mb-md-4 mb-3 pt-xl-3"><span className="text-gradient-primary">Revolutionising</span> Perth Business Growth</h2>
 
         <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {features.map(feature => (

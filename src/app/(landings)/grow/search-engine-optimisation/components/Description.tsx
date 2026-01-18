@@ -16,7 +16,7 @@ const Description = () => {
                                     <ul className="list-unstyled pb-3">
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1"/>
-                                            220 hours on-demand video
+                                            220 hours on-demand support video
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1"/>
@@ -59,9 +59,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Local SEO Domination</h4>
                                 <p className="mb-0">
-                                    Google Business Profile optimisation and hyper-targeted location pages—
-                                    driving up to 67% more local calls. Australian citation building boosts
-                                    foot traffic without relying on paid ads.
+                                    Local SEO strategies focused on improving visibility in Google Business Profiles and location-based searches. Optimised listings, consistent citations, and location pages help increase relevant local enquiries and in-store visits.
                                 </p>
                             </div>
                         </div>
@@ -73,9 +71,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Technical SEO Audits</h4>
                                 <p className="mb-0">
-                                    Master site speed, mobile usability, and schema markup—delivering up
-                                    to 40% ranking improvement. Core Web Vitals excellence ensures stable
-                                    top positions on Google.
+                             Comprehensive technical SEO audits covering site speed, mobile usability, indexing, and structured data. We address Core Web Vitals and technical barriers that impact crawlability, rankings, and user experience.
                                 </p>
                             </div>
                         </div>
@@ -87,8 +83,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Content Optimisation Strategy</h4>
                                 <p className="mb-0">
-                                    Keyword-rich service pages and blogs targeting search intent—driving
-                                    up to 3× more organic traffic with content that ranks AND converts.
+                                   Content optimisation strategies aligned with search intent, including service pages, supporting content, and internal linking. Designed to improve organic visibility while guiding users towards meaningful actions.
                                 </p>
                             </div>
                         </div>
@@ -100,8 +95,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Link Building Campaigns</h4>
                                 <p className="mb-0">
-                                    High-authority Australian backlinks (DA50+) with strategic outreach—
-                                    building domain authority that compounds rankings year over year.
+                                Ethical link-building campaigns focused on acquiring relevant, high-quality Australian backlinks. Strategic outreach supports domain authority growth and long-term ranking stability.
                                 </p>
                             </div>
                         </div>
@@ -113,9 +107,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Conversion Rate Optimisation</h4>
                                 <p className="mb-0">
-                                    Turn SEO traffic into revenue with strategic CTAs and trust signals—
-                                    delivering up to 67% higher conversions from organic visitors through
-                                    sales-focused optimisation.
+                                    Conversion rate optimisation for organic traffic, focusing on page structure, calls to action, and trust signals—ensuring increased visibility translates into meaningful business results.
                                 </p>
                             </div>
                         </div>
@@ -127,8 +119,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Monthly Performance Reporting</h4>
                                 <p className="mb-0">
-                                    Transparent dashboards track ranking movement, traffic growth, and
-                                    revenue attribution—proving real ROI every 30 days with actionable insights.
+                                   Monthly SEO reporting with clear insights into rankings, traffic trends, and performance indicators. Reports are designed to support informed decisions and continuous optimisation rather than vanity metrics.
                                 </p>
                             </div>
                         </div>

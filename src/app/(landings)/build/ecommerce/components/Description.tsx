@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -57,10 +57,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">WooCommerce Store Development</h4>
                 <p className="mb-0">
-                  Custom WordPress eCommerce stores built for Australian buyers—delivering
-                  up to 3× higher checkout completion with local payment gateways,
-                  lightning-fast inventory sync, abandoned cart recovery, and conversion-
-                  focused user flows.
+               Custom WooCommerce store development with Australian payment gateways, optimised checkout flows, and inventory synchronisation. Built to reduce friction at purchase and support higher checkout completion through proven eCommerce best practices.
                 </p>
               </div>
             </div>

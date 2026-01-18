@@ -45,8 +45,8 @@ const Hero = () => {
                         <h1 className="pb-2 pb-md-3">About <span className="text-gradient-primary">McWIN iTECH</span>
                         </h1>
                         <p className="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" style={{maxWidth: '526px'}}>
-                            <b>Perth's trusted digital growth partner</b> delivering award-winning websites, SEO
-                            strategies, mobile apps, and custom software for Australian businesses—from Perth startups
+                            <b>Perth's trusted digital growth partner</b> delivering award-winning Websites, SEO
+                            strategies, Mobile Apps, and Custom Software for Australian businesses—from Perth startups
                             to national leaders. <b>Local team. Long-term results. Your success is guaranteed.</b>
                         </p>
                         <Image src={ClutchDark} className=" d-dark-mode-none" width="175" alt="Clutch"/>

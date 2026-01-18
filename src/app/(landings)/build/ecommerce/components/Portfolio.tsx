@@ -72,16 +72,16 @@ const testimonials = [
     id: 6,
     text:
         'JGW Bookkeeping is proudly owned and operated by Jackie Wadhwani, Principal, who brings a wealth of expertise and a personal touch to the local business community in Alkimos, WA, and the greater Perth region. With over 20 years of experience in the finance industry and a master’s degree in accounting, JGW Bookkeeping is dedicated to supporting the growth and success of fellow small businesses and entrepreneurs in the area.',
-    name: 'JGW Bookkeeping services',
-    role: 'A Bookkeeping Service Provide',
+    name: 'JGW Bookkeeping Services',
+    role: 'A Bookkeeping Service Provider',
     bg: testi6,
   },
   {
     id: 7,
     text:
-        'Levita Active delivers affordable, high-quality activewear made for everyday movement. Designed with comfort, flexibility, and durability in mind. Each piece supports your active lifestyle without compromising style. Thoughtfully crafted to fit, flatter, and perform. So you can move confidently, wherever your day takes you.',
+        'Levita Active delivers affordable, High-Quality Activewear made for everyday movement. Designed with comfort, flexibility, and durability in mind. Each piece supports your active lifestyle without compromising style. Thoughtfully crafted to fit, flatter, and perform. So you can move confidently, wherever your day takes you.',
     name: 'Levita Active',
-    role: 'Affordable, High-quality Activewear',
+    role: 'Affordable, High-Quality Activewear',
     bg: testi7,
   },
   {
@@ -95,7 +95,7 @@ const testimonials = [
   {
     id: 9,
     text:
-        'Saraceni Fire Engineering Group has a team of highly trained and experienced Fire Engineering Consultants led by Director, Loui Saraceni who in addition to his qualifications and experience in all aspects of fire engineering, has practical experience in the building industry as a registered building practitioner.',
+        'Saraceni Fire Engineering Group has a team of highly trained and experienced Fire Engineering Consultants led by Director, Loui Saraceni, who in addition to his qualifications and experience in all aspects of fire engineering, has practical experience in the building industry as a registered building practitioner.',
     name: 'Saraceni Fire Engineering Group',
     role: 'A Fire Engineer Consultant',
     bg: testi9,

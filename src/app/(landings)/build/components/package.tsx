@@ -28,14 +28,14 @@ const plans: PricingPlan[] = [
     image: basic,
     featured: false,
     features: [
-      { text: 'Mobile friendly, optimized design', available: true },
-      { text: 'One Pager Website', available: true },
+      { text: 'Mobile friendly, optimised design', available: true },
+      { text: 'One-Pager Website', available: true },
       { text: 'Home page slider', available: true },
       { text: 'Domain & hosting set-up', available: true },
       { text: 'SSL certified', available: true },
-      { text: 'Google map', available: true },
+      { text: 'Google Map', available: true },
       { text: 'Contact form', available: true },
-      { text: 'Basic SEO optimization', available: true },
+      { text: 'Basic SEO optimisation', available: true },
       { text: 'Integration with social platforms', available: true }
     ]
   },
@@ -46,14 +46,14 @@ const plans: PricingPlan[] = [
     image: standard,
     featured: true,
     features: [
-      { text: 'Mobile friendly, optimized design', available: true },
+      { text: 'Mobile friendly, optimised design', available: true },
       { text: 'Up to 10 page', available: true },
       { text: 'Home page slider', available: true },
       { text: 'Domain & hosting set-up', available: true },
       { text: 'SSL certified', available: true },
-      { text: 'Google map', available: true },
+      { text: 'Google Map', available: true },
       { text: 'Contact form', available: true },
-      { text: 'Basic SEO optimization', available: true },
+      { text: 'Basic SEO optimisation', available: true },
       { text: 'Integration with social platforms', available: true }
     ]
   },
@@ -64,14 +64,14 @@ const plans: PricingPlan[] = [
     image: ultimate,
     featured: false,
     features: [
-      { text: 'Mobile friendly, optimized design', available: true },
+      { text: 'Mobile friendly, optimised design', available: true },
       { text: 'Up to 20 page', available: true },
       { text: 'Home page slider', available: true },
       { text: 'Domain & hosting set-up', available: true },
       { text: 'SSL certified', available: true },
-      { text: 'Google map', available: true },
+      { text: 'Google Map', available: true },
       { text: 'Contact form', available: true },
-      { text: 'Basic SEO optimization', available: true },
+      { text: 'Basic SEO optimisation', available: true },
       { text: 'Integration with social platforms', available: true }
     ]
   },

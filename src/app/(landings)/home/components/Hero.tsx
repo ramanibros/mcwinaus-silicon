@@ -162,7 +162,7 @@ const Hero = () => {
             </li>
             <li className="d-flex align-items-center text-body mt-md-4 mt-sm-3 mt-2 ms-md-4 ms-3">
               <IconifyIcon icon="bx:check-circle" className="me-2 fs-5 text-primary" />
-              Trusted Experienced Team
+              Trusted, Experienced Team
             </li>
             <li className="d-flex align-items-center text-body mt-md-4 mt-sm-3 mt-2 ms-md-4 ms-3">
               <IconifyIcon icon="bx:check-circle" className="me-2 fs-5 text-primary" />

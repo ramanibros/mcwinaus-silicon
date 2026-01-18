@@ -15,20 +15,20 @@ const TextSession = () => {
                     <div className="pe-xl-5 me-md-2 me-lg-4">
                         <h2 className="h1 mb-3 mb-sm-4">Australia's Website Revenue Engine</h2>
                         <p className="mb-3 mb-sm-4">
-                            Sites that actually make money—not brochureware templates. What makes us different: Perth locals genuinely care about your Google rankings and sales. Proof, not promises: 67% performance guaranteed.
-                        </p>
+Websites built to support real business outcomes—not static brochure sites. Our Perth-based team focuses on speed, structure, and conversion fundamentals to ensure your website supports both visibility and revenue.                        </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
-                                <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Nationwide SEO Precision
+                               Nationwide SEO and performance focus
+
+
+
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Conversion-First Coding
-                            </li>
+Conversion-first development approach                            </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Future-Proof Technology
+Scalable, future-ready website builds
                             </li>
                         </ul>
                     </div>

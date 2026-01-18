@@ -13,9 +13,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth-built solutions saving Aussie businesses thousands—67% efficiency gains nationwide without
-                        offshore headaches. A local team that genuinely cares, delivering tailored software that drives
-                        real revenue growth.
+                       Custom software solutions built in Perth for Australian businesses that need efficiency, reliability, and scalability. We design tailored systems that streamline operations, reduce manual work, and support measurable business growth—without the risks of offshore development.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

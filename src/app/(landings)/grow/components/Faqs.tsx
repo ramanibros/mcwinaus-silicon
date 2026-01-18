@@ -100,7 +100,7 @@ const Faqs = () => {
         <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
           <h2 className="pb-3 mb-1 mb-lg-3">
             <span className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
-            Check out the FAQs
+            Check out the FAQs.
           </h2>
           <p className="fs-lg pb-3 mb-2 mb-lg-3">
             Still have unanswered questions and need to get in touch?

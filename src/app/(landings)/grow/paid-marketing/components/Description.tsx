@@ -16,7 +16,7 @@ const Description = () => {
                                     <ul className="list-unstyled pb-3">
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1"/>
-                                            220 hours on-demand video
+                                            220 hours on-demand support video
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1"/>
@@ -57,10 +57,9 @@ const Description = () => {
                                 <div className="step-number-inner">1</div>
                             </div>
                             <div className="step-body">
-                                <h4 className="mb-2">Google Ads Profit Systems</h4>
+                                <h4 className="mb-2">Google Ads Campaign Management</h4>
                                 <p className="mb-0">
-                                    High-intent keywords and smart bidding deliver up to 3× ROAS. Australian
-                                    geo-targeting ensures every click comes from ready-to-buy customers.
+                                   High-intent Google Ads campaigns built around keyword strategy, ad relevance, and bidding control. Designed to improve conversion efficiency while keeping cost per acquisition within sustainable limits.
                                 </p>
                             </div>
                         </div>
@@ -72,9 +71,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Meta Ads Lead Machine</h4>
                                 <p className="mb-0">
-                                    Facebook and Instagram lookalike audiences with creative testing frameworks—
-                                    reducing lead costs by up to 40%. Dynamic retargeting converts window shoppers
-                                    into checkout completers.
+                                    Paid campaigns across Facebook and Instagram using audience segmentation, creative testing, and retargeting. Focused on generating qualified leads and supporting full-funnel conversion paths.
                                 </p>
                             </div>
                         </div>
@@ -86,8 +83,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Microsoft Advertising Expansion</h4>
                                 <p className="mb-0">
-                                    Bing and Yahoo campaigns at lower CPC—up to 67% efficiency gain. Audience
-                                    matching across search engines maximises your total market coverage.
+                                    Microsoft Advertising campaigns across Bing and partner networks, providing access to additional high-intent audiences—often at lower competition and cost than Google Search.
                                 </p>
                             </div>
                         </div>
@@ -99,9 +95,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Shopping Ads Revenue Boost</h4>
                                 <p className="mb-0">
-                                    Google Shopping and Facebook Catalogue Sales drive up to 30% higher
-                                    average order value. Australian pricing advantage outperforms import
-                                    competitors on profitability.
+                                    Product-based advertising across Google Shopping and Meta catalogue formats. Feed structure, bidding logic, and product segmentation are optimised to support higher purchase intent and average order value.
                                 </p>
                             </div>
                         </div>
@@ -111,10 +105,9 @@ const Description = () => {
                                 <div className="step-number-inner">5</div>
                             </div>
                             <div className="step-body">
-                                <h4 className="mb-2">YouTube Video Ads</h4>
+                                <h4 className="mb-2">Youtube Video Ads</h4>
                                 <p className="mb-0">
-                                    Intent-based video campaigns with Aussie demographic targeting—reducing
-                                    CPM by 50% while driving high-value traffic from engaged video viewers.
+                                  Intent-aligned Youtube advertising designed to support awareness, remarketing, and mid-funnel engagement. Campaigns are structured to balance reach, cost efficiency, and assisted conversions.
                                 </p>
                             </div>
                         </div>
@@ -126,9 +119,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Cross-Platform Optimisation</h4>
                                 <p className="mb-0">
-                                    Unified tracking and weekly bid adjustments across Google, Meta, and
-                                    Bing. Intelligent budget allocation ensures zero wasted spend and
-                                    maximum ROI.
+                                    Unified optimisation across Google, Meta, and Microsoft platforms. Budget allocation, performance review, and bid adjustments are managed holistically to reduce waste and improve overall return.
                                 </p>
                             </div>
                         </div>

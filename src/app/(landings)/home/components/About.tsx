@@ -76,7 +76,7 @@ const About = () => {
                     </h1>
                     <p className="fs-lg pb-lg-3 mb-4">
                         McWIN iTECH—your <b>growth partner, not just another agency.</b> We build high-performing
-                        websites, SEO strategies, mobile apps, and custom software that turn Perth businesses into
+                        Websites, SEO strategies, Mobile Apps, and Custom Software that turn Perth businesses into
                         market leaders. <b>Expect the unexpected</b>—results that last.
                     </p>
                     <Link href="/about" className="btn btn-primary shadow-primary btn-lg">

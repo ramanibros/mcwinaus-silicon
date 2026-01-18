@@ -51,7 +51,7 @@ const newsData: NewsItem[] = [
     title: 'Why Businesses in Perth Should Choose a Local SEO Agency',
     link: '/blog/why-perth-businesses-should-choose-local-seo-agency',
     description:
-        'In today’s digital environment, every Perth business owner recognizes the challenge: standing out online isn’t easy. Yet, with nearly half',
+        'In today’s digital environment, every Perth business owner recognises  the challenge: standing out online isn’t easy. Yet, with nearly half',
     likes: 8,
     comments: 7,
     shares: 3,
@@ -82,7 +82,7 @@ const newsData: NewsItem[] = [
   },
   {
     id: 1,
-    category: 'Social Media Markting',
+    category: 'Social Media Marketing',
     date: 'July 30, 2025',
     title: 'The Ultimate Digital Marketing Checklist for Australian Startups',
     link: '/blog/digital-marketing-checklist-australian-startups',

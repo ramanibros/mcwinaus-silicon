@@ -260,8 +260,8 @@ const Work = () => {
                         >
                             <h3 className="h4">Plan & Discover</h3>
                             <p className="mb-0">
-                                Deep-dive strategy session uncovers your goals, maps Perth market dynamics, and aligns
-                                budget reality. Custom growth roadmap eliminates guesswork—your success blueprint
+                               A Deep-dive strategy session uncovers your goals, maps Perth market dynamics, and aligns
+                                budget reality.A Custom growth roadmap eliminates guesswork—your success blueprint
                                 approved before work begins.
                             </p>
                         </div>
@@ -405,7 +405,7 @@ const Work = () => {
                             <h3 className="h4">Launch & Scale (Week 7+)</h3>
                             <p className="mb-0">
                                 Go live with total confidence. 99.9% uptime, 24/7 monitoring, continuous A/B testing,
-                                and growth strategies included. Your growth partner ensures platforms scale 10x
+                                and growth strategies are included. Your growth partner ensures platforms scale 10x
                                 seamlessly.
                             </p>
                         </div>

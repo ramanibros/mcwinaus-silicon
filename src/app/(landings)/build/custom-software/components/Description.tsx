@@ -16,7 +16,7 @@ const Description = () => {
                                     <ul className="list-unstyled pb-3">
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1"/>
-                                            220 hours on-demand video
+                                            220 hours on-demand support video
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1"/>
@@ -59,9 +59,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Inventory Management Systems</h4>
                                 <p className="mb-0">
-                                    Real-time stock tracking across multiple warehouses—eliminating
-                                    overselling entirely while automating reordering. Aussie multi-location
-                                    sync delivers instant cash flow visibility and operational control.
+                                   Custom inventory management systems with real-time stock tracking across one or multiple locations. Automated alerts and reordering logic help reduce overselling, improve stock accuracy, and provide clearer cash-flow visibility.
                                 </p>
                             </div>
                         </div>
@@ -73,9 +71,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">CRM Customisation</h4>
                                 <p className="mb-0">
-                                    Bespoke customer pipelines tailored exactly to your sales process—
-                                    accelerating deal velocity by up to 3×. Fully Australian privacy
-                                    compliant and built for fast-scaling local service businesses.
+                                   Custom CRM configuration aligned with your sales process, customer lifecycle, and reporting needs. Designed to improve pipeline visibility, sales efficiency, and compliance with Australian data requirements.
                                 </p>
                             </div>
                         </div>
@@ -87,9 +83,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Workflow Automation Tools</h4>
                                 <p className="mb-0">
-                                    Remove repetitive manual work across teams—unlocking up to 67% time
-                                    savings. Custom integrations seamlessly connect accounting, CRM, and
-                                    inventory into one efficient operating system.
+                                    Workflow automation tools that reduce repetitive manual tasks across teams. We integrate systems such as accounting, CRM, and inventory platforms to improve operational efficiency and reduce processing time.
                                 </p>
                             </div>
                         </div>
@@ -101,9 +95,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">Internal Dashboard Systems</h4>
                                 <p className="mb-0">
-                                    Live KPI dashboards for leadership—enabling decisions up to 40% faster.
-                                    Australian business metrics visualised clearly, with secure mobile
-                                    access for real-time insights anywhere.
+                                   Custom internal dashboards providing real-time visibility into key business metrics. Designed for management teams to monitor performance, identify trends, and make faster, data-informed decisions across devices.
                                 </p>
                             </div>
                         </div>
@@ -115,9 +107,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">API Integrations</h4>
                                 <p className="mb-0">
-                                    Connect existing tools without code chaos—eliminating up to 50% of
-                                    manual work. Secure, reliable data sync across the platforms your team
-                                    already relies on daily.
+                                   Secure API integrations that connect existing business systems and reduce reliance on manual data entry. This improves data accuracy, saves time, and allows teams to work more efficiently across connected platforms.
                                 </p>
                             </div>
                         </div>
@@ -129,9 +119,7 @@ const Description = () => {
                             <div className="step-body">
                                 <h4 className="mb-2">SaaS Custom Modules</h4>
                                 <p className="mb-0">
-                                    Extend off-the-shelf software with the exact features you’re missing—
-                                    adding years to its lifespan. Achieve the functionality you need at
-                                    up to 70% less cost than full system replacements.
+                                    Custom modules that extend existing SaaS platforms with missing or specialised functionality. This approach often costs significantly less than replacing core systems while delivering features tailored to your workflow.
                                 </p>
                             </div>
                         </div>

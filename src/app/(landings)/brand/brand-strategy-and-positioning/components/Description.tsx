@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -48,7 +48,9 @@ const Description = () => {
         </aside>
 
         <Col xl={7} lg={8} md={7} className="order-md-1 mb-5">
-          <h2 className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">What We <span className="text-gradient-primary">Offer</span></h2>
+          <h2 className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
+            What We <span className="text-gradient-primary">Offer</span>
+          </h2>
           <div className="steps steps-sm">
             <div className="step">
               <div className="step-number">
@@ -57,9 +59,9 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Brand Discovery & Research</h4>
                 <p className="mb-0">
-                  We dig deep into your business, audience, and market to uncover what truly
-                  sets you apart—no fluff, just clear, actionable insights that drive
-                  immediate impact.
+                  We analyse your business model, audience behaviour, and market landscape to
+                  uncover genuine differentiation that supports confident, long-term brand
+                  decisions.
                 </p>
               </div>
             </div>
@@ -71,8 +73,9 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Competitor & Market Analysis</h4>
                 <p className="mb-0">
-                  Identify exactly where you can win against competitors using Australia-wide
-                  market intelligence—stay ahead while others scramble to catch up.
+                  Identify clear competitive opportunities through in-depth Australian market and
+                  competitor analysis, allowing your brand to claim a distinct and defensible
+                  position.
                 </p>
               </div>
             </div>
@@ -84,9 +87,8 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Core Purpose & Narrative</h4>
                 <p className="mb-0">
-                  Craft a compelling brand story that resonates with customers and teams—
-                  building long-term loyalty and turning casual browsers into committed
-                  buyers.
+                  Define a compelling brand purpose and narrative that aligns internal teams and
+                  builds authentic customer trust, driving long-term loyalty and engagement.
                 </p>
               </div>
             </div>
@@ -98,8 +100,11 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Positioning Strategy Framework</h4>
                 <p className="mb-0">
-                  A tailored roadmap to own your niche—driving up to 3× more premium leads
-                  through focused, strategic brand positioning.
+                  A structured positioning framework defining your target audience, value
+                  proposition, and competitive advantage—guiding consistent marketing and scalable
+                  growth decisions.A structured positioning framework defining your target audience,
+                  value proposition, and competitive advantage—guiding consistent marketing and
+                  scalable growth decisions.
                 </p>
               </div>
             </div>
@@ -112,8 +117,7 @@ const Description = () => {
                 <h4 className="mb-2">Messaging & Tone System</h4>
                 <p className="mb-0">
                   Define a consistent, conversion-driven voice across every channel—boosting
-                  engagement by up to 67%, cutting ad waste, and delivering measurable
-                  results.
+                  engagement by up to 67%, cutting ad waste, and delivering measurable results.
                 </p>
               </div>
             </div>
@@ -125,13 +129,11 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Implementation Roadmap</h4>
                 <p className="mb-0">
-                  Clear, step-by-step execution plans so you can move fast with confidence—
-                  combining local expertise with national reach for real-world results.
+                  Clear, step-by-step implementation guidance that ensures your brand strategy is applied consistently across all touchpoints, from launch to scale.
                 </p>
               </div>
             </div>
           </div>
-
         </Col>
       </Row>
     </section>

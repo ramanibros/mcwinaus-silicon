@@ -17,20 +17,20 @@ const TextSession = () => {
                     <div className="pe-xl-5 me-md-2 me-lg-4">
                         <h2 className="h1 mb-3 mb-sm-4">Australia's UI/UX Revenue Machine</h2>
                         <p className="mb-3 mb-sm-4">
-                            Interfaces that drive real Aussie revenue—beyond basic wireframes. What sets us apart: Perth locals genuinely care about your growth. Proof, not promises, guaranteed conversion lifts.
+                            UI/UX design focused on commercial outcomes—not just aesthetics or wireframes. Our Perth-based team applies usability principles, data-led decisions, and iterative testing to support measurable improvements in conversion and retention.
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Nationwide User Mastery
+                             Nationwide user experience expertise
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Conversion-Crushing Design
+                               Conversion-focused design decisions
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Dev-Ready Perfection
+                               Development-ready design deliverables
                             </li>
                         </ul>
                     </div>

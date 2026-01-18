@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -57,9 +57,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Logo Design Mastery</h4>
                 <p className="mb-0">
-                  Custom logo design that captures your unique Aussie essence—delivering
-                  instant brand recognition and up to 3× stronger premium appeal. Built to
-                  stand out in crowded markets from the very first glance.
+                 Custom logo design that reflects your brand’s personality, values, and positioning. Built for clarity, recognition, and differentiation in competitive Australian markets.
                 </p>
               </div>
             </div>
@@ -85,9 +83,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Brand Style Guides</h4>
                 <p className="mb-0">
-                  Detailed, easy-to-use brand playbooks that remove guesswork for teams and
-                  partners—scalable systems that protect consistency and maintain premium
-                  positioning as your brand grows.
+                  Clear and practical brand style guides that ensure accurate implementation across teams and partners, supporting consistency as your business grows.
                 </p>
               </div>
             </div>
@@ -99,9 +95,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Icon & Illustration Sets</h4>
                 <p className="mb-0">
-                  Bespoke iconography and illustrations crafted for your brand—boosting
-                  conversion rates by up to 3× across digital, print, and social channels
-                  with visuals that cut through the noise.
+       Custom iconography and illustration sets designed to complement your brand identity across digital, print, and social platforms, improving clarity and visual cohesion.
                 </p>
               </div>
             </div>
@@ -113,9 +107,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Digital Asset Packages</h4>
                 <p className="mb-0">
-                  Ready-to-use social media profiles, favicons, and app icons for immediate
-                  rollout—saving thousands in production time while maintaining consistent,
-                  professional brand standards everywhere.
+                  Ready-to-use digital assets including social profile graphics, favicons, and app icons—allowing fast deployment while maintaining consistent brand standards.
                 </p>
               </div>
             </div>
@@ -127,9 +119,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Brand Video & Motion Graphics</h4>
                 <p className="mb-0">
-                  Dynamic animations, intro videos, and social reels that drive up to 67%
-                  higher engagement—motion-led storytelling that captures attention instantly
-                  and reinforces premium brand positioning across all platforms.
+                Brand-led motion graphics, animations, and short-form video assets designed to capture attention and reinforce brand positioning across digital channels.
                 </p>
               </div>
             </div>

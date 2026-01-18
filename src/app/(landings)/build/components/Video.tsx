@@ -32,7 +32,7 @@ const Video = () => {
           <div className="position-relative rounded-4 overflow-hidden">
             <div className="position-absolute top-50 start-50 translate-middle zindex-2 text-center">
               <GlightBox
-                href="https://www.youtube.com/watch?v=6AzbQhiX4tg"
+                href="https://www.Youtube.com/watch?v=6AzbQhiX4tg"
                 className="btn btn-video btn-icon btn-xl bg-white stretched-link mb-2 mb-sm-4"
               >
                 <IconifyIcon icon="bx:play" fontSize={28} />

@@ -12,9 +12,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth PPC campaigns are driving Aussie sales—67% lower cost per sale nationwide without wasting
-                        thousands on dud ads. A local team that genuinely cares, delivering profit-focused clicks that
-                        scale.
+                     Performance-focused PPC campaigns built in Perth for Australian businesses that need efficiency, control, and predictable outcomes. We manage paid traffic with a clear focus on cost-per-conversion, scalability, and revenue impact—not wasted spend.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

@@ -25,21 +25,17 @@ const faqs: FaqType[] = [
     answer: (
         <>
           <p className="mb-0">
-            Clunky designs kill conversions. Well-crafted flows deliver up to 67% higher
-            sales and 3× better retention. Aussie users stick with intuitive apps that
-            provide instant value.
+           Clear, intuitive experiences reduce friction, increase user confidence, and support higher conversion and retention rates—especially for digital products competing in crowded markets
           </p>
         </>
     ),
   },
   {
-    question: 'Covering iOS, Android and web—all platforms?',
+    question: 'Do you design for web, iOS, and Android?',
     answer: (
         <>
           <p className="mb-0">
-            Every device, every platform. Responsive excellence across iOS, Android, and
-            desktop ensures a native-feel experience everywhere without juggling multiple
-            agencies.
+           Yes. We design responsive web experiences and native-optimised interfaces for both iOS and Android, ensuring consistency across platforms.
           </p>
         </>
     ),
@@ -57,13 +53,11 @@ const faqs: FaqType[] = [
     ),
   },
   {
-    question: 'Can you fix our existing poor UX?',
+    question: 'Can you improve an existing product’s UX?',
     answer: (
         <>
           <p className="mb-0">
-            Redesign specialists transform mediocre apps into conversion machines. Quick
-            audits and total UX transformations deliver measurable results in weeks,
-            not years.
+            Yes. We conduct UX audits to identify friction points, then redesign flows and interfaces to improve usability and performance without unnecessary rebuilds.
           </p>
         </>
     ),
@@ -102,7 +96,7 @@ const Faqs = () => {
         <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
           <h2 className="pb-3 mb-1 mb-lg-3">
             <span className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
-            Check out the FAQs
+            Check out the FAQs.
           </h2>
           <p className="fs-lg pb-3 mb-2 mb-lg-3">
             Still have unanswered questions and need to get in touch?

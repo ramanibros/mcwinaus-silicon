@@ -28,8 +28,8 @@ const plans: PricingPlan[] = [
     image: basic,
     featured: false,
     features: [
-      { text: 'Number of Keyphrases Optimized – 10', available: true },
-      { text: 'Pages Optimized Up To – 10', available: true },
+      { text: 'Number of Keyphrases optimised – 10', available: true },
+      { text: 'Pages optimised Up To – 10', available: true },
       { text: 'Local SEO Audit', available: true },
       { text: 'Google My Business Optimization', available: true },
       { text: 'Yelp Local Business Listing', available: true },
@@ -50,8 +50,8 @@ const plans: PricingPlan[] = [
     image: standard,
     featured: true,
     features: [
-      { text: 'Number of Keyphrases Optimized – 20', available: true },
-      { text: 'Pages Optimized Up To – 20', available: true },
+      { text: 'Number of Keyphrases optimised – 20', available: true },
+      { text: 'Pages optimised Up To – 20', available: true },
       { text: 'Local SEO Audit', available: true },
       { text: 'Google My Business Optimization', available: true },
       { text: 'Yelp Local Business Listing', available: true },
@@ -72,8 +72,8 @@ const plans: PricingPlan[] = [
     image: ultimate,
     featured: false,
     features: [
-      { text: 'Number of Keyphrases Optimized – 50', available: true },
-      { text: 'Pages Optimized Up To – 50', available: true },
+      { text: 'Number of Keyphrases optimised – 50', available: true },
+      { text: 'Pages optimised Up To – 50', available: true },
       { text: 'Local SEO Audit', available: true },
       { text: 'Google My Business Optimization', available: true },
       { text: 'Yelp Local Business Listing', available: true },

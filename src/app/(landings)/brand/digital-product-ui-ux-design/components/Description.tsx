@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -57,9 +57,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">User Journey Mapping</h4>
                 <p className="mb-0">
-                  Detailed wireframes mapping optimal user paths across web and mobile—
-                  delivering up to 3× smoother flows. Built on real Australian user
-                  behaviours to maximise retention and conversions.
+                  User journey mapping and wireframing that identifies key user actions, drop-off points, and opportunities for improvement—resulting in clearer flows and improved task completion across web and mobile experiences.
                 </p>
               </div>
             </div>
@@ -71,9 +69,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Mobile App UI Design</h4>
                 <p className="mb-0">
-                  Native-feeling iOS and Android interfaces with intuitive navigation—
-                  driving up to 67% higher engagement by turning downloads into loyal,
-                  daily users.
+                  Intuitive iOS and Android interface design aligned with platform guidelines, improving usability, engagement, and long-term user retention through familiar, native-feeling experiences.
                 </p>
               </div>
             </div>
@@ -85,9 +81,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Landing Page UX</h4>
                 <p className="mb-0">
-                  Conversion-focused landing page layouts with strategic CTAs—cutting
-                  bounce rates by up to 50% and increasing leads from Australian traffic
-                  without wasting ad spend.
+                 Conversion-focused landing page UX designed to guide users towards a single, clear action. Strategic layout, content hierarchy, and CTA placement help reduce bounce rates and improve lead quality from Australian traffic.
                 </p>
               </div>
             </div>

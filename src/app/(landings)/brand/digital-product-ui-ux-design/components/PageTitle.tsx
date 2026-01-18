@@ -12,9 +12,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth-crafted UI/UX for Aussie apps & sites—driving 67% higher conversions nationwide. A local
-                        team that genuinely cares, delivering frictionless experiences without thousands wasted on
-                        failed redesigns.
+                      Strategic UI/UX design for Australian digital products, built to reduce friction and improve conversion performance across web and mobile. Our Perth-based team focuses on usability, clarity, and measurable outcomes—so every interaction works harder for your business.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

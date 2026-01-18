@@ -15,8 +15,7 @@ const TextSession = () => {
                     <div className="pe-xl-5 me-md-2 me-lg-4">
                         <h2 className="h1 mb-3 mb-sm-4">Australia's SEO Revenue Engine</h2>
                         <p className="mb-3 mb-sm-4">
-                            Rankings that drive real sales—not vanity position reports. What makes us different: Perth
-                            locals genuinely care about your Google position AND revenue. 67% traffic guaranteed.
+                            Monthly SEO reporting with clear insights into rankings, traffic trends, and performance indicators. Reports are designed to support informed decisions and continuous optimisation rather than vanity metrics.
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">

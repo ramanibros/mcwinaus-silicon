@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -57,9 +57,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Custom WordPress Development</h4>
                 <p className="mb-0">
-                  Bespoke WordPress themes engineered for speed—delivering up to 3× faster
-                  load times with flawless SEO structure. No template limits, just unlimited
-                  custom functionality tailored exactly to your business requirements.
+       Custom WordPress development using lightweight, purpose-built themes focused on performance and flexibility. Our sites are optimised for fast load times, clean SEO structure, and custom functionality aligned with your business requirements.
                 </p>
               </div>
             </div>
@@ -71,9 +69,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">eCommerce Website Builds</h4>
                 <p className="mb-0">
-                  High-converting WooCommerce and Shopify stores with frictionless checkout
-                  flows—boosting cart completion by up to 67% through Australian payment
-                  gateways, real-time inventory sync, and abandoned cart recovery.
+                 WooCommerce and Shopify website builds designed for smooth checkout experiences and operational efficiency. We integrate Australian payment gateways, inventory synchronisation, and cart recovery flows to reduce friction and improve purchase completion.
                 </p>
               </div>
             </div>
@@ -85,9 +81,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Landing Page Optimisation</h4>
                 <p className="mb-0">
-                  Single-goal landing pages built to dominate A/B tests—cutting bounce
-                  rates by up to 50% using strategic CTAs, heatmapping insights, and
-                  conversion rate optimisation that turns traffic into revenue.
+                  High-conversion landing pages designed around a single, clear objective. Through layout optimisation, CTA placement, and behavioural insights, we help reduce bounce rates and improve lead quality.
                 </p>
               </div>
             </div>
@@ -113,9 +107,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">SEO-First Architecture</h4>
                 <p className="mb-0">
-                  Google-ready foundations built from day one—clean code, schema markup,
-                  and page-speed obsession that helps you rank higher locally without
-                  wasting ad spend on weak technical setups.
+                  SEO-first website architecture built with clean code, structured data, and performance best practices. This creates a strong technical foundation that supports sustainable search visibility and long-term ranking growth.
                 </p>
               </div>
             </div>
@@ -127,9 +119,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Ongoing Performance Maintenance</h4>
                 <p className="mb-0">
-                  Proactive monthly speed audits, security updates, and content refresh
-                  systems—keeping your site aligned with Google algorithm changes,
-                  guaranteeing uptime and zero maintenance headaches.
+                 Ongoing website maintenance including monthly performance checks, security updates, and technical improvements—helping your site remain stable, secure, and aligned with evolving search standards.
                 </p>
               </div>
             </div>
