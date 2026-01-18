@@ -16,7 +16,7 @@ const Page = () => {
       <nav className="container mt-lg-4 pt-5" aria-label="breadcrumb">
         <ol className="breadcrumb mb-0 pt-5">
           <li className="breadcrumb-item">
-            <Link href="/home">
+            <Link href="/">
               <IconifyIcon icon="bx:home-alt" className="fs-lg me-1" />
               Home
             </Link>

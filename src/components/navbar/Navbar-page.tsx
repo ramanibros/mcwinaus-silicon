@@ -135,10 +135,10 @@ const Navbar = ({
             icon: scaleIcon,
             url: '/scale',
             links: [
-                {label: 'Integrations', href: '/scale'},
-                {label: 'Optimisation', href: '/scale'},
-                {label: '24/7 Support', href: '/scale'},
-                {label: 'Advanced Scale Services', href: '/scale'},
+                {label: 'Integrations', href: '/scale#integrations'},
+                {label: 'Optimisation', href: '/scale#optimisation'},
+                {label: '24/7 Support', href: '/scale#247support'},
+                {label: 'Advanced Scale Services', href: '/scale#advancescaleservice'},
             ],
         },
     ];
@@ -439,11 +439,11 @@ const Navbar = ({
 
             <header className={`${Headerclass} ${isSticky && headerSticky ? headerSticky : ''}`}>
                 <div className="container px-3">
-                    <Link href="/home" className="navbar-brand pe-3 d-dark-mode-none d-block">
+                    <Link href="/" className="navbar-brand pe-3 d-dark-mode-none d-block">
                         <Image src={Logo} width={200} alt="Silicon"/>
                     </Link>
 
-                    <Link href="/home" className="navbar-brand pe-3 d-dark-mode-block d-none">
+                    <Link href="/" className="navbar-brand pe-3 d-dark-mode-block d-none">
                         <Image src={LogoLight} width={200} alt="Silicon"/>
                     </Link>
 
