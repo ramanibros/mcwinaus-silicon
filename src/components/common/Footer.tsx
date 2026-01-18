@@ -62,7 +62,7 @@ const socialLinks: Link[] = [
 const aiModels: AIModel[] = [
     {
         title: 'Brand',
-        description: 'Generation of texts and images',
+        description: 'Built on Trust',
         icon: (
             <svg
                 width="24"
@@ -97,21 +97,21 @@ const aiModels: AIModel[] = [
     },
     {
         title: 'Build',
-        description: 'Transforms voice speech into text',
+        description: 'Built on Trust',
         icon: 'bx:message-dots',
         bgColor: 'warning',
         link: '/build'
     },
     {
         title: 'Grow',
-        description: 'Converts different types of files',
+        description: 'Leading Growth Partner',
         icon: 'bx:file-find',
         bgColor: 'success',
         link: '/grow'
     },
     {
         title: 'Scale',
-        description: 'Autocompletion and generation',
+        description: 'Leading Scale Partner',
         icon: 'bx:terminal',
         bgColor: 'info',
         link: '/scale'
