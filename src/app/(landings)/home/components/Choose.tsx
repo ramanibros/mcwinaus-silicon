@@ -17,7 +17,7 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: 'Certified Digital PerthExperts',
+    title: 'Certified Digital Perth Experts',
     description:
       '30+ local IT specialists with 5+ years delivering 3x faster projects—Perth\'s trusted growth team.',
     icon: cms,

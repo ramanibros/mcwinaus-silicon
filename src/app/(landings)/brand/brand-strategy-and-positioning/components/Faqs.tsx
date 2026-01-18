@@ -58,30 +58,27 @@ const faqs: FaqType[] = [
     answer: (
         <>
           <p className="mb-0">
-            Yes. Our Perth HQ powers brand strategy delivery nationwide—from Darwin
-            to Melbourne and everywhere in between.
+           Yes. While we are based in Perth, we deliver brand strategy projects across Australia.
           </p>
         </>
     ),
   },
   {
-    question: 'What makes you different?',
+    question: 'What makes your approach different?',
     answer: (
         <>
           <p className="mb-0">
-            No cookie-cutter approaches. We genuinely care about your business—
-            delivering custom strategies that create real differentiation every time.
+           Every strategy is tailored to the business, market, and objectives—no templates, no generic positioning frameworks.
           </p>
         </>
     ),
   },
   {
-    question: 'Will this boost our sales?',
+    question: 'Will brand positioning support sales growth?',
     answer: (
         <>
           <p className="mb-0">
-            Proven results show up to 67% conversion improvement. Strong positioning
-            attracts higher-value Australian customers and grows revenue sustainably.
+           Effective positioning attracts better-qualified customers, improves conversion efficiency, and supports long-term revenue growth when implemented consistently.
           </p>
         </>
     ),
@@ -98,7 +95,7 @@ const Faqs = () => {
         <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
           <h2 className="pb-3 mb-1 mb-lg-3">
             <span className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
-            Check out the FAQs
+            Check out the FAQs.
           </h2>
           <p className="fs-lg pb-3 mb-2 mb-lg-3">
             Still have unanswered questions and need to get in touch?
@@ -112,7 +109,7 @@ const Faqs = () => {
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
                   <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
-                    Whatsapp us
+                    WhatsApp Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
                 </CardBody>

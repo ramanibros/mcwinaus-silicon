@@ -43,11 +43,11 @@ const networks: Network[] = [
     btnClass: 'btn-linkedin',
   },
   {
-    name: 'YouTube',
+    name: 'Youtube',
     handle: 'Silicon',
     url: '#',
-    icon: 'bxl:youtube',
-    btnClass: 'btn-youtube',
+    icon: 'bxl:Youtube',
+    btnClass: 'btn-Youtube',
   },
   {
     name: 'Dribbble',

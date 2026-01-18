@@ -12,9 +12,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Turn brand strategy into real Aussie revenue—the Perth team flawlessly implements positioning
-                        across every touchpoint. 67% conversion boost nationwide without wasting thousands on disjointed
-                        execution.
+                    Turn brand strategy into consistent, real-world execution across every customer touchpoint. Our Perth-based team ensures your positioning is applied clearly and accurately, supporting stronger engagement, trust, and measurable revenue growth across Australia.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

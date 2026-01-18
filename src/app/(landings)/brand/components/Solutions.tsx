@@ -31,7 +31,7 @@ const solutionsData: Solution[] = [
         title: 'Brand Strategy & Positioning',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger. Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
+        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger.The Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
     },
     {
         id: 2,

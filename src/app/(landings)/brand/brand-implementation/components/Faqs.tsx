@@ -37,32 +37,27 @@ const faqs: FaqType[] = [
     answer: (
         <>
           <p className="mb-0">
-            Specialist expertise audits your current assets and realigns your brand
-            completely within weeks. Turn messy, inconsistent brands into conversion
-            machines fast.
+           Yes. We audit current brand assets, identify inconsistencies, and realign execution to restore clarity and cohesion—often within a defined rollout timeframe.
           </p>
         </>
     ),
   },
   {
-    question: 'Covering all digital channels?',
+    question: 'Do you cover all digital channels?',
     answer: (
         <>
           <p className="mb-0">
-            Every platform, every asset—website, social, email, and ads. 100% coverage
-            ensures a cohesive, high-performing brand experience wherever Australians
-            engage.
+            Yes. We implement brand assets across websites, social platforms, email, and digital marketing channels to ensure a unified brand experience.
           </p>
         </>
     ),
   },
   {
-    question: 'Works with our existing assets?',
+    question: 'Can you work with our existing assets?',
     answer: (
         <>
           <p className="mb-0">
-            Seamless integration refreshes what works and replaces what’s weak. Maintain
-            momentum while instantly elevating brand quality.
+            Absolutely. We assess what is working, refine where needed, and replace only what limits performance—minimising disruption while improving quality.
           </p>
         </>
     ),
@@ -123,7 +118,7 @@ const Faqs = () => {
         <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
           <h2 className="pb-3 mb-1 mb-lg-3">
             <span className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
-            Check out the FAQs
+            Check out the FAQs.
           </h2>
           <p className="fs-lg pb-3 mb-2 mb-lg-3">
             Still have unanswered questions and need to get in touch?
@@ -137,7 +132,7 @@ const Faqs = () => {
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
                   <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
-                    Whatsapp us
+                    WhatsApp Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
                 </CardBody>

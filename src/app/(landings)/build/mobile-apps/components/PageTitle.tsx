@@ -13,9 +13,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth-built apps driving Aussie revenue—67% higher engagement nationwide without wasting
-                        thousands on offshore devs. A local team that genuinely cares, delivering frictionless
-                        iOS/Android experiences, ready to scale.
+                     Scalable Mobile Apps built in Perth for Australian businesses that prioritise performance, reliability, and user retention. We design and develop iOS and Android apps focused on smooth user flows, measurable engagement, and long-term growth—without the risks of offshore development.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

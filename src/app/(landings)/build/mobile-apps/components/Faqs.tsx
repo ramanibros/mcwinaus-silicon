@@ -43,23 +43,21 @@ const faqs: FaqType[] = [
         ),
     },
     {
-        question: 'App Store approval guaranteed?',
+        question: 'Do you support App Store and Google Play approvals?',
         answer: (
             <>
                 <p className="mb-0">
-                    100% first-time pass rate. We know Apple and Google reviewers better than most
-                    agencies—no delays, no resubmissions.
+                    Yes. We build apps in line with platform guidelines and assist throughout the submission and review process to minimise approval issues.
                 </p>
             </>
         ),
     },
     {
-        question: 'Does it work Australia-wide for users?',
+        question: 'Are your apps suitable for users across Australia?',
         answer: (
             <>
                 <p className="mb-0">
-                    Coast-to-coast coverage—Perth HQ powers apps for Darwin tradies to Melbourne influencers.
-                    We ensure reliable performance nationwide.
+                    Yes. Our apps are designed for nationwide audiences, with localisation and performance considerations for users across regions.
                 </p>
             </>
         ),
@@ -98,7 +96,7 @@ const Faqs = () => {
         <Col xl={4} md={5} className="text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
           <h2 className="pb-3 mb-1 mb-lg-3">
             <span className="text-gradient-primary">Any questions?</span> <br className="d-none d-md-inline" />
-            Check out the FAQs
+            Check out the FAQs.
           </h2>
           <p className="fs-lg pb-3 mb-2 mb-lg-3">
             Still have unanswered questions and need to get in touch?
@@ -112,7 +110,7 @@ const Faqs = () => {
                   </span>
                   <p className="fs-sm mb-2">Still have questions?</p>
                   <Link href="https://wa.me/+61466953095" target="_blank" className="btn btn-link stretched-link px-0">
-                    Whatsapp us
+                    WhatsApp Us
                     <IconifyIcon icon="bx:right-arrow-alt" className="fs-xl ms-2" />
                   </Link>
                 </CardBody>

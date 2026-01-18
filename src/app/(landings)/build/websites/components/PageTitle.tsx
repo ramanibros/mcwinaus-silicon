@@ -12,9 +12,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth-built websites driving Aussie revenue—67% higher conversions nationwide without spending
-                        thousands on flashy templates. A local team that genuinely cares, delivering SEO-ready sites
-                        that scale with your business.
+       Conversion-focused websites built in Perth for Australian businesses that need performance, not templates. We design and develop scalable, SEO-ready websites that prioritise speed, usability, and measurable growth across all devices.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

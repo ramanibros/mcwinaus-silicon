@@ -29,7 +29,7 @@ type Testimonial = {
 const testimonials = [
   {
     id: 1,
-    text: "McWIN iTECH is Perth's best digital company! Their services are awesome, professional, 24/7 support and affordable pricing, making them a big advantage. Highly recommended!",
+    text: "McWIN iTECH is Perth's best digital company! Their services are awesome, professional, 24/7 customer support and affordable pricing, making them a big advantage. Highly recommended!",
     author: "Courtenay Holgate",
     role: "Owner",
     avatar: avatar1,

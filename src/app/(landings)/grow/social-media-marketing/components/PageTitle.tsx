@@ -12,9 +12,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth social campaigns driving Aussie sales—67% higher engagement nationwide without wasting
-                        thousands on scroll-stop fails. A local team that genuinely cares, delivering conversion-focused
-                        content that scales.
+                       Strategic social media marketing built in Perth for Australian businesses that want more than visibility. We design content and campaigns that build trust, generate engagement, and support measurable revenue outcomes across key social platforms.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

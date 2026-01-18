@@ -16,7 +16,7 @@ const Description = () => {
                   <ul className="list-unstyled pb-3">
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:slideshow" className="fs-xl text-muted me-2 pe-1" />
-                      220 hours on-demand video
+                      220 hours on-demand support video
                     </li>
                     <li className="d-flex align-items-center mb-2">
                       <IconifyIcon icon="bx:file" className="fs-xl text-muted me-2 pe-1" />
@@ -57,9 +57,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Instagram Growth Systems</h4>
                 <p className="mb-0">
-                  Reels, Stories, and carousels optimised for Australian audiences—driving
-                  up to 3× more reach. Algorithm-beating content generates DMs, profile visits,
-                  and direct sales conversations.
+                 Instagram growth strategies using Reels, Stories, and carousel content aligned with Australian audience behaviour. Designed to increase reach, profile engagement, and inbound enquiries through consistent, relevant content.
                 </p>
               </div>
             </div>
@@ -71,9 +69,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">Facebook Lead Generation</h4>
                 <p className="mb-0">
-                  Custom and lookalike audiences with Aussie-focused ads—reducing cost per
-                  lead by up to 67%. Messenger bots qualify prospects automatically while you
-                  focus on closing deals.
+                  Facebook lead generation campaigns using audience segmentation, retargeting, and automated messaging. Built to improve lead quality and reduce cost inefficiencies through better targeting and qualification.
                 </p>
               </div>
             </div>
@@ -85,9 +81,7 @@ const Description = () => {
               <div className="step-body">
                 <h4 className="mb-2">LinkedIn B2B Domination</h4>
                 <p className="mb-0">
-                  Thought leadership posts and employee advocacy programs increase warm
-                  introductions by up to 40%. Strategies convert Australian business
-                  connections into contracts.
+                 LinkedIn strategies for B2B brands focused on thought leadership, employer advocacy, and relationship-driven growth. Designed to support higher-quality conversations and longer-term sales opportunities.
                 </p>
               </div>
             </div>

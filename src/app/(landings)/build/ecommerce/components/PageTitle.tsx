@@ -13,9 +13,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth-built online shops are smashing sales records—67% higher conversions across Australia
-                        without wasting thousands on failed platforms. A local team who genuinely care, delivering
-                        scalable cart fillers that grow with your business.
+                       Performance-driven eCommerce stores built in Perth for Australian businesses that need reliability, scalability, and sales efficiency. We design online stores focused on smooth checkout, operational clarity, and long-term growth—not short-term hacks.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

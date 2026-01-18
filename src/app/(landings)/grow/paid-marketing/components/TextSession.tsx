@@ -13,10 +13,9 @@ const TextSession = () => {
                 </Col>
                 <Col md={6} className="order-md-2">
                     <div className="pe-xl-5 me-md-2 me-lg-4">
-                        <h2 className="h1 mb-3 mb-sm-4">Australia's PPC Profit Engine</h2>
+                        <h2 className="h1 mb-3 mb-sm-4">PPC Built for Sustainable Profitability</h2>
                         <p className="mb-3 mb-sm-4">
-                            Paid clicks that actually make money—not impression wasters. What makes us different: Perth
-                            locals genuinely care about your ad account ROI. Proof, not promises: 3x revenue guaranteed.
+                           Paid advertising strategies designed to deliver measurable commercial outcomes rather than surface-level metrics. Our Perth-based team focuses on cost control, conversion quality, and scalable growth across Australian markets.
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">

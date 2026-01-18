@@ -17,8 +17,7 @@ const TextSession = () => {
                     <div className="pe-xl-5 me-md-2 me-lg-4">
                         <h2 className="h1 mb-3 mb-sm-4">Australia's Visual Identity Experts</h2>
                         <p className="mb-3 mb-sm-4">
-                            Designs that actually grow revenue—not just pretty pictures. What makes us different: Perth locals who genuinely care about your success. Real results guaranteed, proof not promises, for every project.
-                        </p>
+Visual identity design that supports business growth—not just aesthetics. Our Perth-based team takes a strategic approach to design, ensuring every visual decision supports clarity, consistency, and commercial outcomes.                      </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
@@ -26,11 +25,10 @@ const TextSession = () => {
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Competitor-Crushing Visuals
-                            </li>
+Distinctive, competitor-aware visuals                            </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Revenue-First Creativity
+                                Business-first creative approach
                             </li>
                         </ul>
                     </div>

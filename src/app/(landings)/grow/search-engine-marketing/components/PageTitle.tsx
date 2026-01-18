@@ -12,9 +12,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth Google Ads is smashing Aussie sales records—67% lower cost per acquisition nationwide
-                        without wasting thousands on dumb bids. A local team that genuinely cares, delivering
-                        ROI-focused campaigns that scale.
+                        Performance-led search advertising built in Perth for Australian businesses that need predictable, scalable returns. We manage paid search campaigns with a focus on intent, efficiency, and measurable revenue—not wasted spend.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project

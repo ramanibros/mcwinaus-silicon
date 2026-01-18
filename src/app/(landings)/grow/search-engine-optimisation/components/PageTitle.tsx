@@ -13,9 +13,7 @@ const PageTitle = () => {
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Perth SEO is dominating Aussie Google searches—3x more organic traffic nationwide without
-                        wasting thousands on useless tactics. A local team that genuinely cares, delivering long-term
-                        rankings that convert.
+                        Strategic SEO services built in Perth for Australian businesses that want sustainable visibility and qualified traffic—not short-term spikes. We focus on technical foundations, search intent, and conversion alignment to support long-term growth in competitive markets.
                     </p>
                     <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project
