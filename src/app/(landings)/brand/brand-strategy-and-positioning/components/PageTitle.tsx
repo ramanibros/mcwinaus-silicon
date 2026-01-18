@@ -16,7 +16,7 @@ const PageTitle = () => {
                         Australia. Perth-based local team delivering proven results, not hype. 67% higher conversions
                         without wasting thousands on guesswork.
                     </p>
-                    <Link href="/connect" className="btn btn-lg btn-primary shadow-primary">
+                    <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project
                     </Link>
                 </Col>

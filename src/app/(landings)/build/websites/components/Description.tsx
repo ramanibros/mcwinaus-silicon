@@ -55,77 +55,86 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Introduction. Getting started</h4>
+                <h4 className="mb-2">Custom WordPress Development</h4>
                 <p className="mb-0">
-                  Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
-                  gravida hendrerit tempus placerat.
+                  Bespoke WordPress themes engineered for speed—delivering up to 3× faster
+                  load times with flawless SEO structure. No template limits, just unlimited
+                  custom functionality tailored exactly to your business requirements.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                <h4 className="mb-2">eCommerce Website Builds</h4>
                 <p className="mb-0">
-                  Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras
-                  ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl,
-                  enim nec accumsan vitae est.
+                  High-converting WooCommerce and Shopify stores with frictionless checkout
+                  flows—boosting cart completion by up to 67% through Australian payment
+                  gateways, real-time inventory sync, and abandoned cart recovery.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">CSS &amp; CSS3: basic</h4>
+                <h4 className="mb-2">Landing Page Optimisation</h4>
                 <p className="mb-0">
-                  Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
-                  mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.
+                  Single-goal landing pages built to dominate A/B tests—cutting bounce
+                  rates by up to 50% using strategic CTAs, heatmapping insights, and
+                  conversion rate optimisation that turns traffic into revenue.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">JavaScript basics for beginners</h4>
+                <h4 className="mb-2">Mobile-Responsive Design</h4>
                 <p className="mb-0">
-                  Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea
-                  vitae, velit, erat eget velit. At lacus ut proin erat.
+                  Pixel-perfect performance across every device—driving up to 40% more
+                  mobile conversions with Aussie thumb-friendly navigation that ensures
+                  zero lost sales from phone and tablet users.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Understanding APIs</h4>
+                <h4 className="mb-2">SEO-First Architecture</h4>
                 <p className="mb-0">
-                  Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi
-                  mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur
-                  elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames
-                  bibendum ullamcorper.
+                  Google-ready foundations built from day one—clean code, schema markup,
+                  and page-speed obsession that helps you rank higher locally without
+                  wasting ad spend on weak technical setups.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">6</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Python from beginner to advanced</h4>
+                <h4 className="mb-2">Ongoing Performance Maintenance</h4>
                 <p className="mb-0">
-                  Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum
-                  risus. Est, mauris morbi nibh massa.
+                  Proactive monthly speed audits, security updates, and content refresh
+                  systems—keeping your site aligned with Google algorithm changes,
+                  guaranteeing uptime and zero maintenance headaches.
                 </p>
               </div>
             </div>
           </div>
+
         </Col>
       </Row>
     </section>

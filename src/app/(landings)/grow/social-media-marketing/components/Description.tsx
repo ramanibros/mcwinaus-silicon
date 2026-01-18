@@ -55,77 +55,86 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Introduction. Getting started</h4>
+                <h4 className="mb-2">Instagram Growth Systems</h4>
                 <p className="mb-0">
-                  Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
-                  gravida hendrerit tempus placerat.
+                  Reels, Stories, and carousels optimised for Australian audiences—driving
+                  up to 3× more reach. Algorithm-beating content generates DMs, profile visits,
+                  and direct sales conversations.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                <h4 className="mb-2">Facebook Lead Generation</h4>
                 <p className="mb-0">
-                  Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras
-                  ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl,
-                  enim nec accumsan vitae est.
+                  Custom and lookalike audiences with Aussie-focused ads—reducing cost per
+                  lead by up to 67%. Messenger bots qualify prospects automatically while you
+                  focus on closing deals.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">CSS &amp; CSS3: basic</h4>
+                <h4 className="mb-2">LinkedIn B2B Domination</h4>
                 <p className="mb-0">
-                  Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
-                  mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.
+                  Thought leadership posts and employee advocacy programs increase warm
+                  introductions by up to 40%. Strategies convert Australian business
+                  connections into contracts.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">JavaScript basics for beginners</h4>
+                <h4 className="mb-2">Reel Viral Systems</h4>
                 <p className="mb-0">
-                  Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea
-                  vitae, velit, erat eget velit. At lacus ut proin erat.
+                  Trending audio and Aussie-humour hooks drive up to 5× more video views.
+                  User-generated content campaigns convert viewers into paying customers
+                  through social proof multiplication.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Understanding APIs</h4>
+                <h4 className="mb-2">Content Calendar Mastery</h4>
                 <p className="mb-0">
-                  Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi
-                  mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur
-                  elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames
-                  bibendum ullamcorper.
+                  60-day platform-specific posting schedules maintain a consistent brand
+                  voice. Peak-time publishing maximises engagement without daily manual
+                  management.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">6</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Python from beginner to advanced</h4>
+                <h4 className="mb-2">Social Analytics & Optimisation</h4>
                 <p className="mb-0">
-                  Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum
-                  risus. Est, mauris morbi nibh massa.
+                  ROAS tracking, audience insights, and competitor benchmarking. Weekly
+                  strategy pivots ensure continuous performance improvement and
+                  maximised ad spend efficiency.
                 </p>
               </div>
             </div>
           </div>
+
         </Col>
       </Row>
     </section>

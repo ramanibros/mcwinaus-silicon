@@ -55,77 +55,86 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Introduction. Getting started</h4>
+                <h4 className="mb-2">Logo Design Mastery</h4>
                 <p className="mb-0">
-                  Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
-                  gravida hendrerit tempus placerat.
+                  Custom logo design that captures your unique Aussie essence—delivering
+                  instant brand recognition and up to 3× stronger premium appeal. Built to
+                  stand out in crowded markets from the very first glance.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                <h4 className="mb-2">Visual Identity Systems</h4>
                 <p className="mb-0">
-                  Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras
-                  ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl,
-                  enim nec accumsan vitae est.
+                  Complete visual identity frameworks including colour palettes, typography,
+                  and design rules—ensuring consistency across every touchpoint and driving
+                  up to 67% higher engagement through cohesive, trust-building design.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">CSS &amp; CSS3: basic</h4>
+                <h4 className="mb-2">Brand Style Guides</h4>
                 <p className="mb-0">
-                  Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
-                  mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.
+                  Detailed, easy-to-use brand playbooks that remove guesswork for teams and
+                  partners—scalable systems that protect consistency and maintain premium
+                  positioning as your brand grows.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">JavaScript basics for beginners</h4>
+                <h4 className="mb-2">Icon & Illustration Sets</h4>
                 <p className="mb-0">
-                  Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea
-                  vitae, velit, erat eget velit. At lacus ut proin erat.
+                  Bespoke iconography and illustrations crafted for your brand—boosting
+                  conversion rates by up to 3× across digital, print, and social channels
+                  with visuals that cut through the noise.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Understanding APIs</h4>
+                <h4 className="mb-2">Digital Asset Packages</h4>
                 <p className="mb-0">
-                  Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi
-                  mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur
-                  elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames
-                  bibendum ullamcorper.
+                  Ready-to-use social media profiles, favicons, and app icons for immediate
+                  rollout—saving thousands in production time while maintaining consistent,
+                  professional brand standards everywhere.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">6</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Python from beginner to advanced</h4>
+                <h4 className="mb-2">Brand Video & Motion Graphics</h4>
                 <p className="mb-0">
-                  Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum
-                  risus. Est, mauris morbi nibh massa.
+                  Dynamic animations, intro videos, and social reels that drive up to 67%
+                  higher engagement—motion-led storytelling that captures attention instantly
+                  and reinforces premium brand positioning across all platforms.
                 </p>
               </div>
             </div>
           </div>
+
         </Col>
       </Row>
     </section>

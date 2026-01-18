@@ -7,16 +7,17 @@ const PageTitle = () => {
         <section className="container pb-5 mb-md-2 mb-lg-4 mb-xl-5" style={{marginBottom: '0 !important'}}>
             <Row className="pb-5 mb-md-2 mb-lg-4 mb-xl-5">
                 <Col lg={6}>
-                    <h1 className="display-2 mb-0"><span className="text-gradient-primary">Dominate</span> Your Market
+                    <h1 className="display-2 mb-0"><span className="text-gradient-primary">Rank Higher</span> , Sell
+                        More
                     </h1>
                 </Col>
                 <Col lg={6} xl={5} className="offset-xl-1 pt-3 pt-sm-4 pt-lg-3">
                     <p className="pb-4 mb-1 mb-md-2 mb-xl-3">
-                        Make your Aussie brand unforgettable—strategic positioning that drives real growth across
-                        Australia. Perth-based local team delivering proven results, not hype. 67% higher conversions
-                        without wasting thousands on guesswork.
+                        Perth SEO is dominating Aussie Google searches—3x more organic traffic nationwide without
+                        wasting thousands on useless tactics. A local team that genuinely cares, delivering long-term
+                        rankings that convert.
                     </p>
-                    <Link href="/connect" className="btn btn-lg btn-primary shadow-primary">
+                    <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project
                     </Link>
                 </Col>

@@ -20,74 +20,74 @@ type FaqType = {
 };
 
 const faqs: FaqType[] = [
-  {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
-    answer: (
-        <>
-          <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
-          </p>
-        </>
-    ),
-  }
+    {
+        question: 'Why SEO over Google Ads?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    SEO delivers up to 3× ROI and infinite scalability. Ads stop when the budget does,
+                    while SEO drives revenue 24/7, even as competitors burn cash on clicks.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Ongoing work needed forever?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Yes—SEO is continuous maintenance. Monthly optimisations keep you ahead of
+                    algorithm changes while competitors slide.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Is content creation included?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Service pages, blogs, and FAQs are all optimised for SEO and conversion.
+                    Content that ranks AND sells can deliver up to 3× more traffic.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Works Australia-wide for businesses?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Yes—multi-location SEO mastery from Darwin to Devonport. Perth HQ powers
+                    national domination coast to coast.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'What makes you different from others?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Revenue tracking over keyword stuffing. We focus on conversion SEO that actually
+                    grows sales, not just rankings.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Can you guarantee more traffic?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Proven 67% traffic uplift, or we work for free. Transparent reporting ensures
+                    measurable business results, not vanity rankings.
+                </p>
+            </>
+        ),
+    },
 ];
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

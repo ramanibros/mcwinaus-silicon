@@ -55,77 +55,83 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Introduction. Getting started</h4>
+                <h4 className="mb-2">Brand Discovery & Research</h4>
                 <p className="mb-0">
-                  Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
-                  gravida hendrerit tempus placerat.
+                  We dig deep into your business, audience, and market to uncover what truly
+                  sets you apart—no fluff, just clear, actionable insights that drive
+                  immediate impact.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                <h4 className="mb-2">Competitor & Market Analysis</h4>
                 <p className="mb-0">
-                  Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras
-                  ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl,
-                  enim nec accumsan vitae est.
+                  Identify exactly where you can win against competitors using Australia-wide
+                  market intelligence—stay ahead while others scramble to catch up.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">CSS &amp; CSS3: basic</h4>
+                <h4 className="mb-2">Core Purpose & Narrative</h4>
                 <p className="mb-0">
-                  Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
-                  mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.
+                  Craft a compelling brand story that resonates with customers and teams—
+                  building long-term loyalty and turning casual browsers into committed
+                  buyers.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">JavaScript basics for beginners</h4>
+                <h4 className="mb-2">Positioning Strategy Framework</h4>
                 <p className="mb-0">
-                  Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea
-                  vitae, velit, erat eget velit. At lacus ut proin erat.
+                  A tailored roadmap to own your niche—driving up to 3× more premium leads
+                  through focused, strategic brand positioning.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Understanding APIs</h4>
+                <h4 className="mb-2">Messaging & Tone System</h4>
                 <p className="mb-0">
-                  Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi
-                  mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur
-                  elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames
-                  bibendum ullamcorper.
+                  Define a consistent, conversion-driven voice across every channel—boosting
+                  engagement by up to 67%, cutting ad waste, and delivering measurable
+                  results.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">6</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Python from beginner to advanced</h4>
+                <h4 className="mb-2">Implementation Roadmap</h4>
                 <p className="mb-0">
-                  Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum
-                  risus. Est, mauris morbi nibh massa.
+                  Clear, step-by-step execution plans so you can move fast with confidence—
+                  combining local expertise with national reach for real-world results.
                 </p>
               </div>
             </div>
           </div>
+
         </Col>
       </Row>
     </section>

@@ -16,7 +16,7 @@ const PageTitle = () => {
                         across every touchpoint. 67% conversion boost nationwide without wasting thousands on disjointed
                         execution.
                     </p>
-                    <Link href="/connect" className="btn btn-lg btn-primary shadow-primary">
+                    <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project
                     </Link>
                 </Col>

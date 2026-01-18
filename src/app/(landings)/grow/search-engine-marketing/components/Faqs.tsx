@@ -20,74 +20,75 @@ type FaqType = {
 };
 
 const faqs: FaqType[] = [
-  {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
-    answer: (
-        <>
-          <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
-          </p>
-        </>
-    ),
-  }
+    {
+        question: 'Why Google Ads over organic SEO?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Immediate revenue from Day 1 versus waiting months for SEO results. Ads buy
+                    market share quickly, while SEO builds long-term equity—smart businesses do both.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Handle Google Ads policy changes?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Daily policy monitoring ensures zero suspensions. Stay compliant while
+                    competitors risk downtime and wasted spend.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Will you waste our ad budget?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Never. 3× ROAS minimum or pause-free. Every dollar is tracked to revenue
+                    attribution with full transparency.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Shopping ads for physical products?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Product feed specialists deliver up to 40% cheaper clicks than standard Search.
+                    Australian pricing advantage outperforms imported competitors profitably.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'What makes you genuinely different?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Profit-per-click obsession over impression bragging. We focus on ROAS,
+                    revenue engineering, and measurable results—not vanity metrics.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Can you beat our current agency?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Typical audits show 67% efficiency gains. Bring your numbers—we’ll prove lower
+                    CPA and higher revenue within 30 days.
+                </p>
+            </>
+        ),
+    },
 ];
+
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

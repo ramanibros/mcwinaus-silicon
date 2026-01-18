@@ -20,74 +20,74 @@ type FaqType = {
 };
 
 const faqs: FaqType[] = [
-  {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
-    answer: (
-        <>
-          <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
-          </p>
-        </>
-    ),
-  }
+    {
+        question: 'Why bother with custom software?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Generic tools never quite fit. Custom solutions deliver up to 67% efficiency gains
+                    and 3× faster operations—built for your business, not forced workarounds.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Help with ancient systems that keep breaking?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Legacy escape experts provide smooth migrations with zero downtime. Turn
+                    outdated headaches into modern, efficient systems safely.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Grows with the business, does it?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Designed to scale—supporting 10 staff today, 100 tomorrow. No painful rewrites
+                    when your business succeeds.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Can you kill our spreadsheet nightmare?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Real-time dashboards and automated workflows eliminate spreadsheet chaos,
+                    saving 20+ hours per week and eradicating errors permanently.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'What makes you different from the big agencies?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    ROI-first focus, not billable hours. Local team delivering real business results,
+                    without corporate fluff.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'What happens after we launch?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Full support package included—updates, fixes, and new features as your business
+                    grows. Never left stranded with useless software.
+                </p>
+            </>
+        ),
+    },
 ];
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

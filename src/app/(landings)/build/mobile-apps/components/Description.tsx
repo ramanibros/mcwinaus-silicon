@@ -55,77 +55,87 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Introduction. Getting started</h4>
+                <h4 className="mb-2">Native iOS App Development</h4>
                 <p className="mb-0">
-                  Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
-                  gravida hendrerit tempus placerat.
+                  SwiftUI-powered iOS apps built to Apple Human Interface Guidelines—
+                  delivering up to 3× faster interactions. Fully optimised for the
+                  Australian App Store, with push notifications boosting retention by
+                  up to 40% from day one.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                <h4 className="mb-2">Native Android App Development</h4>
                 <p className="mb-0">
-                  Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras
-                  ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl,
-                  enim nec accumsan vitae est.
+                  High-performance Kotlin apps crafted with Material Design 3 excellence—
+                  driving up to 67% higher engagement. Google Play optimised with deep
+                  linking and revenue-focused notification strategies.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">CSS &amp; CSS3: basic</h4>
+                <h4 className="mb-2">Cross-Platform React Native</h4>
                 <p className="mb-0">
-                  Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
-                  mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.
+                  Single codebase apps for iOS and Android—cutting development costs by
+                  up to 50% while maintaining native-level performance. Aussie localisation
+                  ensures consistent experiences across every device.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">JavaScript basics for beginners</h4>
+                <h4 className="mb-2">App Store Optimisation (ASO)</h4>
                 <p className="mb-0">
-                  Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea
-                  vitae, velit, erat eget velit. At lacus ut proin erat.
+                  Keyword-rich titles, descriptions, and conversion-focused screenshots—
+                  driving up to 3× more organic downloads by dominating Australian search
+                  results on both the App Store and Google Play.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Understanding APIs</h4>
+                <h4 className="mb-2">Push Notification Systems</h4>
                 <p className="mb-0">
-                  Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi
-                  mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur
-                  elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames
-                  bibendum ullamcorper.
+                  Intelligent segmentation and personalised messaging increase retention
+                  by up to 40%. Aussie time-zone–triggered notifications drive repeat
+                  engagement and revenue without ongoing ad spend.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">6</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Python from beginner to advanced</h4>
+                <h4 className="mb-2">App Analytics & Iteration</h4>
                 <p className="mb-0">
-                  Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum
-                  risus. Est, mauris morbi nibh massa.
+                  Firebase and CleverTap dashboards track every conversion path. Weekly
+                  performance reporting ensures continuous optimisation, smarter feature
+                  prioritisation, and compounding revenue growth.
                 </p>
               </div>
             </div>
           </div>
+
         </Col>
       </Row>
     </section>

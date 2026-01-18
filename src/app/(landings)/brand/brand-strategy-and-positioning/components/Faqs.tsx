@@ -21,73 +21,73 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
+    question: 'Why bother with positioning?',
     answer: (
         <>
           <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
+            Positioning builds up to 3× stronger market presence. Unpositioned brands
+            get lost in the noise, while well-positioned brands own their niche long-term.
           </p>
         </>
     ),
-  }
+  },
+  {
+    question: 'How do you beat competitors?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Smart competitor and market analysis uncovers unique winning angles,
+            letting you claim your niche while others scramble chasing trends.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Can you reposition established brands?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Absolutely. With decades of experience, we turn good brands into
+            category leaders, revitalising their relevance and market impact.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Do you work Australia-wide?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Yes. Our Perth HQ powers brand strategy delivery nationwide—from Darwin
+            to Melbourne and everywhere in between.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'What makes you different?',
+    answer: (
+        <>
+          <p className="mb-0">
+            No cookie-cutter approaches. We genuinely care about your business—
+            delivering custom strategies that create real differentiation every time.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Will this boost our sales?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Proven results show up to 67% conversion improvement. Strong positioning
+            attracts higher-value Australian customers and grows revenue sustainably.
+          </p>
+        </>
+    ),
+  },
 ];
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

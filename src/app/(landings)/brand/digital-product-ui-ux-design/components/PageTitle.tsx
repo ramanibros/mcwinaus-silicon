@@ -16,7 +16,7 @@ const PageTitle = () => {
                         team that genuinely cares, delivering frictionless experiences without thousands wasted on
                         failed redesigns.
                     </p>
-                    <Link href="/connect" className="btn btn-lg btn-primary shadow-primary">
+                    <Link href="/contact" className="btn btn-lg btn-primary shadow-primary">
                         Start your project
                     </Link>
                 </Col>

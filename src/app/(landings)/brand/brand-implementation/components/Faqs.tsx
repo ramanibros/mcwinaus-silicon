@@ -21,73 +21,98 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
+    question: 'Why does implementation matter most?',
     answer: (
         <>
           <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
+            Flawless execution closes the 67% conversion gap between strategy and rollout.
+            Perfect implementation can unlock up to 3× revenue—strategy without action
+            is just wasted potential.
           </p>
         </>
     ),
-  }
+  },
+  {
+    question: 'Fix inconsistent existing brands?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Specialist expertise audits your current assets and realigns your brand
+            completely within weeks. Turn messy, inconsistent brands into conversion
+            machines fast.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Covering all digital channels?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Every platform, every asset—website, social, email, and ads. 100% coverage
+            ensures a cohesive, high-performing brand experience wherever Australians
+            engage.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Works with our existing assets?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Seamless integration refreshes what works and replaces what’s weak. Maintain
+            momentum while instantly elevating brand quality.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'What makes your rollout different?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Revenue-first execution. Every step is data-tracked to prove immediate ROI,
+            because we genuinely care about performance, not just visuals.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Can you guarantee consistency?',
+    answer: (
+        <>
+          <p className="mb-0">
+            100% adherence across teams and channels. Your growth partner ensures
+            flawless execution every step of the way.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Tracking actual revenue impact?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Full attribution dashboards from day one. Every conversion is measured so
+            you can prove brand ROI with real numbers, not assumptions.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Scalable for business growth?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Future-proof systems scale effortlessly from MVPs to enterprise. Grow your
+            business without redoing core implementation work.
+          </p>
+        </>
+    ),
+  },
 ];
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

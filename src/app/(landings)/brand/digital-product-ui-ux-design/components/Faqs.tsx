@@ -21,73 +21,77 @@ type FaqType = {
 
 const faqs: FaqType[] = [
   {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
+    question: 'Why does good UI/UX actually matter?',
     answer: (
         <>
           <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
+            Clunky designs kill conversions. Well-crafted flows deliver up to 67% higher
+            sales and 3× better retention. Aussie users stick with intuitive apps that
+            provide instant value.
           </p>
         </>
     ),
-  }
+  },
+  {
+    question: 'Covering iOS, Android and web—all platforms?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Every device, every platform. Responsive excellence across iOS, Android, and
+            desktop ensures a native-feel experience everywhere without juggling multiple
+            agencies.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'How do you understand real Australian users?',
+    answer: (
+        <>
+          <p className="mb-0">
+            We combine local behavioural analytics with user journey mapping—from Perth
+            tradies to Sydney professionals. No overseas guesswork, just real Australian
+            patterns that convert.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Can you fix our existing poor UX?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Redesign specialists transform mediocre apps into conversion machines. Quick
+            audits and total UX transformations deliver measurable results in weeks,
+            not years.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'What makes your approach genuinely different?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Revenue obsession over pixels. Custom journeys are built for immediate ROI,
+            not awards, because we genuinely care about your bottom line.
+          </p>
+        </>
+    ),
+  },
+  {
+    question: 'Can you guarantee conversion improvements?',
+    answer: (
+        <>
+          <p className="mb-0">
+            Proven 67% uplift, or we refine for free. Proof, not promises—your growth
+            partner delivers measurable revenue, not just pretty screens.
+          </p>
+        </>
+    ),
+  },
 ];
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

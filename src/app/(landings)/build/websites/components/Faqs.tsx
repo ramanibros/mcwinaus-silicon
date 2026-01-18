@@ -20,74 +20,75 @@ type FaqType = {
 };
 
 const faqs: FaqType[] = [
-  {
-    question: 'Do you build mobile-first websites?',
-    answer: (
-        <>
-          <p>
-            Yes—100% mobile-first. Every website we build is designed for phones first, then scaled up.
-            Our Perth websites load in under 2 seconds on mobile, delivering up to 67% higher conversions.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you connect my software to existing tools?',
-    answer: (
-        <>
-          <p>
-            Absolutely. We provide seamless API integrations with Xero, MYOB, ServiceM8, CRMs, and other
-            business tools—eliminating data silos and manual work for Perth businesses.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What makes your websites rank faster on Google?',
-    answer: (
-        <>
-          <p>
-            Local Perth SEO is built in from day one. We optimise Google Business profiles, implement
-            schema markup, and ensure lightning-fast performance—helping your site rank faster and stay
-            there.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'Can you rebuild my existing website?',
-    answer: (
-        <>
-          <p>
-            Yes. We rebuild and migrate websites with zero downtime while preserving SEO rankings.
-            The result is a faster, more modern website with significantly better conversion rates.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'How secure are your custom apps?',
-    answer: (
-        <>
-          <p>
-            Security is enterprise-grade. We follow best practices, run regular penetration testing,
-            and implement robust data protection—trusted by Perth businesses across industries.
-          </p>
-        </>
-    ),
-  },
-  {
-    question: 'What happens after the software launch?',
-    answer: (
-        <>
-          <p className="mb-0">
-            We don’t disappear after launch. Ongoing bug fixes, team training, performance optimisation,
-            and long-term support ensure your software continues delivering results.
-          </p>
-        </>
-    ),
-  }
+    {
+        question: 'Why custom over templates, mate?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Custom sites deliver up to 67% higher conversions and 3× better Google rankings.
+                    Templates limit growth—custom websites own their niche while cookie-cutter
+                    designs blend into the noise.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Ongoing support included?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Monthly maintenance is standard—covering security, speed, and Google compliance.
+                    Stay on top without tech headaches or unexpected downtime.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Can you fix slow existing sites?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Our speed specialists typically improve load times by 3×. Turn sluggish websites
+                    into high-converting machines quickly and efficiently.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Works Australia-wide?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Coast-to-coast coverage—from Darwin startups to Melbourne corporates—Perth HQ
+                    powers delivery nationwide.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'What makes you genuinely different?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    Revenue engineering over pixel pushing. We genuinely care about your sales,
+                    using data-driven design and proven strategies to boost real results.
+                </p>
+            </>
+        ),
+    },
+    {
+        question: 'Are eCommerce stores included?',
+        answer: (
+            <>
+                <p className="mb-0">
+                    WooCommerce and Shopify specialists—67% checkout boosts, Australian payment
+                    gateways, and flawless inventory sync ensure frictionless, revenue-driving stores.
+                </p>
+            </>
+        ),
+    },
 ];
+
 
 const Faqs = () => {
   const [activeKey, setActiveKey] = useState<string | null>('0');

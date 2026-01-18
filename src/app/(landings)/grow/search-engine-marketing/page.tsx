@@ -5,12 +5,12 @@ import PageTitle from './components/PageTitle';
 import TextSession from './components/TextSession';
 import Work from './components/Work';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Portfolio from "@/app/(landings)/service-detail/components/Portfolio";
 import Pricing from "@/components/common/Pricing";
 import Footer from "@/components/common/Footer";
-import Faqs from "@/app/(landings)/service-detail/components/Faqs";
-import Description from "@/app/(landings)/service-detail/components/Description";
-import Package from "@/app/(landings)/service-detail/components/package";
+import Description from "./components/Description";
+import Portfolio from "./components/Portfolio";
+import Faqs from "./components/Faqs";
+import Package from "./components/package"
 
 export const metadata: Metadata = {title: 'Search Engine Marketing | McWIN iTECH'};
 

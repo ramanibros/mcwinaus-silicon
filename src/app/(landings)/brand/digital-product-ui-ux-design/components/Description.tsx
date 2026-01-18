@@ -55,77 +55,72 @@ const Description = () => {
                 <div className="step-number-inner">1</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Introduction. Getting started</h4>
+                <h4 className="mb-2">User Journey Mapping</h4>
                 <p className="mb-0">
-                  Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse
-                  gravida hendrerit tempus placerat.
+                  Detailed wireframes mapping optimal user paths across web and mobile—
+                  delivering up to 3× smoother flows. Built on real Australian user
+                  behaviours to maximise retention and conversions.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">2</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                <h4 className="mb-2">Mobile App UI Design</h4>
                 <p className="mb-0">
-                  Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras
-                  ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl,
-                  enim nec accumsan vitae est.
+                  Native-feeling iOS and Android interfaces with intuitive navigation—
+                  driving up to 67% higher engagement by turning downloads into loyal,
+                  daily users.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">3</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">CSS &amp; CSS3: basic</h4>
+                <h4 className="mb-2">Landing Page UX</h4>
                 <p className="mb-0">
-                  Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices
-                  mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.
+                  Conversion-focused landing page layouts with strategic CTAs—cutting
+                  bounce rates by up to 50% and increasing leads from Australian traffic
+                  without wasting ad spend.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">4</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">JavaScript basics for beginners</h4>
+                <h4 className="mb-2">Onboarding Flow Design</h4>
                 <p className="mb-0">
-                  Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea
-                  vitae, velit, erat eget velit. At lacus ut proin erat.
+                  Seamless first-use experiences engineered for activation—boosting
+                  completion rates by up to 40% while creating addictive interfaces
+                  that drive immediate value and long-term engagement.
                 </p>
               </div>
             </div>
+
             <div className="step">
               <div className="step-number">
                 <div className="step-number-inner">5</div>
               </div>
               <div className="step-body">
-                <h4 className="mb-2">Understanding APIs</h4>
+                <h4 className="mb-2">App Icons & Creatives</h4>
                 <p className="mb-0">
-                  Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi
-                  mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur
-                  elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames
-                  bibendum ullamcorper.
-                </p>
-              </div>
-            </div>
-            <div className="step">
-              <div className="step-number">
-                <div className="step-number-inner">6</div>
-              </div>
-              <div className="step-body">
-                <h4 className="mb-2">Python from beginner to advanced</h4>
-                <p className="mb-0">
-                  Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum
-                  risus. Est, mauris morbi nibh massa.
+                  Thumb-stopping app icons and promotional creatives—driving up to 3×
+                  more downloads with visuals perfectly aligned to your brand positioning
+                  across app stores and social profiles.
                 </p>
               </div>
             </div>
           </div>
+
         </Col>
       </Row>
     </section>
