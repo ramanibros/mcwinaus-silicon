@@ -134,10 +134,10 @@ const Navbar = ({
             icon: scaleIcon,
             url: '/scale',
             links: [
-                {label: 'Integrations', href: '/service-detail'},
-                {label: 'Optimisation', href: '/service-detail'},
-                {label: '24/7 Support', href: '/service-detail'},
-                {label: 'Advanced Scale Services', href: '/service-detail'},
+                {label: 'Integrations', href: '#'},
+                {label: 'Optimisation', href: '#'},
+                {label: '24/7 Support', href: '#'},
+                {label: 'Advanced Scale Services', href: '#'},
             ],
         },
     ];
