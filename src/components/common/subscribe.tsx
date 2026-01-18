@@ -6,7 +6,7 @@ import pricingBg from '@/assets/img/landing/saas-5/pricing-bg-pattern.png';
 import Jarallax from '@/components/Jarallax';
 import IconifyIcon from '@/components/IconifyIcon';
 
-const Pricing = () => {
+const Subscribe = () => {
   return (
     <section
       className="position-relative bg-dark pt-lg-4 pt-xl-5"
@@ -18,7 +18,7 @@ const Pricing = () => {
         <div className="jarallax-img">
           <Image
             src={pricingBg}
-            alt="Pricing Background"
+            alt="Subscribe Background"
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -29,7 +29,7 @@ const Pricing = () => {
       <Container className="position-relative zindex-2 pt-5" data-bs-theme="dark">
         <div className="position-relative row justify-content-center">
           <Col xl={8} md={10} sm={12} className="text-center">
-            <h2 className="h1 text-light mb-4">Ready To 3x Your Business Growth?</h2>
+            <h2 className="h1 text-light mb-4">Ready To 3x Your <span className="text-gradient-primary">Business Growth?</span></h2>
             <p className="fs-lg text-light opacity-70 pb-4 mb-3">
               Write your email address so we can contact you
             </p>
@@ -113,4 +113,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Subscribe;

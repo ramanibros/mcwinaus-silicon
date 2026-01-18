@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Footer from "@/components/common/Footer";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Work from "@/app/(landings)/build/components/Work";
 import HowWork from "@/app/(landings)/build/components/HowWork";
 import Offer from "@/app/(landings)/build/components/Offer";
@@ -48,7 +48,7 @@ const Page = () => {
             <Faqs/>
             <Benefits/>
             <Package/>
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );

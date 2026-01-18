@@ -4,7 +4,7 @@ import {Metadata} from 'next';
 import Link from 'next/link';
 import IconifyIcon from '@/components/IconifyIcon';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = { title: 'Blog | McWIN iTECH' };
@@ -32,7 +32,7 @@ const Page = () => {
       <section className="container mt-4 mb-lg-5 pt-lg-2 pb-5">
         <GridPost />
       </section>
-      <Pricing />
+      <Subscribe />
       <Footer />
     </>
   );

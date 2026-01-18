@@ -4,7 +4,7 @@ import Work from './components/Work';
 import Navbar from '@/components/navbar/Navbar';
 import {Metadata} from 'next';
 import Solutions from "@/app/(landings)/scale/components/Solutions";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import Faqs from "@/app/(landings)/scale/components/Faqs";
 import Benefits from "@/app/(landings)/scale/components/Benefits";
@@ -30,7 +30,7 @@ const Page = () => {
             <Faqs/>
             <Benefits/>
             {/*<Package/>*/}
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );

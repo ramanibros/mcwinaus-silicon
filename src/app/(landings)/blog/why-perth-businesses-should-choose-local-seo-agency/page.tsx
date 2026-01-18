@@ -4,7 +4,7 @@ import Link from 'next/link';
 import PostContent from './components/PostContent';
 import PostTitle from './components/PostTitle';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {title: 'Blog | Why Businesses in Perth Should Choose a Local SEO Agency'};
@@ -42,7 +42,7 @@ const Page = () => {
             </nav>
             <PostTitle/>
             <PostContent/>
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );

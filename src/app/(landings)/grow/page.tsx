@@ -4,7 +4,7 @@ import Solutions from './components/Solutions';
 import Benefits from './components/Benefits';
 import {Metadata} from 'next';
 import Work from "@/app/(landings)/grow/components/Work";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import HowWork from "@/app/(landings)/grow/components/HowWork";
 import Faqs from "@/app/(landings)/grow/components/Faqs";
@@ -30,7 +30,7 @@ const Page = () => {
             <Faqs/>
             <Benefits/>
             <Package/>
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );

@@ -5,7 +5,7 @@ import PageTitle from './components/PageTitle';
 import TextSession from './components/TextSession';
 import Work from './components/Work';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import Description from "./components/Description";
 import Portfolio from "./components/Portfolio";
@@ -52,7 +52,7 @@ const Page = () => {
             <TextSession/>
             <Faqs/>
             <Package/>
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );

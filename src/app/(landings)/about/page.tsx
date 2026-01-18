@@ -6,7 +6,7 @@ import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Partners from "@/app/(landings)/about/components/Partners";
 import Faqs from "@/app/(landings)/about/components/Faqs";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import Features from "@/app/(landings)/about/components/Features";
 
@@ -25,7 +25,7 @@ const Page = () => {
             <Features/>
             <Testimonials/>
             <Faqs/>
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );

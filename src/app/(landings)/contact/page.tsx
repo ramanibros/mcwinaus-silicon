@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Pricing from "@/components/common/Pricing";
+import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {title: 'McWIN iTECH | Contect Us'};
@@ -15,7 +15,7 @@ const Page = () => {
                 headerSticky="navbar-stuck"
             />
             <Hero/>
-            <Pricing/>
+            <Subscribe/>
             <Footer/>
         </>
     );
