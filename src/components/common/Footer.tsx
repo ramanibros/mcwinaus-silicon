@@ -4,7 +4,7 @@ import React from 'react';
 import logoLight from '@/assets/img/mcwinItechLogoLight.png';*/
 
 import logo from '@/assets/img/footer/McWIN_iTECH_verticle.png';
-import logoLight from '@/assets/img/mcwinItechLogoLight.png';
+import logoLight from '@/assets/img/footer/McWIN_iTECH_verticle_light.png';
 
 import IconifyIcon from '@/components/IconifyIcon';
 import {Col, Container, Row} from 'react-bootstrap';
