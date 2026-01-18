@@ -84,7 +84,7 @@ const aiModels: AIModel[] = [
                         y2="12.0502"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop stopColor="#6366F1"/>
+                        <stop stopColor="#8d41f9"/>
                         <stop offset="0.5" stopColor="#8B5CF6"/>
                         <stop offset="1" stopColor="#D946EF"/>
                     </linearGradient>

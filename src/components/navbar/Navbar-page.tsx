@@ -205,7 +205,7 @@ const Navbar = ({
                 }
                 
                 .vertical-tab-btn.active {
-                    background: #0d6efd;
+                    background: #030039;
                     color: white;
                     box-shadow: 0 2px 8px rgba(13, 110, 253, 0.3);
                 }
@@ -254,7 +254,7 @@ const Navbar = ({
                 .hr-indicator {
                     height: 3px;
                     width: 50px;
-                    background: linear-gradient(90deg, #0d6efd, transparent);
+                    background: linear-gradient(90deg, #030039, transparent);
                     border-radius: 2px;
                     margin: 1rem 0;
                 }
@@ -274,7 +274,7 @@ const Navbar = ({
                 
                 .service-link-item.active {
                     background: #e7f1ff;
-                    color: #0d6efd;
+                    color: #030039;
                 }
                 
                 /* Mobile Accordion Styles */
@@ -309,7 +309,7 @@ const Navbar = ({
                 }
                 
                 .accordion-button:not(.collapsed) {
-                    color: #0d6efd;
+                    color: #030039;
                     background-color: #e7f1ff;
                     box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
                 }
@@ -347,12 +347,12 @@ const Navbar = ({
                 
                 .accordion-link:hover {
                     background: #f8f9fa;
-                    color: #0d6efd;
+                    color: #030039;
                 }
                 
                 .accordion-link.active {
                     background: #e7f1ff;
-                    color: #0d6efd;
+                    color: #030039;
                     font-weight: 500;
                 }
                 
