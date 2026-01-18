@@ -62,7 +62,7 @@ const socialLinks: Link[] = [
 const aiModels: AIModel[] = [
     {
         title: 'Brand',
-        description: 'Built on Trust',
+        description: 'Design That Performs',
         icon: (
             <svg
                 width="24"
@@ -97,21 +97,21 @@ const aiModels: AIModel[] = [
     },
     {
         title: 'Build',
-        description: 'Built on Trust',
+        description: 'Build Smart Solutions',
         icon: 'bx:message-dots',
         bgColor: 'warning',
         link: '/build'
     },
     {
         title: 'Grow',
-        description: 'Leading Growth Partner',
+        description: 'Grow Smarter Digital',
         icon: 'bx:file-find',
         bgColor: 'success',
         link: '/grow'
     },
     {
         title: 'Scale',
-        description: 'Leading Scale Partner',
+        description: 'Scale For Impact',
         icon: 'bx:terminal',
         bgColor: 'info',
         link: '/scale'
