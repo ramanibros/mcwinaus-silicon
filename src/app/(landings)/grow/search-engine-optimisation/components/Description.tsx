@@ -39,7 +39,7 @@ const Description = () => {
                                         $2200
                                         <del className="text-muted fs-xl fw-normal ms-2">3000</del>
                                     </div>*/}
-                                    <a href="#" className="btn btn-primary btn-lg shadow-primary">
+                                    <a href="/contact" className="btn btn-primary btn-lg shadow-primary">
                                         Contact To Sales
                                     </a>
                                 </CardBody>

@@ -38,7 +38,7 @@ const Description = () => {
                   {/*<div className="h2 d-flex align-items-center mb-4">
                     $5000<del className="text-muted fs-xl fw-normal ms-2">7500</del>
                   </div>*/}
-                  <a href="#" className="btn btn-primary btn-lg shadow-primary">
+                  <a href="/contact" className="btn btn-primary btn-lg shadow-primary">
                     Contact To Sales
                   </a>
                 </CardBody>
