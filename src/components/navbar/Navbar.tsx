@@ -654,7 +654,7 @@ const Navbar = ({
                         </div>
                     </Offcanvas>
 
-                   {/* <ThemeToggle themeToggle={isNavDark ?? false}/>
+                   {/* <ThemeToggle themeToggle={isNavDark ?? false}/>*/}
                     <button
                         type="button"
                         className="navbar-toggler"
@@ -662,7 +662,7 @@ const Navbar = ({
                         onClick={() => setShowMenu(true)}
                     >
                         <span className="navbar-toggler-icon"></span>
-                    </button>*/}
+                    </button>
                     <Button
                         as="a"
                         href="/contact"
