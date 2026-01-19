@@ -1,5 +1,5 @@
 import React from 'react';
-import image02 from '@/assets/img/services/single/image02.jpg';
+import image02 from '@/assets/img/build-service/Build_S3.jpg';
 import Image from 'next/image';
 import {Col, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
