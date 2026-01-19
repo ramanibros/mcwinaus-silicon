@@ -41,7 +41,7 @@ const Hero = () => {
               >
                 hello@McWIN iTECH.com.au
               </Link>
-              <div className="text-nav">0422 698 645</div>
+              <div className="text-nav">0451 989 731</div>
             </div>
           </Col>
 

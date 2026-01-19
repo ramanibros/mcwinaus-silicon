@@ -159,7 +159,7 @@ const resources: Resource[] = [
     },
     {
         title: 'Phone',
-        description: '0422 698 645',
+        description: '0451 989 731',
         icon: 'bx:phone-call',
         link: 'tel:+61422698645'
     },
