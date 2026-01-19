@@ -1,7 +1,9 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import brandIcon from '@/assets/img/services/brand.png';
 import growIcon from '@/assets/img/services/grow.png';
@@ -43,10 +45,73 @@ const features: Feature[] = [
 ];
 
 const Features = () => {
+  // Refs for text animation ONLY for the heading
+  const staticTextRef = useRef<HTMLSpanElement>(null);
+  const gradientTextRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Register ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // TEXT ANIMATION ONLY - Exact same as About page
+    if (staticTextRef.current && gradientTextRef.current) {
+      const staticText = staticTextRef.current;
+      const gradientText = gradientTextRef.current;
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: staticText.closest('h2'),
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1,
+          markers: false,
+        }
+      });
+
+      // Animate the static text ("Perth Business Growth")
+      tl.fromTo(staticText,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      );
+
+      // Animate the gradient text ("Revolutionising") with EXACT same effects
+      tl.fromTo(gradientText,
+        {
+          opacity: 0,
+          scale: 0.8,
+          backgroundSize: "200% 200%",
+          backgroundPosition: "100% 0%"
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "back.out(1.7)",
+          backgroundPosition: "0% 100%",
+        },
+        "-=0.8"
+      );
+    }
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+
   return (
     <section className="mb-2 mb-md-4 mb-lg-5">
       <Container>
-        <h2 className="h1 mb-md-4 mb-3 pt-xl-3"><span className="text-gradient-primary">Revolutionising</span> Perth Business Growth</h2>
+        {/* ONLY THIS HEADING GETS ANIMATION - EXACTLY LIKE ABOUT PAGE */}
+        <h2 className="h1 mb-md-4 mb-3 pt-xl-3">
+          {/* Gradient text part - will be animated */}
+          <span ref={gradientTextRef} className="text-gradient-primary">Revolutionising</span>
+          
+          {/* Static text part */}
+          <span ref={staticTextRef}> Perth Business Growth</span>
+        </h2>
 
         <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
           {features.map(feature => (
@@ -70,6 +135,18 @@ const Features = () => {
           ))}
         </Row>
       </Container>
+
+      {/* Add global styles for the gradient text animation */}
+      <style jsx global>{`
+        .text-gradient-primary {
+          background: linear-gradient(90deg, #4f46e5, #7c3aed);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          display: inline-block;
+          background-size: 200% 200%;
+        }
+      `}</style>
     </section>
   );
 };
