@@ -335,7 +335,7 @@ const Partners = () => {
                   >
                     <h5 className="mb-3 fs-lg fw-normal lh-1 mt-5 text-white">
                       <span className="h1 d-block w-100 mb-0 glass-number">+12k</span>
-                      new leads for clients
+                      New Leads
                     </h5>
                   </div>
                 </div>
