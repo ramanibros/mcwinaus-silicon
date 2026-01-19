@@ -17,8 +17,8 @@ const geistSans = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'Silicon | Multipurpose Business | Technology Template',
-  description: 'Silicon - Multipurpose Technology Bootstrap Template',
+  title: 'McWIN iTECH',
+  description: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services',
   icons: favicon.src,
 };
 
