@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
-import {Metadata} from 'next';
 import Features from '@/app/(landings)/home/components/Features';
 import Choose from '@/app/(landings)/home/components/Choose';
 import About from '@/app/(landings)/home/components/About';
