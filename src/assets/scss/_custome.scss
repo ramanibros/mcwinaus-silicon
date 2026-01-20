@@ -184,3 +184,6 @@
 .justify-txt{
   text-align: justify;
 }
+.accordion-button:not(.collapsed)::after {
+  background-color: transparent !important;
+}
