@@ -181,19 +181,28 @@ const Hero = () => {
             </div>
             
             <Row className="row-cols-3 pt-4 pt-md-5 mt-2 mt-xl-4">
-              <Col ref={el => statsRef.current[0] = el}>
+              <Col ref={(el: HTMLDivElement | null) => {
+                     statsRef.current[0] = el;
+                   }}>
                 <h3 className="h2 mb-2">0+</h3>
                 <p className="mb-0">
                   <strong>IT</strong> Experts
                 </p>
               </Col>
-              <Col ref={el => statsRef.current[1] = el}>
+              <Col
+                  ref={(el: HTMLDivElement | null) => {
+                    statsRef.current[1] = el;
+                  }}
+                  >
                 <h3 className="h2 mb-2">0+</h3>
                 <p className="mb-0">
                   <strong>Clients</strong> per Month
                 </p>
               </Col>
-              <Col ref={el => statsRef.current[2] = el}>
+              <Col
+                   ref={(el: HTMLDivElement | null) => {
+                     statsRef.current[2] = el;
+                   }}>
                 <h3 className="h2 mb-2">0+</h3>
                 <p className="mb-0">
                   <strong>Requests</strong> per Week
@@ -209,13 +218,17 @@ const Hero = () => {
                   src={about01} 
                   className="d-block rounded-3 mb-3 mb-lg-4" 
                   alt="Image"
-                  ref={el => imagesRef.current[0] = el as HTMLImageElement}
+                  ref={(el: HTMLImageElement | null) => {
+                    imagesRef.current[0] = el;
+                  }}
                 />
                 <Image 
                   src={about02} 
                   className="d-block rounded-3" 
                   alt="Image"
-                  ref={el => imagesRef.current[1] = el as HTMLImageElement}
+                  ref={(el: HTMLImageElement | null) => {
+                    imagesRef.current[1] = el;
+                  }}
                 />
               </Col>
               <Col>
@@ -223,13 +236,17 @@ const Hero = () => {
                   src={hero03} 
                   className="d-block rounded-3 mb-3 mb-lg-4" 
                   alt="Image"
-                  ref={el => imagesRef.current[2] = el as HTMLImageElement}
+                  ref={(el: HTMLImageElement | null) => {
+                    imagesRef.current[2] = el;
+                  }}
                 />
                 <Image 
                   src={hero04} 
                   className="d-block rounded-3" 
                   alt="Image"
-                  ref={el => imagesRef.current[3] = el as HTMLImageElement}
+                  ref={(el: HTMLImageElement | null) => {
+                    imagesRef.current[3] = el;
+                  }}
                 />
               </Col>
             </Row>
