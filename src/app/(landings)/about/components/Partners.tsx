@@ -30,8 +30,8 @@ const brandLogos = [brand01, brand02, brand03, brand04, brand05, brand06, brand0
 
 const Partners = () => {
   const containerRef = useRef(null);
-  const glassCardsRef = useRef([]);
-  const backgroundShapesRef = useRef([]);
+  const glassCardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const backgroundShapesRef = useRef<HTMLDivElement[]>([]);
   
   // Refs for text animation ONLY for the heading
   const staticTextRef = useRef<HTMLSpanElement>(null);
@@ -256,8 +256,10 @@ const Partners = () => {
           <Col lg={6} className="offset-lg-1">
             <Row className="row-cols-sm-2 row-cols-1 g-4 align-items-center">
               <Col>
-                <div 
-                  ref={el => glassCardsRef.current[0] = el}
+                <div
+                    ref={(el: HTMLDivElement | null) => {
+                      glassCardsRef.current[0] = el;
+                    }}
                   className="enhanced-glass-card glass-card-1"
                 >
                   <div className="card-body m-xl-3 m-1 text-center">
@@ -301,8 +303,10 @@ const Partners = () => {
               </Col>
               
               <Col>
-                <div 
-                  ref={el => glassCardsRef.current[1] = el}
+                <div
+                    ref={(el: HTMLDivElement | null) => {
+                      glassCardsRef.current[1] = el;
+                    }}
                   className="enhanced-glass-card glass-card-2 mb-4"
                 >
                   <div className="card-body m-xl-3 m-1 text-center">
@@ -325,8 +329,10 @@ const Partners = () => {
                   </div>
                 </div>
 
-                <div 
-                  ref={el => glassCardsRef.current[2] = el}
+                <div
+                    ref={(el: HTMLDivElement | null) => {
+                      glassCardsRef.current[2] = el;
+                    }}
                   className="enhanced-glass-card glass-card-3"
                 >
                   <div 
@@ -335,7 +341,7 @@ const Partners = () => {
                   >
                     <h5 className="mb-3 fs-lg fw-normal lh-1 mt-5 text-white">
                       <span className="h1 d-block w-100 mb-0 glass-number">+12k</span>
-                      new leads for clients
+                      New Leads
                     </h5>
                   </div>
                 </div>
