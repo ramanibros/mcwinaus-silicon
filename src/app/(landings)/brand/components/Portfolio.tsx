@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Autoplay, Navigation} from 'swiper/modules';
 import testi1 from '@/assets/img/portfolio/aspireuniforms.png';
@@ -14,6 +14,8 @@ import testi9 from '@/assets/img/portfolio/sfeg.png';
 
 import { Card, CardBody, Col, Row } from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const testimonials = [
   {
@@ -87,7 +89,7 @@ const testimonials = [
   {
     id: 8,
     text:
-        'Quinns Rocks Tool Hire is your trusted local partner for high-quality tool rentals in Perth’s northern suburbs. Founded by a skilled mechanic with over 19 years of experience, our business started as a small venture with just a few tools for hire. Today, we’ve grown to offer a diverse range of 30+ tools, with more being added regularly.',
+        'Quinns Rocks Tool Hire is your trusted local partner for high-quality tool rentals in Perth\'s northern suburbs. Founded by a skilled mechanic with over 19 years of experience, our business started as a small venture with just a few tools for hire. Today, we\'ve grown to offer a diverse range of 30+ tools, with more being added regularly.',
     name: 'Quinns Rocks Tool Hire',
     role: 'A tool rental service',
     bg: testi8,
@@ -102,13 +104,68 @@ const testimonials = [
   },
 ]
 
+// Register GSAP plugins
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  // Refs for title animation
+  const h2Ref = useRef<HTMLHeadingElement>(null);
+  const spanRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    // Title animation for "Results That Scale." words
+    if (h2Ref.current && spanRef.current) {
+      const h2Text = h2Ref.current;
+      const spanText = spanRef.current;
+      
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: h2Ref.current,
+          start: "top 80%",
+          end: "top 20%",
+          scrub: 1,
+          markers: false,
+        }
+      });
+
+      tl.fromTo(h2Text,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      );
+
+      tl.fromTo(spanText,
+        {
+          opacity: 0,
+          scale: 0.8,
+          backgroundSize: "200% 200%",
+          backgroundPosition: "100% 0%"
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "back.out(1.7)",
+          backgroundPosition: "0% 100%",
+        },
+        "-=0.8"
+      );
+    }
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
 
   return (
     <section className="container mb-5 pt-2 pb-3 py-md-4 py-lg-5">
-      <h2 className="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center">Work That Speaks. <span className="text-gradient-primary">Results That Scale.</span></h2>
+      {/* Updated heading with animation refs */}
+      <h2 ref={h2Ref} className="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center">
+        Work That Speaks. <span ref={spanRef} className="text-gradient-primary">Results That Scale.</span>
+      </h2>
       <Row>
         <Col md={7}>
           <Card className="border-0 shadow-sm p-4 p-xxl-5 mb-4 me-xxl-4">
@@ -180,6 +237,19 @@ const Testimonials = () => {
           </div>
         </Col>
       </Row>
+
+      <style jsx global>{`
+        /* Text gradient with animation support */
+        .text-gradient-primary {
+          background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+          background-size: 200% 200%;
+          background-position: 100% 0%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          display: inline-block;
+        }
+      `}</style>
     </section>
   );
 };
