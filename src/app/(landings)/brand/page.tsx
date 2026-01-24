@@ -12,8 +12,24 @@ import Benefits from "@/app/(landings)/brand/components/Benefits";
 import Portfolio from "@/app/(landings)/brand/components/Portfolio";
 import Package from "@/app/(landings)/brand/components/package";
 
-export const metadata: Metadata = {title: 'Brand | McWIN iTECH'};
+export const metadata = {
+        metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
+        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        description:
+            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+        keywords: [
+                "Software Development Services",
+                "Custom Software Development",
+                "Web Application Development",
+                "Mobile App Development",
+                "Full-Stack Development",
+        ],
+
+        alternates: {
+                canonical: "https://www.mcwinitech.com.au/",
+        }
+};
 const Page = () => {
     return (
         <>
