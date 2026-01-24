@@ -66,7 +66,7 @@ if (typeof window !== 'undefined') {
 
 const Solutions = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const animationRef = useRef<number>();
+    const animationRef = useRef<number | undefined>(undefined);
     const shapesRef = useRef<Array<{
         x: number;
         y: number;

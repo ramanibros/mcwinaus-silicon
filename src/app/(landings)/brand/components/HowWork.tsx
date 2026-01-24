@@ -173,8 +173,10 @@ const Work = () => {
         className="steps steps-sm steps-horizontal-md steps-center pb-5 mb-md-2 mb-lg-3"
       >
         {/* STEP 1 - COMPLETELY UNCHANGED */}
-        <div 
-          ref={el => stepRefs.current[0] = el}
+        <div
+            ref={(el: HTMLDivElement | null) => {
+              stepRefs.current[0] = el;
+            }}
           className="step"
         >
           <div className="step-number">
@@ -187,8 +189,10 @@ const Work = () => {
         </div>
         
         {/* STEP 2 - COMPLETELY UNCHANGED */}
-        <div 
-          ref={el => stepRefs.current[1] = el}
+        <div
+            ref={(el: HTMLDivElement | null) => {
+              stepRefs.current[1] = el;
+            }}
           className="step"
         >
           <div className="step-number">
@@ -201,8 +205,10 @@ const Work = () => {
         </div>
         
         {/* STEP 3 - COMPLETELY UNCHANGED */}
-        <div 
-          ref={el => stepRefs.current[2] = el}
+        <div
+            ref={(el: HTMLDivElement | null) => {
+              stepRefs.current[2] = el;
+            }}
           className="step"
         >
           <div className="step-number">
@@ -215,8 +221,10 @@ const Work = () => {
         </div>
         
         {/* STEP 4 - COMPLETELY UNCHANGED */}
-        <div 
-          ref={el => stepRefs.current[3] = el}
+        <div
+            ref={(el: HTMLDivElement | null) => {
+              stepRefs.current[3] = el;
+            }}
           className="step"
         >
           <div className="step-number">
