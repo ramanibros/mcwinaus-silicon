@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './components/Hero';
-import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Footer from "@/components/common/Footer";
 import Subscribe from "@/components/common/subscribe";
@@ -10,8 +9,8 @@ import Offer from "@/app/(landings)/build/components/Offer";
 import Faqs from "@/app/(landings)/build/components/Faqs";
 import Solutions from "@/app/(landings)/build/components/Solutions";
 import Benefits from "@/app/(landings)/build/components/Benefits";
-import Portfolio from "@/app/(landings)/build/components/Portfolio";
 import Package from "@/app/(landings)/build/components/package";
+import Portfolio from "@/components/common/Portfolio";
 
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),

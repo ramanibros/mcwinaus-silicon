@@ -14,8 +14,8 @@ import Faqs from "@/app/(landings)/home/components/Faqs";
 import Integrations from "@/app/(landings)/home/components/Integrations";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
-import Portfolio from "@/app/(landings)/home/components/Portfolio";
 import Hero from "@/app/(landings)/home/components/Hero";
+import Portfolio from "@/components/common/Portfolio";
 
 /* ================================
    SEO META DATA (AUTO <head>)
