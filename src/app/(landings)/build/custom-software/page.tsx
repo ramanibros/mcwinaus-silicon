@@ -10,7 +10,6 @@ import Footer from "@/components/common/Footer";
 import Description from "./components/Description";
 import Portfolio from "./components/Portfolio";
 import Faqs from "./components/Faqs";
-import Package from "./components/package";
 
 export const metadata: Metadata = {title: 'Custom Software | McWIN iTECH'};
 
