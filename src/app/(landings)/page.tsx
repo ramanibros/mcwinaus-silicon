@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '@/components/navbar/Navbar';
-import {Metadata} from 'next';
 import Features from '@/app/(landings)/home/components/Features';
 import Choose from '@/app/(landings)/home/components/Choose';
 import About from '@/app/(landings)/home/components/About';
@@ -15,10 +14,30 @@ import Faqs from "@/app/(landings)/home/components/Faqs";
 import Integrations from "@/app/(landings)/home/components/Integrations";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
-import Portfolio from "@/app/(landings)/home/components/Portfolio";
 import Hero from "@/app/(landings)/home/components/Hero";
+import Portfolio from "@/components/common/Portfolio";
 
-export const metadata: Metadata = {title: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services'};
+/* ================================
+   SEO META DATA (AUTO <head>)
+================================ */
+export const metadata = {
+        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+
+        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        description:
+            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+        keywords: [
+                "Software Development Services",
+                "Custom Software Development",
+                "Web Application Development",
+                "Mobile App Development",
+                "Full-Stack Development",
+        ],
+
+        alternates: {
+                canonical: "https://www.mcwinitech.com.au/",
+        }
+};
 
 const Page = () => {
     return (

@@ -155,8 +155,10 @@ const Work = () => {
                 {brands.map((brand, i) => (
                     <SwiperSlide key={i} className="py-3">
                         <Link href="#" className="card card-hover border-0 shadow-sm mx-2">
-                            <div 
-                                ref={el => cardBodiesRef.current[i] = el}
+                            <div
+                                ref={(el: HTMLDivElement | null) => {
+                                    cardBodiesRef.current[i] = el;
+                                }}
                                 className="card-body p-3"
                             >
                                 <Image 
