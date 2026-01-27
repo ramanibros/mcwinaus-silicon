@@ -171,32 +171,25 @@ const Package = () => {
                   <div className="price-currency">$</div>
                   <div className="price-amount">{isAnnual ? plan.annually : plan.monthly}</div>
                 </div>
-                {plan.featured && (
-                  <div className="popular-tag">
-                    <IconifyIcon icon="bxs:star" className="me-1" />
-                    Most Popular
-                  </div>
-                )}
+             
               </div>
               
-              {/* Features List */}
+              {/* Features List with better visibility */}
               <div className="features-list mb-3">
                 <ul className="list-unstyled">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="feature-item mb-2">
-                      <div className="feature-icon">
+                      <div className={`feature-icon-container ${feature.available ? 'available' : 'unavailable'}`}>
                         {feature.available ? (
-                          <IconifyIcon icon="bx:check-circle" className="text-success" />
+                          <IconifyIcon icon="bx:check" className="feature-icon-check" />
                         ) : (
-                          <IconifyIcon icon="bx:x-circle" className="text-muted" />
+                          <IconifyIcon icon="bx:x" className="feature-icon-x" />
                         )}
                       </div>
                       <span className={`feature-text ${!feature.available ? 'text-muted' : ''}`}>
                         {feature.text}
                       </span>
-                      {feature.available && plan.featured && (
-                        <span className="feature-badge">✓</span>
-                      )}
+                    
                     </li>
                   ))}
                 </ul>
@@ -351,53 +344,132 @@ const Package = () => {
           color: white;
         }
         
-        /* Popular Tag - Smaller */
-        .popular-tag {
-          display: inline-flex;
-          align-items: center;
-          background: rgba(255, 255, 255, 0.15);
-          padding: 0.35rem 0.75rem;
-          border-radius: 50px;
-          font-size: 0.8rem;
-          backdrop-filter: blur(8px);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Features - Compact */
+        /* UPDATED Feature Icons - Matching purple theme */
         .feature-item {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
-          padding: 0.3rem 0;
+          gap: 1rem;
+          padding: 0.4rem 0;
+          min-height: 2.5rem;
         }
         
-        .feature-icon {
-          width: 20px;
-          height: 20px;
+        .feature-icon-container {
+          width: 36px;
+          height: 36px;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
+          border-radius: 10px;
+          font-size: 1.6rem;
+          transition: all 0.3s ease;
+          position: relative;
+        }
+        
+        /* STANDARD CARD (Light Background) - Purple theme */
+        .standard-card .feature-icon-container.available {
+          background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(124, 58, 237, 0.15));
+          border: 2px solid rgba(79, 70, 229, 0.4);
+          box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+        }
+        
+        .standard-card .feature-icon-container.unavailable {
+          background: linear-gradient(135deg, rgba(243, 244, 246, 0.8), rgba(229, 231, 235, 0.8));
+          border: 2px solid rgba(209, 213, 219, 0.6);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .standard-card .feature-icon-check {
+          color: #4f46e5;
+          font-size: 1.4rem;
+          font-weight: bold;
+          text-shadow: 0 1px 2px rgba(79, 70, 229, 0.2);
+        }
+        
+        .standard-card .feature-icon-x {
+          color: #9ca3af;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        
+        /* FEATURED CARD (Dark Background) - White theme */
+        .featured-card .feature-icon-container.available {
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+          border: 2px solid rgba(255, 255, 255, 0.5);
+          box-shadow: 
+            0 4px 15px rgba(255, 255, 255, 0.25),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        
+        .featured-card .feature-icon-container.unavailable {
+          background: rgba(255, 255, 255, 0.1);
+          border: 2px solid rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(4px);
+          box-shadow: 
+            0 2px 8px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        
+        .featured-card .feature-icon-check {
+          color: white;
+          font-size: 1.4rem;
+          font-weight: bold;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .featured-card .feature-icon-x {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        
+        /* Hover Effects */
+        .standard-card .feature-icon-container.available:hover {
+          transform: scale(1.1);
+          background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(124, 58, 237, 0.2));
+          border-color: rgba(79, 70, 229, 0.6);
+          box-shadow: 0 6px 18px rgba(79, 70, 229, 0.2);
+        }
+        
+        .featured-card .feature-icon-container.available:hover {
+          transform: scale(1.1);
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.35));
+          border-color: rgba(255, 255, 255, 0.7);
+          box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Pulse animation for available features */
+        .standard-card .feature-icon-container.available {
+          animation: pulse-purple 2s infinite;
+        }
+        
+        .featured-card .feature-icon-container.available {
+          animation: pulse-white 2s infinite;
+        }
+        
+        @keyframes pulse-purple {
+          0%, 100% { box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15); }
+          50% { box-shadow: 0 4px 20px rgba(79, 70, 229, 0.25); }
+        }
+        
+        @keyframes pulse-white {
+          0%, 100% { box-shadow: 0 4px 15px rgba(255, 255, 255, 0.25); }
+          50% { box-shadow: 0 4px 25px rgba(255, 255, 255, 0.35); }
         }
         
         .feature-text {
           flex: 1;
-          font-size: 0.9rem;
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.4;
         }
         
-        .feature-badge {
-          background: rgba(34, 197, 94, 0.15);
-          color: #16a34a;
-          padding: 0.2rem 0.5rem;
-          border-radius: 50px;
-          font-size: 0.7rem;
-          font-weight: 600;
-          margin-left: 0.5rem;
+        .featured-card .feature-text {
+          color: rgba(255, 255, 255, 0.95);
         }
         
-        .featured-card .feature-badge {
-          background: rgba(255, 255, 255, 0.2);
-          color: white;
+        .featured-card .feature-text.text-muted {
+          color: rgba(255, 255, 255, 0.6) !important;
         }
         
         /* Action Button - Compact */
@@ -505,6 +577,43 @@ const Package = () => {
           
           .price-amount {
             font-size: 2.25rem;
+          }
+          
+          .feature-icon-container {
+            width: 32px;
+            height: 32px;
+            font-size: 1.4rem;
+            border-radius: 8px;
+          }
+          
+          .standard-card .feature-icon-check,
+          .standard-card .feature-icon-x,
+          .featured-card .feature-icon-check,
+          .featured-card .feature-icon-x {
+            font-size: 1.2rem;
+          }
+          
+          .feature-text {
+            font-size: 0.95rem;
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .feature-item {
+            gap: 0.75rem;
+          }
+          
+          .feature-icon-container {
+            width: 30px;
+            height: 30px;
+            font-size: 1.3rem;
+          }
+          
+          .standard-card .feature-icon-check,
+          .standard-card .feature-icon-x,
+          .featured-card .feature-icon-check,
+          .featured-card .feature-icon-x {
+            font-size: 1.1rem;
           }
         }
       `}</style>

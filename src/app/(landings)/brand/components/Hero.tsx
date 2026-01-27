@@ -19,6 +19,7 @@ if (typeof window !== 'undefined') {
 const Hero = () => {
   const poweredByRef = useRef<HTMLSpanElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     // Split text animation for "Powered by Perth Expertise."
@@ -88,6 +89,58 @@ const Hero = () => {
     }
   }, []);
 
+  useEffect(() => {
+    // Button entrance animation
+    if (buttonRef.current) {
+      gsap.fromTo(buttonRef.current,
+        {
+          opacity: 0,
+          y: 50,
+          scale: 0.8,
+          rotation: -5
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          rotation: 0,
+          duration: 1,
+          ease: 'elastic.out(1, 0.5)',
+          delay: 1.2
+        }
+      );
+
+      // Add continuous subtle pulse animation
+      gsap.to(buttonRef.current, {
+        scale: 1.02,
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+        delay: 2.5
+      });
+    }
+  }, []);
+
+  // Button hover handlers
+  const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    gsap.to(e.currentTarget, {
+      scale: 1.05,
+      y: -3,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    gsap.to(e.currentTarget, {
+      scale: 1.02, // Keep the pulse animation scale
+      y: 0,
+      duration: 0.3,
+      ease: 'power2.out'
+    });
+  };
+
   return (
     <section className="position-relative pt-5 overflow-hidden">
       <span className="position-absolute top-0 start-0 d-dark-mode-none d-block w-100 h-100 bg-secondary"></span>
@@ -133,8 +186,16 @@ const Hero = () => {
                 spending thousands. <b>Your growth partner,</b> delivering logos, identity, and design that
                 <b> increase conversions</b> long-term.
               </p>
-              <Link href="#" className="btn btn-lg btn-primary">
-                Start Your Brand Project
+              
+              {/* Animated Button with your styles */}
+              <Link 
+                ref={buttonRef}
+                href="#" 
+                className="brand-project-button position-relative"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <span className="button-text">Start Your Brand Project</span>
               </Link>
             </div>
 
@@ -192,6 +253,7 @@ const Hero = () => {
       </span>
 
       <style jsx global>{`
+        /* Split text animations */
         .split-char {
           display: inline-block;
           transform-origin: 50% 50%;
@@ -201,7 +263,63 @@ const Hero = () => {
           display: inline-block;
         }
         
-        /* Optional: Add some CSS for better visual effect */
+        /* Your button styles with animations */
+        .brand-project-button {
+          position: relative;
+          text-decoration: none;
+          color: #fff;
+          background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+          padding: 14px 25px;
+          border-radius: 10px;
+          font-size: 1.25em;
+          cursor: pointer;
+          display: inline-block;
+          border: none;
+          outline: none;
+          will-change: transform;
+          transition: none; /* GSAP handles animations */
+        }
+        
+        .brand-project-button .button-text {
+          position: relative;
+          z-index: 1;
+          font-weight: 600;
+        }
+        
+        .brand-project-button::before {
+          content: "";
+          position: absolute;
+          inset: 1px;
+          background: #272727;
+          border-radius: 9px;
+          transition: opacity 0.5s ease;
+        }
+        
+        .brand-project-button:hover::before {
+          opacity: 0.7;
+        }
+        
+        .brand-project-button::after {
+          content: "";
+          position: absolute;
+          inset: 0px;
+          background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+          border-radius: 9px;
+          transition: opacity 0.5s ease;
+          opacity: 0;
+          filter: blur(20px);
+        }
+        
+        .brand-project-button:hover::after {
+          opacity: 1;
+        }
+        
+        /* Remove Bootstrap button styles */
+        .btn, .btn-primary, .btn-lg {
+          all: unset;
+        }
+        
+        /* Performance optimization */
         .overflow-hidden {
           will-change: transform;
         }

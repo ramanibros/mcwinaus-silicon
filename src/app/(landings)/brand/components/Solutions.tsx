@@ -65,20 +65,6 @@ if (typeof window !== 'undefined') {
 }
 
 const Solutions = () => {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    const animationRef = useRef<number | undefined>(undefined);
-    const shapesRef = useRef<Array<{
-        x: number;
-        y: number;
-        size: number;
-        speedX: number;
-        speedY: number;
-        rotation: number;
-        rotationSpeed: number;
-        type: 'circle' | 'square' | 'ring';
-        color: string;
-    }>>([]);
-    
     // Refs for title animation
     const h2Ref = useRef<HTMLHeadingElement>(null);
     const spanRef = useRef<HTMLSpanElement>(null);
@@ -122,228 +108,92 @@ const Solutions = () => {
             );
         }
 
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-
-        const ctx = canvas.getContext('2d');
-        if (!ctx) return;
-
-        // Set canvas size
-        const resizeCanvas = () => {
-            canvas.width = canvas.parentElement?.clientWidth || window.innerWidth;
-            canvas.height = canvas.parentElement?.clientHeight || window.innerHeight;
-        };
-
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-
-        // Initialize shapes
-        const initShapes = () => {
-            shapesRef.current = [];
-            const types: ('circle' | 'square' | 'ring')[] = ['circle', 'square', 'ring'];
-            const colors = [
-                'rgba(102, 126, 234, 0.08)',
-                'rgba(118, 75, 162, 0.06)',
-                'rgba(76, 201, 240, 0.05)',
-                'rgba(255, 138, 101, 0.04)'
-            ];
-
-            for (let i = 0; i < 20; i++) {
-                shapesRef.current.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    size: Math.random() * 40 + 20,
-                    speedX: (Math.random() - 0.5) * 0.5,
-                    speedY: (Math.random() - 0.5) * 0.5,
-                    rotation: Math.random() * 360,
-                    rotationSpeed: (Math.random() - 0.5) * 0.5,
-                    type: types[Math.floor(Math.random() * types.length)],
-                    color: colors[Math.floor(Math.random() * colors.length)]
-                });
-            }
-        };
-
-        initShapes();
-
-        // Animation loop
-        const animate = () => {
-            if (!ctx || !canvas) return;
-
-            // Clear with slight fade for trail effect
-            ctx.fillStyle = 'rgba(240, 244, 248, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            shapesRef.current.forEach(shape => {
-                // Update position
-                shape.x += shape.speedX;
-                shape.y += shape.speedY;
-                shape.rotation += shape.rotationSpeed;
-
-                // Boundary check
-                if (shape.x < -shape.size) shape.x = canvas.width + shape.size;
-                if (shape.x > canvas.width + shape.size) shape.x = -shape.size;
-                if (shape.y < -shape.size) shape.y = canvas.height + shape.size;
-                if (shape.y > canvas.height + shape.size) shape.y = -shape.size;
-
-                // Save context
-                ctx.save();
-                ctx.translate(shape.x, shape.y);
-                ctx.rotate((shape.rotation * Math.PI) / 180);
-
-                // Draw shape based on type
-                ctx.fillStyle = shape.color;
-                ctx.strokeStyle = shape.color.replace('0.08', '0.15').replace('0.06', '0.12').replace('0.05', '0.1').replace('0.04', '0.08');
-                ctx.lineWidth = 2;
-
-                switch (shape.type) {
-                    case 'circle':
-                        ctx.beginPath();
-                        ctx.arc(0, 0, shape.size / 2, 0, Math.PI * 2);
-                        ctx.fill();
-                        break;
-                    case 'square':
-                        ctx.fillRect(-shape.size / 2, -shape.size / 2, shape.size, shape.size);
-                        break;
-                    case 'ring':
-                        ctx.beginPath();
-                        ctx.arc(0, 0, shape.size / 2, 0, Math.PI * 2);
-                        ctx.stroke();
-                        break;
-                }
-
-                ctx.restore();
-            });
-
-            animationRef.current = requestAnimationFrame(animate);
-        };
-
-        animate();
-
         return () => {
-            window.removeEventListener('resize', resizeCanvas);
-            if (animationRef.current) {
-                cancelAnimationFrame(animationRef.current);
-            }
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
 
+    // ONLY CHANGED: Dark versions of aurora colors (keeping original color themes)
+    const darkAuroraColors = [
+        'radial-gradient(circle, rgba(50, 60, 120, 0.7), rgba(70, 40, 100, 0.4), transparent)', // Dark blue-purple
+        'radial-gradient(circle, rgba(150, 40, 60, 0.7), rgba(180, 30, 50, 0.4), transparent)', // Dark red-pink
+        'radial-gradient(circle, rgba(30, 100, 150, 0.7), rgba(0, 120, 150, 0.4), transparent)', // Dark blue-cyan
+        'radial-gradient(circle, rgba(30, 120, 60, 0.7), rgba(20, 150, 100, 0.4), transparent)'  // Dark green-teal
+    ];
+
+    // EVERYTHING ELSE STAYS EXACTLY THE SAME
+    const borderColors = [
+        'rgba(102, 126, 234, 0.4)',
+        'rgba(245, 87, 108, 0.4)',
+        'rgba(79, 172, 254, 0.4)',
+        'rgba(67, 233, 123, 0.4)'
+    ];
+
+    const iconBgColors = [
+        'rgba(102, 126, 234, 0.1)',
+        'rgba(245, 87, 108, 0.1)',
+        'rgba(79, 172, 254, 0.1)',
+        'rgba(67, 233, 123, 0.1)'
+    ];
+
+    const iconColors = [
+        '#667eea',
+        '#f5576c',
+        '#4facfe',
+        '#43e97b'
+    ];
+
     return (
         <section 
-            className="mb-5 pb-lg-5 pb-md-4 pb-3 position-relative overflow-hidden"
+            className="brand-solutions-section mb-5 pb-lg-5 pb-md-4 pb-3 position-relative overflow-hidden"
             style={{
-                minHeight: '100vh',
-                background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f0f4f8 100%)'
+                background: 'linear-gradient(135deg, rgb(248, 250, 252) 0%, rgb(221 201 243) 50%, rgb(240, 244, 248) 100%)'
             }}
         >
-            {/* Animated background canvas */}
-            <canvas
-                ref={canvasRef}
-                className="position-absolute top-0 left-0 w-100 h-100"
-                style={{ zIndex: 0 }}
-            />
-
-            {/* Gradient overlays */}
-            <div 
-                className="position-absolute top-0 left-0 w-100 h-100"
-                style={{
-                    background: 'radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.1) 0%, transparent 40%)',
-                    zIndex: 1
-                }}
-            />
-            <div 
-                className="position-absolute top-0 left-0 w-100 h-100"
-                style={{
-                    background: 'radial-gradient(circle at 80% 70%, rgba(76, 201, 240, 0.08) 0%, transparent 40%)',
-                    zIndex: 1
-                }}
-            />
-
-            <Container style={{ position: 'relative', zIndex: 2 }}>
-                {/* Updated heading with animation refs */}
+            <Container>
+                {/* Heading */}
                 <h2 
                     ref={h2Ref}
-                    className="h1 pb-4 py-lg-5" 
+                    className="brand-solutions-title h1 pb-4 py-lg-5 text-center" 
                     style={{
                         color: '#1a202c',
                         fontWeight: 700
                     }}
                 >
-                    How our <span ref={spanRef} className="text-primary text-gradient-primary">Perth Brand</span> Agency Drives Growth.
+                    How our <span ref={spanRef} className="brand-solutions-gradient-text text-primary">Perth Brand</span> Agency Drives Growth.
                 </h2>
                 
-                <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
+                <Row xs={1} md={2} className="brand-solutions-row g-4 pt-2 pt-md-4 pb-lg-2">
                     {solutionsData.map((item, index) => (
-                        <Col key={item.id}>
-                            <Link href={item.url} className="text-decoration-none">
-                                <div 
-                                    className="glass-card h-100 mx-2"
-                                    style={{
-                                        borderRadius: '20px',
-                                        overflow: 'hidden',
-                                        position: 'relative',
-                                        transition: 'all 0.4s ease',
-                                        transformStyle: 'preserve-3d'
-                                    }}
-                                >
-                                    {/* Main glass effect layer */}
+                        <Col key={item.id} className="brand-solutions-col">
+                            <Link href={item.url} className="brand-solutions-link text-decoration-none d-block">
+                                <div className="brand-solutions-card">
+                                    {/* ONLY CHANGE: Updated to use darkAuroraColors */}
                                     <div 
-                                        className="position-absolute top-0 left-0 w-100 h-100"
+                                        className="brand-solutions-aurora"
                                         style={{
-                                            background: 'rgba(255, 255, 255, 0.75)',
-                                            backdropFilter: 'blur(25px)',
-                                            WebkitBackdropFilter: 'blur(25px)',
-                                            border: '1px solid rgba(255, 255, 255, 0.8)',
-                                            borderRadius: '20px',
-                                            boxShadow: `
-                                                0 8px 32px rgba(31, 38, 135, 0.1),
-                                                inset 0 1px 0 rgba(255, 255, 255, 0.8),
-                                                inset 0 -1px 0 rgba(0, 0, 0, 0.05)
-                                            `,
-                                            zIndex: 1
+                                            background: darkAuroraColors[index]
                                         }}
                                     />
                                     
-                                    {/* Glass shine effect */}
-                                    <div 
-                                        className="position-absolute top-0 left-0 w-100 h-100"
-                                        style={{
-                                            background: 'linear-gradient(120deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 60%)',
-                                            borderRadius: '20px',
-                                            zIndex: 2,
-                                            pointerEvents: 'none'
-                                        }}
-                                    />
+                                    {/* Inner Glow Panel */}
+                                    <div className="brand-solutions-bg" />
                                     
-                                    {/* Subtle border glow */}
-                                    <div 
-                                        className="position-absolute top-[-1px] left-[-1px] right-[-1px] bottom-[-1px]"
-                                        style={{
-                                            background: 'linear-gradient(45deg, #667eea, #764ba2, #667eea)',
-                                            backgroundSize: '200% 200%',
-                                            borderRadius: '21px',
-                                            opacity: 0,
-                                            zIndex: 0,
-                                            animation: 'borderGlow 3s ease-in-out infinite',
-                                            transition: 'opacity 0.3s ease'
-                                        }}
-                                    />
-                                    
-                                    {/* Inner card content */}
-                                    <CardBody className="p-4 p-lg-5 position-relative" style={{ zIndex: 3 }}>
+                                    {/* Card content */}
+                                    <div className="brand-solutions-content position-relative h-100 p-4 p-lg-5">
                                         {/* Icon container */}
                                         <div 
-                                            className="d-flex align-items-center justify-content-center position-relative mb-4"
+                                            className="brand-solutions-icon-container d-flex align-items-center justify-content-center position-relative mb-4"
                                             style={{
                                                 width: '60px',
                                                 height: '60px',
                                                 borderRadius: '16px',
-                                                background: 'rgba(255, 255, 255, 0.9)',
+                                                background: 'rgba(255, 255, 255, 0.95)',
                                                 boxShadow: `
-                                                    0 4px 20px rgba(102, 126, 234, 0.15),
-                                                    inset 0 2px 4px rgba(255, 255, 255, 0.8)
+                                                    0 4px 20px ${iconBgColors[index]},
+                                                    inset 0 2px 4px rgba(255, 255, 255, 0.9)
                                                 `,
-                                                border: '1px solid rgba(255, 255, 255, 0.9)',
+                                                border: `1px solid ${borderColors[index]}`,
                                                 transition: 'all 0.3s ease'
                                             }}
                                         >
@@ -359,16 +209,16 @@ const Solutions = () => {
                                             <div 
                                                 className="position-absolute top-0 left-0 w-100 h-100 rounded-circle"
                                                 style={{
-                                                    background: 'linear-gradient(135deg, #667eea, #764ba2)',
+                                                    background: darkAuroraColors[index],
                                                     opacity: 0.1,
                                                     zIndex: -1
                                                 }}
                                             />
                                         </div>
                                         
-                                        {/* Title - Simple and clean */}
+                                        {/* Title */}
                                         <h3 
-                                            className="h5 mb-3"
+                                            className="brand-solutions-content-title h5 mb-3"
                                             style={{
                                                 color: '#1a202c',
                                                 fontWeight: 600,
@@ -380,7 +230,7 @@ const Solutions = () => {
                                         
                                         {/* Description */}
                                         <p 
-                                            className="mb-0"
+                                            className="brand-solutions-content-text mb-0"
                                             style={{
                                                 color: '#4a5568',
                                                 lineHeight: 1.6,
@@ -392,7 +242,7 @@ const Solutions = () => {
                                         
                                         {/* Points list */}
                                         {item.points.length > 0 && (
-                                            <ul className="list-unstyled mb-0 mt-3">
+                                            <ul className="brand-solutions-points list-unstyled mb-0 mt-3">
                                                 {item.points.map((point, i) => (
                                                     <li 
                                                         key={i} 
@@ -402,7 +252,7 @@ const Solutions = () => {
                                                             icon="bx:check" 
                                                             className="lead me-2"
                                                             style={{
-                                                                color: '#667eea',
+                                                                color: iconColors[index],
                                                                 fontSize: '1.1rem'
                                                             }}
                                                         />
@@ -416,20 +266,26 @@ const Solutions = () => {
                                                 ))}
                                             </ul>
                                         )}
-                                    </CardBody>
-                                    
-                                    {/* Hover effect overlay */}
-                                    <div 
-                                        className="position-absolute top-0 left-0 w-100 h-100"
-                                        style={{
-                                            background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05))',
-                                            opacity: 0,
-                                            transition: 'opacity 0.3s ease',
-                                            borderRadius: '20px',
-                                            zIndex: 2,
-                                            pointerEvents: 'none'
-                                        }}
-                                    />
+                                        
+                                        {/* View more button */}
+                                        <div className="brand-solutions-view-more position-absolute d-flex align-items-center">
+                                            <span className="brand-solutions-view-more-text" style={{
+                                                color: iconColors[index],
+                                                fontWeight: 600,
+                                                fontSize: '0.9rem'
+                                            }}>
+                                                View more
+                                            </span>
+                                            <IconifyIcon 
+                                                icon="bx:chevron-right"
+                                                style={{
+                                                    color: iconColors[index],
+                                                    fontSize: '1.2rem',
+                                                    marginLeft: '4px'
+                                                }}
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </Link>
                         </Col>
@@ -438,12 +294,91 @@ const Solutions = () => {
             </Container>
 
             <style jsx global>{`
-                .text-primary {
-                    color: #667eea !important;
+                /* Main card styles - NO CHANGES */
+                .brand-solutions-card {
+                    position: relative;
+                    width: 100%;
+                    height: 280px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    background: rgba(255, 255, 255, 0.25);
+                    backdrop-filter: blur(25px);
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    box-shadow: 
+                        25px 25px 60px rgba(0, 0, 0, 0.12),
+                        -20px -20px 50px rgba(255, 255, 255, 0.55);
+                    transition: all 0.4s ease;
                 }
 
-                /* Text gradient with animation support */
-                .text-gradient-primary {
+                .brand-solutions-link:hover .brand-solutions-card {
+                    transform: translateY(-6px);
+                    box-shadow: 
+                        25px 35px 65px rgba(0, 0, 0, 0.22),
+                        -20px -20px 50px rgba(255, 255, 255, 0.65);
+                }
+
+                /* Inner Glow Panel - NO CHANGES */
+                .brand-solutions-bg {
+                    position: absolute;
+                    inset: 6px;
+                    background: linear-gradient(
+                        145deg,
+                        rgba(255, 255, 255, 0.85),
+                        rgba(245, 245, 245, 0.6)
+                    );
+                    border-radius: 16px;
+                    backdrop-filter: blur(25px);
+                    border: 1px solid rgba(255, 255, 255, 0.7);
+                    z-index: 2;
+                }
+
+                /* Animated Aurora Blob - ONLY COLOR CHANGED to dark */
+                .brand-solutions-aurora {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    filter: blur(28px);
+                    z-index: 1;
+                    opacity: 0.9;
+                    animation: brand-solutions-aurora-move 6.5s infinite ease-in-out;
+                }
+
+                /* Aurora Animation - NO CHANGES */
+                @keyframes brand-solutions-aurora-move {
+                    0% {
+                        transform: translate(-60%, -60%) scale(1);
+                    }
+                    30% {
+                        transform: translate(10%, -40%) scale(1.15);
+                    }
+                    60% {
+                        transform: translate(20%, 20%) scale(1.05);
+                    }
+                    80% {
+                        transform: translate(-40%, 10%) scale(1.2);
+                    }
+                    100% {
+                        transform: translate(-60%, -60%) scale(1);
+                    }
+                }
+
+                /* Content styles - NO CHANGES */
+                .brand-solutions-content {
+                    z-index: 3;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+
+                /* Title styles - NO CHANGES */
+                .brand-solutions-title {
+                    color: #1a202c !important;
+                }
+
+                .brand-solutions-gradient-text {
                     background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
                     background-size: 200% 200%;
                     background-position: 100% 0%;
@@ -453,66 +388,73 @@ const Solutions = () => {
                     display: inline-block;
                 }
 
-                @keyframes borderGlow {
-                    0%, 100% {
-                        background-position: 0% 50%;
-                        opacity: 0;
-                    }
-                    50% {
-                        background-position: 100% 50%;
-                        opacity: 0.3;
-                    }
-                }
-
-                @keyframes floatCard {
-                    0%, 100% {
-                        transform: translateY(0);
-                    }
-                    50% {
-                        transform: translateY(-8px);
-                    }
-                }
-
-                .glass-card {
-                    animation: floatCard 6s ease-in-out infinite;
-                    animation-delay: calc(var(--i, 0) * 0.3s);
-                }
-
-                .glass-card:hover {
-                    animation-play-state: paused;
-                    transform: translateY(-8px) scale(1.02) !important;
-                }
-
-                .glass-card:hover > div:first-child {
-                    background: rgba(255, 255, 255, 0.85) !important;
-                    border-color: rgba(255, 255, 255, 0.9) !important;
-                    box-shadow: 
-                        0 16px 48px rgba(31, 38, 135, 0.15),
-                        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-                        inset 0 -1px 0 rgba(0, 0, 0, 0.05) !important;
-                }
-
-                .glass-card:hover > div:nth-child(3) {
-                    opacity: 0.5 !important;
-                }
-
-                .glass-card:hover > div:last-child {
-                    opacity: 1 !important;
-                }
-
-                .glass-card:hover .d-flex {
+                /* Icon hover effects - NO CHANGES */
+                .brand-solutions-link:hover .brand-solutions-icon-container {
                     transform: scale(1.08);
                     background: rgba(255, 255, 255, 1) !important;
                     box-shadow: 
-                        0 8px 32px rgba(102, 126, 234, 0.25),
+                        0 8px 32px var(--icon-shadow-color, rgba(102, 126, 234, 0.25)),
                         inset 0 2px 8px rgba(255, 255, 255, 0.9) !important;
                 }
 
-                /* Add slight delay to each card animation */
-                .glass-card:nth-child(1) { --i: 0; }
-                .glass-card:nth-child(2) { --i: 1; }
-                .glass-card:nth-child(3) { --i: 2; }
-                .glass-card:nth-child(4) { --i: 3; }
+                /* View more button - NO CHANGES */
+                .brand-solutions-view-more {
+                    bottom: 20px;
+                    right: 20px;
+                    opacity: 0;
+                    transform: translateX(-10px);
+                    transition: all 0.3s ease;
+                }
+
+                .brand-solutions-link:hover .brand-solutions-view-more {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                /* Responsive adjustments - NO CHANGES */
+                @media (max-width: 768px) {
+                    .brand-solutions-card {
+                        height: 260px;
+                    }
+                    
+                    .brand-solutions-content-title {
+                        font-size: 1rem !important;
+                    }
+                    
+                    .brand-solutions-content-text {
+                        font-size: 0.9rem !important;
+                    }
+                    
+                    .brand-solutions-aurora {
+                        width: 150px;
+                        height: 150px;
+                        filter: blur(20px);
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    .brand-solutions-card {
+                        height: 240px;
+                    }
+                    
+                    .brand-solutions-content {
+                        padding: 20px !important;
+                    }
+                }
+
+                /* Custom properties for each card - NO CHANGES */
+                .brand-solutions-col:nth-child(1) {
+                    --icon-shadow-color: rgba(102, 126, 234, 0.25);
+                }
+                .brand-solutions-col:nth-child(2) {
+                    --icon-shadow-color: rgba(245, 87, 108, 0.25);
+                }
+                .brand-solutions-col:nth-child(3) {
+                    --icon-shadow-color: rgba(79, 172, 254, 0.25);
+                }
+                .brand-solutions-col:nth-child(4) {
+                    --icon-shadow-color: rgba(67, 233, 123, 0.25);
+                }
             `}</style>
         </section>
     );
