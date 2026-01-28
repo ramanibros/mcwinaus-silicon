@@ -166,19 +166,19 @@ const Faqs = () => {
                                 <CardBody className="p-4 text-center">
                                     <div className="mb-3">
                                         <div className="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
-                                            <IconifyIcon 
-                                                icon="bxl:whatsapp" 
+                                            <IconifyIcon
+                                                icon="bxl:whatsapp"
                                                 className="fs-2 text-success"
                                             />
                                         </div>
                                     </div>
                                     <p className="fs-sm text-muted mb-2">Still have questions?</p>
-                                    <Link 
-                                        href="https://wa.me/+61466953095" 
+                                    <Link
+                                        href="https://wa.me/+61466953095"
                                         target="_blank"
                                         className="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center"
                                     >
-                                        WhatsApp Us
+                                        Whatsapp
                                         <IconifyIcon icon="bx:right-arrow-alt" className="ms-2" />
                                     </Link>
                                 </CardBody>
