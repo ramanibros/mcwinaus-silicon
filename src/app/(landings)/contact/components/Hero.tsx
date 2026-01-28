@@ -18,22 +18,18 @@ const Hero = () => {
   const letsChatTextRef = useRef(null);
 
 
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [isPending, startTransition] = useTransition();
-  const [status, setStatus] = useState(null);
-  const formRef = useRef(null);
+  const [status, setStatus] = useState<string | null>(null);
 
-  function handleSubmit(formData) {
+  function handleSubmit(formData: FormData) {
     setStatus(null);
 
     startTransition(async () => {
       const result = await submitContactForm(formData);
 
-      if (result?.success) {
-        setStatus("success");
-        formRef.current?.reset();
-      } else {
-        setStatus("error");
-      }
+      setStatus(result.success ? "success" : "error");
+      formRef.current?.reset();
     });
   }
 
@@ -153,7 +149,7 @@ const Hero = () => {
           </Col>
 
           <Col lg={6} className="offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-            <form className="needs-validation" noValidate action={handleSubmit}>
+            <form className="needs-validation" noValidate action={handleSubmit} ref={formRef}>
               <Row className="g-4">
                 <Col sm={6}>
                   <label htmlFor="fn" className="form-label fs-base">
