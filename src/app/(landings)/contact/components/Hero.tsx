@@ -1,11 +1,12 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState, useTransition } from 'react';
 import Link from 'next/link';
 import contacts from '@/assets/img/contacts/bg.svg';
 import { Col, Container, Row } from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
+import { submitContactForm } from "@/app/actions/contactAction";
 
 // Register SplitText plugin
 if (typeof window !== 'undefined') {
@@ -15,6 +16,26 @@ if (typeof window !== 'undefined') {
 const Hero = () => {
   const readyTextRef = useRef(null);
   const letsChatTextRef = useRef(null);
+
+
+  const [isPending, startTransition] = useTransition();
+  const [status, setStatus] = useState(null);
+  const formRef = useRef(null);
+
+  function handleSubmit(formData) {
+    setStatus(null);
+
+    startTransition(async () => {
+      const result = await submitContactForm(formData);
+
+      if (result?.success) {
+        setStatus("success");
+        formRef.current?.reset();
+      } else {
+        setStatus("error");
+      }
+    });
+  }
 
   useEffect(() => {
     // Split text ONLY for "Ready to grow your Perth business?"
@@ -132,7 +153,7 @@ const Hero = () => {
           </Col>
 
           <Col lg={6} className="offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-            <form className="needs-validation" noValidate>
+            <form className="needs-validation" noValidate action={handleSubmit}>
               <Row className="g-4">
                 <Col sm={6}>
                   <label htmlFor="fn" className="form-label fs-base">
@@ -141,7 +162,8 @@ const Hero = () => {
                   <input 
                     type="text" 
                     className="form-control form-control-lg" 
-                    id="fn" 
+                    id="fn"
+                    name="name"
                     required 
                   />
                   <div className="invalid-feedback">Please enter your full name!</div>
@@ -155,6 +177,7 @@ const Hero = () => {
                     type="email"
                     className="form-control form-control-lg"
                     id="email"
+                    name="email"
                     required
                   />
                   <div className="invalid-feedback">Please provide a valid email address!</div>
@@ -167,6 +190,7 @@ const Hero = () => {
                   <textarea
                     className="form-control form-control-lg"
                     id="message"
+                    name="message"
                     rows={3}
                     required
                   ></textarea>
@@ -174,13 +198,29 @@ const Hero = () => {
                 </Col>
 
                 <Col xs={12}>
-                  <button 
-                    type="submit" 
-                    className="btn btn-lg btn-primary w-100 w-sm-auto"
+                  <button
+                      type="submit"
+                      className="btn btn-lg btn-primary w-100 w-sm-auto d-flex align-items-center justify-content-center gap-2"
                   >
-                    Contact Us
+                    <span>{isPending ? "Submitting..." : "Contact Us"}</span>
+                    {isPending ? (
+                        <span className="loader" />
+                    ) : (
+                        ""
+                    )}
                   </button>
                 </Col>
+                {status === "success" && (
+                    <p className="form-success">
+                      Thank you! Your message has been sent successfully.
+                    </p>
+                )}
+
+                {status === "error" && (
+                    <p className="form-error">
+                      Something went wrong. Please try again.
+                    </p>
+                )}
               </Row>
             </form>
           </Col>
