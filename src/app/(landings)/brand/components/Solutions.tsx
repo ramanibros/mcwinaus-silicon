@@ -31,7 +31,7 @@ const solutionsData: Solution[] = [
         title: 'Brand Strategy & Positioning',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger.The Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
+        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger. The Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
     },
     {
         id: 2,
@@ -65,395 +65,531 @@ if (typeof window !== 'undefined') {
 }
 
 const Solutions = () => {
-    // Refs for title animation
     const h2Ref = useRef<HTMLHeadingElement>(null);
     const spanRef = useRef<HTMLSpanElement>(null);
+    const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
     useEffect(() => {
-        // Title animation for "Perth Brand" words
+        // Title animation
         if (h2Ref.current && spanRef.current) {
-            const h2Text = h2Ref.current;
-            const spanText = spanRef.current;
-            
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: h2Ref.current,
-                    start: "top 80%",
-                    end: "top 20%",
+                    start: "top 85%",
+                    end: "top 50%",
                     scrub: 1,
-                    markers: false,
                 }
             });
 
-            tl.fromTo(h2Text,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+            tl.fromTo(h2Ref.current,
+                { opacity: 0, y: 60 },
+                { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
             );
 
-            tl.fromTo(spanText,
-                {
-                    opacity: 0,
+            tl.fromTo(spanRef.current,
+                { 
+                    opacity: 0, 
                     scale: 0.8,
-                    backgroundSize: "200% 200%",
                     backgroundPosition: "100% 0%"
                 },
                 {
                     opacity: 1,
                     scale: 1,
-                    duration: 1.2,
-                    ease: "back.out(1.7)",
                     backgroundPosition: "0% 100%",
+                    duration: 1.2,
+                    ease: "back.out(1.7)"
                 },
                 "-=0.8"
             );
         }
+
+        // Cards entry animation
+        cardsRef.current.forEach((card, index) => {
+            if (card) {
+                gsap.fromTo(card,
+                    {
+                        opacity: 0,
+                        y: 80,
+                        scale: 0.92,
+                        rotationX: 5,
+                    },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1,
+                        rotationX: 0,
+                        duration: 0.8,
+                        delay: index * 0.15,
+                        ease: "back.out(1.4)",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 90%",
+                            end: "top 60%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
+            }
+        });
 
         return () => {
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
 
-    // ONLY CHANGED: Dark versions of aurora colors (keeping original color themes)
-    const darkAuroraColors = [
-        'radial-gradient(circle, rgba(50, 60, 120, 0.7), rgba(70, 40, 100, 0.4), transparent)', // Dark blue-purple
-        'radial-gradient(circle, rgba(150, 40, 60, 0.7), rgba(180, 30, 50, 0.4), transparent)', // Dark red-pink
-        'radial-gradient(circle, rgba(30, 100, 150, 0.7), rgba(0, 120, 150, 0.4), transparent)', // Dark blue-cyan
-        'radial-gradient(circle, rgba(30, 120, 60, 0.7), rgba(20, 150, 100, 0.4), transparent)'  // Dark green-teal
-    ];
-
-    // EVERYTHING ELSE STAYS EXACTLY THE SAME
-    const borderColors = [
-        'rgba(102, 126, 234, 0.4)',
-        'rgba(245, 87, 108, 0.4)',
-        'rgba(79, 172, 254, 0.4)',
-        'rgba(67, 233, 123, 0.4)'
-    ];
-
-    const iconBgColors = [
-        'rgba(102, 126, 234, 0.1)',
-        'rgba(245, 87, 108, 0.1)',
-        'rgba(79, 172, 254, 0.1)',
-        'rgba(67, 233, 123, 0.1)'
-    ];
-
-    const iconColors = [
-        '#667eea',
-        '#f5576c',
-        '#4facfe',
-        '#43e97b'
+    // White theme with high contrast colors
+    const colorSchemes = [
+        {
+            // Blue theme
+            mainColor: '#3b82f6',
+            hoverColor: '#2563eb',
+            gradient: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
+            lightBg: 'rgba(59, 130, 246, 0.08)',
+            borderColor: 'rgba(59, 130, 246, 0.2)',
+            iconBg: 'rgba(59, 130, 246, 0.1)',
+            iconColor: '#3b82f6'
+        },
+        {
+            // Purple theme
+            mainColor: '#8b5cf6',
+            hoverColor: '#7c3aed',
+            gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+            lightBg: 'rgba(139, 92, 246, 0.08)',
+            borderColor: 'rgba(139, 92, 246, 0.2)',
+            iconBg: 'rgba(139, 92, 246, 0.1)',
+            iconColor: '#8b5cf6'
+        },
+        {
+            // Green theme
+            mainColor: '#10b981',
+            hoverColor: '#059669',
+            gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+            lightBg: 'rgba(16, 185, 129, 0.08)',
+            borderColor: 'rgba(16, 185, 129, 0.2)',
+            iconBg: 'rgba(16, 185, 129, 0.1)',
+            iconColor: '#10b981'
+        },
+        {
+            // Orange theme
+            mainColor: '#f59e0b',
+            hoverColor: '#d97706',
+            gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+            lightBg: 'rgba(245, 158, 11, 0.08)',
+            borderColor: 'rgba(245, 158, 11, 0.2)',
+            iconBg: 'rgba(245, 158, 11, 0.1)',
+            iconColor: '#f59e0b'
+        }
     ];
 
     return (
         <section 
-            className="brand-solutions-section mb-5 pb-lg-5 pb-md-4 pb-3 position-relative overflow-hidden"
+            className="brand-solutions-section py-5 position-relative overflow-hidden"
             style={{
-                background: 'linear-gradient(135deg, rgb(248, 250, 252) 0%, rgb(221 201 243) 50%, rgb(240, 244, 248) 100%)'
+                backgroundColor: '#ffffff',
+                backgroundImage: 'linear-gradient(1deg, rgb(221 195 255) 0%, rgb(145 131 251 / 0%) 100%)'
             }}
         >
-            <Container>
+            <Container className="py-lg-5">
                 {/* Heading */}
-                <h2 
-                    ref={h2Ref}
-                    className="brand-solutions-title h1 pb-4 py-lg-5 text-center" 
-                    style={{
-                        color: '#1a202c',
-                        fontWeight: 700
-                    }}
-                >
-                    How our <span ref={spanRef} className="brand-solutions-gradient-text text-primary">Perth Brand</span> Agency Drives Growth.
-                </h2>
+                <div className="text-center mb-5 pb-lg-3">
+                    <h2 
+                        ref={h2Ref}
+                        className="display-4 fw-bold mb-4"
+                        style={{ color: '#1e293b' }}
+                    >
+                        How our <span 
+                            ref={spanRef}
+                            className="brand-solutions-gradient-text fw-bold"
+                            style={{
+                                background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #10b981 100%)',
+                                backgroundSize: '200% 200%',
+                                backgroundClip: 'text',
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                                display: 'inline-block'
+                            }}
+                        >
+                            Perth Brand
+                        </span> Agency Drives Growth.
+                    </h2>
+                    <p 
+                        className="lead mb-0"
+                        style={{ 
+                            color: '#64748b',
+                            fontSize: '1.25rem',
+                            maxWidth: '700px',
+                            margin: '0 auto'
+                        }}
+                    >
+                        Expert solutions crafted specifically for Perth businesses to accelerate growth and market presence
+                    </p>
+                </div>
                 
-                <Row xs={1} md={2} className="brand-solutions-row g-4 pt-2 pt-md-4 pb-lg-2">
+                <Row xs={1} md={2} className="g-4 g-lg-5">
                     {solutionsData.map((item, index) => (
-                        <Col key={item.id} className="brand-solutions-col">
-                            <Link href={item.url} className="brand-solutions-link text-decoration-none d-block">
-                                <div className="brand-solutions-card">
-                                    {/* ONLY CHANGE: Updated to use darkAuroraColors */}
-                                    <div 
-                                        className="brand-solutions-aurora"
-                                        style={{
-                                            background: darkAuroraColors[index]
-                                        }}
-                                    />
-                                    
-                                    {/* Inner Glow Panel */}
-                                    <div className="brand-solutions-bg" />
-                                    
-                                    {/* Card content */}
-                                    <div className="brand-solutions-content position-relative h-100 p-4 p-lg-5">
-                                        {/* Icon container */}
-                                        <div 
-                                            className="brand-solutions-icon-container d-flex align-items-center justify-content-center position-relative mb-4"
-                                            style={{
-                                                width: '60px',
-                                                height: '60px',
-                                                borderRadius: '16px',
-                                                background: 'rgba(255, 255, 255, 0.95)',
-                                                boxShadow: `
-                                                    0 4px 20px ${iconBgColors[index]},
-                                                    inset 0 2px 4px rgba(255, 255, 255, 0.9)
-                                                `,
-                                                border: `1px solid ${borderColors[index]}`,
-                                                transition: 'all 0.3s ease'
-                                            }}
-                                        >
-                                            <Image
-                                                src={item.icon}
-                                                alt={item.title}
-                                                width={28}
-                                                height={28}
-                                                style={{
-                                                    filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))'
-                                                }}
-                                            />
-                                            <div 
-                                                className="position-absolute top-0 left-0 w-100 h-100 rounded-circle"
-                                                style={{
-                                                    background: darkAuroraColors[index],
-                                                    opacity: 0.1,
-                                                    zIndex: -1
-                                                }}
-                                            />
+                        <Col key={item.id}>
+                            <div 
+                                ref={el => cardsRef.current[index] = el}
+                                className="brand-solutions-card-wrapper h-100"
+                                style={{ '--index': index, '--color': colorSchemes[index].mainColor } as any}
+                            >
+                                <Link href={item.url} className="brand-solutions-link text-decoration-none d-block h-100">
+                                    <div className="brand-solutions-card position-relative overflow-hidden h-100 rounded-4">
+                                        {/* Animated gradient border */}
+                                        <div className="brand-solutions-border" />
+                                        
+                                        {/* Floating particles */}
+                                        <div className="brand-solutions-particles">
+                                            {[...Array(8)].map((_, i) => (
+                                                <div 
+                                                    key={i}
+                                                    className="brand-solutions-particle"
+                                                    style={{
+                                                        '--particle-size': `${Math.random() * 6 + 4}px`,
+                                                        '--particle-opacity': Math.random() * 0.4 + 0.1,
+                                                        '--particle-x': `${Math.random() * 100}%`,
+                                                        '--particle-y': `${Math.random() * 100}%`,
+                                                        '--particle-delay': `${Math.random() * 2}s`
+                                                    } as any}
+                                                />
+                                            ))}
                                         </div>
                                         
-                                        {/* Title */}
-                                        <h3 
-                                            className="brand-solutions-content-title h5 mb-3"
-                                            style={{
-                                                color: '#1a202c',
-                                                fontWeight: 600,
-                                                lineHeight: 1.4
-                                            }}
-                                        >
-                                            {item.title}
-                                        </h3>
-                                        
-                                        {/* Description */}
-                                        <p 
-                                            className="brand-solutions-content-text mb-0"
-                                            style={{
-                                                color: '#4a5568',
-                                                lineHeight: 1.6,
-                                                fontSize: '0.95rem'
-                                            }}
-                                        >
-                                            {item.description}
-                                        </p>
-                                        
-                                        {/* Points list */}
-                                        {item.points.length > 0 && (
-                                            <ul className="brand-solutions-points list-unstyled mb-0 mt-3">
-                                                {item.points.map((point, i) => (
-                                                    <li 
-                                                        key={i} 
-                                                        className="d-flex align-items-center mb-2"
-                                                    >
-                                                        <IconifyIcon 
-                                                            icon="bx:check" 
-                                                            className="lead me-2"
-                                                            style={{
-                                                                color: iconColors[index],
-                                                                fontSize: '1.1rem'
-                                                            }}
-                                                        />
-                                                        <span style={{ 
-                                                            color: '#4a5568',
-                                                            fontSize: '0.9rem'
-                                                        }}>
-                                                            {point.title}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                        
-                                        {/* View more button */}
-                                        <div className="brand-solutions-view-more position-absolute d-flex align-items-center">
-                                            <span className="brand-solutions-view-more-text" style={{
-                                                color: iconColors[index],
-                                                fontWeight: 600,
-                                                fontSize: '0.9rem'
-                                            }}>
-                                                View more
-                                            </span>
-                                            <IconifyIcon 
-                                                icon="bx:chevron-right"
+                                        {/* Card content */}
+                                        <div className="brand-solutions-content position-relative h-100 p-4 p-xl-5 d-flex flex-column">
+                                            {/* Icon with floating animation */}
+                                            <div 
+                                                className="brand-solutions-icon-container mb-4 position-relative"
                                                 style={{
-                                                    color: iconColors[index],
-                                                    fontSize: '1.2rem',
-                                                    marginLeft: '4px'
+                                                    width: '80px',
+                                                    height: '80px',
+                                                    borderRadius: '20px',
+                                                    background: colorSchemes[index].iconBg,
+                                                    border: `2px solid ${colorSchemes[index].borderColor}`,
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
                                                 }}
-                                            />
+                                            >
+                                                <div 
+                                                    className="brand-solutions-icon-glow"
+                                                    style={{ background: colorSchemes[index].lightBg }}
+                                                />
+                                                <Image
+                                                    src={item.icon}
+                                                    alt={item.title}
+                                                    width={36}
+                                                    height={36}
+                                                    style={{ color: colorSchemes[index].iconColor }}
+                                                />
+                                            </div>
+                                            
+                                            {/* Title */}
+                                            <h3 
+                                                className="h3 fw-bold mb-3"
+                                                style={{
+                                                    color: '#1e293b',
+                                                    fontSize: '1.7rem',
+                                                    lineHeight: 1.3,
+                                                    transition: 'all 0.3s ease'
+                                                }}
+                                            >
+                                                {item.title}
+                                            </h3>
+                                            
+                                            {/* Description */}
+                                            <p 
+                                                className="mb-0"
+                                                style={{
+                                                    color: '#475569',
+                                                    lineHeight: 1.7,
+                                                    fontSize: '1.05rem',
+                                                    flex: 1,
+                                                    transition: 'all 0.3s ease'
+                                                }}
+                                            >
+                                                {item.description}
+                                            </p>
+                                       
                                         </div>
                                     </div>
-                                </div>
-                            </Link>
+                                </Link>
+                            </div>
                         </Col>
                     ))}
                 </Row>
             </Container>
 
             <style jsx global>{`
-                /* Main card styles - NO CHANGES */
+                /* Section styling */
+                .brand-solutions-section {
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                }
+
+                /* Card wrapper with 3D perspective */
+                .brand-solutions-card-wrapper {
+                    perspective: 1500px;
+                    opacity: 0; /* Initially hidden for animation */
+                }
+
+                /* Main card */
                 .brand-solutions-card {
+                    background: #ffffff;
+                    border: 1px solid #cfcfcf;
+                    box-shadow: 
+                        0 4px 20px rgba(0, 0, 0, 0.05),
+                        0 1px 3px rgba(0, 0, 0, 0.1);
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                    transform-style: preserve-3d;
                     position: relative;
-                    width: 100%;
-                    height: 280px;
-                    border-radius: 20px;
-                    overflow: hidden;
-                    background: rgba(255, 255, 255, 0.25);
-                    backdrop-filter: blur(25px);
-                    border: 1px solid rgba(255, 255, 255, 0.4);
-                    box-shadow: 
-                        25px 25px 60px rgba(0, 0, 0, 0.12),
-                        -20px -20px 50px rgba(255, 255, 255, 0.55);
-                    transition: all 0.4s ease;
                 }
 
-                .brand-solutions-link:hover .brand-solutions-card {
-                    transform: translateY(-6px);
-                    box-shadow: 
-                        25px 35px 65px rgba(0, 0, 0, 0.22),
-                        -20px -20px 50px rgba(255, 255, 255, 0.65);
-                }
-
-                /* Inner Glow Panel - NO CHANGES */
-                .brand-solutions-bg {
+                /* Animated gradient border */
+                .brand-solutions-border {
                     position: absolute;
-                    inset: 6px;
+                    inset: 0;
+                    border-radius: 11px;
+                    padding: 2px;
                     background: linear-gradient(
-                        145deg,
-                        rgba(255, 255, 255, 0.85),
-                        rgba(245, 245, 245, 0.6)
+                        135deg,
+                        var(--color),
+                        transparent 30%,
+                        transparent 70%,
+                        var(--color)
                     );
-                    border-radius: 16px;
-                    backdrop-filter: blur(25px);
-                    border: 1px solid rgba(255, 255, 255, 0.7);
-                    z-index: 2;
+                    -webkit-mask: 
+                        linear-gradient(#fff 0 0) content-box, 
+                        linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
                 }
 
-                /* Animated Aurora Blob - ONLY COLOR CHANGED to dark */
-                .brand-solutions-aurora {
+                /* Floating particles */
+                .brand-solutions-particles {
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    width: 180px;
-                    height: 180px;
-                    border-radius: 50%;
-                    filter: blur(28px);
-                    z-index: 1;
-                    opacity: 0.9;
-                    animation: brand-solutions-aurora-move 6.5s infinite ease-in-out;
+                    inset: 0;
+                    overflow: hidden;
+                    border-radius: 16px;
                 }
 
-                /* Aurora Animation - NO CHANGES */
-                @keyframes brand-solutions-aurora-move {
+                .brand-solutions-particle {
+                    position: absolute;
+                    width: var(--particle-size);
+                    height: var(--particle-size);
+                    background: var(--color);
+                    border-radius: 50%;
+                    opacity: var(--particle-opacity);
+                    left: var(--particle-x);
+                    top: var(--particle-y);
+                    animation: particleFloat 8s ease-in-out infinite;
+                    animation-delay: var(--particle-delay);
+                }
+
+                @keyframes particleFloat {
+                    0%, 100% {
+                        transform: translate(0, 0) scale(1);
+                    }
+                    25% {
+                        transform: translate(20px, -15px) scale(1.2);
+                    }
+                    50% {
+                        transform: translate(-10px, 10px) scale(0.8);
+                    }
+                    75% {
+                        transform: translate(15px, 5px) scale(1.1);
+                    }
+                }
+
+                /* Icon glow effect */
+                .brand-solutions-icon-glow {
+                    position: absolute;
+                    inset: -10px;
+                    border-radius: 30px;
+                    filter: blur(20px);
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                }
+
+                /* Button underline */
+                .brand-solutions-button-underline {
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    border-radius: 1px;
+                }
+
+                /* Card entry animation */
+                @keyframes cardEntry {
+                    from {
+                        opacity: 0;
+                        transform: translateY(80px) scale(0.92) rotateX(5deg);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0) scale(1) rotateX(0);
+                    }
+                }
+
+                .brand-solutions-card-wrapper {
+                    animation: cardEntry 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+                    animation-delay: calc(var(--index) * 0.15s);
+                }
+
+                /* HOVER ANIMATIONS - UNIQUE FOR EACH CARD */
+                .brand-solutions-link:hover .brand-solutions-card {
+                    transform: 
+                        translateY(-12px) 
+                        rotateX(2deg) 
+                        rotateY(1deg);
+                    box-shadow: 
+                        0 30px 60px rgba(0, 0, 0, 0.12),
+                        0 15px 40px rgba(0, 0, 0, 0.08);
+                }
+
+                /* Border animation on hover */
+                .brand-solutions-link:hover .brand-solutions-border {
+                    opacity: 1;
+                    animation: borderRotate 3s linear infinite;
+                }
+
+                @keyframes borderRotate {
                     0% {
-                        transform: translate(-60%, -60%) scale(1);
+                        background-position: 0% 50%;
                     }
-                    30% {
-                        transform: translate(10%, -40%) scale(1.15);
-                    }
-                    60% {
-                        transform: translate(20%, 20%) scale(1.05);
-                    }
-                    80% {
-                        transform: translate(-40%, 10%) scale(1.2);
+                    50% {
+                        background-position: 100% 50%;
                     }
                     100% {
-                        transform: translate(-60%, -60%) scale(1);
+                        background-position: 0% 50%;
                     }
                 }
 
-                /* Content styles - NO CHANGES */
-                .brand-solutions-content {
-                    z-index: 3;
-                    display: flex;
-                    flex-direction: column;
-                    height: 100%;
-                }
-
-                /* Title styles - NO CHANGES */
-                .brand-solutions-title {
-                    color: #1a202c !important;
-                }
-
-                .brand-solutions-gradient-text {
-                    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-                    background-size: 200% 200%;
-                    background-position: 100% 0%;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    display: inline-block;
-                }
-
-                /* Icon hover effects - NO CHANGES */
+                /* Icon animation on hover */
                 .brand-solutions-link:hover .brand-solutions-icon-container {
-                    transform: scale(1.08);
-                    background: rgba(255, 255, 255, 1) !important;
+                    transform: translateY(-5px) scale(1.05);
+                    border-color: var(--color);
                     box-shadow: 
-                        0 8px 32px var(--icon-shadow-color, rgba(102, 126, 234, 0.25)),
-                        inset 0 2px 8px rgba(255, 255, 255, 0.9) !important;
+                        0 15px 40px var(--color, rgba(59, 130, 246, 0.2)),
+                        0 5px 15px rgba(0, 0, 0, 0.1);
                 }
 
-                /* View more button - NO CHANGES */
-                .brand-solutions-view-more {
-                    bottom: 20px;
-                    right: 20px;
-                    opacity: 0;
-                    transform: translateX(-10px);
-                    transition: all 0.3s ease;
+                .brand-solutions-link:hover .brand-solutions-icon-glow {
+                    opacity: 0.6;
                 }
 
-                .brand-solutions-link:hover .brand-solutions-view-more {
-                    opacity: 1;
-                    transform: translateX(0);
+                /* Particle animation on hover */
+                .brand-solutions-link:hover .brand-solutions-particle {
+                    animation-duration: 4s;
+                    opacity: calc(var(--particle-opacity) * 1.5);
                 }
 
-                /* Responsive adjustments - NO CHANGES */
-                @media (max-width: 768px) {
+                /* Text color change on hover */
+                .brand-solutions-link:hover .brand-solutions-content h3 {
+                    color: var(--color);
+                }
+
+                /* Button animation on hover */
+                .brand-solutions-link:hover .brand-solutions-button-underline {
+                    width: 100%;
+                }
+
+                .brand-solutions-link:hover .brand-solutions-arrow svg {
+                    transform: translateX(8px) scale(1.1);
+                    color: var(--color);
+                }
+
+                /* Arrow bounce animation */
+                .brand-solutions-arrow {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .brand-solutions-arrow svg {
+                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                }
+
+                /* Responsive design */
+                @media (max-width: 1200px) {
+                    .brand-solutions-content {
+                        padding: 1.75rem !important;
+                    }
+                    
+                    h3 {
+                        font-size: 1.5rem !important;
+                    }
+                }
+
+                @media (max-width: 992px) {
                     .brand-solutions-card {
-                        height: 260px;
+                        height: 320px !important;
                     }
                     
-                    .brand-solutions-content-title {
-                        font-size: 1rem !important;
+                    .brand-solutions-icon-container {
+                        width: 70px;
+                        height: 70px;
                     }
                     
-                    .brand-solutions-content-text {
-                        font-size: 0.9rem !important;
+                    .display-4 {
+                        font-size: 2.5rem !important;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .brand-solutions-section {
+                        padding: 3rem 0 !important;
                     }
                     
-                    .brand-solutions-aurora {
-                        width: 150px;
-                        height: 150px;
-                        filter: blur(20px);
+                    .brand-solutions-card {
+                        height: 300px !important;
+                    }
+                    
+                    .brand-solutions-content {
+                        padding: 1.5rem !important;
+                    }
+                    
+                    h3 {
+                        font-size: 1.4rem !important;
+                    }
+                    
+                    .lead {
+                        font-size: 1.1rem !important;
                     }
                 }
 
                 @media (max-width: 576px) {
                     .brand-solutions-card {
-                        height: 240px;
+                        height: 280px !important;
                     }
                     
-                    .brand-solutions-content {
-                        padding: 20px !important;
+                    .brand-solutions-icon-container {
+                        width: 60px;
+                        height: 60px;
+                    }
+                    
+                    .display-4 {
+                        font-size: 2rem !important;
+                    }
+                    
+                    .brand-solutions-particle {
+                        display: none;
                     }
                 }
 
-                /* Custom properties for each card - NO CHANGES */
-                .brand-solutions-col:nth-child(1) {
-                    --icon-shadow-color: rgba(102, 126, 234, 0.25);
-                }
-                .brand-solutions-col:nth-child(2) {
-                    --icon-shadow-color: rgba(245, 87, 108, 0.25);
-                }
-                .brand-solutions-col:nth-child(3) {
-                    --icon-shadow-color: rgba(79, 172, 254, 0.25);
-                }
-                .brand-solutions-col:nth-child(4) {
-                    --icon-shadow-color: rgba(67, 233, 123, 0.25);
+                @media (max-width: 400px) {
+                    .brand-solutions-card {
+                        height: 320px !important;
+                    }
+                    
+                    .brand-solutions-content p {
+                        font-size: 0.95rem !important;
+                    }
                 }
             `}</style>
         </section>
