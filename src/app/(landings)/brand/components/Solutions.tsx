@@ -199,7 +199,7 @@ const Solutions = () => {
                     >
                         How our <span 
                             ref={spanRef}
-                            className="brand-solutions-gradient-text fw-bold"
+                            className="brand-solutions-gradient-text text-gradient-primary fw-bold"
                             style={{
                                 background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #10b981 100%)',
                                 backgroundSize: '200% 200%',
@@ -256,7 +256,7 @@ const Solutions = () => {
                                         </div>
                                         
                                         {/* Card content */}
-                                        <div className="brand-solutions-content position-relative h-100 p-4 p-xl-5 d-flex flex-column">
+                                        <div className="brand-solutions-content position-relative h-100 p-3 p-xl-4 d-flex flex-column">
                                             {/* Icon with floating animation */}
                                             <div 
                                                 className="brand-solutions-icon-container mb-4 position-relative"

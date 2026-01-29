@@ -314,10 +314,7 @@ const Hero = () => {
           opacity: 1;
         }
         
-        /* Remove Bootstrap button styles */
-        .btn, .btn-primary, .btn-lg {
-          all: unset;
-        }
+   
         
         /* Performance optimization */
         .overflow-hidden {

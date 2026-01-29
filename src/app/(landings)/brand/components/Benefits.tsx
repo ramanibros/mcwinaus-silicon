@@ -150,7 +150,7 @@ const Benefits = () => {
 
             {/* Header with GSAP animation on "Benefits" word */}
             <div className="section-info">
-                <h1>Our <span ref={spanRef} className="highlight">Benefits</span></h1>
+                <h1>Our <span ref={spanRef} className="text-gradient-primary">Benefits</span></h1>
                 <p className="subtitle">Why Perth businesses choose our solutions</p>
             </div>
 
