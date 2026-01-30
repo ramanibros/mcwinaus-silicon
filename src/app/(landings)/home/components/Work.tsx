@@ -5,7 +5,7 @@ import Image from 'next/image';
 import gsap from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {Col, Row} from "react-bootstrap";
-import { FaSearch, FaPencilRuler, FaCode, FaRocket } from 'react-icons/fa';
+import {FaCode, FaPencilRuler, FaRocket, FaSearch} from 'react-icons/fa';
 
 import Step1Dark from '@/assets/img/landing/online-courses/steps/01-dark.svg';
 import Step1Light from '@/assets/img/landing/online-courses/steps/01-light.svg';
@@ -86,7 +86,7 @@ const Work = () => {
 
             // ANIMATIONS FOR ALL STEPS - SIMPLE APPROACH
             const steps = document.querySelectorAll('.step');
-            
+
             steps.forEach((step, index) => {
                 // Get all elements for this step
                 const circle = step.querySelector('.step-icon-inner');
@@ -205,7 +205,7 @@ const Work = () => {
             </Row>
             <div className="steps">
                 {/* Step 1 */}
-                <div 
+                <div
                     ref={(el) => {
                         stepRefs.current[0] = el;
                     }}
@@ -227,7 +227,7 @@ const Work = () => {
                                 overflow: 'hidden'
                             }}
                         >
-                            <FaSearch style={{ position: 'relative', zIndex: 1 }} />
+                            <FaSearch style={{position: 'relative', zIndex: 1}}/>
                         </div>
                     </div>
                     <div className="step-body d-flex align-items-center ps-xl-5">
@@ -254,7 +254,7 @@ const Work = () => {
                 </div>
 
                 {/* Step 2 */}
-                <div 
+                <div
                     ref={(el) => {
                         stepRefs.current[1] = el;
                     }}
@@ -276,7 +276,7 @@ const Work = () => {
                                 overflow: 'hidden'
                             }}
                         >
-                            <FaPencilRuler style={{ position: 'relative', zIndex: 1 }} />
+                            <FaPencilRuler style={{position: 'relative', zIndex: 1}}/>
                         </div>
                     </div>
                     <div className="step-body d-flex align-items-center ps-xl-5">
@@ -303,7 +303,7 @@ const Work = () => {
                 </div>
 
                 {/* Step 3 */}
-                <div 
+                <div
                     ref={(el) => {
                         stepRefs.current[2] = el;
                     }}
@@ -325,7 +325,7 @@ const Work = () => {
                                 overflow: 'hidden'
                             }}
                         >
-                            <FaCode style={{ position: 'relative', zIndex: 1 }} />
+                            <FaCode style={{position: 'relative', zIndex: 1}}/>
                         </div>
                     </div>
                     <div className="step-body d-flex align-items-center ps-xl-5">
@@ -352,7 +352,7 @@ const Work = () => {
                 </div>
 
                 {/* Step 4 */}
-                <div 
+                <div
                     ref={(el) => {
                         stepRefs.current[3] = el;
                     }}
@@ -374,7 +374,7 @@ const Work = () => {
                                 overflow: 'hidden'
                             }}
                         >
-                            <FaRocket style={{ position: 'relative', zIndex: 1 }} />
+                            <FaRocket style={{position: 'relative', zIndex: 1}}/>
                         </div>
                     </div>
                     <div className="step-body d-flex align-items-center ps-xl-5">

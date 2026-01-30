@@ -4,18 +4,7 @@ import about01 from '@/assets/img/landing/saas-4/about/01.png';
 import about02 from '@/assets/img/landing/saas-4/about/02.png';
 import about03 from '@/assets/img/landing/saas-4/about/03.png';
 import Image from 'next/image';
-import {
-    Col,
-    Container,
-    Nav,
-    NavItem,
-    NavLink,
-    Row,
-    TabContainer,
-    TabContent,
-    TabPane,
-} from 'react-bootstrap';
-import Link from 'next/link';
+import {Col, Container, Nav, NavItem, NavLink, Row, TabContainer, TabContent, TabPane,} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 
 const About = () => {
@@ -45,13 +34,13 @@ const About = () => {
                             role="tab"
                         >
                             <IconifyIcon icon="bx:star" className="opacity-60 me-2 fs-lg"/>
-                          Brand Strategy
+                            Brand Strategy
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink eventKey="#investments" data-bs-toggle="tab" role="tab">
                             <IconifyIcon icon="bx:briefcase-alt-2" className="opacity-60 me-2 fs-lg"/>
-                          Visual Identity
+                            Visual Identity
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -62,7 +51,7 @@ const About = () => {
                             role="tab"
                         >
                             <IconifyIcon icon="bx:bar-chart-alt-2" className="opacity-60 me-2 fs-lg"/>
-                          Digital Asset Kit
+                            Digital Asset Kit
                         </NavLink>
                     </NavItem>
                 </Nav>
@@ -73,7 +62,7 @@ const About = () => {
                             <Col lg={4} md={5} className="offset-lg-1 text-center text-md-start">
                                 <h3 className="h2 mb-lg-4 mb-3">Brand Strategy</h3>
                                 <p className="mb-4 pb-lg-3">
-                                  Market positioning that dominates locally and scales nationally.
+                                    Market positioning that dominates locally and scales nationally.
                                 </p>
                             </Col>
                             <Col lg={6} md={7} className="mt-4 pt-md-0 pt-2">
@@ -93,7 +82,7 @@ const About = () => {
                                 <h3 className="h2 mb-lg-4 mb-3">Visual Identity</h3>
                                 <div className="d-sm-flex mb-4 pb-lg-3 text-sm-start">
                                     <p className="w-100 mb-sm-0">
-                                      Cohesive design systems that build instant trust.
+                                        Cohesive design systems that build instant trust.
                                     </p>
                                 </div>
                             </Col>
@@ -112,11 +101,11 @@ const About = () => {
                         <Row className="align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
                             <Col lg={4} md={5} className="offset-lg-1 text-center text-md-start">
                                 <h3 className="h2 mb-lg-4 mb-3">Digital Asset Kit</h3>
-                              <div className="d-sm-flex mb-4 pb-lg-3 text-sm-start">
-                                <p className="w-100 mb-sm-0">
-                                  Ready-to-use templates save hundreds of hours.
-                                </p>
-                              </div>
+                                <div className="d-sm-flex mb-4 pb-lg-3 text-sm-start">
+                                    <p className="w-100 mb-sm-0">
+                                        Ready-to-use templates save hundreds of hours.
+                                    </p>
+                                </div>
                             </Col>
                             <Col lg={6} md={7} className="mt-4 pt-md-0 pt-2">
                                 <Image

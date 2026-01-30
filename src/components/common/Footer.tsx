@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 /*import logo from '@/assets/img/mcwinItechLogo.png';
 import logoLight from '@/assets/img/mcwinItechLogoLight.png';*/
-
 import logo from '@/assets/img/footer/McWIN_iTECH_verticle.png';
 import logoLight from '@/assets/img/footer/McWIN_iTECH_verticle_light.png';
 

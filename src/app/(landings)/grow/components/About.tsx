@@ -11,80 +11,80 @@ import awwwardsLight from '@/assets/img/landing/software-agency-3/awards/awwward
 import awwwardsDark from '@/assets/img/landing/software-agency-3/awards/awwwards-dark.png';
 
 const About = () => {
-  return (
-    <section className="my-5 py-lg-5 py-md-4 py-3">
-      <Container>
-        <Row className="gy-4 py-xl-3">
-          <Col md={6}>
-            <Image src={aboutImg} alt="About us" className="rounded-3" priority />
-          </Col>
+    return (
+        <section className="my-5 py-lg-5 py-md-4 py-3">
+            <Container>
+                <Row className="gy-4 py-xl-3">
+                    <Col md={6}>
+                        <Image src={aboutImg} alt="About us" className="rounded-3" priority/>
+                    </Col>
 
-          <Col lg={5} md={6} className="offset-lg-1 d-flex">
-            <div className="align-self-center ps-lg-0 ps-md-4">
-              <h2 className="h1 mb-lg-4 mb-3">Award-Winning Software Company</h2>
-              <p className="mb-4 pb-lg-3 fs-lg">
-                Erat pharetra sed at fringilla etiam nullam platea fringilla. Gravida sodales sit
-                mauris amet massa justo. Egestas ipsum amet tortor hendrerit amet phasellus
-                adipiscing. Eget porta posuere pellentesque sed commodo gravida dignissim dignissim
-                iaculis. Elementum nibh duis at in.
-              </p>
+                    <Col lg={5} md={6} className="offset-lg-1 d-flex">
+                        <div className="align-self-center ps-lg-0 ps-md-4">
+                            <h2 className="h1 mb-lg-4 mb-3">Award-Winning Software Company</h2>
+                            <p className="mb-4 pb-lg-3 fs-lg">
+                                Erat pharetra sed at fringilla etiam nullam platea fringilla. Gravida sodales sit
+                                mauris amet massa justo. Egestas ipsum amet tortor hendrerit amet phasellus
+                                adipiscing. Eget porta posuere pellentesque sed commodo gravida dignissim dignissim
+                                iaculis. Elementum nibh duis at in.
+                            </p>
 
-              <div className="d-flex align-items-center ms-sm-n4 ms-n3 mb-4 pb-lg-3">
-                <div className="ms-sm-4 ms-3">
-                  <Image
-                    src={clutchLight}
-                    width={63}
-                    alt="Clutch"
-                    className="d-dark-mode-none d-block"
-                  />
-                  <Image
-                    src={clutchDark}
-                    width={63}
-                    alt="Clutch"
-                    className="d-dark-mode-block d-none"
-                  />
-                </div>
+                            <div className="d-flex align-items-center ms-sm-n4 ms-n3 mb-4 pb-lg-3">
+                                <div className="ms-sm-4 ms-3">
+                                    <Image
+                                        src={clutchLight}
+                                        width={63}
+                                        alt="Clutch"
+                                        className="d-dark-mode-none d-block"
+                                    />
+                                    <Image
+                                        src={clutchDark}
+                                        width={63}
+                                        alt="Clutch"
+                                        className="d-dark-mode-block d-none"
+                                    />
+                                </div>
 
-                <div className="ms-sm-4 ms-3">
-                  <Image
-                    src={forbesLight}
-                    width={72}
-                    alt="Forbes"
-                    className="d-dark-mode-none d-block"
-                  />
-                  <Image
-                    src={forbesDark}
-                    width={72}
-                    alt="Forbes"
-                    className="d-dark-mode-block d-none"
-                  />
-                </div>
+                                <div className="ms-sm-4 ms-3">
+                                    <Image
+                                        src={forbesLight}
+                                        width={72}
+                                        alt="Forbes"
+                                        className="d-dark-mode-none d-block"
+                                    />
+                                    <Image
+                                        src={forbesDark}
+                                        width={72}
+                                        alt="Forbes"
+                                        className="d-dark-mode-block d-none"
+                                    />
+                                </div>
 
-                <div className="ms-sm-4 ms-3">
-                  <Image
-                    src={awwwardsLight}
-                    width={37}
-                    alt="Awwwards"
-                    className="d-dark-mode-none d-block"
-                  />
-                  <Image
-                    src={awwwardsDark}
-                    width={37}
-                    alt="Awwwards"
-                    className="d-dark-mode-block d-none"
-                  />
-                </div>
-              </div>
+                                <div className="ms-sm-4 ms-3">
+                                    <Image
+                                        src={awwwardsLight}
+                                        width={37}
+                                        alt="Awwwards"
+                                        className="d-dark-mode-none d-block"
+                                    />
+                                    <Image
+                                        src={awwwardsDark}
+                                        width={37}
+                                        alt="Awwwards"
+                                        className="d-dark-mode-block d-none"
+                                    />
+                                </div>
+                            </div>
 
-              <Button size="lg" variant="outline-primary">
-                More about us
-              </Button>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  );
+                            <Button size="lg" variant="outline-primary">
+                                More about us
+                            </Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
+    );
 };
 
 export default About;

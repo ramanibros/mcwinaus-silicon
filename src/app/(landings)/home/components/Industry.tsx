@@ -1,8 +1,8 @@
 'use client';
-import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, {useEffect, useRef} from 'react'; // Added useEffect, useRef
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
 import cms from '@/assets/img/services/icons/cms.svg';
 import rocket from '@/assets/img/services/icons/rocket.svg';
@@ -13,124 +13,124 @@ import timer from '@/assets/img/services/icons/timer.svg';
 
 
 type Service = {
-  title: string;
-  description: string;
-  icon: string;
+    title: string;
+    description: string;
+    icon: string;
 };
 
 const services: Service[] = [
-  {
-    title: 'Government',
-    description: 'Experts. Infinite possibilities. One integrated team.',
-    icon: cms,
-  },
-  {
-    title: 'Healthcare',
-    description: '3x more patient bookings with compliant apps and local SEO that fills appointment schedules.',
-    icon: rocket,
-  },
-  {
-    title: 'Trades',
-    description: '40% more jobs from local SEO and instant booking sites—Perth contractors are winning bigger.',
-    icon: mobileApp,
-  },
-  {
-    title: 'eCommerce',
-    description: 'Online stores are boosting sales 3x with fast payments and abandoned cart recovery systems.',
-    icon: mobileApp,
-  },
-  {
-    title: 'Real Estate',
-    description: 'Property sites are converting 2x better with virtual tours and instant agent lead capture.',
-    icon: analytics,
-  },
-  {
-    title: 'Hospitality',
-    description: 'Tables filled year-round with reservation platforms and review-driven marketing campaigns.',
-    icon: search,
-  },
-  {
-    title: 'Finance',
-    description: 'Secure fintech tools bringing high-value clients through compliant, trust-building websites.',
-    icon: timer,
-  },
-  {
-    title: 'Education',
-    description: 'Course platforms are driving 50% more enrolments with engaging student funnels.',
-    icon: analytics,
-  }
+    {
+        title: 'Government',
+        description: 'Experts. Infinite possibilities. One integrated team.',
+        icon: cms,
+    },
+    {
+        title: 'Healthcare',
+        description: '3x more patient bookings with compliant apps and local SEO that fills appointment schedules.',
+        icon: rocket,
+    },
+    {
+        title: 'Trades',
+        description: '40% more jobs from local SEO and instant booking sites—Perth contractors are winning bigger.',
+        icon: mobileApp,
+    },
+    {
+        title: 'eCommerce',
+        description: 'Online stores are boosting sales 3x with fast payments and abandoned cart recovery systems.',
+        icon: mobileApp,
+    },
+    {
+        title: 'Real Estate',
+        description: 'Property sites are converting 2x better with virtual tours and instant agent lead capture.',
+        icon: analytics,
+    },
+    {
+        title: 'Hospitality',
+        description: 'Tables filled year-round with reservation platforms and review-driven marketing campaigns.',
+        icon: search,
+    },
+    {
+        title: 'Finance',
+        description: 'Secure fintech tools bringing high-value clients through compliant, trust-building websites.',
+        icon: timer,
+    },
+    {
+        title: 'Education',
+        description: 'Course platforms are driving 50% more enrolments with engaging student funnels.',
+        icon: analytics,
+    }
 ];
 
 const Industry = () => {
-  // Added refs for animation
-  const h2Ref = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
+    // Added refs for animation
+    const h2Ref = useRef<HTMLHeadingElement>(null);
+    const spanRef = useRef<HTMLSpanElement>(null);
 
-  // Added animation effect
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
+    // Added animation effect
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
 
-    if (h2Ref.current && spanRef.current) {
-      const h2Text = h2Ref.current;
-      const spanText = spanRef.current;
-      
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1,
-          markers: false,
+        if (h2Ref.current && spanRef.current) {
+            const h2Text = h2Ref.current;
+            const spanText = spanRef.current;
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: h2Ref.current,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: 1,
+                    markers: false,
+                }
+            });
+
+            // Animate the entire h2
+            tl.fromTo(h2Text,
+                {
+                    opacity: 0,
+                    y: 50
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                }
+            );
+
+            // Animate the gradient span with a different effect
+            tl.fromTo(spanText,
+                {
+                    opacity: 0,
+                    scale: 0.8,
+                    backgroundSize: "200% 200%",
+                    backgroundPosition: "100% 0%"
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "back.out(1.7)",
+                    backgroundPosition: "0% 100%",
+                },
+                "-=0.8"
+            );
         }
-      });
 
-      // Animate the entire h2
-      tl.fromTo(h2Text,
-        {
-          opacity: 0,
-          y: 50
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out"
-        }
-      );
+        // Cleanup
+        return () => {
+            const triggers = ScrollTrigger.getAll();
+            triggers.forEach(trigger => {
+                if (h2Ref.current && trigger.trigger === h2Ref.current) {
+                    trigger.kill();
+                }
+            });
+        };
+    }, []);
 
-      // Animate the gradient span with a different effect
-      tl.fromTo(spanText,
-        {
-          opacity: 0,
-          scale: 0.8,
-          backgroundSize: "200% 200%",
-          backgroundPosition: "100% 0%"
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.2,
-          ease: "back.out(1.7)",
-          backgroundPosition: "0% 100%",
-        },
-        "-=0.8"
-      );
-    }
-
-    // Cleanup
-    return () => {
-      const triggers = ScrollTrigger.getAll();
-      triggers.forEach(trigger => {
-        if (h2Ref.current && trigger.trigger === h2Ref.current) {
-          trigger.kill();
-        }
-      });
-    };
-  }, []);
-
-  return (
-    <>
-      <style jsx global>{`
+    return (
+        <>
+            <style jsx global>{`
         /* Medium light background - exactly what you asked for */
         .medium-bg-section {
           position: relative;
@@ -227,121 +227,123 @@ const Industry = () => {
         }
       `}</style>
 
-      <section className="pb-md-2 pb-lg-5 medium-bg-section">
-        {/* Geometric Shapes - Circles, Rings, Squares */}
-        <div className="shape-container">
-          {/* Large Elements */}
-          <div className="moving-shape shape-ring color-1" style={{
-            width: '160px', height: '160px',
-            top: '10%', left: '8%',
-            animation: 'float3d-1 18s infinite ease-in-out'
-          }} />
-          
-          <div className="moving-shape shape-circle color-2" style={{
-            width: '140px', height: '140px',
-            top: '15%', right: '12%',
-            animation: 'float3d-2 20s infinite ease-in-out',
-            animationDelay: '1.5s'
-          }} />
-          
-          {/* Medium Elements */}
-          <div className="moving-shape shape-square color-3" style={{
-            width: '100px', height: '100px',
-            top: '65%', left: '7%',
-            animation: 'float3d-3 16s infinite ease-in-out',
-            animationDelay: '2s'
-          }} />
-          
-          <div className="moving-shape shape-ring color-4" style={{
-            width: '120px', height: '120px',
-            top: '70%', right: '15%',
-            animation: 'float3d-4 22s infinite ease-in-out',
-            animationDelay: '3s'
-          }} />
-          
-          {/* Small Elements */}
-          <div className="moving-shape shape-circle color-5" style={{
-            width: '80px', height: '80px',
-            top: '35%', left: '25%',
-            animation: 'float3d-1 14s infinite ease-in-out',
-            animationDelay: '4s'
-          }} />
-          
-          <div className="moving-shape shape-square color-1" style={{
-            width: '70px', height: '70px',
-            top: '40%', right: '30%',
-            animation: 'float3d-2 19s infinite ease-in-out',
-            animationDelay: '5s'
-          }} />
-          
-          {/* Additional Elements */}
-          <div className="moving-shape shape-ring color-2" style={{
-            width: '60px', height: '60px',
-            top: '80%', left: '35%',
-            animation: 'float3d-3 15s infinite ease-in-out',
-            animationDelay: '6s'
-          }} />
-          
-          <div className="moving-shape shape-circle color-3" style={{
-            width: '50px', height: '50px',
-            top: '25%', left: '55%',
-            animation: 'float3d-4 17s infinite ease-in-out',
-            animationDelay: '7s'
-          }} />
-          
-          <div className="moving-shape shape-square color-4" style={{
-            width: '90px', height: '90px',
-            top: '85%', right: '35%',
-            animation: 'float3d-1 21s infinite ease-in-out',
-            animationDelay: '8s'
-          }} />
-          
-          <div className="moving-shape shape-ring color-5" style={{
-            width: '40px', height: '40px',
-            top: '45%', left: '75%',
-            animation: 'float3d-2 13s infinite ease-in-out',
-            animationDelay: '9s'
-          }} />
-        </div>
-        
-        {/* Your Content */}
-        <Container className="pb-4 pt-5">
-          {/* Updated h2 with refs */}
-          <h2 ref={h2Ref} className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">
-            Industries Transformed By <span ref={spanRef} className="text-gradient-primary">McWIN iTECH</span>
-          </h2>
+            <section className="pb-md-2 pb-lg-5 medium-bg-section">
+                {/* Geometric Shapes - Circles, Rings, Squares */}
+                <div className="shape-container">
+                    {/* Large Elements */}
+                    <div className="moving-shape shape-ring color-1" style={{
+                        width: '160px', height: '160px',
+                        top: '10%', left: '8%',
+                        animation: 'float3d-1 18s infinite ease-in-out'
+                    }}/>
 
-          <Row className="align-items-center pb-5 mb-lg-2">
-            <Col md={8} className="text-center text-md-start">
-              <p className="fs-lg text-muted mb-md-0">
-                We've helped Perth leaders across 8 key sectors get more customers and higher conversions
-                without wasting ad dollars.
-              </p>
-            </Col>
-          </Row>
+                    <div className="moving-shape shape-circle color-2" style={{
+                        width: '140px', height: '140px',
+                        top: '15%', right: '12%',
+                        animation: 'float3d-2 20s infinite ease-in-out',
+                        animationDelay: '1.5s'
+                    }}/>
 
-          <Row className="row-cols-1 row-cols-md-4">
-            {services.map((service, index) => (
-              <Col key={index} className="my-2 my-sm-3">
-                <Link
-                  href="#"
-                  className="card card-hover h-100 border-0 shadow-sm text-decoration-none px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
-                >
-                  <div className="card-body">
-                    <h2 className="h5 d-inline-flex align-items-center">
-                      {service.title}
+                    {/* Medium Elements */}
+                    <div className="moving-shape shape-square color-3" style={{
+                        width: '100px', height: '100px',
+                        top: '65%', left: '7%',
+                        animation: 'float3d-3 16s infinite ease-in-out',
+                        animationDelay: '2s'
+                    }}/>
+
+                    <div className="moving-shape shape-ring color-4" style={{
+                        width: '120px', height: '120px',
+                        top: '70%', right: '15%',
+                        animation: 'float3d-4 22s infinite ease-in-out',
+                        animationDelay: '3s'
+                    }}/>
+
+                    {/* Small Elements */}
+                    <div className="moving-shape shape-circle color-5" style={{
+                        width: '80px', height: '80px',
+                        top: '35%', left: '25%',
+                        animation: 'float3d-1 14s infinite ease-in-out',
+                        animationDelay: '4s'
+                    }}/>
+
+                    <div className="moving-shape shape-square color-1" style={{
+                        width: '70px', height: '70px',
+                        top: '40%', right: '30%',
+                        animation: 'float3d-2 19s infinite ease-in-out',
+                        animationDelay: '5s'
+                    }}/>
+
+                    {/* Additional Elements */}
+                    <div className="moving-shape shape-ring color-2" style={{
+                        width: '60px', height: '60px',
+                        top: '80%', left: '35%',
+                        animation: 'float3d-3 15s infinite ease-in-out',
+                        animationDelay: '6s'
+                    }}/>
+
+                    <div className="moving-shape shape-circle color-3" style={{
+                        width: '50px', height: '50px',
+                        top: '25%', left: '55%',
+                        animation: 'float3d-4 17s infinite ease-in-out',
+                        animationDelay: '7s'
+                    }}/>
+
+                    <div className="moving-shape shape-square color-4" style={{
+                        width: '90px', height: '90px',
+                        top: '85%', right: '35%',
+                        animation: 'float3d-1 21s infinite ease-in-out',
+                        animationDelay: '8s'
+                    }}/>
+
+                    <div className="moving-shape shape-ring color-5" style={{
+                        width: '40px', height: '40px',
+                        top: '45%', left: '75%',
+                        animation: 'float3d-2 13s infinite ease-in-out',
+                        animationDelay: '9s'
+                    }}/>
+                </div>
+
+                {/* Your Content */}
+                <Container className="pb-4 pt-5">
+                    {/* Updated h2 with refs */}
+                    <h2 ref={h2Ref} className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">
+                        Industries Transformed By <span ref={spanRef}
+                                                        className="text-gradient-primary">McWIN iTECH</span>
                     </h2>
-                    <div className="hr-indicator mb-2 m-0" />
-                    <p className="fs-sm text-body mb-0">{service.description}</p>
-                  </div>
-                </Link>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-    </>
-  );
+
+                    <Row className="align-items-center pb-5 mb-lg-2">
+                        <Col md={8} className="text-center text-md-start">
+                            <p className="fs-lg text-muted mb-md-0">
+                                We've helped Perth leaders across 8 key sectors get more customers and higher
+                                conversions
+                                without wasting ad dollars.
+                            </p>
+                        </Col>
+                    </Row>
+
+                    <Row className="row-cols-1 row-cols-md-4">
+                        {services.map((service, index) => (
+                            <Col key={index} className="my-2 my-sm-3">
+                                <Link
+                                    href="#"
+                                    className="card card-hover h-100 border-0 shadow-sm text-decoration-none px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
+                                >
+                                    <div className="card-body">
+                                        <h2 className="h5 d-inline-flex align-items-center">
+                                            {service.title}
+                                        </h2>
+                                        <div className="hr-indicator mb-2 m-0"/>
+                                        <p className="fs-sm text-body mb-0">{service.description}</p>
+                                    </div>
+                                </Link>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </section>
+        </>
+    );
 };
 
 export default Industry;

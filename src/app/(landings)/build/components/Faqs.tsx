@@ -1,9 +1,9 @@
 'use client';
 import IconifyIcon from '@/components/IconifyIcon';
 import Link from 'next/link';
-import React, { useState, useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, {useEffect, useRef, useState} from 'react';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {
     Accordion,
     AccordionBody,
@@ -93,7 +93,7 @@ const faqs: FaqType[] = [
 
 const Faqs = () => {
     const [activeKey, setActiveKey] = useState<string | null>('0');
-    
+
     const h2Ref = useRef<HTMLHeadingElement>(null);
     const spanRef = useRef<HTMLSpanElement>(null);
 
@@ -115,13 +115,13 @@ const Faqs = () => {
             });
 
             tl.fromTo(h2Text,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, ease: "power2.out"}
             );
 
             tl.fromTo(spanText,
-                { opacity: 0, scale: 0.8 },
-                { opacity: 1, scale: 1, duration: 1.2, ease: "back.out(1.7)" },
+                {opacity: 0, scale: 0.8},
+                {opacity: 1, scale: 1, duration: 1.2, ease: "back.out(1.7)"},
                 "-=0.8"
             );
         }
@@ -143,7 +143,7 @@ const Faqs = () => {
                     <p className="fs-lg pb-3 mb-2 mb-lg-3">
                         Still have unanswered questions and need to get in touch?
                     </p>
-                    
+
                     {/* CLEAN PROFESSIONAL BOX DESIGN */}
                     <Row className="row-cols-1 row-cols-sm-2 g-3 g-sm-4">
                         {/* WhatsApp Box */}
@@ -151,7 +151,8 @@ const Faqs = () => {
                             <Card className="border-0 shadow-sm bg-light hover-shadow transition-all">
                                 <CardBody className="p-4 text-center">
                                     <div className="mb-3">
-                                        <div className="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
+                                        <div
+                                            className="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
                                             <IconifyIcon
                                                 icon="bxl:whatsapp"
                                                 className="fs-2 text-success"
@@ -165,38 +166,39 @@ const Faqs = () => {
                                         className="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center"
                                     >
                                         WhatsApp Us
-                                        <IconifyIcon icon="bx:right-arrow-alt" className="ms-2" />
+                                        <IconifyIcon icon="bx:right-arrow-alt" className="ms-2"/>
                                     </Link>
                                 </CardBody>
                             </Card>
                         </Col>
-                        
+
                         {/* Email Box */}
                         <Col>
                             <Card className="border-0 shadow-sm bg-light hover-shadow transition-all">
                                 <CardBody className="p-4 text-center">
                                     <div className="mb-3">
-                                        <div className="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
-                                            <IconifyIcon 
-                                                icon="bx:envelope" 
+                                        <div
+                                            className="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center p-3">
+                                            <IconifyIcon
+                                                icon="bx:envelope"
                                                 className="fs-2 text-primary"
                                             />
                                         </div>
                                     </div>
                                     <p className="fs-sm text-muted mb-2">Still have questions?</p>
-                                    <Link 
+                                    <Link
                                         href="mailto:hello@mcwinitech.com.au"
                                         className="btn btn-primary btn-sm rounded-pill px-3 d-inline-flex align-items-center"
                                     >
                                         Mail Us
-                                        <IconifyIcon icon="bx:right-arrow-alt" className="ms-2" />
+                                        <IconifyIcon icon="bx:right-arrow-alt" className="ms-2"/>
                                     </Link>
                                 </CardBody>
                             </Card>
                         </Col>
                     </Row>
                 </Col>
-                
+
                 {/* FAQs Section */}
                 <Col md={7} className="offset-xl-1">
                     <Accordion activeKey={activeKey} onSelect={k => setActiveKey(k as string)}>

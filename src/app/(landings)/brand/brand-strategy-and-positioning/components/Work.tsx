@@ -1,9 +1,9 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 import Link from 'next/link';
 import {Container} from 'react-bootstrap';
@@ -19,7 +19,7 @@ import ass8 from "@/assets/img/brand-service/tools/kittl.png";
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const brands = [
@@ -40,7 +40,7 @@ const Work = () => {
         // Animate card bodies on scroll (EXACT SAME AS REFERENCE CODE)
         if (cardBodiesRef.current.length > 0) {
             const cardBodies = cardBodiesRef.current.filter(Boolean) as HTMLDivElement[];
-            
+
             cardBodies.forEach((cardBody, index) => {
                 // Set initial state - card bodies start hidden
                 gsap.set(cardBody, {
@@ -83,7 +83,7 @@ const Work = () => {
     }, []);
 
     return (
-        <Container className="my-lg-4 my-xl-5" style={{marginTop:'0 !important', paddingTop:'0 !important'}}>
+        <Container className="my-lg-4 my-xl-5" style={{marginTop: '0 !important', paddingTop: '0 !important'}}>
             <Swiper
                 modules={[Pagination]}
                 pagination={{clickable: true}}
@@ -102,15 +102,15 @@ const Work = () => {
                 {brands.map((brand, i) => (
                     <SwiperSlide key={i} className="py-3">
                         <Link href="#" className="card card-hover border-0 shadow-sm py-3 mx-2">
-                            <div 
+                            <div
                                 ref={(el: HTMLDivElement | null) => {
                                     cardBodiesRef.current[i] = el;
                                 }}
                                 className="card-body"
                             >
-                                <Image 
-                                    src={brand.image} 
-                                    alt={brand.name} 
+                                <Image
+                                    src={brand.image}
+                                    alt={brand.name}
                                     className="d-block mx-auto service_tools"
                                 />
                             </div>

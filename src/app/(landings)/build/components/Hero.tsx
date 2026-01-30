@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { SplitText } from 'gsap/SplitText';
+import React, {useEffect, useRef} from 'react';
+import {gsap} from 'gsap';
+import {SplitText} from 'gsap/SplitText';
 import layer from '@/assets/img/build-service/build-2.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
 
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(SplitText);
+    gsap.registerPlugin(SplitText);
 }
 
 const Hero = () => {
@@ -47,7 +47,7 @@ const Hero = () => {
             // SplitText animation for "Powered by Perth Expertise."
             if (perthTextRef.current) {
                 // Split into words
-                const splitPerth = new SplitText(perthTextRef.current, { 
+                const splitPerth = new SplitText(perthTextRef.current, {
                     type: "words,chars",
                     wordsClass: "perth-word",
                     charsClass: "perth-char"
@@ -71,7 +71,7 @@ const Hero = () => {
             // Animate the description paragraph
             if (descriptionRef.current) {
                 // Split description into lines for a nice reveal
-                const splitDesc = new SplitText(descriptionRef.current, { 
+                const splitDesc = new SplitText(descriptionRef.current, {
                     type: "lines",
                     linesClass: "desc-line"
                 });
@@ -140,22 +140,22 @@ const Hero = () => {
     }, []);
 
     return (
-        <section 
+        <section
             ref={heroRef}
-            className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5 mt-5 pb-5" 
-            style={{marginTop:"80px !important"}}
+            className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5 mt-5 pb-5"
+            style={{marginTop: "80px !important"}}
         >
             <Container>
                 <Row className="justify-content-center align-items-center">
                     <Col lg={5} md={6} className="text-center text-md-start order-md-1">
                         <h1 ref={titleRef} className="display-5 mb-lg-4">
-                            <span 
+                            <span
                                 ref={trustTextRef}
                                 className="text-gradient-primary"
                             >
                                 Built on Trust.
                             </span>{' '}
-                            <span 
+                            <span
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
@@ -168,13 +168,13 @@ const Hero = () => {
                         </p>
                     </Col>
 
-                    <Col 
+                    <Col
                         ref={rightColRef}
-                        xl={6} 
-                        lg={7} 
-                        md={6} 
-                        sm={8} 
-                        xs={10} 
+                        xl={6}
+                        lg={7}
+                        md={6}
+                        sm={8}
+                        xs={10}
                         className="offset-xl-1 order-md-2"
                     >
                         <div className="parallax mx-auto" style={{maxWidth: '556px'}}>

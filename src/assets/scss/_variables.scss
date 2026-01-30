@@ -65,32 +65,32 @@ $dark-border-subtle: $gray-200 !default;
 
 // Bootstrap"s $theme-colors map
 $theme-colors: (
-  'primary': $primary,
-  'secondary': $secondary,
-  'success': $success,
-  'info': $info,
-  'warning': $warning,
-  'danger': $danger,
-  'light': $light,
-  'dark': $dark,
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'info': $info,
+        'warning': $warning,
+        'danger': $danger,
+        'light': $light,
+        'dark': $dark,
 ) !default;
 
 // Faded colors map
 $theme-faded-colors: (
-  'primary': rgba($primary, 0.12),
-  'success': rgba($success, 0.12),
-  'info': rgba($info, 0.12),
-  'warning': rgba($warning, 0.12),
-  'danger': rgba($danger, 0.12),
-  'light': rgba($light, 0.05),
-  'dark': rgba($dark, 0.12),
+        'primary': rgba($primary, 0.12),
+        'success': rgba($success, 0.12),
+        'info': rgba($info, 0.12),
+        'warning': rgba($warning, 0.12),
+        'danger': rgba($danger, 0.12),
+        'light': rgba($light, 0.05),
+        'dark': rgba($dark, 0.12),
 ) !default;
 
 // Gradients map
 $theme-gradients: (
-  'primary': linear-gradient(90deg, $primary 0%, #8b5cf6 50%, #d946ef 100%),
-  'primary-translucent': linear-gradient(180deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 120%),
-  'dark-translucent': linear-gradient(180deg, rgba($dark, 0.58) 0%, rgba($dark, 0.78) 100%),
+        'primary': linear-gradient(90deg, $primary 0%, #8b5cf6 50%, #d946ef 100%),
+        'primary-translucent': linear-gradient(180deg, rgba($primary, 0) 0%, rgba($primary, 0.6) 120%),
+        'dark-translucent': linear-gradient(180deg, rgba($dark, 0.58) 0%, rgba($dark, 0.78) 100%),
 ) !default;
 
 // User selection color
@@ -113,23 +113,23 @@ $spacer: 1rem !default;
 //
 // Modifying default Bootstrap"s $grid-breakpoints map
 $grid-breakpoints: (
-  xs: 0,
-  sm: 500px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
+        xs: 0,
+        sm: 500px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
 ) !default;
 
 // Grid containers
 //
 // Modifying default Bootstrap"s $container-max-widths map (max-width of .container)
 $container-max-widths: (
-  sm: 97%,
-  md: 95%,
-  lg: 95%,
-  xl: 95%,
-  xxl: 1320px,
+        sm: 97%,
+        md: 95%,
+        lg: 95%,
+        xl: 95%,
+        xxl: 1320px,
 ) !default;
 
 // Body
@@ -164,27 +164,24 @@ $border-radius-pill: 50rem !default;
 
 // Border colors map
 $border-colors: (
-  'primary': rgba($primary, 0.35),
-  'success': rgba($success, 0.35),
-  'info': rgba($info, 0.35),
-  'warning': rgba($warning, 0.35),
-  'danger': rgba($danger, 0.35),
-  'light': $border-light-color,
-  'dark': rgba($dark, 0.35),
-  'white': rgba($white, 0.35),
+        'primary': rgba($primary, 0.35),
+        'success': rgba($success, 0.35),
+        'info': rgba($info, 0.35),
+        'warning': rgba($warning, 0.35),
+        'danger': rgba($danger, 0.35),
+        'light': $border-light-color,
+        'dark': rgba($dark, 0.35),
+        'white': rgba($white, 0.35),
 ) !default;
 
 // Theme shadows
 
-$box-shadow-sm:
-  0 0.275rem 0.75rem -0.0625rem rgba($gray-900, 0.06),
-  0 0.125rem 0.4rem -0.0625rem rgba($gray-900, 0.03) !default;
-$box-shadow:
-  0 0.275rem 1.25rem rgba($gray-900, 0.05),
-  0 0.25rem 0.5625rem rgba($gray-900, 0.03) !default;
-$box-shadow-lg:
-  0 0.3rem 1.525rem -0.375rem rgba($gray-900, 0.1),
-  0 0.25rem 0.8125rem -0.125rem rgba($gray-900, 0.06) !default;
+$box-shadow-sm: 0 0.275rem 0.75rem -0.0625rem rgba($gray-900, 0.06),
+0 0.125rem 0.4rem -0.0625rem rgba($gray-900, 0.03) !default;
+$box-shadow: 0 0.275rem 1.25rem rgba($gray-900, 0.05),
+0 0.25rem 0.5625rem rgba($gray-900, 0.03) !default;
+$box-shadow-lg: 0 0.3rem 1.525rem -0.375rem rgba($gray-900, 0.1),
+0 0.25rem 0.8125rem -0.125rem rgba($gray-900, 0.06) !default;
 $box-shadow-inset: inset 0 0 0 transparent !default;
 
 $box-shadow-primary: 0 0.5rem 1.125rem -0.5rem rgba($primary, 0.9) !default;
@@ -229,17 +226,17 @@ $h6-font-size: $font-size-base !default;
 
 // Modifying default Bootstrap"s $font-sizes map
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
-  'xl': $font-size-xl,
-  'lg': $font-size-lg,
-  'base': $font-size-base,
-  'sm': $font-size-sm,
-  'xs': $font-size-xs,
+        1: $h1-font-size,
+        2: $h2-font-size,
+        3: $h3-font-size,
+        4: $h4-font-size,
+        5: $h5-font-size,
+        6: $h6-font-size,
+        'xl': $font-size-xl,
+        'lg': $font-size-lg,
+        'base': $font-size-base,
+        'sm': $font-size-sm,
+        'xs': $font-size-xs,
 ) !default;
 
 $lead-font-size: $font-size-base * 1.5 !default;
@@ -252,12 +249,12 @@ $headings-color: var(--#{$prefix}gray-900) !default;
 
 // Modifying default Bootstrap"s $display-font-sizes map
 $display-font-sizes: (
-  1: $font-size-base * 5,
-  2: $font-size-base * 4.5,
-  3: $font-size-base * 4,
-  4: $font-size-base * 3.5,
-  5: $font-size-base * 3,
-  6: $font-size-base * 2.625,
+        1: $font-size-base * 5,
+        2: $font-size-base * 4.5,
+        3: $font-size-base * 4,
+        4: $font-size-base * 3.5,
+        5: $font-size-base * 3,
+        6: $font-size-base * 2.625,
 ) !default;
 
 $display-font-weight: $font-weight-bold !default;
@@ -304,7 +301,7 @@ $table-bg-scale: -90% !default;
 
 // Modifying default Bootstrap"s $table-variants map
 $table-variants: (
-  'dark': $dark,
+        'dark': $dark,
 ) !default;
 
 // Buttons + Forms
@@ -336,11 +333,10 @@ $btn-active-box-shadow: unset !default;
 $btn-link-decoration: none !default;
 $btn-link-hover-decoration: none !default;
 
-$btn-transition:
-  color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  border-color 0.2s ease-in-out,
-  box-shadow 0.2s ease-in-out !default;
+$btn-transition: color 0.2s ease-in-out,
+background-color 0.2s ease-in-out,
+border-color 0.2s ease-in-out,
+box-shadow 0.2s ease-in-out !default;
 
 // Icon buttons
 
@@ -352,45 +348,45 @@ $btn-icon-xl-size: 4.5rem !default;
 // Social buttons
 
 $social-buttons: (
-  'airbnb': #fd5c63,
-  'behance': #1769ff,
-  'blogger': #f57d00,
-  'codepen': #0ebeff,
-  'discord': #7289da,
-  'dribbble': #ea4c89,
-  'dropbox': #007ee5,
-  'facebook': #1877f2,
-  'flickr': #0063dc,
-  'foursquare': #f94877,
-  'gitlab': #fc6d26,
-  'github': #4078c0,
-  'google': #ea4335,
-  'instagram': #405de6,
-  'kickstarter': #2bde73,
-  'linkedin': #0077b5,
-  'medium': #00ab6c,
-  'messenger': #0084ff,
-  'ok': #ed812b,
-  'patreon': #f96854,
-  'pinterest': #e60023,
-  'product-hunt': #da552f,
-  'reddit': #ff4500,
-  'skype': #00aff0,
-  'slack': #611f69,
-  'snapchat': #fffc00,
-  'stack-overflow': #f48024,
-  'steam': #00adee,
-  'telegram': #08c,
-  'tiktok': #fe2c55,
-  'trip-advisor': #00af87,
-  'tumblr': #35465c,
-  'twitch': #9146ff,
-  'twitter': #1da1f2,
-  'vimeo': #1ab7ea,
-  'vk': #45668e,
-  'whatsapp': #128c7e,
-  'youtube': #f00,
-  'zoom': #2d8cff,
+        'airbnb': #fd5c63,
+        'behance': #1769ff,
+        'blogger': #f57d00,
+        'codepen': #0ebeff,
+        'discord': #7289da,
+        'dribbble': #ea4c89,
+        'dropbox': #007ee5,
+        'facebook': #1877f2,
+        'flickr': #0063dc,
+        'foursquare': #f94877,
+        'gitlab': #fc6d26,
+        'github': #4078c0,
+        'google': #ea4335,
+        'instagram': #405de6,
+        'kickstarter': #2bde73,
+        'linkedin': #0077b5,
+        'medium': #00ab6c,
+        'messenger': #0084ff,
+        'ok': #ed812b,
+        'patreon': #f96854,
+        'pinterest': #e60023,
+        'product-hunt': #da552f,
+        'reddit': #ff4500,
+        'skype': #00aff0,
+        'slack': #611f69,
+        'snapchat': #fffc00,
+        'stack-overflow': #f48024,
+        'steam': #00adee,
+        'telegram': #08c,
+        'tiktok': #fe2c55,
+        'trip-advisor': #00af87,
+        'tumblr': #35465c,
+        'twitch': #9146ff,
+        'twitter': #1da1f2,
+        'vimeo': #1ab7ea,
+        'vk': #45668e,
+        'whatsapp': #128c7e,
+        'youtube': #f00,
+        'zoom': #2d8cff,
 ) !default;
 
 // Video button
@@ -412,10 +408,9 @@ $btn-scroll-top-bg: rgba($gray-900, 0.2) !default;
 $btn-scroll-top-hover-bg: rgba($gray-900, 0.4) !default;
 $btn-scroll-top-color: $white !default;
 $btn-scroll-top-hover-color: $white !default;
-$btn-scroll-top-transition:
-  bottom 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
-  opacity 0.3s,
-  background-color 0.25s ease-in-out !default;
+$btn-scroll-top-transition: bottom 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+opacity 0.3s,
+background-color 0.25s ease-in-out !default;
 
 // Forms
 
@@ -443,9 +438,8 @@ $input-focus-box-shadow: 0 0.5rem 1.125rem -0.5rem rgba($primary, 0.2) !default;
 $input-placeholder-color: $gray-500 !default;
 $input-disabled-placeholder-color: $gray-600 !default;
 
-$input-transition:
-  border-color 0.15s ease-in-out,
-  box-shadow 0.15s ease-in-out !default;
+$input-transition: border-color 0.15s ease-in-out,
+box-shadow 0.15s ease-in-out !default;
 
 // Range
 $form-range-thumb-bg: $primary !default;
@@ -516,10 +510,9 @@ $nav-link-color: $gray-800 !default;
 $nav-link-hover-color: $primary !default;
 $nav-link-active-color: $primary !default;
 $nav-link-disabled-color: $gray-600 !default;
-$nav-link-transition:
-  color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  border-color 0.2s ease-in-out !default;
+$nav-link-transition: color 0.2s ease-in-out,
+background-color 0.2s ease-in-out,
+border-color 0.2s ease-in-out !default;
 
 // Tabs
 
@@ -550,10 +543,9 @@ $side-nav-border-color: $border-color !default;
 $side-nav-link-font-size: $font-size-sm !default;
 $side-nav-link-padding-y: 0.375rem !default;
 $side-nav-link-padding-x: $side-nav-padding-x !default;
-$side-nav-link-trnasition:
-  color 0.2s ease-in-out,
-  border-color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out !default;
+$side-nav-link-trnasition: color 0.2s ease-in-out,
+border-color 0.2s ease-in-out,
+background-color 0.2s ease-in-out !default;
 
 // Navbar
 
@@ -667,11 +659,10 @@ $pagination-active-bg: $primary !default;
 $pagination-active-box-shadow: $box-shadow-primary !default;
 
 $pagination-disabled-bg: transparent !default;
-$pagination-transition:
-  color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  border-color 0.2s ease-in-out,
-  box-shadow 0.2s ease-in-out !default;
+$pagination-transition: color 0.2s ease-in-out,
+background-color 0.2s ease-in-out,
+border-color 0.2s ease-in-out,
+box-shadow 0.2s ease-in-out !default;
 
 // Placeholders
 
@@ -689,11 +680,10 @@ $card-bg: var(--#{$prefix}body-bg) !default;
 $card-border-color: var(--#{$prefix}border-color) !default;
 $card-cap-padding-y: $card-spacer-y * 0.75 !default;
 $card-cap-bg: transparent !default;
-$card-transition:
-  transform 0.2s ease-in-out,
-  border-color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  box-shadow 0.2s ease-in-out !default;
+$card-transition: transform 0.2s ease-in-out,
+border-color 0.2s ease-in-out,
+background-color 0.2s ease-in-out,
+box-shadow 0.2s ease-in-out !default;
 $card-img-overlay-padding: $spacer * 1.5 !default;
 
 // Accordion
@@ -806,11 +796,10 @@ $list-group-action-hover-color: $primary !default;
 $list-group-action-font-weight: $font-weight-medium !default;
 $list-group-action-active-color: $list-group-active-color !default;
 $list-group-action-active-bg: $list-group-active-bg !default;
-$list-group-action-transition:
-  color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  border-color 0.2s ease-in-out,
-  box-shadow 0.2s ease-in-out !default;
+$list-group-action-transition: color 0.2s ease-in-out,
+background-color 0.2s ease-in-out,
+border-color 0.2s ease-in-out,
+box-shadow 0.2s ease-in-out !default;
 
 // Image thumbnails
 
@@ -884,21 +873,19 @@ $carousel-nav-btn-box-shadow: $box-shadow-sm !default;
 $carousel-nav-btn-hover-bg: $primary !default;
 $carousel-nav-btn-hover-color: $white !default;
 $carousel-nav-btn-hover-box-shadow: $box-shadow-primary !default;
-$carousel-nav-btn-transition:
-  color 0.2s ease-in-out,
-  background-color 0.2s ease-in-out,
-  border-color 0.2s ease-in-out,
-  box-shadow 0.2s ease-in-out,
-  opacity 0.2s ease-in-out !default;
+$carousel-nav-btn-transition: color 0.2s ease-in-out,
+background-color 0.2s ease-in-out,
+border-color 0.2s ease-in-out,
+box-shadow 0.2s ease-in-out,
+opacity 0.2s ease-in-out !default;
 
 $carousel-bullet-width: 0.3125rem !default;
 $carousel-bullet-height: 0.3125rem !default;
 $carousel-bullet-border-radius: $border-radius-pill !default;
 $carousel-bullet-spacer: $spacer * 0.875 !default;
-$carousel-bullet-transition:
-  width 0.2s ease-in-out,
-  height 0.2s ease-in-out,
-  background-color 0.2s ease-in-out !default;
+$carousel-bullet-transition: width 0.2s ease-in-out,
+height 0.2s ease-in-out,
+background-color 0.2s ease-in-out !default;
 
 $carousel-bullet-bg: $gray-500 !default;
 $carousel-bullet-active-bg: $primary !default;

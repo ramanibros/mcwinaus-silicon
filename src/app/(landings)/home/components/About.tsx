@@ -1,11 +1,11 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, {useEffect, useRef} from 'react';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import about from '@/assets/img/landing/home/about_us.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Col, Row } from 'react-bootstrap';
+import {Col, Row} from 'react-bootstrap';
 
 const About = () => {
     const h1Ref = useRef<HTMLHeadingElement>(null);
@@ -25,7 +25,7 @@ const About = () => {
         if (h1Ref.current && spanRef.current) {
             const h1Text = h1Ref.current;
             const spanText = spanRef.current;
-            
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: h1Ref.current,
@@ -37,8 +37,8 @@ const About = () => {
             });
 
             tl.fromTo(h1Text,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, ease: "power2.out"}
             );
 
             tl.fromTo(spanText,
@@ -341,7 +341,8 @@ const About = () => {
                 <Row className="pt-xl-3">
                     <Col md={5} className="text-center text-md-start pb-5">
                         <h1 ref={h1Ref} className="mb-4">
-                            <span ref={spanRef} className="text-gradient-primary">Digital Solutions</span> That Deliver Real Business Growth
+                            <span ref={spanRef} className="text-gradient-primary">Digital Solutions</span> That Deliver
+                            Real Business Growth
                         </h1>
                         <p className="fs-lg pb-lg-3 mb-4 justify-txt">
                             McWIN iTECH—your <b>growth partner, not just another agency.</b> We build high-performing
@@ -352,7 +353,8 @@ const About = () => {
                             More About Us
                         </Link>
                     </Col>
-                    <Col xl={6} md={7} className="offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0 image-section-container">
+                    <Col xl={6} md={7}
+                         className="offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0 image-section-container">
                         {/* Blob Background Container */}
                         <div ref={blobContainerRef} className="blob-container">
                             <div className="blob-glow"></div>
@@ -360,11 +362,11 @@ const About = () => {
                             <div ref={blob2Ref} className="blob-shape blob-2"></div>
                             <div ref={blob3Ref} className="blob-shape blob-3"></div>
                         </div>
-                        
+
                         {/* Image Container */}
                         <div className="image-wrapper">
-                            <Image 
-                                src={about} 
+                            <Image
+                                src={about}
                                 className="rounded-3 w-100 h-100"
                                 alt="About McWIN iTECH"
                                 style={{objectFit: 'cover'}}

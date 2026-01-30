@@ -1,9 +1,9 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 import Link from 'next/link';
 import {Container} from 'react-bootstrap';
@@ -19,7 +19,7 @@ import ass8 from "@/assets/img/build-service/tools/wordpress_174881.png";
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const brands = [
@@ -40,7 +40,7 @@ const Work = () => {
         // Animate card bodies on scroll (EXACT SAME ANIMATION)
         if (cardBodiesRef.current.length > 0) {
             const cardBodies = cardBodiesRef.current.filter(Boolean) as HTMLDivElement[];
-            
+
             cardBodies.forEach((cardBody, index) => {
                 // Set initial state - card bodies start hidden
                 gsap.set(cardBody, {
@@ -102,7 +102,7 @@ const Work = () => {
                 {brands.map((brand, i) => (
                     <SwiperSlide key={i} className="py-3">
                         <Link href="#" className="card card-hover border-0 shadow-sm py-3 mx-2">
-                            <div 
+                            <div
                                 ref={(el: HTMLDivElement | null) => {
                                     cardBodiesRef.current[i] = el;
                                 }}

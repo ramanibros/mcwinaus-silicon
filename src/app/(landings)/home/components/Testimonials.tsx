@@ -1,7 +1,7 @@
 'use client';
-import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, {useEffect, useRef} from 'react'; // Added useEffect, useRef
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Navigation, Pagination} from 'swiper/modules';
@@ -61,7 +61,7 @@ const Testimonials = () => {
         if (h2Ref.current && spanRef.current) {
             const h2Text = h2Ref.current;
             const spanText = spanRef.current;
-            
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: h2Ref.current,
@@ -127,7 +127,8 @@ const Testimonials = () => {
                             className="d-flex flex-column align-items-center justify-content-center position-relative zindex-2 p-0 pb-2 p-lg-4">
                             {/* Updated h2 with refs */}
                             <h2 ref={h2Ref} className="h1 text-center text-md-start p-lg-4">
-                                Real Results From <span ref={spanRef} className="text-gradient-primary">Perth Clients</span>
+                                Real Results From <span ref={spanRef}
+                                                        className="text-gradient-primary">Perth Clients</span>
                             </h2>
                         </CardBody>
                     </Card>

@@ -1,7 +1,7 @@
 'use client';
-import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React, {useEffect, useRef} from 'react'; // Added useEffect, useRef
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Image from 'next/image';
 import cms from '@/assets/img/services/icons/cms.svg';
 import rocket from '@/assets/img/services/icons/rocket.svg';
@@ -10,102 +10,102 @@ import {Col, Container, Row} from 'react-bootstrap';
 import Link from 'next/link';
 
 type Service = {
-  title: string;
-  description: string;
-  icon: string;
+    title: string;
+    description: string;
+    icon: string;
 };
 
 const services: Service[] = [
-  {
-    title: 'Certified Digital Perth Experts',
-    description:
-      '30+ local IT specialists with 5+ years delivering 3x faster projects—Perth\'s trusted growth team.',
-    icon: cms,
-  },
-  {
-    title: 'Genuine Hands-On Partnership',
-    description:
-      'We genuinely care—no cookie-cutter templates. Every project gets personal collaboration and 24/7 local support.',
-    icon: rocket,
-  },
-  {
-    title: 'Future-Proof Technology Stack',
-    description:
-      'React, MySQL, Java, Oracle, AWS—scalable solutions that grow with your business for the long haul.',
-    icon: mobileApp,
-  }
+    {
+        title: 'Certified Digital Perth Experts',
+        description:
+            '30+ local IT specialists with 5+ years delivering 3x faster projects—Perth\'s trusted growth team.',
+        icon: cms,
+    },
+    {
+        title: 'Genuine Hands-On Partnership',
+        description:
+            'We genuinely care—no cookie-cutter templates. Every project gets personal collaboration and 24/7 local support.',
+        icon: rocket,
+    },
+    {
+        title: 'Future-Proof Technology Stack',
+        description:
+            'React, MySQL, Java, Oracle, AWS—scalable solutions that grow with your business for the long haul.',
+        icon: mobileApp,
+    }
 ];
 
 const Choose = () => {
-  // Added refs for animation
-  const h2Ref = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
+    // Added refs for animation
+    const h2Ref = useRef<HTMLHeadingElement>(null);
+    const spanRef = useRef<HTMLSpanElement>(null);
 
-  // Added animation effect
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
+    // Added animation effect
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
 
-    if (h2Ref.current && spanRef.current) {
-      const h2Text = h2Ref.current;
-      const spanText = spanRef.current;
-      
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1,
-          markers: false,
+        if (h2Ref.current && spanRef.current) {
+            const h2Text = h2Ref.current;
+            const spanText = spanRef.current;
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: h2Ref.current,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: 1,
+                    markers: false,
+                }
+            });
+
+            // Animate the entire h2
+            tl.fromTo(h2Text,
+                {
+                    opacity: 0,
+                    y: 50
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                }
+            );
+
+            // Animate the gradient span with a different effect
+            tl.fromTo(spanText,
+                {
+                    opacity: 0,
+                    scale: 0.8,
+                    backgroundSize: "200% 200%",
+                    backgroundPosition: "100% 0%"
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "back.out(1.7)",
+                    backgroundPosition: "0% 100%",
+                },
+                "-=0.8"
+            );
         }
-      });
 
-      // Animate the entire h2
-      tl.fromTo(h2Text,
-        {
-          opacity: 0,
-          y: 50
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out"
-        }
-      );
+        // Cleanup
+        return () => {
+            const triggers = ScrollTrigger.getAll();
+            triggers.forEach(trigger => {
+                if (h2Ref.current && trigger.trigger === h2Ref.current) {
+                    trigger.kill();
+                }
+            });
+        };
+    }, []);
 
-      // Animate the gradient span with a different effect
-      tl.fromTo(spanText,
-        {
-          opacity: 0,
-          scale: 0.8,
-          backgroundSize: "200% 200%",
-          backgroundPosition: "100% 0%"
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.2,
-          ease: "back.out(1.7)",
-          backgroundPosition: "0% 100%",
-        },
-        "-=0.8"
-      );
-    }
-
-    // Cleanup
-    return () => {
-      const triggers = ScrollTrigger.getAll();
-      triggers.forEach(trigger => {
-        if (h2Ref.current && trigger.trigger === h2Ref.current) {
-          trigger.kill();
-        }
-      });
-    };
-  }, []);
-
-  return (
-    <>
-      <style jsx global>{`
+    return (
+        <>
+            <style jsx global>{`
         /* Advanced geometric background - COMPLETELY SEPARATE from content */
         .clean-geometric-section {
           position: relative;
@@ -267,85 +267,88 @@ const Choose = () => {
         }
       `}</style>
 
-      <section className="pb-md-2 clean-geometric-section">
-        {/* Background container - stays behind */}
-        <div className="geometric-bg-container"  style={{ marginTop: '60px', paddingTop: '60px' }}>
-          <div className="grid-pattern"></div>
-          
-          {/* Floating geometric shapes */}
-          <div className="floating-3d-shape shape-1"></div>
-          <div className="floating-3d-shape shape-2"></div>
-          <div className="floating-3d-shape shape-3"></div>
-          <div className="floating-3d-shape shape-4"></div>
-          
-          {/* Particles */}
-          <div className="particles">
-            {[...Array(12)].map((_, i) => (
-              <div 
-                key={i} 
-                className="particle"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animation: `particleFloat ${3 + Math.random() * 4}s infinite ease-in-out ${i * 0.3}s`,
-                  background: i % 3 === 0 ? '#00b7ff' : i % 3 === 1 ? '#ff30ff' : '#00ffcc'
-                }}
-              />
-            ))}
-          </div>
-        </div>
-        
-        {/* Your original content - EXACTLY as you had it */}
-        <div className="content-wrapper">
-          <div className="d-none d-lg-block" style={{ marginTop: '60px', paddingTop: '60px' }}></div>
+            <section className="pb-md-2 clean-geometric-section">
+                {/* Background container - stays behind */}
+                <div className="geometric-bg-container" style={{marginTop: '60px', paddingTop: '60px'}}>
+                    <div className="grid-pattern"></div>
 
-          <Container className="pt-5">
-            {/* Added ref to h2 and span */}
-            <h2 ref={h2Ref} className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">
-              Why Perth Businesses Choose <span ref={spanRef} className="text-gradient-primary">McWIN iTECH</span>
-            </h2>
+                    {/* Floating geometric shapes */}
+                    <div className="floating-3d-shape shape-1"></div>
+                    <div className="floating-3d-shape shape-2"></div>
+                    <div className="floating-3d-shape shape-3"></div>
+                    <div className="floating-3d-shape shape-4"></div>
 
-            <Row className="align-items-center pb-5 mb-lg-2">
-              <Col md={8} className="text-center text-md-start">
-                <p className="fs-lg text-muted mb-md-0">
-                  Convert browsers to buyers with Perth's most trusted digital team. Local expertise, global results—high-performing websites that boost conversions 67% higher, dominate Google #1 rankings, and deliver long-term scalable growth.
-                </p>
-              </Col>
-            </Row>
-
-            <Row className="row-cols-1 row-cols-md-3">
-              {services.map((service, index) => (
-                <Col key={index} className="py-4 my-2 my-sm-3">
-                  <Link
-                    href="#"
-                    className="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
-                  >
-                    <div className="card-body pt-3">
-                      <div className="d-inline-block bg_gradient_primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
-                        <Image
-                          src={service.icon}
-                          alt={service.title}
-                          width={40}
-                          height={40}
-                          className="d-block m-1"
-                        />
-                      </div>
-
-                      <h2 className="h4 d-inline-flex align-items-center">
-                        {service.title}
-                      </h2>
-                      <div className="hr-indicator mb-2" />
-                      <p className="fs-sm text-body mb-0">{service.description}</p>
+                    {/* Particles */}
+                    <div className="particles">
+                        {[...Array(12)].map((_, i) => (
+                            <div
+                                key={i}
+                                className="particle"
+                                style={{
+                                    top: `${Math.random() * 100}%`,
+                                    left: `${Math.random() * 100}%`,
+                                    animation: `particleFloat ${3 + Math.random() * 4}s infinite ease-in-out ${i * 0.3}s`,
+                                    background: i % 3 === 0 ? '#00b7ff' : i % 3 === 1 ? '#ff30ff' : '#00ffcc'
+                                }}
+                            />
+                        ))}
                     </div>
-                  </Link>
-                </Col>
-              ))}
-            </Row>
-          </Container>
-        </div>
-      </section>
-    </>
-  );
+                </div>
+
+                {/* Your original content - EXACTLY as you had it */}
+                <div className="content-wrapper">
+                    <div className="d-none d-lg-block" style={{marginTop: '60px', paddingTop: '60px'}}></div>
+
+                    <Container className="pt-5">
+                        {/* Added ref to h2 and span */}
+                        <h2 ref={h2Ref} className="h1 text-center text-md-start mb-lg-4 pt-1 pt-md-4">
+                            Why Perth Businesses Choose <span ref={spanRef} className="text-gradient-primary">McWIN iTECH</span>
+                        </h2>
+
+                        <Row className="align-items-center pb-5 mb-lg-2">
+                            <Col md={8} className="text-center text-md-start">
+                                <p className="fs-lg text-muted mb-md-0">
+                                    Convert browsers to buyers with Perth's most trusted digital team. Local expertise,
+                                    global results—high-performing websites that boost conversions 67% higher, dominate
+                                    Google #1 rankings, and deliver long-term scalable growth.
+                                </p>
+                            </Col>
+                        </Row>
+
+                        <Row className="row-cols-1 row-cols-md-3">
+                            {services.map((service, index) => (
+                                <Col key={index} className="py-4 my-2 my-sm-3">
+                                    <Link
+                                        href="#"
+                                        className="card card-hover h-100 border-0 shadow-sm text-decoration-none pt-5 px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
+                                    >
+                                        <div className="card-body pt-3">
+                                            <div
+                                                className="d-inline-block bg_gradient_primary shadow-primary rounded-3 position-absolute top-0 translate-middle-y p-3">
+                                                <Image
+                                                    src={service.icon}
+                                                    alt={service.title}
+                                                    width={40}
+                                                    height={40}
+                                                    className="d-block m-1"
+                                                />
+                                            </div>
+
+                                            <h2 className="h4 d-inline-flex align-items-center">
+                                                {service.title}
+                                            </h2>
+                                            <div className="hr-indicator mb-2"/>
+                                            <p className="fs-sm text-body mb-0">{service.description}</p>
+                                        </div>
+                                    </Link>
+                                </Col>
+                            ))}
+                        </Row>
+                    </Container>
+                </div>
+            </section>
+        </>
+    );
 };
 
 export default Choose;

@@ -147,8 +147,7 @@ $popover-bg-dark: #14171f !default;
 
 // Toasts
 
-$toast-background-color-dark:
-  linear-gradient(0deg, rgba($white, 0.04), rgba($white, 0.04)), $dark !default;
+$toast-background-color-dark: linear-gradient(0deg, rgba($white, 0.04), rgba($white, 0.04)), $dark !default;
 $toast-border-color-dark: $border-light-color !default;
 
 // Modal

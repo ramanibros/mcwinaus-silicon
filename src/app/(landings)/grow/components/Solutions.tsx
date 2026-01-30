@@ -1,15 +1,14 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { Container, Card, CardBody, Col, Row } from 'react-bootstrap';
+import React, {useEffect, useRef} from 'react';
+import Image, {StaticImageData} from 'next/image';
+import {Col, Container, Row} from 'react-bootstrap';
 import icon1 from '@/assets/img/landing/software-agency-3/icons/01.svg';
 import icon2 from '@/assets/img/landing/software-agency-3/icons/02.svg';
 import icon3 from '@/assets/img/landing/software-agency-3/icons/03.svg';
 import icon4 from '@/assets/img/landing/software-agency-3/icons/04.svg';
-import IconifyIcon from "@/components/IconifyIcon";
 import Link from "next/link";
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 type PointsItem = {
     title: string;
@@ -61,7 +60,7 @@ const solutionsData: Solution[] = [
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const Solutions = () => {
@@ -82,13 +81,13 @@ const Solutions = () => {
             });
 
             tl.fromTo(h2Ref.current,
-                { opacity: 0, y: 60 },
-                { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+                {opacity: 0, y: 60},
+                {opacity: 1, y: 0, duration: 1, ease: "power3.out"}
             );
 
             tl.fromTo(spanRef.current,
-                { 
-                    opacity: 0, 
+                {
+                    opacity: 0,
                     scale: 0.8,
                     backgroundPosition: "100% 0%"
                 },
@@ -182,7 +181,7 @@ const Solutions = () => {
     ];
 
     return (
-        <section 
+        <section
             className="brand-solutions-section py-5 position-relative overflow-hidden"
             style={{
                 backgroundColor: '#ffffff',
@@ -192,56 +191,62 @@ const Solutions = () => {
             <Container className="py-lg-5">
                 {/* Heading */}
                 <div className="text-center mb-5 pb-lg-3">
-                    <h2 
+                    <h2
                         ref={h2Ref}
                         className="display-4 fw-bold mb-4"
-                        style={{ color: '#1e293b' }}
+                        style={{color: '#1e293b'}}
                     >
-                        How our <span 
-                            ref={spanRef}
-                            className="brand-solutions-gradient-text text-gradient-primary fw-bold"
-                            style={{
-                                background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #10b981 100%)',
-                                backgroundSize: '200% 200%',
-                                backgroundClip: 'text',
-                                WebkitBackgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent',
-                                display: 'inline-block'
-                            }}
-                        >
+                        How our <span
+                        ref={spanRef}
+                        className="brand-solutions-gradient-text text-gradient-primary fw-bold"
+                        style={{
+                            background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #10b981 100%)',
+                            backgroundSize: '200% 200%',
+                            backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            display: 'inline-block'
+                        }}
+                    >
                             Perth Brand
                         </span> Agency Drives Growth.
                     </h2>
-                    <p 
+                    <p
                         className="lead mb-0"
-                        style={{ 
+                        style={{
                             color: '#64748b',
                             fontSize: '1.25rem',
                             maxWidth: '700px',
                             margin: '0 auto'
                         }}
                     >
-                        Expert marketing solutions crafted specifically for Perth businesses to accelerate growth and market presence
+                        Expert marketing solutions crafted specifically for Perth businesses to accelerate growth and
+                        market presence
                     </p>
                 </div>
-                
+
                 <Row xs={1} md={2} className="g-4 g-lg-5">
                     {solutionsData.map((item, index) => (
                         <Col key={item.id}>
-                            <div 
-                                ref={el => cardsRef.current[index] = el}
+                            <div
+                                ref={el => {
+                                    if (el) cardsRef.current[index] = el;
+                                }}
+
                                 className="brand-solutions-card-wrapper h-100"
-                                style={{ '--index': index, '--color': colorSchemes[index].mainColor } as any}
+                                style={{'--index': index, '--color': colorSchemes[index].mainColor} as any}
                             >
-                                <Link href={item.url} className="brand-solutions-link text-decoration-none d-block h-100">
-                                    <div className="brand-solutions-card position-relative overflow-hidden h-100 rounded-4">
+                                <Link href={item.url}
+                                      className="brand-solutions-link text-decoration-none d-block h-100">
+                                    <div
+                                        className="brand-solutions-card position-relative overflow-hidden h-100 rounded-4">
                                         {/* Animated gradient border */}
-                                        <div className="brand-solutions-border" />
-                                        
+                                        <div className="brand-solutions-border"/>
+
                                         {/* Floating particles */}
                                         <div className="brand-solutions-particles">
                                             {[...Array(8)].map((_, i) => (
-                                                <div 
+                                                <div
                                                     key={i}
                                                     className="brand-solutions-particle"
                                                     style={{
@@ -254,11 +259,12 @@ const Solutions = () => {
                                                 />
                                             ))}
                                         </div>
-                                        
+
                                         {/* Card content */}
-                                        <div className="brand-solutions-content position-relative h-100 p-3 p-xl-4 d-flex flex-column">
+                                        <div
+                                            className="brand-solutions-content position-relative h-100 p-3 p-xl-4 d-flex flex-column">
                                             {/* Icon with floating animation */}
-                                            <div 
+                                            <div
                                                 className="brand-solutions-icon-container mb-4 position-relative"
                                                 style={{
                                                     width: '80px',
@@ -272,21 +278,21 @@ const Solutions = () => {
                                                     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
                                                 }}
                                             >
-                                                <div 
+                                                <div
                                                     className="brand-solutions-icon-glow"
-                                                    style={{ background: colorSchemes[index].lightBg }}
+                                                    style={{background: colorSchemes[index].lightBg}}
                                                 />
                                                 <Image
                                                     src={item.icon}
                                                     alt={item.title}
                                                     width={36}
                                                     height={36}
-                                                    style={{ color: colorSchemes[index].iconColor }}
+                                                    style={{color: colorSchemes[index].iconColor}}
                                                 />
                                             </div>
-                                            
+
                                             {/* Title */}
-                                            <h3 
+                                            <h3
                                                 className="h3 fw-bold mb-3"
                                                 style={{
                                                     color: '#1e293b',
@@ -297,9 +303,9 @@ const Solutions = () => {
                                             >
                                                 {item.title}
                                             </h3>
-                                            
+
                                             {/* Description */}
-                                            <p 
+                                            <p
                                                 className="mb-0"
                                                 style={{
                                                     color: '#475569',
@@ -311,7 +317,7 @@ const Solutions = () => {
                                             >
                                                 {item.description}
                                             </p>
-                                       
+
                                         </div>
                                     </div>
                                 </Link>
@@ -339,9 +345,8 @@ const Solutions = () => {
                 .brand-solutions-card {
                     background: #ffffff;
                     border: 1px solid #cfcfcf;
-                    box-shadow: 
-                        0 4px 20px rgba(0, 0, 0, 0.05),
-                        0 1px 3px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05),
+                    0 1px 3px rgba(0, 0, 0, 0.1);
                     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
                     transform-style: preserve-3d;
                     position: relative;
@@ -354,15 +359,14 @@ const Solutions = () => {
                     border-radius: 11px;
                     padding: 2px;
                     background: linear-gradient(
-                        135deg,
-                        var(--color),
-                        transparent 30%,
-                        transparent 70%,
-                        var(--color)
+                            135deg,
+                            var(--color),
+                            transparent 30%,
+                            transparent 70%,
+                            var(--color)
                     );
-                    -webkit-mask: 
-                        linear-gradient(#fff 0 0) content-box, 
-                        linear-gradient(#fff 0 0);
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
                     -webkit-mask-composite: xor;
                     mask-composite: exclude;
                     opacity: 0;
@@ -444,13 +448,9 @@ const Solutions = () => {
 
                 /* HOVER ANIMATIONS - UNIQUE FOR EACH CARD */
                 .brand-solutions-link:hover .brand-solutions-card {
-                    transform: 
-                        translateY(-12px) 
-                        rotateX(2deg) 
-                        rotateY(1deg);
-                    box-shadow: 
-                        0 30px 60px rgba(0, 0, 0, 0.12),
-                        0 15px 40px rgba(0, 0, 0, 0.08);
+                    transform: translateY(-12px) rotateX(2deg) rotateY(1deg);
+                    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12),
+                    0 15px 40px rgba(0, 0, 0, 0.08);
                 }
 
                 /* Border animation on hover */
@@ -475,9 +475,8 @@ const Solutions = () => {
                 .brand-solutions-link:hover .brand-solutions-icon-container {
                     transform: translateY(-5px) scale(1.05);
                     border-color: var(--color);
-                    box-shadow: 
-                        0 15px 40px var(--color, rgba(59, 130, 246, 0.2)),
-                        0 5px 15px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 15px 40px var(--color, rgba(59, 130, 246, 0.2)),
+                    0 5px 15px rgba(0, 0, 0, 0.1);
                 }
 
                 .brand-solutions-link:hover .brand-solutions-icon-glow {
@@ -520,7 +519,7 @@ const Solutions = () => {
                     .brand-solutions-content {
                         padding: 1.75rem !important;
                     }
-                    
+
                     h3 {
                         font-size: 1.5rem !important;
                     }
@@ -530,12 +529,12 @@ const Solutions = () => {
                     .brand-solutions-card {
                         height: 320px !important;
                     }
-                    
+
                     .brand-solutions-icon-container {
                         width: 70px;
                         height: 70px;
                     }
-                    
+
                     .display-4 {
                         font-size: 2.5rem !important;
                     }
@@ -545,19 +544,19 @@ const Solutions = () => {
                     .brand-solutions-section {
                         padding: 3rem 0 !important;
                     }
-                    
+
                     .brand-solutions-card {
                         height: 300px !important;
                     }
-                    
+
                     .brand-solutions-content {
                         padding: 1.5rem !important;
                     }
-                    
+
                     h3 {
                         font-size: 1.4rem !important;
                     }
-                    
+
                     .lead {
                         font-size: 1.1rem !important;
                     }
@@ -567,16 +566,16 @@ const Solutions = () => {
                     .brand-solutions-card {
                         height: 280px !important;
                     }
-                    
+
                     .brand-solutions-icon-container {
                         width: 60px;
                         height: 60px;
                     }
-                    
+
                     .display-4 {
                         font-size: 2rem !important;
                     }
-                    
+
                     .brand-solutions-particle {
                         display: none;
                     }
@@ -586,7 +585,7 @@ const Solutions = () => {
                     .brand-solutions-card {
                         height: 320px !important;
                     }
-                    
+
                     .brand-solutions-content p {
                         font-size: 0.95rem !important;
                     }

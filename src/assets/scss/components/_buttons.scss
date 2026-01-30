@@ -19,7 +19,9 @@
   &:disabled,
   &.disabled {
     box-shadow: none !important;
-  } // stylelint-disable-line declaration-no-important
+  }
+
+  // stylelint-disable-line declaration-no-important
 }
 
 // Override solid buttons
@@ -132,7 +134,7 @@
 
   padding-left: 0.125rem;
   color: var(
-    --#{$prefix}btn-video-color
+                  --#{$prefix}btn-video-color
   ) !important; // stylelint-disable-line declaration-no-important
   background-color: var(--#{$prefix}btn-video-bg);
   border: 0;
@@ -145,19 +147,19 @@
 
   &.bg-white {
     color: var(
-      --#{$prefix}btn-video-white-color
+                    --#{$prefix}btn-video-white-color
     ) !important; // stylelint-disable-line declaration-no-important
   }
 
   &:hover {
     color: var(
-      --#{$prefix}btn-video-hover-color
+                    --#{$prefix}btn-video-hover-color
     ) !important; // stylelint-disable-line declaration-no-important
     background-color: var(
-      --#{$prefix}btn-video-hover-bg
+                    --#{$prefix}btn-video-hover-bg
     ) !important; // stylelint-disable-line declaration-no-important
     @include box-shadow(
-      var(--#{$prefix}btn-video-hover-shadow) !important
+                    var(--#{$prefix}btn-video-hover-shadow) !important
     ); // stylelint-disable-line declaration-no-important
   }
 }
@@ -166,6 +168,7 @@
 
 .btn-group .btn {
   --#{$prefix}btn-padding-x: #{$input-btn-padding-x * 0.75};
+
   &.dropdown-toggle-split {
     --#{$prefix}btn-padding-x: #{$input-btn-padding-x * 0.5};
     padding: {
@@ -174,9 +177,11 @@
     }
   }
 }
+
 .btn-group-lg .btn,
 .btn-group .btn-lg {
   --#{$prefix}btn-padding-x: #{$input-btn-padding-x-lg * 0.75};
+
   &.dropdown-toggle-split {
     --#{$prefix}btn-padding-x: #{$input-btn-padding-x-lg * 0.5};
     padding: {
@@ -185,9 +190,11 @@
     }
   }
 }
+
 .btn-group-sm .btn,
 .btn-group .btn-sm {
   --#{$prefix}btn-padding-x: #{$input-btn-padding-x-sm * 0.75};
+
   &.dropdown-toggle-split {
     --#{$prefix}btn-padding-x: #{$input-btn-padding-x-sm * 0.5};
     padding: {
@@ -229,6 +236,7 @@
   @include border-radius(var(--#{$prefix}btn-scroll-top-border-radius));
   opacity: 0;
   transition: $btn-scroll-top-transition;
+
   > .btn-scroll-top-icon {
     font: {
       size: var(--#{$prefix}btn-scroll-top-icon-size);
@@ -242,15 +250,15 @@
     right: 100%;
     visibility: hidden;
     opacity: 0;
-    transition:
-      opacity 0.25s ease-in-out,
-      visibility 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out,
+    visibility 0.25s ease-in-out;
     transform: translateY(-50%);
   }
 
   &:hover {
     color: var(--#{$prefix}btn-scroll-top-hover-color);
     background-color: var(--#{$prefix}btn-scroll-top-hover-bg);
+
     .btn-scroll-top-tooltip {
       visibility: visible;
       opacity: 1;

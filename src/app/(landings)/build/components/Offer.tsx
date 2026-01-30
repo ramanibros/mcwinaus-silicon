@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import React, {useEffect, useRef} from 'react';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 import dashboard from '@/assets/img/build-service/dashboard.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
@@ -10,7 +10,7 @@ import IconifyIcon from '@/components/IconifyIcon';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const Offer = () => {
@@ -23,7 +23,7 @@ const Offer = () => {
         if (h2Ref.current && spanRef.current) {
             const h2Text = h2Ref.current;
             const spanText = spanRef.current;
-            
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: h2Ref.current,
@@ -35,8 +35,8 @@ const Offer = () => {
             });
 
             tl.fromTo(h2Text,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, ease: "power2.out"}
             );
 
             tl.fromTo(spanText,
@@ -74,9 +74,11 @@ const Offer = () => {
                             </h2>
                             <Row className="row-cols-1 row-cols-sm-2 gx-4 gy-4">
                                 <Col>
-                                    <div className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
+                                    <div
+                                        className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
                                         <div className="d-flex align-items-center mb-3">
-                                            <div className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
+                                            <div
+                                                className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
                                                 <IconifyIcon
                                                     icon="bx:rocket"
                                                     className="feature-icon text-white"
@@ -94,11 +96,13 @@ const Offer = () => {
                                     </div>
                                 </Col>
                                 <Col>
-                                    <div className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
+                                    <div
+                                        className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
                                         <div className="d-flex align-items-center mb-3">
-                                            <div className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
-                                                <IconifyIcon 
-                                                    icon="bx:like" 
+                                            <div
+                                                className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
+                                                <IconifyIcon
+                                                    icon="bx:like"
                                                     className="feature-icon text-white"
                                                     style={{fontSize: '1.5rem'}}
                                                 />
@@ -114,11 +118,13 @@ const Offer = () => {
                                     </div>
                                 </Col>
                                 <Col>
-                                    <div className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
+                                    <div
+                                        className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
                                         <div className="d-flex align-items-center mb-3">
-                                            <div className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
-                                                <IconifyIcon 
-                                                    icon="bx:group" 
+                                            <div
+                                                className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
+                                                <IconifyIcon
+                                                    icon="bx:group"
                                                     className="feature-icon text-white"
                                                     style={{fontSize: '1.5rem'}}
                                                 />
@@ -134,9 +140,11 @@ const Offer = () => {
                                     </div>
                                 </Col>
                                 <Col>
-                                    <div className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
+                                    <div
+                                        className="feature-card bg-white rounded-3 p-4 border-0 shadow-lg h-100 position-relative overflow-hidden">
                                         <div className="d-flex align-items-center mb-3">
-                                            <div className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
+                                            <div
+                                                className="feature-icon-wrapper d-flex align-items-center justify-content-center me-3">
                                                 <IconifyIcon
                                                     icon="bx:time-five"
                                                     className="feature-icon text-white"
@@ -156,10 +164,10 @@ const Offer = () => {
                             </Row>
                         </div>
                     </Col>
-                    <Image 
-                        src={dashboard} 
-                        width="836" 
-                        className="ms-3 ms-sm-5 ms-xl-3 shadow-lg rounded-4" 
+                    <Image
+                        src={dashboard}
+                        width="836"
+                        className="ms-3 ms-sm-5 ms-xl-3 shadow-lg rounded-4"
                         alt="Dashboard"
                         style={{maxWidth: '100%', height: 'auto'}}
                     />

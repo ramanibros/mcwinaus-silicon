@@ -54,7 +54,8 @@ const iconBoxes = [
 const Iconboxes = () => {
     return (
         <section className="container pt-1 pt-xl-3 pb-5">
-            <h2 className="h1 pb-3 pb-md-0 mb-md-5">How our <span className="text-gradient-primary">Developing</span> Help you to build.</h2>
+            <h2 className="h1 pb-3 pb-md-0 mb-md-5">How our <span
+                className="text-gradient-primary">Developing</span> Help you to build.</h2>
 
             <Row xs={1} md={3} className="g-4 pt-2 pt-md-4 pb-lg-2">
                 {iconBoxes.map(item => (

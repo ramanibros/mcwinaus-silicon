@@ -17,54 +17,54 @@ import pythonLight from '@/assets/img/landing/software-agency-3/technologies/pyt
 import pythonDark from '@/assets/img/landing/software-agency-3/technologies/python-dark.svg';
 
 type Technology = {
-  name: string;
-  logoLight: StaticImageData;
-  logoDark: StaticImageData;
+    name: string;
+    logoLight: StaticImageData;
+    logoDark: StaticImageData;
 };
 
 const technologies: Technology[] = [
-  { name: 'Javascript', logoLight: jsLight, logoDark: jsDark },
-  { name: 'Node.js', logoLight: nodeLight, logoDark: nodeDark },
-  { name: 'React', logoLight: reactLight, logoDark: reactDark },
-  { name: 'PHP', logoLight: phpLight, logoDark: phpDark },
-  { name: 'Angular', logoLight: angularLight, logoDark: angularDark },
-  { name: 'Python', logoLight: pythonLight, logoDark: pythonDark },
+    {name: 'Javascript', logoLight: jsLight, logoDark: jsDark},
+    {name: 'Node.js', logoLight: nodeLight, logoDark: nodeDark},
+    {name: 'React', logoLight: reactLight, logoDark: reactDark},
+    {name: 'PHP', logoLight: phpLight, logoDark: phpDark},
+    {name: 'Angular', logoLight: angularLight, logoDark: angularDark},
+    {name: 'Python', logoLight: pythonLight, logoDark: pythonDark},
 ];
 
 const Technologies = () => {
-  return (
-    <section className="py-5 bg-light dark:bg-dark">
-      <Container>
-        <Row className="text-center mb-4">
-          <Col>
-            <h2 className="h1">Technologies We Use</h2>
-          </Col>
-        </Row>
+    return (
+        <section className="py-5 bg-light dark:bg-dark">
+            <Container>
+                <Row className="text-center mb-4">
+                    <Col>
+                        <h2 className="h1">Technologies We Use</h2>
+                    </Col>
+                </Row>
 
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={6}
-          loop={true}
-          autoplay={{ delay: 2000 }}
-          className="pb-4"
-        >
-          {technologies.map((tech, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="d-flex flex-column align-items-center">
-                <div className="d-block dark:d-none">
-                  <Image src={tech.logoLight} alt={tech.name} className="img-fluid" />
-                </div>
-                <div className="d-none dark:d-block">
-                  <Image src={tech.logoDark} alt={tech.name} className="img-fluid" />
-                </div>
-                <p className="mt-2">{tech.name}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </Container>
-    </section>
-  );
+                <Swiper
+                    spaceBetween={30}
+                    slidesPerView={6}
+                    loop={true}
+                    autoplay={{delay: 2000}}
+                    className="pb-4"
+                >
+                    {technologies.map((tech, idx) => (
+                        <SwiperSlide key={idx}>
+                            <div className="d-flex flex-column align-items-center">
+                                <div className="d-block dark:d-none">
+                                    <Image src={tech.logoLight} alt={tech.name} className="img-fluid"/>
+                                </div>
+                                <div className="d-none dark:d-block">
+                                    <Image src={tech.logoDark} alt={tech.name} className="img-fluid"/>
+                                </div>
+                                <p className="mt-2">{tech.name}</p>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </Container>
+        </section>
+    );
 };
 
 export default Technologies;

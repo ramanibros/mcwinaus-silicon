@@ -4,214 +4,216 @@ import features1 from '@/assets/img/landing/software-agency-1/features/01.svg';
 import features2 from '@/assets/img/landing/software-agency-1/features/02.svg';
 import features3 from '@/assets/img/landing/software-agency-1/features/03.svg';
 import features4 from '@/assets/img/landing/software-agency-1/features/04.svg';
-import Image, { StaticImageData } from 'next/image';
-import React, { useEffect, useRef } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image, {StaticImageData} from 'next/image';
+import React, {useEffect, useRef} from 'react';
+import {Col, Container, Row} from 'react-bootstrap';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
 type featureType = {
-  id: number;
-  icon: StaticImageData;
-  title: string;
-  description: string;
-  colorClass: string;
-  gradient: string;
+    id: number;
+    icon: StaticImageData;
+    title: string;
+    description: string;
+    colorClass: string;
+    gradient: string;
 };
 
 const features: featureType[] = [
-  {
-    id: 1,
-    icon: features1,
-    title: 'Perth scale specialists',
-    description: '25+ local experts delivering 3x faster scaling than offshore agencies with guaranteed results.',
-    colorClass: 'feature-indigo',
-    gradient: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)'
-  },
-  {
-    id: 2,
-    icon: features2,
-    title: 'No vendor lock-in',
-    description: 'Clean code, full documentation, and easy migration—your product always stays in your control.',
-    colorClass: 'feature-emerald',
-    gradient: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)'
-  },
-  {
-    id: 3,
-    icon: features3,
-    title: 'Future-proof architecture',
-    description: 'React, AWS, and API-first systems built to scale 10x without breaking for long-term ROI.',
-    colorClass: 'feature-blue',
-    gradient: 'linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)'
-  },
-  {
-    id: 4,
-    icon: features4,
-    title: 'Perth-based growth partner',
-    description: 'A WA-focused team that understands local business growth—not just tech support.',
-    colorClass: 'feature-purple',
-    gradient: 'linear-gradient(135deg, #8B5CF6 0%, #D946EF 100%)'
-  },
+    {
+        id: 1,
+        icon: features1,
+        title: 'Perth scale specialists',
+        description: '25+ local experts delivering 3x faster scaling than offshore agencies with guaranteed results.',
+        colorClass: 'feature-indigo',
+        gradient: 'linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%)'
+    },
+    {
+        id: 2,
+        icon: features2,
+        title: 'No vendor lock-in',
+        description: 'Clean code, full documentation, and easy migration—your product always stays in your control.',
+        colorClass: 'feature-emerald',
+        gradient: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)'
+    },
+    {
+        id: 3,
+        icon: features3,
+        title: 'Future-proof architecture',
+        description: 'React, AWS, and API-first systems built to scale 10x without breaking for long-term ROI.',
+        colorClass: 'feature-blue',
+        gradient: 'linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)'
+    },
+    {
+        id: 4,
+        icon: features4,
+        title: 'Perth-based growth partner',
+        description: 'A WA-focused team that understands local business growth—not just tech support.',
+        colorClass: 'feature-purple',
+        gradient: 'linear-gradient(135deg, #8B5CF6 0%, #D946EF 100%)'
+    },
 ];
 
 const Features = () => {
-  const h2Ref = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
-  const pRef = useRef<HTMLParagraphElement>(null);
-  const featureCardsRef = useRef<(HTMLDivElement | null)[]>([]);
+    const h2Ref = useRef<HTMLHeadingElement>(null);
+    const spanRef = useRef<HTMLSpanElement>(null);
+    const pRef = useRef<HTMLParagraphElement>(null);
+    const featureCardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
 
-    // Title animation - same as FAQ component
-    if (h2Ref.current && spanRef.current) {
-      const h2Text = h2Ref.current;
-      const spanText = spanRef.current;
+        // Title animation - same as FAQ component
+        if (h2Ref.current && spanRef.current) {
+            const h2Text = h2Ref.current;
+            const spanText = spanRef.current;
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1,
-          markers: false,
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: h2Ref.current,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: 1,
+                    markers: false,
+                }
+            });
+
+            tl.fromTo(h2Text,
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, ease: "power2.out"}
+            );
+
+            tl.fromTo(spanText,
+                {opacity: 0, scale: 0.8},
+                {opacity: 1, scale: 1, duration: 1.2, ease: "back.out(1.7)"},
+                "-=0.8"
+            );
         }
-      });
 
-      tl.fromTo(h2Text,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
-      );
-
-      tl.fromTo(spanText,
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: 1.2, ease: "back.out(1.7)" },
-        "-=0.8"
-      );
-    }
-
-    // Subtitle animation
-    if (pRef.current) {
-      gsap.fromTo(pRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: pRef.current,
-            start: "top 85%",
-            end: "top 50%",
-            scrub: 1,
-            markers: false,
-          }
+        // Subtitle animation
+        if (pRef.current) {
+            gsap.fromTo(pRef.current,
+                {opacity: 0, y: 30},
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out",
+                    scrollTrigger: {
+                        trigger: pRef.current,
+                        start: "top 85%",
+                        end: "top 50%",
+                        scrub: 1,
+                        markers: false,
+                    }
+                }
+            );
         }
-      );
-    }
 
-    // Feature cards animation
-    featureCardsRef.current.forEach((card, index) => {
-      if (card) {
-        gsap.fromTo(card,
-          {
-            opacity: 0,
-            y: 60,
-            scale: 0.95
-          },
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            duration: 0.8,
-            delay: index * 0.15,
-            ease: "back.out(1.2)",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 90%",
-              end: "top 50%",
-              scrub: false,
-              toggleActions: "play none none none",
-              markers: false,
+        // Feature cards animation
+        featureCardsRef.current.forEach((card, index) => {
+            if (card) {
+                gsap.fromTo(card,
+                    {
+                        opacity: 0,
+                        y: 60,
+                        scale: 0.95
+                    },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1,
+                        duration: 0.8,
+                        delay: index * 0.15,
+                        ease: "back.out(1.2)",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 90%",
+                            end: "top 50%",
+                            scrub: false,
+                            toggleActions: "play none none none",
+                            markers: false,
+                        }
+                    }
+                );
             }
-          }
-        );
-      }
-    });
+        });
 
-    return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
+
+    const addCardToRefs = (el: HTMLDivElement | null, index: number) => {
+        featureCardsRef.current[index] = el;
     };
-  }, []);
 
-  const addCardToRefs = (el: HTMLDivElement | null, index: number) => {
-    featureCardsRef.current[index] = el;
-  };
-
-  return (
-    <section className="py-5 my-2 my-md-4 my-lg-5">
-      <Container>
-        <div className="text-center mb-5">
-          <h2 ref={h2Ref} className="h1 mb-4 fw-bold">
-            Why Perth Businesses Choose <span ref={spanRef} className="text-gradient-primary">McWIN iTECH</span> to Scale
-          </h2>
-          <p ref={pRef} className="fs-lg text-muted mx-auto" style={{ maxWidth: '700px' }}>
-            Scale without limits with Perth's most trusted tech team. Local expertise, global results—systems engineered to increase conversions 3x and stay on top.
-          </p>
-        </div>
-
-        <Row xs={1} sm={2} lg={4} className="g-4">
-          {features.map((feature, index) => (
-            <Col key={feature.id}>
-              <div 
-                ref={(el) => addCardToRefs(el, index)}
-                className={`feature-card ${feature.colorClass} h-100`}
-              >
-                <div className="p-4 h-100 d-flex flex-column">
-                  {/* Icon Circle */}
-                  <div className="mb-4">
-                    <div className="feature-icon-container mb-3">
-                      <div className="feature-icon-circle">
-                        <div className="icon-wrapper">
-                          <Image 
-                            src={feature.icon} 
-                            alt={feature.title}
-                            width={36}
-                            height={36}
-                            className="icon-img"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Feature Number */}
-                    <div className="feature-number">
-                      <span>0{feature.id}</span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="feature-title mb-3">
-                    {feature.title}
-                  </h3>
-                  
-                  <p className="feature-description mb-4">
-                    {feature.description}
-                  </p>
-
-                  {/* Learn More Link */}
-                  <div className="mt-auto pt-3">
-                    <div className="feature-indicator" />
-                  </div>
+    return (
+        <section className="py-5 my-2 my-md-4 my-lg-5">
+            <Container>
+                <div className="text-center mb-5">
+                    <h2 ref={h2Ref} className="h1 mb-4 fw-bold">
+                        Why Perth Businesses Choose <span ref={spanRef}
+                                                          className="text-gradient-primary">McWIN iTECH</span> to Scale
+                    </h2>
+                    <p ref={pRef} className="fs-lg text-muted mx-auto" style={{maxWidth: '700px'}}>
+                        Scale without limits with Perth's most trusted tech team. Local expertise, global
+                        results—systems engineered to increase conversions 3x and stay on top.
+                    </p>
                 </div>
-              </div>
-            </Col>
-          ))}
-        </Row>
-        
-        <style jsx global>{`
+
+                <Row xs={1} sm={2} lg={4} className="g-4">
+                    {features.map((feature, index) => (
+                        <Col key={feature.id}>
+                            <div
+                                ref={(el) => addCardToRefs(el, index)}
+                                className={`feature-card ${feature.colorClass} h-100`}
+                            >
+                                <div className="p-4 h-100 d-flex flex-column">
+                                    {/* Icon Circle */}
+                                    <div className="mb-4">
+                                        <div className="feature-icon-container mb-3">
+                                            <div className="feature-icon-circle">
+                                                <div className="icon-wrapper">
+                                                    <Image
+                                                        src={feature.icon}
+                                                        alt={feature.title}
+                                                        width={36}
+                                                        height={36}
+                                                        className="icon-img"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Feature Number */}
+                                        <div className="feature-number">
+                                            <span>0{feature.id}</span>
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <h3 className="feature-title mb-3">
+                                        {feature.title}
+                                    </h3>
+
+                                    <p className="feature-description mb-4">
+                                        {feature.description}
+                                    </p>
+
+                                    {/* Learn More Link */}
+                                    <div className="mt-auto pt-3">
+                                        <div className="feature-indicator"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+
+                <style jsx global>{`
           .feature-card {
             background: white;
             border-radius: 16px;
@@ -367,9 +369,9 @@ const Features = () => {
             background: linear-gradient(135deg, #8B5CF6 0%, #D946EF 100%);
           }
         `}</style>
-      </Container>
-    </section>
-  );
+            </Container>
+        </section>
+    );
 };
 
 export default Features;

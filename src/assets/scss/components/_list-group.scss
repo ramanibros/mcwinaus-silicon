@@ -90,7 +90,7 @@
 
     &.active {
       margin-top: calc(
-        var(--#{$prefix}list-group-border-width) * -1
+              var(--#{$prefix}list-group-border-width) * -1
       ); // stylelint-disable-line function-disallowed-list
       border-top-width: var(--#{$prefix}list-group-border-width);
     }
@@ -156,7 +156,7 @@
 
           &.active {
             margin-left: calc(
-              var(--#{$prefix}list-group-border-width) * -1
+                    var(--#{$prefix}list-group-border-width) * -1
             ); // stylelint-disable-line function-disallowed-list
             border-left-width: var(--#{$prefix}list-group-border-width);
           }
@@ -191,12 +191,13 @@
 
 .card .list-group-flush .list-group-item-action {
   margin-bottom: 0;
-  border-bottom: var(--#{$prefix}list-group-border-width) solid
-    var(--#{$prefix}list-group-border-color);
+  border-bottom: var(--#{$prefix}list-group-border-width) solid var(--#{$prefix}list-group-border-color);
   @include border-radius(0);
+
   &:last-child {
     border-bottom: 0;
   }
+
   &.active {
     border-color: var(--#{$prefix}list-group-active-border-color);
   }

@@ -1,7 +1,7 @@
 'use client';
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 type Benefit = {
     id: number;
@@ -51,7 +51,7 @@ const Benefits = () => {
         // GSAP Animation for "benefits" word only
         if (spanRef.current) {
             const spanText = spanRef.current;
-            
+
             gsap.fromTo(spanText,
                 {
                     opacity: 0,
@@ -83,7 +83,7 @@ const Benefits = () => {
         const createWaveLine = () => {
             const wave = document.createElement('div');
             wave.className = 'tech-wave-line';
-            
+
             // Random properties
             const width = Math.random() * 200 + 50;
             const height = Math.random() * 4 + 1;
@@ -92,7 +92,7 @@ const Benefits = () => {
             const opacity = Math.random() * 0.2 + 0.05;
             const duration = Math.random() * 20 + 10;
             const delay = Math.random() * 5;
-            
+
             wave.style.cssText = `
                 position: absolute;
                 width: ${width}px;
@@ -111,9 +111,9 @@ const Benefits = () => {
                 animation: waveMove ${duration}s linear infinite ${delay}s;
                 z-index: 0;
             `;
-            
+
             container.appendChild(wave);
-            
+
             // Remove after animation completes
             setTimeout(() => {
                 if (wave.parentNode === container) {
@@ -142,10 +142,10 @@ const Benefits = () => {
     return (
         <section className="section-wrapper">
             {/* Static Background Gradient */}
-            <div className="static-bg" />
-            
+            <div className="static-bg"/>
+
             {/* Tech Wave Lines Container */}
-            <div ref={wavesRef} className="tech-waves-container" />
+            <div ref={wavesRef} className="tech-waves-container"/>
 
             {/* Header with GSAP animation on "benefits" word */}
             <div className="section-info">

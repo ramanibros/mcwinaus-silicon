@@ -3,217 +3,214 @@ import basic from '@/assets/img/landing/saas-1/pricing/basic.png';
 import standard from '@/assets/img/landing/saas-1/pricing/standard.png';
 import ultimate from '@/assets/img/landing/saas-1/pricing/ultimate.png';
 import IconifyIcon from '@/components/IconifyIcon';
-import Image, { StaticImageData } from 'next/image';
-import React, { useState, useEffect, useRef } from 'react';
-import {
-  Button,
-  Container,
-  Row,
-  Col,
-} from 'react-bootstrap';
+import Image, {StaticImageData} from 'next/image';
+import React, {useEffect, useRef, useState} from 'react';
+import {Col, Container, Row,} from 'react-bootstrap';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 type Feature = {
-  text: string;
-  available: boolean;
+    text: string;
+    available: boolean;
 };
 
 type PricingPlan = {
-  name: string;
-  monthly: number;
-  annually: number;
-  image: StaticImageData;
-  featured: boolean;
-  features: Feature[];
+    name: string;
+    monthly: number;
+    annually: number;
+    image: StaticImageData;
+    featured: boolean;
+    features: Feature[];
 };
 
 const plans: PricingPlan[] = [
-  {
-    name: 'Basic',
-    monthly: 150,
-    annually: 150,
-    image: basic,
-    featured: false,
-    features: [
-      { text: 'Business Logo', available: true },
-      { text: 'Brand Color Guide', available: true },
-      { text: 'Business Card Design', available: false },
-      { text: 'Letter Head Design', available: false },
-      { text: 'Envelope Design', available: false },
-      { text: 'Brochure/Flyer Design', available: false },
-    ],
-  },
-  {
-    name: 'Standard',
-    monthly: 299,
-    annually: 299,
-    image: standard,
-    featured: true,
-    features: [
-      { text: 'Business Logo', available: true },
-      { text: 'Brand Color Guide', available: true },
-      { text: 'Business Card Design', available: true },
-      { text: 'Letter Head Design', available: true },
-      { text: 'Envelope Design', available: false },
-      { text: 'Brochure/Flyer Design', available: false },
-    ],
-  },
-  {
-    name: 'Ultimate',
-    monthly: 350,
-    annually: 350,
-    image: ultimate,
-    featured: false,
-    features: [
-      { text: 'Business Logo', available: true },
-      { text: 'Brand Color Guide', available: true },
-      { text: 'Business Card Design', available: true },
-      { text: 'Letter Head Design', available: true },
-      { text: 'Envelope Design', available: true },
-      { text: 'Brochure/Flyer Design', available: true },
-    ],
-  },
+    {
+        name: 'Basic',
+        monthly: 150,
+        annually: 150,
+        image: basic,
+        featured: false,
+        features: [
+            {text: 'Business Logo', available: true},
+            {text: 'Brand Color Guide', available: true},
+            {text: 'Business Card Design', available: false},
+            {text: 'Letter Head Design', available: false},
+            {text: 'Envelope Design', available: false},
+            {text: 'Brochure/Flyer Design', available: false},
+        ],
+    },
+    {
+        name: 'Standard',
+        monthly: 299,
+        annually: 299,
+        image: standard,
+        featured: true,
+        features: [
+            {text: 'Business Logo', available: true},
+            {text: 'Brand Color Guide', available: true},
+            {text: 'Business Card Design', available: true},
+            {text: 'Letter Head Design', available: true},
+            {text: 'Envelope Design', available: false},
+            {text: 'Brochure/Flyer Design', available: false},
+        ],
+    },
+    {
+        name: 'Ultimate',
+        monthly: 350,
+        annually: 350,
+        image: ultimate,
+        featured: false,
+        features: [
+            {text: 'Business Logo', available: true},
+            {text: 'Brand Color Guide', available: true},
+            {text: 'Business Card Design', available: true},
+            {text: 'Letter Head Design', available: true},
+            {text: 'Envelope Design', available: true},
+            {text: 'Brochure/Flyer Design', available: true},
+        ],
+    },
 ];
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const Package = () => {
-  const [isAnnual, setIsAnnual] = useState(false);
-  
-  // Refs for title animation ONLY
-  const h2Ref = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
+    const [isAnnual, setIsAnnual] = useState(false);
 
-  useEffect(() => {
-    // Title animation for "Pricing" word ONLY
-    if (h2Ref.current && spanRef.current) {
-      const h2Text = h2Ref.current;
-      const spanText = spanRef.current;
-      
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1,
-          markers: false,
+    // Refs for title animation ONLY
+    const h2Ref = useRef<HTMLHeadingElement>(null);
+    const spanRef = useRef<HTMLSpanElement>(null);
+
+    useEffect(() => {
+        // Title animation for "Pricing" word ONLY
+        if (h2Ref.current && spanRef.current) {
+            const h2Text = h2Ref.current;
+            const spanText = spanRef.current;
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: h2Ref.current,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: 1,
+                    markers: false,
+                }
+            });
+
+            tl.fromTo(h2Text,
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, ease: "power2.out"}
+            );
+
+            tl.fromTo(spanText,
+                {
+                    opacity: 0,
+                    scale: 0.8,
+                    backgroundSize: "200% 200%",
+                    backgroundPosition: "100% 0%"
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "back.out(1.7)",
+                    backgroundPosition: "0% 100%",
+                },
+                "-=0.8"
+            );
         }
-      });
 
-      tl.fromTo(h2Text,
-        { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
-      );
+        // Cleanup
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
 
-      tl.fromTo(spanText,
-        {
-          opacity: 0,
-          scale: 0.8,
-          backgroundSize: "200% 200%",
-          backgroundPosition: "100% 0%"
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.2,
-          ease: "back.out(1.7)",
-          backgroundPosition: "0% 100%",
-        },
-        "-=0.8"
-      );
-    }
+    return (
+        <Container className="py-5 my-md-2 my-lg-4 my-xl-5">
+            {/* ORIGINAL TITLE - ONLY added refs */}
+            <h2 ref={h2Ref} className="h1">Our <span ref={spanRef} className="text-gradient-primary">Pricing</span></h2>
+            <div className="hr-indicator mb-4"/>
 
-    // Cleanup
-    return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-    };
-  }, []);
+            {/* ORIGINAL Pricing Cards - NO CHANGES */}
+            <Row className="g-4 g-lg-5 justify-content-center align-items-stretch">
+                {plans.map((plan, idx) => (
+                    <Col key={idx} lg={4} md={6} className="d-flex">
+                        <div
+                            className={`creative-pricing-card w-100 ${plan.featured ? 'featured-card' : 'standard-card'}`}>
+                            {/* Card Shape Background */}
+                            <div className="card-shape"></div>
 
-  return (
-    <Container className="py-5 my-md-2 my-lg-4 my-xl-5">
-      {/* ORIGINAL TITLE - ONLY added refs */}
-      <h2 ref={h2Ref} className="h1">Our <span ref={spanRef} className="text-gradient-primary">Pricing</span></h2>
-      <div className="hr-indicator mb-4" />
+                            {/* Floating Image */}
+                            <div className="floating-image">
+                                <div className="image-wrapper">
+                                    <Image
+                                        src={plan.image}
+                                        width={60}
+                                        height={60}
+                                        alt={`${plan.name} plan`}
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </div>
 
-      {/* ORIGINAL Pricing Cards - NO CHANGES */}
-      <Row className="g-4 g-lg-5 justify-content-center align-items-stretch">
-        {plans.map((plan, idx) => (
-          <Col key={idx} lg={4} md={6} className="d-flex">
-            <div className={`creative-pricing-card w-100 ${plan.featured ? 'featured-card' : 'standard-card'}`}>
-              {/* Card Shape Background */}
-              <div className="card-shape"></div>
-              
-              {/* Floating Image */}
-              <div className="floating-image">
-                <div className="image-wrapper">
-                  <Image
-                    src={plan.image}
-                    width={60}
-                    height={60}
-                    alt={`${plan.name} plan`}
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              
-              {/* Plan Header */}
-              <div className="plan-header text-center mb-3">
-                <div className="plan-badge mb-2">
+                            {/* Plan Header */}
+                            <div className="plan-header text-center mb-3">
+                                <div className="plan-badge mb-2">
                   <span className={`badge ${plan.featured ? 'badge-premium' : 'badge-basic'}`}>
                     {plan.name}
                   </span>
-                </div>
-                <div className="price-display mb-2">
-                  <div className="price-currency">$</div>
-                  <div className="price-amount">{isAnnual ? plan.annually : plan.monthly}</div>
-                </div>
-             
-              </div>
-              
-              {/* Features List with better visibility */}
-              <div className="features-list mb-3">
-                <ul className="list-unstyled">
-                  {plan.features.map((feature, index) => (
-                    <li key={index} className="feature-item mb-2">
-                      <div className={`feature-icon-container ${feature.available ? 'available' : 'unavailable'}`}>
-                        {feature.available ? (
-                          <IconifyIcon icon="bx:check" className="feature-icon-check" />
-                        ) : (
-                          <IconifyIcon icon="bx:x" className="feature-icon-x" />
-                        )}
-                      </div>
-                      <span className={`feature-text ${!feature.available ? 'text-muted' : ''}`}>
+                                </div>
+                                <div className="price-display mb-2">
+                                    <div className="price-currency">$</div>
+                                    <div className="price-amount">{isAnnual ? plan.annually : plan.monthly}</div>
+                                </div>
+
+                            </div>
+
+                            {/* Features List with better visibility */}
+                            <div className="features-list mb-3">
+                                <ul className="list-unstyled">
+                                    {plan.features.map((feature, index) => (
+                                        <li key={index} className="feature-item mb-2">
+                                            <div
+                                                className={`feature-icon-container ${feature.available ? 'available' : 'unavailable'}`}>
+                                                {feature.available ? (
+                                                    <IconifyIcon icon="bx:check" className="feature-icon-check"/>
+                                                ) : (
+                                                    <IconifyIcon icon="bx:x" className="feature-icon-x"/>
+                                                )}
+                                            </div>
+                                            <span className={`feature-text ${!feature.available ? 'text-muted' : ''}`}>
                         {feature.text}
                       </span>
-                    
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              {/* Action Button */}
-              <div className="action-section text-center mt-auto pt-3">
-                <button className={`action-button ${plan.featured ? 'btn-premium' : 'btn-basic'}`}>
-                  <span className="button-text">Contact Now</span>
-                </button>
-              </div>
-              
-              {/* Decorative Elements */}
-              <div className="decorative-element decorative-1"></div>
-              <div className="decorative-element decorative-2"></div>
-              {plan.featured && (
-                <div className="decorative-element decorative-3"></div>
-              )}
-            </div>
-          </Col>
-        ))}
-      </Row>
 
-      <style jsx global>{`
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            {/* Action Button */}
+                            <div className="action-section text-center mt-auto pt-3">
+                                <button className={`action-button ${plan.featured ? 'btn-premium' : 'btn-basic'}`}>
+                                    <span className="button-text">Contact Now</span>
+                                </button>
+                            </div>
+
+                            {/* Decorative Elements */}
+                            <div className="decorative-element decorative-1"></div>
+                            <div className="decorative-element decorative-2"></div>
+                            {plan.featured && (
+                                <div className="decorative-element decorative-3"></div>
+                            )}
+                        </div>
+                    </Col>
+                ))}
+            </Row>
+
+            <style jsx global>{`
         /* COMPACT Pricing Card */
         .creative-pricing-card {
           position: relative;
@@ -617,8 +614,8 @@ const Package = () => {
           }
         }
       `}</style>
-    </Container>
-  );
+        </Container>
+    );
 };
 
 export default Package;

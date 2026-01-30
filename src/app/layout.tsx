@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
-import { Manrope } from 'next/font/google';
+import type {Metadata} from 'next';
+import {Manrope} from 'next/font/google';
 
 import 'swiper/css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,30 +9,30 @@ import AppWrapper from '../components/AppWrapper';
 import favicon from '@/assets/favicon/favicon.ico';
 
 const geistSans = Manrope({
-  variable: '--font-geist-sans',
-  subsets: ['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'vietnamese'],
-  display: 'swap',
-  style: 'normal',
-  weight: ['400', '500', '600', '700', '800'],
+    variable: '--font-geist-sans',
+    subsets: ['cyrillic', 'cyrillic-ext', 'greek', 'latin', 'latin-ext', 'vietnamese'],
+    display: 'swap',
+    style: 'normal',
+    weight: ['400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
-  title: 'McWIN iTECH',
-  description: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services',
-  icons: favicon.src,
+    title: 'McWIN iTECH',
+    description: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services',
+    icons: favicon.src,
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable}`} suppressHydrationWarning>
+    return (
+        <html lang="en">
+        <body className={`${geistSans.variable}`} suppressHydrationWarning>
 
         <AppWrapper>{children}</AppWrapper>
-      </body>
-    </html>
-  );
+        </body>
+        </html>
+    );
 }
