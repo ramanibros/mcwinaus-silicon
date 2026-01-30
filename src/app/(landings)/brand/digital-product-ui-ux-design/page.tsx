@@ -27,7 +27,7 @@ export const metadata = {
         ],
 
         alternates: {
-                canonical: "https://www.mcwinitech.com.au/",
+                canonical: "https://www.mcwinitech.com.au/brand/digital-product-ui-ux-design/",
         }
 };
 const Page = () => {

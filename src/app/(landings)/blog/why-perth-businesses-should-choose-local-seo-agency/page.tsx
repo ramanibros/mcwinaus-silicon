@@ -7,7 +7,24 @@ import NavbarPage from "@/components/navbar/Navbar-page";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 
-export const metadata: Metadata = {title: 'Blog | Why Businesses in Perth Should Choose a Local SEO Agency'};
+export const metadata = {
+        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+
+        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        description:
+            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+        keywords: [
+                "Software Development Services",
+                "Custom Software Development",
+                "Web Application Development",
+                "Mobile App Development",
+                "Full-Stack Development",
+        ],
+
+        alternates: {
+                canonical: "https://www.mcwinitech.com.au/blog/why-perth-businesses-should-choose-local-seo-agency/",
+        }
+};
 
 const Page = () => {
     return (
