@@ -1,4 +1,5 @@
-"use server";
+/*
+"use client";
 
 import nodemailer from "nodemailer";
 
@@ -51,4 +52,4 @@ export async function submitContactForm(formData) {
     } catch (error) {
         return {success: false, error: "Failed to send message"};
     }
-}
+}*/
