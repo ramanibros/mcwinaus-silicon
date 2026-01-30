@@ -2,7 +2,8 @@
 
 import React, {useEffect, useRef} from 'react';
 import Image from 'next/image';
-import {Button, Col, Container, Row} from 'react-bootstrap';
+import Link from 'next/link';
+import {Col, Container, Row} from 'react-bootstrap';
 import {gsap} from 'gsap';
 import {SplitText} from 'gsap/SplitText';
 import clutchRating from '@/assets/img/landing/software-agency-3/clutch-rating.png';
@@ -19,6 +20,7 @@ const Hero = () => {
     const growthRef = useRef<HTMLSpanElement>(null);
     const rightContentRef = useRef<HTMLDivElement>(null);
     const bgOverlayRef = useRef<HTMLSpanElement>(null);
+    const buttonRef = useRef<HTMLAnchorElement>(null);
 
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -142,14 +144,34 @@ const Hero = () => {
                 }
             }
 
-            const button = document.querySelector('.hero-button');
-            if (button) {
-                gsap.from(button, {
-                    scale: 0,
-                    opacity: 0,
-                    duration: 1,
-                    ease: "elastic.out(1, 0.5)",
-                    delay: 1.8
+            // Button entrance animation (from reference code)
+            if (buttonRef.current) {
+                gsap.fromTo(buttonRef.current,
+                    {
+                        opacity: 0,
+                        y: 50,
+                        scale: 0.8,
+                        rotation: -5
+                    },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1,
+                        rotation: 0,
+                        duration: 1,
+                        ease: 'elastic.out(1, 0.5)',
+                        delay: 1.2
+                    }
+                );
+
+                // Add continuous subtle pulse animation
+                gsap.to(buttonRef.current, {
+                    scale: 1.02,
+                    duration: 1.5,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: 'sine.inOut',
+                    delay: 2.5
                 });
             }
 
@@ -168,6 +190,25 @@ const Hero = () => {
 
         return () => ctx.revert();
     }, []);
+
+    // Button hover handlers from reference code
+    const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        gsap.to(e.currentTarget, {
+            scale: 1.05,
+            y: -3,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+    };
+
+    const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        gsap.to(e.currentTarget, {
+            scale: 1.02, // Keep the pulse animation scale
+            y: 0,
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+    };
 
     return (
         <section
@@ -206,13 +247,17 @@ const Hero = () => {
                                     className="mt-n1 clutch-rating"
                                 />
                             </p>
-                            <Button
-                                size="lg"
-                                variant="primary"
-                                className="hero-button"
+                            
+                            {/* Animated Button from reference code */}
+                            <Link
+                                ref={buttonRef}
+                                href="#"
+                                className="brand-project-button position-relative"
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
                             >
-                                Start your project
-                            </Button>
+                                <span className="button-text">Start Your Brand Project</span>
+                            </Link>
                         </div>
                     </Col>
 
@@ -281,6 +326,75 @@ const Hero = () => {
                     </Col>
                 </Row>
             </Container>
+
+            {/* Add CSS styles from reference code */}
+            <style jsx global>{`
+                /* Split text animations */
+                .split-char {
+                    display: inline-block;
+                    transform-origin: 50% 50%;
+                }
+                
+                .split-word {
+                    display: inline-block;
+                }
+                
+                /* Your button styles with animations */
+                .brand-project-button {
+                    position: relative;
+                    text-decoration: none;
+                    color: #fff;
+                    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+                    padding: 14px 25px;
+                    border-radius: 10px;
+                    font-size: 1.25em;
+                    cursor: pointer;
+                    display: inline-block;
+                    border: none;
+                    outline: none;
+                    will-change: transform;
+                    transition: none; /* GSAP handles animations */
+                }
+                
+                .brand-project-button .button-text {
+                    position: relative;
+                    z-index: 1;
+                    font-weight: 600;
+                }
+                
+                .brand-project-button::before {
+                    content: "";
+                    position: absolute;
+                    inset: 1px;
+                    background: #272727;
+                    border-radius: 9px;
+                    transition: opacity 0.5s ease;
+                }
+                
+                .brand-project-button:hover::before {
+                    opacity: 0.7;
+                }
+                
+                .brand-project-button::after {
+                    content: "";
+                    position: absolute;
+                    inset: 0px;
+                    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+                    border-radius: 9px;
+                    transition: opacity 0.5s ease;
+                    opacity: 0;
+                    filter: blur(20px);
+                }
+                
+                .brand-project-button:hover::after {
+                    opacity: 1;
+                }
+                
+                /* Performance optimization */
+                .overflow-hidden {
+                    will-change: transform;
+                }
+            `}</style>
         </section>
     );
 };
