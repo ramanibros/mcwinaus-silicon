@@ -15,9 +15,9 @@ import Package from "@/app/(landings)/grow/components/package";
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        title: "Digital Marketing Agency Perth WA | Drive Real Growth | McWIN iTECH ",
         description:
-            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+            "Digital Marketing Agency Perth WA helping brands grow through SEO, social media, paid ads, and data-driven strategies customised for Perth businesses.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

@@ -8,9 +8,9 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        title: "Contact McWIN iTECH Perth WA | #1 Digital Marketing & IT (2026)",
         description:
-            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+            "Contact McWIN iTECH in Perth WA for powerful digital marketing & IT services. Talk to experts, get fast support & smart growth solutions in 2026.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",
