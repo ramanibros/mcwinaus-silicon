@@ -25,7 +25,7 @@ export const metadata = {
         ],
 
         alternates: {
-                canonical: "https://www.mcwinitech.com.au/",
+                canonical: "https://www.mcwinitech.com.au/grow/paid-marketing/",
         }
 };
 const Page = () => {
