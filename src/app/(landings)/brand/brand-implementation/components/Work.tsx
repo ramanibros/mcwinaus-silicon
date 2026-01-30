@@ -134,7 +134,7 @@ const Work = () => {
                 
                 .service_tools {
                     transition: all 0.3s ease;
-                    filter: grayscale(100%);
+                    /*filter: grayscale(100%);*/
                 }
                 
                 .card-hover:hover .service_tools {

@@ -543,7 +543,7 @@ const Navbar = ({
                                                             </div>
                                                         </div>
 
-                                                        <div className="hr-indicator"></div>
+                                                       {/* <div className="hr-indicator"></div>*/}
 
                                                         <div className="service-links">
                                                             {section.links.map((link, index) => (

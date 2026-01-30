@@ -28,35 +28,35 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Brand Strategy & Positioning',
+        title: 'Websites',
         points: [],
-        url: "/brand/brand-strategy-and-positioning",
-        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger. The Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
+        url: "/build/websites",
+        description: 'Award-winning Perth websites that convert 67% better. Mobile-first design, local SEO built-in, lightning speed. 3x more leads without ad spend waste—proof, not promises, from your local growth partner.'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Visual Identity & Logo Design',
+        title: 'eCommerce',
         points: [],
-        url: "/brand/visual-identity-logo-design",
-        description: 'Award-winning logos, custom colour systems, typography—instant authority boost. Perth businesses stand out 3x more with visual identities that build trust and drive referrals immediately.'
+        url: "/build/ecommerce",
+        description: 'Online stores delivering 3x sales growth. Seamless Australia Post integration, abandoned cart recovery, and payment security. Increase conversions without spending thousands on useless plugins—long-term results guaranteed.'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Digital Product UI/UX Design',
+        title: 'Mobile Apps',
         points: [],
-        url: "/brand/digital-product-ui-ux-design",
-        description: 'Brand-led websites, iOS/Android apps, landing pages—67% higher conversions guaranteed. Perth-first UX mapping turns visitors into customers with seamless, on-brand digital experiences.'
+        url: "/build/mobile-apps",
+        description: 'iOS/Android apps that boost customer retention 2x. Perth-focused push notifications, offline functionality. Expect the unexpected—apps so good that competitors copy them. Local team, global performance.'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Brand Implementation',
+        title: 'Custom Software',
         points: [],
-        url: "/brand/brand-implementation",
-        description: 'Cross-platform consistency, style guides, asset libraries—we\'ve got you covered. Local Perth team ensures perfect execution across web, app, social—long-term brand value guaranteed.'
-    },
+        url: "/build/custom-software",
+        description: 'Bespoke systems cut admin time by 50%. Inventory, CRM, workflows—built for your Perth operations. What makes us different: We genuinely care about your daily challenges and solve them permanently.'
+    }
 ];
 
 // Register GSAP plugins
@@ -212,9 +212,9 @@ const Solutions = () => {
                             Perth Brand
                         </span> Agency Drives Growth.
                     </h2>
-                    <p 
+                    <p
                         className="lead mb-0"
-                        style={{ 
+                        style={{
                             color: '#64748b',
                             fontSize: '1.25rem',
                             maxWidth: '700px',
