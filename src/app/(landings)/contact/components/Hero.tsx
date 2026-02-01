@@ -6,7 +6,6 @@ import {Col, Container, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
 import gsap from 'gsap';
 import {SplitText} from 'gsap/SplitText';
-/*import {submitContactForm} from "@/app/actions/contactAction";*/
 
 // Register SplitText plugin
 if (typeof window !== 'undefined') {
@@ -17,21 +16,39 @@ const Hero = () => {
     const readyTextRef = useRef(null);
     const letsChatTextRef = useRef(null);
 
-
     const formRef = useRef<HTMLFormElement | null>(null);
     const [isPending, startTransition] = useTransition();
     const [status, setStatus] = useState<string | null>(null);
 
-    /*function handleSubmit(formData: FormData) {
+
+    // ✅ SUBMIT HANDLER
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
         setStatus(null);
 
-        startTransition(async () => {
-            const result = await submitContactForm(formData);
+        const formData = new FormData(e.currentTarget);
 
-            setStatus(result.success ? "success" : "error");
-            formRef.current?.reset();
+        startTransition(async () => {
+            try {
+                const res = await fetch('https://www.mcwinitech.com.au/mailer/sendMail.php', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                const data = await res.json();
+
+                if (data.success) {
+                    setStatus('success');
+                    formRef.current?.reset();
+                } else {
+                    setStatus('error');
+                }
+            } catch (err) {
+                setStatus('error');
+            }
         });
-    }*/
+    };
+
 
     useEffect(() => {
         // Split text ONLY for "Ready to grow your Perth business?"
@@ -149,7 +166,7 @@ const Hero = () => {
                     </Col>
 
                     <Col lg={6} className="offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-                        <form className="needs-validation" noValidate> {/*action={handleSubmit} ref={formRef}*/}
+                        <form className="needs-validation" noValidate onSubmit={handleSubmit} ref={formRef}> {/*action={handleSubmit} ref={formRef}*/}
                             <Row className="g-4">
                                 <Col sm={6}>
                                     <label htmlFor="fn" className="form-label fs-base">
@@ -257,4 +274,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;  
+export default Hero;

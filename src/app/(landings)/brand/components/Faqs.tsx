@@ -191,7 +191,7 @@ const Faqs = () => {
                                         target="_blank"
                                         className="btn btn-success btn-sm rounded-pill px-3 d-inline-flex align-items-center"
                                     >
-                                        Whatsapp
+                                        Whatsapp Us
                                         <IconifyIcon icon="bx:right-arrow-alt" className="ms-2"/>
                                     </Link>
                                 </CardBody>
