@@ -379,7 +379,7 @@ const Benefits = () => {
                 }
 
                 .card-content p {
-                    font-size: 0.85em;
+                    font-size: 0.95em;
                     line-height: 1.6;
                     color: rgba(255, 255, 255, 0.85);
                     margin-bottom: 1.5rem;

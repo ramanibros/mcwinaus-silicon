@@ -505,8 +505,8 @@ const Navbar = ({
                                                             <Image
                                                                 src={section.icon}
                                                                 alt={section.title}
-                                                                width={24}
-                                                                height={24}
+                                                                width={30}
+                                                                height={30}
                                                                 style={{objectFit: 'contain'}}
                                                             />
                                                         </div>
