@@ -234,7 +234,7 @@ const Description = () => {
             <Row className="g-lg-5">
                 {/* Right Side Content Box - Updated Design */}
                 <aside className="col-lg-4 col-md-5 offset-xl-1 order-md-2">
-                    <div className="position-sticky top-5">
+                    <div className="position-sticky" style={{ top: '6rem' }}>
                         <div className="pt-4 pt-md-0 ps-xl-4">
                             <Card 
                                 ref={cardRef}
