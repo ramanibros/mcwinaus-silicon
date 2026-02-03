@@ -129,7 +129,12 @@ const TextSession = () => {
         {[0, 1, 2].map((_, i) => (
           <span
             key={i}
-            ref={(el) => el && (techRefs.current[i] = el)}
+            ref={(el) => {
+  if (el) {
+    techRefs.current[i] = el;
+  }
+}}
+
           />
         ))}
       </div>
@@ -173,7 +178,12 @@ const TextSession = () => {
                   <li
                     key={i}
                     className="feature-item"
-                    ref={(el) => el && (featureRefs.current[i] = el)}
+                    ref={(el) => {
+  if (el) {
+    featureRefs.current[i] = el;
+  }
+}}
+
                   >
                     <span className="icon-box">{item.icon}</span>
                     {item.text}

@@ -638,9 +638,6 @@ const Navbar = ({
                                 <li className={`nav-item ${pathname === '/about' ? 'active' : ""}`}>
                                     <Link href="/about" className="nav-link">About Us</Link>
                                 </li>
-                                <li className={`nav-item ${pathname === '/hireresource' ? 'active' : ""}`}>
-                                    <Link href="/hireresource" className="nav-link">Hire Resource</Link>
-                                </li>
                                 <li className={`nav-item ${pathname === '/contact' ? 'active' : ""}`}>
                                     <Link href="/contact" className="nav-link">Contact Us</Link>
                                 </li>

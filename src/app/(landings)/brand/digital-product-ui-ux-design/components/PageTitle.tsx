@@ -138,7 +138,7 @@ const PageTitle = () => {
                             display: 'inline-block'
                         }}
                     >
-                        <span className="button-text">Start Your Brand Project</span>
+                        <span className="button-text">Start Your Project</span>
                     </Link>
                 </Col>
             </Row>

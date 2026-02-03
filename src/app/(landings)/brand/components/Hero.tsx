@@ -197,7 +197,7 @@ const Hero = () => {
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
                             >
-                                <span className="button-text">Start Your Brand Project</span>
+                                <span className="button-text">Start Your Project</span>
                             </Link>
                         </div>
 

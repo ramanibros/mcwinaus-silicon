@@ -24,51 +24,60 @@ type PricingPlan = {
 };
 
 const plans: PricingPlan[] = [
-    {
-        name: 'Basic',
-        monthly: 150,
-        annually: 150,
-        image: basic,
-        featured: false,
-        features: [
-            {text: 'Business Logo', available: true},
-            {text: 'Brand Color Guide', available: true},
-            {text: 'Business Card Design', available: false},
-            {text: 'Letter Head Design', available: false},
-            {text: 'Envelope Design', available: false},
-            {text: 'Brochure/Flyer Design', available: false},
-        ],
-    },
-    {
-        name: 'Standard',
-        monthly: 299,
-        annually: 299,
-        image: standard,
-        featured: true,
-        features: [
-            {text: 'Business Logo', available: true},
-            {text: 'Brand Color Guide', available: true},
-            {text: 'Business Card Design', available: true},
-            {text: 'Letter Head Design', available: true},
-            {text: 'Envelope Design', available: false},
-            {text: 'Brochure/Flyer Design', available: false},
-        ],
-    },
-    {
-        name: 'Ultimate',
-        monthly: 350,
-        annually: 350,
-        image: ultimate,
-        featured: false,
-        features: [
-            {text: 'Business Logo', available: true},
-            {text: 'Brand Color Guide', available: true},
-            {text: 'Business Card Design', available: true},
-            {text: 'Letter Head Design', available: true},
-            {text: 'Envelope Design', available: true},
-            {text: 'Brochure/Flyer Design', available: true},
-        ],
-    },
+  {
+    name: 'Basic',
+    monthly: 299,
+    annually: 299,
+    image: basic,
+    featured: false,
+    features: [
+      { text: 'Mobile friendly, optimised design', available: true },
+      { text: 'One-Pager Website', available: true },
+      { text: 'Home page slider', available: true },
+      { text: 'Domain & hosting set-up', available: true },
+      { text: 'SSL certified', available: true },
+      { text: 'Google Map', available: true },
+      { text: 'Contact form', available: true },
+      { text: 'Basic SEO optimisation', available: true },
+      { text: 'Integration with social platforms', available: true }
+    ]
+  },
+  {
+    name: 'Standard',
+    monthly: 599,
+    annually: 599,
+    image: standard,
+    featured: true,
+    features: [
+      { text: 'Mobile friendly, optimised design', available: true },
+      { text: 'Up to 10 page', available: true },
+      { text: 'Home page slider', available: true },
+      { text: 'Domain & hosting set-up', available: true },
+      { text: 'SSL certified', available: true },
+      { text: 'Google Map', available: true },
+      { text: 'Contact form', available: true },
+      { text: 'Basic SEO optimisation', available: true },
+      { text: 'Integration with social platforms', available: true }
+    ]
+  },
+  {
+    name: 'Ultimate',
+    monthly: 799,
+    annually: 799,
+    image: ultimate,
+    featured: false,
+    features: [
+      { text: 'Mobile friendly, optimised design', available: true },
+      { text: 'Up to 20 page', available: true },
+      { text: 'Home page slider', available: true },
+      { text: 'Domain & hosting set-up', available: true },
+      { text: 'SSL certified', available: true },
+      { text: 'Google Map', available: true },
+      { text: 'Contact form', available: true },
+      { text: 'Basic SEO optimisation', available: true },
+      { text: 'Integration with social platforms', available: true }
+    ]
+  },
 ];
 
 // Register GSAP plugins
