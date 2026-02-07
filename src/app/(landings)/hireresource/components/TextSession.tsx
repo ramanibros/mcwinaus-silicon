@@ -381,7 +381,7 @@ const TextSession = () => {
         .hire-process {
           padding: 120px 0;
           background: #ffffff;
-          overflow: hidden;
+         
         }
 
         .process-grid {
@@ -424,7 +424,7 @@ const TextSession = () => {
         }
 
         .step {
-          font-size: 14px;
+          font-size: 24px;
           font-weight: 600;
           color: #8a8fb3;
           margin-bottom: 8px;
@@ -528,7 +528,7 @@ const TextSession = () => {
         }
 
         .sticky-box {
-          padding: 36px;
+          padding: 20px;
           border-radius: 28px;
           background: linear-gradient(135deg, #f7f8ff, #ffffff);
           border: 1px solid #eceffd;
@@ -576,6 +576,12 @@ const TextSession = () => {
           margin-top: 2px;
           transition: all 0.3s ease;
           position: relative;
+          width: 20px;
+          height: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
         }
 
         .list-icon::after {
@@ -657,9 +663,7 @@ const TextSession = () => {
             font-size: 28px;
           }
           
-          .sticky-box {
-            padding: 24px;
-          }
+         
         }
       `}</style>
     </section>
