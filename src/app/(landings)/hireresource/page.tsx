@@ -1,7 +1,11 @@
 import IconifyIcon from '@/components/IconifyIcon';
 import Link from 'next/link';
+import Hero from './components/hero';
+import HowWork from "./components/HowWeWork";
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Subscribe from "@/components/common/subscribe";
+import Description from "./components/Description";
+import TextSession from './components/TextSession';
 import Footer from "@/components/common/Footer";
 
 export const metadata = {
@@ -45,6 +49,10 @@ const Page = () => {
                     </li>
                 </ol>
             </nav>
+              <Hero/>
+               <Description/>
+             <HowWork/>
+             <TextSession/>
             <Subscribe/>
             <Footer/>
         </>
