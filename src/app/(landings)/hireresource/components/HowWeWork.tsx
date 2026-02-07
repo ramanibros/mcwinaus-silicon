@@ -18,7 +18,6 @@ const tabs = [
   "UI/UX Design",
   "Database",
   "Cloud & DevOps",
-  "ERP & CRM",
   "E-Commerce",
   "QA & Testing",
 ];
@@ -59,12 +58,6 @@ const techData: Record<string, any[]> = {
     { icon: "logos:microsoft-azure", name: "Azure", desc: "Enterprise cloud services" },
     { icon: "logos:docker-icon", name: "Docker", desc: "Containerized deployments" },
     { icon: "logos:kubernetes", name: "Kubernetes", desc: "Cloud orchestration systems" },
-  ],
-  "ERP & CRM": [
-    { icon: "logos:sap", name: "SAP", desc: "Enterprise ERP solutions" },
-    { icon: "logos:odoo", name: "Odoo", desc: "Open-source ERP systems" },
-    { icon: "logos:salesforce", name: "Salesforce", desc: "CRM automation platforms" },
-    { icon: "mdi:database-sync", name: "MS Dynamics", desc: "Business process automation" },
   ],
   "E-Commerce": [
     { icon: "logos:shopify", name: "Shopify", desc: "High-converting online stores" },
