@@ -23,9 +23,9 @@ import Hero from "@/app/(landings)/home/components/Hero";
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        title: "Scale Your Business – #1 Growth Services in Perth WA (2026) ",
         description:
-            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+            "Scale your business with McWIN iTECH’s top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

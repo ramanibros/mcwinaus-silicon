@@ -15,9 +15,9 @@ import Package from "./components/package"
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        title: "Website Development Perth 2026 | High-Performance Sites| McWIN iTECH ",
         description:
-            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+        "McWIN iTECH builds high-performance, SEO-ready websites in Perth that convert better, load faster, and deliver real growth for businesses in 2026.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

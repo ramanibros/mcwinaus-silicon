@@ -15,9 +15,9 @@ import Package from "./components/package"
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        title: "Search Engine Optimisation Perth WA | Boost Organic Traffic | McWIN iTECH ",
         description:
-            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+            "Search Engine Optimisation Perth WA — expert SEO services to increase rankings, drive local traffic, and grow your business with proven strategies in Perth WA.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",
@@ -27,7 +27,7 @@ export const metadata = {
         ],
 
         alternates: {
-                canonical: "https://www.mcwinitech.com.au/",
+                canonical: "https://www.mcwinitech.com.au/grow/search-engine-optimisation/",
         }
 };
 const Page = () => {

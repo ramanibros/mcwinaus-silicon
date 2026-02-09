@@ -15,9 +15,9 @@ import Package from "./components/package"
 export const metadata = {
         metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+        title: "Social Media Marketing Perth WA – #1 SMM Services | McWIN iTECH ",
         description:
-            "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+            "Social media marketing in Perth WA by McWIN iTECH. Get proven SMM services that grow engagement, leads & brand visibility fast with expert strategies in 2026.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",
@@ -27,7 +27,7 @@ export const metadata = {
         ],
 
         alternates: {
-                canonical: "https://www.mcwinitech.com.au/",
+                canonical: "https://www.mcwinitech.com.au/grow/social-media-marketing/",
         }
 };
 const Page = () => {
