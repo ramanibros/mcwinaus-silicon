@@ -54,16 +54,14 @@
 
   &::before {
     top: ($navbar-toggler-bar-spacing + $navbar-toggler-bar-height) * -1;
-    transition:
-      top 0.075s 0.12s ease,
-      opacity 0.075s ease;
+    transition: top 0.075s 0.12s ease,
+    opacity 0.075s ease;
   }
 
   &::after {
     bottom: ($navbar-toggler-bar-spacing + $navbar-toggler-bar-height) * -1;
-    transition:
-      bottom 0.075s 0.12s ease,
-      transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: bottom 0.075s 0.12s ease,
+    transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 }
 
@@ -76,16 +74,14 @@
     &::before {
       top: 0;
       opacity: 0;
-      transition:
-        top 0.075s ease,
-        opacity 0.075s 0.12s ease;
+      transition: top 0.075s ease,
+      opacity 0.075s 0.12s ease;
     }
 
     &::after {
       bottom: 0;
-      transition:
-        bottom 0.075s ease,
-        transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: bottom 0.075s ease,
+      transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
       transform: rotate(-90deg);
     }
   }
@@ -180,8 +176,7 @@
         .navbar-nav .dropdown-menu {
           margin-top: var(--#{$prefix}dropdown-spacer);
           background-color: var(--#{$prefix}dropdown-bg);
-          border: var(--#{$prefix}dropdown-border-width) solid
-            var(--#{$prefix}dropdown-border-color);
+          border: var(--#{$prefix}dropdown-border-width) solid var(--#{$prefix}dropdown-border-color);
           @include border-radius(var(--#{$prefix}dropdown-border-radius));
           @include box-shadow(var(--#{$prefix}dropdown-box-shadow));
 
@@ -223,8 +218,8 @@
 
             .dropdown-menu {
               top: calc(
-                (var(--#{$prefix}dropdown-item-padding-y) + var(--#{$prefix}dropdown-padding-y)) *
-                  -1
+                      (var(--#{$prefix}dropdown-item-padding-y) + var(--#{$prefix}dropdown-padding-y)) *
+                      -1
               );
               left: 100%;
 
@@ -244,7 +239,7 @@
         .dropstart {
           > .dropdown-menu {
             top: calc(
-              (var(--#{$prefix}dropdown-item-padding-y) + var(--#{$prefix}dropdown-padding-y)) * -1
+                    (var(--#{$prefix}dropdown-item-padding-y) + var(--#{$prefix}dropdown-padding-y)) * -1
             );
             right: 94%;
 

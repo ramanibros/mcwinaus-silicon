@@ -2,18 +2,17 @@ import React from 'react';
 import Hero from './components/Hero';
 import Solutions from './components/Solutions';
 import Benefits from './components/Benefits';
-import {Metadata} from 'next';
 import Work from "@/app/(landings)/grow/components/Work";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import HowWork from "@/app/(landings)/grow/components/HowWork";
 import Faqs from "@/app/(landings)/grow/components/Faqs";
 import Navbar from "@/components/navbar/Navbar";
-import Portfolio from "@/app/(landings)/grow/components/Portfolio";
 import Package from "@/app/(landings)/grow/components/package";
+import Portfolio from "@/components/common/Portfolio";
 
 export const metadata = {
-        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+    metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
         title: "Digital Marketing Agency Perth WA | Drive Real Growth | McWIN iTECH ",
         description:
@@ -26,9 +25,9 @@ export const metadata = {
                 "Full-Stack Development",
         ],
 
-        alternates: {
-                canonical: "https://www.mcwinitech.com.au/grow/",
-        }
+    alternates: {
+        canonical: "https://www.mcwinitech.com.au/grow/",
+    }
 };
 const Page = () => {
     return (

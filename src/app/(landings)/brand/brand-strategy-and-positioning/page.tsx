@@ -1,16 +1,14 @@
 import IconifyIcon from '@/components/IconifyIcon';
-import { Metadata } from 'next';
 import Link from 'next/link';
 import PageTitle from './components/PageTitle';
 import TextSession from './components/TextSession';
 import Work from './components/Work';
-import NavbarPage from '@/components/navbar/Navbar-page';
-import Subscribe from '@/components/common/subscribe';
-import Footer from '@/components/common/Footer';
-import Description from './components/Description';
-import Portfolio from './components/Portfolio';
-import Faqs from './components/Faqs';
-import Package from './components/package';
+import NavbarPage from "@/components/navbar/Navbar-page";
+import Subscribe from "@/components/common/subscribe";
+import Footer from "@/components/common/Footer";
+import Description from "./components/Description";
+import Faqs from "./components/Faqs";
+import Portfolio from "@/components/common/Portfolio";
 
 export const metadata = {
   metadataBase: new URL('https://www.mcwinitech.com.au/'),
@@ -54,22 +52,22 @@ const Page = () => {
           <span className="d-flex align-items-center mx-2">
             <IconifyIcon icon="bx:chevrons-right" />
           </span>
-          <li className="breadcrumb-item active" aria-current="page">
-            Brand Strategy & Positioning
-          </li>
-        </ol>
-      </nav>
-      <PageTitle />
-      <Work />
-      <Description />
-      <Portfolio />
-      <TextSession />
-      <Faqs />
-      {/* <Package/>*/}
-      <Subscribe />
-      <Footer />
-    </>
-  );
+                    <li className="breadcrumb-item active" aria-current="page">
+                        Brand Strategy & Positioning
+                    </li>
+                </ol>
+            </nav>
+            <PageTitle/>
+            <Work/>
+            <Description/>
+            <Portfolio/>
+            <TextSession/>
+            <Faqs/>
+            {/* <Package/>*/}
+            <Subscribe/>
+            <Footer/>
+        </>
+    );
 };
 
 export default Page;

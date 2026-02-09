@@ -1,9 +1,9 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Pagination} from 'swiper/modules';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 import ass1 from '@/assets/img/brand-service/tools/figma_5968705.png';
 import ass2 from '@/assets/img/brand-service/tools/hatchful.png';
@@ -20,7 +20,7 @@ import Image from 'next/image';
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const brands = [
@@ -44,7 +44,7 @@ const Work = () => {
         if (h2Ref.current && spanRef.current) {
             const h2Text = h2Ref.current;
             const spanText = spanRef.current;
-            
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: h2Ref.current,
@@ -56,8 +56,8 @@ const Work = () => {
             });
 
             tl.fromTo(h2Text,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, ease: "power2.out"}
             );
 
             tl.fromTo(spanText,
@@ -81,7 +81,7 @@ const Work = () => {
         // Animate card bodies on scroll
         if (cardBodiesRef.current.length > 0) {
             const cardBodies = cardBodiesRef.current.filter(Boolean) as HTMLDivElement[];
-            
+
             cardBodies.forEach((cardBody, index) => {
                 // Set initial state - card bodies start hidden
                 gsap.set(cardBody, {
@@ -155,13 +155,15 @@ const Work = () => {
                 {brands.map((brand, i) => (
                     <SwiperSlide key={i} className="py-3">
                         <Link href="#" className="card card-hover border-0 shadow-sm mx-2">
-                            <div 
-                                ref={el => cardBodiesRef.current[i] = el}
+                            <div
+                                ref={(el: HTMLDivElement | null) => {
+                                    cardBodiesRef.current[i] = el;
+                                }}
                                 className="card-body p-3"
                             >
-                                <Image 
-                                    src={brand.image} 
-                                    alt={brand.name} 
+                                <Image
+                                    src={brand.image}
+                                    alt={brand.name}
                                     className="d-block mx-auto service_tools"
                                     width={80}
                                     height={80}
@@ -187,7 +189,7 @@ const Work = () => {
                 
                 .service_tools {
                     transition: all 0.3s ease;
-                    filter: grayscale(100%);
+                    /*filter: grayscale(100%);*/
                 }
                 
                 .card-hover:hover .service_tools {

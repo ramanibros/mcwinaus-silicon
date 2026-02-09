@@ -14,14 +14,14 @@ import Faqs from "@/app/(landings)/home/components/Faqs";
 import Integrations from "@/app/(landings)/home/components/Integrations";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
-import Portfolio from "@/app/(landings)/home/components/Portfolio";
 import Hero from "@/app/(landings)/home/components/Hero";
+import Portfolio from "@/components/common/Portfolio";
 
 /* ================================
    SEO META DATA (AUTO <head>)
 ================================ */
 export const metadata = {
-        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+    metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
         title: "Scale Your Business – #1 Growth Services in Perth WA (2026) ",
         description:
@@ -34,9 +34,9 @@ export const metadata = {
                 "Full-Stack Development",
         ],
 
-        alternates: {
-                canonical: "https://www.mcwinitech.com.au/",
-        }
+    alternates: {
+        canonical: "https://www.mcwinitech.com.au/",
+    }
 };
 
 const Page = () => {

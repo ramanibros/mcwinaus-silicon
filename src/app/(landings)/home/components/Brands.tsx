@@ -1,9 +1,9 @@
 'use client';
-import React, { useEffect, useRef } from 'react'; // Added useEffect, useRef
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Container, Button } from 'react-bootstrap';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, {useEffect, useRef} from 'react'; // Added useEffect, useRef
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {Button, Container} from 'react-bootstrap';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 import brand1 from '@/assets/img/client/cl-1.png';
 import brand2 from '@/assets/img/client/cl-2.png';
@@ -13,172 +13,173 @@ import brand5 from '@/assets/img/client/cl-5.png';
 import brand6 from '@/assets/img/client/cl-6.png';
 import brand7 from '@/assets/img/client/cl-7.png';
 import brand8 from '@/assets/img/client/cl-8.png';
-import Image, { StaticImageData } from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 import Link from 'next/link';
 import IconifyIcon from '@/components/IconifyIcon';
 
 type Brand = {
-  id: number;
-  image: StaticImageData;
-  alt: string;
-  href: string;
+    id: number;
+    image: StaticImageData;
+    alt: string;
+    href: string;
 };
 
 const brands: Brand[] = [
-  { id: 1, image: brand1, alt: 'Brand 1', href: '#' },
-  { id: 2, image: brand2, alt: 'Brand 2', href: '#' },
-  { id: 3, image: brand3, alt: 'Brand 3', href: '#' },
-  { id: 4, image: brand4, alt: 'Brand 4', href: '#' },
-  { id: 5, image: brand5, alt: 'Brand 5', href: '#' },
-  { id: 6, image: brand6, alt: 'Brand 6', href: '#' },
-  { id: 7, image: brand7, alt: 'Brand 7', href: '#' },
-  { id: 8, image: brand8, alt: 'Brand 8', href: '#' },
+    {id: 1, image: brand1, alt: 'Brand 1', href: '#'},
+    {id: 2, image: brand2, alt: 'Brand 2', href: '#'},
+    {id: 3, image: brand3, alt: 'Brand 3', href: '#'},
+    {id: 4, image: brand4, alt: 'Brand 4', href: '#'},
+    {id: 5, image: brand5, alt: 'Brand 5', href: '#'},
+    {id: 6, image: brand6, alt: 'Brand 6', href: '#'},
+    {id: 7, image: brand7, alt: 'Brand 7', href: '#'},
+    {id: 8, image: brand8, alt: 'Brand 8', href: '#'},
 ];
 
 const Brands = () => {
-  // Added refs for animation
-  const h2Ref = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
+    // Added refs for animation
+    const h2Ref = useRef<HTMLHeadingElement>(null);
+    const spanRef = useRef<HTMLSpanElement>(null);
 
-  // Added animation effect
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
+    // Added animation effect
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
 
-    if (h2Ref.current && spanRef.current) {
-      const h2Text = h2Ref.current;
-      const spanText = spanRef.current;
-      
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 80%",
-          end: "top 20%",
-          scrub: 1,
-          markers: false,
+        if (h2Ref.current && spanRef.current) {
+            const h2Text = h2Ref.current;
+            const spanText = spanRef.current;
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: h2Ref.current,
+                    start: "top 80%",
+                    end: "top 20%",
+                    scrub: 1,
+                    markers: false,
+                }
+            });
+
+            // Animate the entire h2
+            tl.fromTo(h2Text,
+                {
+                    opacity: 0,
+                    y: 50
+                },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                }
+            );
+
+            // Animate the gradient span with a different effect
+            tl.fromTo(spanText,
+                {
+                    opacity: 0,
+                    scale: 0.8,
+                    backgroundSize: "200% 200%",
+                    backgroundPosition: "100% 0%"
+                },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2,
+                    ease: "back.out(1.7)",
+                    backgroundPosition: "0% 100%",
+                },
+                "-=0.8"
+            );
         }
-      });
 
-      // Animate the entire h2
-      tl.fromTo(h2Text,
-        {
-          opacity: 0,
-          y: 50
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: "power2.out"
-        }
-      );
+        // Cleanup
+        return () => {
+            const triggers = ScrollTrigger.getAll();
+            triggers.forEach(trigger => {
+                if (h2Ref.current && trigger.trigger === h2Ref.current) {
+                    trigger.kill();
+                }
+            });
+        };
+    }, []);
 
-      // Animate the gradient span with a different effect
-      tl.fromTo(spanText,
-        {
-          opacity: 0,
-          scale: 0.8,
-          backgroundSize: "200% 200%",
-          backgroundPosition: "100% 0%"
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.2,
-          ease: "back.out(1.7)",
-          backgroundPosition: "0% 100%",
-        },
-        "-=0.8"
-      );
-    }
+    return (
+        <section className="pb-4 pb-lg-5 mb-3 mt-5">
+            <Container>
+                <div
+                    className="d-flex align-items-center justify-content-md-between justify-content-center mb-md-4 mb-3">
+                    {/* Updated h2 with refs */}
+                    <h2 ref={h2Ref} className="mb-0">
+                        Trusted by <span ref={spanRef} className="text-gradient-primary">Clients</span>
+                    </h2>
 
-    // Cleanup
-    return () => {
-      const triggers = ScrollTrigger.getAll();
-      triggers.forEach(trigger => {
-        if (h2Ref.current && trigger.trigger === h2Ref.current) {
-          trigger.kill();
-        }
-      });
-    };
-  }, []);
+                    <div className="d-md-flex d-none ms-4">
+                        <Button
+                            id="prev-brand"
+                            variant="light"
+                            size="sm"
+                            className="btn btn-prev btn-icon btn-sm me-2"
+                            aria-label="Previous"
+                        >
+                            <IconifyIcon icon="bx:chevron-left" fontSize={20}/>
+                        </Button>
+                        <Button
+                            id="next-brand"
+                            variant="light"
+                            size="sm"
+                            className="btn btn-next btn-icon btn-sm ms-2"
+                            aria-label="Next"
+                        >
+                            <IconifyIcon icon="bx:chevron-right" fontSize={20}/>
+                        </Button>
+                    </div>
+                </div>
 
-  return (
-    <section className="pb-4 pb-lg-5 mb-3 mt-5">
-      <Container>
-        <div className="d-flex align-items-center justify-content-md-between justify-content-center mb-md-4 mb-3">
-          {/* Updated h2 with refs */}
-          <h2 ref={h2Ref} className="mb-0">
-            Trusted by <span ref={spanRef} className="text-gradient-primary">Clients</span>
-          </h2>
-
-          <div className="d-md-flex d-none ms-4">
-            <Button
-              id="prev-brand"
-              variant="light"
-              size="sm"
-              className="btn btn-prev btn-icon btn-sm me-2"
-              aria-label="Previous"
-            >
-              <IconifyIcon icon="bx:chevron-left" fontSize={20} />
-            </Button>
-            <Button
-              id="next-brand"
-              variant="light"
-              size="sm"
-              className="btn btn-next btn-icon btn-sm ms-2"
-              aria-label="Next"
-            >
-              <IconifyIcon icon="bx:chevron-right" fontSize={20} />
-            </Button>
-          </div>
-        </div>
-
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          navigation={{
-            prevEl: '#prev-brand',
-            nextEl: '#next-brand',
-          }}
-          pagination={{
-            el: '.brands-pagination',
-            clickable: true,
-          }}
-          loop={true}
-          breakpoints={{
-            0: { slidesPerView: 2, spaceBetween: 8 },
-            500: { slidesPerView: 3, spaceBetween: 8 },
-            650: { slidesPerView: 4, spaceBetween: 8 },
-            900: { slidesPerView: 5, spaceBetween: 8 },
-            1100: { slidesPerView: 6, spaceBetween: 8 },
-          }}
-          freeMode={{
-            enabled: true,
-            momentum: false, // IMPORTANT for smooth flow
-          }}
-          autoplay={{
-            delay: 0, // no stop between slides
-            disableOnInteraction: false,
-          }}
-          speed={6000} // higher = smoother & slower movement
-        >
-          {brands.map(brand => (
-            <SwiperSlide key={brand.id} className="py-3">
-              <Link href={brand.href} className="card card-body card-hover px-2 mx-2">
-                <Image
-                  src={brand.image}
-                  alt={brand.alt}
-                  width={120}
-                  height={50}
-                  className="d-block mx-auto my-2"
-                />
-              </Link>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className="swiper-pagination brands-pagination position-relative pt-3 mt-4 d-md-none d-flex"></div>
-      </Container>
-    </section>
-  );
+                <Swiper
+                    modules={[Autoplay, Navigation, Pagination]}
+                    navigation={{
+                        prevEl: '#prev-brand',
+                        nextEl: '#next-brand',
+                    }}
+                    pagination={{
+                        el: '.brands-pagination',
+                        clickable: true,
+                    }}
+                    loop={true}
+                    breakpoints={{
+                        0: {slidesPerView: 2, spaceBetween: 8},
+                        500: {slidesPerView: 3, spaceBetween: 8},
+                        650: {slidesPerView: 4, spaceBetween: 8},
+                        900: {slidesPerView: 5, spaceBetween: 8},
+                        1100: {slidesPerView: 6, spaceBetween: 8},
+                    }}
+                    freeMode={{
+                        enabled: true,
+                        momentum: false, // IMPORTANT for smooth flow
+                    }}
+                    autoplay={{
+                        delay: 0, // no stop between slides
+                        disableOnInteraction: false,
+                    }}
+                    speed={6000} // higher = smoother & slower movement
+                >
+                    {brands.map(brand => (
+                        <SwiperSlide key={brand.id} className="py-3">
+                            <Link href={brand.href} className="card card-body card-hover px-2 mx-2">
+                                <Image
+                                    src={brand.image}
+                                    alt={brand.alt}
+                                    width={120}
+                                    height={50}
+                                    className="d-block mx-auto my-2"
+                                />
+                            </Link>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className="swiper-pagination brands-pagination position-relative pt-3 mt-4 d-md-none d-flex"></div>
+            </Container>
+        </section>
+    );
 };
 
 export default Brands;

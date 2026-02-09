@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Autoplay, FreeMode, Pagination} from 'swiper/modules';
+import {Autoplay, FreeMode} from 'swiper/modules';
 import Image, {StaticImageData} from 'next/image';
 
 import javaGray from '@/assets/img/landing/app-showcase-3/integrations/java-gray.svg';

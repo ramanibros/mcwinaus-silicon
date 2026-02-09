@@ -1,90 +1,90 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
-import { FiArrowUp } from 'react-icons/fi';
+import {useEffect, useRef, useState} from 'react';
+import {FiArrowUp} from 'react-icons/fi';
 
 const BackToTop = () => {
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-  const buttonRef = useRef<HTMLButtonElement>(null);
+    const [scrollProgress, setScrollProgress] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+    const buttonRef = useRef<HTMLButtonElement>(null);
 
-  useEffect(() => {
-    const calculateScrollProgress = () => {
-      const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const docHeight = document.documentElement.scrollHeight;
-      
-      const totalScroll = docHeight - windowHeight;
-      const progress = totalScroll > 0 ? scrollTop / totalScroll : 0;
-      
-      setScrollProgress(Math.min(progress, 1));
-      setIsVisible(scrollTop > 600);
-    };
+    useEffect(() => {
+        const calculateScrollProgress = () => {
+            const scrollTop = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
 
-    // Throttle the scroll event
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          calculateScrollProgress();
-          ticking = false;
+            const totalScroll = docHeight - windowHeight;
+            const progress = totalScroll > 0 ? scrollTop / totalScroll : 0;
+
+            setScrollProgress(Math.min(progress, 1));
+            setIsVisible(scrollTop > 600);
+        };
+
+        // Throttle the scroll event
+        let ticking = false;
+        const handleScroll = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    calculateScrollProgress();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll, {passive: true});
+        calculateScrollProgress();
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
         });
-        ticking = true;
-      }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    calculateScrollProgress();
+    const circumference = 2 * Math.PI * 20;
+    const strokeDashoffset = circumference - scrollProgress * circumference;
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    return (
+        <>
+            {isVisible && (
+                <button
+                    ref={buttonRef}
+                    className="back-to-top-btn"
+                    onClick={scrollToTop}
+                    aria-label="Back to top"
+                    style={{
+                        opacity: isVisible ? 1 : 0,
+                        transform: `scale(${isVisible ? 1 : 0})`,
+                        pointerEvents: isVisible ? 'auto' : 'none'
+                    }}
+                >
+                    <svg className="progress-svg" viewBox="0 0 44 44">
+                        <circle
+                            className="progress-bg"
+                            cx="22"
+                            cy="22"
+                            r="20"
+                        />
+                        <circle
+                            className="progress-fill"
+                            cx="22"
+                            cy="22"
+                            r="20"
+                            strokeDasharray={circumference}
+                            strokeDashoffset={strokeDashoffset}
+                        />
+                    </svg>
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+                    <FiArrowUp className="arrow-icon"/>
+                </button>
+            )}
 
-  const circumference = 2 * Math.PI * 20;
-  const strokeDashoffset = circumference - scrollProgress * circumference;
-
-  return (
-    <>
-      {isVisible && (
-        <button
-          ref={buttonRef}
-          className="back-to-top-btn"
-          onClick={scrollToTop}
-          aria-label="Back to top"
-          style={{
-            opacity: isVisible ? 1 : 0,
-            transform: `scale(${isVisible ? 1 : 0})`,
-            pointerEvents: isVisible ? 'auto' : 'none'
-          }}
-        >
-          <svg className="progress-svg" viewBox="0 0 44 44">
-            <circle
-              className="progress-bg"
-              cx="22"
-              cy="22"
-              r="20"
-            />
-            <circle
-              className="progress-fill"
-              cx="22"
-              cy="22"
-              r="20"
-              strokeDasharray={circumference}
-              strokeDashoffset={strokeDashoffset}
-            />
-          </svg>
-          
-          <FiArrowUp className="arrow-icon" />
-        </button>
-      )}
-
-      <style jsx>{`
+            <style jsx>{`
         .back-to-top-btn {
           position: fixed;
           bottom: 1.5rem;
@@ -191,8 +191,8 @@ const BackToTop = () => {
           }
         }
       `}</style>
-    </>
-  );
+        </>
+    );
 };
 
 export default BackToTop;

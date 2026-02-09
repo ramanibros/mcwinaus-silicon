@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Testimonials from './components/Testimonials';
-import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Partners from "@/app/(landings)/about/components/Partners";
 import Faqs from "@/app/(landings)/about/components/Faqs";
@@ -11,7 +10,7 @@ import Footer from "@/components/common/Footer";
 import Features from "@/app/(landings)/about/components/Features";
 
 export const metadata = {
-        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+    metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
         title: "About McWIN iTECH – #1 Digital Marketing Experts (2026)",
         description:
@@ -24,9 +23,9 @@ export const metadata = {
                 "Full-Stack Development",
         ],
 
-        alternates: {
-                canonical: "https://www.mcwinitech.com.au/about/",
-        }
+    alternates: {
+        canonical: "https://www.mcwinitech.com.au/about/",
+    }
 };
 const Page = () => {
     return (

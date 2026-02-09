@@ -1,12 +1,11 @@
 import React from 'react';
 import Hero from './components/Hero';
-import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 
 export const metadata = {
-        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+    metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
         title: "Contact McWIN iTECH Perth WA | #1 Digital Marketing & IT (2026)",
         description:
@@ -19,9 +18,9 @@ export const metadata = {
                 "Full-Stack Development",
         ],
 
-        alternates: {
-                canonical: "https://www.mcwinitech.com.au/contact/",
-        }
+    alternates: {
+        canonical: "https://www.mcwinitech.com.au/contact/",
+    }
 };
 const Page = () => {
     return (

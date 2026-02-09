@@ -5,19 +5,23 @@
 .table {
   --#{$prefix}table-th-color: #{$table-th-color};
   --#{$prefix}table-dark-color: #{$body-color-dark};
+
   &:not(.table-dark) {
     thead:not(.thead-dark) th,
     tbody th {
       color: var(--#{$prefix}table-th-color);
     }
   }
+
   &.table-dark td {
     color: var(--#{$prefix}table-dark-color);
   }
 }
+
 .table > :not(:last-child) > :last-child > * {
   border-bottom-color: darken($border-color, 12%);
 }
+
 .table.table-dark > :not(:last-child) > :last-child > * {
   border-bottom-color: rgba($white, 0.3);
 }
@@ -35,6 +39,7 @@
       --#{$prefix}table-striped-bg: rgba(#{to-rgb($white)}, #{$table-striped-bg-factor});
       --#{$prefix}table-hover-bg: rgba(#{to-rgb($white)}, #{$table-hover-bg-factor});
       --#{$prefix}table-hover-color: #{$table-hover-color};
+
       > :not(:last-child) > :last-child > * {
         border-bottom-color: rgba($white, 0.3);
       }

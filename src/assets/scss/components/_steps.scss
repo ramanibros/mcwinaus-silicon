@@ -31,10 +31,14 @@
 
   &:first-child {
     padding-top: 0 !important;
-  } // stylelint-disable-line declaration-no-important
+  }
+
+  // stylelint-disable-line declaration-no-important
   &:last-child {
     padding-bottom: 0 !important;
-  } // stylelint-disable-line declaration-no-important
+  }
+
+  // stylelint-disable-line declaration-no-important
 
   &::before,
   &::after {
@@ -48,6 +52,7 @@
   &::before {
     top: 0;
   }
+
   &::after {
     top: 50%;
   }
@@ -55,6 +60,7 @@
   &:not(:first-child)::before {
     background-color: var(--#{$prefix}steps-connect-color);
   }
+
   &:not(:last-child)::after {
     background-color: var(--#{$prefix}steps-connect-color);
   }
@@ -148,6 +154,7 @@
             left: 0;
             display: none;
           }
+
           &::after {
             left: var(--#{$prefix}steps-padding-x);
             width: 100%;
@@ -175,6 +182,7 @@
               left: 50%;
               width: 50%;
             }
+
             &:not(:first-child)::before {
               display: block;
               width: 50%;
@@ -197,11 +205,13 @@
               display: block;
               width: calc(100% - var(--#{$prefix}steps-padding-x));
             }
+
             &::after {
               right: 0;
               left: auto;
               width: var(--#{$prefix}steps-padding-x);
             }
+
             &:last-child::after {
               display: none;
             }
@@ -230,7 +240,7 @@
 
   .step-number {
     font-size: calc(
-      var(--#{$prefix}steps-number-font-size) * 0.625
+            var(--#{$prefix}steps-number-font-size) * 0.625
     ) !important; // stylelint-disable-line declaration-no-important
   }
 

@@ -1,15 +1,14 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
-import Image, { StaticImageData } from 'next/image';
-import { Container, Card, CardBody, Col, Row } from 'react-bootstrap';
+import React, {useEffect, useRef} from 'react';
+import Image, {StaticImageData} from 'next/image';
+import {Col, Container, Row} from 'react-bootstrap';
 import icon1 from '@/assets/img/landing/software-agency-3/icons/01.svg';
 import icon2 from '@/assets/img/landing/software-agency-3/icons/02.svg';
 import icon3 from '@/assets/img/landing/software-agency-3/icons/03.svg';
 import icon4 from '@/assets/img/landing/software-agency-3/icons/04.svg';
-import IconifyIcon from "@/components/IconifyIcon";
 import Link from "next/link";
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger';
 
 type PointsItem = {
     title: string;
@@ -31,7 +30,7 @@ const solutionsData: Solution[] = [
         title: 'Brand Strategy & Positioning',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger.The Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
+        description: 'Perth market analysis, competitor insights, vision workshops—position your brand 3x stronger. The Local team crafts unique positioning that dominates WA without spending thousands on guesswork.'
     },
     {
         id: 2,
@@ -61,458 +60,535 @@ const solutionsData: Solution[] = [
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollTrigger);
 }
 
 const Solutions = () => {
-    const canvasRef = useRef<HTMLCanvasElement>(null);
-    const animationRef = useRef<number>();
-    const shapesRef = useRef<Array<{
-        x: number;
-        y: number;
-        size: number;
-        speedX: number;
-        speedY: number;
-        rotation: number;
-        rotationSpeed: number;
-        type: 'circle' | 'square' | 'ring';
-        color: string;
-    }>>([]);
-    
-    // Refs for title animation
     const h2Ref = useRef<HTMLHeadingElement>(null);
     const spanRef = useRef<HTMLSpanElement>(null);
+    const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
     useEffect(() => {
-        // Title animation for "Perth Brand" words
+        // Title animation
         if (h2Ref.current && spanRef.current) {
-            const h2Text = h2Ref.current;
-            const spanText = spanRef.current;
-            
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: h2Ref.current,
-                    start: "top 80%",
-                    end: "top 20%",
+                    start: "top 85%",
+                    end: "top 50%",
                     scrub: 1,
-                    markers: false,
                 }
             });
 
-            tl.fromTo(h2Text,
-                { opacity: 0, y: 50 },
-                { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+            tl.fromTo(h2Ref.current,
+                {opacity: 0, y: 60},
+                {opacity: 1, y: 0, duration: 1, ease: "power3.out"}
             );
 
-            tl.fromTo(spanText,
+            tl.fromTo(spanRef.current,
                 {
                     opacity: 0,
                     scale: 0.8,
-                    backgroundSize: "200% 200%",
                     backgroundPosition: "100% 0%"
                 },
                 {
                     opacity: 1,
                     scale: 1,
-                    duration: 1.2,
-                    ease: "back.out(1.7)",
                     backgroundPosition: "0% 100%",
+                    duration: 1.2,
+                    ease: "back.out(1.7)"
                 },
                 "-=0.8"
             );
         }
 
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-
-        const ctx = canvas.getContext('2d');
-        if (!ctx) return;
-
-        // Set canvas size
-        const resizeCanvas = () => {
-            canvas.width = canvas.parentElement?.clientWidth || window.innerWidth;
-            canvas.height = canvas.parentElement?.clientHeight || window.innerHeight;
-        };
-
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-
-        // Initialize shapes
-        const initShapes = () => {
-            shapesRef.current = [];
-            const types: ('circle' | 'square' | 'ring')[] = ['circle', 'square', 'ring'];
-            const colors = [
-                'rgba(102, 126, 234, 0.08)',
-                'rgba(118, 75, 162, 0.06)',
-                'rgba(76, 201, 240, 0.05)',
-                'rgba(255, 138, 101, 0.04)'
-            ];
-
-            for (let i = 0; i < 20; i++) {
-                shapesRef.current.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    size: Math.random() * 40 + 20,
-                    speedX: (Math.random() - 0.5) * 0.5,
-                    speedY: (Math.random() - 0.5) * 0.5,
-                    rotation: Math.random() * 360,
-                    rotationSpeed: (Math.random() - 0.5) * 0.5,
-                    type: types[Math.floor(Math.random() * types.length)],
-                    color: colors[Math.floor(Math.random() * colors.length)]
-                });
+        // Cards entry animation
+        cardsRef.current.forEach((card, index) => {
+            if (card) {
+                gsap.fromTo(card,
+                    {
+                        opacity: 0,
+                        y: 80,
+                        scale: 0.92,
+                        rotationX: 5,
+                    },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        scale: 1,
+                        rotationX: 0,
+                        duration: 0.8,
+                        delay: index * 0.15,
+                        ease: "back.out(1.4)",
+                        scrollTrigger: {
+                            trigger: card,
+                            start: "top 90%",
+                            end: "top 60%",
+                            toggleActions: "play none none reverse"
+                        }
+                    }
+                );
             }
-        };
-
-        initShapes();
-
-        // Animation loop
-        const animate = () => {
-            if (!ctx || !canvas) return;
-
-            // Clear with slight fade for trail effect
-            ctx.fillStyle = 'rgba(240, 244, 248, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            shapesRef.current.forEach(shape => {
-                // Update position
-                shape.x += shape.speedX;
-                shape.y += shape.speedY;
-                shape.rotation += shape.rotationSpeed;
-
-                // Boundary check
-                if (shape.x < -shape.size) shape.x = canvas.width + shape.size;
-                if (shape.x > canvas.width + shape.size) shape.x = -shape.size;
-                if (shape.y < -shape.size) shape.y = canvas.height + shape.size;
-                if (shape.y > canvas.height + shape.size) shape.y = -shape.size;
-
-                // Save context
-                ctx.save();
-                ctx.translate(shape.x, shape.y);
-                ctx.rotate((shape.rotation * Math.PI) / 180);
-
-                // Draw shape based on type
-                ctx.fillStyle = shape.color;
-                ctx.strokeStyle = shape.color.replace('0.08', '0.15').replace('0.06', '0.12').replace('0.05', '0.1').replace('0.04', '0.08');
-                ctx.lineWidth = 2;
-
-                switch (shape.type) {
-                    case 'circle':
-                        ctx.beginPath();
-                        ctx.arc(0, 0, shape.size / 2, 0, Math.PI * 2);
-                        ctx.fill();
-                        break;
-                    case 'square':
-                        ctx.fillRect(-shape.size / 2, -shape.size / 2, shape.size, shape.size);
-                        break;
-                    case 'ring':
-                        ctx.beginPath();
-                        ctx.arc(0, 0, shape.size / 2, 0, Math.PI * 2);
-                        ctx.stroke();
-                        break;
-                }
-
-                ctx.restore();
-            });
-
-            animationRef.current = requestAnimationFrame(animate);
-        };
-
-        animate();
+        });
 
         return () => {
-            window.removeEventListener('resize', resizeCanvas);
-            if (animationRef.current) {
-                cancelAnimationFrame(animationRef.current);
-            }
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
     }, []);
 
+    // White theme with high contrast colors
+    const colorSchemes = [
+        {
+            // Blue theme
+            mainColor: '#3b82f6',
+            hoverColor: '#2563eb',
+            gradient: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
+            lightBg: 'rgba(59, 130, 246, 0.08)',
+            borderColor: 'rgba(59, 130, 246, 0.2)',
+            iconBg: 'rgba(59, 130, 246, 0.1)',
+            iconColor: '#3b82f6'
+        },
+        {
+            // Purple theme
+            mainColor: '#8b5cf6',
+            hoverColor: '#7c3aed',
+            gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+            lightBg: 'rgba(139, 92, 246, 0.08)',
+            borderColor: 'rgba(139, 92, 246, 0.2)',
+            iconBg: 'rgba(139, 92, 246, 0.1)',
+            iconColor: '#8b5cf6'
+        },
+        {
+            // Green theme
+            mainColor: '#10b981',
+            hoverColor: '#059669',
+            gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+            lightBg: 'rgba(16, 185, 129, 0.08)',
+            borderColor: 'rgba(16, 185, 129, 0.2)',
+            iconBg: 'rgba(16, 185, 129, 0.1)',
+            iconColor: '#10b981'
+        },
+        {
+            // Orange theme
+            mainColor: '#f59e0b',
+            hoverColor: '#d97706',
+            gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)',
+            lightBg: 'rgba(245, 158, 11, 0.08)',
+            borderColor: 'rgba(245, 158, 11, 0.2)',
+            iconBg: 'rgba(245, 158, 11, 0.1)',
+            iconColor: '#f59e0b'
+        }
+    ];
+
     return (
-        <section 
-            className="mb-5 pb-lg-5 pb-md-4 pb-3 position-relative overflow-hidden"
+        <section
+            className="brand-solutions-section py-5 position-relative overflow-hidden"
             style={{
-                minHeight: '100vh',
-                background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f0f4f8 100%)'
+                backgroundColor: '#ffffff',
+                backgroundImage: 'linear-gradient(1deg, rgb(221 195 255) 0%, rgb(145 131 251 / 0%) 100%)'
             }}
         >
-            {/* Animated background canvas */}
-            <canvas
-                ref={canvasRef}
-                className="position-absolute top-0 left-0 w-100 h-100"
-                style={{ zIndex: 0 }}
-            />
+            <Container className="py-lg-5">
+                {/* Heading */}
+                <div className="text-center mb-5 pb-lg-3">
+                    <h2
+                        ref={h2Ref}
+                        className="display-4 fw-bold mb-4"
+                        style={{color: '#1e293b'}}
+                    >
+                        How our <span
+                        ref={spanRef}
+                        className="brand-solutions-gradient-text text-gradient-primary fw-bold"
+                        style={{
+                            background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #10b981 100%)',
+                            backgroundSize: '200% 200%',
+                            backgroundClip: 'text',
+                            WebkitBackgroundClip: 'text',
+                            WebkitTextFillColor: 'transparent',
+                            display: 'inline-block'
+                        }}
+                    >
+                            Perth Brand
+                        </span> Agency Drives Growth.
+                    </h2>
+                    <p
+                        className="lead mb-0"
+                        style={{
+                            color: '#64748b',
+                            fontSize: '1.25rem',
+                            maxWidth: '700px',
+                            margin: '0 auto'
+                        }}
+                    >
+                        Expert solutions crafted specifically for Perth businesses to accelerate growth and market
+                        presence
+                    </p>
+                </div>
 
-            {/* Gradient overlays */}
-            <div 
-                className="position-absolute top-0 left-0 w-100 h-100"
-                style={{
-                    background: 'radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.1) 0%, transparent 40%)',
-                    zIndex: 1
-                }}
-            />
-            <div 
-                className="position-absolute top-0 left-0 w-100 h-100"
-                style={{
-                    background: 'radial-gradient(circle at 80% 70%, rgba(76, 201, 240, 0.08) 0%, transparent 40%)',
-                    zIndex: 1
-                }}
-            />
-
-            <Container style={{ position: 'relative', zIndex: 2 }}>
-                {/* Updated heading with animation refs */}
-                <h2 
-                    ref={h2Ref}
-                    className="h1 pb-4 py-lg-5" 
-                    style={{
-                        color: '#1a202c',
-                        fontWeight: 700
-                    }}
-                >
-                    How our <span ref={spanRef} className="text-primary text-gradient-primary">Perth Brand</span> Agency Drives Growth.
-                </h2>
-                
-                <Row xs={1} md={2} className="g-4 pt-2 pt-md-4 pb-lg-2">
+                <Row xs={1} md={2} className="g-4 g-lg-5">
                     {solutionsData.map((item, index) => (
                         <Col key={item.id}>
-                            <Link href={item.url} className="text-decoration-none">
-                                <div 
-                                    className="glass-card h-100 mx-2"
-                                    style={{
-                                        borderRadius: '20px',
-                                        overflow: 'hidden',
-                                        position: 'relative',
-                                        transition: 'all 0.4s ease',
-                                        transformStyle: 'preserve-3d'
-                                    }}
-                                >
-                                    {/* Main glass effect layer */}
-                                    <div 
-                                        className="position-absolute top-0 left-0 w-100 h-100"
-                                        style={{
-                                            background: 'rgba(255, 255, 255, 0.75)',
-                                            backdropFilter: 'blur(25px)',
-                                            WebkitBackdropFilter: 'blur(25px)',
-                                            border: '1px solid rgba(255, 255, 255, 0.8)',
-                                            borderRadius: '20px',
-                                            boxShadow: `
-                                                0 8px 32px rgba(31, 38, 135, 0.1),
-                                                inset 0 1px 0 rgba(255, 255, 255, 0.8),
-                                                inset 0 -1px 0 rgba(0, 0, 0, 0.05)
-                                            `,
-                                            zIndex: 1
-                                        }}
-                                    />
-                                    
-                                    {/* Glass shine effect */}
-                                    <div 
-                                        className="position-absolute top-0 left-0 w-100 h-100"
-                                        style={{
-                                            background: 'linear-gradient(120deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0) 60%)',
-                                            borderRadius: '20px',
-                                            zIndex: 2,
-                                            pointerEvents: 'none'
-                                        }}
-                                    />
-                                    
-                                    {/* Subtle border glow */}
-                                    <div 
-                                        className="position-absolute top-[-1px] left-[-1px] right-[-1px] bottom-[-1px]"
-                                        style={{
-                                            background: 'linear-gradient(45deg, #667eea, #764ba2, #667eea)',
-                                            backgroundSize: '200% 200%',
-                                            borderRadius: '21px',
-                                            opacity: 0,
-                                            zIndex: 0,
-                                            animation: 'borderGlow 3s ease-in-out infinite',
-                                            transition: 'opacity 0.3s ease'
-                                        }}
-                                    />
-                                    
-                                    {/* Inner card content */}
-                                    <CardBody className="p-4 p-lg-5 position-relative" style={{ zIndex: 3 }}>
-                                        {/* Icon container */}
-                                        <div 
-                                            className="d-flex align-items-center justify-content-center position-relative mb-4"
-                                            style={{
-                                                width: '60px',
-                                                height: '60px',
-                                                borderRadius: '16px',
-                                                background: 'rgba(255, 255, 255, 0.9)',
-                                                boxShadow: `
-                                                    0 4px 20px rgba(102, 126, 234, 0.15),
-                                                    inset 0 2px 4px rgba(255, 255, 255, 0.8)
-                                                `,
-                                                border: '1px solid rgba(255, 255, 255, 0.9)',
-                                                transition: 'all 0.3s ease'
-                                            }}
-                                        >
-                                            <Image
-                                                src={item.icon}
-                                                alt={item.title}
-                                                width={28}
-                                                height={28}
-                                                style={{
-                                                    filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))'
-                                                }}
-                                            />
-                                            <div 
-                                                className="position-absolute top-0 left-0 w-100 h-100 rounded-circle"
-                                                style={{
-                                                    background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                                                    opacity: 0.1,
-                                                    zIndex: -1
-                                                }}
-                                            />
+                            <div
+                                ref={el => {
+                                    if (el) cardsRef.current[index] = el;
+                                }}
+                                className="brand-solutions-card-wrapper h-100"
+                                style={{'--index': index, '--color': colorSchemes[index].mainColor} as any}
+                            >
+                                <Link href={item.url}
+                                      className="brand-solutions-link text-decoration-none d-block h-100">
+                                    <div
+                                        className="brand-solutions-card position-relative overflow-hidden h-100 rounded-4">
+                                        {/* Animated gradient border */}
+                                        <div className="brand-solutions-border"/>
+
+                                        {/* Floating particles */}
+                                        <div className="brand-solutions-particles">
+                                            {[...Array(8)].map((_, i) => (
+                                                <div
+                                                    key={i}
+                                                    className="brand-solutions-particle"
+                                                    style={{
+                                                        '--particle-size': `${Math.random() * 6 + 4}px`,
+                                                        '--particle-opacity': Math.random() * 0.4 + 0.1,
+                                                        '--particle-x': `${Math.random() * 100}%`,
+                                                        '--particle-y': `${Math.random() * 100}%`,
+                                                        '--particle-delay': `${Math.random() * 2}s`
+                                                    } as any}
+                                                />
+                                            ))}
                                         </div>
-                                        
-                                        {/* Title - Simple and clean */}
-                                        <h3 
-                                            className="h5 mb-3"
-                                            style={{
-                                                color: '#1a202c',
-                                                fontWeight: 600,
-                                                lineHeight: 1.4
-                                            }}
-                                        >
-                                            {item.title}
-                                        </h3>
-                                        
-                                        {/* Description */}
-                                        <p 
-                                            className="mb-0"
-                                            style={{
-                                                color: '#4a5568',
-                                                lineHeight: 1.6,
-                                                fontSize: '0.95rem'
-                                            }}
-                                        >
-                                            {item.description}
-                                        </p>
-                                        
-                                        {/* Points list */}
-                                        {item.points.length > 0 && (
-                                            <ul className="list-unstyled mb-0 mt-3">
-                                                {item.points.map((point, i) => (
-                                                    <li 
-                                                        key={i} 
-                                                        className="d-flex align-items-center mb-2"
-                                                    >
-                                                        <IconifyIcon 
-                                                            icon="bx:check" 
-                                                            className="lead me-2"
-                                                            style={{
-                                                                color: '#667eea',
-                                                                fontSize: '1.1rem'
-                                                            }}
-                                                        />
-                                                        <span style={{ 
-                                                            color: '#4a5568',
-                                                            fontSize: '0.9rem'
-                                                        }}>
-                                                            {point.title}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </CardBody>
-                                    
-                                    {/* Hover effect overlay */}
-                                    <div 
-                                        className="position-absolute top-0 left-0 w-100 h-100"
-                                        style={{
-                                            background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05))',
-                                            opacity: 0,
-                                            transition: 'opacity 0.3s ease',
-                                            borderRadius: '20px',
-                                            zIndex: 2,
-                                            pointerEvents: 'none'
-                                        }}
-                                    />
-                                </div>
-                            </Link>
+
+                                        {/* Card content */}
+                                        <div
+                                            className="brand-solutions-content position-relative h-100 p-3 p-xl-4 d-flex flex-column">
+                                            {/* Icon with floating animation */}
+                                            <div
+                                                className="brand-solutions-icon-container mb-4 position-relative"
+                                                style={{
+                                                    width: '80px',
+                                                    height: '80px',
+                                                    borderRadius: '20px',
+                                                    background: colorSchemes[index].iconBg,
+                                                    border: `2px solid ${colorSchemes[index].borderColor}`,
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+                                                }}
+                                            >
+                                                <div
+                                                    className="brand-solutions-icon-glow"
+                                                    style={{background: colorSchemes[index].lightBg}}
+                                                />
+                                                <Image
+                                                    src={item.icon}
+                                                    alt={item.title}
+                                                    width={36}
+                                                    height={36}
+                                                    style={{color: colorSchemes[index].iconColor}}
+                                                />
+                                            </div>
+
+                                            {/* Title */}
+                                            <h3
+                                                className="h3 fw-bold mb-3"
+                                                style={{
+                                                    color: '#1e293b',
+                                                    fontSize: '1.7rem',
+                                                    lineHeight: 1.3,
+                                                    transition: 'all 0.3s ease'
+                                                }}
+                                            >
+                                                {item.title}
+                                            </h3>
+
+                                            {/* Description */}
+                                            <p
+                                                className="mb-0"
+                                                style={{
+                                                    color: '#475569',
+                                                    lineHeight: 1.7,
+                                                    fontSize: '1.05rem',
+                                                    flex: 1,
+                                                    transition: 'all 0.3s ease'
+                                                }}
+                                            >
+                                                {item.description}
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                         </Col>
                     ))}
                 </Row>
             </Container>
 
             <style jsx global>{`
-                .text-primary {
-                    color: #667eea !important;
+                /* Section styling */
+                .brand-solutions-section {
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
                 }
 
-                /* Text gradient with animation support */
-                .text-gradient-primary {
-                    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-                    background-size: 200% 200%;
-                    background-position: 100% 0%;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    display: inline-block;
+                /* Card wrapper with 3D perspective */
+                .brand-solutions-card-wrapper {
+                    perspective: 1500px;
+                    opacity: 0; /* Initially hidden for animation */
                 }
 
-                @keyframes borderGlow {
+                /* Main card */
+                .brand-solutions-card {
+                    background: #ffffff;
+                    border: 1px solid #cfcfcf;
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05),
+                    0 1px 3px rgba(0, 0, 0, 0.1);
+                    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+                    transform-style: preserve-3d;
+                    position: relative;
+                }
+
+                /* Animated gradient border */
+                .brand-solutions-border {
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 11px;
+                    padding: 2px;
+                    background: linear-gradient(
+                            135deg,
+                            var(--color),
+                            transparent 30%,
+                            transparent 70%,
+                            var(--color)
+                    );
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                }
+
+                /* Floating particles */
+                .brand-solutions-particles {
+                    position: absolute;
+                    inset: 0;
+                    overflow: hidden;
+                    border-radius: 16px;
+                }
+
+                .brand-solutions-particle {
+                    position: absolute;
+                    width: var(--particle-size);
+                    height: var(--particle-size);
+                    background: var(--color);
+                    border-radius: 50%;
+                    opacity: var(--particle-opacity);
+                    left: var(--particle-x);
+                    top: var(--particle-y);
+                    animation: particleFloat 8s ease-in-out infinite;
+                    animation-delay: var(--particle-delay);
+                }
+
+                @keyframes particleFloat {
                     0%, 100% {
-                        background-position: 0% 50%;
+                        transform: translate(0, 0) scale(1);
+                    }
+                    25% {
+                        transform: translate(20px, -15px) scale(1.2);
+                    }
+                    50% {
+                        transform: translate(-10px, 10px) scale(0.8);
+                    }
+                    75% {
+                        transform: translate(15px, 5px) scale(1.1);
+                    }
+                }
+
+                /* Icon glow effect */
+                .brand-solutions-icon-glow {
+                    position: absolute;
+                    inset: -10px;
+                    border-radius: 30px;
+                    filter: blur(20px);
+                    opacity: 0;
+                    transition: opacity 0.4s ease;
+                }
+
+                /* Button underline */
+                .brand-solutions-button-underline {
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    border-radius: 1px;
+                }
+
+                /* Card entry animation */
+                @keyframes cardEntry {
+                    from {
                         opacity: 0;
+                        transform: translateY(80px) scale(0.92) rotateX(5deg);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0) scale(1) rotateX(0);
+                    }
+                }
+
+                .brand-solutions-card-wrapper {
+                    animation: cardEntry 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+                    animation-delay: calc(var(--index) * 0.15s);
+                }
+
+                /* HOVER ANIMATIONS - UNIQUE FOR EACH CARD */
+                .brand-solutions-link:hover .brand-solutions-card {
+                    transform: translateY(-12px) rotateX(2deg) rotateY(1deg);
+                    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12),
+                    0 15px 40px rgba(0, 0, 0, 0.08);
+                }
+
+                /* Border animation on hover */
+                .brand-solutions-link:hover .brand-solutions-border {
+                    opacity: 1;
+                    animation: borderRotate 3s linear infinite;
+                }
+
+                @keyframes borderRotate {
+                    0% {
+                        background-position: 0% 50%;
                     }
                     50% {
                         background-position: 100% 50%;
-                        opacity: 0.3;
+                    }
+                    100% {
+                        background-position: 0% 50%;
                     }
                 }
 
-                @keyframes floatCard {
-                    0%, 100% {
-                        transform: translateY(0);
+                /* Icon animation on hover */
+                .brand-solutions-link:hover .brand-solutions-icon-container {
+                    transform: translateY(-5px) scale(1.05);
+                    border-color: var(--color);
+                    box-shadow: 0 15px 40px var(--color, rgba(59, 130, 246, 0.2)),
+                    0 5px 15px rgba(0, 0, 0, 0.1);
+                }
+
+                .brand-solutions-link:hover .brand-solutions-icon-glow {
+                    opacity: 0.6;
+                }
+
+                /* Particle animation on hover */
+                .brand-solutions-link:hover .brand-solutions-particle {
+                    animation-duration: 4s;
+                    opacity: calc(var(--particle-opacity) * 1.5);
+                }
+
+                /* Text color change on hover */
+                .brand-solutions-link:hover .brand-solutions-content h3 {
+                    color: var(--color);
+                }
+
+                /* Button animation on hover */
+                .brand-solutions-link:hover .brand-solutions-button-underline {
+                    width: 100%;
+                }
+
+                .brand-solutions-link:hover .brand-solutions-arrow svg {
+                    transform: translateX(8px) scale(1.1);
+                    color: var(--color);
+                }
+
+                /* Arrow bounce animation */
+                .brand-solutions-arrow {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .brand-solutions-arrow svg {
+                    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                }
+
+                /* Responsive design */
+                @media (max-width: 1200px) {
+                    .brand-solutions-content {
+                        padding: 1.75rem !important;
                     }
-                    50% {
-                        transform: translateY(-8px);
+
+                    h3 {
+                        font-size: 1.5rem !important;
                     }
                 }
 
-                .glass-card {
-                    animation: floatCard 6s ease-in-out infinite;
-                    animation-delay: calc(var(--i, 0) * 0.3s);
+                @media (max-width: 992px) {
+                    .brand-solutions-card {
+                        height: 320px !important;
+                    }
+
+                    .brand-solutions-icon-container {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .display-4 {
+                        font-size: 2.5rem !important;
+                    }
                 }
 
-                .glass-card:hover {
-                    animation-play-state: paused;
-                    transform: translateY(-8px) scale(1.02) !important;
+                @media (max-width: 768px) {
+                    .brand-solutions-section {
+                        padding: 3rem 0 !important;
+                    }
+
+                    .brand-solutions-card {
+                        height: 300px !important;
+                    }
+
+                    .brand-solutions-content {
+                        padding: 1.5rem !important;
+                    }
+
+                    h3 {
+                        font-size: 1.4rem !important;
+                    }
+
+                    .lead {
+                        font-size: 1.1rem !important;
+                    }
                 }
 
-                .glass-card:hover > div:first-child {
-                    background: rgba(255, 255, 255, 0.85) !important;
-                    border-color: rgba(255, 255, 255, 0.9) !important;
-                    box-shadow: 
-                        0 16px 48px rgba(31, 38, 135, 0.15),
-                        inset 0 1px 0 rgba(255, 255, 255, 0.9),
-                        inset 0 -1px 0 rgba(0, 0, 0, 0.05) !important;
+                @media (max-width: 576px) {
+                    .brand-solutions-card {
+                        height: 280px !important;
+                    }
+
+                    .brand-solutions-icon-container {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .display-4 {
+                        font-size: 2rem !important;
+                    }
+
+                    .brand-solutions-particle {
+                        display: none;
+                    }
                 }
 
-                .glass-card:hover > div:nth-child(3) {
-                    opacity: 0.5 !important;
-                }
+                @media (max-width: 400px) {
+                    .brand-solutions-card {
+                        height: 320px !important;
+                    }
 
-                .glass-card:hover > div:last-child {
-                    opacity: 1 !important;
+                    .brand-solutions-content p {
+                        font-size: 0.95rem !important;
+                    }
                 }
-
-                .glass-card:hover .d-flex {
-                    transform: scale(1.08);
-                    background: rgba(255, 255, 255, 1) !important;
-                    box-shadow: 
-                        0 8px 32px rgba(102, 126, 234, 0.25),
-                        inset 0 2px 8px rgba(255, 255, 255, 0.9) !important;
-                }
-
-                /* Add slight delay to each card animation */
-                .glass-card:nth-child(1) { --i: 0; }
-                .glass-card:nth-child(2) { --i: 1; }
-                .glass-card:nth-child(3) { --i: 2; }
-                .glass-card:nth-child(4) { --i: 3; }
             `}</style>
         </section>
     );

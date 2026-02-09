@@ -1,5 +1,4 @@
 import IconifyIcon from '@/components/IconifyIcon';
-import {Metadata} from 'next';
 import Link from 'next/link';
 import PageTitle from './components/PageTitle';
 import TextSession from './components/TextSession';
@@ -8,12 +7,11 @@ import NavbarPage from "@/components/navbar/Navbar-page";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import Description from "./components/Description";
-import Portfolio from "./components/Portfolio";
 import Faqs from "./components/Faqs";
-import Package from "./components/package"
+import Portfolio from "@/components/common/Portfolio";
 
 export const metadata = {
-        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+    metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
         title: "Paid Marketing Perth WA – #1 PPC & Digital Ads (2026) | McWIN iTECH",
         description:
@@ -26,9 +24,9 @@ export const metadata = {
                 "Full-Stack Development",
         ],
 
-        alternates: {
-                canonical: "https://www.mcwinitech.com.au/grow/paid-marketing/",
-        }
+    alternates: {
+        canonical: "https://www.mcwinitech.com.au/grow/paid-marketing/",
+    }
 };
 const Page = () => {
     return (
@@ -65,7 +63,6 @@ const Page = () => {
             <Portfolio/>
             <TextSession/>
             <Faqs/>
-            {/*<Package/>*/}
             <Subscribe/>
             <Footer/>
         </>

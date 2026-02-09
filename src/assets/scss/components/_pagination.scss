@@ -15,10 +15,12 @@
   height: 100%;
   @include border-radius(var(--#{$prefix}pagination-border-radius));
   font-weight: var(--#{$prefix}pagination-font-weight);
+
   > i {
     margin-top: 0.0625rem;
     font-size: 1.425em;
   }
+
   &:focus {
     box-shadow: none;
   }
@@ -26,12 +28,15 @@
 
 .page-item {
   margin: 0 $pagination-margin;
+
   &:first-child {
     margin-left: 0;
   }
+
   &:last-child {
     margin-right: 0;
   }
+
   &.active .page-link {
     box-shadow: var(--#{$prefix}pagination-active-box-shadow);
   }

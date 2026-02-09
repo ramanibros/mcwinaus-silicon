@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './components/Hero';
-import {Metadata} from 'next';
 import NavbarPage from "@/components/navbar/Navbar-page";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
@@ -9,11 +8,11 @@ import Faqs from "@/app/(landings)/brand/components/Faqs";
 import HowWork from "@/app/(landings)/brand/components/HowWork";
 import Solutions from "@/app/(landings)/brand/components/Solutions";
 import Benefits from "@/app/(landings)/brand/components/Benefits";
-import Portfolio from "@/app/(landings)/brand/components/Portfolio";
 import Package from "@/app/(landings)/brand/components/package";
+import Portfolio from "@/components/common/Portfolio";
 
 export const metadata = {
-        metadataBase: new URL("https://www.mcwinitech.com.au/"),
+    metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
         title: "Branding Agency Perth 2026 | Powerful Growth | McWIN iTECH ",
         description:
@@ -26,9 +25,9 @@ export const metadata = {
                 "Full-Stack Development",
         ],
 
-        alternates: {
-                canonical: "https://www.mcwinitech.com.au/brand/",
-        }
+    alternates: {
+        canonical: "https://www.mcwinitech.com.au/brand/",
+    }
 };
 const Page = () => {
     return (
