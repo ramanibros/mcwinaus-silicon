@@ -33,7 +33,7 @@ const Page = () => {
                 Headerclass="header navbar navbar-expand-lg bg-light navbar-sticky"
                 headerSticky="navbar-stuck"
             />
-            <nav className="container py-4 mb-md-2 mb-lg-5 mt-lg-3" aria-label="breadcrumb">
+            {/* <nav className="container py-4 mb-md-2 mb-lg-5 mt-lg-3" aria-label="breadcrumb">
                 <ol className="breadcrumb mb-0">
                     <li className="breadcrumb-item">
                         <Link href="/index">
@@ -48,7 +48,7 @@ const Page = () => {
                         Hire Resource
                     </li>
                 </ol>
-            </nav>
+            </nav> */}
               <Hero/>
                <Description/>
              <HowWork/>
