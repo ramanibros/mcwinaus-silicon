@@ -56,11 +56,11 @@ const DescriptionSection = () => {
   const spanRef = useRef<HTMLSpanElement>(null);
   const pRef = useRef<HTMLParagraphElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const cardsContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Title animation - similar to reference code
+    // Title animation - EXACTLY THE SAME (no changes)
     if (h2Ref.current && spanRef.current && pRef.current) {
-      // Create a timeline for the header animations
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: h2Ref.current,
@@ -70,13 +70,11 @@ const DescriptionSection = () => {
         }
       });
 
-      // Animate the main heading
       tl.fromTo(h2Ref.current,
         { opacity: 0, y: 60 },
         { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
       );
 
-      // Animate the gradient text span
       tl.fromTo(spanRef.current,
         {
           opacity: 0,
@@ -93,7 +91,6 @@ const DescriptionSection = () => {
         "-=0.8"
       );
 
-      // Animate the paragraph
       tl.fromTo(pRef.current,
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
@@ -101,33 +98,40 @@ const DescriptionSection = () => {
       );
     }
 
-    // Cards entry animation
-    cardsRef.current.forEach((card, index) => {
-      if (card) {
-        gsap.fromTo(card,
-          {
-            opacity: 0,
-            y: 80,
-            scale: 0.92,
-            rotationX: 5,
-          },
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            rotationX: 0,
-            duration: 0.8,
-            delay: index * 0.1, // Slightly faster stagger
-            ease: "back.out(1.4)",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 90%",
-              end: "top 60%",
-              toggleActions: "play none none reverse"
-            }
-          }
-        );
+    // COMPLETELY REWORKED - Smooth box animations with fade + scale
+    // Create a master timeline for all cards
+    const masterTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: cardsContainerRef.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
       }
+    });
+
+    // Set initial state for all cards
+    cardsRef.current.forEach((card) => {
+      if (card) {
+        gsap.set(card, {
+          opacity: 0,
+          y: 40,
+          scale: 0.95,
+        });
+      }
+    });
+
+    // Smooth staggered fade-in animation
+    masterTl.to(cardsRef.current, {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      duration: 0.9,
+      stagger: {
+        amount: 1.2,
+        from: "start",
+        ease: "power2.out"
+      },
+      ease: "power3.out"
     });
 
     // Cleanup ScrollTrigger instances
@@ -135,6 +139,47 @@ const DescriptionSection = () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
   }, []);
+
+  // Smooth hover animations using GSAP
+  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const icon = card.querySelector('.desc-icon');
+    
+    gsap.to(card, {
+      y: -8,
+      scale: 1.02,
+      duration: 0.4,
+      ease: "power2.out",
+      boxShadow: "0 25px 50px -8px rgba(0,0,0,0.15)"
+    });
+    
+    gsap.to(icon, {
+      y: -5,
+      scale: 1.1,
+      duration: 0.4,
+      ease: "power2.out"
+    });
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const icon = card.querySelector('.desc-icon');
+    
+    gsap.to(card, {
+      y: 0,
+      scale: 1,
+      duration: 0.5,
+      ease: "power2.out",
+      boxShadow: "none"
+    });
+    
+    gsap.to(icon, {
+      y: 0,
+      scale: 1,
+      duration: 0.5,
+      ease: "power2.out"
+    });
+  };
 
   return (
     <section className="description-section">
@@ -167,7 +212,7 @@ const DescriptionSection = () => {
           </p>
         </header>
 
-        <Row>
+        <Row ref={cardsContainerRef}>
           {descriptionData.map((item, index) => (
             <Col lg={4} md={6} key={index} className="mb-4">
               <div 
@@ -176,6 +221,8 @@ const DescriptionSection = () => {
                 }}
                 className="desc-card"
                 style={{ opacity: 0 }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <div
                   className="desc-icon"
@@ -226,15 +273,10 @@ const DescriptionSection = () => {
           border-radius: 26px;
           background: #ffffff;
           border: 1px solid #eceffd;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          transform-style: preserve-3d;
-          perspective: 1000px;
-        }
-
-        .desc-card:hover {
-          transform: translateY(-12px) rotateX(2deg) rotateY(1deg);
-          box-shadow: 0 30px 60px rgba(30, 40, 120, 0.15),
-                      0 15px 40px rgba(30, 40, 120, 0.1);
+          transition: none; /* GSAP handles all animations */
+          transform: translateZ(0); /* Force GPU acceleration */
+          backface-visibility: hidden;
+          -webkit-font-smoothing: antialiased;
         }
 
         .desc-icon {
@@ -246,13 +288,8 @@ const DescriptionSection = () => {
           justify-content: center;
           margin-bottom: 20px;
           color: #ffffff;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .desc-card:hover .desc-icon {
-          transform: translateY(-5px) scale(1.05);
-          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2),
-                      0 5px 15px rgba(0, 0, 0, 0.1);
+          transition: none; /* GSAP handles all animations */
+          transform: translateZ(0); /* Force GPU acceleration */
         }
 
         .desc-card h5 {

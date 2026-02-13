@@ -65,224 +65,191 @@ const highlights = [
 ];
 
 const TextSession = () => {
-  // Create refs for animation elements
+  // Create refs for animation elements - LEFT SIDE ONLY
+  const sectionRef = useRef<HTMLElement>(null);
   const h2Ref = useRef<HTMLHeadingElement>(null);
   const spanRef = useRef<HTMLSpanElement>(null);
   const pRef = useRef<HTMLParagraphElement>(null);
   const timelineItemsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const stickyBoxRef = useRef<HTMLDivElement>(null);
-  const listItemsRef = useRef<(HTMLLIElement | null)[]>([]);
+  const timelineCardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const timelineIconsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const timelineDotsRef = useRef<(HTMLSpanElement | null)[]>([]);
+  const timelineLinesRef = useRef<(HTMLSpanElement | null)[]>([]);
+  
+  // NO GSAP REFS FOR RIGHT SIDE - using CSS only
 
   useEffect(() => {
-    // Header animation
-    if (h2Ref.current && spanRef.current && pRef.current) {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 85%",
-          end: "top 50%",
-          scrub: 1,
-        }
-      });
+    // Set initial states for LEFT SIDE animated elements ONLY
+    gsap.set([h2Ref.current, spanRef.current, pRef.current], {
+      opacity: 0,
+      y: 40
+    });
 
-      // Animate main heading
-      tl.fromTo(h2Ref.current,
-        { opacity: 0, y: 60 },
-        { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
-      );
+    gsap.set(timelineItemsRef.current, {
+      opacity: 0,
+      x: -30
+    });
 
-      // Animate gradient text
-      tl.fromTo(spanRef.current,
-        {
-          opacity: 0,
-          scale: 0.8,
-          backgroundPosition: "100% 0%"
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          backgroundPosition: "0% 100%",
-          duration: 1.2,
-          ease: "back.out(1.7)"
-        },
-        "-=0.8"
-      );
+    gsap.set(timelineCardsRef.current, {
+      opacity: 0,
+      scale: 0.92,
+      y: 30
+    });
 
-      // Animate paragraph
-      tl.fromTo(pRef.current,
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
-        "-=0.5"
-      );
-    }
+    gsap.set(timelineIconsRef.current, {
+      opacity: 0,
+      scale: 0.6,
+      rotation: -15
+    });
 
-    // Timeline items animation (staggered from left)
-    timelineItemsRef.current.forEach((item, index) => {
-      if (item) {
-        gsap.fromTo(item,
-          {
-            opacity: 0,
-            x: -60,
-            rotationY: 10,
-            scale: 0.95
-          },
-          {
-            opacity: 1,
-            x: 0,
-            rotationY: 0,
-            scale: 1,
-            duration: 0.8,
-            delay: index * 0.2,
-            ease: "back.out(1.2)",
-            scrollTrigger: {
-              trigger: item,
-              start: "top 85%",
-              end: "top 60%",
-              toggleActions: "play none none reverse"
-            }
-          }
-        );
+    gsap.set(timelineDotsRef.current, {
+      opacity: 0,
+      scale: 0
+    });
 
-        // Add dots animation
-        const dot = item.querySelector('.dot');
-        if (dot) {
-          gsap.fromTo(dot,
-            { scale: 0, opacity: 0 },
-            {
-              scale: 1,
-              opacity: 1,
-              duration: 0.6,
-              delay: index * 0.2 + 0.3,
-              ease: "back.out(2)",
-              scrollTrigger: {
-                trigger: item,
-                start: "top 85%",
-                end: "top 60%",
-                toggleActions: "play none none reverse"
-              }
-            }
-          );
-        }
+    gsap.set(timelineLinesRef.current, {
+      opacity: 0,
+      scaleY: 0,
+      transformOrigin: "top center"
+    });
 
-        // Add icon animation
-        const icon = item.querySelector('.timeline-icon');
-        if (icon) {
-          gsap.fromTo(icon,
-            { 
-              opacity: 0,
-              scale: 0.5,
-              rotation: -20,
-              y: 20
-            },
-            {
-              opacity: 1,
-              scale: 1,
-              rotation: 0,
-              y: 0,
-              duration: 0.8,
-              delay: index * 0.2 + 0.2,
-              ease: "back.out(1.7)",
-              scrollTrigger: {
-                trigger: item,
-                start: "top 85%",
-                end: "top 60%",
-                toggleActions: "play none none reverse"
-              }
-            }
-          );
-        }
+    // Master timeline for LEFT SIDE animations ONLY
+    const masterTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
       }
     });
 
-    // Sticky box animation
-    if (stickyBoxRef.current) {
-      gsap.fromTo(stickyBoxRef.current,
-        {
-          opacity: 0,
-          x: 40,
-          scale: 0.9,
-          rotationY: -5
-        },
-        {
+    // 1. HEADER ANIMATIONS - Smooth fade up
+    masterTl
+      .to(h2Ref.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out"
+      })
+      .to(spanRef.current, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        backgroundPosition: "0% 100%",
+        duration: 1,
+        ease: "power3.out"
+      }, "-=0.6")
+      .to(pRef.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: "power2.out"
+      }, "-=0.4");
+
+    // 2. TIMELINE ITEMS - Smooth staggered entrance
+    timelineItemsRef.current.forEach((_, index) => {
+      masterTl
+        .to(timelineItemsRef.current[index], {
           opacity: 1,
           x: 0,
+          duration: 0.8,
+          ease: "power3.out"
+        }, `-=${index === 0 ? 0.2 : 0.4}`)
+        .to(timelineDotsRef.current[index], {
+          opacity: 1,
           scale: 1,
-          rotationY: 0,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: stickyBoxRef.current,
-            start: "top 80%",
-            end: "top 60%",
-            toggleActions: "play none none reverse"
-          }
-        }
-      );
-    }
+          duration: 0.6,
+          ease: "back.out(1.2)"
+        }, "-=0.6")
+        .to(timelineLinesRef.current[index], {
+          opacity: 1,
+          scaleY: 1,
+          duration: 0.8,
+          ease: "power3.inOut"
+        }, "-=0.4")
+        .to(timelineCardsRef.current[index], {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power3.out"
+        }, "-=0.5")
+        .to(timelineIconsRef.current[index], {
+          opacity: 1,
+          scale: 1,
+          rotation: 0,
+          duration: 0.8,
+          ease: "back.out(1.4)"
+        }, "-=0.7");
+    });
 
-    // List items animation (staggered)
-    listItemsRef.current.forEach((item, index) => {
-      if (item) {
-        gsap.fromTo(item,
-          {
-            opacity: 0,
-            x: 20,
-            scale: 0.9
-          },
-          {
-            opacity: 1,
-            x: 0,
+    // SMOOTH HOVER ANIMATIONS - LEFT SIDE ONLY
+    timelineCardsRef.current.forEach((card) => {
+      if (card) {
+        card.addEventListener('mouseenter', () => {
+          gsap.to(card, {
+            y: -8,
+            scale: 1.02,
+            duration: 0.4,
+            ease: "power2.out",
+            boxShadow: "0 30px 60px rgba(30, 40, 120, 0.14), 0 15px 40px rgba(30, 40, 120, 0.08)"
+          });
+          
+          const icon = card.querySelector('.timeline-icon');
+          if (icon) {
+            gsap.to(icon, {
+              y: -5,
+              scale: 1.05,
+              duration: 0.4,
+              ease: "power2.out"
+            });
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          gsap.to(card, {
+            y: 0,
             scale: 1,
             duration: 0.5,
-            delay: index * 0.1 + 0.3,
             ease: "power2.out",
-            scrollTrigger: {
-              trigger: item,
-              start: "top 90%",
-              end: "top 70%",
-              toggleActions: "play none none reverse"
-            }
-          }
-        );
-
-        // Icon bounce animation
-        const icon = item.querySelector('.list-icon');
-        if (icon) {
-          gsap.fromTo(icon,
-            { scale: 0, opacity: 0 },
-            {
+            boxShadow: "none"
+          });
+          
+          const icon = card.querySelector('.timeline-icon');
+          if (icon) {
+            gsap.to(icon, {
+              y: 0,
               scale: 1,
-              opacity: 1,
-              duration: 0.6,
-              delay: index * 0.1 + 0.4,
-              ease: "back.out(1.7)",
-              scrollTrigger: {
-                trigger: item,
-                start: "top 90%",
-                end: "top 70%",
-                toggleActions: "play none none reverse"
-              }
-            }
-          );
-        }
+              duration: 0.5,
+              ease: "power2.out"
+            });
+          }
+        });
       }
     });
 
-    // Cleanup ScrollTrigger instances
+    // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      
+      timelineCardsRef.current.forEach((card) => {
+        if (card) {
+          card.removeEventListener('mouseenter', () => {});
+          card.removeEventListener('mouseleave', () => {});
+        }
+      });
     };
   }, []);
 
   return (
-    <section className="hire-process">
+    <section ref={sectionRef} className="hire-process">
       <div className="container">
         <div className="process-grid">
           
-          {/* LEFT — Timeline */}
+          {/* LEFT — Timeline - WITH GSAP ANIMATIONS */}
           <div className="timeline">
             <header className="section-header">
-              <h2 ref={h2Ref} style={{ opacity: 0 }}>
+              <h2 ref={h2Ref}>
                 <span 
                   ref={spanRef}
                   className="text-gradient-primary"
@@ -292,8 +259,7 @@ const TextSession = () => {
                     backgroundClip: 'text',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
-                    display: 'inline-block',
-                    opacity: 0
+                    display: 'inline-block'
                   }}
                 >
                   How You Can
@@ -302,12 +268,10 @@ const TextSession = () => {
               </h2>
               <p 
                 ref={pRef}
-                style={{ opacity: 0 }}
               >
                 A simple, transparent, and fast hiring process designed for
                 modern businesses
               </p>
-              
             </header>
 
             {steps.map((item, index) => (
@@ -317,16 +281,36 @@ const TextSession = () => {
                 }}
                 className="timeline-item" 
                 key={index}
-                style={{ opacity: 0 }}
               >
                 <div className="timeline-left">
                   <span className="step">{item.step}</span>
-                  <span className="dot" style={{ background: item.gradient }} />
-                  {index !== steps.length - 1 && <span className="line" />}
+                  <span 
+                    ref={el => {
+                      if (el) timelineDotsRef.current[index] = el;
+                    }}
+                    className="dot" 
+                    style={{ background: item.gradient }} 
+                  />
+                  {index !== steps.length - 1 && (
+                    <span 
+                      ref={el => {
+                        if (el) timelineLinesRef.current[index] = el;
+                      }}
+                      className="line" 
+                    />
+                  )}
                 </div>
 
-                <div className="timeline-card">
+                <div 
+                  ref={el => {
+                    if (el) timelineCardsRef.current[index] = el;
+                  }}
+                  className="timeline-card"
+                >
                   <div
+                    ref={el => {
+                      if (el) timelineIconsRef.current[index] = el;
+                    }}
                     className="timeline-icon"
                     style={{ background: item.gradient }}
                   >
@@ -344,33 +328,25 @@ const TextSession = () => {
             ))}
           </div>
 
-          {/* RIGHT — Sticky List */}
-          <div className="process-sticky">
-            <div 
-              ref={stickyBoxRef}
-              className="sticky-box"
-              style={{ opacity: 0 }}
-            >
-              <h3>Why Hire From Us?</h3>
-              <p>We simplify hiring by giving you access to vetted developers,
-                flexible engagement models, and complete transparency.</p>
+          {/* RIGHT — Sticky List - FIXED STICKY POSITIONING */}
+          <div className="process-sticky-wrapper">
+            <div className="process-sticky">
+              <div className="sticky-box">
+                <h3>Why Hire From Us?</h3>
+                <p>We simplify hiring by giving you access to vetted developers,
+                  flexible engagement models, and complete transparency.</p>
 
-              <ul className="feature-list">
-                {highlights.map((item, index) => (
-                  <li 
-                    ref={el => {
-                      if (el) listItemsRef.current[index] = el;
-                    }}
-                    key={index}
-                    style={{ opacity: 0 }}
-                  >
-                    <span className="list-icon">
-                      <IconifyIcon icon={item.icon} width={22} />
-                    </span>
-                    {item.text}
-                  </li>
-                ))}
-              </ul>
+                <ul className="feature-list">
+                  {highlights.map((item, index) => (
+                    <li key={index}>
+                      <span className="list-icon">
+                        <IconifyIcon icon={item.icon} width={22} />
+                      </span>
+                      {item.text}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -381,14 +357,16 @@ const TextSession = () => {
         .hire-process {
           padding: 120px 0;
           background: #ffffff;
-         
+          position: relative;
+          overflow: visible;
         }
 
         .process-grid {
           display: grid;
           grid-template-columns: 1.2fr 1fr;
           gap: 80px;
-          align-items: flex-start;
+          align-items: start;
+          position: relative;
         }
 
         /* HEADER */
@@ -406,14 +384,18 @@ const TextSession = () => {
           line-height: 1.6;
         }
 
-        /* TIMELINE */
+        /* TIMELINE - GSAP ANIMATED */
+        .timeline {
+          position: relative;
+        }
+
         .timeline-item {
           display: flex;
           gap: 30px;
           margin-bottom: 70px;
           will-change: transform, opacity;
-          transform-style: preserve-3d;
-          perspective: 1000px;
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
 
         .timeline-left {
@@ -437,6 +419,7 @@ const TextSession = () => {
           position: relative;
           z-index: 2;
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+          transform: translateZ(0);
         }
 
         .dot::after {
@@ -455,6 +438,7 @@ const TextSession = () => {
           background: linear-gradient(to bottom, #e7e9f1, transparent);
           margin-top: 8px;
           position: relative;
+          transform-origin: top center;
         }
 
         .timeline-card {
@@ -462,16 +446,11 @@ const TextSession = () => {
           border-radius: 26px;
           border: 1px solid #eceffd;
           background: #ffffff;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          transform-style: preserve-3d;
-          will-change: transform;
-              width: 380px;
-        }
-
-        .timeline-card:hover {
-          transform: translateY(-8px) rotateX(1deg) rotateY(1deg);
-          box-shadow: 0 30px 60px rgba(30, 40, 120, 0.14),
-                      0 15px 40px rgba(30, 40, 120, 0.08);
+          transition: none;
+          transform: translateZ(0);
+          backface-visibility: hidden;
+          width: 380px;
+          will-change: transform, box-shadow;
         }
 
         .timeline-icon {
@@ -483,32 +462,24 @@ const TextSession = () => {
           justify-content: center;
           margin-bottom: 20px;
           color: #ffffff;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: none;
+          transform: translateZ(0);
+          backface-visibility: hidden;
           will-change: transform;
-        }
-
-        .timeline-card:hover .timeline-icon {
-          transform: translateY(-5px) scale(1.05);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
         .timeline-icon :global(svg) {
           width: 48px !important;
           height: 48px !important;
-          transition: transform 0.3s ease;
-        }
-
-        .timeline-card:hover .timeline-icon :global(svg) {
-          transform: scale(1.1);
+          transition: none;
         }
 
         .timeline-card h5 {
           font-size: 19px;
           font-weight: 600;
-          margin-bottom: 10px;
+          margin-bottom: 0px;
           color: #0a0d1c;
           transition: color 0.3s ease;
-          margin-bottom : 0px;
         }
 
         .timeline-card:hover h5 {
@@ -521,10 +492,16 @@ const TextSession = () => {
           line-height: 1.7;
         }
 
-        /* RIGHT LIST */
+        /* RIGHT LIST - FIXED STICKY POSITIONING */
+        .process-sticky-wrapper {
+          position: relative;
+          height: 100%;
+        }
+
         .process-sticky {
           position: sticky;
           top: 120px;
+          width: 100%;
         }
 
         .sticky-box {
@@ -532,8 +509,9 @@ const TextSession = () => {
           border-radius: 28px;
           background: linear-gradient(135deg, #f7f8ff, #ffffff);
           border: 1px solid #eceffd;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          will-change: transform, opacity;
+          transition: all 0.4s cubic-bezier(0.2, 0, 0, 1);
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
 
         .sticky-box:hover {
@@ -546,6 +524,12 @@ const TextSession = () => {
           font-weight: 700;
           margin-bottom: 22px;
           color: #0a0d1c;
+        }
+
+        .sticky-box p {
+          color: #5a5f73;
+          line-height: 1.7;
+          margin-bottom: 30px;
         }
 
         .feature-list {
@@ -561,12 +545,13 @@ const TextSession = () => {
           font-size: 15px;
           color: #5a5f73;
           margin-bottom: 16px;
-          transition: all 0.3s ease;
-          will-change: transform, opacity;
+          transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+          transform: translateZ(0);
+          backface-visibility: hidden;
         }
 
         .feature-list li:hover {
-          transform: translateX(5px);
+          transform: translateX(8px);
           color: #0a0d1c;
         }
 
@@ -574,14 +559,20 @@ const TextSession = () => {
           color: #6a5cff;
           flex-shrink: 0;
           margin-top: 2px;
-          transition: all 0.3s ease;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
           position: relative;
           width: 20px;
           height: 20px;
           display: flex;
           align-items: center;
           justify-content: center;
-          
+          transform: translateZ(0);
+          backface-visibility: hidden;
+        }
+
+        .feature-list li:hover .list-icon {
+          transform: scale(1.2) rotate(5deg);
+          color: #6a5cff;
         }
 
         .list-icon::after {
@@ -594,12 +585,8 @@ const TextSession = () => {
           transition: opacity 0.3s ease;
         }
 
-        .feature-list li:hover .list-icon {
-          transform: scale(1.1);
-        }
-
         .feature-list li:hover .list-icon::after {
-          opacity: 0.1;
+          opacity: 0.15;
         }
 
         /* MOBILE */
@@ -608,8 +595,13 @@ const TextSession = () => {
             grid-template-columns: 1fr;
             gap: 40px;
           }
+          
           .timeline-card {
-            width : 100%;
+            width: 100%;
+          }
+
+          .process-sticky-wrapper {
+            height: auto;
           }
 
           .process-sticky {
@@ -662,8 +654,6 @@ const TextSession = () => {
           .section-header h2 {
             font-size: 28px;
           }
-          
-         
         }
       `}</style>
     </section>
