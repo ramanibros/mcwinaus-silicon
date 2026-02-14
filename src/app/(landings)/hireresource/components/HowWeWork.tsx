@@ -76,91 +76,130 @@ const techData: Record<string, any[]> = {
 const HireByTechnology = () => {
   const [activeTab, setActiveTab] = useState("Frontend");
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-  
+  const [isAnimating, setIsAnimating] = useState(false);
+
   // Create refs for animation elements
+  const sectionRef = useRef<HTMLElement>(null);
   const h2Ref = useRef<HTMLHeadingElement>(null);
   const spanRef = useRef<HTMLSpanElement>(null);
   const pRef = useRef<HTMLParagraphElement>(null);
-  const tabsRef = useRef<HTMLDivElement>(null);
+  const tabsContainerRef = useRef<HTMLDivElement>(null);
   const cardsContainerRef = useRef<HTMLDivElement>(null);
-  const ringsRef = useRef<(HTMLSpanElement | null)[]>([]);
+  const floatingShapesRef = useRef<(HTMLDivElement | null)[]>([]);
   
   // Store animation instances for cleanup
-  const animationsRef = useRef<(gsap.core.Tween | gsap.core.Timeline)[]>([]);
+  const animationsRef = useRef<gsap.core.Tween[]>([]);
+  const masterTlRef = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
-    // Initial header animations
-    const headerTl = gsap.timeline({
+    // Create a master timeline for section entrance
+    const masterTl = gsap.timeline({
       scrollTrigger: {
-        trigger: h2Ref.current,
-        start: "top 85%",
-        end: "top 50%",
-        scrub: 1,
+        trigger: sectionRef.current,
+        start: "top 80%",
+        end: "top 30%",
+        toggleActions: "play none none reverse"
       }
     });
 
+    // Animate header
     if (h2Ref.current && spanRef.current && pRef.current) {
-      headerTl
+      masterTl
         .fromTo(h2Ref.current,
-          { opacity: 0, y: 60 },
-          { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+          { opacity: 0, y: 60, rotateX: -15 },
+          { opacity: 1, y: 0, rotateX: 0, duration: 1, ease: "power3.out" }
         )
         .fromTo(spanRef.current,
-          { opacity: 0, scale: 0.8, backgroundPosition: "100% 0%" },
-          { opacity: 1, scale: 1, backgroundPosition: "0% 100%", duration: 1.2, ease: "back.out(1.7)" },
+          {
+            opacity: 0,
+            scale: 0.5,
+            backgroundPosition: "200% 0%"
+          },
+          {
+            opacity: 1,
+            scale: 1,
+            backgroundPosition: "0% 100%",
+            duration: 1.2,
+            ease: "elastic.out(1, 0.5)"
+          },
           "-=0.8"
         )
         .fromTo(pRef.current,
-          { opacity: 0, y: 30 },
-          { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
+          { opacity: 0, y: 30, filter: "blur(10px)" },
+          { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.8, ease: "power2.out" },
           "-=0.5"
         );
     }
 
+    // Animate floating shapes
+    floatingShapesRef.current.forEach((shape, index) => {
+      if (shape) {
+        // Entrance animation
+        gsap.fromTo(shape,
+          {
+            opacity: 0,
+            scale: 0,
+            rotation: index * 45,
+            x: index % 2 === 0 ? -100 : 100,
+            y: index % 3 === 0 ? -100 : 100
+          },
+          {
+            opacity: 0.6,
+            scale: 1,
+            rotation: 0,
+            x: 0,
+            y: 0,
+            duration: 1.5,
+            delay: index * 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top 70%",
+              end: "top 30%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+
+        // Floating animation
+        const floatAnim = gsap.to(shape, {
+          y: -20,
+          x: index % 2 === 0 ? 10 : -10,
+          rotation: index * 2,
+          duration: 3 + index,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+          delay: index * 0.5
+        });
+        animationsRef.current.push(floatAnim);
+      }
+    });
+
     // Animate tabs container
-    if (tabsRef.current) {
-      gsap.fromTo(tabsRef.current,
-        { opacity: 0, y: 40 },
+    if (tabsContainerRef.current) {
+      gsap.fromTo(tabsContainerRef.current,
+        { opacity: 0, x: -50, rotateY: -15 },
         {
           opacity: 1,
-          y: 0,
-          duration: 0.8,
+          x: 0,
+          rotateY: 0,
+          duration: 1,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: tabsRef.current,
-            start: "top 80%",
-            end: "top 60%",
+            trigger: tabsContainerRef.current,
+            start: "top 75%",
+            end: "top 45%",
             toggleActions: "play none none reverse"
           }
         }
       );
     }
 
-    // Animate background rings
-    ringsRef.current.forEach((ring, index) => {
-      if (ring) {
-        gsap.fromTo(ring,
-          { opacity: 0, scale: 0.8, rotation: index % 2 === 0 ? -30 : 30 },
-          {
-            opacity: 1,
-            scale: 1,
-            rotation: 0,
-            duration: 1.5,
-            delay: index * 0.2,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: ring,
-              start: "top 90%",
-              end: "top 60%",
-              toggleActions: "play none none reverse"
-            }
-          }
-        );
-      }
-    });
-
-    // Initial card animation with stagger
-    animateCards();
+    // Initial card animation
+    setTimeout(() => {
+      animateCards();
+    }, 500);
 
     setIsInitialLoad(false);
 
@@ -168,145 +207,241 @@ const HireByTechnology = () => {
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
       animationsRef.current.forEach(anim => anim.kill());
+      if (masterTlRef.current) {
+        masterTlRef.current.kill();
+      }
     };
   }, []);
 
-  // Animate cards when tab changes with smooth transition
+  // Animate cards when tab changes
   useEffect(() => {
-    if (!isInitialLoad) {
+    if (!isInitialLoad && !isAnimating) {
       animateCards();
     }
   }, [activeTab, isInitialLoad]);
 
   const animateCards = () => {
+    // Prevent multiple animations
+    if (isAnimating) return;
+    setIsAnimating(true);
+
     // Kill any existing card animations
     animationsRef.current.forEach(anim => anim.kill());
     animationsRef.current = [];
+    if (masterTlRef.current) {
+      masterTlRef.current.kill();
+    }
 
     // Get all cards
     const cards = document.querySelectorAll('.tech-card');
-    
-    if (cards.length === 0) return;
+    const container = cardsContainerRef.current;
 
-    // Create a master timeline for smooth sequencing
+    if (cards.length === 0 || !container) {
+      setIsAnimating(false);
+      return;
+    }
+
+    // Create a master timeline for smooth transition
     const masterTl = gsap.timeline({
       defaults: {
-        ease: "power3.out",
+        ease: "power2.inOut",
+      },
+      onComplete: () => {
+        setIsAnimating(false);
       }
     });
 
-    // First, fade out existing cards
+    masterTlRef.current = masterTl;
+
+    // Set initial state for all cards
+    gsap.set(cards, {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      rotateY: 0,
+      filter: "blur(0px)"
+    });
+
+    // Animate out - smoother exit with 3D effect
     masterTl.to(cards, {
       opacity: 0,
-      y: 30,
-      scale: 0.95,
-      duration: 0.3,
-      stagger: 0.02,
+      scale: 0.6,
+      y: 50,
+      rotateY: 30,
+      rotateX: 15,
+      filter: "blur(15px)",
+      duration: 0.4,
+      stagger: {
+        amount: 0.2,
+        from: "random"
+      },
       ease: "power2.in"
     });
 
-    // Then animate them in with smooth stagger
+    // Small delay to ensure DOM updates
+    masterTl.add(() => {
+      // Force a reflow
+      container.offsetHeight;
+    });
+
+    // Animate in - smooth entrance with 3D effect
     masterTl.fromTo(cards,
       {
         opacity: 0,
-        y: 60,
-        scale: 0.8,
-        rotationX: 15,
-        rotationY: 10,
-        filter: "blur(8px)"
+        scale: 0.4,
+        y: 80,
+        rotateY: -30,
+        rotateX: -15,
+        filter: "blur(20px)"
       },
       {
         opacity: 1,
-        y: 0,
         scale: 1,
-        rotationX: 0,
-        rotationY: 0,
+        y: 0,
+        rotateY: 0,
+        rotateX: 0,
         filter: "blur(0px)",
         duration: 0.8,
         stagger: {
-          each: 0.08,
-          from: "start",
+          amount: 0.5,
+          from: "edges",
+          grid: [2, 2],
           ease: "power2.out"
         },
-        ease: "back.out(1.2)"
+        ease: "back.out(1.5)"
       },
       "-=0.2"
     );
 
-    // Add subtle floating animation to each card
-    cards.forEach((card, index) => {
-      const floatingAnim = gsap.to(card, {
-        y: -5,
-        duration: 2,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-        delay: index * 0.1,
-        paused: true
-      });
-      
-      // Start floating animation after entrance animation
-      setTimeout(() => {
-        floatingAnim.play();
-      }, 1000 + (index * 50));
-      
-      animationsRef.current.push(floatingAnim);
-    });
-
-    // Animate icons with bounce effect
+    // Animate icons with a smooth bounce
     const icons = document.querySelectorAll('.tech-icon');
     masterTl.fromTo(icons,
       {
-        scale: 0.6,
+        scale: 0,
         opacity: 0,
-        rotation: -10
+        rotation: -20,
+        x: -20
       },
       {
         scale: 1,
         opacity: 1,
         rotation: 0,
+        x: 0,
         duration: 0.6,
-        stagger: 0.05,
+        stagger: {
+          amount: 0.3,
+          from: "center"
+        },
         ease: "back.out(1.8)"
       },
       "-=0.4"
     );
+
+    // Animate content with fade up
+    const contents = document.querySelectorAll('.tech-content');
+    masterTl.fromTo(contents,
+      {
+        opacity: 0,
+        y: 30,
+        filter: "blur(5px)"
+      },
+      {
+        opacity: 1,
+        y: 0,
+        filter: "blur(0px)",
+        duration: 0.5,
+        stagger: 0.05,
+        ease: "power2.out"
+      },
+      "-=0.3"
+    );
+
+    // Add a subtle container pulse
+    masterTl.to(container, {
+      scale: 1.02,
+      duration: 0.2,
+      yoyo: true,
+      repeat: 1,
+      ease: "sine.inOut"
+    }, "-=0.3");
+
+    // Add particle effect to cards
+    cards.forEach((card) => {
+      // Create particle elements
+      const particles = document.createElement('div');
+      particles.className = 'card-particles';
+      card.appendChild(particles);
+
+      // Animate particles
+      for (let i = 0; i < 5; i++) {
+        const particle = document.createElement('span');
+        particle.className = 'particle';
+        const x = (Math.random() - 0.5) * 100;
+        const y = (Math.random() - 0.5) * 100;
+        particle.style.setProperty('--x', `${x}px`);
+        particle.style.setProperty('--y', `${y}px`);
+        particle.style.setProperty('--delay', `${i * 0.1}s`);
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        particles.appendChild(particle);
+      }
+
+      // Clean up particles after animation
+      setTimeout(() => {
+        const existingParticles = card.querySelector('.card-particles');
+        if (existingParticles) {
+          existingParticles.remove();
+        }
+      }, 1000);
+    });
 
     animationsRef.current.push(masterTl);
   };
 
   // Handle hover animations
   const handleCardHover = (index: number, isEnter: boolean) => {
+    if (isAnimating) return;
+
     const card = document.querySelectorAll('.tech-card')[index];
     const icon = card?.querySelector('.tech-icon');
-    const button = card?.querySelector('.btn');
+    const button = card?.querySelector('.btn-hire');
     
     if (!card || !icon || !button) return;
 
     if (isEnter) {
+      // Create a magnetic effect
       gsap.to(card, {
-        y: -12,
-        scale: 1.02,
+        y: -15,
+        scale: 1.05,
+        boxShadow: "0 30px 60px rgba(106, 92, 255, 0.4), 0 0 0 2px rgba(106, 92, 255, 0.3)",
         duration: 0.4,
         ease: "power2.out"
       });
       
       gsap.to(icon, {
-        scale: 1.1,
-        rotation: 5,
-        duration: 0.4,
-        ease: "back.out(1.2)"
+        scale: 1.2,
+        rotation: 10,
+        duration: 0.5,
+        ease: "elastic.out(1, 0.3)"
       });
-      
+
       gsap.to(button, {
-        scale: 1.05,
+        scale: 1.1,
+        backgroundColor: "#8b7cff",
         duration: 0.3,
         ease: "power2.out"
       });
+
+      // Add glow effect
+      gsap.to(card, {
+        boxShadow: "0 30px 60px rgba(106, 92, 255, 0.6), 0 0 30px rgba(106, 92, 255, 0.4)",
+        duration: 0.3
+      });
     } else {
       gsap.to(card, {
-        y: -5,
+        y: 0,
         scale: 1,
+        boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)",
         duration: 0.4,
         ease: "power2.inOut"
       });
@@ -320,6 +455,27 @@ const HireByTechnology = () => {
       
       gsap.to(button, {
         scale: 1,
+        backgroundColor: "#6a5cff",
+        duration: 0.3,
+        ease: "power2.inOut"
+      });
+    }
+  };
+
+  // Handle tab hover animation
+  const handleTabHover = (e: React.MouseEvent<HTMLButtonElement>, isEnter: boolean) => {
+    const tab = e.currentTarget;
+    if (isEnter) {
+      gsap.to(tab, {
+        scale: 1.05,
+        x: 5,
+        duration: 0.3,
+        ease: "power2.out"
+      });
+    } else {
+      gsap.to(tab, {
+        scale: 1,
+        x: 0,
         duration: 0.3,
         ease: "power2.inOut"
       });
@@ -327,28 +483,30 @@ const HireByTechnology = () => {
   };
 
   return (
-    <section className="hire-tech">
-      {/* Background animation */}
-      <div className="bg-anim">
-        <span 
-          ref={el => { if (el) ringsRef.current[0] = el; }}
-          className="ring solid"
-          style={{ opacity: 0 }}
+    <section ref={sectionRef} className="hire-tech-vertical">
+      {/* Floating Background Shapes */}
+      <div className="floating-shapes">
+        <div
+          ref={el => { if (el) floatingShapesRef.current[0] = el; }}
+          className="shape shape-1"
         />
-        <span 
-          ref={el => { if (el) ringsRef.current[1] = el; }}
-          className="ring dashed"
-          style={{ opacity: 0 }}
+        <div
+          ref={el => { if (el) floatingShapesRef.current[1] = el; }}
+          className="shape shape-2"
         />
-        <span 
-          ref={el => { if (el) ringsRef.current[2] = el; }}
-          className="ring solid small"
-          style={{ opacity: 0 }}
+        <div
+          ref={el => { if (el) floatingShapesRef.current[2] = el; }}
+          className="shape shape-3"
+        />
+        <div
+          ref={el => { if (el) floatingShapesRef.current[3] = el; }}
+          className="shape shape-4"
         />
       </div>
 
-      <div className="container position-relative">
-        <header className="section-header text-center">
+      <div className="container">
+        {/* Header */}
+        <div className="section-header text-center">
           <h2 ref={h2Ref} style={{ opacity: 0 }}>
             <span 
               ref={spanRef}
@@ -360,12 +518,13 @@ const HireByTechnology = () => {
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 display: 'inline-block',
-                opacity: 0
+                opacity: 0,
+                marginRight: 10
               }}
             >
-              Hire Dedicated
-            </span>{' '}
-            Developers by Technology
+              Hire Dedicated{' '}
+            </span>
+            Developers
           </h2>
           <p 
             ref={pRef}
@@ -373,268 +532,360 @@ const HireByTechnology = () => {
           >
             Select your stack, build your team efficiently
           </p>
-        </header>
-
-        {/* Tabs */}
-        <div 
-          ref={tabsRef}
-          className="tech-tabs"
-          style={{ opacity: 0 }}
-        >
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              className={`tab-btn ${activeTab === tab ? "active" : ""}`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
         </div>
 
-        {/* Cards Container */}
-        <div ref={cardsContainerRef}>
-          <Row>
-            {techData[activeTab].map((tech, index) => (
-              <Col lg={3} md={4} sm={6} key={index} className="mb-4">
-                <div 
-                  className="tech-card"
-                  onMouseEnter={() => handleCardHover(index, true)}
-                  onMouseLeave={() => handleCardHover(index, false)}
-                  style={{ 
-                    opacity: 0,
-                    transform: 'translateY(60px) scale(0.8)',
-                    filter: 'blur(8px)'
-                  }}
-                >
-                  <div className="tech-icon">
-                    <IconifyIcon icon={tech.icon} width={48} className="tech-svg"/>
-                  </div>
-
-                  <h5>{tech.name}</h5>
-                  <p>{tech.desc}</p>
-
-                  <button className="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
-                    Hire Developer
-                  </button>
-                </div>
-              </Col>
+        {/* Main Content with Vertical Tabs */}
+        <div className="content-wrapper">
+          {/* Vertical Tabs - Scrollable */}
+          <div
+            ref={tabsContainerRef}
+            className="tabs-vertical"
+          >
+            {tabs.map((tab) => (
+              <button
+                key={tab}
+                className={`tab-vertical-btn ${activeTab === tab ? "active" : ""}`}
+                onClick={() => setActiveTab(tab)}
+                onMouseEnter={(e) => handleTabHover(e, true)}
+                onMouseLeave={(e) => handleTabHover(e, false)}
+              >
+                <span className="tab-indicator" />
+                <span className="tab-text">{tab}</span>
+                <span className="tab-count">{techData[tab].length}</span>
+              </button>
             ))}
-          </Row>
+          </div>
+
+          {/* Cards Grid */}
+          <div
+            ref={cardsContainerRef}
+            className={`cards-grid ${isAnimating ? 'animating' : ''}`}
+          >
+            <Row>
+              {techData[activeTab].map((tech, index) => (
+                <Col md={6} xl={4} key={index} className="mb-4">
+                  <div
+                    className="tech-card"
+                    onMouseEnter={() => handleCardHover(index, true)}
+                    onMouseLeave={() => handleCardHover(index, false)}
+                  >
+                    <div className="card-inner">
+                      <div className="tech-icon-wrapper">
+                        <div className="tech-icon">
+                          <IconifyIcon icon={tech.icon} width={40} className="tech-svg"/>
+                        </div>
+                      </div>
+
+                      <div className="tech-content">
+                        <h5>{tech.name}</h5>
+                        <p>{tech.desc}</p>
+
+                        <button className="btn btn-hire">
+                          <span>Hire Developer</span>
+                          <IconifyIcon icon="mdi:arrow-right" width={18} />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          </div>
         </div>
       </div>
 
-      {/* Styles */}
       <style jsx>{`
-        .hire-tech {
+        .hire-tech-vertical {
           position: relative;
           padding: 120px 0;
-          background: #0a0d1c;
+          background: linear-gradient(135deg, #0a0d1c 0%, #1a1f35 100%);
           overflow: hidden;
           color: #ffffff;
+          min-height: 100vh;
         }
 
-        /* Background rings */
-        .bg-anim {
+        /* Floating Shapes */
+        .floating-shapes {
           position: absolute;
           inset: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           pointer-events: none;
+          z-index: 0;
         }
 
-        .ring {
+        .shape {
           position: absolute;
           border-radius: 50%;
-          animation: rotate 60s linear infinite;
-          will-change: transform, opacity;
+          filter: blur(60px);
+          opacity: 0.6;
+          will-change: transform;
         }
 
-        .ring.solid {
-          width: 620px;
-          height: 620px;
-          border: 1px solid rgba(160, 140, 255, 0.35);
+        .shape-1 {
+          width: 300px;
+          height: 300px;
+          background: radial-gradient(circle, #6a5cff 0%, transparent 70%);
+          top: 10%;
+          left: 5%;
         }
 
-        .ring.dashed {
-          width: 820px;
-          height: 820px;
-          border: 2px dashed rgba(160, 140, 255, 0.45);
-          animation-duration: 90s;
+        .shape-2 {
+          width: 400px;
+          height: 400px;
+          background: radial-gradient(circle, #ff7a18 0%, transparent 70%);
+          bottom: 10%;
+          right: 5%;
         }
 
-        .ring.small {
-          width: 420px;
-          height: 420px;
-          opacity: 0.35;
-          animation-duration: 70s;
+        .shape-3 {
+          width: 250px;
+          height: 250px;
+          background: radial-gradient(circle, #00c6ff 0%, transparent 70%);
+          top: 30%;
+          right: 15%;
         }
 
-        @keyframes rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
+        .shape-4 {
+          width: 350px;
+          height: 350px;
+          background: radial-gradient(circle, #ff4d4d 0%, transparent 70%);
+          bottom: 20%;
+          left: 10%;
+        }
+
+        /* Section Header */
+        .section-header {
+          margin-bottom: 60px;
+          position: relative;
+          z-index: 2;
         }
 
         .section-header h2 {
-          font-size: 42px;
-          font-weight: 700;
+          font-size: 48px;
+          font-weight: 800;
           color: #ffffff;
           margin-bottom: 20px;
+          line-height: 1.2;
+          text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gradient-text {
+          background: linear-gradient(135deg, #6a5cff 0%, #ff7a18 50%, #00c6ff 100%);
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          display: inline-block;
         }
 
         .section-header p {
-          margin: 14px auto 50px;
-          max-width: 560px;
-          color: rgba(255, 255, 255, 0.8);
-          font-size: 16px;
+          margin: 0 auto;
+          max-width: 600px;
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 18px;
           line-height: 1.6;
         }
 
-        .tech-tabs {
+        /* Content Wrapper */
+        .content-wrapper {
           display: flex;
-          gap: 12px;
-          overflow-x: auto;
-          margin-bottom: 40px;
-          padding: 5px 0;
+          gap: 30px;
+          position: relative;
+          z-index: 2;
+        }
+
+        /* Vertical Tabs */
+        .tabs-vertical {
+          flex: 0 0 220px;
+          max-height: 500px;
+          overflow-y: auto;
+          padding-right: 15px;
           scrollbar-width: thin;
-          scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+          scrollbar-color: #6a5cff rgba(255, 255, 255, 0.1);
+          position: sticky;
+          top: 100px;
         }
 
-        .tech-tabs::-webkit-scrollbar {
-          height: 4px;
+        .tabs-vertical::-webkit-scrollbar {
+          width: 4px;
         }
 
-        .tech-tabs::-webkit-scrollbar-track {
-          background: transparent;
-        }
-
-        .tech-tabs::-webkit-scrollbar-thumb {
-          background-color: rgba(255, 255, 255, 0.3);
+        .tabs-vertical::-webkit-scrollbar-track {
+          background: rgba(255, 255, 255, 0.1);
           border-radius: 10px;
         }
 
-        .tab-btn {
-          padding: 10px 18px;
-          border-radius: 30px;
-          border: 1px solid rgba(255, 255, 255, 0.25);
-          background: transparent;
-          color: #ffffff;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          white-space: nowrap;
-          font-size: 14px;
-          cursor: pointer;
-          position: relative;
-          overflow: hidden;
+        .tabs-vertical::-webkit-scrollbar-thumb {
+          background: #6a5cff;
+          border-radius: 10px;
         }
 
-        .tab-btn::before {
+        .tab-vertical-btn {
+          width: 100%;
+          padding: 15px 20px;
+          margin-bottom: 10px;
+          border: none;
+          background: transparent;
+          color: rgba(255, 255, 255, 0.7);
+          text-align: left;
+          border-radius: 12px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 15px;
+          font-weight: 500;
+          backdrop-filter: blur(10px);
+          border: 1px solid transparent;
+        }
+
+        .tab-indicator {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 3px;
+          background: #6a5cff;
+          transform: scaleY(0);
+          transition: transform 0.3s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        .tab-vertical-btn:hover {
+          background: rgba(255, 255, 255, 0.1);
+          color: #ffffff;
+          border-color: rgba(106, 92, 255, 0.3);
+          transform: translateX(5px);
+        }
+
+        .tab-vertical-btn.active {
+          background: rgba(106, 92, 255, 0.15);
+          color: #ffffff;
+          border-color: #6a5cff;
+          box-shadow: 0 5px 20px rgba(106, 92, 255, 0.2);
+        }
+
+        .tab-vertical-btn.active .tab-indicator {
+          transform: scaleY(1);
+        }
+
+        .tab-text {
+          flex: 1;
+        }
+
+        .tab-count {
+          background: rgba(255, 255, 255, 0.1);
+          padding: 2px 8px;
+          border-radius: 20px;
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        .tab-vertical-btn.active .tab-count {
+          background: #6a5cff;
+          color: #ffffff;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+          flex: 1;
+          min-width: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .cards-grid.animating {
+          cursor: wait;
+        }
+
+        .tech-card {
+          height: 100%;
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          transition: box-shadow 0.3s ease, border-color 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          will-change: transform, opacity, filter;
+          transform-origin: center center;
+          backface-visibility: hidden;
+          -webkit-font-smoothing: antialiased;
+          transform: translateZ(0);
+        }
+
+        .tech-card::before {
           content: '';
           position: absolute;
           top: 0;
           left: -100%;
           width: 100%;
           height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
           transition: left 0.5s ease;
         }
 
-        .tab-btn:hover::before {
+        .tech-card:hover::before {
           left: 100%;
         }
 
-        .tab-btn:hover {
-          background: rgba(255, 255, 255, 0.1);
-          transform: translateY(-2px);
+        .card-inner {
+          padding: 24px;
+          display: flex;
+          gap: 20px;
+          align-items: flex-start;
         }
 
-        .tab-btn.active {
-          background: #6a5cff;
-          border-color: #6a5cff;
-          transform: translateY(-2px);
-          box-shadow: 0 5px 20px rgba(106, 92, 255, 0.4);
-        }
-
-        .tech-card {
-          height: 100%;
-          padding: 32px;
-          border-radius: 24px;
-          background: rgba(255, 255, 255, 0.1);
-          backdrop-filter: blur(18px);
-          border: 1px solid rgba(255, 255, 255, 0.18);
-          text-align: center;
-          transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          transform-style: preserve-3d;
-          perspective: 1000px;
-          will-change: transform, opacity, filter;
-          position: relative;
-          overflow: hidden;
-        }
-
-        .tech-card::after {
-          content: '';
-          position: absolute;
-          top: -50%;
-          left: -50%;
-          width: 200%;
-          height: 200%;
-          background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-          opacity: 0;
-          transform: scale(0.5);
-          transition: opacity 0.6s ease, transform 0.6s ease;
-          pointer-events: none;
-        }
-
-        .tech-card:hover::after {
-          opacity: 1;
-          transform: scale(1);
-        }
-
-        .tech-card:hover {
-          box-shadow: 0 30px 60px rgba(140, 120, 255, 0.45),
-                      0 15px 40px rgba(140, 120, 255, 0.3);
+        .tech-icon-wrapper {
+          flex-shrink: 0;
         }
 
         .tech-icon {
-          width: 92px;
-          height: 92px;
-          margin: 0 auto 20px;
-          border-radius: 26px;
+          width: 70px;
+          height: 70px;
+          border-radius: 18px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(135deg, rgb(255 255 255), #b4d2ff);
-          box-shadow:
-            inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-            0 0 40px rgba(140, 120, 255, 0.6);
-          transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-          will-change: transform, scale, rotation;
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          transition: background 0.3s ease, border-color 0.3s ease;
+          will-change: transform;
+          backface-visibility: hidden;
+          transform: translateZ(0);
         }
-        
+
         .tech-card:hover .tech-icon {
-          box-shadow: 
-            inset 0 0 0 1px rgba(255, 255, 255, 0.5),
-            0 0 60px rgba(140, 120, 255, 0.8);
+          background: linear-gradient(135deg, #6a5cff, #8b7cff);
+          transform: scale(1.1) rotate(5deg);
+          border-color: transparent;
+          box-shadow: 0 15px 40px rgba(106, 92, 255, 0.4);
         }
-        
+
         .tech-icon :global(svg) {
-          width: 36px !important;
+          width: 35px !important;
           height: auto !important;
           transition: transform 0.3s ease;
         }
-        
+
         .tech-card:hover .tech-icon :global(svg) {
           transform: scale(1.1);
+          filter: brightness(1.2);
         }
 
-        .tech-card h5 {
+        .tech-content {
+          flex: 1;
+          will-change: transform, opacity;
+        }
+
+        .tech-content h5 {
           color: #ffffff;
           font-size: 18px;
-          margin-bottom: 10px;
+          font-weight: 600;
+          margin-bottom: 8px;
           transition: color 0.3s ease;
         }
 
@@ -642,24 +893,32 @@ const HireByTechnology = () => {
           color: #b4d2ff;
         }
 
-        .tech-card p {
-          font-size: 14px;
-          color: rgba(255, 255, 255, 0.85);
-          margin-bottom: 18px;
-          line-height: 1.6;
+        .tech-content p {
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.7);
+          margin-bottom: 15px;
+          line-height: 1.5;
+          transition: color 0.3s ease;
         }
 
-        .tech-card .btn {
+        .btn-hire {
+          background: transparent;
+          border: 1px solid rgba(106, 92, 255, 0.5);
+          color: #ffffff;
+          padding: 8px 16px;
+          border-radius: 30px;
+          font-size: 13px;
+          font-weight: 500;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          transition: all 0.3s ease;
+          cursor: pointer;
           position: relative;
           overflow: hidden;
-          background: linear-gradient(135deg, #6a5cff, #8b7cff);
-          border: none;
-          padding: 8px 16px;
-          transition: all 0.3s ease;
-          will-change: transform, scale;
         }
 
-        .tech-card .btn::before {
+        .btn-hire::before {
           content: '';
           position: absolute;
           top: 0;
@@ -670,41 +929,130 @@ const HireByTechnology = () => {
           transition: left 0.5s ease;
         }
 
-        .tech-card:hover .btn {
-          transform: translateY(-2px);
-          box-shadow: 0 5px 15px rgba(106, 92, 255, 0.4);
-        }
-
-        .tech-card:hover .btn::before {
+        .btn-hire:hover::before {
           left: 100%;
         }
 
-        @media (max-width: 768px) {
-          .section-header h2 {
-            font-size: 32px;
+        .btn-hire:hover {
+          background: #6a5cff;
+          border-color: #6a5cff;
+          transform: translateX(5px);
+          box-shadow: 0 5px 15px rgba(106, 92, 255, 0.3);
+        }
+
+        .btn-hire :global(svg) {
+          transition: transform 0.3s ease;
+        }
+
+        .btn-hire:hover :global(svg) {
+          transform: translateX(3px);
+        }
+
+        /* Particle Animation */
+        .card-particles {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        .particle {
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background: rgba(106, 92, 255, 0.6);
+          border-radius: 50%;
+          animation: particleFloat 1s ease-out forwards;
+          --delay: 0s;
+        }
+
+        @keyframes particleFloat {
+          0% {
+            transform: translate(0, 0) scale(1);
+            opacity: 1;
           }
-          
-          .hire-tech {
+          100% {
+            transform: translate(var(--x, 50px), var(--y, -50px)) scale(0);
+            opacity: 0;
+          }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+          .content-wrapper {
+            flex-direction: column;
+          }
+
+          .tabs-vertical {
+            flex: none;
+            max-height: none;
+            overflow-x: auto;
+            overflow-y: hidden;
+            display: flex;
+            gap: 10px;
+            padding: 5px 0 15px;
+            position: static;
+            width: 100%;
+          }
+
+          .tab-vertical-btn {
+            width: auto;
+            min-width: 140px;
+            margin-bottom: 0;
+            padding: 12px 20px;
+            white-space: nowrap;
+          }
+
+          .tab-indicator {
+            width: 100%;
+            height: 3px;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+          }
+
+          .tab-vertical-btn.active .tab-indicator {
+            transform: scaleX(1);
+          }
+
+          .card-inner {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+
+          .tech-icon-wrapper {
+            margin-bottom: 10px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .hire-tech-vertical {
             padding: 80px 0;
           }
-          
-          .tech-card {
-            padding: 24px;
+
+          .section-header h2 {
+            font-size: 36px;
           }
-          
-          .ring.solid {
-            width: 400px;
-            height: 400px;
+
+          .section-header p {
+            font-size: 16px;
+            padding: 0 15px;
           }
-          
-          .ring.dashed {
-            width: 500px;
-            height: 500px;
+
+          .shape {
+            filter: blur(40px);
           }
-          
-          .ring.small {
-            width: 300px;
-            height: 300px;
+
+          .shape-1 {
+            width: 200px;
+            height: 200px;
+          }
+
+          .shape-2 {
+            width: 250px;
+            height: 250px;
           }
         }
 
@@ -712,15 +1060,40 @@ const HireByTechnology = () => {
           .section-header h2 {
             font-size: 28px;
           }
-          
-          .tech-tabs {
+
+          .tabs-vertical {
             gap: 8px;
-            margin-bottom: 30px;
           }
-          
-          .tab-btn {
-            padding: 8px 14px;
+
+          .tab-vertical-btn {
+            min-width: 120px;
+            padding: 10px 15px;
             font-size: 13px;
+          }
+
+          .tech-card {
+            margin: 0 5px;
+          }
+
+          .card-inner {
+            padding: 20px;
+          }
+
+          .tech-icon {
+            width: 60px;
+            height: 60px;
+          }
+
+          .tech-icon :global(svg) {
+            width: 30px !important;
+          }
+
+          .tech-content h5 {
+            font-size: 16px;
+          }
+
+          .tech-content p {
+            font-size: 12px;
           }
         }
       `}</style>

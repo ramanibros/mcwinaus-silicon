@@ -408,7 +408,7 @@ const PageTitle = () => {
         .hero-dark-bg {
           position: absolute;
           inset: 0;
-          background: radial-gradient(circle at 0% 0%, rgba(18, 18, 30, 1) 0%, rgba(8, 8, 12, 1) 100%);
+          background: radial-gradient(circle at 0% 0%, rgb(8 8 38) 0%, rgb(6 36 72) 100% 100%);
           z-index: 0;
         }
 
@@ -600,12 +600,12 @@ const PageTitle = () => {
 
         .hero-glass-card {
           position: relative;
-          background: rgba(20, 20, 30, 0.7);
+          background: rgb(24 24 78 / 34%);
           backdrop-filter: blur(20px);
           border-radius: 24px;
           padding: 40px;
           border: 1px solid rgba(255, 255, 255, 0.1);
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+          
           z-index: 2;
           overflow: hidden;
         }
