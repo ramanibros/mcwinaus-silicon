@@ -71,7 +71,7 @@ const PageTitle = () => {
 
       // Shimmer effect like reference code
       gsap.to(techResourcesRef.current, {
-        textShadow: "0 0 10px rgba(12, 227, 154, 0.5)",
+        textShadow: "0 0 10px rgba(218, 70, 239, 0.5)",
         duration: 2,
         repeat: -1,
         yoyo: true,
@@ -195,7 +195,7 @@ const PageTitle = () => {
       // Enhanced pulse animation with glow
       gsap.to(buttonRef.current, {
         scale: 1.02,
-        boxShadow: "0 0 30px rgba(12, 227, 154, 0.7)",
+        boxShadow: "0 0 30px rgba(218, 70, 239, 0.7)",
         duration: 1.5,
         repeat: -1,
         yoyo: true,
@@ -229,7 +229,7 @@ const PageTitle = () => {
       y: -5,
       duration: 0.4,
       ease: "elastic.out(1, 0.3)",
-      boxShadow: "0 15px 40px rgba(12, 227, 154, 0.4)",
+      boxShadow: "0 15px 40px rgba(218, 70, 239, 0.4)",
     });
   };
 
@@ -239,7 +239,7 @@ const PageTitle = () => {
       y: 0,
       duration: 0.4,
       ease: "elastic.out(1, 0.3)",
-      boxShadow: "0 0 30px rgba(12, 227, 154, 0.7)",
+      boxShadow: "0 0 30px rgba(218, 70, 239, 0.7)",
     });
   };
 
@@ -277,7 +277,7 @@ const PageTitle = () => {
               width: `${Math.random() * 6 + 2}px`,
               height: `${Math.random() * 6 + 2}px`,
               animationDelay: `${Math.random() * 5}s`,
-              background: i % 3 === 0 ? 'rgba(12, 227, 154, 0.6)' : 
+              background: i % 3 === 0 ? 'rgba(218, 70, 239, 0.6)' : 
                           i % 3 === 1 ? 'rgba(252, 9, 135, 0.6)' : 
                           'rgba(105, 0, 127, 0.6)'
             }}
@@ -314,7 +314,7 @@ const PageTitle = () => {
             {/* MODIFIED: Added refs for GSAP animation */}
             <h1 ref={titleRef} className="display-1 fw-bold mb-4">
               <span className="text-gradient-primary">
-                <span ref={hireSkilledRef}>Hire Skilled</span>{' '}
+                <span>Hire Skilled</span>
               </span>
               <span className="d-block mt-2">
                 <span ref={techResourcesRef} className="title-word" style={{ display: "inline-block" }}>
@@ -345,23 +345,29 @@ const PageTitle = () => {
               <div className="card-glow"></div>
               <h3 className="glass-card-title">Ready to scale your team?</h3>
               <p className="glass-card-text">
-                Streamline your hiring process with access to pre-vetted,
-                top-tier talent. We connect you with skilled professionals
-                who are ready to contribute from day one.
+                A dedicated team connecting businesses with pre-vetted developers—ready to deliver from day one. Save thousands on recruitment, focus on growth with talent you can trust.
               </p>
 
               <div className="feature-list mb-4">
                 <div className="feature-item">
                   <span className="feature-icon">✓</span>
-                  <span>Pre-vetted developers</span>
+                  <span>Pre-Vetted Senior Developers</span>
                 </div>
                 <div className="feature-item">
                   <span className="feature-icon">✓</span>
-                  <span>48-hour matching</span>
+                  <span>Flexible Engagement Models (Hourly / Weekly / Monthly)</span>
                 </div>
                 <div className="feature-item">
                   <span className="feature-icon">✓</span>
-                  <span>Flexible engagement</span>
+                  <span>Time-Zone Aligned Teams</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Rapid Onboarding & Immediate Start</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Scalable Teams On Demand</span>
                 </div>
               </div>
 
@@ -418,7 +424,7 @@ const PageTitle = () => {
         .orb-1 {
           width: 500px;
           height: 500px;
-          background: radial-gradient(circle at center, rgba(12, 227, 154, 0.3), transparent 70%);
+          background: radial-gradient(circle at center, rgba(218, 70, 239, 0.3), transparent 70%);
           top: -100px;
           left: -100px;
           animation-delay: 0s;
@@ -460,7 +466,7 @@ const PageTitle = () => {
           position: absolute;
           width: 300px;
           height: 300px;
-          background: radial-gradient(circle at center, rgba(12, 227, 154, 0.2), transparent 70%);
+          background: radial-gradient(circle at center, rgba(218, 70, 239, 0.2), transparent 70%);
           border-radius: 50%;
           filter: blur(60px);
           pointer-events: none;
@@ -500,13 +506,13 @@ const PageTitle = () => {
           font-size: 24px;
           font-weight: bold;
           font-family: monospace;
-          text-shadow: 0 0 20px rgba(12, 227, 154, 0.3);
+          text-shadow: 0 0 20px rgba(218, 70, 239, 0.3);
           animation: glowPulse 3s ease-in-out infinite alternate;
         }
 
         @keyframes glowPulse {
-          0% { opacity: 0.3; text-shadow: 0 0 20px rgba(12, 227, 154, 0.3); }
-          100% { opacity: 0.7; text-shadow: 0 0 40px rgba(12, 227, 154, 0.6); }
+          0% { opacity: 0.3; text-shadow: 0 0 20px rgba(218, 70, 239, 0.3); }
+          100% { opacity: 0.7; text-shadow: 0 0 40px rgba(218, 70, 239, 0.6); }
         }
 
         .hero-badge {
@@ -528,7 +534,7 @@ const PageTitle = () => {
 
         @keyframes badgePulse {
           0% { border-color: rgba(255, 255, 255, 0.1); }
-          100% { border-color: rgba(12, 227, 154, 0.3); }
+          100% { border-color: rgba(218, 70, 239, 0.3); }
         }
 
         .hero-grid-overlay {
@@ -564,8 +570,8 @@ const PageTitle = () => {
         }
 
         @keyframes glowText {
-          0% { text-shadow: 0 0 20px rgba(12, 227, 154, 0.3); }
-          100% { text-shadow: 0 0 40px rgba(12, 227, 154, 0.7); }
+          0% { text-shadow: 0 0 20px rgba(218, 70, 239, 0.3); }
+          100% { text-shadow: 0 0 40px rgba(218, 70, 239, 0.7); }
         }
 
         .hero-stats {
@@ -610,7 +616,7 @@ const PageTitle = () => {
           left: -50%;
           width: 200%;
           height: 200%;
-          background: radial-gradient(circle at center, rgba(12, 227, 154, 0.1), transparent 70%);
+          background: radial-gradient(circle at center, rgba(218, 70, 239, 0.1), transparent 70%);
           animation: cardGlow 15s ease-in-out infinite;
           pointer-events: none;
         }

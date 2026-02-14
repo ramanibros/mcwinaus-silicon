@@ -49,8 +49,8 @@ const Page = () => {
                     </li>
                 </ol>
             </nav> */}
-              <Hero/>
-               <Description/>
+             <Hero/>
+             <Description/>
              <HowWork/>
              <TextSession/>
             <Subscribe/>
