@@ -90,11 +90,11 @@ const PageTitle = () => {
           const progress = this.progress();
           setCounts(prev => ({
             ...prev,
-            pros: Math.min(Math.floor(progress * 501), 500)
+            pros: Math.min(Math.floor(progress * 501), 50)
           }));
         },
         onComplete: function() {
-          setCounts(prev => ({ ...prev, pros: 500 }));
+          setCounts(prev => ({ ...prev, pros: 50 }));
         }
       });
 
@@ -106,7 +106,7 @@ const PageTitle = () => {
           const progress = this.progress();
           setCounts(prev => ({
             ...prev,
-            success: Math.min(Math.floor(progress * 99), 98)
+            success: Math.min(Math.floor(progress * 99), 99)
           }));
         },
         onComplete: function() {
@@ -327,7 +327,7 @@ const PageTitle = () => {
             <div className="hero-stats d-flex gap-4 mb-4">
               <div className="stat-item">
                 <span className="stat-number">{counts.pros}+</span>
-                <span className="stat-label">Tech Pros</span>
+                <span className="stat-label">Tech Talent</span>
               </div>
               <div className="stat-item">
                 <span className="stat-number">{counts.success}%</span>

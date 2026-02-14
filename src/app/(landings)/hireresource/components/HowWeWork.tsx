@@ -371,7 +371,7 @@ const HireByTechnology = () => {
             ref={pRef}
             style={{ opacity: 0 }}
           >
-            Choose the right technology and scale your team faster
+            Select your stack, build your team efficiently
           </p>
         </header>
 

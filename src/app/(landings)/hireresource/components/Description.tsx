@@ -14,38 +14,38 @@ if (typeof window !== 'undefined') {
 const descriptionData = [
   {
     icon: "mdi:rocket-launch-outline",
-    title: "Faster Product Development",
-    desc: "Dedicated developers work exclusively on your project, ensuring faster execution and quicker go-to-market.",
+    title: "Faster Time-to-Market",
+    desc: "Dedicated developers focus exclusively on your project—accelerated delivery, quicker results.",
     gradient: "linear-gradient(135deg, #6a5cff, #9b8cff)"
   },
   {
     icon: "mdi:account-star-outline",
-    title: "Top 1% Engineering Talent",
-    desc: "Get access to pre-vetted developers with deep technical expertise and real-world project experience.",
+    title: "Top-Tier Expertise",
+    desc: "Pre-vetted talent with proven commercial experience—no risky unknowns.",
     gradient: "linear-gradient(135deg, #ff7a18, #ffb347)"
   },
   {
     icon: "mdi:chart-line",
-    title: "Scalable & Flexible Teams",
-    desc: "Scale your team size up or down instantly based on evolving business and project requirements.",
+    title: "Flexible Scaling",
+    desc: "Adjust team size instantly to match business growth or project phases seamlessly.",
     gradient: "linear-gradient(135deg, #00c6ff, #0072ff)"
   },
   {
     icon: "mdi:shield-check-outline",
     title: "Complete Transparency",
-    desc: "Stay in full control with direct communication, task visibility, and real-time progress tracking.",
+    desc: "Direct access, real-time tracking—full visibility and control throughout development.",
     gradient: "linear-gradient(135deg, #38ef7d, #11998e)"
   },
   {
     icon: "mdi:currency-usd-off",
-    title: "Cost-Effective Engagement",
-    desc: "Save up to 60% on development costs without compromising on quality or performance.",
+    title: "Cost Efficiency",
+    desc: "Up to 60% savings on premium development—quality without compromise.",
     gradient: "linear-gradient(135deg, #f857a6, #ff5858)"
   },
   {
     icon: "mdi:cog-sync-outline",
-    title: "Seamless Collaboration",
-    desc: "Our developers integrate smoothly with your in-house teams, tools, and workflows.",
+    title: "Smooth Integration",
+    desc: "Perfect fit with existing teams, tools, processes—minimal disruption, maximum output.",
     gradient: "linear-gradient(135deg, #8360c3, #2ebf91)"
   }
 ];
@@ -201,14 +201,13 @@ const DescriptionSection = () => {
             >
               Dedicated Developers.{' '}
             </span>
-            Scalable Results.
+            Proven Results.
           </h2>
           <p 
             ref={pRef}
             style={{ opacity: 0 }}
           >
-            Why startups and enterprises prefer dedicated developers for building
-            scalable, high-performance digital products
+            Why companies choose dedicated developers for scalable digital products
           </p>
         </header>
 
