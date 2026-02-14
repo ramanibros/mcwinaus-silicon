@@ -75,56 +75,46 @@ const techData: Record<string, any[]> = {
 
 const HireByTechnology = () => {
   const [activeTab, setActiveTab] = useState("Frontend");
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
   
   // Create refs for animation elements
   const h2Ref = useRef<HTMLHeadingElement>(null);
   const spanRef = useRef<HTMLSpanElement>(null);
   const pRef = useRef<HTMLParagraphElement>(null);
   const tabsRef = useRef<HTMLDivElement>(null);
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const cardsContainerRef = useRef<HTMLDivElement>(null);
   const ringsRef = useRef<(HTMLSpanElement | null)[]>([]);
+  
+  // Store animation instances for cleanup
+  const animationsRef = useRef<gsap.core.Tween[]>([]);
 
   useEffect(() => {
-    // Header animation
+    // Initial header animations
+    const headerTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: h2Ref.current,
+        start: "top 85%",
+        end: "top 50%",
+        scrub: 1,
+      }
+    });
+
     if (h2Ref.current && spanRef.current && pRef.current) {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: h2Ref.current,
-          start: "top 85%",
-          end: "top 50%",
-          scrub: 1,
-        }
-      });
-
-      // Animate main heading
-      tl.fromTo(h2Ref.current,
-        { opacity: 0, y: 60 },
-        { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
-      );
-
-      // Animate gradient text
-      tl.fromTo(spanRef.current,
-        {
-          opacity: 0,
-          scale: 0.8,
-          backgroundPosition: "100% 0%"
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          backgroundPosition: "0% 100%",
-          duration: 1.2,
-          ease: "back.out(1.7)"
-        },
-        "-=0.8"
-      );
-
-      // Animate paragraph
-      tl.fromTo(pRef.current,
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
-        "-=0.5"
-      );
+      headerTl
+        .fromTo(h2Ref.current,
+          { opacity: 0, y: 60 },
+          { opacity: 1, y: 0, duration: 1, ease: "power3.out" }
+        )
+        .fromTo(spanRef.current,
+          { opacity: 0, scale: 0.8, backgroundPosition: "100% 0%" },
+          { opacity: 1, scale: 1, backgroundPosition: "0% 100%", duration: 1.2, ease: "back.out(1.7)" },
+          "-=0.8"
+        )
+        .fromTo(pRef.current,
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
+          "-=0.5"
+        );
     }
 
     // Animate tabs container
@@ -150,11 +140,7 @@ const HireByTechnology = () => {
     ringsRef.current.forEach((ring, index) => {
       if (ring) {
         gsap.fromTo(ring,
-          {
-            opacity: 0,
-            scale: 0.8,
-            rotation: index % 2 === 0 ? -30 : 30
-          },
+          { opacity: 0, scale: 0.8, rotation: index % 2 === 0 ? -30 : 30 },
           {
             opacity: 1,
             scale: 1,
@@ -173,48 +159,171 @@ const HireByTechnology = () => {
       }
     });
 
-    // Animate cards for initial tab
+    // Initial card animation with stagger
     animateCards();
 
-    // Cleanup ScrollTrigger instances
+    setIsInitialLoad(false);
+
+    // Cleanup
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      animationsRef.current.forEach(anim => anim.kill());
     };
   }, []);
 
-  // Animate cards when tab changes
+  // Animate cards when tab changes with smooth transition
   useEffect(() => {
-    animateCards();
-  }, [activeTab]);
+    if (!isInitialLoad) {
+      animateCards();
+    }
+  }, [activeTab, isInitialLoad]);
 
   const animateCards = () => {
-    cardsRef.current.forEach((card, index) => {
-      if (card) {
-        // Kill any existing animations
-        gsap.killTweensOf(card);
-        
-        // Animate card entry
-        gsap.fromTo(card,
-          {
-            opacity: 0,
-            y: 60,
-            scale: 0.9,
-            rotationX: 10,
-            rotationY: 5
-          },
-          {
-            opacity: 1,
-            y: 0,
-            scale: 1,
-            rotationX: 0,
-            rotationY: 0,
-            duration: 0.6,
-            delay: index * 0.1,
-            ease: "back.out(1.4)"
-          }
-        );
+    // Kill any existing card animations
+    animationsRef.current.forEach(anim => anim.kill());
+    animationsRef.current = [];
+
+    // Get all cards
+    const cards = document.querySelectorAll('.tech-card');
+    
+    if (cards.length === 0) return;
+
+    // Create a master timeline for smooth sequencing
+    const masterTl = gsap.timeline({
+      defaults: {
+        ease: "power3.out",
       }
     });
+
+    // First, fade out existing cards
+    masterTl.to(cards, {
+      opacity: 0,
+      y: 30,
+      scale: 0.95,
+      duration: 0.3,
+      stagger: 0.02,
+      ease: "power2.in"
+    });
+
+    // Then animate them in with smooth stagger
+    masterTl.fromTo(cards,
+      {
+        opacity: 0,
+        y: 60,
+        scale: 0.8,
+        rotationX: 15,
+        rotationY: 10,
+        filter: "blur(8px)"
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        rotationX: 0,
+        rotationY: 0,
+        filter: "blur(0px)",
+        duration: 0.8,
+        stagger: {
+          each: 0.08,
+          from: "start",
+          ease: "power2.out"
+        },
+        ease: "back.out(1.2)"
+      },
+      "-=0.2"
+    );
+
+    // Add subtle floating animation to each card
+    cards.forEach((card, index) => {
+      const floatingAnim = gsap.to(card, {
+        y: -5,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+        delay: index * 0.1,
+        paused: true
+      });
+      
+      // Start floating animation after entrance animation
+      setTimeout(() => {
+        floatingAnim.play();
+      }, 1000 + (index * 50));
+      
+      animationsRef.current.push(floatingAnim);
+    });
+
+    // Animate icons with bounce effect
+    const icons = document.querySelectorAll('.tech-icon');
+    masterTl.fromTo(icons,
+      {
+        scale: 0.6,
+        opacity: 0,
+        rotation: -10
+      },
+      {
+        scale: 1,
+        opacity: 1,
+        rotation: 0,
+        duration: 0.6,
+        stagger: 0.05,
+        ease: "back.out(1.8)"
+      },
+      "-=0.4"
+    );
+
+    animationsRef.current.push(masterTl);
+  };
+
+  // Handle hover animations
+  const handleCardHover = (index: number, isEnter: boolean) => {
+    const card = document.querySelectorAll('.tech-card')[index];
+    const icon = card?.querySelector('.tech-icon');
+    const button = card?.querySelector('.btn');
+    
+    if (!card || !icon || !button) return;
+
+    if (isEnter) {
+      gsap.to(card, {
+        y: -12,
+        scale: 1.02,
+        duration: 0.4,
+        ease: "power2.out"
+      });
+      
+      gsap.to(icon, {
+        scale: 1.1,
+        rotation: 5,
+        duration: 0.4,
+        ease: "back.out(1.2)"
+      });
+      
+      gsap.to(button, {
+        scale: 1.05,
+        duration: 0.3,
+        ease: "power2.out"
+      });
+    } else {
+      gsap.to(card, {
+        y: -5,
+        scale: 1,
+        duration: 0.4,
+        ease: "power2.inOut"
+      });
+      
+      gsap.to(icon, {
+        scale: 1,
+        rotation: 0,
+        duration: 0.4,
+        ease: "power2.inOut"
+      });
+      
+      gsap.to(button, {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.inOut"
+      });
+    }
   };
 
   return (
@@ -283,31 +392,36 @@ const HireByTechnology = () => {
           ))}
         </div>
 
-        {/* Cards */}
-        <Row>
-          {techData[activeTab].map((tech, index) => (
-            <Col lg={3} md={4} sm={6} key={index} className="mb-4">
-              <div 
-                ref={el => {
-                  if (el) cardsRef.current[index] = el;
-                }}
-                className="tech-card"
-                style={{ opacity: 0 }}
-              >
-                <div className="tech-icon">
-                  <IconifyIcon icon={tech.icon} width={48} className="tech-svg"/>
+        {/* Cards Container */}
+        <div ref={cardsContainerRef}>
+          <Row>
+            {techData[activeTab].map((tech, index) => (
+              <Col lg={3} md={4} sm={6} key={index} className="mb-4">
+                <div 
+                  className="tech-card"
+                  onMouseEnter={() => handleCardHover(index, true)}
+                  onMouseLeave={() => handleCardHover(index, false)}
+                  style={{ 
+                    opacity: 0,
+                    transform: 'translateY(60px) scale(0.8)',
+                    filter: 'blur(8px)'
+                  }}
+                >
+                  <div className="tech-icon">
+                    <IconifyIcon icon={tech.icon} width={48} className="tech-svg"/>
+                  </div>
+
+                  <h5>{tech.name}</h5>
+                  <p>{tech.desc}</p>
+
+                  <button className="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
+                    Hire Developer
+                  </button>
                 </div>
-
-                <h5>{tech.name}</h5>
-                <p>{tech.desc}</p>
-
-                <button className="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
-                  Hire Developer
-                </button>
-              </div>
-            </Col>
-          ))}
-        </Row>
+              </Col>
+            ))}
+          </Row>
+        </div>
       </div>
 
       {/* Styles */}
@@ -414,6 +528,23 @@ const HireByTechnology = () => {
           white-space: nowrap;
           font-size: 14px;
           cursor: pointer;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .tab-btn::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+          transition: left 0.5s ease;
+        }
+
+        .tab-btn:hover::before {
+          left: 100%;
         }
 
         .tab-btn:hover {
@@ -436,19 +567,38 @@ const HireByTechnology = () => {
           backdrop-filter: blur(18px);
           border: 1px solid rgba(255, 255, 255, 0.18);
           text-align: center;
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           transform-style: preserve-3d;
           perspective: 1000px;
-          will-change: transform, opacity;
+          will-change: transform, opacity, filter;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .tech-card::after {
+          content: '';
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          width: 200%;
+          height: 200%;
+          background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+          opacity: 0;
+          transform: scale(0.5);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+          pointer-events: none;
+        }
+
+        .tech-card:hover::after {
+          opacity: 1;
+          transform: scale(1);
         }
 
         .tech-card:hover {
-          transform: translateY(-12px) rotateX(2deg) rotateY(1deg);
           box-shadow: 0 30px 60px rgba(140, 120, 255, 0.45),
                       0 15px 40px rgba(140, 120, 255, 0.3);
         }
 
-        /* ICON */
         .tech-icon {
           width: 92px;
           height: 92px;
@@ -461,11 +611,11 @@ const HireByTechnology = () => {
           box-shadow:
             inset 0 0 0 1px rgba(255, 255, 255, 0.35),
             0 0 40px rgba(140, 120, 255, 0.6);
-          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          will-change: transform, scale, rotation;
         }
         
         .tech-card:hover .tech-icon {
-          transform: translateY(-5px) scale(1.05);
           box-shadow: 
             inset 0 0 0 1px rgba(255, 255, 255, 0.5),
             0 0 60px rgba(140, 120, 255, 0.8);
@@ -499,7 +649,6 @@ const HireByTechnology = () => {
           line-height: 1.6;
         }
 
-        /* Button animation */
         .tech-card .btn {
           position: relative;
           overflow: hidden;
@@ -507,6 +656,7 @@ const HireByTechnology = () => {
           border: none;
           padding: 8px 16px;
           transition: all 0.3s ease;
+          will-change: transform, scale;
         }
 
         .tech-card .btn::before {
