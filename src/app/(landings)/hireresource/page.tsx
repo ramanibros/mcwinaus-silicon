@@ -7,6 +7,7 @@ import Subscribe from "@/components/common/subscribe";
 import Description from "./components/Description";
 import TextSession from './components/TextSession';
 import Footer from "@/components/common/Footer";
+import Faqs from "@/app/(landings)/hireresource/components/Faqs";
 
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
@@ -53,6 +54,7 @@ const Page = () => {
              <Description/>
              <HowWork/>
              <TextSession/>
+            <Faqs/>
             <Subscribe/>
             <Footer/>
         </>

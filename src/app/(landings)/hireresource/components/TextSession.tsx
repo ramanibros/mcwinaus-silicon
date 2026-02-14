@@ -13,29 +13,29 @@ if (typeof window !== 'undefined') {
 const steps = [
   {
     step: "01",
-    title: "Share Your Requirements",
-    desc: "Tell us about your project goals, tech stack, team size, and timeline.",
+    title: "Share Requirements",
+    desc: "Outline project scope, tech needs, timeline—quick discovery call.",
     icon: "mdi:clipboard-text-outline",
     gradient: "linear-gradient(135deg, #6a5cff, #9b8cff)"
   },
   {
     step: "02",
-    title: "Get Developer Profiles",
-    desc: "We shortlist and share vetted developer profiles matching your requirements.",
+    title: "Review Profiles",
+    desc: "Curated shortlist of matched, pre-vetted developers.",
     icon: "mdi:account-search-outline",
     gradient: "linear-gradient(135deg, #ff7a18, #ffb347)"
   },
   {
     step: "03",
     title: "Interview & Select",
-    desc: "Interview developers, assess skills, and choose the perfect fit.",
+    desc: "Direct interviews, skills assessment—your choice, no pressure.",
     icon: "mdi:video-outline",
     gradient: "linear-gradient(135deg, #00c6ff, #0072ff)"
   },
   {
     step: "04",
-    title: "Onboard & Kickoff",
-    desc: "Developers onboard quickly and start delivering from day one.",
+    title: "Onboard & Deliver",
+    desc: "48-hour ramp-up—productive contributions from day one.",
     icon: "mdi:rocket-launch-outline",
     gradient: "linear-gradient(135deg, #38ef7d, #11998e)"
   }
@@ -44,23 +44,23 @@ const steps = [
 const highlights = [
   {
     icon: "mdi:check-circle-outline",
-    text: "Flexible hiring models – hourly, monthly, or full-time"
+    text: "Flexible engagement—hourly, monthly, dedicated"
   },
   {
     icon: "mdi:check-circle-outline",
-    text: "Pre-vetted developers with real-world experience"
+    text: "Proven talent with commercial success"
   },
   {
     icon: "mdi:check-circle-outline",
-    text: "Direct communication & full transparency"
+    text: "Direct collaboration—no communication barriers"
   },
   {
     icon: "mdi:check-circle-outline",
-    text: "Quick onboarding within 48–72 hours"
+    text: "Rapid deployment—48 hours to productivity"
   },
   {
     icon: "mdi:check-circle-outline",
-    text: "Timezone-aligned collaboration"
+    text: "Perfect time zone alignment for seamless work"
   }
 ];
 
@@ -262,15 +262,14 @@ const TextSession = () => {
                     display: 'inline-block'
                   }}
                 >
-                  How You Can
+                 Our Streamlined
                 </span>{' '}
-                Hire From Us
+                Hiring Process
               </h2>
               <p 
                 ref={pRef}
               >
-                A simple, transparent, and fast hiring process designed for
-                modern businesses
+                Simple 4-step approach for businesses:
               </p>
             </header>
 
@@ -332,9 +331,8 @@ const TextSession = () => {
           <div className="process-sticky-wrapper">
             <div className="process-sticky">
               <div className="sticky-box">
-                <h3>Why Hire From Us?</h3>
-                <p>We simplify hiring by giving you access to vetted developers,
-                  flexible engagement models, and complete transparency.</p>
+                <h3>Why Partner With Our Team?</h3>
+                <p>Hiring expertise with national reach—reliable developers, flexible models</p>
 
                 <ul className="feature-list">
                   {highlights.map((item, index) => (

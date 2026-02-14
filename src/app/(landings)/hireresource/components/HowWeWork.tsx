@@ -5,6 +5,7 @@ import { Row, Col } from "react-bootstrap";
 import IconifyIcon from "@/components/IconifyIcon";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Link from "next/link";
 
 // Register GSAP plugins
 if (typeof window !== 'undefined') {
@@ -88,7 +89,7 @@ const HireByTechnology = () => {
   const floatingShapesRef = useRef<(HTMLDivElement | null)[]>([]);
   
   // Store animation instances for cleanup
-  const animationsRef = useRef<gsap.core.Tween[]>([]);
+  const animationsRef = useRef<(gsap.core.Tween | gsap.core.Timeline)[]>([]);
   const masterTlRef = useRef<gsap.core.Timeline | null>(null);
 
   useEffect(() => {
@@ -419,10 +420,10 @@ const HireByTechnology = () => {
       });
       
       gsap.to(icon, {
-        scale: 1.2,
-        rotation: 10,
+        scale: 1.1,
+        rotation: 0,
         duration: 0.5,
-        ease: "elastic.out(1, 0.3)"
+        /*ease: "elastic.out(1, 0.3)"*/
       });
 
       gsap.to(button, {
@@ -580,10 +581,12 @@ const HireByTechnology = () => {
                         <h5>{tech.name}</h5>
                         <p>{tech.desc}</p>
 
-                        <button className="btn btn-hire">
-                          <span>Hire Developer</span>
-                          <IconifyIcon icon="mdi:arrow-right" width={18} />
-                        </button>
+                        <Link href="/contact" className="page-link" aria-label="Hire Developer">
+                          <button className="btn btn-hire">
+                            <span>Hire Developer</span>
+                            <IconifyIcon icon="mdi:arrow-right" width={18} />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
