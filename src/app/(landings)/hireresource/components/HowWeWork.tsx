@@ -86,7 +86,7 @@ const HireByTechnology = () => {
   const ringsRef = useRef<(HTMLSpanElement | null)[]>([]);
   
   // Store animation instances for cleanup
-  const animationsRef = useRef<gsap.core.Tween[]>([]);
+  const animationsRef = useRef<(gsap.core.Tween | gsap.core.Timeline)[]>([]);
 
   useEffect(() => {
     // Initial header animations
