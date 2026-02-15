@@ -581,7 +581,7 @@ const HireByTechnology = () => {
                         <h5>{tech.name}</h5>
                         <p>{tech.desc}</p>
 
-                        <Link href="/contact" className="page-link" aria-label="Hire Developer">
+                        <Link href="/contact-hire-resource" className="page-link" aria-label="Hire Developer">
                           <button className="btn btn-hire">
                             <span>Hire Developer</span>
                             <IconifyIcon icon="mdi:arrow-right" width={18} />
