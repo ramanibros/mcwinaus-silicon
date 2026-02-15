@@ -30,7 +30,7 @@ const Hero = () => {
 
         startTransition(async () => {
             try {
-                const res = await fetch('https://www.mcwinitech.com.au/mailer/sendMail.php', {
+                const res = await fetch('https://www.mcwinitech.com.au/mailer/hireResourceSendMail.php', {
                     method: 'POST',
                     body: formData,
                 });
@@ -149,17 +149,17 @@ const Hero = () => {
                 <Row className="pt-md-2 pt-lg-5 pb-2 pb-md-4">
                     <Col xxl={4} xl={5} lg={6} className="pt-3 mt-3">
                         <h1 ref={readyTextRef} className="h3 mb-2">
-                            Ready to grow your business?
+                            Ready to hire top-tier talent?
                         </h1>
                         <h2 ref={letsChatTextRef} className="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">
                             Let&apos;s chat!
                         </h2>
                         <div className="nav d-block lead pt-lg-5">
                             <Link
-                                href="mailto:hello@McWIN iTECH.com.au"
+                                href="mailto:sales@McWIN iTECH.com.au"
                                 className="nav-link fw-normal text-decoration-underline p-0 mb-4"
                             >
-                                hello@McWIN iTECH.com.au
+                                sales@McWIN iTECH.com.au
                             </Link>
                             <div className="text-nav">0451 989 731</div>
                         </div>
@@ -198,7 +198,7 @@ const Hero = () => {
 
                                 <Col xs={12} className="pb-2">
                                     <label htmlFor="message" className="form-label fs-base">
-                                        Message
+                                        Requirement
                                     </label>
                                     <textarea
                                         className="form-control form-control-lg"
@@ -207,7 +207,7 @@ const Hero = () => {
                                         rows={3}
                                         required
                                     ></textarea>
-                                    <div className="invalid-feedback">Please provide a message!</div>
+                                    <div className="invalid-feedback">Please provide a requirement!</div>
                                 </Col>
 
                                 <Col xs={12}>
@@ -215,7 +215,7 @@ const Hero = () => {
                                         type="submit"
                                         className="btn btn-lg btn-primary w-100 w-sm-auto d-flex align-items-center justify-content-center gap-2"
                                     >
-                                        <span>{isPending ? "Submitting..." : "Contact Us"}</span>
+                                        <span>{isPending ? "Submitting..." : "Submit Inquiry"}</span>
                                         {isPending ? (
                                             <span className="loader"/>
                                         ) : (
