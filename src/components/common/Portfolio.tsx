@@ -318,7 +318,7 @@ const Testimonials = () => {
                                         <SwiperSlide key={item.id} className="h-auto">
                                             <figure className="card h-100 position-relative border-0 bg-transparent">
                                                 <blockquote className="card-body p-0 mb-0">
-                                                    <h4 className="fw-semibold lh-base mb-0">{item.name}</h4>
+                                                    <h4 className="fw-semibold lh-base mb-0 h4-h1">{item.name}</h4>
                                                     <span className="fs-sm text-muted">{item.role}</span>
                                                     <div className="hr-indicator mb-5 mt-2"/>
                                                     <p className="fs-lg mb-0">{item.text}</p>

@@ -340,7 +340,7 @@ const About = () => {
             <section className="container pt-5 mt-2 mt-md-4 mt-lg-5">
                 <Row className="pt-xl-3">
                     <Col md={5} className="text-center text-md-start pb-5">
-                        <h2 ref={h1Ref} className="mb-4">
+                        <h2 ref={h1Ref} className="mb-4 h2-h1">
                             <span ref={spanRef} className="text-gradient-primary">Digital Solutions</span> That Deliver
                             Real Business Growth
                         </h2>
