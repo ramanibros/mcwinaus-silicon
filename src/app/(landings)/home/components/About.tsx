@@ -340,10 +340,10 @@ const About = () => {
             <section className="container pt-5 mt-2 mt-md-4 mt-lg-5">
                 <Row className="pt-xl-3">
                     <Col md={5} className="text-center text-md-start pb-5">
-                        <h1 ref={h1Ref} className="mb-4">
+                        <h2 ref={h1Ref} className="mb-4">
                             <span ref={spanRef} className="text-gradient-primary">Digital Solutions</span> That Deliver
                             Real Business Growth
-                        </h1>
+                        </h2>
                         <p className="fs-lg pb-lg-3 mb-4 justify-txt">
                             McWIN iTECH—your <b>growth partner, not just another agency.</b> We build high-performing
                             Websites, SEO strategies, Mobile Apps, and Custom Software that turn Perth businesses into

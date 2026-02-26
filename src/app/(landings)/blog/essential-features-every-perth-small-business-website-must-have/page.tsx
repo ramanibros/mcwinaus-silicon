@@ -21,7 +21,7 @@ export const metadata = {
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/blog/custom-website-vs-template-right-for-business/",
+        canonical: "https://www.mcwinitech.com.au/blog/essential-features-every-perth-small-business-website-must-have/",
     }
 };
 
@@ -51,7 +51,7 @@ const Page = () => {
               <IconifyIcon icon="bx:chevrons-right"/>
             </span>
                         <li className="breadcrumb-item active" aria-current="page">
-                            Custom Website vs. Template: Which Is Right for Your Business?
+                            Essential Features Every Perth Small Business Website Must Have
                         </li>
                     </ol>
                 </nav>

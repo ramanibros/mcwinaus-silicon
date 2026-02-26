@@ -15,6 +15,18 @@ type NewsItem = {
 };
 
 const newsData: NewsItem[] = [
+     {
+        id: 6,
+        category: 'Web Design & Development',
+        date: 'Feb 15, 2026',
+        title: 'Essential Features Every Perth Small Business Website Must Have',
+        link: '/blog/essential-features-every-perth-small-business-website-must-have/',
+        description:
+            'Discover the essential features every Perth small business website must have to increase visibility, generate leads, and drive growth. Learn how ',
+        likes: 5,
+        comments: 3,
+        shares: 9,
+    },
     {
         id: 5,
         category: 'Social Media Marketing',

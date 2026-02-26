@@ -187,7 +187,7 @@ const Testimonials = () => {
                                                 className="rounded-circle"
                                             />
                                             <div className="ps-3">
-                                                <h6 className="fw-semibold lh-base mb-0">{item.author}</h6>
+                                                <p className="fw-semibold lh-base mb-0">{item.author}</p>
                                                 <span className="fs-sm text-muted">{item.role}</span>
                                             </div>
                                         </figcaption>

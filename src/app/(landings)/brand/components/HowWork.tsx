@@ -183,9 +183,9 @@ const Work = () => {
                 className="text-center pb-4 pb-md-0 mb-2 mb-md-5 mx-auto"
                 style={{maxWidth: '530px'}}
             >
-                <h2 ref={h2Ref} className="h1">
+                <h3 ref={h2Ref} className="h1">
                     Our Proven 4-Step <span ref={spanRef} className="text-gradient-primary">Brand Process</span>
-                </h2>
+                </h3>
                 <p className="mb-0">
                     Clear, collaborative, results-driven—how Perth businesses get award-winning brands that deliver.
                 </p>
@@ -234,7 +234,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="step-body">
-                        <h3 className="h4 mb-3">Discovery</h3>
+                        <h4 className="h4 mb-3">Discovery</h4>
                         <p className="mb-0">Deep-dive into your Perth market, audience, and vision. Custom strategy
                             mapped in 48 hours.</p>
                     </div>
@@ -278,7 +278,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="step-body">
-                        <h3 className="h4 mb-3">Design & Concepts</h3>
+                        <h4 className="h4 mb-3">Design & Concepts</h4>
                         <p className="mb-0">3 unique concepts presented—pick your winner with stakeholder feedback
                             built-in.</p>
                     </div>
@@ -322,7 +322,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="step-body">
-                        <h3 className="h4 mb-3">Refinement & Assets</h3>
+                        <h4 className="h4 mb-3">Refinement & Assets</h4>
                         <p className="mb-0">Perfect your brand with unlimited revisions plus complete digital asset
                             delivery.</p>
                     </div>
@@ -366,7 +366,7 @@ const Work = () => {
                         </div>
                     </div>
                     <div className="step-body">
-                        <h3 className="h4 mb-3">Launch & Scale</h3>
+                        <h4 className="h4 mb-3">Launch & Scale</h4>
                         <p className="mb-0">Brand guidelines & coaching sessions to ensure long-term consistency across
                             all channels.</p>
                     </div>

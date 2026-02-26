@@ -213,7 +213,7 @@ const Faqs = () => {
                                 key={idx}
                                 className="border-0 rounded-3 shadow-sm mb-3"
                             >
-                                <AccordionHeader>{faq.question}</AccordionHeader>
+                                <AccordionHeader as="h3">{faq.question}</AccordionHeader>
                                 <AccordionBody className="fs-sm ">{faq.answer}</AccordionBody>
                             </AccordionItem>
                         ))}

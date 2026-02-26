@@ -147,7 +147,7 @@ const Benefits = () => {
                                 width={48}
                                 className="d-block mb-4 mx-auto benefit-icon"
                             />
-                            <h4 className="mb-2 pb-1 benefit-title">{benefit.title}</h4>
+                            <h3 className="mb-2 pb-1 benefit-title">{benefit.title}</h3>
                             <p className="mx-auto benefit-description" style={{maxWidth: 336}}>
                                 {benefit.description}
                             </p>

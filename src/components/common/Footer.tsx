@@ -271,7 +271,7 @@ const Footer = () => {
                     </Col>
 
                     <Col md={4} xl={3} className="pb-1 mb-4">
-                        <h5 className="pb-md-1">Contact US</h5>
+                        <h3 className="pb-md-1">Contact US</h3>
                         {resources.map((resource, index) => (
                             <div key={index} className="position-relative d-flex align-items-center py-2 my-1">
                                 <div className="bg-secondary rounded-circle lh-1 p-3">

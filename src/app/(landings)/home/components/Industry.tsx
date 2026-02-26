@@ -330,9 +330,9 @@ const Industry = () => {
                                     className="card card-hover h-100 border-0 shadow-sm text-decoration-none px-sm-3 px-md-0 px-lg-3 pb-sm-3 pb-md-0 pb-lg-3"
                                 >
                                     <div className="card-body">
-                                        <h2 className="h5 d-inline-flex align-items-center">
+                                        <h3 className="h5 d-inline-flex align-items-center">
                                             {service.title}
-                                        </h2>
+                                        </h3>
                                         <div className="hr-indicator mb-2 m-0"/>
                                         <p className="fs-sm text-body mb-0">{service.description}</p>
                                     </div>

@@ -157,9 +157,9 @@ const NewsSlider = () => {
         }}>
             <Container className="py-md-3 py-lg-5">
                 {/* Updated h2 with refs */}
-                <h2 ref={h2Ref} className="h1 text-center pb-2">
+                <h3 ref={h2Ref} className="h1 text-center pb-2">
                     News &amp; <span ref={spanRef} className="text-gradient-primary">Insights</span>
-                </h2>
+                </h3>
 
                 <div className="position-relative mx-md-2 px-md-5">
                     <button
@@ -208,11 +208,11 @@ const NewsSlider = () => {
                                             </Badge>
                                             <span className="fs-sm text-muted">{item.date}</span>
                                         </div>
-                                        <h3 className="h6">
+                                        <h4 className="h6">
                                             <Link href={item.link} className="stretched-link">
                                                 {item.title}
                                             </Link>
-                                        </h3>
+                                        </h4>
                                         <p className="mb-0">{item.description}</p>
                                     </CardBody>
                                     {/*<CardFooter className="d-flex align-items-center py-4 text-muted border-top-0">

@@ -461,7 +461,7 @@ const Counter = () => {
 
                                         <div className="card-body p-0">
                                             {/* Animated Counter Number */}
-                                            <h2 className="counter-number d-inline-flex align-items-center">
+                                            <h3 className="counter-number d-inline-flex align-items-center">
                         <span
                             ref={(el) => {
                                 counterRefs.current[index] = el;
@@ -470,7 +470,7 @@ const Counter = () => {
                         >
                           {service.title}
                         </span>
-                                            </h2>
+                                            </h3>
 
                                             {/* Animated Divider */}
                                             <div className="counter-divider"/>

@@ -185,7 +185,7 @@ const Hero = () => {
                             <Col ref={(el: HTMLDivElement | null) => {
                                 statsRef.current[0] = el;
                             }}>
-                                <h3 className="h2 mb-2">0+</h3>
+                                <p className="h2 mb-2">0+</p>
                                 <p className="mb-0">
                                     <strong>IT</strong> Experts
                                 </p>

@@ -283,9 +283,9 @@ const Testimonials = () => {
       `}</style>
 
             <section className="container mb-5 pt-2 pb-3 py-md-4 py-lg-5">
-                <h2 ref={h2Ref} className="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center">
+                <h3 ref={h2Ref} className="h1 pb-2 pb-lg-0 mb-4 mb-lg-5 text-center">
                     Work That Speaks. <span ref={spanRef} className="text-gradient-primary">Results That Scale.</span>
-                </h2>
+                </h3>
                 <Row>
                     <Col md={7}>
                         <div ref={boxRef}
@@ -318,7 +318,7 @@ const Testimonials = () => {
                                         <SwiperSlide key={item.id} className="h-auto">
                                             <figure className="card h-100 position-relative border-0 bg-transparent">
                                                 <blockquote className="card-body p-0 mb-0">
-                                                    <h1 className="fw-semibold lh-base mb-0">{item.name}</h1>
+                                                    <h4 className="fw-semibold lh-base mb-0">{item.name}</h4>
                                                     <span className="fs-sm text-muted">{item.role}</span>
                                                     <div className="hr-indicator mb-5 mt-2"/>
                                                     <p className="fs-lg mb-0">{item.text}</p>
@@ -360,8 +360,8 @@ const Testimonials = () => {
                                     ></CardBody>
                                     <div className="card-footer d-flex w-100 border-0 pb-0">
                                         <div className="border-start-xl ps-xl-4 ms-xl-2">
-                                            <h5 className="fw-semibold lh-base mb-0">{item.name}</h5>
-                                            <span className="fs-sm text-muted">{item.role}</span>
+                                            <h4 className="fw-semibold lh-base mb-0">{item.name}</h4>
+                                            <h5 className="fs-sm text-muted">{item.role}</h5>
                                         </div>
                                     </div>
                                 </Card>

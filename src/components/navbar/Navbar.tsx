@@ -460,7 +460,7 @@ const Navbar = ({
                         }}
                     >
                         <OffcanvasHeader closeButton className="border-bottom">
-                            <h5 className="offcanvas-title">Menu</h5>
+                            <div className="offcanvas-title">Menu</div>
                         </OffcanvasHeader>
                         <OffcanvasBody className="offcanvas-body">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -532,7 +532,7 @@ const Navbar = ({
                                                                     className="text-primary text-decoration-none small"
                                                                     onClick={() => setShowMenu(false)}
                                                                 >
-                                                                    <h4 className="mb-1">{section.title}</h4>
+                                                                    <span className="mb-1">{section.title}</span>
                                                                 </Link>
                                                             </div>
                                                         </div>
@@ -570,7 +570,7 @@ const Navbar = ({
                                                 <div className="accordion" id="servicesAccordion">
                                                     {pagesMenu.map((section, index) => (
                                                         <div key={section.title} className="accordion-item">
-                                                            <h3 className="accordion-header">
+                                                            <span className="accordion-header">
                                                                 <button
                                                                     className={`accordion-button ${expandedAccordions[section.title] ? '' : 'collapsed'}`}
                                                                     type="button"
@@ -590,7 +590,7 @@ const Navbar = ({
                                                                             className="fw-semibold">{section.title}</span>
                                                                     </div>
                                                                 </button>
-                                                            </h3>
+                                                            </span>
                                                             <Collapse in={expandedAccordions[section.title]}>
                                                                 <div className="accordion-body">
                                                                     <div className="mb-3">

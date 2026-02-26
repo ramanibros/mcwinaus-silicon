@@ -334,9 +334,9 @@ const Choose = () => {
                                                 />
                                             </div>
 
-                                            <h2 className="h4 d-inline-flex align-items-center">
+                                            <h3 className="h4 d-inline-flex align-items-center">
                                                 {service.title}
-                                            </h2>
+                                            </h3>
                                             <div className="hr-indicator mb-2"/>
                                             <p className="fs-sm text-body mb-0">{service.description}</p>
                                         </div>
