@@ -40,7 +40,7 @@ const Awards = () => {
                         </Col>
                         <Col>
                             <div className="position-relative text-center">
-                                <Image src={awward} width="100" alt="Awwwards" className="d-block mx-auto mb-3"/>
+                                <Image src={awward} width="100" alt="Awards" className="d-block mx-auto mb-3"/>
                                 <Link
                                     href="#"
                                     className="text-body justify-content-center fs-sm stretched-link text-decoration-none"

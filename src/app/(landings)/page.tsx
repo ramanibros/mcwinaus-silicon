@@ -35,14 +35,14 @@ export const metadata = {
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/",
+        canonical: "https://www.mcwinitech.com.au/scale/",
     },
 
     // Open Graph Tags
     openGraph: {
         type: "website",
         locale: "en_AU",
-        url: "https://www.mcwinitech.com.au/",
+        url: "https://www.mcwinitech.com.au/scale",
         siteName: "McWIN iTECH",
         title: "Scale Your Business – #1 Digital Growth Services in Perth WA (2026)",
         description: "Scale your business with McWIN iTECH's top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
