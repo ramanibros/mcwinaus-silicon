@@ -14,9 +14,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Digital Marketing Agency Perth WA | Drive Real Growth | McWIN iTECH ",
+        title: "Digital Marketing Agency in Perth WA | McWIN iTECH ",
         description:
-            "Digital Marketing Agency Perth WA helping brands grow through SEO, social media, paid ads, and data-driven strategies customised for Perth businesses.",
+            "Results-driven digital marketing agency in Perth offering SEO, paid advertising, and social media strategies to generate lead and business growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Search Engine Optimisation Perth WA | Boost Organic Traffic | McWIN iTECH ",
+        title: "SEO Services in Perth WA for Digital Growth | McWIN iTECH",
         description:
-            "Search Engine Optimisation Perth WA — expert SEO services to increase rankings, drive local traffic, and grow your business with proven strategies in Perth WA.",
+            "Expert SEO services in Perth WA improving Google rankings, boosting organic traffic, and generating qualified leads for sustainable business growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

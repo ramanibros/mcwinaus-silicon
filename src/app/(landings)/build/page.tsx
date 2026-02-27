@@ -15,9 +15,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Build Websites, eCommerce, Mobile Apps & Custom Software | McWIN iTECH ",
+        title: "Website & Software Development Company Perth WA",
         description:
-            "Build high-performance websites, eCommerce platforms, mobile apps, and custom software with McWin iTech. Scalable, secure, and business-ready solutions.",
+            "Perth development agency delivering high-performance websites, eCommerce, mobile apps and custom software solutions built for scale, security and growth",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",
@@ -35,7 +35,7 @@ export const metadata = {
         url: "https://www.mcwinitech.com.au/build/",
         siteName: "McWIN iTECH",
         title: "Scale Your Business – #1 Digital Growth Services in Perth WA (2026)",
-        description: "Scale your business with McWIN iTECH's top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
+        description: "Perth WA development agency delivering high-performance websites, eCommerce stores, mobile apps and custom software solutions built for scale, security and growth.",
         images: [
             {
                 url: "https://www.mcwinitech.com.au/images/McWIN_iTECH.png",

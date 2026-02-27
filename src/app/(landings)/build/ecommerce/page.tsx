@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "eCommerce Website Development Perth WA | Boost Sales | McWIN iTECH ",
+        title: "eCommerce Website Development Perth WA | McWIN iTECH ",
         description:
-"eCommerce Website Development Perth WA — expert solutions to build high-converting online stores, customised for growth and performance in 2026.",
+"Professional eCommerce website development in Perth building secure, scalable,high-converting online stores integrated with marketing and growth strategie.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

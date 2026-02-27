@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
   metadataBase: new URL('https://www.mcwinitech.com.au/'),
 
-  title: 'Brand Strategy & Positioning Services in Perth | McWIN iTECH',
+  title: 'Brand Strategy & Positioning Services in Perth WA ',
   description:
-    'McWIN iTECH delivers powerful brand strategy and positioning services in Perth, helping businesses define purpose, messaging and market advantage for growth in 2026.',
+    'Strategic brand strategy and positioning services in Perth WA to refine messaging, define differentiation and build long-term competitive advantage.',
   keywords: [
     'Software Development Services',
     'Custom Software Development',

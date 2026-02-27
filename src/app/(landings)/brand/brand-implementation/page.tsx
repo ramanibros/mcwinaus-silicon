@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Brand Implementation Services Perth 2026 | McWIN iTECH ",
+        title: "Brand Implementation Services in Perth WA  | McWIN iTECH ",
         description:
-            "McWIN iTECH delivers powerful brand implementation services in Perth, ensuring consistent rollout across web, social, digital assets and performance tracking in 2026.",
+            "End-to-end brand implementation services in Perth WA ensuring consistent rollout across digital platforms,and customer touchpoints for measurable growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

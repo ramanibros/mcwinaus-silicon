@@ -14,9 +14,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Branding Agency Perth 2026 | Powerful Growth | McWIN iTECH ",
+        title: "Branding Agency Perth | Strategy & Identity Experts ",
         description:
-            "McWIN iTECH is a powerful branding agency in Perth delivering brand strategy, visual identity, UI/UX design and brand implementation to drive real growth in 2026.",
+            "Professional branding agency in Perth WA offering brand strategy, visual identity and implementation services to build recognition and long-term growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

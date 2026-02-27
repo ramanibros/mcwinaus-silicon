@@ -12,9 +12,9 @@ import Features from "@/app/(landings)/about/components/Features";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "About McWIN iTECH – #1 Digital Marketing Experts (2026)",
+        title: "About McWIN iTECH – IT & Digital Agency in Perth",
         description:
-            "Learn about McWIN iTECH – top Perth WA digital marketing experts. Discover our mission, success stories & expert team driving results in 2026.",
+            "Learn about McWIN iTECH, a Perth digital marketing and IT agency delivering strategic solutions, SEO, web development and branding services.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

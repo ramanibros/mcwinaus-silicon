@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Custom Software Development Perth WA | 2026 Innovation | McWIN iTECH ",
+        title: "Custom Website Development in Perth WA | McWIN iTECH",
         description:
-            "Custom Software Development Perth WA — customised solutions to build powerful business software. Boost performance, efficiency & growth with expert Perth WA developers.",
+            "Custom website development in Perth creating fast, secure and SEO Optimised website designed to convert visitors into loyal customers and boost business growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

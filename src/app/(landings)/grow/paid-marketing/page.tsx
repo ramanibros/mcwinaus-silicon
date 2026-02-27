@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Paid Marketing Perth WA – #1 PPC & Digital Ads (2026) | McWIN iTECH",
+        title: "PPC & Paid Advertising Services Perth WA | McWIN iTECH",
         description:
-            "Expert search engine marketing & PPC services in Perth WA with McWIN iTECH. Drive traffic, boost visibility & grow revenue fast with top SEM strategies in 2026.",
+            "Performance-focused PPC and paid advertising services in Perth WA driving immediate traffic, conversions, and measurable ROI to boost business growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

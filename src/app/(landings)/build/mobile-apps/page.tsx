@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Mobile App Development Perth WA | Expert Apps 2026 | McWIN iTECH ",
+        title: "Mobile App Development Comapny in Perth WA | McWIN iTECH",
         description:
-            "Mobile App Development Perth WA — professional iOS & Android apps designed for performance, engagement, and growth. Trusted solutions for 2026 and beyond.",
+            "Expert iOS and Android mobile app development in Perth building high-performance, user-friendly apps optimized for usability and business growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

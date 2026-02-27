@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Visual Identity & Logo Design Services in Perth | McWIN iTECH ",
+        title: "Logo & Visual Identity Design in Perth WA  | McWIN iTECH ",
         description:
-            "McWIN iTECH delivers powerful visual identity and logo design services in Perth, creating cohesive brand systems, assets and motion graphics for growth in 2026.",
+            "Creative logo and visual identity design services in Perth WA creating cohesive, scalable brand systems across digital and print for consistent impact.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

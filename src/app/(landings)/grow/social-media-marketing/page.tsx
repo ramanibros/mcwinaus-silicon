@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Social Media Marketing Perth WA – #1 SMM Services | McWIN iTECH ",
+        title: "Social Media Marketing Services in Perth WA | McWIN iTECH ",
         description:
-            "Social media marketing in Perth WA by McWIN iTECH. Get proven SMM services that grow engagement, leads & brand visibility fast with expert strategies in 2026.",
+            "Strategic social media marketing services in Perth helping brands grow engagement, visibility, leads,across all platforms for business growth.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",

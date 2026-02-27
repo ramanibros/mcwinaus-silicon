@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "UI/UX Design Services Perth 2026 | McWIN iTECH ",
+        title: "UI/UX & User Experience Design Perth | McWIN iTECH",
         description:
-            "McWIN iTECH delivers powerful UI/UX design services in Perth, crafting user journeys, mobile apps and landing pages that drive engagement and conversions in 2026.",
+            "User-focused UI/UX design services in Perth WA by McWIN iTECH creating intuitive websites and mobile apps that enhance user experience and conversions.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",
