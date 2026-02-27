@@ -79,7 +79,7 @@ const Package = () => {
 
     return (
         <Container className="py-5 my-md-2 my-lg-4 my-xl-5">
-            <h2 className="h1">Our <span className="text-gradient-primary">Pricing</span></h2>
+            <h2 className="h2">Our <span className="text-gradient-primary">Pricing</span></h2>
             <div className="hr-indicator mb-4"/>
 
             <Row className="g-4 flex-nowrap overflow-auto pb-3">
