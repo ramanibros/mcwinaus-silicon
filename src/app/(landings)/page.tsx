@@ -23,9 +23,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Business Growth & Scaling Services Perth WA | McWIN iTECH ",
+    title: "Digital Marketing & IT Solutions Perth | McWIN iTECH ",
     description:
-        "Business growth and scaling services in Perth focused on marketing optimisation, automation, and strategies for long-term, sustainable business expansion.",
+        "Perth-based IT and digital marketing agency delivering SEO, custom website, software development, and paid advertising for scalable business growth.",
     keywords: [
         "Software Development Services",
         "Custom Software Development",
@@ -35,14 +35,14 @@ export const metadata = {
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/scale/",
+        canonical: "https://www.mcwinitech.com.au/",
     },
 
     // Open Graph Tags
     openGraph: {
         type: "website",
         locale: "en_AU",
-        url: "https://www.mcwinitech.com.au/scale",
+        url: "https://www.mcwinitech.com.au",
         siteName: "McWIN iTECH",
         title: "Scale Your Business – #1 Digital Growth Services in Perth WA (2026)",
         description: "Scale your business with McWIN iTECH's top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
