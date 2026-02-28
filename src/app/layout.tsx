@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/swiper-bundle.css';
 import '@/assets/scss/theme.scss';
+import Script from "next/script";
 import AppWrapper from '../components/AppWrapper';
 import favicon from '@/assets/favicon/favicon.ico';
 
@@ -20,7 +21,11 @@ export const metadata: Metadata = {
     title: 'McWIN iTECH',
     description: 'Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services',
     icons: favicon.src,
+     verification: {
+        google: 'rDjxnSmaSCQi0feic3CHUxmf5Ou2L0AA5kLIuYxxS8A',
+      },
 };
+
 
 export default function RootLayout({
                                        children,
@@ -30,6 +35,20 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${geistSans.variable}`} suppressHydrationWarning>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-D1KG76VGK0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D1KG76VGK0');
+          `}
+        </Script>
+
 
         <AppWrapper>{children}</AppWrapper>
         </body>
