@@ -12,9 +12,9 @@ import Faqs from "@/app/(landings)/hireresource/components/Faqs";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+    title: "Hire Tech Resources in Perth WA | McWIN iTECH",
     description:
-        "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+        "Hire skilled tech resources in Perth WA with McWIN iTECH. Connect with pre‑vetted developers and scalable teams ready to boost your projects.",
     keywords: [
         "Software Development Services",
         "Custom Software Development",

@@ -7,9 +7,9 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Hire Tech Resources in Perth WA | McWIN iTECH",
+        title: "Hire Tech Resources in Perth WA | Contact McWIN iTECH",
         description:
-            "Hire skilled tech resources in Perth WA with McWIN iTECH. Connect with pre‑vetted developers and scalable teams ready to boost your projects.",
+            "Contact McWIN iTECH to hire top tech talent in Perth WA. Work with pre‑vetted developers and scalable teams tailored to your project requirements.",
         keywords: [
                 "Software Development Services",
                 "Custom Software Development",
