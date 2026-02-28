@@ -32,26 +32,27 @@ export default function RootLayout({
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-        <body className={`${geistSans.variable}`} suppressHydrationWarning>
-        {/* Google Analytics */}
-        <Script
+return (
+    <html lang="en">
+    <head>
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-D1KG76VGK0"
-          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-D1KG76VGK0');
-          `}
-        </Script>
-
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-D1KG76VGK0');
+            `,
+          }}
+        />
+    </head>
+    <body className={`${geistSans.variable}`} suppressHydrationWarning>
         <AppWrapper>{children}</AppWrapper>
-        </body>
-        </html>
-    );
+    </body>
+    </html>
+);
 }
