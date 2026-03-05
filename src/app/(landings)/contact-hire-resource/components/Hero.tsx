@@ -161,7 +161,7 @@ const Hero = () => {
                             >
                                 sales@McWIN iTECH.com.au
                             </Link>
-                            <div className="text-nav">0451 989 731</div>
+                            <div className="text-nav">0420 922 931</div>
                         </div>
                     </Col>
 
