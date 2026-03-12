@@ -13,7 +13,7 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-        title: "Website Development Perth 2026 | High-Performance Sites| McWIN iTECH ",
+        title: "Website Development Perth 2026 | McWIN iTECH ",
         description:
         "McWIN iTECH builds high-performance, SEO-ready websites in Perth that convert better, load faster, and deliver real growth for businesses in 2026.",
         keywords: [

@@ -13,9 +13,9 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Accelerate business growth in Perth | Expert IT Development & Digital Marketing Services",
+    title: "Business Growth & Scaling Services Perth WA | McWIN iTECH",
     description:
-        "Drive your business to success in Perth with our expert IT development and digital marketing services. We create customized strategies to optimize your online presence, engage your target audience, and drive significant and sustainable business growth. Partner with us today to unleash your full potential and achieve remarkable success in Perth.",
+        "Business growth and scaling services in Perth focused on marketing optimisation, automation, and strategies for long-term, sustainable business expansion.",
     keywords: [
         "Software Development Services",
         "Custom Software Development",
