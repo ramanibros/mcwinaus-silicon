@@ -1,7 +1,6 @@
 'use client';
 import React, {useEffect, useRef, useState, useTransition} from 'react';
 import Link from 'next/link';
-import {useRouter} from 'next/navigation';
 import contacts from '@/assets/img/contacts/bg.svg';
 import {Col, Container, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
@@ -14,7 +13,6 @@ if (typeof window !== 'undefined') {
 }
 
 const Hero = () => {
-    const router = useRouter();
     const readyTextRef = useRef(null);
     const letsChatTextRef = useRef(null);
 
@@ -42,8 +40,6 @@ const Hero = () => {
                 if (data.success) {
                     setStatus('success');
                     formRef.current?.reset();
-                    // Redirect to thank-you page after successful submission
-                    router.push('/thank-you?contact');
                 } else {
                     setStatus('error');
                 }
@@ -145,101 +141,26 @@ const Hero = () => {
               <IconifyIcon icon="bx:chevrons-right"/>
             </span>
                         <li className="breadcrumb-item active" aria-current="page">
-                            Contact Us
+                            Thank you
                         </li>
                     </ol>
                 </nav>
 
-                <Row className="pt-md-2 pt-lg-5 pb-2 pb-md-4">
-                    <Col xxl={4} xl={5} lg={6} className="pt-3 mt-3">
-                        <h1 ref={readyTextRef} className="h3 mb-2">
-                            Ready to grow your business?
+                <Row className="pt-md-2 pt-lg-12 pb-2 pb-md-12">
+                    <Col xxl={12} xl={12} lg={12} className="pt-3 mt-3" style={{textAlign: "center"}}>
+                        <h1 ref={letsChatTextRef} className="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">
+                            Thank You!
                         </h1>
-                        <h2 ref={letsChatTextRef} className="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">
-                            Let&apos;s chat!
-                        </h2>
-                        <div className="nav d-block lead pt-lg-5">
+                        <p>Your message has been successfully submitted. Our team will review it and get back to you as soon as possible.</p>
+                        <div className="nav d-block lead pt-lg-5" style={{textAlign: "center"}}>
                             <Link
                                 href="mailto:hello@mcwinitech.com.au"
-                                className="nav-link fw-normal text-decoration-underline p-0 mb-4"
+                                className="fw-normal text-decoration-underline p-0 mb-4"
                             >
                                 hello@mcwinitech.com.au
                             </Link>
                             <div className="text-nav">0420 922 931</div>
                         </div>
-                    </Col>
-
-                    <Col lg={6} className="offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-                        <form className="needs-validation" noValidate onSubmit={handleSubmit} ref={formRef}> {/*action={handleSubmit} ref={formRef}*/}
-                            <Row className="g-4">
-                                <Col sm={6}>
-                                    <label htmlFor="fn" className="form-label fs-base">
-                                        Full name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="form-control form-control-lg"
-                                        id="fn"
-                                        name="name"
-                                        required
-                                    />
-                                    <div className="invalid-feedback">Please enter your full name!</div>
-                                </Col>
-
-                                <Col sm={6}>
-                                    <label htmlFor="email" className="form-label fs-base">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        className="form-control form-control-lg"
-                                        id="email"
-                                        name="email"
-                                        required
-                                    />
-                                    <div className="invalid-feedback">Please provide a valid email address!</div>
-                                </Col>
-
-                                <Col xs={12} className="pb-2">
-                                    <label htmlFor="message" className="form-label fs-base">
-                                        Message
-                                    </label>
-                                    <textarea
-                                        className="form-control form-control-lg"
-                                        id="message"
-                                        name="message"
-                                        rows={3}
-                                        required
-                                    ></textarea>
-                                    <div className="invalid-feedback">Please provide a message!</div>
-                                </Col>
-
-                                <Col xs={12}>
-                                    <button
-                                        type="submit"
-                                        className="btn btn-lg btn-primary w-100 w-sm-auto d-flex align-items-center justify-content-center gap-2"
-                                    >
-                                        <span>{isPending ? "Submitting..." : "Contact Us"}</span>
-                                        {isPending ? (
-                                            <span className="loader"/>
-                                        ) : (
-                                            ""
-                                        )}
-                                    </button>
-                                </Col>
-                                {status === "success" && (
-                                    <p className="form-success">
-                                        Thank you! Your message has been sent successfully.
-                                    </p>
-                                )}
-
-                                {status === "error" && (
-                                    <p className="form-error">
-                                        Something went wrong. Please try again.
-                                    </p>
-                                )}
-                            </Row>
-                        </form>
                     </Col>
                 </Row>
             </Container>

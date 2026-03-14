@@ -373,7 +373,7 @@ const PageTitle = () => {
 
                 <Link
                     ref={buttonRef}
-                    href="/contact"
+                    href="/contact-hire-resource"
                     className="brand-project-button"
                 >
                 <span className="button-text">

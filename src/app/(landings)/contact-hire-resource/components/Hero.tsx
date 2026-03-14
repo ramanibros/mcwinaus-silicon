@@ -1,6 +1,7 @@
 'use client';
 import React, {useEffect, useRef, useState, useTransition} from 'react';
 import Link from 'next/link';
+import {useRouter} from 'next/navigation';
 import contacts from '@/assets/img/contacts/bg.svg';
 import {Col, Container, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';
@@ -13,6 +14,7 @@ if (typeof window !== 'undefined') {
 }
 
 const Hero = () => {
+    const router = useRouter();
     const readyTextRef = useRef(null);
     const letsChatTextRef = useRef(null);
 
@@ -40,6 +42,8 @@ const Hero = () => {
                 if (data.success) {
                     setStatus('success');
                     formRef.current?.reset();
+                    // Redirect to thank-you page after successful submission
+                    router.push('/thank-you?contact-hire-resource');
                 } else {
                     setStatus('error');
                 }
@@ -156,10 +160,10 @@ const Hero = () => {
                         </h2>
                         <div className="nav d-block lead pt-lg-5">
                             <Link
-                                href="mailto:sales@McWIN iTECH.com.au"
+                                href="mailto:sales@mcwinitech.com.au"
                                 className="nav-link fw-normal text-decoration-underline p-0 mb-4"
                             >
-                                sales@McWIN iTECH.com.au
+                                sales@mcwinitech.com.au
                             </Link>
                             <div className="text-nav">0420 922 931</div>
                         </div>
