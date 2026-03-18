@@ -102,10 +102,10 @@ const Work = () => {
                     scale: 0,
                     opacity: 0
                 });
-                gsap.set([stepTitle, stepText], {
+                /* gsap.set([stepTitle, stepText], {
                     opacity: 0,
                     y: 20
-                });
+                }); */
 
                 // Create animation timeline for this step
                 const stepTL = gsap.timeline({
