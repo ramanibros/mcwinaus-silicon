@@ -21,7 +21,7 @@ const Hero = () => {
     const imagesRef = useRef<(HTMLImageElement | null)[]>([]);
 
     // Target values for counter animation
-    const targetValues = [30, 100, 500];
+    const targetValues = [30, 95, 367];
 
     useEffect(() => {
         // Create a timeline for sequential animations
