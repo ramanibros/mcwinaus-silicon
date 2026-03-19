@@ -181,6 +181,7 @@ const Hero = () => {
                                         className="form-control form-control-lg"
                                         id="fn"
                                         name="name"
+                                        placeholder="Enter your full name"
                                         required
                                     />
                                     <div className="invalid-feedback">Please enter your full name!</div>
@@ -195,19 +196,86 @@ const Hero = () => {
                                         className="form-control form-control-lg"
                                         id="email"
                                         name="email"
+                                        placeholder="Enter your email"
                                         required
                                     />
                                     <div className="invalid-feedback">Please provide a valid email address!</div>
                                 </Col>
 
+                                <Col sm={6}>
+                                    <label htmlFor="fn" className="form-label fs-base">
+                                        Phone
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control form-control-lg"
+                                        id="fn"
+                                        name="phone"
+                                        placeholder="Enter your phone"
+                                        required
+                                    />
+                                    <div className="invalid-feedback">Please enter phone!</div>
+                                </Col>
+
+                                <Col sm={6}>
+                                    <label htmlFor="budget" className="form-label fs-base">
+                                        What's your budget?
+                                    </label>
+                                    <select
+                                        className="form-control form-control-lg"
+                                        id="budget"
+                                        name="budget"
+                                        required
+                                    >
+                                        <option value="$500-$1,000">$500 - $1,000</option>
+                                        <option value="$1,000-$2,500">$1,000 - $2,500</option>
+                                        <option value="$2,500-$5,000">$2,500 - $5,000</option>
+                                        <option value="$5,000-$10,000">$5,000 - $10,000</option>
+                                        <option value="$10,000-$15,000">$10,000 - $15,000</option>
+                                        <option value="$15,000+">$15,000+</option>
+                                    </select>
+                                    <div className="invalid-feedback">Please select your budget!</div>
+                                </Col>
+
+                                <Col sm={12}>
+                                    <label htmlFor="fn" className="form-label fs-base">
+                                        How can we help you?
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control form-control-lg"
+                                        id="fn"
+                                        name="solutionNeeded"
+                                        placeholder="Enter service e.g. Software Solutions"
+                                        required
+                                    />
+                                    <div className="invalid-feedback">Please enter how we can help!</div>
+                                </Col>
+
+                                <Col sm={12}>
+                                    <label htmlFor="fn" className="form-label fs-base">
+                                        Your Website
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className="form-control form-control-lg"
+                                        id="fn"
+                                        name="website"
+                                        placeholder="Enter website url"
+                                        required
+                                    />
+                                    <div className="invalid-feedback">Please enter website!</div>
+                                </Col>
+
                                 <Col xs={12} className="pb-2">
                                     <label htmlFor="message" className="form-label fs-base">
-                                        Message
+                                        Project Details
                                     </label>
                                     <textarea
                                         className="form-control form-control-lg"
                                         id="message"
                                         name="message"
+                                        placeholder="Enter your project details"
                                         rows={3}
                                         required
                                     ></textarea>

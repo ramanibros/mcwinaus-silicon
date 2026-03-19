@@ -171,75 +171,143 @@ const Hero = () => {
 
                     <Col lg={6} className="offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
                         <form className="needs-validation" noValidate onSubmit={handleSubmit} ref={formRef}> {/*action={handleSubmit} ref={formRef}*/}
-                            <Row className="g-4">
-                                <Col sm={6}>
-                                    <label htmlFor="fn" className="form-label fs-base">
-                                        Full name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="form-control form-control-lg"
-                                        id="fn"
-                                        name="name"
-                                        required
-                                    />
-                                    <div className="invalid-feedback">Please enter your full name!</div>
-                                </Col>
+                                                    <Row className="g-4">
+                                                        <Col sm={6}>
+                                                            <label htmlFor="fn" className="form-label fs-base">
+                                                                Full name
+                                                            </label>
+                                                            <input
+                                                                type="text"
+                                                                className="form-control form-control-lg"
+                                                                id="fn"
+                                                                name="name"
+                                                                placeholder="Enter your full name"
+                                                                required
+                                                            />
+                                                            <div className="invalid-feedback">Please enter your full name!</div>
+                                                        </Col>
 
-                                <Col sm={6}>
-                                    <label htmlFor="email" className="form-label fs-base">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        className="form-control form-control-lg"
-                                        id="email"
-                                        name="email"
-                                        required
-                                    />
-                                    <div className="invalid-feedback">Please provide a valid email address!</div>
-                                </Col>
+                                                        <Col sm={6}>
+                                                            <label htmlFor="email" className="form-label fs-base">
+                                                                Email
+                                                            </label>
+                                                            <input
+                                                                type="email"
+                                                                className="form-control form-control-lg"
+                                                                id="email"
+                                                                name="email"
+                                                                placeholder="Enter your email"
+                                                                required
+                                                            />
+                                                            <div className="invalid-feedback">Please provide a valid email address!</div>
+                                                        </Col>
 
-                                <Col xs={12} className="pb-2">
-                                    <label htmlFor="message" className="form-label fs-base">
-                                        Requirement
-                                    </label>
-                                    <textarea
-                                        className="form-control form-control-lg"
-                                        id="message"
-                                        name="message"
-                                        rows={3}
-                                        required
-                                    ></textarea>
-                                    <div className="invalid-feedback">Please provide a requirement!</div>
-                                </Col>
+                                                        <Col sm={6}>
+                                                            <label htmlFor="fn" className="form-label fs-base">
+                                                                Phone
+                                                            </label>
+                                                            <input
+                                                                type="text"
+                                                                className="form-control form-control-lg"
+                                                                id="fn"
+                                                                name="phone"
+                                                                placeholder="Enter your phone"
+                                                                required
+                                                            />
+                                                            <div className="invalid-feedback">Please enter phone!</div>
+                                                        </Col>
 
-                                <Col xs={12}>
-                                    <button
-                                        type="submit"
-                                        className="btn btn-lg btn-primary w-100 w-sm-auto d-flex align-items-center justify-content-center gap-2"
-                                    >
-                                        <span>{isPending ? "Submitting..." : "Submit Inquiry"}</span>
-                                        {isPending ? (
-                                            <span className="loader"/>
-                                        ) : (
-                                            ""
-                                        )}
-                                    </button>
-                                </Col>
-                                {status === "success" && (
-                                    <p className="form-success">
-                                        Thank you! Your message has been sent successfully.
-                                    </p>
-                                )}
+                                                        <Col sm={6}>
+                                                            <label htmlFor="budget" className="form-label fs-base">
+                                                                What's your budget?
+                                                            </label>
+                                                            <select
+                                                                className="form-control form-control-lg"
+                                                                id="budget"
+                                                                name="budget"
+                                                                required
+                                                            >
+                                                                <option value="$500-$1,000">$500 - $1,000</option>
+                                                                <option value="$1,000-$2,500">$1,000 - $2,500</option>
+                                                                <option value="$2,500-$5,000">$2,500 - $5,000</option>
+                                                                <option value="$5,000-$10,000">$5,000 - $10,000</option>
+                                                                <option value="$10,000-$15,000">$10,000 - $15,000</option>
+                                                                <option value="$15,000+">$15,000+</option>
+                                                            </select>
+                                                            <div className="invalid-feedback">Please select your budget!</div>
+                                                        </Col>
 
-                                {status === "error" && (
-                                    <p className="form-error">
-                                        Something went wrong. Please try again.
-                                    </p>
-                                )}
-                            </Row>
-                        </form>
+                                                        <Col sm={12}>
+                                                            <label htmlFor="fn" className="form-label fs-base">
+                                                                How can we help you?
+                                                            </label>
+                                                            <input
+                                                                type="text"
+                                                                className="form-control form-control-lg"
+                                                                id="fn"
+                                                                name="solutionNeeded"
+                                                                placeholder="Enter service e.g. Software Solutions"
+                                                                required
+                                                            />
+                                                            <div className="invalid-feedback">Please enter how we can help!</div>
+                                                        </Col>
+
+                                                        <Col sm={12}>
+                                                            <label htmlFor="fn" className="form-label fs-base">
+                                                                Your Website
+                                                            </label>
+                                                            <input
+                                                                type="text"
+                                                                className="form-control form-control-lg"
+                                                                id="fn"
+                                                                name="website"
+                                                                placeholder="Enter website url"
+                                                                required
+                                                            />
+                                                            <div className="invalid-feedback">Please enter website!</div>
+                                                        </Col>
+
+                                                        <Col xs={12} className="pb-2">
+                                                            <label htmlFor="message" className="form-label fs-base">
+                                                                Project Details
+                                                            </label>
+                                                            <textarea
+                                                                className="form-control form-control-lg"
+                                                                id="message"
+                                                                name="message"
+                                                                placeholder="Enter your project details"
+                                                                rows={3}
+                                                                required
+                                                            ></textarea>
+                                                            <div className="invalid-feedback">Please provide a message!</div>
+                                                        </Col>
+
+                                                        <Col xs={12}>
+                                                            <button
+                                                                type="submit"
+                                                                className="btn btn-lg btn-primary w-100 w-sm-auto d-flex align-items-center justify-content-center gap-2"
+                                                            >
+                                                                <span>{isPending ? "Submitting..." : "Contact Us"}</span>
+                                                                {isPending ? (
+                                                                    <span className="loader"/>
+                                                                ) : (
+                                                                    ""
+                                                                )}
+                                                            </button>
+                                                        </Col>
+                                                        {status === "success" && (
+                                                            <p className="form-success">
+                                                                Thank you! Your message has been sent successfully.
+                                                            </p>
+                                                        )}
+
+                                                        {status === "error" && (
+                                                            <p className="form-error">
+                                                                Something went wrong. Please try again.
+                                                            </p>
+                                                        )}
+                                                    </Row>
+                                                </form>
                     </Col>
                 </Row>
             </Container>

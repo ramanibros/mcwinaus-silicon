@@ -20,6 +20,10 @@ try {
     // Get POST data safely
     $name    = $_POST['name'] ?? '';
     $email   = $_POST['email'] ?? '';
+    $phone    = $_POST['phone'] ?? '';
+    $budget   = $_POST['budget'] ?? '';
+    $solutionNeeded    = $_POST['solutionNeeded'] ?? '';
+    $website   = $_POST['website'] ?? '';
     $message = $_POST['message'] ?? '';
 
     // Basic validation
@@ -48,17 +52,19 @@ try {
     $mail->Subject = 'New Talent Hiring Request Received from - ' . $name;
     $mail->Body = '
     <div style="font-family: Arial, Helvetica, sans-serif; color:#333; line-height:1.6;">
-        <h3>📩 New Talent Hiring Request Received</h3>
+            <h3>📩 New Talent Hiring Request Received</h3>
 
-        <p><strong>Name:</strong> '.htmlspecialchars($name).'</p>
-        <p><strong>Email:</strong> '.htmlspecialchars($email).'</p>
+            <p><strong>Name:</strong> '.htmlspecialchars($name).'</p>
+            <p><strong>Email:</strong> '.htmlspecialchars($email).'</p>
+            <p><strong>Phone:</strong> '.htmlspecialchars($phone).'</p>
+            <p><strong>Budget:</strong> '.htmlspecialchars($budget).'</p>
+            <p><strong>Website:</strong> '.htmlspecialchars($website).'</p>
+            <p><strong>How can we help you?:</strong> '.htmlspecialchars($solutionNeeded).'</p>
 
-        <hr style="border:none;border-top:1px solid #e5e5e5;" />
-
-        <p style="white-space: pre-wrap;">
-            '.nl2br(htmlspecialchars($message)).'
-        </p>
-    </div>';
+            <hr style="border:none;border-top:1px solid #e5e5e5;" />
+            <p><strong>Project Details :</strong></p>
+            <p style="white-space: pre-wrap;">'.nl2br(htmlspecialchars($message)).'</p>
+        </div>';
 
     $mail->send();
 
