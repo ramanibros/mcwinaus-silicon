@@ -227,10 +227,12 @@ const Hero = () => {
                                         name="budget"
                                         required
                                     >
-                                        <option value="AUD 3000-5000">AUD 3000 - 5000</option>
-                                        <option value="AUD 5000-25000">AUD 5000 - 25000</option>
-                                        <option value="AUD 25000-50000">AUD 25000 - 50000</option>
-                                        <option value="AUD 100000+">AUD 100000+</option>
+                                        <option value="">--Select Budget--</option>
+                                        <option value="AUD 1500-5000">AUD 1500 - 5000</option>
+                                        <option value="AUD 5000-10000">AUD 5000 - 10000</option>
+                                        <option value="AUD 10000-20000">AUD 10000 - 20000</option>
+                                         <option value="AUD 20000-50000">AUD 20000 - 50000</option>
+                                        <option value="AUD 50000+">AUD 50000+</option>
                                     </select>
                                     <div className="invalid-feedback">Please select your budget!</div>
                                 </Col>
