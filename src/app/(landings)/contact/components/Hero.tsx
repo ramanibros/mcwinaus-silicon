@@ -174,7 +174,7 @@ const Hero = () => {
                             <Row className="g-4">
                                 <Col sm={6}>
                                     <label htmlFor="fn" className="form-label fs-base">
-                                        Full name
+                                        Full name <span style={{color:'red'}}>*</span>
                                     </label>
                                     <input
                                         type="text"
@@ -189,7 +189,7 @@ const Hero = () => {
 
                                 <Col sm={6}>
                                     <label htmlFor="email" className="form-label fs-base">
-                                        Email
+                                        Email <span style={{color:'red'}}>*</span>
                                     </label>
                                     <input
                                         type="email"
@@ -204,7 +204,7 @@ const Hero = () => {
 
                                 <Col sm={6}>
                                     <label htmlFor="fn" className="form-label fs-base">
-                                        Phone
+                                        Phone <span style={{color:'red'}}>*</span>
                                     </label>
                                     <input
                                         type="text"
@@ -219,7 +219,7 @@ const Hero = () => {
 
                                 <Col sm={6}>
                                     <label htmlFor="budget" className="form-label fs-base">
-                                        What's your budget?
+                                        What's your budget? <span style={{color:'red'}}>*</span>
                                     </label>
                                     <select
                                         className="form-control form-control-lg"
@@ -239,7 +239,7 @@ const Hero = () => {
 
                                 <Col sm={12}>
                                     <label htmlFor="fn" className="form-label fs-base">
-                                        How can we help you?
+                                        How can we help you? <span style={{color:'red'}}>*</span>
                                     </label>
                                     <input
                                         type="text"
@@ -269,7 +269,7 @@ const Hero = () => {
 
                                 <Col xs={12} className="pb-2">
                                     <label htmlFor="message" className="form-label fs-base">
-                                        Project Details
+                                        Project Details <span style={{color:'red'}}>*</span>
                                     </label>
                                     <textarea
                                         className="form-control form-control-lg"

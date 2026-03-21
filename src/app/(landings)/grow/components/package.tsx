@@ -184,10 +184,10 @@ const Package = () => {
                     {plan.name}
                   </span>
                                 </div>
-                                <div className="price-display mb-2">
+                                {/* <div className="price-display mb-2">
                                     <div className="price-currency">$</div>
                                     <div className="price-amount">{isAnnual ? plan.annually : plan.monthly}</div>
-                                </div>
+                                </div> */}
 
                             </div>
 
