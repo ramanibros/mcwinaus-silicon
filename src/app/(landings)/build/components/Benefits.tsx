@@ -149,7 +149,7 @@ const Benefits = () => {
 
             {/* Header with GSAP animation on "benefits" word */}
             <div className="section-info">
-                <h1>Our <span ref={spanRef} className="text-gradient-primary">benefits</span></h1>
+                <h2>Our <span ref={spanRef} className="text-gradient-primary">benefits</span></h2>
                 <p className="subtitle">Why choose our solutions</p>
             </div>
 
@@ -159,7 +159,7 @@ const Benefits = () => {
                     <div className="card-container" key={benefit.id}>
                         <div className="card">
                             <div className="card-content">
-                                <h1>{benefit.title}</h1>
+                                <h3>{benefit.title}</h3>
                                 <p>{benefit.description}</p>
                             </div>
                         </div>
