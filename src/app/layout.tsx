@@ -64,6 +64,30 @@ return (
                     fbq('track', 'PageView');
                   `}
                 </Script>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "McWIN iTECH",
+              "url": "https://www.mcwinitech.com.au/",
+              "logo": "https://www.mcwinitech.com.au/assets/img/footer/McWIN_iTECH_verticle_light.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+61 420 922 931",
+                "contactType": "customer service",
+                "areaServed": "AU",
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/mcwinitech.aus/",
+                "https://www.instagram.com/mcwinitech.aus/"
+              ]
+            })
+          }}
+        />
                 <noscript>
                   <img height="1" width="1" style={{ display: 'none' }}
                     src="https://www.facebook.com/tr?id=1607730610467245&ev=PageView&noscript=1"
