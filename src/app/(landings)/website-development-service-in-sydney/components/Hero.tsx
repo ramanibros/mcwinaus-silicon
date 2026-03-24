@@ -172,7 +172,7 @@ const Hero = () => {
                         xs={10}
                         className="offset-xl-1 order-md-2"
                     >
-                        <div className="parallax mx-auto" style={{maxWidth: '556px'}}>
+                        <div className="parallax mx-auto" style={{maxWidth: '356px'}}>
                             <div className="parallax-layer" data-depth="0.1">
                                 <Image src={layer} alt="Bubble"/>
                             </div>
