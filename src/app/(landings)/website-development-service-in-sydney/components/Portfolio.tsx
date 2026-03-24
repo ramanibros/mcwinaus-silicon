@@ -4,15 +4,7 @@ import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {Autoplay, Navigation} from 'swiper/modules';
-import testi1 from '@/assets/img/portfolio/aspireuniforms.png';
-import testi2 from '@/assets/img/portfolio/austaire.png';
-import testi3 from '@/assets/img/portfolio/blackdiamond.png';
-import testi4 from '@/assets/img/portfolio/completeairsystems.png';
-import testi5 from '@/assets/img/portfolio/icpgroupaustralia.png';
-import testi6 from '@/assets/img/portfolio/jgwbookkeepingservices.png';
-import testi7 from '@/assets/img/portfolio/levitaactive.png';
-import testi8 from '@/assets/img/portfolio/quinnsrockstoolhire.png';
-import testi9 from '@/assets/img/portfolio/sfeg.png';
+import testi1 from '@/assets/img/website-development-service-in-sydney/sydney-SaaS.png';
 
 import {Card, CardBody, Col, Row} from 'react-bootstrap';
 import IconifyIcon from '@/components/IconifyIcon';

@@ -3,7 +3,7 @@
 import React, {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import {SplitText} from 'gsap/SplitText';
-import layer from '@/assets/img/build-service/build-2.png';
+import layer from '@/assets/img/website-development-service-in-sydney/banner-vector.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
 
@@ -142,8 +142,7 @@ const Hero = () => {
     return (
         <section
             ref={heroRef}
-            className="position-relative overflow-hidden zindex-2 pt-4 pt-md-5 mt-5 pb-5"
-            style={{marginTop: "80px !important"}}
+            className="position-relative overflow-hidden zindex-2 pb-5"
         >
             <Container>
                 <Row className="justify-content-center align-items-center">

@@ -2,7 +2,7 @@
 import React, {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import about from '@/assets/img/landing/home/about_us.png';
+import about from '@/assets/img/website-development-service-in-sydney/seo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import {Col, Row} from 'react-bootstrap';
@@ -354,24 +354,16 @@ const About = () => {
                             <li>Core Web Vitals – LCP &lt; 1.5s, FID &lt; 50ms, CLS &lt; 0.1</li>
                             <li>Local SEO Sydney – Google Business Profile, citations, Sydney suburb targeting</li>
                         </ul>
-
-                        <p><strong> Performance Features: </strong></p>
-                        <ul>
-                            <li>Sydney CDN – Cloudflare, AWS CloudFront edge locations</li>
-                            <li>Image Optimization – WebP/AVIF, lazy loading, responsive images</li>
-                            <li>Code Splitting – React lazy, dynamic imports, minimal bundle sizes</li>
-                            <li>Caching Strategy – Full-page cache, edge-side includes, service workers</li>
-                        </ul>
                     </Col>
                     <Col xl={6} md={7}
                          className="offset-xl-1 pb-4 pb-sm-3 pb-lg-0 mb-4 mb-sm-5 mb-lg-0 image-section-container">
                         {/* Blob Background Container */}
-                        <div ref={blobContainerRef} className="blob-container">
+                        {/*<div ref={blobContainerRef} className="blob-container">
                             <div className="blob-glow"></div>
                             <div ref={blob1Ref} className="blob-shape blob-1"></div>
                             <div ref={blob2Ref} className="blob-shape blob-2"></div>
                             <div ref={blob3Ref} className="blob-shape blob-3"></div>
-                        </div>
+                        </div>*/}
 
                         {/* Image Container */}
                         <div className="image-wrapper">
@@ -380,17 +372,22 @@ const About = () => {
                                 className="rounded-3 w-100 h-100"
                                 alt="About McWIN iTECH"
                                 style={{objectFit: 'cover'}}
-                                width={600}
-                                height={400}
                             />
                         </div>
                     </Col>
                 </Row>
                 
                 {/* Pricing Table Row */}
-                <Row className="mt-5 pt-4">
+                <Row>
                     <Col xs={12}>
                         <div className="pricing-section">
+                            <p><strong> Performance Features: </strong></p>
+                            <ul>
+                                <li>Sydney CDN – Cloudflare, AWS CloudFront edge locations</li>
+                                <li>Image Optimization – WebP/AVIF, lazy loading, responsive images</li>
+                                <li>Code Splitting – React lazy, dynamic imports, minimal bundle sizes</li>
+                                <li>Caching Strategy – Full-page cache, edge-side includes, service workers</li>
+                            </ul>
                             <p className="text-center mb-4"></p>
                             <h2 className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
                                 Web Development Cost in <span ref={spanRef} className="text-gradient-primary">Sydney</span>
