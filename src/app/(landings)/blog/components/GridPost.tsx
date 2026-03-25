@@ -15,7 +15,20 @@ type NewsItem = {
 };
 
 const newsData: NewsItem[] = [
-     {
+     
+       {
+        id: 7,
+        category: 'Search Engine Optimization',
+        date: 'March 25, 2026',
+        title: 'eCommerce SEO Strategies That Drive Sales for Perth Stores | McWin ITech',
+        link: '/blog/ecommerce-seo-strategies-perth-stores',
+        description:
+            'Discover proven eCommerce SEO strategies designed to increase traffic, improve rankings, and drive more online sales for Perth-based stores. ',
+        likes: 5,
+        comments: 3,
+        shares: 9,
+    },
+    {
         id: 6,
         category: 'Web Design & Development',
         date: 'Feb 15, 2026',
