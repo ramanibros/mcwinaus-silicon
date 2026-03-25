@@ -3,7 +3,7 @@
 import React, {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import {SplitText} from 'gsap/SplitText';
-import layer from '@/assets/img/website-development-service-in-sydney/banner-vector.png';
+import layer from '@/assets/img/top-web-development-company-in-melbourne/melbourne-banner.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
 

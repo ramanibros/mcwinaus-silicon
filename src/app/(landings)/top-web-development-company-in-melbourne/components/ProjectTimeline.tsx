@@ -7,7 +7,7 @@ import Lottie from 'lottie-react';
 import animationData from '@/assets/json/animation-financial-landing.json';
 import {Card, Col, Row} from 'react-bootstrap';
 import IconifyIcon from "@/components/IconifyIcon";
-import image from "@/assets/img/website-development-service-in-sydney/project-timeline.png";
+import image from "@/assets/img/top-web-development-company-in-melbourne/melbourne-project-timeline-illustration.png";
 import Image from "next/image";
 
 const ProjectTimeline: React.FC = () => {
@@ -115,7 +115,7 @@ const ProjectTimeline: React.FC = () => {
                     </Col>
 
                     <Col xl={6} lg={5} md={6}>
-                        <div style={{maxWidth: 516, margin: '0 auto'}}>
+                        <div style={{maxWidth: 316, margin: '0 auto'}}>
                             <Image
                                 src={image}
                                 className="rounded-3 w-100 h-100"
