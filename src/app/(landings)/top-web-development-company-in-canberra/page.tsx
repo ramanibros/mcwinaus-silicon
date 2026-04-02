@@ -1,18 +1,18 @@
 import React from 'react';
 import Hero from './components/Hero';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Subscribe from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/Subscribe";
+import Subscribe from "@/app/(landings)/top-web-development-company-in-canberra/components/Subscribe";
 import Footer from "@/components/common/Footer";
-import Faqs from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/Faqs";
-import HowWork from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/HowWork";
-import Solutions from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/Solutions";
-import Portfolio from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/Portfolio";
-import Description from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/Description";
+import Faqs from "@/app/(landings)/top-web-development-company-in-canberra/components/Faqs";
+import HowWork from "@/app/(landings)/top-web-development-company-in-canberra/components/HowWork";
+import Solutions from "@/app/(landings)/top-web-development-company-in-canberra/components/Solutions";
+import Portfolio from "@/app/(landings)/top-web-development-company-in-canberra/components/Portfolio";
+import Description from "@/app/(landings)/top-web-development-company-in-canberra/components/Description";
 import Link from "next/link";
 import IconifyIcon from "@/components/IconifyIcon";
-import Technology from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/Technology";
-import ProjectTimeline from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/ProjectTimeline";
-import About from "@/app/(landings)/top-web-development-company-in-sunshine-canberra/components/About";
+import Technology from "@/app/(landings)/top-web-development-company-in-canberra/components/Technology";
+import ProjectTimeline from "@/app/(landings)/top-web-development-company-in-canberra/components/ProjectTimeline";
+import About from "@/app/(landings)/top-web-development-company-in-canberra/components/About";
 
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
@@ -31,13 +31,13 @@ export const metadata = {
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-sunshine-canberra/",
+        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-canberra/",
     },
 
     openGraph: {
         type: "website",
         locale: "en_AU",
-        url: "https://www.mcwinitech.com.au/top-web-development-company-in-sunshine-canberra/",
+        url: "https://www.mcwinitech.com.au/top-web-development-company-in-canberra/",
         siteName: "McWIN iTECH",
         title: "Top Web Development Company in Canberra | Custom Web Solutions",
         description: "Leading web development company in Canberra offering custom web design, professional websites, and web development services.",
