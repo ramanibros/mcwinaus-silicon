@@ -88,29 +88,29 @@ const ProjectTimeline: React.FC = () => {
                                                        className="text-gradient-primary">Timeline</span>
                         </h2>
                         <p>
-                            <strong>Predictable delivery</strong> for all <strong>Hobart web development</strong> projects:
+                            <strong>Predictable delivery</strong> for all <strong>Cairns web development</strong> projects:
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Basic Website: 2–4 weeks – Maker profiles, service listings
+                                Basic Website: 3–5 weeks – Resort profiles, tour operator sites
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Custom Website: 4–8 weeks – Artisan stores, environmental consultancies
+                                Custom Website: 6–10 weeks – Restaurant booking, activity sites
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Ecommerce Platform: 6–12 weeks – Craft marketplaces, sustainable retail
+                                Booking Platform: 8–14 weeks – Multi-property systems, liveaboards
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Tech Platform: 8–14 weeks – Monitoring dashboards, carbon calculators
+                                Enterprise System: 12–20 weeks – Hospitality management platforms
                             </li>
                         </ul>
                         <br/>
                         <p>
-                            94% of Hobart projects delivered on-time or early.
+                            95% of Cairns projects delivered on-time or early.
                         </p>
                     </Col>
 

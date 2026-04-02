@@ -345,14 +345,14 @@ const About = () => {
                             <span ref={spanRef} className="text-gradient-primary">SEO & Performance</span> Optimization
                         </h2>
                         <p className="fs-lg justify-txt">
-                            Every McWIN iTECH website launches fully SEO-optimized for Hobart dominance:
+                            Every McWIN iTECH website launches fully SEO-optimized for Cairns dominance:
                         </p>
-                        <p><strong> Technical SEO Hobart: </strong></p>
+                        <p><strong> Technical SEO Cairns: </strong></p>
                         <ul>
-                            <li>On-Page SEO – H1-H6 optimization, meta tags Hobart, internal linking</li>
-                            <li>Schema Markup – LocalBusiness, Product, EcoFriendlyProduct schemas</li>
+                            <li>On-Page SEO – H1-H6 optimization, meta tags Cairns, internal linking</li>
+                            <li>Schema Markup – LodgingBusiness, TourOperator, Restaurant schemas</li>
                             <li>Core Web Vitals – LCP &lt;1.5s, FID &lt;50ms, CLS &lt;0.1</li>
-                            <li>Local SEO Hobart – Google Business Profile, citations, Hobart suburb targeting (Battery Point, North Hobart, Sandy Bay)</li>
+                            <li>Local SEO Cairns – Google Business Profile, citations, Cairns suburb targeting (Edge Hill, Palm Cove, Trinity Beach)</li>
                         </ul>
                     </Col>
                     <Col xl={6} md={7}
@@ -376,16 +376,16 @@ const About = () => {
                         <div className="pricing-section">
                             <p><strong> Performance Features: </strong></p>
                             <ul>
-                                <li>Hobart CDN – Cloudflare, AWS CloudFront edge locations</li>
-                                <li>Image Optimization – WebP/AVIF artisan photography, lazy loading, responsive images</li>
+                                <li>Cairns CDN – Cloudflare, AWS CloudFront edge locations</li>
+                                <li>Image Optimization – WebP/AVIF tropical photography, lazy loading, responsive galleries</li>
                                 <li>Code Splitting – React lazy, dynamic imports, minimal bundle sizes</li>
                                 <li>Caching Strategy – Full-page cache, edge-side includes, service workers</li>
                             </ul>
                             <p className="text-center mb-4"></p>
                             <h2 className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                                Web Development Cost in <span ref={spanRef} className="text-gradient-primary">Hobart</span>
+                                Web Development Cost in <span ref={spanRef} className="text-gradient-primary">Cairns</span>
                             </h2>
-                            <p>Transparent Hobart web development pricing with no hidden fees:</p>
+                            <p>Transparent Cairns web development pricing with no hidden fees:</p>
 
 
                             <div className="table-responsive">
@@ -401,34 +401,34 @@ const About = () => {
                                     <tbody>
                                         <tr>
                                             <td><strong>Business Website</strong></td>
-                                            <td>$5,000 – $12,000</td>
-                                            <td>2–4 weeks</td>
-                                            <td>Artisan makers, small environmental firms</td>
+                                            <td>$6,000 – $14,000</td>
+                                            <td>3–5 weeks</td>
+                                            <td>Small resorts, tour operators</td>
                                         </tr>
                                         <tr>
                                             <td><strong>Custom Website</strong></td>
-                                            <td>$12,000 – $25,000</td>
-                                            <td>4–8 weeks</td>
-                                            <td>Craft retailers, sustainability consultancies</td>
+                                            <td>$15,000 – $30,000</td>
+                                            <td>6–10 weeks</td>
+                                            <td>Mid-size hotels, adventure companies</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Ecommerce Store</strong></td>
-                                            <td>$20,000 – $45,000</td>
-                                            <td>6–12 weeks</td>
-                                            <td>Multi-vendor artisan marketplaces</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Tech Platform</strong></td>
-                                            <td>$30,000 – $65,000</td>
+                                            <td><strong>Booking Platform</strong></td>
+                                            <td>$25,000 – $55,000</td>
                                             <td>8–14 weeks</td>
-                                            <td>Environmental monitoring, carbon platforms</td>
+                                            <td>Multi-property resorts, liveaboards</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Enterprise System</strong></td>
+                                            <td>$45,000 – $90,000</td>
+                                            <td>12–20 weeks</td>
+                                            <td>Hospitality groups, OTA competitors</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             
                             <p className="mt-4 mb-0">
-                                <strong>Includes:</strong> Free SEO audit, Hobart keyword research, 3 months support, performance guarantee.
+                                <strong>Includes:</strong> Free SEO audit, Cairns keyword research, 3 months support, performance guarantee.
                             </p>
                         </div>
                     </Col>

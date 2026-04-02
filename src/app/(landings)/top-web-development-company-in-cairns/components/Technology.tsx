@@ -510,7 +510,7 @@ const HireByTechnology = () => {
             ref={pRef}
             style={{ opacity: 0 }}
           >
-            Industry-leading tech stack powering Brisbane's fastest websites
+            Industry-leading tech stack powering Cairns's fastest booking websites
           </p>
         </div>
 

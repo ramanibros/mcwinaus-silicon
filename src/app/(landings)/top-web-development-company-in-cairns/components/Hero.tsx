@@ -158,7 +158,7 @@ const Hero = () => {
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
-                                 Company in Hobart for Environmental Tech & Artisan Retail
+                                 Company in Cairns for Hospitality & Adventure Tourism
                             </span>
                         </h1>
                     </Col>
@@ -174,7 +174,7 @@ const Hero = () => {
                     >
                         <div className="parallax mx-auto" style={{maxWidth: '356px'}}>
                             <div className="parallax-layer" data-depth="0.1">
-                                <Image src={layer} alt="Hobart Environmental Tech & Artisan Retail Web Development"/>
+                                <Image src={layer} alt="Cairns Hospitality & Adventure Tourism Web Development"/>
                             </div>
                         </div>
                     </Col>

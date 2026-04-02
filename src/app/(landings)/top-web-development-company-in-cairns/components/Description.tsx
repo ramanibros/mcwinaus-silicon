@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Hobart",
-            description: "Proven track record delivering 120+ projects for Hobart environmental tech firms, artisan makers, and sustainable retailers across Tasmania"
+            title: "10+ Years Experience Web Development Cairns",
+            description: "Proven track record delivering 120+ projects for Cairns resorts, tour operators, and hospitality businesses across Far North Queensland"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Hobart-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Hobart\", \"environmental tech websites Hobart\", \"artisan retail Tasmania\", and \"sustainable ecommerce Hobart\""
+            title: "Cairns-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Cairns\", \"hospitality websites Cairns\", \"adventure tours Cairns\", and \"reef diving booking FNQ\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for high-traffic artisan marketplaces and monitoring systems"
+            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for peak season booking surges"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Hobart includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum eco-conscious sales"
+            description: "Every custom website Cairns includes heatmapped CTAs, optimized reservation flows, and A/B tested layouts for maximum direct bookings"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Hobart Team",
-            description: "Battery Point-based developers who understand Tasmania's environmental priorities, artisan craft culture, and local sustainable search behavior"
+            title: "Local Cairns Team",
+            description: "Edge Hill-based developers who understand Cairns tourism seasonality, Great Barrier Reef booking patterns, and local hospitality search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Hobart specializing in environmental tech web development Hobart, artisan retail website development Hobart, and sustainable ecommerce platforms Hobart? McWIN iTECH helps Hobart businesses build high-performance, SEO-optimized websites, environmental monitoring systems, artisan craft marketplaces, and eco-commerce stores that drive sales and dominate local search rankings. As Hobart's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Hobart environmental technology firms, artisan makers TAS, and sustainable retail businesses that convert visitors into customers and conservation partners.
+                    Looking for the top web development company in Cairns specializing in hospitality web development Cairns, adventure tourism website development Cairns, and Cairns tour booking systems? McWIN iTECH helps Cairns businesses build high-performance, SEO-optimized websites, real-time booking platforms for resorts, adventure tour operators, and immersive experience sites that drive direct bookings and dominate local search rankings. As Cairns's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Cairns hotels, adventure tourism operators FNQ, and hospitality businesses that convert visitors into confirmed reservations and repeat customers.
                 </p>
                 <p>
-                    Our Hobart web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Hobart that rank #1 for competitive keywords like "environmental tech website developers Hobart", "artisan retail web development Hobart", and "sustainable ecommerce Tasmania". Whether you need carbon tracking platforms, handmade craft stores, renewable energy dashboards, or eco-certification portals Hobart, our web development services Hobart deliver measurable ROI through conversion-focused design and Hobart SEO strategies.
+                    Our Cairns web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Cairns that rank #1 for competitive keywords like "hospitality website developers Cairns", "adventure tourism web development Cairns", and "tour booking systems Cairns". Whether you need multi-property reservation systems, scuba diving booking platforms, rainforest adventure sites, or reef liveaboard portals Cairns, our web development services Cairns deliver measurable ROI through conversion-focused design and Cairns SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Hobart Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Cairns Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Hobart businesses trust McWIN iTECH as their go-to web development agency Hobart for environmental tech and artisan retail projects. Here's why we're the best web development company Hobart has to offer:</p>
+                    <p>Cairns businesses trust McWIN iTECH as their go-to web development agency Cairns for hospitality and adventure tourism projects. Here's why we're the best web development company Cairns has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Hobart businesses search "web development company Hobart" or "artisan website developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Cairns businesses search "web development company Cairns" or "tour booking website developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

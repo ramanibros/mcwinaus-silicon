@@ -187,7 +187,7 @@ const Work = () => {
                     Our 5-Step <span ref={spanRef} className="text-gradient-primary">Process</span>
                 </h3>
                 <p className="mb-0">
-                    Proven methodology trusted by Hobart's top environmental tech firms and artisan retailers.
+                    Proven methodology trusted by Cairns's top resorts, tour operators, and hospitality businesses.
                 </p>
             </div>
 
@@ -235,7 +235,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Discovery</h4>
-                        <p className="mb-0">Requirements gathering, Hobart competitor analysis, sustainability audit</p>
+                        <p className="mb-0">Requirements gathering, Cairns competitor analysis, booking audit</p>
                     </div>
                 </div>
 
@@ -278,7 +278,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Strategy & Design</h4>
-                        <p className="mb-0">Wireframes Hobart, mockups, SEO roadmap</p>
+                        <p className="mb-0">Wireframes Cairns, mockups, SEO roadmap</p>
                     </div>
                 </div>
 
@@ -321,7 +321,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Development</h4>
-                        <p className="mb-0">Agile sprints, ecommerce integrations, data visualization</p>
+                        <p className="mb-0">Agile sprints, real-time booking integration, payment systems</p>
                     </div>
                 </div>
 
@@ -364,7 +364,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Testing & Optimization</h4>
-                        <p className="mb-0">Cross-browser testing, SEO validation, performance tuning</p>
+                        <p className="mb-0">Peak load testing, SEO validation, mobile checkout</p>
                     </div>
                 </div>
 
@@ -407,7 +407,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Launch & Support</h4>
-                        <p className="mb-0">Go-live checklist, maker training, 3 months free support</p>
+                        <p className="mb-0">Go-live checklist, staff training, 3 months free support</p>
                     </div>
                 </div>
             </div>

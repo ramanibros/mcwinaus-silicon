@@ -1,18 +1,18 @@
 import React from 'react';
 import Hero from './components/Hero';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Subscribe from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/Subscribe";
+import Subscribe from "@/app/(landings)/top-web-development-company-in-cairns/components/Subscribe";
 import Footer from "@/components/common/Footer";
-import Faqs from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/Faqs";
-import HowWork from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/HowWork";
-import Solutions from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/Solutions";
-import Portfolio from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/Portfolio";
-import Description from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/Description";
+import Faqs from "@/app/(landings)/top-web-development-company-in-cairns/components/Faqs";
+import HowWork from "@/app/(landings)/top-web-development-company-in-cairns/components/HowWork";
+import Solutions from "@/app/(landings)/top-web-development-company-in-cairns/components/Solutions";
+import Portfolio from "@/app/(landings)/top-web-development-company-in-cairns/components/Portfolio";
+import Description from "@/app/(landings)/top-web-development-company-in-cairns/components/Description";
 import Link from "next/link";
 import IconifyIcon from "@/components/IconifyIcon";
-import Technology from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/Technology";
-import ProjectTimeline from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/ProjectTimeline";
-import About from "@/app/(landings)/top-web-development-company-in-cairns-for-hospitality/components/About";
+import Technology from "@/app/(landings)/top-web-development-company-in-cairns/components/Technology";
+import ProjectTimeline from "@/app/(landings)/top-web-development-company-in-cairns/components/ProjectTimeline";
+import About from "@/app/(landings)/top-web-development-company-in-cairns/components/About";
 
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
@@ -31,13 +31,13 @@ export const metadata = {
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-cairns-for-hospitality/",
+        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-cairns/",
     },
 
     openGraph: {
         type: "website",
         locale: "en_AU",
-        url: "https://www.mcwinitech.com.au/top-web-development-company-in-cairns-for-hospitality/",
+        url: "https://www.mcwinitech.com.au/top-web-development-company-in-cairns/",
         siteName: "McWIN iTECH",
         title: "Top Web Development Company in Cairns for Hospitality | Custom Web Solutions",
         description: "Leading web development company in Cairns offering custom web design, hospitality websites, and professional web development services.",

@@ -79,7 +79,7 @@ const Subscribe = () => {
             <Container className="position-relative zindex-2 pt-5" data-bs-theme="dark">
                 <div className="position-relative row justify-content-center">
                     <Col xl={8} md={10} sm={12} className="text-center">
-                        <h2 className="h1 text-light mb-4">Ready to Dominate <span className="text-gradient-primary">Hobart Search Results?</span>
+                        <h2 className="h1 text-light mb-4">Ready to Dominate <span className="text-gradient-primary">Cairns Search Results?</span>
                         </h2>
                         <p className="fs-lg text-light opacity-70 pb-4 mb-3">
                             Get Free SEO Audit & Custom Proposal Today!
@@ -138,7 +138,7 @@ const Subscribe = () => {
                             </button>
                         </form>
                         <p className="fs-sm text-light opacity-50 mb-0">
-                            Complete our 60-second form for your Hobart web development roadmap.
+                            Complete our 60-second form for your Cairns web development roadmap.
                         </p>
                     </Col>
                 </div>

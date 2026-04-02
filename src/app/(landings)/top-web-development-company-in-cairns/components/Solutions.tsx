@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Hobart',
+        title: 'Custom Web Development Cairns',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Hobart</strong> services create bespoke websites that perfectly match your brand and sustainability goals:</div><ul><li><strong>Custom UI/UX Design Hobart</strong> – Tasmanian-inspired interfaces for environmental tech and artisan brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Hobart, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, environmental data APIs, artisan inventory management</li></ul><div><em>Perfect for Hobart businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Cairns</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Cairns</strong> – Tropical-inspired interfaces for resorts and adventure brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Cairns, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, real-time booking APIs, multi-property management</li></ul><div><em>Perfect for Cairns businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Environmental Tech Web Development Hobart',
+        title: 'Hospitality Web Development Cairns',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>Specialized platforms for Tasmania\'s green technology sector:</div><ul><li><strong>Carbon Tracking & Reporting</strong> – Emission calculators, offset programs, compliance dashboards</li><li><strong>Renewable Energy Platforms</strong> – Solar monitoring, wind farm data, energy yield forecasting</li><li><strong>Environmental Monitoring Systems</strong> – Air quality sensors, water testing, biodiversity tracking</li><li><strong>Sustainability Certification Portals</strong> – Green Star ratings, eco-label verification, impact reporting</li></ul><div><em>Environmental tech web development Hobart built for climate research and conservation projects.</em></div>'
+        description: '<div>Complete reservation systems for Cairns hotels, resorts, and restaurants:</div><ul><li><strong>Multi-Property Booking Engines</strong> – Real-time room availability, group bookings, special packages</li><li><strong>Restaurant Reservation Systems</strong> – Table management, waitlist functionality, online ordering</li><li><strong>Hospitality CRM Integration</strong> – Guest profiles, loyalty programs, personalized offers</li><li><strong>Revenue Management Tools</strong> – Dynamic pricing, occupancy forecasting, upsell opportunities</li></ul><div><em>Hospitality web development Cairns with channel manager integration for OTAs.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Artisan Retail Web Development Hobart',
+        title: 'Adventure Tourism Web Development Cairns',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Premium ecommerce for Tasmania\'s craft makers and producers:</div><ul><li><strong>Handmade Marketplace Platforms</strong> – Multi-vendor artisan stores, craft fair directories</li><li><strong>Custom Craft Websites</strong> – Product story pages, maker profiles, limited edition drops</li><li><strong>Subscription Boxes Hobart</strong> – Monthly artisan deliveries, local produce bundles</li><li><strong>Wholesale Artisan Portals</strong> – B2B ordering, minimum quantities, trade pricing</li></ul><div><em>Artisan retail web development Hobart that celebrates Tasmanian craftsmanship.</em></div>'
+        description: '<div>High-conversion platforms for reef, rainforest, and outback experiences:</div><ul><li><strong>Tour Operator Booking Systems</strong> – Multi-day itineraries, group discounts, equipment hire</li><li><strong>Liveaboard Diving Platforms</strong> – Cabin selection, dive site maps, certification tracking</li><li><strong>Adventure Activity Marketplaces</strong> – Skydiving, bungy, ATV tours, hot air ballooning</li><li><strong>Experience Bundling</strong> – Reef + Daintree packages, airport transfers, accommodation combos</li></ul><div><em>Adventure tourism web development Cairns optimized for mobile bookings from travelers.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Sustainable Ecommerce Hobart',
+        title: 'Real-Time Booking Platforms Cairns',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Eco-friendly online stores for conscious consumers:</div><ul><li><strong>Green Product Filters</strong> – Material sourcing, carbon footprint ratings, ethical certifications</li><li><strong>Local Delivery Networks</strong> – Tasmania-wide shipping, pickup points, low-emission logistics</li><li><strong>Circular Economy Features</strong> – Product take-back programs, second-hand marketplaces</li><li><strong>Impact Transparency Pages</strong> – Supply chain tracking, artisan stories, sustainability metrics</li></ul><div><em>Sustainable ecommerce Hobart with zero-waste packaging integration and ethical sourcing verification.</em></div>'
+        description: '<div>Advanced reservation technology for high-demand tourism:</div><ul><li><strong>Live Availability Sync</strong> – Real-time updates across all sales channels and properties</li><li><strong>Mobile-First Booking Flow</strong> – One-click reservations, SMS confirmations, itinerary apps</li><li><strong>Payment Processing</strong> – Afterpay, Zip, credit cards, travel insurance integration</li><li><strong>Cancellation & Amendment Systems</strong> – Flexible policies, refund processing, rescheduling</li></ul><div><em>Real-time booking platforms Cairns that eliminate double-bookings and maximize occupancy.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Hobart</span>
+                        Cairns</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Hobart tailored for environmental tech and artisan retail. Each service incorporates Hobart SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Cairns tailored for hospitality and adventure tourism. Each service incorporates Cairns SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

@@ -14,13 +14,13 @@ const testimonials = [
         id: 1,
         text:
             '<div class="case-study-text">' +
-            '<font><strong>Client:</strong> Hobart-based renewable energy monitoring company</font><br/>' +
-            '<font><strong>Challenge:</strong> Complex data visualization, poor lead conversion, fragmented artisan partnerships</font><br/>' +
-            '<font><strong>Solution:</strong> Custom environmental dashboard, artisan product integration, Hobart SEO strategy</font><br/>' +
-            '<font><strong>Results:</strong> +395% research partnerships, +285% organic traffic, 41% sales growth from sustainability leads</font>' +
+            '<font><strong>Client:</strong> Cairns reef liveaboard operator with 3 vessels</font><br/>' +
+            '<font><strong>Challenge:</strong> OTA dependency, complex multi-day bookings, poor mobile conversion</font><br/>' +
+            '<font><strong>Solution:</strong> Custom liveaboard booking platform, Cairns SEO strategy, mobile PWA</font><br/>' +
+            '<font><strong>Results:</strong> +465% direct bookings, +340% organic traffic, 52% revenue growth</font>' +
             '</div>',
-        name: 'Hobart Environmental Tech Success',
-        role: 'Live: #1 Google for "Tasmania renewable energy monitoring" | 19K monthly visits',
+        name: 'Cairns Adventure Tourism Success',
+        role: 'Live: #1 Google for "Great Barrier Reef liveaboard Cairns" | 27K monthly visits',
         bg: testi1,
     }
 ]

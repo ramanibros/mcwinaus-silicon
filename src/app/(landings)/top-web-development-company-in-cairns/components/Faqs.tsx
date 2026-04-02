@@ -23,51 +23,51 @@ type FaqType = {
 
 const faqs: FaqType[] = [
     {
-        question: 'How much does web development cost in Hobart?',
+        question: 'How much does web development cost in Cairns?',
         answer: (
             <>
                 <p>
-                    $5K-$65K+ based on complexity. Artisan sites $12K+, tech platforms $30K+.
+                    $6K-$90K+ based on complexity. Tour sites $15K+, booking platforms $25K+.
                 </p>
             </>
         ),
     },
     {
-        question: 'How long does web development take in Hobart?',
+        question: 'How long does web development take in Cairns?',
         answer: (
             <>
                 <p>
-                    2-14 weeks. Business sites 2-4 weeks, environmental platforms 8-14 weeks.
+                    3-20 weeks. Business sites 3-5 weeks, enterprise platforms 12-20 weeks.
                 </p>
             </>
         ),
     },
     {
-        question: 'Do you offer Hobart SEO services?',
+        question: 'Do you offer Cairns SEO services?',
         answer: (
             <>
                 <p>
-                    Every project includes comprehensive Hobart SEO – sustainability optimization guaranteed.
+                    Every project includes comprehensive Cairns SEO – tourism optimization guaranteed.
                 </p>
             </>
         ),
     },
     {
-        question: 'Are your ecommerce stores eco-friendly optimized?',
+        question: 'Can you integrate with OTAs and channel managers?',
         answer: (
             <>
                 <p>
-                    Sustainable hosting, green payment gateways, carbon offset checkout features.
+                    Full integration with Booking.com, Expedia, ResRequest, all major platforms.
                 </p>
             </>
         ),
     },
     {
-        question: 'What makes you different from other Hobart agencies?',
+        question: 'What makes you different from other Cairns agencies?',
         answer: (
             <>
                 <p>
-                    Hobart-local team, environmental tech expertise, proven artisan retail results.
+                    Cairns-local team, hospitality expertise, proven adventure tourism results.
                 </p>
             </>
         ),
