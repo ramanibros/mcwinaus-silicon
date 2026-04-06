@@ -88,29 +88,29 @@ const ProjectTimeline: React.FC = () => {
                                                        className="text-gradient-primary">Timeline</span>
                         </h2>
                         <p>
-                            <strong>Predictable delivery</strong> for all <strong>Melbourne web development</strong> projects:
+                            <strong>Predictable delivery</strong> for all <strong>Newcastle web development</strong> projects:
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Basic Website: 2–4 weeks – Agency portfolios, startup landing pages
+                                Basic Website: 2–4 weeks – Company profiles, service listings
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Custom Website: 4–8 weeks – Ecommerce stores, creative showcases
+                                Custom Website: 4–8 weeks – Product catalogues, quoting systems
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Ecommerce Platform: 6–12 weeks – Shopify Plus, headless commerce
+                                B2B Platform: 8–12 weeks – Supplier portals, configurators
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Startup MVP: 4–10 weeks – Scalable SaaS foundations, growth platforms
+                                Enterprise System: 12–20 weeks – ERP systems, production platforms
                             </li>
                         </ul>
                         <br/>
                         <p>
-                            90% of Melbourne projects delivered on-time or early.
+                            92% of Newcastle projects delivered on-time or early.
                         </p>
                     </Col>
 

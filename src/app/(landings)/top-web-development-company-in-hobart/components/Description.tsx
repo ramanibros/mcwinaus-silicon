@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Melbourne",
-            description: "Proven track record delivering 120+ projects for Melbourne Ecommerce stores, creative agencies, and startup founders across Victoria"
+            title: "10+ Years Experience Web Development Hobart",
+            description: "Proven track record delivering 120+ projects for Hobart environmental tech firms, artisan makers, and sustainable retailers across Tasmania"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Melbourne-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Melbourne\", \"Ecommerce development Melbourne\", \"creative agency websites Melbourne\", and \"startup developers VIC\""
+            title: "Hobart-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Hobart\", \"environmental tech websites Hobart\", \"artisan retail Tasmania\", and \"sustainable ecommerce Hobart\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Melbourne region infrastructure with auto-scaling for high-traffic Ecommerce stores and startup platforms"
+            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for high-traffic artisan marketplaces and monitoring systems"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Melbourne includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum sales"
+            description: "Every custom website Hobart includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum eco-conscious sales"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Melbourne Team",
-            description: "Collingwood-based developers who understand Melbourne creative culture, VIC business trends, and local search behavior"
+            title: "Local Hobart Team",
+            description: "Battery Point-based developers who understand Tasmania's environmental priorities, artisan craft culture, and local sustainable search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Melbourne specializing in Ecommerce web development Melbourne, creative agency websites Melbourne, and startup web development Melbourne? McWIN iTECH helps Melbourne businesses build high-performance, SEO-optimized websites, secure Ecommerce stores Melbourne, creative portfolio websites, and scalable startup platforms Melbourne that drive conversions and dominate local search rankings. As Melbourne's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Melbourne Ecommerce brands, creative agencies VIC, and startup founders that convert visitors into loyal customers.
+                    Looking for the top web development company in Hobart specializing in environmental tech web development Hobart, artisan retail website development Hobart, and sustainable ecommerce platforms Hobart? McWIN iTECH helps Hobart businesses build high-performance, SEO-optimized websites, environmental monitoring systems, artisan craft marketplaces, and eco-commerce stores that drive sales and dominate local search rankings. As Hobart's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Hobart environmental technology firms, artisan makers TAS, and sustainable retail businesses that convert visitors into customers and conservation partners.
                 </p>
                 <p>
-                    Our Melbourne web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Melbourne that rank #1 for competitive keywords like "Ecommerce developers Melbourne", "creative agency web design Melbourne", and "startup website development Melbourne". Whether you need Shopify Plus development, Webflow portfolio sites, headless Ecommerce, or MVP platforms Melbourne, our web development services Melbourne deliver measurable ROI through conversion-focused design and Melbourne SEO strategies.
+                    Our Hobart web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Hobart that rank #1 for competitive keywords like "environmental tech website developers Hobart", "artisan retail web development Hobart", and "sustainable ecommerce Tasmania". Whether you need carbon tracking platforms, handmade craft stores, renewable energy dashboards, or eco-certification portals Hobart, our web development services Hobart deliver measurable ROI through conversion-focused design and Hobart SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Melbourne Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Hobart Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Melbourne businesses trust McWIN iTECH as their go-to web development agency Melbourne for Ecommerce, creative agencies, and startup projects. Here's why we're the best web development company Melbourne has to offer:</p>
+                    <p>Hobart businesses trust McWIN iTECH as their go-to web development agency Hobart for environmental tech and artisan retail projects. Here's why we're the best web development company Hobart has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Melbourne businesses search "web development company Melbourne" or "Ecommerce developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Hobart businesses search "web development company Hobart" or "artisan website developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

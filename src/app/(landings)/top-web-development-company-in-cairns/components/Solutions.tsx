@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Cairns',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Cairns</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Cairns</strong> – Tropical-inspired interfaces for resorts and adventure brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Cairns, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, real-time booking APIs, multi-property management</li></ul><div><em>Perfect for Cairns businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'Hospitality Web Development Cairns',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>Complete reservation systems for Cairns hotels, resorts, and restaurants:</div><ul><li><strong>Multi-Property Booking Engines</strong> – Real-time room availability, group bookings, special packages</li><li><strong>Restaurant Reservation Systems</strong> – Table management, waitlist functionality, online ordering</li><li><strong>Hospitality CRM Integration</strong> – Guest profiles, loyalty programs, personalized offers</li><li><strong>Revenue Management Tools</strong> – Dynamic pricing, occupancy forecasting, upsell opportunities</li></ul><div><em>Hospitality web development Cairns with channel manager integration for OTAs.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Adventure Tourism Web Development Cairns',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>High-conversion platforms for reef, rainforest, and outback experiences:</div><ul><li><strong>Tour Operator Booking Systems</strong> – Multi-day itineraries, group discounts, equipment hire</li><li><strong>Liveaboard Diving Platforms</strong> – Cabin selection, dive site maps, certification tracking</li><li><strong>Adventure Activity Marketplaces</strong> – Skydiving, bungy, ATV tours, hot air ballooning</li><li><strong>Experience Bundling</strong> – Reef + Daintree packages, airport transfers, accommodation combos</li></ul><div><em>Adventure tourism web development Cairns optimized for mobile bookings from travelers.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Real-Time Booking Platforms Cairns',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Advanced reservation technology for high-demand tourism:</div><ul><li><strong>Live Availability Sync</strong> – Real-time updates across all sales channels and properties</li><li><strong>Mobile-First Booking Flow</strong> – One-click reservations, SMS confirmations, itinerary apps</li><li><strong>Payment Processing</strong> – Afterpay, Zip, credit cards, travel insurance integration</li><li><strong>Cancellation & Amendment Systems</strong> – Flexible policies, refund processing, rescheduling</li></ul><div><em>Real-time booking platforms Cairns that eliminate double-bookings and maximize occupancy.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Cairns</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Cairns tailored for hospitality and adventure tourism. Each service incorporates Cairns SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

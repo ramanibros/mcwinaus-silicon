@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Melbourne",
-            description: "Proven track record delivering 120+ projects for Melbourne Ecommerce stores, creative agencies, and startup founders across Victoria"
+            title: "10+ Years Experience Web Development Newcastle",
+            description: "Proven track record delivering 120+ projects for Newcastle industrial suppliers, manufacturing firms, and B2B service providers across NSW"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Melbourne-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Melbourne\", \"Ecommerce development Melbourne\", \"creative agency websites Melbourne\", and \"startup developers VIC\""
+            title: "Newcastle-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Newcastle\", \"B2B industrial websites Newcastle\", \"manufacturing software Newcastle\", and \"industrial suppliers NSW\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Melbourne region infrastructure with auto-scaling for high-traffic Ecommerce stores and startup platforms"
+            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for high-traffic B2B portals and quoting systems"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Melbourne includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum sales"
+            description: "Every custom website Newcastle includes heatmapped CTAs, optimized RFQ forms, and A/B tested layouts for maximum industrial leads"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Melbourne Team",
-            description: "Collingwood-based developers who understand Melbourne creative culture, VIC business trends, and local search behavior"
+            title: "Local Newcastle Team",
+            description: "Mayfield-based developers who understand Newcastle industrial culture, Hunter Valley manufacturing needs, and local B2B search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Melbourne specializing in Ecommerce web development Melbourne, creative agency websites Melbourne, and startup web development Melbourne? McWIN iTECH helps Melbourne businesses build high-performance, SEO-optimized websites, secure Ecommerce stores Melbourne, creative portfolio websites, and scalable startup platforms Melbourne that drive conversions and dominate local search rankings. As Melbourne's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Melbourne Ecommerce brands, creative agencies VIC, and startup founders that convert visitors into loyal customers.
+                    Looking for the top web development company in Newcastle specializing in B2B industrial web development Newcastle, manufacturing website development Newcastle, and industrial B2B platforms Newcastle? McWIN iTECH helps Newcastle businesses build high-performance, SEO-optimized websites, custom quote systems for industrial suppliers, product configurators for manufacturers, and B2B ecommerce portals that drive RFQs and dominate local search rankings. As Newcastle's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Newcastle industrial businesses, manufacturing companies NSW, and B2B service providers that convert visitors into qualified leads and long-term contracts.
                 </p>
                 <p>
-                    Our Melbourne web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Melbourne that rank #1 for competitive keywords like "Ecommerce developers Melbourne", "creative agency web design Melbourne", and "startup website development Melbourne". Whether you need Shopify Plus development, Webflow portfolio sites, headless Ecommerce, or MVP platforms Melbourne, our web development services Melbourne deliver measurable ROI through conversion-focused design and Melbourne SEO strategies.
+                    Our Newcastle web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Newcastle that rank #1 for competitive keywords like "B2B website developers Newcastle", "industrial web development Newcastle", and "manufacturing websites Newcastle". Whether you need CAD integration portals, custom quoting systems, inventory management interfaces, or compliance documentation platforms Newcastle, our web development services Newcastle deliver measurable ROI through conversion-focused design and Newcastle SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Melbourne Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Newcastle Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Melbourne businesses trust McWIN iTECH as their go-to web development agency Melbourne for Ecommerce, creative agencies, and startup projects. Here's why we're the best web development company Melbourne has to offer:</p>
+                    <p>Newcastle businesses trust McWIN iTECH as their go-to web development agency Newcastle for B2B industrial and manufacturing projects. Here's why we're the best web development company Newcastle has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Melbourne businesses search "web development company Melbourne" or "Ecommerce developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Newcastle businesses search "web development company Newcastle" or "industrial website developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

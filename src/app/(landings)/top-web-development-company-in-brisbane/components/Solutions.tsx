@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Brisbane',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Brisbane</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Brisbane</strong> – Brisbane-inspired interfaces for tourism, logistics, and real estate brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Brisbane, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Brisbane businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'Tourism Web Development Brisbane',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>As leading <strong>tourism developers Brisbane</strong>, we build high-conversion booking platforms for Queensland\'s tourism industry:</div><ul><li><strong>Online Booking Systems Brisbane</strong> – Real-time availability, multi-property management, secure payments</li><li><strong>Tour Operator Websites</strong> – Itinerary builders, group booking systems, promotional calendars</li><li><strong>Experience Platforms Brisbane</strong> – Activity marketplaces, gift voucher systems, partner integrations</li><li><strong>Mobile Apps Brisbane</strong> – Progressive web apps for on-the-go bookings and virtual tours</li></ul><div><em>Our tourism web development Brisbane handles high-season traffic, group bookings, and multi-location operators.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Logistics Web Development Brisbane',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>Power your logistics business with <strong>custom tracking and management platforms</strong>:</div><ul><li><strong>Freight Tracking Portals Brisbane</strong> – Real-time shipment tracking, POD management, client portals</li><li><strong>Warehouse Management Systems</strong> – Inventory tracking, pick-pack-ship automation, reporting</li><li><strong>Transport Management Software</strong> – Route optimization, driver apps, compliance reporting</li><li><strong>EDI Integrations Brisbane</strong> – Seamless B2B integrations with major logistics partners</li></ul><div><em>Logistics web development Brisbane clients achieve 40% efficiency gains through automation.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Real Estate Web Development Brisbane',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Dominate Brisbane\'s property market with <strong>feature-rich property platforms</strong>:</div><ul><li><strong>Property Listing Portals Brisbane</strong> – IDX/CRM integrations, advanced search filters, valuation tools</li><li><strong>Property Management Systems</strong> – Tenant portals, maintenance tracking, lease management</li><li><strong>Virtual Tours & 3D Walkthroughs</strong> – Matterport integration, drone video support</li><li><strong>Auction & Sales Platforms</strong> – Live bidding systems, contract automation, buyer portals</li></ul><div><em>Real estate website development Brisbane that generates qualified leads 24/7.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Brisbane</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Brisbane tailored for high-growth industries. Each service incorporates Brisbane SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

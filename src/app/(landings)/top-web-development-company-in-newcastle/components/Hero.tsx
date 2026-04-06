@@ -44,7 +44,7 @@ const Hero = () => {
                 });
             }
 
-            // SplitText animation for "Powered by Perth Expertise."
+            // SplitText animation for "Powered by Newcastle Expertise."
             if (perthTextRef.current) {
                 // Split into words
                 const splitPerth = new SplitText(perthTextRef.current, {
@@ -158,7 +158,7 @@ const Hero = () => {
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
-                                 Company in Melbourne for Ecommerce, Creative Agencies & Startups
+                                 Company in Newcastle for B2B Industrial & Manufacturing
                             </span>
                         </h1>
                     </Col>

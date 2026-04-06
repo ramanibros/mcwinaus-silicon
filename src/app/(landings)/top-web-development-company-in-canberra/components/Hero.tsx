@@ -3,7 +3,7 @@
 import React, {useEffect, useRef} from 'react';
 import {gsap} from 'gsap';
 import {SplitText} from 'gsap/SplitText';
-import layer from '@/assets/img/top-web-development-company-in-melbourne/melbourne-banner.png';
+import layer from '@/assets/img/top-web-development-company-in-brisbane/brisbane-logistics-illustrations.png';
 import Image from 'next/image';
 import {Col, Container, Row} from 'react-bootstrap';
 
@@ -44,7 +44,7 @@ const Hero = () => {
                 });
             }
 
-            // SplitText animation for "Powered by Perth Expertise."
+            // SplitText animation for "Powered by Brisbane Expertise."
             if (perthTextRef.current) {
                 // Split into words
                 const splitPerth = new SplitText(perthTextRef.current, {
@@ -158,7 +158,7 @@ const Hero = () => {
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
-                                 Company in Melbourne for Ecommerce, Creative Agencies & Startups
+                                 Company in Canberra for Government Contractors & Cyber Security
                             </span>
                         </h1>
                     </Col>
@@ -174,7 +174,7 @@ const Hero = () => {
                     >
                         <div className="parallax mx-auto" style={{maxWidth: '356px'}}>
                             <div className="parallax-layer" data-depth="0.1">
-                                <Image src={layer} alt="Bubble"/>
+                                <Image src={layer} alt="Canberra Government Contractor & Cyber Security Web Development"/>
                             </div>
                         </div>
                     </Col>

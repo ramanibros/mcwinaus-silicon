@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Hobart',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Hobart</strong> services create bespoke websites that perfectly match your brand and sustainability goals:</div><ul><li><strong>Custom UI/UX Design Hobart</strong> – Tasmanian-inspired interfaces for environmental tech and artisan brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Hobart, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, environmental data APIs, artisan inventory management</li></ul><div><em>Perfect for Hobart businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'Environmental Tech Web Development Hobart',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>Specialized platforms for Tasmania\'s green technology sector:</div><ul><li><strong>Carbon Tracking & Reporting</strong> – Emission calculators, offset programs, compliance dashboards</li><li><strong>Renewable Energy Platforms</strong> – Solar monitoring, wind farm data, energy yield forecasting</li><li><strong>Environmental Monitoring Systems</strong> – Air quality sensors, water testing, biodiversity tracking</li><li><strong>Sustainability Certification Portals</strong> – Green Star ratings, eco-label verification, impact reporting</li></ul><div><em>Environmental tech web development Hobart built for climate research and conservation projects.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Artisan Retail Web Development Hobart',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>Premium ecommerce for Tasmania\'s craft makers and producers:</div><ul><li><strong>Handmade Marketplace Platforms</strong> – Multi-vendor artisan stores, craft fair directories</li><li><strong>Custom Craft Websites</strong> – Product story pages, maker profiles, limited edition drops</li><li><strong>Subscription Boxes Hobart</strong> – Monthly artisan deliveries, local produce bundles</li><li><strong>Wholesale Artisan Portals</strong> – B2B ordering, minimum quantities, trade pricing</li></ul><div><em>Artisan retail web development Hobart that celebrates Tasmanian craftsmanship.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Sustainable Ecommerce Hobart',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Eco-friendly online stores for conscious consumers:</div><ul><li><strong>Green Product Filters</strong> – Material sourcing, carbon footprint ratings, ethical certifications</li><li><strong>Local Delivery Networks</strong> – Tasmania-wide shipping, pickup points, low-emission logistics</li><li><strong>Circular Economy Features</strong> – Product take-back programs, second-hand marketplaces</li><li><strong>Impact Transparency Pages</strong> – Supply chain tracking, artisan stories, sustainability metrics</li></ul><div><em>Sustainable ecommerce Hobart with zero-waste packaging integration and ethical sourcing verification.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Hobart</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Hobart tailored for environmental tech and artisan retail. Each service incorporates Hobart SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

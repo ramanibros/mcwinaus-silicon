@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Newcastle',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Newcastle</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Newcastle</strong> – Industrial-strength interfaces for B2B and manufacturing brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Newcastle, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Newcastle businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'B2B Industrial Web Development Newcastle',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>As leading <strong>B2B industrial developers Newcastle</strong>, we build conversion-focused platforms for heavy industry:</div><ul><li><strong>Custom Quote Request Systems</strong> – Parametric calculators, specification builders, instant pricing</li><li><strong>Product Catalogues Newcastle</strong> – Technical specifications, CAD downloads, bulk order forms</li><li><strong>Supplier Portals</strong> – Inventory lookup, order tracking, reordering systems</li><li><strong>Compliance Documentation</strong> – ISO certification portals, safety data sheets, technical manuals</li></ul><div><em>Our B2B industrial web development Newcastle handles complex quoting and long sales cycles.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Manufacturing Web Development Newcastle',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>Power your <strong>manufacturing business</strong> with production-ready digital platforms:</div><ul><li><strong>Product Configurator Tools</strong> – Custom manufacturing options, 3D previews, BOM generation</li><li><strong>ERP Integrations Newcastle</strong> – MYOB, Xero, SAP Business One, real-time inventory</li><li><strong>Shop Floor Portals</strong> – Production scheduling, quality control, shift reporting</li><li><strong>Wholesale B2B Ecommerce</strong> – Tiered pricing, minimum order quantities, freight calculators</li></ul><div><em>Manufacturing web development Newcastle clients achieve 28% faster order processing.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Industrial B2B Platforms Newcastle',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Complete <strong>B2B solutions for Newcastle\'s industrial ecosystem</strong>:</div><ul><li><strong>CRM Integrations</strong> – HubSpot, Salesforce, Pipedrive for lead nurturing</li><li><strong>Document Management Systems</strong> – CAD files, technical drawings, revision control</li><li><strong>Project Collaboration Portals</strong> – Multi-stakeholder project tracking, milestone reporting</li><li><strong>Maintenance Portals</strong> – Asset registers, service history, compliance certificates</li></ul><div><em>Industrial B2B platforms Newcastle that streamline operations end-to-end.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Newcastle</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Newcastle tailored for B2B industrial and manufacturing. Each service incorporates Newcastle SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

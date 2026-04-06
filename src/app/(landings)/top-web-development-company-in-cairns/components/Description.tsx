@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Melbourne",
-            description: "Proven track record delivering 120+ projects for Melbourne Ecommerce stores, creative agencies, and startup founders across Victoria"
+            title: "10+ Years Experience Web Development Cairns",
+            description: "Proven track record delivering 120+ projects for Cairns resorts, tour operators, and hospitality businesses across Far North Queensland"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Melbourne-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Melbourne\", \"Ecommerce development Melbourne\", \"creative agency websites Melbourne\", and \"startup developers VIC\""
+            title: "Cairns-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Cairns\", \"hospitality websites Cairns\", \"adventure tours Cairns\", and \"reef diving booking FNQ\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Melbourne region infrastructure with auto-scaling for high-traffic Ecommerce stores and startup platforms"
+            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for peak season booking surges"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Melbourne includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum sales"
+            description: "Every custom website Cairns includes heatmapped CTAs, optimized reservation flows, and A/B tested layouts for maximum direct bookings"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Melbourne Team",
-            description: "Collingwood-based developers who understand Melbourne creative culture, VIC business trends, and local search behavior"
+            title: "Local Cairns Team",
+            description: "Edge Hill-based developers who understand Cairns tourism seasonality, Great Barrier Reef booking patterns, and local hospitality search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Melbourne specializing in Ecommerce web development Melbourne, creative agency websites Melbourne, and startup web development Melbourne? McWIN iTECH helps Melbourne businesses build high-performance, SEO-optimized websites, secure Ecommerce stores Melbourne, creative portfolio websites, and scalable startup platforms Melbourne that drive conversions and dominate local search rankings. As Melbourne's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Melbourne Ecommerce brands, creative agencies VIC, and startup founders that convert visitors into loyal customers.
+                    Looking for the top web development company in Cairns specializing in hospitality web development Cairns, adventure tourism website development Cairns, and Cairns tour booking systems? McWIN iTECH helps Cairns businesses build high-performance, SEO-optimized websites, real-time booking platforms for resorts, adventure tour operators, and immersive experience sites that drive direct bookings and dominate local search rankings. As Cairns's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Cairns hotels, adventure tourism operators FNQ, and hospitality businesses that convert visitors into confirmed reservations and repeat customers.
                 </p>
                 <p>
-                    Our Melbourne web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Melbourne that rank #1 for competitive keywords like "Ecommerce developers Melbourne", "creative agency web design Melbourne", and "startup website development Melbourne". Whether you need Shopify Plus development, Webflow portfolio sites, headless Ecommerce, or MVP platforms Melbourne, our web development services Melbourne deliver measurable ROI through conversion-focused design and Melbourne SEO strategies.
+                    Our Cairns web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Cairns that rank #1 for competitive keywords like "hospitality website developers Cairns", "adventure tourism web development Cairns", and "tour booking systems Cairns". Whether you need multi-property reservation systems, scuba diving booking platforms, rainforest adventure sites, or reef liveaboard portals Cairns, our web development services Cairns deliver measurable ROI through conversion-focused design and Cairns SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Melbourne Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Cairns Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Melbourne businesses trust McWIN iTECH as their go-to web development agency Melbourne for Ecommerce, creative agencies, and startup projects. Here's why we're the best web development company Melbourne has to offer:</p>
+                    <p>Cairns businesses trust McWIN iTECH as their go-to web development agency Cairns for hospitality and adventure tourism projects. Here's why we're the best web development company Cairns has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Melbourne businesses search "web development company Melbourne" or "Ecommerce developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Cairns businesses search "web development company Cairns" or "tour booking website developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Canberra',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Canberra</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Canberra</strong> – Government-compliant interfaces for contractors and security firms</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Canberra, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Canberra businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'Government Contractor Web Development Canberra',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>As leading government contractor developers Canberra, we build compliance-ready platforms for federal procurement:</div><ul><li><strong>PSPF Compliance Portals</strong> – Protective Security Policy Framework systems, risk management dashboards</li><li><strong>Tender & Proposal Platforms</strong> – AusTender integration, capability statements, automated RFPs</li><li><strong>Security Clearance Management</strong> – Personnel vetting systems, clearance tracking, sponsor portals</li><li><strong>Contract Management Systems</strong> – Performance reporting, milestone tracking, compliance audits</li></ul><div><em>Our government contractor web development Canberra meets IRAP PROTECTED certification requirements.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Cyber Security Web Development Canberra',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>Power your cyber security firm with threat intelligence and compliance platforms:</div><ul><li><strong>Threat Intelligence Platforms Canberra</strong> – Real-time threat feeds, vulnerability scanners, risk scoring</li><li><strong>Security Operations Centers</strong> – SIEM dashboards, incident response workflows, alert management</li><li><strong>Penetration Testing Portals</strong> – Automated pentest reports, client collaboration, remediation tracking</li><li><strong>Compliance Reporting Systems</strong> – ISM compliance, cybersecurity maturity model certification</li></ul><div><em>Cyber security web development Canberra clients achieve 100% audit compliance pass rates.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Compliance & Classified Platforms Canberra',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Secure classified information management for government contractors:</div><ul><li><strong>Classified Document Management</strong> – Multi-level security (UNCLASSIFIED, PROTECTED, SECRET), audit trails</li><li><strong>Secure Collaboration Portals</strong> – End-to-end encryption, multi-factor authentication, session recording</li><li><strong>GovCMS Development</strong> – Drupal-based government websites, WCAG 2.1 AA compliance</li><li><strong>Risk Management Systems</strong> – Cyber risk registers, treatment plans, residual risk reporting</li></ul><div><em>Compliance platforms Canberra built to ASD Essential Eight and ISM standards.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Canberra</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Canberra tailored for government contractors and cyber security firms. Each service incorporates Canberra SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

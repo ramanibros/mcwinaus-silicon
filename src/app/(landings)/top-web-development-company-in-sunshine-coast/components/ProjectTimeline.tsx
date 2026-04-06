@@ -7,7 +7,7 @@ import Lottie from 'lottie-react';
 import animationData from '@/assets/json/animation-financial-landing.json';
 import {Card, Col, Row} from 'react-bootstrap';
 import IconifyIcon from "@/components/IconifyIcon";
-import image from "@/assets/img/top-web-development-company-in-melbourne/melbourne-project-timeline-illustration.png";
+import image from "@/assets/img/top-web-development-company-in-brisbane/brisbane-project-timeline-illustration.png";
 import Image from "next/image";
 
 const ProjectTimeline: React.FC = () => {
@@ -88,29 +88,29 @@ const ProjectTimeline: React.FC = () => {
                                                        className="text-gradient-primary">Timeline</span>
                         </h2>
                         <p>
-                            <strong>Predictable delivery</strong> for all <strong>Melbourne web development</strong> projects:
+                            <strong>Predictable delivery</strong> for all <strong>Sunshine Coast web development</strong> projects:
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Basic Website: 2–4 weeks – Agency portfolios, startup landing pages
+                                Basic Website: 2–3 weeks – Small business sites, landing pages
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Custom Website: 4–8 weeks – Ecommerce stores, creative showcases
+                                Custom Website: 3–6 weeks – Tourism operators, professional services
+                            </li>
+                            <li className="d-flex mb-2">
+                                <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
+                                Booking Platform: 4–8 weeks – Accommodation systems, tour booking
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Ecommerce Platform: 6–12 weeks – Shopify Plus, headless commerce
-                            </li>
-                            <li className="d-flex">
-                                <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Startup MVP: 4–10 weeks – Scalable SaaS foundations, growth platforms
+                                Ecommerce Store: 6–10 weeks – Product stores, online shops
                             </li>
                         </ul>
                         <br/>
                         <p>
-                            90% of Melbourne projects delivered on-time or early.
+                            95% of Sunshine Coast projects delivered on-time or early.
                         </p>
                     </Col>
 

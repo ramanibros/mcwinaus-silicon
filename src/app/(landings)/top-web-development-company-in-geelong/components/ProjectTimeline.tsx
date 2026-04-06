@@ -88,29 +88,29 @@ const ProjectTimeline: React.FC = () => {
                                                        className="text-gradient-primary">Timeline</span>
                         </h2>
                         <p>
-                            <strong>Predictable delivery</strong> for all <strong>Melbourne web development</strong> projects:
+                            <strong>Predictable delivery</strong> for all <strong>Geelong web development</strong> projects:
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Basic Website: 2–4 weeks – Agency portfolios, startup landing pages
+                                Basic Website: 2–4 weeks – Practice profiles, service listings
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Custom Website: 4–8 weeks – Ecommerce stores, creative showcases
+                                Custom Website: 4–7 weeks – Professional services sites, specialist clinics
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Ecommerce Platform: 6–12 weeks – Shopify Plus, headless commerce
+                                Booking Platform: 6–10 weeks – Multi-practitioner systems, telehealth
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Startup MVP: 4–10 weeks – Scalable SaaS foundations, growth platforms
+                                Enterprise System: 8–14 weeks – Large practice management, compliance portals
                             </li>
                         </ul>
                         <br/>
                         <p>
-                            90% of Melbourne projects delivered on-time or early.
+                            94% of Geelong projects delivered on-time or early.
                         </p>
                     </Col>
 

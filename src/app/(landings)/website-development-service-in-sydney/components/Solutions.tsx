@@ -241,23 +241,6 @@ const Solutions = () => {
                                         {/* Animated gradient border */}
                                         <div className="brand-solutions-border"/>
 
-                                        {/* Floating particles */}
-                                        <div className="brand-solutions-particles">
-                                            {[...Array(8)].map((_, i) => (
-                                                <div
-                                                    key={i}
-                                                    className="brand-solutions-particle"
-                                                    style={{
-                                                        '--particle-size': `${Math.random() * 6 + 4}px`,
-                                                        '--particle-opacity': Math.random() * 0.4 + 0.1,
-                                                        '--particle-x': `${Math.random() * 100}%`,
-                                                        '--particle-y': `${Math.random() * 100}%`,
-                                                        '--particle-delay': `${Math.random() * 2}s`
-                                                    } as any}
-                                                />
-                                            ))}
-                                        </div>
-
                                         {/* Card content */}
                                         <div
                                             className="brand-solutions-content position-relative h-100 p-3 p-xl-4 d-flex flex-column">

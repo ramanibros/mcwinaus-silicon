@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Sunshine Coast',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Sunshine Coast</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Sunshine Coast</strong> – Coastal-inspired interfaces for small businesses and tourism brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Sunshine Coast, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – WordPress, simple CMS, booking integrations</li></ul><div><em>Perfect for Sunshine Coast businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'Small Business Web Development Sunshine Coast',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>Affordable websites for local Sunshine Coast businesses and trades:</div><ul><li><strong>Service Area Websites</strong> – Google Maps integration, service radius calculators, local SEO optimization</li><li><strong>Trade Business Websites</strong> – Gallery portfolios, quote request forms, before/after showcases</li><li><strong>Restaurant & Cafe Sites</strong> – Menu systems, online reservations, Google reviews integration</li><li><strong>Professional Services</strong> – Appointment booking, testimonial sliders, contact optimization</li></ul><div><em>Small business web development Sunshine Coast with packages starting at $5K for complete websites.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Tourism Web Development Sunshine Coast',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>High-conversion booking platforms for Sunshine Coast tourism operators:</div><ul><li><strong>Online Booking Systems Sunshine Coast</strong> – Real-time availability, secure payments, group bookings</li><li><strong>Accommodation Websites</strong> – Property management system integration, photo galleries, special offers</li><li><strong>Tour Operator Platforms</strong> – Itinerary builders, multi-day packages, transport integration</li><li><strong>Activity & Adventure Sites</strong> – Experience booking, waiver forms, equipment rental systems</li></ul><div><em>Tourism web development Sunshine Coast that handles peak season traffic and direct bookings.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Local SEO Websites Sunshine Coast',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Dominate Google Maps and local search results:</div><ul><li><strong>Google My Business Optimization</strong> – Complete profile setup, photo optimization, review management</li><li><strong>Local Citation Building</strong> – 50+ Sunshine Coast directories, consistent NAP data</li><li><strong>Service Area Pages</strong> – Caloundra, Noosa, Maroochydore, Mooloolaba suburb targeting</li><li><strong>Mobile-First Local Design</strong> – Click-to-call buttons, map directions, fast loading for mobile searches</li></ul><div><em>Local SEO websites Sunshine Coast that generate 70% of leads from Google Maps.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Sunshine Coast</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Sunshine Coast tailored for small businesses and tourism. Each service incorporates Sunshine Coast SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

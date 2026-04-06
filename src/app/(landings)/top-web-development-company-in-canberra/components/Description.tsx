@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Melbourne",
-            description: "Proven track record delivering 120+ projects for Melbourne Ecommerce stores, creative agencies, and startup founders across Victoria"
+            title: "10+ Years Experience Web Development Canberra",
+            description: "Proven track record delivering 120+ projects for Canberra government contractors, cyber security firms, and federal agencies across ACT"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Melbourne-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Melbourne\", \"Ecommerce development Melbourne\", \"creative agency websites Melbourne\", and \"startup developers VIC\""
+            title: "Canberra-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Canberra\", \"government contractor websites Canberra\", \"cyber security developers Canberra\", and \"PSPF compliance platforms ACT\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Melbourne region infrastructure with auto-scaling for high-traffic Ecommerce stores and startup platforms"
+            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for high-traffic compliance portals and security dashboards"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Melbourne includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum sales"
+            description: "Every custom website Canberra includes heatmapped CTAs, optimized tender submission flows, and A/B tested layouts for maximum contract wins"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Melbourne Team",
-            description: "Collingwood-based developers who understand Melbourne creative culture, VIC business trends, and local search behavior"
+            title: "Local Canberra Team",
+            description: "Fyshwick-based developers who understand Canberra government procurement, ACT cyber security requirements, and local search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Melbourne specializing in Ecommerce web development Melbourne, creative agency websites Melbourne, and startup web development Melbourne? McWIN iTECH helps Melbourne businesses build high-performance, SEO-optimized websites, secure Ecommerce stores Melbourne, creative portfolio websites, and scalable startup platforms Melbourne that drive conversions and dominate local search rankings. As Melbourne's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Melbourne Ecommerce brands, creative agencies VIC, and startup founders that convert visitors into loyal customers.
+                    Looking for the top web development company in Canberra specializing in government contractor web development Canberra, cyber security website development Canberra, and compliance platforms Canberra? McWIN iTECH helps Canberra businesses build high-performance, SEO-optimized websites, secure government compliance portals, cyber security dashboards, and classified document management systems that drive conversions and dominate local search rankings. As Canberra's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Canberra government contractors, cyber security firms ACT, and federal agencies that convert visitors into contracts, partnerships, and security certifications.
                 </p>
                 <p>
-                    Our Melbourne web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Melbourne that rank #1 for competitive keywords like "Ecommerce developers Melbourne", "creative agency web design Melbourne", and "startup website development Melbourne". Whether you need Shopify Plus development, Webflow portfolio sites, headless Ecommerce, or MVP platforms Melbourne, our web development services Melbourne deliver measurable ROI through conversion-focused design and Melbourne SEO strategies.
+                    Our Canberra web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Canberra that rank #1 for competitive keywords like "government contractor website developers Canberra", "cyber security web development Canberra", and "compliance platforms Canberra". Whether you need PSPF compliance systems, security clearance portals, threat intelligence platforms, or GovCMS integrations Canberra, our web development services Canberra deliver measurable ROI through conversion-focused design and Canberra SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Melbourne Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Canberra Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Melbourne businesses trust McWIN iTECH as their go-to web development agency Melbourne for Ecommerce, creative agencies, and startup projects. Here's why we're the best web development company Melbourne has to offer:</p>
+                    <p>Canberra businesses trust McWIN iTECH as their go-to web development agency Canberra for government contractors and cyber security projects. Here's why we're the best web development company Canberra has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Melbourne businesses search "web development company Melbourne" or "Ecommerce developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Canberra businesses search "web development company Canberra" or "government contractor website developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

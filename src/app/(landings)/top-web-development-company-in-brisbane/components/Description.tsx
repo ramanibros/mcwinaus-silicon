@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Melbourne",
-            description: "Proven track record delivering 120+ projects for Melbourne Ecommerce stores, creative agencies, and startup founders across Victoria"
+            title: "10+ Years Experience Web Development Brisbane",
+            description: "Proven track record delivering 120+ projects for Brisbane tourism operators, logistics companies, and real estate agencies across Queensland"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Melbourne-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Melbourne\", \"Ecommerce development Melbourne\", \"creative agency websites Melbourne\", and \"startup developers VIC\""
+            title: "Brisbane-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Brisbane\", \"tourism websites Brisbane\", \"logistics software Brisbane\", and \"real estate developers QLD\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Melbourne region infrastructure with auto-scaling for high-traffic Ecommerce stores and startup platforms"
+            description: "Enterprise-grade AWS Brisbane region infrastructure with auto-scaling for high-traffic booking systems and property portals"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Melbourne includes heatmapped CTAs, optimized checkout flows, and A/B tested layouts for maximum sales"
+            description: "Every custom website Brisbane includes heatmapped CTAs, optimized booking flows, and A/B tested layouts for maximum revenue"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Melbourne Team",
-            description: "Collingwood-based developers who understand Melbourne creative culture, VIC business trends, and local search behavior"
+            title: "Local Brisbane Team",
+            description: "Fortitude Valley-based developers who understand Brisbane business culture, QLD industry trends, and local search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Melbourne specializing in Ecommerce web development Melbourne, creative agency websites Melbourne, and startup web development Melbourne? McWIN iTECH helps Melbourne businesses build high-performance, SEO-optimized websites, secure Ecommerce stores Melbourne, creative portfolio websites, and scalable startup platforms Melbourne that drive conversions and dominate local search rankings. As Melbourne's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Melbourne Ecommerce brands, creative agencies VIC, and startup founders that convert visitors into loyal customers.
+                    Looking for the top web development company in Brisbane specializing in tourism web development Brisbane, logistics website development Brisbane, and real estate web development Brisbane? McWIN iTECH helps Brisbane businesses build high-performance, SEO-optimized websites, booking systems for tourism operators, tracking platforms for logistics companies, and property portals for real estate agencies that drive conversions and dominate local search rankings. As Brisbane's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Brisbane tourism businesses, logistics firms QLD, and real estate developers that convert visitors into bookings, contracts, and sales.
                 </p>
                 <p>
-                    Our Melbourne web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Melbourne that rank #1 for competitive keywords like "Ecommerce developers Melbourne", "creative agency web design Melbourne", and "startup website development Melbourne". Whether you need Shopify Plus development, Webflow portfolio sites, headless Ecommerce, or MVP platforms Melbourne, our web development services Melbourne deliver measurable ROI through conversion-focused design and Melbourne SEO strategies.
+                    Our Brisbane web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Brisbane that rank #1 for competitive keywords like "tourism website developers Brisbane", "logistics web development Brisbane", and "real estate website design Brisbane". Whether you need online booking systems, freight tracking portals, property listing platforms, or virtual tours Brisbane, our web development services Brisbane deliver measurable ROI through conversion-focused design and Brisbane SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Melbourne Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Brisbane Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Melbourne businesses trust McWIN iTECH as their go-to web development agency Melbourne for Ecommerce, creative agencies, and startup projects. Here's why we're the best web development company Melbourne has to offer:</p>
+                    <p>Brisbane businesses trust McWIN iTECH as their go-to web development agency Brisbane for tourism, logistics, and real estate projects. Here's why we're the best web development company Brisbane has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Melbourne businesses search "web development company Melbourne" or "Ecommerce developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Geelong businesses search "web development company Geelong" or "healthcare website developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Melbourne',
+        title: 'Custom Web Development Geelong',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Melbourne</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Melbourne</strong> – Melbourne-inspired interfaces for creative agencies and startup brands</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Melbourne, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Melbourne businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Geelong</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Geelong</strong> – Professional interfaces for services firms and healthcare providers</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Geelong, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, appointment booking integrations, patient management</li></ul><div><em>Perfect for Geelong businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'Ecommerce Web Development Melbourne',
+        title: 'Professional Services Web Development Geelong',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>As leading <strong>Ecommerce developers Melbourne</strong>, we build high-conversion online stores for Melbourne\'s retail scene:</div><ul><li><strong>Shopify Plus Development Melbourne</strong> – Enterprise Ecommerce with custom checkout, B2B portals</li><li><strong>Headless Ecommerce Melbourne</strong> – Next.js + Shopify, Sanity Commerce, lightning-fast stores</li><li><strong>Multi-Channel Integration</strong> – Amazon AU, eBay, Google Shopping, Facebook Commerce</li><li><strong>Payment Gateways Melbourne</strong> – Afterpay, Zip, Klarna, global payment processing</li></ul><div><em>Our Ecommerce web development Melbourne handles high-volume stores, wholesale platforms, and marketplace integrations.</em></div>'
+        description: '<div>High-conversion websites for <strong>Geelong\'s professional services sector</strong>:</div><ul><li><strong>Legal Firm Websites</strong> – Case studies, practice area pages, client intake forms</li><li><strong>Accounting & Financial Services</strong> – Tax calculator tools, service comparison pages, secure client portals</li><li><strong>Engineering & Architecture Firms</strong> – Project portfolios, technical specifications, team showcases</li><li><strong>Consulting Websites Geelong</strong> – Service calculators, downloadable guides, lead magnets</li></ul><div><em>Professional services web development Geelong designed for long-term client acquisition.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Creative Agency Web Development Melbourne',
+        title: 'Healthcare Web Development Geelong',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Elevate your <strong>creative agency Melbourne</strong> with stunning portfolio websites:</div><ul><li><strong>Webflow Development Melbourne</strong> – No-code animations, CMS-powered portfolios</li><li><strong>Interactive Portfolio Sites</strong> – GSAP animations, Three.js visuals, video backgrounds</li><li><strong>Case Study CMS</strong> – Dynamic project showcases, client testimonial systems</li><li><strong>Agency Lead Generation</strong> – Contact form optimization, proposal automation</li></ul><div><em>Creative agency websites Melbourne that win bigger clients and showcase your best work.</em></div>'
+        description: '<div>Patient-focused websites for <strong>medical practices and health services</strong>:</div><ul><li><strong>Medical Practice Websites</strong> – Online appointment booking, doctor profiles, service listings</li><li><strong>Specialist Clinic Platforms</strong> – Treatment information, patient education, before/after galleries</li><li><strong>Telehealth Integration Geelong</strong> – Video consultation booking, prescription management</li><li><strong>Allied Health Websites</strong> – Physiotherapy booking, psychology intake forms, service packages</li></ul><div><em>Healthcare web development Geelong with HIPAA/GDPR compliant patient data handling.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Startup Web Development Melbourne',
+        title: 'Appointment Booking Systems Geelong',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Launch your <strong>Melbourne startup</strong> with MVP-ready platforms:</div><ul><li><strong>Landing Page Optimization</strong> – High-conversion pre-launch pages, waitlist builders</li><li><strong>MVP Development Melbourne</strong> – Rapid prototyping, tech stack validation</li><li><strong>Scalable SaaS Foundations</strong> – Subscription-ready architecture, user analytics</li><li><strong>Growth-Ready Infrastructure</strong> – Auto-scaling, CI/CD pipelines, monitoring</li></ul><div><em>Startup web development Melbourne clients achieve Product-Market Fit 2x faster.</em></div>'
+        description: '<div>Streamlined <strong>patient and client booking platforms</strong>:</div><ul><li><strong>Online Appointment Scheduling</strong> – Real-time availability, SMS/email reminders, cancellation handling</li><li><strong>Multi-Practitioner Booking</strong> – Doctor availability coordination, group practice management</li><li><strong>Service Packages & Memberships</strong> – Recurring appointments, treatment packages, loyalty programs</li><li><strong>Payment Integration</strong> – Medicare rebates, HICAPS, secure online payments</li></ul><div><em>Appointment booking systems Geelong that reduce no-shows by 40%.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Melbourne</span>
+                        Geelong</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Melbourne tailored for high-growth industries. Each service incorporates Melbourne SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Geelong tailored for professional services and healthcare. Each service incorporates Geelong SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 
