@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-canberra/comp
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Canberra | Custom Web Design & Development",
+    title: "Top Web Development Company in Canberra | McWIN iTECH",
     description:
-        "Leading web development company in Canberra. Expert custom web design, professional websites, and responsive websites to grow your business online.",
+        "Looking for a trusted web development company in Canberra? McWIN iTECH builds fast, SEO-optimised, and high-converting websites for local businesses.",
     keywords: [
         "Web Development Canberra",
         "Web Design Canberra",

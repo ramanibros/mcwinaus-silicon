@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-brisbane/comp
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Brisbane | Custom Web Design & Development",
+    title: "Top Web Development Company in Brisbane | McWIN iTECH",
     description:
-        "Leading web development company in Brisbane. Expert custom web design, e-commerce solutions, and responsive websites to grow your business online.",
+        "Searching for a web development company in Brisbane? McWIN iTECH builds fast, scalable, and SEO-ready websites designed to generate leads and grow your business.",
     keywords: [
         "Web Development Brisbane",
         "Web Design Brisbane",

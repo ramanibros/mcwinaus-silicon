@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-hobart/compon
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Hobart | Custom Web Design & Development",
+    title: "Top Web Development Company in Hobart | McWIN iTECH",
     description:
-        "Leading web development company in Hobart. Expert custom web design, e-commerce solutions, and responsive websites to grow your business online.",
+        "Looking for a reliable web development company in Hobart? McWIN iTECH creates fast, SEO-optimised, and high-converting websites tailored for local businesses.",
     keywords: [
         "Web Development Hobart",
         "Web Design Hobart",

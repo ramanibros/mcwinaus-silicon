@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-sunshine-coas
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Sunshine Coast | Custom Web Design & Development",
+    title: "Top Website Development Company in Sunshine Coast | McWIN iTECH",
     description:
-        "Leading web development company in Sunshine Coast. Expert custom web design, professional websites, and responsive websites to grow your business online.",
+        "Looking for expert website development in Sunshine Coast? McWIN iTECH builds fast, SEO-optimised, and high-converting websites tailored for local businesses.",
     keywords: [
         "Web Development Sunshine Coast",
         "Web Design Sunshine Coast",

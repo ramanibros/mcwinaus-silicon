@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-geelong/compo
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Geelong | Custom Web Design & Development",
+    title: "Top Web Development Company in Geelong | McWIN iTECH",
     description:
-        "Leading web development company in Geelong. Expert custom web design, e-commerce solutions, and responsive websites to grow your business online.",
+        "Looking for a reliable web development company in Geelong? McWIN iTECH builds fast, SEO-ready, and high-converting websites tailored to your business goals.",
     keywords: [
         "Web Development Geelong",
         "Web Design Geelong",

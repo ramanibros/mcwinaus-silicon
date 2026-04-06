@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-newcastle/com
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Newcastle | Custom Web Design & Development",
+    title: "Top Web Development Company in Newcastle | McWIN iTECH",
     description:
-        "Leading web development company in Newcastle. Expert custom web design, e-commerce solutions, and responsive websites to grow your business online.",
+        "Looking for a trusted web development company in Newcastle? McWIN iTECH builds fast, SEO-ready, and high-converting websites for local businesses.",
     keywords: [
         "Web Development Newcastle",
         "Web Design Newcastle",

@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-cairns/compon
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Cairns for Hospitality | Custom Web Design & Development",
+    title: "Top Web Development Company in Cairns | McWIN iTECH",
     description:
-        "Leading web development company in Cairns. Expert custom web design, hospitality websites, and responsive websites to grow your hospitality business online.",
+        "Looking for a trusted web development company in Cairns? McWIN iTECH builds fast, SEO-ready, and high-converting websites for local businesses.",
     keywords: [
         "Web Development Cairns",
         "Web Design Cairns",

@@ -17,9 +17,9 @@ import About from "@/app/(landings)/top-web-development-company-in-melbourne/com
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Melbourne | Custom Web Design & Development",
+    title: "Web Development Company in Melbourne | McWIN iTECH",
     description:
-        "Leading web development company in Melbourne. Expert custom web design, e-commerce solutions, and responsive websites to grow your business online.",
+        "Partner with a trusted web development company in Melbourne for scalable, mobile-friendly websites that boost traffic, leads, and online sales.",
     keywords: [
         "Web Development Melbourne",
         "Web Design Melbourne",

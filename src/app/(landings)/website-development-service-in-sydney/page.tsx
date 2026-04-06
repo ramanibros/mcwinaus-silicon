@@ -17,9 +17,9 @@ import About from "@/app/(landings)/website-development-service-in-sydney/compon
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Website Development Services Sydney | Custom Web Design & Development",
+    title: "Top Web Development Company in Sydney | McWIN iTECH",
     description:
-        "Professional website development services in Sydney. Expert custom web design, e-commerce solutions, and responsive websites to grow your business online.",
+        "Need a trusted web development company in Sydney? McWIN iTECH builds fast, secure, and SEO-ready websites that help your business grow online.",
     keywords: [
         "Website Development Sydney",
         "Web Design Sydney",
