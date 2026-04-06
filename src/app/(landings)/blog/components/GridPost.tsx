@@ -16,7 +16,19 @@ type NewsItem = {
 
 const newsData: NewsItem[] = [
      
-       {
+        {
+        id: 8,
+        category: 'Search Engine Optimization',
+        date: 'April 6 , 2026',
+        title: 'Local SEO Tips for Perth Businesses to Boost Visibility | McWINiTECH',
+        link: '/blog/local-seo-tips-perth-businesses',
+        description:
+            'Discover powerful local SEO tips for Perth businesses to improve visibility, attract local customers, and grow revenue with proven strategies from McWINiTECH. ',
+        likes: 5,
+        comments: 3,
+        shares: 9,
+    },
+    {
         id: 7,
         category: 'Search Engine Optimization',
         date: 'March 25, 2026',
