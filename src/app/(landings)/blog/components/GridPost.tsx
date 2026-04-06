@@ -20,6 +20,18 @@ const newsData: NewsItem[] = [
         id: 8,
         category: 'Search Engine Optimization',
         date: 'April 6 , 2026',
+        title: 'The Ultimate Digital Marketing Roadmap for Perth Businesses in 2026 | McWINiTECH',
+        link: '/blog/ultimate-digital-marketing-roadmap-perth-businesses-2026',
+        description:
+            'Explore the ultimate digital marketing roadmap for Perth businesses in 2026. Learn actionable strategies to increase visibility, generate leads, and scale sustainably in Western Australia. ',
+        likes: 5,
+        comments: 3,
+        shares: 9,
+    },
+     {
+        id: 8,
+        category: 'Search Engine Optimization',
+        date: 'April 6 , 2026',
         title: 'Local SEO Tips for Perth Businesses to Boost Visibility | McWINiTECH',
         link: '/blog/local-seo-tips-perth-businesses',
         description:
