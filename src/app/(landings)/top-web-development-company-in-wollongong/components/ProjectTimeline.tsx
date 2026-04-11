@@ -88,29 +88,29 @@ const ProjectTimeline: React.FC = () => {
                                                        className="text-gradient-primary">Timeline</span>
                         </h2>
                         <p>
-                            <strong>Predictable delivery</strong> for all <strong>Toowoomba web development</strong> projects:
+                            <strong>Predictable delivery</strong> for all <strong>Wollongong web development</strong> projects:
                         </p>
                         <ul className="list-unstyled mb-0">
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Basic Website: 2–4 weeks – Farm profiles, supplier catalogues
+                                Basic Website: 2–4 weeks – Company profiles, service listings
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Custom Website: 4–8 weeks – Marketplace platforms, service sites
+                                Custom Website: 4–8 weeks – Developer portfolios, SaaS landing pages
                             </li>
                             <li className="d-flex mb-2">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                AgTech Platform: 8–14 weeks – IoT dashboards, farm management
+                                Portfolio Platform: 6–12 weeks – Case study CMS, technology showcases
                             </li>
                             <li className="d-flex">
                                 <IconifyIcon icon="bx:check" className="text-primary lead me-2"/>
-                                Enterprise System: 12–20 weeks – ERP integrations, analytics platforms
+                                Enterprise System: 10–16 weeks – Client portals, complex integrations
                             </li>
                         </ul>
                         <br/>
                         <p>
-                            94% of Toowoomba projects delivered on-time or early.
+                            93% of Wollongong projects delivered on-time or early.
                         </p>
                     </Col>
 

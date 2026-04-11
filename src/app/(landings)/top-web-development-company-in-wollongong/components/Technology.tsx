@@ -16,7 +16,7 @@ const tabs = [
   "Frontend",
   "Backend",
   "Database",
-  "AgTech",
+  "DevOps",
   "Cloud",
 ];
 
@@ -25,31 +25,31 @@ const techData: Record<string, any[]> = {
     { icon: "logos:react", name: "React.js", desc: "Build fast, scalable frontend applications" },
     { icon: "logos:nextjs-icon", name: "Next.js 14", desc: "SEO-friendly React frameworks" },
     { icon: "logos:vue", name: "Vue.js", desc: "Lightweight & flexible UI development" },
-    { icon: "logos:tailwindcss-icon", name: "Tailwind CSS", desc: "Utility-first CSS framework" },
+    { icon: "logos:angular", name: "Angular", desc: "Enterprise-grade SPA framework" },
   ],
   Backend: [
     { icon: "logos:nodejs-icon", name: "Node.js", desc: "High-performance backend APIs" },
     { icon: "logos:python", name: "Python Django", desc: "Django & FastAPI backend services" },
-    { icon: "logos:php", name: "PHP Laravel", desc: "Robust PHP framework" },
     { icon: "logos:golang", name: "Go", desc: "High-performance microservices" },
+    { icon: "logos:php", name: "PHP Laravel", desc: "Robust PHP framework" },
   ],
   Database: [
     { icon: "logos:postgresql", name: "PostgreSQL", desc: "Advanced SQL data handling" },
-    { icon: "logos:mongodb-icon", name: "TimescaleDB", desc: "Time-series data management" },
     { icon: "logos:mongodb-icon", name: "MongoDB", desc: "Flexible NoSQL databases" },
     { icon: "logos:redis", name: "Redis", desc: "In-memory caching layer" },
+    { icon: "logos:elasticsearch", name: "Elasticsearch", desc: "Powerful search & analytics" },
   ],
-  AgTech: [
-    { icon: "mdi:map-outline", name: "ThingsBoard IoT", desc: "IoT platform & dashboards" },
-    { icon: "mdi:weather-cloudy", name: "OpenWeatherMap", desc: "Weather data integration" },
-    { icon: "mdi:tractor", name: "John Deere API", desc: "Agricultural machinery integration" },
-    { icon: "mdi:chart-line", name: "FarmLogs", desc: "Farm management platform" },
+  DevOps: [
+    { icon: "logos:docker-icon", name: "Docker", desc: "Containerized deployments" },
+    { icon: "logos:kubernetes", name: "Kubernetes", desc: "Orchestration & scaling" },
+    { icon: "logos:github", name: "GitHub Actions", desc: "CI/CD pipelines" },
+    { icon: "logos:terraform", name: "Terraform", desc: "Infrastructure as code" },
   ],
   Cloud: [
     { icon: "logos:aws", name: "AWS Sydney", desc: "Scalable cloud infrastructure" },
     { icon: "logos:microsoft-azure", name: "Azure Australia East", desc: "Enterprise cloud services" },
     { icon: "logos:google-cloud", name: "Google Cloud", desc: "Cloud-native solutions" },
-    { icon: "logos:docker-icon", name: "Docker", desc: "Containerized deployments" },
+    { icon: "logos:digital-ocean", name: "DigitalOcean", desc: "Developer-friendly cloud" },
   ],
 };
 
@@ -510,7 +510,7 @@ const HireByTechnology = () => {
             ref={pRef}
             style={{ opacity: 0 }}
           >
-            Industry-leading tech stack powering Toowoomba's fastest agricultural websites
+            Industry-leading tech stack powering Wollongong's fastest technology websites
           </p>
         </div>
 

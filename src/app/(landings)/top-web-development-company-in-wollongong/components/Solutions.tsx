@@ -27,34 +27,34 @@ const solutionsData: Solution[] = [
     {
         id: 1,
         icon: icon1,
-        title: 'Custom Web Development Toowoomba',
+        title: 'Custom Web Development Wollongong',
         points: [],
         url: "/brand/brand-strategy-and-positioning",
-        description: '<div>Our <strong>custom web development Toowoomba</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Toowoomba</strong> – Agriculture-inspired interfaces for AgTech firms and farming businesses</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Toowoomba, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, IoT integrations, farm data APIs</li></ul><div><em>Perfect for Toowoomba businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
+        description: '<div>Our <strong>custom web development Wollongong</strong> services create bespoke websites that perfectly match your brand and business goals:</div><ul><li><strong>Custom UI/UX Design Wollongong</strong> – Technology-focused interfaces for ICT firms and software companies</li><li><strong>SEO-Optimized Architecture</strong> – Semantic HTML5, schema markup Wollongong, clean URL structures</li><li><strong>Fast Loading & Mobile-First</strong> – Progressive Web Apps (PWA), lazy loading, AMP pages for instant mobile performance</li><li><strong>Scalable Backend Systems</strong> – Headless CMS, microservices architecture, serverless functions</li></ul><div><em>Perfect for Wollongong businesses needing custom websites that outrank competitors and convert 3x better.</em></div>'
     },
     {
         id: 2,
         icon: icon2,
-        title: 'AgTech Web Development Toowoomba',
+        title: 'ICT Company Web Development Wollongong',
         points: [],
         url: "/brand/visual-identity-logo-design",
-        description: '<div>Cutting-edge platforms for precision agriculture technology:</div><ul><li><strong>Farm Management Systems Toowoomba</strong> – Crop planning, yield forecasting, input optimization</li><li><strong>IoT Sensor Dashboards</strong> – Soil moisture, weather stations, automated irrigation control</li><li><strong>Precision Agriculture Platforms</strong> – Variable rate application, drone imagery analysis, NDVI mapping</li><li><strong>Livestock Monitoring Systems</strong> – GPS tracking, health monitoring, automated feeding schedules</li></ul><div><em>AgTech web development Toowoomba that delivers 25% yield improvements through data insights.</em></div>'
+        description: '<div>Professional websites for Wollongong\'s ICT service providers:</div><ul><li><strong>Technology Service Websites</strong> – Service breakdowns, case studies, technical capabilities showcase</li><li><strong>Developer Portfolio Platforms</strong> – Team profiles, GitHub integration, technology stack displays</li><li><strong>API Documentation Sites</strong> – Interactive API explorers, code samples, developer onboarding</li><li><strong>Managed Services Portals</strong> – Client dashboards, service monitoring, support ticket systems</li></ul><div><em>ICT web development Wollongong that positions your firm as the local technology leader.</em></div>'
     },
     {
         id: 3,
         icon: icon3,
-        title: 'Agriculture Website Development Toowoomba',
+        title: 'Software Development Web Development Wollongong',
         points: [],
         url: "/brand/digital-product-ui-ux-design",
-        description: '<div>Comprehensive websites for farming operations and suppliers:</div><ul><li><strong>Agricultural Marketplace Platforms</strong> – Machinery trading, input supplies, contractor directories</li><li><strong>Farm Product Ecommerce</strong> – Bulk grain sales, seed varieties, fertilizer packages</li><li><strong>Rural Service Portals</strong> – Custom spraying, harvest contractors, agronomist booking</li><li><strong>Compliance & Certification Systems</strong> – Organic certification, carbon farming credits, biosecurity</li></ul><div><em>Agriculture website development Toowoomba with real-time market pricing integration.</em></div>'
+        description: '<div>Showcase your software expertise with developer-focused websites:</div><ul><li><strong>SaaS Landing Pages Wollongong</strong> – Feature comparisons, pricing tables, free trial CTAs</li><li><strong>Custom Software Showcase</strong> – Case study deep dives, technical architecture diagrams</li><li><strong>Developer Recruitment Sites</strong> – Tech stack highlights, career opportunities, coding challenges</li><li><strong>Product Release Platforms</strong> – Changelog management, beta testing, customer feedback portals</li></ul><div><em>Software development Wollongong websites that attract enterprise clients and top talent.</em></div>'
     },
     {
         id: 4,
         icon: icon4,
-        title: 'Farm Technology Platforms Toowoomba',
+        title: 'Technology Portfolio Websites Wollongong',
         points: [],
         url: "/brand/brand-implementation",
-        description: '<div>Complete digital solutions for modern agriculture:</div><ul><li><strong>ERP Integrations Toowoomba</strong> – Farm accounting, inventory management, financial reporting</li><li><strong>Weather & Market Data Integration</strong> – BOM forecasts, grain prices, input cost tracking</li><li><strong>Mobile Farm Apps</strong> – Offline-first design for remote paddock operations</li><li><strong>Analytics & Reporting Dashboards</strong> – KPI tracking, benchmarking, predictive analytics</li></ul><div><em>Farm technology platforms Toowoomba that streamline operations across entire properties.</em></div>'
+        description: '<div>Complete technology showcase solutions for ICT firms:</div><ul><li><strong>Interactive Case Study CMS</strong> – Before/after metrics, client testimonials, project timelines</li><li><strong>Technology Stack Pages</strong> – Framework comparisons, performance benchmarks, integration guides</li><li><strong>Whitepaper & Resource Libraries</strong> – Downloadable guides, ebooks, research reports</li><li><strong>Client Success Portals</strong> – Case study libraries, ROI calculators, reference materials</li></ul><div><em>Technology portfolio websites Wollongong that demonstrate technical excellence.</em></div>'
     },
 ];
 
@@ -210,7 +210,7 @@ const Solutions = () => {
                                 display: 'inline-block'
                             }}
                         >
-                        Toowoomba</span>
+                        Wollongong</span>
                     </h2>
                     <p
                         className="mb-0"
@@ -220,7 +220,7 @@ const Solutions = () => {
                             margin: '0 auto'
                         }}
                     >
-                        McWIN iTECH offers comprehensive web development services Toowoomba tailored for AgTech and agriculture. Each service incorporates Toowoomba SEO optimization, mobile-first design, and conversion-focused architecture.
+                        McWIN iTECH offers comprehensive web development services Wollongong tailored for ICT and software development companies. Each service incorporates Wollongong SEO optimization, mobile-first design, and conversion-focused architecture.
                     </p>
                 </div>
 

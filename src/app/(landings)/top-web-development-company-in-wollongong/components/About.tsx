@@ -345,14 +345,14 @@ const About = () => {
                             <span ref={spanRef} className="text-gradient-primary">SEO & Performance</span> Optimization
                         </h2>
                         <p className="fs-lg justify-txt">
-                            Every McWIN iTECH website launches fully SEO-optimized for Toowoomba dominance:
+                            Every McWIN iTECH website launches fully SEO-optimized for Wollongong dominance:
                         </p>
-                        <p><strong> Technical SEO Toowoomba: </strong></p>
+                        <p><strong> Technical SEO Wollongong: </strong></p>
                         <ul>
-                            <li>On-Page SEO – H1-H6 optimization, meta tags Toowoomba, internal linking</li>
-                            <li>Schema Markup – AgriculturalOrganization, AgTechProduct, Farm schemas</li>
+                            <li>On-Page SEO – H1-H6 optimization, meta tags Wollongong, internal linking</li>
+                            <li>Schema Markup – SoftwareApplication, TechOrganization, LocalBusiness schemas</li>
                             <li>Core Web Vitals – LCP &lt;1.5s, FID &lt;50ms, CLS &lt;0.1</li>
-                            <li>Local SEO Toowoomba – Google Business Profile, citations, Toowoomba suburb targeting (East Toowoomba, Rangeville, Middle Ridge)</li>
+                            <li>Local SEO Wollongong – Google Business Profile, citations, Wollongong suburb targeting (Fairy Meadow, North Wollongong, Figtree)</li>
                         </ul>
                     </Col>
                     <Col xl={6} md={7}
@@ -376,16 +376,16 @@ const About = () => {
                         <div className="pricing-section">
                             <p><strong> Performance Features: </strong></p>
                             <ul>
-                                <li>Toowoomba CDN – Cloudflare, AWS CloudFront edge locations</li>
-                                <li>Image Optimization – WebP/AVIF satellite imagery, lazy loading, responsive charts</li>
+                                <li>Wollongong CDN – Cloudflare, AWS CloudFront edge locations</li>
+                                <li>Image Optimization – WebP/AVIF, lazy loading, responsive technical screenshots</li>
                                 <li>Code Splitting – React lazy, dynamic imports, minimal bundle sizes</li>
                                 <li>Caching Strategy – Full-page cache, edge-side includes, service workers</li>
                             </ul>
                             <p className="text-center mb-4"></p>
                             <h2 className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                                Web Development Cost in <span ref={spanRef} className="text-gradient-primary">Toowoomba</span>
+                                Web Development Cost in <span ref={spanRef} className="text-gradient-primary">Wollongong</span>
                             </h2>
-                            <p>Transparent Toowoomba web development pricing with no hidden fees:</p>
+                            <p>Transparent Wollongong web development pricing with no hidden fees:</p>
 
 
                             <div className="table-responsive">
@@ -403,32 +403,32 @@ const About = () => {
                                             <td><strong>Business Website</strong></td>
                                             <td>$5,000 – $12,000</td>
                                             <td>2–4 weeks</td>
-                                            <td>Farm suppliers, agribusinesses</td>
+                                            <td>Small ICT firms, solo developers</td>
                                         </tr>
                                         <tr>
                                             <td><strong>Custom Website</strong></td>
                                             <td>$12,000 – $25,000</td>
                                             <td>4–8 weeks</td>
-                                            <td>Agricultural contractors, input suppliers</td>
+                                            <td>Mid-size software companies</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>AgTech Platform</strong></td>
-                                            <td>$25,000 – $60,000+</td>
-                                            <td>8–14 weeks</td>
-                                            <td>Farm management, IoT systems</td>
+                                            <td><strong>Portfolio Platform</strong></td>
+                                            <td>$20,000 – $45,000</td>
+                                            <td>6–12 weeks</td>
+                                            <td>SaaS companies, agency showcases</td>
                                         </tr>
                                         <tr>
-                                            <td><strong>Enterprise Farm System</strong></td>
-                                            <td>$45,000 – $100,000</td>
-                                            <td>12–20 weeks</td>
-                                            <td>Large farming operations, co-operatives</td>
+                                            <td><strong>Enterprise System</strong></td>
+                                            <td>$35,000 – $70,000</td>
+                                            <td>10–16 weeks</td>
+                                            <td>Large ICT providers, complex platforms</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                             
                             <p className="mt-4 mb-0">
-                                <strong>Includes:</strong> Free SEO audit, Toowoomba keyword research, 3 months support, performance guarantee.
+                                <strong>Includes:</strong> Free SEO audit, Wollongong keyword research, 3 months support, performance guarantee.
                             </p>
                         </div>
                     </Col>

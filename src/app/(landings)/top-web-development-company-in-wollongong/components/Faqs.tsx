@@ -23,51 +23,51 @@ type FaqType = {
 
 const faqs: FaqType[] = [
     {
-        question: 'How much does web development cost in Toowoomba?',
+        question: 'How much does web development cost in Wollongong?',
         answer: (
             <>
                 <p>
-                    $5K-$100K+ based on complexity. Farm sites $12K+, AgTech platforms $25K+.
+                    $5K-$70K+ based on complexity. ICT sites $12K+, SaaS platforms $20K+.
                 </p>
             </>
         ),
     },
     {
-        question: 'How long does web development take in Toowoomba?',
+        question: 'How long does web development take in Wollongong?',
         answer: (
             <>
                 <p>
-                    2-20 weeks. Business sites 2-4 weeks, farm systems 12-20 weeks.
+                    2-16 weeks. Business sites 2-4 weeks, enterprise platforms 10-16 weeks.
                 </p>
             </>
         ),
     },
     {
-        question: 'Do you offer Toowoomba SEO services?',
+        question: 'Do you offer Wollongong SEO services?',
         answer: (
             <>
                 <p>
-                    Every project includes comprehensive Toowoomba SEO – local agricultural optimization.
+                    Every project includes comprehensive Wollongong SEO – on-page, technical, local optimization.
                 </p>
             </>
         ),
     },
     {
-        question: 'Are your platforms suitable for remote farming?',
+        question: 'Can you showcase complex software projects?',
         answer: (
             <>
                 <p>
-                    Offline-first design, mobile optimization, low-bandwidth operation for rural areas.
+                    Interactive demos, technical architecture diagrams, performance metrics included.
                 </p>
             </>
         ),
     },
     {
-        question: 'What makes you different from other Toowoomba agencies?',
+        question: 'What makes you different from other Wollongong agencies?',
         answer: (
             <>
                 <p>
-                    Toowoomba-local team, AgTech expertise, proven agriculture technology results.
+                    Wollongong-local team, ICT/software expertise, proven technology marketing results.
                 </p>
             </>
         ),

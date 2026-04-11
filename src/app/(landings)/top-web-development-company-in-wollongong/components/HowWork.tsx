@@ -187,7 +187,7 @@ const Work = () => {
                     Our 5-Step <span ref={spanRef} className="text-gradient-primary">Process</span>
                 </h3>
                 <p className="mb-0">
-                    Proven methodology trusted by Toowoomba's top AgTech companies and farming operations.
+                    Proven methodology trusted by Wollongong's top ICT companies and software developers.
                 </p>
             </div>
 
@@ -235,7 +235,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Discovery</h4>
-                        <p className="mb-0">Requirements gathering, Toowoomba competitor analysis, farm audit</p>
+                        <p className="mb-0">Requirements gathering, Wollongong competitor analysis, technical audit</p>
                     </div>
                 </div>
 
@@ -278,7 +278,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Strategy & Design</h4>
-                        <p className="mb-0">Wireframes Toowoomba, mockups, SEO roadmap</p>
+                        <p className="mb-0">Wireframes Wollongong, mockups, SEO roadmap</p>
                     </div>
                 </div>
 
@@ -321,7 +321,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Development</h4>
-                        <p className="mb-0">Agile sprints, IoT integration, data visualization</p>
+                        <p className="mb-0">Agile sprints, daily standups, client previews</p>
                     </div>
                 </div>
 
@@ -364,7 +364,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Testing & Optimization</h4>
-                        <p className="mb-0">Field testing, SEO validation, performance tuning</p>
+                        <p className="mb-0">Cross-browser testing, SEO validation, performance tuning</p>
                     </div>
                 </div>
 
@@ -407,7 +407,7 @@ const Work = () => {
                     </div>
                     <div className="step-body">
                         <h4 className="h4 mb-3">Launch & Support</h4>
-                        <p className="mb-0">Go-live checklist, farmer training, 3 months free support</p>
+                        <p className="mb-0">Go-live checklist, knowledge transfer, 3 months free support</p>
                     </div>
                 </div>
             </div>

@@ -158,7 +158,7 @@ const Hero = () => {
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
-                                 Company in Toowoomba for AgTech & Agriculture
+                                 Company in Wollongong for ICT & Software Development
                             </span>
                         </h1>
                     </Col>

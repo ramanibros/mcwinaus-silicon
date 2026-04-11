@@ -196,13 +196,13 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Toowoomba",
-            description: "Proven track record delivering 120+ projects for Toowoomba AgTech companies, farming operations, and agricultural suppliers across Darling Downs"
+            title: "10+ Years Experience Web Development Wollongong",
+            description: "Proven track record delivering 120+ projects for Wollongong ICT companies, software developers, and technology firms across NSW"
         },
         {
             icon: <FiShoppingCart size={24} />,
-            title: "Toowoomba-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Toowoomba\", \"AgTech websites Toowoomba\", \"farming software Darling Downs\", and \"agriculture technology QLD\""
+            title: "Wollongong-Focused SEO & Local Optimization",
+            description: "We rank our clients #1 for \"web developers Wollongong\", \"ICT websites Wollongong\", \"software development companies Wollongong\", and \"tech services NSW\""
         },
         {
             icon: <FiTrendingUp size={24} />,
@@ -212,17 +212,17 @@ const Description = () => {
         {
             icon: <FiSmartphone size={24} />,
             title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for high-traffic farm management systems and IoT dashboards"
+            description: "Enterprise-grade AWS Sydney region infrastructure with auto-scaling for high-traffic developer portfolios and SaaS platforms"
         },
         {
             icon: <FiSearch size={24} />,
             title: "Conversion-First Approach",
-            description: "Every custom website Toowoomba includes heatmapped CTAs, optimized quote forms, and A/B tested layouts for maximum agribusiness leads"
+            description: "Every custom website Wollongong includes heatmapped CTAs, optimized contact forms, and A/B tested layouts for maximum tech leads"
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Toowoomba Team",
-            description: "East Toowoomba-based developers who understand Darling Downs agriculture, AgTech innovation, and local rural search behavior"
+            title: "Local Wollongong Team",
+            description: "Fairy Meadow-based developers who understand Wollongong ICT ecosystem, software development needs, and local tech search behavior"
         }
     ];
 
@@ -230,10 +230,10 @@ const Description = () => {
         <section className="container my-5">
             <Row className="g-lg-12">
                 <p>
-                    Looking for the top web development company in Toowoomba specializing in AgTech web development Toowoomba, agriculture website development Toowoomba, and farming technology platforms Toowoomba? McWIN iTECH helps Toowoomba businesses build high-performance, SEO-optimized websites, farm management systems, crop monitoring dashboards, and agricultural marketplaces that drive sales and dominate local search rankings. As Toowoomba's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Toowoomba AgTech startups, agricultural businesses QLD, and farming operations that convert visitors into customers and partnerships.
+                    Looking for the top web development company in Wollongong specializing in ICT web development Wollongong, software development Wollongong, and custom software solutions Wollongong? McWIN iTECH helps Wollongong businesses build high-performance, SEO-optimized websites, custom software applications, developer portfolios, and technology showcase platforms that drive leads and dominate local search rankings. As Wollongong's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Wollongong ICT firms, software development companies NSW, and technology service providers that convert visitors into clients and partnerships.
                 </p>
                 <p>
-                    Our Toowoomba web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Toowoomba that rank #1 for competitive keywords like "AgTech website developers Toowoomba", "agriculture web development Toowoomba", and "farming software Toowoomba". Whether you need livestock tracking systems, precision agriculture dashboards, machinery marketplaces, or soil sensor integrations Toowoomba, our web development services Toowoomba deliver measurable ROI through conversion-focused design and Toowoomba SEO strategies.
+                    Our Wollongong web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Wollongong that rank #1 for competitive keywords like "ICT website developers Wollongong", "software development Wollongong", and "custom software Wollongong". Whether you need developer portfolio sites, API documentation platforms, SaaS landing pages, or technology case study websites Wollongong, our web development services Wollongong deliver measurable ROI through conversion-focused design and Wollongong SEO strategies.
                 </p>
             </Row>
             <Row className="g-lg-5">
@@ -292,9 +292,9 @@ const Description = () => {
                 {/* Left Side - Steps with Icons */}
                 <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
                     <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Toowoomba Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                        Why Wollongong Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
                     </h2>
-                    <p>Toowoomba businesses trust McWIN iTECH as their go-to web development agency Toowoomba for AgTech and agriculture projects. Here's why we're the best web development company Toowoomba has to offer:</p>
+                    <p>Wollongong businesses trust McWIN iTECH as their go-to web development agency Wollongong for ICT and software development projects. Here's why we're the best web development company Wollongong has to offer:</p>
                     
                     <div className="steps steps-sm pe-lg-3">
                         {steps.map((step, index) => (
@@ -323,7 +323,7 @@ const Description = () => {
                         ))}
                     </div>
                     <br/>
-                    <p>When Toowoomba businesses search "web development company Toowoomba" or "AgTech developers near me", McWIN iTECH appears first – and our results prove why.</p>
+                    <p>When Wollongong businesses search "web development company Wollongong" or "software developers near me", McWIN iTECH appears first – and our results prove why.</p>
                 </Col>
             </Row>
 

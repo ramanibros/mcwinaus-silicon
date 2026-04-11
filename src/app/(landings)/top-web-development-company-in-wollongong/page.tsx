@@ -1,52 +1,52 @@
 import React from 'react';
 import Hero from './components/Hero';
 import NavbarPage from "@/components/navbar/Navbar-page";
-import Subscribe from "@/app/(landings)/top-web-development-company-in-toowoomba/components/Subscribe";
+import Subscribe from "@/app/(landings)/top-web-development-company-in-wollongong/components/Subscribe";
 import Footer from "@/components/common/Footer";
-import Faqs from "@/app/(landings)/top-web-development-company-in-toowoomba/components/Faqs";
-import HowWork from "@/app/(landings)/top-web-development-company-in-toowoomba/components/HowWork";
-import Solutions from "@/app/(landings)/top-web-development-company-in-toowoomba/components/Solutions";
-import Portfolio from "@/app/(landings)/top-web-development-company-in-toowoomba/components/Portfolio";
-import Description from "@/app/(landings)/top-web-development-company-in-toowoomba/components/Description";
+import Faqs from "@/app/(landings)/top-web-development-company-in-wollongong/components/Faqs";
+import HowWork from "@/app/(landings)/top-web-development-company-in-wollongong/components/HowWork";
+import Solutions from "@/app/(landings)/top-web-development-company-in-wollongong/components/Solutions";
+import Portfolio from "@/app/(landings)/top-web-development-company-in-wollongong/components/Portfolio";
+import Description from "@/app/(landings)/top-web-development-company-in-wollongong/components/Description";
 import Link from "next/link";
 import IconifyIcon from "@/components/IconifyIcon";
-import Technology from "@/app/(landings)/top-web-development-company-in-toowoomba/components/Technology";
-import ProjectTimeline from "@/app/(landings)/top-web-development-company-in-toowoomba/components/ProjectTimeline";
-import About from "@/app/(landings)/top-web-development-company-in-toowoomba/components/About";
+import Technology from "@/app/(landings)/top-web-development-company-in-wollongong/components/Technology";
+import ProjectTimeline from "@/app/(landings)/top-web-development-company-in-wollongong/components/ProjectTimeline";
+import About from "@/app/(landings)/top-web-development-company-in-wollongong/components/About";
 
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Web Development Company in Toowoomba | McWIN iTECH",
+    title: "Top Web Development Company in Wollongong | McWIN iTECH",
     description:
-        "Searching for a web development company in Toowoomba? McWIN iTECH builds fast, scalable, and SEO-ready websites designed to generate leads and grow your business.",
+        "Searching for a web development company in Wollongong? McWIN iTECH builds fast, scalable, and SEO-ready websites designed to generate leads and grow your business.",
     keywords: [
-        "Web Development Toowoomba",
-        "Web Design Toowoomba",
-        "Custom Website Development Toowoomba",
-        "E-commerce Development Toowoomba",
-        "Responsive Web Design Toowoomba",
-        "Toowoomba Web Development Agency",
-        "Professional Website Services Toowoomba",
+        "Web Development Wollongong",
+        "Web Design Wollongong",
+        "Custom Website Development Wollongong",
+        "E-commerce Development Wollongong",
+        "Responsive Web Design Wollongong",
+        "Wollongong Web Development Agency",
+        "Professional Website Services Wollongong",
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-toowoomba/",
+        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-wollongong/",
     },
 
     openGraph: {
         type: "website",
         locale: "en_AU",
-        url: "https://www.mcwinitech.com.au/top-web-development-company-in-toowoomba/",
+        url: "https://www.mcwinitech.com.au/top-web-development-company-in-wollongong/",
         siteName: "McWIN iTECH",
-        title: "Top Web Development Company in Toowoomba | Custom Web Solutions",
-        description: "Leading web development company in Toowoomba offering custom web design, e-commerce solutions, and professional web development services.",
+        title: "Top Web Development Company in Wollongong | Custom Web Solutions",
+        description: "Leading web development company in Wollongong offering custom web design, e-commerce solutions, and professional web development services.",
         images: [
             {
                 url: "https://www.mcwinitech.com.au/images/McWIN_iTECH.png",
                 width: 1200,
                 height: 630,
-                alt: "McWIN iTECH - Web Development Toowoomba",
+                alt: "McWIN iTECH - Web Development Wollongong",
             },
         ],
     },
@@ -56,8 +56,8 @@ export const metadata = {
         card: "summary_large_image",
         site: "@mcwinitech",
         creator: "@mcwinitech",
-        title: "Top Web Development Company in Toowoomba | Custom Web Solutions",
-        description: "Leading web development company in Toowoomba offering custom web design, e-commerce solutions, and professional web development services.",
+        title: "Top Web Development Company in Wollongong | Custom Web Solutions",
+        description: "Leading web development company in Wollongong offering custom web design, e-commerce solutions, and professional web development services.",
         images: ["https://www.mcwinitech.com.au/images/McWIN_iTECH.png"],
     },
 
@@ -96,7 +96,7 @@ const Page = () => {
             <IconifyIcon icon="bx:chevrons-right"/>
           </span>
                         <li className="breadcrumb-item active" aria-current="page">
-                            Top Web Development Company in Toowoomba
+                            Top Web Development Company in Wollongong
                         </li>
                     </ol>
                 </nav>

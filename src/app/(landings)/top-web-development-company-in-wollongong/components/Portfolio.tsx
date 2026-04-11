@@ -14,13 +14,13 @@ const testimonials = [
         id: 1,
         text:
             '<div class="case-study-text">' +
-            '<font><strong>Client:</strong> Toowoomba cotton farming operation (2,500 acres)</font><br/>' +
-            '<font><strong>Challenge:</strong> Manual irrigation scheduling, poor yield data analysis, disconnected machinery</font><br/>' +
-            '<font><strong>Solution:</strong> IoT irrigation platform, yield analytics dashboard, Toowoomba SEO strategy</font><br/>' +
-            '<font><strong>Results:</strong> +420% water efficiency, +310% yield transparency, 29% production increase</font>' +
+            '<font><strong>Client:</strong> Wollongong-based SaaS development company</font><br/>' +
+            '<font><strong>Challenge:</strong> Poor lead conversion from technical visitors, outdated case studies, complex service explanations</font><br/>' +
+            '<font><strong>Solution:</strong> Custom SaaS showcase platform, Wollongong SEO strategy, interactive demos</font><br/>' +
+            '<font><strong>Results:</strong> +375% qualified leads, +280% organic tech traffic, 42% conversion improvement</font>' +
             '</div>',
-        name: 'Toowoomba AgTech Success',
-        role: 'Live: #1 Google for "cotton farming software Toowoomba" | 17K monthly visits',
+        name: 'Wollongong Software Development Success',
+        role: 'Live: #1 Google for "custom software development Wollongong" | 21K monthly visits',
         bg: testi1,
     }
 ]
