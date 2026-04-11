@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useEffect, useRef} from 'react'; // Added useEffect, useRef
+import React, {useEffect, useRef, useState} from 'react'; // Added useEffect, useRef, useState
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import {Badge, Card, CardBody, Container} from 'react-bootstrap';
@@ -16,78 +16,37 @@ type NewsItem = {
     title: string;
     link: string;
     description: string;
+    image: string;
     likes: number;
     comments: number;
     shares: number;
 };
 
-const newsData: NewsItem[] = [
-    {
-        id: 5,
-        category: 'Social Media Marketing',
-        date: 'Sept 10, 2025',
-        title: 'Local Link Building: Perth-Focused Strategies That Actually Work',
-        link: '/blog/local-link-building-perth-strategies',
-        description:
-            'In the competitive Perth digital landscape, local SEO and smart link building are crucial for outperforming rivals and attracting real',
-        likes: 5,
-        comments: 3,
-        shares: 9,
-    },
-    {
-        id: 4,
-        category: 'Digital Marketing',
-        date: 'Sept 9, 2025',
-        title: 'Why Businesses in Perth Should Choose a Local SEO Agency',
-        link: '/blog/why-perth-businesses-should-choose-local-seo-agency',
-        description:
-            'In today’s digital environment, every Perth business owner recognises  the challenge: standing out online isn’t easy. Yet, with nearly half',
-        likes: 8,
-        comments: 7,
-        shares: 3,
-    },
-    {
-        id: 3,
-        category: 'Digital Marketing',
-        date: 'Aug 30, 2025',
-        title: 'Digital Marketing Tips for Perth-Based Businesses: Grow Smarter in 2025',
-        link: '/blog/digital-marketing-tips-for-perth-based-businesses-grow-smarter-in-2025',
-        description:
-            'In 2025, digital marketing isn’t just a side strategy — it’s the backbone of business growth. For Perth-based businesses',
-        likes: 6,
-        comments: 1,
-        shares: 5,
-    },
-    {
-        id: 2,
-        category: 'Web Design & Development',
-        date: 'Aug 22, 2025',
-        title: 'Custom Website vs. Template: Which Is Right for Your Business?',
-        link: '/blog/custom-website-vs-template-right-for-business',
-        description:
-            'In 2025, your website isn’t just a digital presence — it’s your first impression, sales channel, and brand identity all',
-        likes: 8,
-        comments: 4,
-        shares: 2,
-    },
-    {
-        id: 1,
-        category: 'Social Media Marketing',
-        date: 'July 30, 2025',
-        title: 'The Ultimate Digital Marketing Checklist for Australian Startups',
-        link: '/blog/digital-marketing-checklist-australian-startups',
-        description:
-            'Launching a startup in Australia in 2025? Whether you’re bootstrapped or backed by funding, digital marketing is your lifeline for',
-        likes: 2,
-        comments: 0,
-        shares: 3,
-    },
-];
 
 const NewsSlider = () => {
+    // State for news data
+    const [newsData, setNewsData] = useState<NewsItem[]>([]);
+    const [loading, setLoading] = useState(true);
+
     // Added refs for animation
     const h2Ref = useRef<HTMLHeadingElement>(null);
     const spanRef = useRef<HTMLSpanElement>(null);
+
+    // Fetch data from JSON
+    useEffect(() => {
+        fetch('/data/blogData.json')
+            .then(response => response.json())
+            .then(data => {
+                // Get the last 5 items from the data
+                const lastFiveItems = data.slice(-5);
+                setNewsData(lastFiveItems);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('Error fetching news data:', error);
+                setLoading(false);
+            });
+    }, []);
 
     // Added animation effect
     useEffect(() => {
@@ -151,6 +110,10 @@ const NewsSlider = () => {
         };
     }, []);
 
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <section className=" border-bottom border-light py-5" style={{
             background: 'linear-gradient(127deg,rgba(255, 255, 255, 0) 0%, rgba(247, 215, 255, 0.4) 54%, rgba(195, 186, 255, 1) 100%);',
@@ -198,6 +161,22 @@ const NewsSlider = () => {
                         {newsData.map(item => (
                             <SwiperSlide key={item.id} className="h-auto py-3">
                                 <Card className="p-md-3 p-2 border-0 shadow-sm card-hover-primary h-100 mx-2">
+                                    <div className="card-image-container mb-3">
+                                        <img 
+                                            src={item.image} 
+                                            alt={item.title}
+                                            className="card-img-top rounded-3"
+                                            style={{ 
+                                                width: '100%',
+                                                height: '200px',
+                                                display: 'block'
+                                            }}
+                                            onError={(e) => {
+                                                // Fallback to existing image if image fails to load
+                                                e.currentTarget.src = '/images/blog/blog1.png';
+                                            }}
+                                        />
+                                    </div>
                                     <CardBody className="pb-4">
                                         <div className="d-flex align-items-center justify-content-between mb-3">
                                             <Badge
