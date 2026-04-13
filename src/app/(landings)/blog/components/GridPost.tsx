@@ -16,8 +16,19 @@ type NewsItem = {
 
 const newsData: NewsItem[] = [
      
-        {
-        id: 8,
+         {
+        id: 10,
+        category: 'Website Development',
+        date: 'April 13 , 2026',
+        title: 'Website Maintenance Checklist for Perth Companies | McWIN iTECH',
+        link: '/blog/ultimate-digital-marketing-roadmap-perth-businesses-2026',
+        description:
+            'Is your Perth business website secure and fast? Complete weekly, monthly, and quarterly maintenance checklist to protect your SEO rankings and customer trust.',
+        likes: 5,
+        comments: 3,
+        shares: 9,
+    },{
+        id: 9,
         category: 'Search Engine Optimization',
         date: 'April 6 , 2026',
         title: 'The Ultimate Digital Marketing Roadmap for Perth Businesses in 2026 | McWINiTECH',
