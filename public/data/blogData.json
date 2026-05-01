@@ -1,5 +1,16 @@
 [
-    
+     {
+    "id": 11,
+    "category": "Website Maintenance",
+    "date": "May 1 , 2026",
+    "title": "Checklist: What Your Perth Business Needs Before Hiring a Developer | McWIN iTECH",
+    "link": "/blog/checklist-what-perth-business-needs-before-hiring-developer",
+    "description": "Hiring a website developer in Perth? Complete this pre-hire checklist first. Define scope, budget, ownership rights, and avoid costly mistakes.",
+    "image": "/images/blog/blog-3.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},
     {
     "id": 10,
     "category": "Website Maintenance",
