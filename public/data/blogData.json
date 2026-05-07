@@ -1,6 +1,17 @@
 [
      
-     {
+      {
+    "id": 13,
+    "category": "Website Maintenance",
+    "date": "May 7 , 2026",
+    "title": "How Social Media Marketing Can Boost Perth Business Growth | McWIN iTECH",
+    "link": "/blog/how-social-media-marketing-boosts-perth-business-growth",
+    "description": "Discover how social media marketing drives customer acquisition, brand awareness, and revenue for Perth businesses. Strategies, metrics, and ROI explained.",
+    "image": "/images/blog/blog-3.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},{
     "id": 12,
     "category": "Website Maintenance",
     "date": "May 4 , 2026",
