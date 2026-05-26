@@ -9,7 +9,6 @@ const DigitalServicesBottomLineContent = () => {
         <Col lg={12}>
           <article style={{ fontFamily: "Arial, sans-serif", lineHeight: 1.8 }}>
 
-<h1>How Digital Services Impact Your Perth Business Bottom Line</h1>
 
 <p>
 For many Perth business owners, digital services feel like an expense. A cost centre. Something the marketing budget has to absorb.

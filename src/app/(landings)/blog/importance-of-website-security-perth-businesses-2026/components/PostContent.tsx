@@ -9,7 +9,6 @@ const WebsiteSecurityContent = () => {
         <Col lg={12}>
           <article style={{ fontFamily: "Arial, sans-serif", lineHeight: 1.8 }}>
 
-<h1>The Importance of Website Security for Perth Businesses in 2026</h1>
 
 <p>
 Website security is no longer a technical concern for IT departments alone. It has become a core business priority for every Perth organisation operating online.

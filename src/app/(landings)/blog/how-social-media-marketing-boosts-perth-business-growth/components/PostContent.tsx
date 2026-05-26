@@ -9,7 +9,6 @@ const SocialMediaGrowthContent = () => {
         <Col lg={12}>
           <article style={{ fontFamily: "Arial, sans-serif", lineHeight: 1.8 }}>
 
-<h1>How Social Media Marketing Can Boost Perth Business Growth</h1>
 
 <p>
 Social media marketing is no longer optional for Perth businesses. It has become a fundamental channel for customer acquisition, brand building, and revenue generation.

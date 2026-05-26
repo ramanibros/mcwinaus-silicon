@@ -9,7 +9,6 @@ const WebsiteMaintenanceContent = () => {
         <Col lg={12}>
           <article style={{ fontFamily: "Arial, sans-serif", lineHeight: 1.8 }}>
 
-<h1>Checklist: What Your Perth Business Needs Before Hiring a Developer</h1>
 
 <p>
 A new website represents a significant investment for any Perth business. The difference between a successful project and a failed one often comes down to preparation completed before the developer is ever contacted.

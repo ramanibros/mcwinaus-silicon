@@ -9,7 +9,6 @@ const ProfessionalWebsiteContent = () => {
         <Col lg={12}>
           <article style={{ fontFamily: "Arial, sans-serif", lineHeight: 1.8 }}>
 
-<h1>Why Every Perth Small Business Needs a Professional Website in 2026</h1>
 
 <p>
 A common question persists among Perth small business owners. Does a professional website actually matter in 2026?
