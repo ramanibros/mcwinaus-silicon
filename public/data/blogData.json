@@ -1,5 +1,16 @@
 [
-
+   {
+    "id": 15,
+    "category": "Digital Marketing",
+    "date": "May 28 , 2026",
+    "title": "How to Choose the Right Digital Marketing Agency for Your Perth Business",
+    "link": "/blog/how-to-choose-right-digital-marketing-agency-perth-business",
+    "description": "Selecting a digital marketing agency in Perth? Learn the essential criteria, questions to ask, red flags to avoid, and how to evaluate agency partners.",
+    "image": "/images/blog/blog-3.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},  
         {
     "id": 14,
     "category": "Website Maintenance",
@@ -7,7 +18,7 @@
     "title": "importance-of-website-security-perth-businesses-2026",
     "link": "/blog/importance-of-website-security-perth-businesses-2026",
     "description": "Protect your Perth business from cyber threats. Learn why website security matters, common vulnerabilities, and essential protection strategies for 2026.",
-    "image": "/images/blog/blog-3.png",
+    "image": "/images/blog/blog-11.jpeg",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -19,7 +30,7 @@
     "title": "Why Every Perth Small Business Needs a Professional Website in 2026 | McWIN iTECH",
     "link": "/blog/why-perth-small-business-needs-professional-website-2026",
     "description": "Discover why a professional website is essential for Perth small businesses in 2026. Learn about credibility, customer expectations, SEO, and ROI.",
-    "image": "/images/blog/blog-3.png",
+    "image": "/images/blog/blog-16'.jpeg",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -31,7 +42,7 @@
     "title": "How Social Media Marketing Can Boost Perth Business Growth | McWIN iTECH",
     "link": "/blog/how-social-media-marketing-boosts-perth-business-growth",
     "description": "Discover how social media marketing drives customer acquisition, brand awareness, and revenue for Perth businesses. Strategies, metrics, and ROI explained.",
-    "image": "/images/blog/blog-3.png",
+    "image": "/images/blog/blog-17.jpeg",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -42,7 +53,7 @@
     "title": "How Digital Services Impact Your Perth Business Bottom Line | McWIN iTECH",
     "link": "/blog/how-digital-services-impact-perth-business-bottom-line",
     "description": "Measure the ROI of digital services for Perth businesses. Learn how SEO, web development, and maintenance directly impact revenue, costs, and profitability.",
-    "image": "/images/blog/blog-3.png",
+    "image": "/images/blog/blog-12.jpeg",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -53,7 +64,7 @@
     "title": "Checklist: What Your Perth Business Needs Before Hiring a Developer | McWIN iTECH",
     "link": "/blog/checklist-what-perth-business-needs-before-hiring-developer",
     "description": "Hiring a website developer in Perth? Complete this pre-hire checklist first. Define scope, budget, ownership rights, and avoid costly mistakes.",
-    "image": "/images/blog/blog-3.png",
+    "image": "/images/blog/blog-10.jpeg",
     "likes": 0,
     "comments": 0,
     "shares": 0
