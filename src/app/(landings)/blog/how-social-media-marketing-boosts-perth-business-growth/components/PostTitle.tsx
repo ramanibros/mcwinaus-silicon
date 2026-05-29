@@ -10,7 +10,7 @@ How Social Media Marketing Can Boost Perth Business Growth | McWIN iTECH
                 <div className="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
                     <div className="fs-xs border-end pe-3 me-3 mb-2">
                         <span
-                            className="badge bg-faded-primary text-primary fs-base">Website Development</span>
+                            className="badge bg-faded-primary text-primary fs-base">Social Media Marketing</span>
                     </div>
                     <div className="fs-sm pe-3 me-3 mb-2">May 1, 2026</div>
                 </div>

@@ -23,21 +23,21 @@
     "comments": 0,
     "shares": 0
 },  
-     {
+        {
     "id": 13,
-    "category": "Website Maintenance",
+    "category": "Web Design & Development",
     "date": "May 18 , 2026",
     "title": "Why Every Perth Small Business Needs a Professional Website in 2026 | McWIN iTECH",
     "link": "/blog/why-perth-small-business-needs-professional-website-2026",
     "description": "Discover why a professional website is essential for Perth small businesses in 2026. Learn about credibility, customer expectations, SEO, and ROI.",
-    "image": "/images/blog/blog-16'.jpeg",
+    "image": "/images/blog/blog-16.jpeg",
     "likes": 0,
     "comments": 0,
     "shares": 0
 },   
       {
-    "id": 13,
-    "category": "Website Maintenance",
+    "id": 16,
+    "category": "Social Media Marketing",
     "date": "May 7 , 2026",
     "title": "How Social Media Marketing Can Boost Perth Business Growth | McWIN iTECH",
     "link": "/blog/how-social-media-marketing-boosts-perth-business-growth",
@@ -48,7 +48,7 @@
     "shares": 0
 },{
     "id": 12,
-    "category": "Website Maintenance",
+    "category": "Digital Marketing",
     "date": "May 4 , 2026",
     "title": "How Digital Services Impact Your Perth Business Bottom Line | McWIN iTECH",
     "link": "/blog/how-digital-services-impact-perth-business-bottom-line",
@@ -59,7 +59,7 @@
     "shares": 0
 },{
     "id": 11,
-    "category": "Website Maintenance",
+    "category": "Web Design & Development",
     "date": "May 1 , 2026",
     "title": "Checklist: What Your Perth Business Needs Before Hiring a Developer | McWIN iTECH",
     "link": "/blog/checklist-what-perth-business-needs-before-hiring-developer",
@@ -83,7 +83,7 @@
 },
 {
         "id": 9,
-        "category": "Search Engine Optimization",
+        "category": "Digital Marketing",
         "date": "April 6 , 2026",
         "title": "The Ultimate Digital Marketing Roadmap for Perth Businesses in 2026 | McWINiTECH",
         "link": "/blog/ultimate-digital-marketing-roadmap-perth-businesses-2026",
@@ -131,7 +131,7 @@
     },
     {
         "id": 5,
-        "category": "Social Media Marketing",
+        "category": "Search Engine Optimization",
         "date": "Sept 10, 2025",
         "title": "Local Link Building: Perth-Focused Strategies That Actually Work",
         "link": "/blog/local-link-building-perth-strategies",
@@ -143,7 +143,7 @@
     },
     {
         "id": 4,
-        "category": "Digital Marketing",
+        "category": "Search Engine Optimization",
         "date": "Sept 9, 2025",
         "title": "Why Businesses in Perth Should Choose a Local SEO Agency",
         "link": "/blog/why-perth-businesses-should-choose-local-seo-agency",
@@ -179,7 +179,7 @@
     },
     {
         "id": 1,
-        "category": "Social Media Marketing",
+        "category": "Digital Marketing",
         "date": "July 30, 2025",
         "title": "The Ultimate Digital Marketing Checklist for Australian Startups",
         "link": "/blog/digital-marketing-checklist-australian-startups",
