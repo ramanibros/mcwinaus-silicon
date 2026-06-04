@@ -10,7 +10,7 @@ Essential Features Every Perth Small Business Website Must Have | McWINiTECH
                 <div className="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
                     <div className="fs-xs border-end pe-3 me-3 mb-2">
                         <span
-                            className="badge bg-faded-primary text-primary fs-base">Website Design & Development</span>
+                            className="badge bg-faded-primary text-primary fs-base">Web Design & Development</span>
                     </div>
                     <div className="fs-sm pe-3 me-3 mb-2">February 15, 2026</div>
                 </div>

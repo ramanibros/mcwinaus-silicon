@@ -9,7 +9,7 @@ const PostTitle = () => {
             <div className="d-flex flex-md-row flex-column align-items-md-center justify-content-md-between mb-3">
                 <div className="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
                     <div className="fs-xs border-end pe-3 me-3 mb-2">
-                        <span className="badge bg-faded-primary text-primary fs-base">Digital Marketing</span>
+                        <span className="badge bg-faded-primary text-primary fs-base">Search Engine Optimization</span>
                     </div>
                     <div className="fs-sm pe-3 me-3 mb-2">September 9, 2025</div>
                 </div>
