@@ -1,3 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
 <url>
 <loc>https://www.mcwinitech.com.au/</loc>
 <priority>1.00</priority>
@@ -262,3 +265,5 @@
 <loc>https://www.mcwinitech.com.au/blog/email-marketing-perth-complete-guide-that-converts/</loc>
 <priority>0.64</priority>
 </url>
+
+</urlset>
