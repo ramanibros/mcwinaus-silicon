@@ -4,7 +4,7 @@ const PostTitle = () => {
     return (
         <section className="container mt-4 pt-lg-2 pb-3">
             <h1 className="pb-3">
-Shopify vs WordPress Perth: Best Platform for eCommerce
+Website Downtime Perth: Prevention Guide for Business Owners
 
             </h1>
             <div className="d-flex flex-md-row flex-column align-items-md-center justify-content-md-between mb-3">
@@ -13,7 +13,7 @@ Shopify vs WordPress Perth: Best Platform for eCommerce
                         <span
                             className="badge bg-faded-primary text-primary fs-base">Web Design & Development</span>
                     </div>
-                    <div className="fs-sm pe-3 me-3 mb-2">June 16, 2026</div>
+                    <div className="fs-sm pe-3 me-3 mb-2">June 26, 2026</div>
                 </div>
             </div>
         </section>
