@@ -37,7 +37,7 @@ return (
     <head>
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-D1KG76VGK0"
+          src="https://www.googletagmanager.com/gtag/js?id=G-8YRX2ZY640"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -45,7 +45,7 @@ return (
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-D1KG76VGK0');
+              gtag('config', 'G-8YRX2ZY640');
             `,
           }}
         />
