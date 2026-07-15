@@ -1,5 +1,17 @@
 [
-        {
+       
+     {
+    "id": 24,
+    "category": "Blog",
+    "date": "July 15 , 2026",
+    "title": "Why Perth Businesses Must Optimise for AI Search in 2026 | McWIN iTECH",
+    "link": "/blog/why-perth-businesses-must-optimise-for-ai-search-2026",
+    "description": "AI-powered search is transforming how Perth customers find businesses. Learn how to optimise for ChatGPT, Google AI Overviews and Gemini to stay visible.",
+    "image": "/images/blog/jun8.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},{
     "id": 23,
     "category": "Website Development",
     "date": "July 11 , 2026",
