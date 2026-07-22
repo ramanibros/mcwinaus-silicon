@@ -1,5 +1,17 @@
 [
-       
+     
+     {
+    "id": 25,
+    "category": "Blog",
+    "date": "July 22 , 2026",
+    "title": "What is Generative Engine Optimisation (GEO)? Guide for Perth Businesses | McWIN iTECH",
+    "link": "/blog/what-is-generative-engine-optimisation-geo-perth-guide",
+    "description": "Learn what Generative Engine Optimisation (GEO) is and how Perth businesses can optimise for AI search engines like ChatGPT, Gemini, and Google AI Overviews.",
+    "image": "/images/blog/jun8.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},
      {
     "id": 24,
     "category": "Blog",
