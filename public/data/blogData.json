@@ -1,12 +1,23 @@
 [
      {
+    "id": 27,
+    "category": "Blog",
+    "date": "August 12 , 2026",
+    "title": " How Long Does SEO Take to Show Results in Perth? | McWIN iTECH",
+    "link": "/blog/how-long-does-seo-take-to-show-results-in-perth",
+    "description": "Wondering how long SEO takes for Perth businesses? Get realistic timelines, factors that affect rankings, and what to expect from your SEO investment.",
+    "image": "/images/blog/1.1.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+}, {
     "id": 26,
     "category": "Blog",
     "date": "August 4 , 2026",
     "title": " Why Isn't My Business Showing Up on Google? Common Reasons for Perth Businesses | McWIN iTECH",
     "link": "/blog/why-isnt-my-business-showing-up-on-google-common-reasons-perth",
     "description": "Is your Perth business invisible on Google? Discover the most common reasons why businesses don't rank and how to fix them. Start showing up in local search today.",
-    "image": "/images/blog/jun8.png",
+    "image": "/images/blog/1.2.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -30,7 +41,7 @@
     "title": "Why Perth Businesses Must Optimise for AI Search in 2026 | McWIN iTECH",
     "link": "/blog/why-perth-businesses-must-optimise-for-ai-search-2026",
     "description": "AI-powered search is transforming how Perth customers find businesses. Learn how to optimise for ChatGPT, Google AI Overviews and Gemini to stay visible.",
-    "image": "/images/blog/jun8.png",
+    "image": "/images/blog/1.3.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
