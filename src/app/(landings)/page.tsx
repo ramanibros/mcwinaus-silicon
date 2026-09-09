@@ -23,15 +23,20 @@ import Portfolio from "@/components/common/Portfolio";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Digital Marketing & IT Solutions Perth | McWIN iTECH ",
+    title: "SEO & Digital Marketing Agency in Perth | McWIN iTECH",
     description:
-        "Perth-based IT and digital marketing agency delivering SEO, custom website, software development, and paid advertising for scalable business growth.",
+        "McWIN iTECH is a Perth-based digital marketing agency offering SEO services, web design, software development & paid advertising.",
     keywords: [
-        "Software Development Services",
-        "Custom Software Development",
-        "Web Application Development",
-        "Mobile App Development",
-        "Full-Stack Development",
+        "digital marketing agency Perth",
+        "SEO services Perth",
+        "web design Perth",
+        "software development Perth",
+        "IT solutions Perth",
+        "web application development",
+        "custom software development",
+        "mobile app development Perth",
+        "PPC advertising Perth",
+        "full-stack development",
     ],
 
     alternates: {
@@ -44,8 +49,8 @@ export const metadata = {
         locale: "en_AU",
         url: "https://www.mcwinitech.com.au",
         siteName: "McWIN iTECH",
-        title: "Scale Your Business – #1 Digital Growth Services in Perth WA (2026)",
-        description: "Scale your business with McWIN iTECH's top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
+        title: "SEO & Digital Marketing Agency in Perth | McWIN iTECH",
+        description: "Perth's trusted digital marketing agency for SEO, web design, software development & paid advertising services.",
         images: [
             {
                 url: "https://www.mcwinitech.com.au/images/McWIN_iTECH.png",
@@ -61,8 +66,8 @@ export const metadata = {
         card: "summary_large_image",
         site: "@mcwinitech",
         creator: "@mcwinitech",
-        title: "Scale Your Business – #1 Digital Growth Services in Perth WA (2026)",
-        description: "Scale your business with McWIN iTECH's top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
+        title: "SEO & Digital Marketing Agency in Perth | McWIN iTECH",
+        description: "Perth's trusted digital marketing agency for SEO, web design, software development & paid advertising services.",
         images: ["https://www.mcwinitech.com.au/images/McWIN_iTECH.png"],
     },
 
