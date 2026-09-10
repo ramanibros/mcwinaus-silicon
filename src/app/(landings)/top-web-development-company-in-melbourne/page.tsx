@@ -17,17 +17,18 @@ import About from "@/app/(landings)/top-web-development-company-in-melbourne/com
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Web Development Company in Melbourne | McWIN iTECH",
+    title: "Custom Web Development Company in Melbourne | McWIN iTECH",
     description:
-        "Partner with a trusted web development company in Melbourne for scalable, mobile-friendly websites that boost traffic, leads, and online sales.",
+        "Trusted custom & ecommerce web development company in Melbourne. Scalable, mobile-friendly websites that boost traffic, leads & sales.",
     keywords: [
-        "Web Development Melbourne",
-        "Web Design Melbourne",
-        "Custom Website Development Melbourne",
-        "E-commerce Development Melbourne",
-        "Responsive Web Design Melbourne",
-        "Melbourne Web Development Agency",
-        "Professional Website Services Melbourne",
+        "web development company Melbourne",
+        "custom web development Melbourne",
+        "ecommerce web development Melbourne",
+        "ecommerce website development Melbourne",
+        "web application development Melbourne",
+        "creative web developers Melbourne",
+        "responsive web design Melbourne",
+        "website design Melbourne",
     ],
 
     alternates: {
@@ -39,7 +40,7 @@ export const metadata = {
         locale: "en_AU",
         url: "https://www.mcwinitech.com.au/top-web-development-company-in-melbourne/",
         siteName: "McWIN iTECH",
-        title: "Top Web Development Company in Melbourne | Custom Web Solutions",
+        title: "Custom Web Development Company in Melbourne | McWIN iTECH",
         description: "Leading web development company in Melbourne offering custom web design, e-commerce solutions, and professional web development services.",
         images: [
             {
@@ -56,8 +57,8 @@ export const metadata = {
         card: "summary_large_image",
         site: "@mcwinitech",
         creator: "@mcwinitech",
-        title: "Top Web Development Company in Melbourne | Custom Web Solutions",
-        description: "Leading web development company in Melbourne offering custom web design, e-commerce solutions, and professional web development services.",
+        title: "Custom Web Development Company in Melbourne | McWIN iTECH",
+        description: "Custom & ecommerce web development company in Melbourne — scalable, mobile-friendly websites built to grow your business.",
         images: ["https://www.mcwinitech.com.au/images/McWIN_iTECH.png"],
     },
 
