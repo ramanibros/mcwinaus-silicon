@@ -642,6 +642,9 @@ const Navbar = ({
                                 <li className={`nav-item ${pathname === '/blog' ? 'active' : ""}`}>
                                     <Link href="/blog" className="nav-link">Blog</Link>
                                 </li>
+                                <li className={`nav-item ${pathname === '/case-studies' || pathname.startsWith('/case-studies/') ? 'active' : ""}`}>
+                                    <Link href="/case-studies" className="nav-link">Case Studies</Link>
+                                </li>
                                 <li className={`nav-item ${pathname === '/about' ? 'active' : ""}`}>
                                     <Link href="/about" className="nav-link">About Us</Link>
                                 </li>
