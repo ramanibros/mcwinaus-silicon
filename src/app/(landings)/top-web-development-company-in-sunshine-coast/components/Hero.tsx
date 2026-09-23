@@ -152,13 +152,13 @@ const Hero = () => {
                                 ref={trustTextRef}
                                 className="text-gradient-primary"
                             >
-                                Top Web Development Company in Sunshine 
+                                Web Development Sunshine Coast
                             </span>{' '}
                             <span
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
-                                Web Development Sunshine Coast — Websites Built to Convert
+                                — Websites Built to Convert
                             </span>
                         </h1>
                     </Col>
@@ -174,7 +174,7 @@ const Hero = () => {
                     >
                         <div className="parallax mx-auto" style={{maxWidth: '356px'}}>
                             <div className="parallax-layer" data-depth="0.1">
-                                <Image src={layer} alt="Sunshine Coast Small Business & Tourism Web Development"/>
+                                <Image src={layer} alt="Sunshine Coast Web Development Company"/>
                             </div>
                         </div>
                     </Col>

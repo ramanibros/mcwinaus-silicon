@@ -1,24 +1,24 @@
 "use client";
 
-import React, {useEffect, useRef} from 'react';
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
-import {Card, CardBody, Col, Row} from 'react-bootstrap';
-import { 
-  FiCpu,
-  FiShoppingCart,
-  FiTrendingUp,
-  FiSmartphone,
-  FiSearch,
-  FiTool
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Card, CardBody, Col, Row } from 'react-bootstrap';
+import {
+    FiShoppingCart,
+    FiTrendingUp,
+    FiSmartphone,
+    FiSearch,
+    FiTool
 } from 'react-icons/fi';
-import { 
-  MdOutlineAnalytics,
-  MdOutlineRocketLaunch,
-  MdOutlineCode,
-  MdOutlineDesignServices,
-  MdOutlineWeb,
-  MdOutlineSecurity
+
+import {
+    MdOutlineAnalytics,
+    MdOutlineRocketLaunch,
+    MdOutlineCode,
+    MdOutlineDesignServices,
+    MdOutlineWeb,
+    MdOutlineSecurity
 } from 'react-icons/md';
 
 if (typeof window !== 'undefined') {
@@ -33,13 +33,15 @@ const Description = () => {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
+
             // Title animation
             if (h2Ref.current && spanRef.current) {
                 const h2Text = h2Ref.current;
                 const spanText = spanRef.current;
 
-                gsap.fromTo(h2Text,
-                    {opacity: 0, y: 30},
+                gsap.fromTo(
+                    h2Text,
+                    { opacity: 0, y: 30 },
                     {
                         opacity: 1,
                         y: 0,
@@ -54,7 +56,8 @@ const Description = () => {
                     }
                 );
 
-                gsap.fromTo(spanText,
+                gsap.fromTo(
+                    spanText,
                     {
                         opacity: 0,
                         scale: 0.8,
@@ -76,7 +79,8 @@ const Description = () => {
 
             // Card animation
             if (cardRef.current) {
-                gsap.fromTo(cardRef.current,
+                gsap.fromTo(
+                    cardRef.current,
                     {
                         opacity: 0,
                         y: 40,
@@ -101,15 +105,17 @@ const Description = () => {
             // Step animations
             if (stepRefs.current.length > 0) {
                 const stepsContainer = document.querySelector('.steps');
-                
+
                 if (stepsContainer) {
+
                     // Animate step icons
                     const stepIcons = stepRefs.current
                         .filter(Boolean)
                         .map(step => step?.querySelector('.step-icon-wrapper'))
                         .filter(Boolean) as HTMLElement[];
 
-                    gsap.fromTo(stepIcons,
+                    gsap.fromTo(
+                        stepIcons,
                         {
                             opacity: 0,
                             scale: 0,
@@ -131,18 +137,14 @@ const Description = () => {
                         }
                     );
 
-                    // Animate step content with delay
+                    // Animate step titles
                     const stepTitles = stepRefs.current
                         .filter(Boolean)
                         .map(step => step?.querySelector('h4'))
                         .filter(Boolean) as HTMLElement[];
 
-                    const stepTexts = stepRefs.current
-                        .filter(Boolean)
-                        .map(step => step?.querySelector('p'))
-                        .filter(Boolean) as HTMLElement[];
-
-                    gsap.fromTo(stepTitles,
+                    gsap.fromTo(
+                        stepTitles,
                         {
                             opacity: 0,
                             x: -20
@@ -163,7 +165,14 @@ const Description = () => {
                         }
                     );
 
-                    gsap.fromTo(stepTexts,
+                    // Animate step descriptions
+                    const stepTexts = stepRefs.current
+                        .filter(Boolean)
+                        .map(step => step?.querySelector('p'))
+                        .filter(Boolean) as HTMLElement[];
+
+                    gsap.fromTo(
+                        stepTexts,
                         {
                             opacity: 0,
                             x: -20
@@ -196,108 +205,203 @@ const Description = () => {
     const steps = [
         {
             icon: <MdOutlineCode size={24} />,
-            title: "10+ Years Experience Web Development Sunshine Coast",
-            description: "Proven track record delivering 120+ projects for Sunshine Coast small businesses, tourism operators, and local service providers across QLD"
-        },
-        {
-            icon: <FiShoppingCart size={24} />,
-            title: "Sunshine Coast-Focused SEO & Local Optimization",
-            description: "We rank our clients #1 for \"web developers Sunshine Coast\", \"small business websites Sunshine Coast\", \"tourism websites Noosa\", and \"local business SEO Sunshine Coast\""
-        },
-        {
-            icon: <FiTrendingUp size={24} />,
-            title: "High-Performance Websites",
-            description: "All sites achieve under 2-second load times, Google PageSpeed 95+ scores, and Core Web Vitals excellence"
-        },
-        {
-            icon: <FiSmartphone size={24} />,
-            title: "99.9% Uptime Guarantee",
-            description: "Enterprise-grade cloud infrastructure with auto-scaling for seasonal tourism traffic spikes"
+            title: "Experience Across Small Business & Tourism",
+            description:
+                "Our website development work spans local trades, service providers, and tourism operators who need fast, reliable, booking-ready sites."
         },
         {
             icon: <FiSearch size={24} />,
-            title: "Conversion-First Approach",
-            description: "Every custom website Sunshine Coast includes heatmapped CTAs, optimized booking forms, and A/B tested layouts for maximum leads"
+            title: "SEO Built In From Day One",
+            description:
+                "Every website we develop launches with on-page SEO, schema markup, and a structure designed to help you rank in local search."
+        },
+        {
+            icon: <FiTrendingUp size={24} />,
+            title: "High-Performance Builds",
+            description:
+                "We target sub-2-second load times and strong Core Web Vitals scores on every project."
+        },
+        {
+            icon: <FiSmartphone size={24} />,
+            title: "Reliable Infrastructure",
+            description:
+                "Hosting built to handle seasonal tourism traffic spikes without downtime."
+        },
+        {
+            icon: <FiShoppingCart size={24} />,
+            title: "Conversion-First Development",
+            description:
+                "Optimised booking forms, clear CTAs, and layouts tested for lead generation."
         },
         {
             icon: <FiTool size={24} />,
-            title: "Local Sunshine Coast Team",
-            description: "Noosaville-based developers who understand Sunshine Coast small business needs, tourism seasonality, and local search behavior"
+            title: "Remote Team, Local Focus",
+            description:
+                "We work closely with Sunshine Coast clients to understand seasonality, local search behaviour, and what actually drives bookings in the region."
         }
     ];
 
     return (
         <section className="container my-5">
+
             <Row className="g-lg-12">
+
                 <p>
-                    Looking for the top web development company in Sunshine Coast specializing in small business web development Sunshine Coast, tourism website development Sunshine Coast, and affordable business websites Sunshine Coast? McWIN iTECH helps Sunshine Coast businesses build high-performance, SEO-optimized websites, booking systems for tourism operators, simple business websites for local trades, and mobile-friendly sites that drive bookings and dominate local search rankings. As Sunshine Coast's premier custom web development company, we deliver fast-loading, mobile-first websites tailored for Sunshine Coast small businesses, tourism operators QLD, and local service providers that convert visitors into customers and bookings.
+                    Looking for a reliable web developer in Sunshine Coast who understands
+                    local business and tourism? McWIN iTECH's web developers build fast,
+                    SEO-optimised websites, booking systems for tourism operators, and
+                    simple, effective sites for local trades — all designed to turn
+                    visitors into paying customers.
                 </p>
+
                 <p>
-                    Our Sunshine Coast web developers combine 10+ years of local expertise with cutting-edge technologies to create custom websites Sunshine Coast that rank #1 for competitive keywords like "small business website developers Sunshine Coast", "tourism websites Sunshine Coast", and "affordable web design Sunshine Coast". Whether you need online booking systems, service area maps, Google My Business optimized sites, or simple ecommerce for local products Sunshine Coast, our web development services Sunshine Coast deliver measurable ROI through conversion-focused design and Sunshine Coast SEO strategies.
+                    We work with businesses across Noosa, Maroochydore, Caloundra, and
+                    Mooloolaba, combining modern development practices with a clear focus
+                    on speed, mobile usability, and local search visibility. Whether you
+                    need a custom website, an online booking platform, or a straightforward
+                    business site, our developers deliver measurable results through
+                    conversion-focused design.
                 </p>
+
             </Row>
+
             <Row className="g-lg-5">
-                {/* Right Side Content Box - Updated Design */}
+
+                {/* Right Side Content Box */}
                 <aside className="col-lg-4 col-md-5 offset-xl-1 order-md-2">
-                    <div className="position-sticky" style={{ top: '6rem' }}>
+
+                    <div
+                        className="position-sticky"
+                        style={{ top: '6rem' }}
+                    >
+
                         <div className="pt-4 pt-md-0 ps-xl-4">
-                            <Card 
+
+                            <Card
                                 ref={cardRef}
                                 className="modern-glass-card border-0 shadow-lg overflow-hidden"
                             >
+
                                 <div className="glass-card-bg"></div>
+
                                 <CardBody className="position-relative z-2 p-4">
+
                                     <div className="d-flex align-items-center mb-4">
+
                                         <div className="icon-wrapper bg-primary bg-opacity-10 rounded-circle p-3 me-3">
-                                            <MdOutlineRocketLaunch size={28} className="text-primary" />
+                                            <MdOutlineRocketLaunch
+                                                size={28}
+                                                className="text-primary"
+                                            />
                                         </div>
-                                        <h4 className="mb-0 fw-bold text-dark">Top-Choice Package</h4>
+
+                                        <h4 className="mb-0 fw-bold text-dark">
+                                            Top-Choice Package
+                                        </h4>
+
                                     </div>
-                                    
+
                                     <p className="text-muted mb-4">
-                                        Complete web development solution for businesses ready to launch high-performance websites that drive conversions and growth.
+                                        Complete web development solution for businesses
+                                        ready to launch high-performance websites that
+                                        drive conversions and growth.
                                     </p>
-                                    
+
                                     <div className="mb-4">
+
                                         {[
-                                            { icon: <MdOutlineAnalytics />, text: "Website Strategy & Structure" },
-                                            { icon: <MdOutlineDesignServices />, text: "Custom UI Design" },
-                                            { icon: <MdOutlineCode />, text: "Website Development" },
-                                            { icon: <MdOutlineWeb />, text: "Core Pages Built" },
-                                            { icon: <MdOutlineSecurity />, text: "Launch & Handover" }
+                                            {
+                                                icon: <MdOutlineAnalytics />,
+                                                text: "Website Strategy & Structure"
+                                            },
+                                            {
+                                                icon: <MdOutlineDesignServices />,
+                                                text: "Custom UI Design"
+                                            },
+                                            {
+                                                icon: <MdOutlineCode />,
+                                                text: "Website Development"
+                                            },
+                                            {
+                                                icon: <MdOutlineWeb />,
+                                                text: "Core Pages Built"
+                                            },
+                                            {
+                                                icon: <MdOutlineSecurity />,
+                                                text: "Launch & Handover"
+                                            }
                                         ].map((item, index) => (
-                                            <div key={index} className="d-flex align-items-center mb-3">
+
+                                            <div
+                                                key={index}
+                                                className="d-flex align-items-center mb-3"
+                                            >
+
                                                 <div className="list-icon bg-primary bg-opacity-10 rounded-circle me-3">
                                                     {item.icon}
                                                 </div>
-                                                <span className="text-dark">{item.text}</span>
+
+                                                <span className="text-dark">
+                                                    {item.text}
+                                                </span>
+
                                             </div>
+
                                         ))}
+
                                     </div>
-                                    
-                                    <a href="/contact" className="btn btn-primary btn-lg w-100 shadow-primary py-3 fw-semibold hover-lift">
+
+                                    <a
+                                        href="/contact"
+                                        className="btn btn-primary btn-lg w-100 shadow-primary py-3 fw-semibold hover-lift"
+                                    >
                                         Contact To Sales
                                         <span className="ms-2">→</span>
                                     </a>
-                                    
+
                                     <div className="text-center mt-4">
-                                        <small className="text-muted">30-day launch guarantee • Dedicated support</small>
+
+                                        <small className="text-muted">
+                                            30-day launch guarantee • Dedicated support
+                                        </small>
+
                                     </div>
+
                                 </CardBody>
+
                             </Card>
+
                         </div>
+
                     </div>
+
                 </aside>
 
-                {/* Left Side - Steps with Icons */}
-                <Col xl={7} lg={8} md={7} className="order-md-1 pe-xl-4">
-                    <h2 ref={h2Ref} className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">
-                        Why Sunshine Coast Businesses Choose Us for <span ref={spanRef} className="text-gradient-primary">Web Development</span>
+                {/* Left Side Content */}
+                <Col
+                    xl={7}
+                    lg={8}
+                    md={7}
+                    className="order-md-1 pe-xl-4"
+                >
+
+                    <h2
+                        ref={h2Ref}
+                        className="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4"
+                    >
+                        Why Sunshine Coast Businesses Choose Our
+                        <span
+                            ref={spanRef}
+                            className="text-gradient-primary"
+                        >
+                            {" "}Website Development Team
+                        </span>
                     </h2>
-                    <p>Sunshine Coast businesses trust McWIN iTECH as their go-to web development agency Sunshine Coast for small businesses and tourism projects. Here's why we're the best web development company Sunshine Coast has to offer:</p>
-                    
+
                     <div className="steps steps-sm pe-lg-3">
+
                         {steps.map((step, index) => (
+
                             <div
                                 key={index}
                                 ref={(el: HTMLDivElement | null) => {
@@ -305,30 +409,45 @@ const Description = () => {
                                 }}
                                 className="step"
                             >
+
                                 <div className="step-icon-wrapper">
+
                                     <div className="step-icon-inner">
                                         {step.icon}
                                     </div>
+
                                     <div className="step-number-badge">
                                         {index + 1}
                                     </div>
+
                                 </div>
+
                                 <div className="step-body ps-4">
-                                    <h4 className="mb-3 fw-bold text-dark">{step.title}</h4>
+
+                                    <h4 className="mb-3 fw-bold text-dark">
+                                        {step.title}
+                                    </h4>
+
                                     <p className="text-muted mb-0">
                                         {step.description}
                                     </p>
+
                                 </div>
+
                             </div>
+
                         ))}
+
                     </div>
-                    <br/>
-                    <p>When Sunshine Coast businesses search "web development company Sunshine Coast" or "small business website designers near me", McWIN iTECH appears first – and our results prove why.</p>
+
                 </Col>
+
             </Row>
 
             <style jsx global>{`
+
                 /* Modern Glass Effect */
+
                 .modern-glass-card {
                     background: rgba(255, 255, 255, 0.85);
                     backdrop-filter: blur(20px);
@@ -367,8 +486,13 @@ const Description = () => {
                 }
 
                 /* Text gradient */
+
                 .text-gradient-primary {
-                    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                    background: linear-gradient(
+                        135deg,
+                        #4f46e5 0%,
+                        #7c3aed 100%
+                    );
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
@@ -376,6 +500,7 @@ const Description = () => {
                 }
 
                 /* Step Icon Styles */
+
                 .step-icon-wrapper {
                     position: relative;
                     width: 80px;
@@ -387,7 +512,11 @@ const Description = () => {
                     width: 100%;
                     height: 100%;
                     border-radius: 20px;
-                    background: linear-gradient(135deg, #f6f8ff 0%, #f1f5ff 100%);
+                    background: linear-gradient(
+                        135deg,
+                        #f6f8ff 0%,
+                        #f1f5ff 100%
+                    );
                     border: 2px solid rgba(79, 70, 229, 0.1);
                     display: flex;
                     align-items: center;
@@ -401,7 +530,11 @@ const Description = () => {
 
                 .step:hover .step-icon-inner {
                     transform: translateY(-5px) scale(1.05);
-                    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                    background: linear-gradient(
+                        135deg,
+                        #4f46e5 0%,
+                        #7c3aed 100%
+                    );
                     color: white;
                     box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
                     border-color: transparent;
@@ -413,7 +546,11 @@ const Description = () => {
                     right: -8px;
                     width: 28px;
                     height: 28px;
-                    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                    background: linear-gradient(
+                        135deg,
+                        #4f46e5 0%,
+                        #7c3aed 100%
+                    );
                     color: white;
                     border-radius: 50%;
                     display: flex;
@@ -426,6 +563,7 @@ const Description = () => {
                 }
 
                 /* Step Body */
+
                 .step {
                     display: flex;
                     align-items: flex-start;
@@ -476,7 +614,11 @@ const Description = () => {
                     bottom: 0;
                     width: 40px;
                     height: 3px;
-                    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                    background: linear-gradient(
+                        135deg,
+                        #4f46e5 0%,
+                        #7c3aed 100%
+                    );
                     border-radius: 2px;
                 }
 
@@ -485,6 +627,7 @@ const Description = () => {
                 }
 
                 /* Button hover effect */
+
                 .hover-lift {
                     transition: all 0.3s ease;
                 }
@@ -493,16 +636,17 @@ const Description = () => {
                     transform: translateY(-2px);
                     box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
                 }
-                
+
                 .list-icon {
                     display: flex;
                     align-items: center;
-                    justify-content: center;   
+                    justify-content: center;
                     width: 33px;
                     height: 33px;
                 }
-                
+
                 /* Icon wrapper */
+
                 .icon-wrapper {
                     transition: all 0.3s ease;
                 }
@@ -512,39 +656,45 @@ const Description = () => {
                 }
 
                 /* Spacing optimizations */
+
                 @media (min-width: 992px) {
+
                     .row.g-lg-5 {
                         --bs-gutter-x: 3rem;
                     }
-                    
+
                     .pe-xl-4 {
                         padding-right: 1.5rem !important;
                     }
-                    
+
                     .ps-xl-4 {
                         padding-left: 1.5rem !important;
                     }
-                    
+
                     .pe-lg-3 {
                         padding-right: 1rem !important;
                     }
+
                 }
 
                 @media (min-width: 1200px) {
+
                     .row.g-lg-5 {
                         --bs-gutter-x: 4rem;
                     }
-                    
+
                     .pe-xl-4 {
                         padding-right: 2rem !important;
                     }
-                    
+
                     .ps-xl-4 {
                         padding-left: 2rem !important;
                     }
+
                 }
 
                 /* Performance optimizations */
+
                 .modern-glass-card,
                 .step-icon-inner,
                 .step h4,
@@ -555,36 +705,40 @@ const Description = () => {
                 }
 
                 @media (max-width: 768px) {
+
                     .step-icon-wrapper {
                         width: 60px;
                         height: 60px;
                     }
-                    
+
                     .step-icon-inner {
                         border-radius: 16px;
                         font-size: 20px;
                     }
-                    
+
                     .step:not(:last-child)::after {
                         left: 30px;
                         top: 60px;
                     }
-                    
+
                     .step-body {
                         padding-left: 1rem;
                     }
-                    
+
                     .step {
                         padding-bottom: 2rem;
                     }
-                    
+
                     .pe-xl-4,
                     .ps-xl-4 {
                         padding-right: 0 !important;
                         padding-left: 0 !important;
                     }
+
                 }
+
             `}</style>
+
         </section>
     );
 };
