@@ -17,21 +17,25 @@ import About from "@/app/(landings)/top-web-development-company-in-sunshine-coas
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Top Website Development Company in Sunshine Coast | McWIN iTECH",
+    title: "Web Development Sunshine Coast | McWIN iTECH",
+
     description:
-        "Looking for expert website development in Sunshine Coast? McWIN iTECH builds fast, SEO-optimised, and high-converting websites tailored for local businesses.",
+        "Need a web developer in Sunshine Coast? We build fast, SEO-ready websites and booking systems for local & tourism businesses.",
+
     keywords: [
-        "Web Development Sunshine Coast",
-        "Web Design Sunshine Coast",
-        "Custom Website Development Sunshine Coast",
-        "Professional Website Services Sunshine Coast",
-        "Responsive Web Design Sunshine Coast",
-        "Sunshine Coast Web Development Agency",
-        "Website Development Services Sunshine Coast",
+        "web development Sunshine Coast",
+        "web developer Sunshine Coast",
+        "website design Sunshine Coast",
+        "web designers Sunshine Coast",
+        "website development Sunshine Coast",
+        "web management Sunshine Coast",
+        "WordPress developer Sunshine Coast",
+        "web development Noosa",
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/top-web-development-company-in-sunshine-coast/",
+        canonical:
+            "https://www.mcwinitech.com.au/top-web-development-company-in-sunshine-coast/",
     },
 
     openGraph: {
@@ -39,8 +43,12 @@ export const metadata = {
         locale: "en_AU",
         url: "https://www.mcwinitech.com.au/top-web-development-company-in-sunshine-coast/",
         siteName: "McWIN iTECH",
-        title: "Top Web Development Company in Sunshine Coast | Custom Web Solutions",
-        description: "Leading web development company in Sunshine Coast offering custom web design, professional websites, and web development services.",
+
+        title: "Sunshine Coast Web Design & Development Company",
+
+        description:
+            "From custom websites to booking platforms — McWIN iTECH builds high-converting sites for Sunshine Coast businesses.",
+
         images: [
             {
                 url: "https://www.mcwinitech.com.au/images/McWIN_iTECH.png",
@@ -51,29 +59,33 @@ export const metadata = {
         ],
     },
 
-    // Twitter Card Tags
     twitter: {
         card: "summary_large_image",
         site: "@mcwinitech",
         creator: "@mcwinitech",
-        title: "Top Web Development Company in Sunshine Coast | Custom Web Solutions",
-        description: "Leading web development company in Sunshine Coast offering custom web design, professional websites, and web development services.",
-        images: ["https://www.mcwinitech.com.au/images/McWIN_iTECH.png"],
+
+        title: "Websites Built for Sunshine Coast Businesses",
+
+        description:
+            "Fast, mobile-first websites and booking systems — built for Sunshine Coast small business and tourism.",
+
+        images: [
+            "https://www.mcwinitech.com.au/images/McWIN_iTECH.png",
+        ],
     },
 
-    // Additional Meta Tags
     robots: {
         index: true,
         follow: true,
+
         googleBot: {
             index: true,
             follow: true,
-            'max-video-preview': -1,
-            'max-image-preview': 'large',
-            'max-snippet': -1,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
         },
     },
-
 };
 
 const Page = () => {
@@ -83,50 +95,67 @@ const Page = () => {
                 Headerclass="header navbar navbar-expand-lg bg-light navbar-sticky"
                 headerSticky="navbar-stuck"
             />
+
             <section className="position-relative">
-                <nav className="container py-4 mb-md-2 mb-lg-5 mt-lg-3" aria-label="breadcrumb">
+                <nav
+                    className="container py-4 mb-md-2 mb-lg-5 mt-lg-3"
+                    aria-label="breadcrumb"
+                >
                     <ol className="breadcrumb mb-0">
                         <li className="breadcrumb-item">
                             <Link href="/index">
-                                <IconifyIcon icon="bx:home-alt" className="fs-lg me-1"/>
+                                <IconifyIcon
+                                    icon="bx:home-alt"
+                                    className="fs-lg me-1"
+                                />
                                 Home
                             </Link>
                         </li>
+
                         <span className="d-flex align-items-center mx-2">
-            <IconifyIcon icon="bx:chevrons-right"/>
-          </span>
-                        <li className="breadcrumb-item active" aria-current="page">
+                            <IconifyIcon icon="bx:chevrons-right" />
+                        </span>
+
+                        <li
+                            className="breadcrumb-item active"
+                            aria-current="page"
+                        >
                             Top Web Development Company in Sunshine Coast
                         </li>
                     </ol>
                 </nav>
+
                 <div
                     className="position-absolute top-0 start-0 w-100 h-100 d-dark-mode-none"
                     style={{
                         zIndex: -1,
-                        background: 'linear-gradient(141deg, rgba(255, 255, 255, 0.01) 17.3%, #F3F6FF 78.21%)',
+                        background:
+                            "linear-gradient(141deg, rgba(255, 255, 255, 0.01) 17.3%, #F3F6FF 78.21%)",
                     }}
                 />
+
                 <div
                     className="position-absolute top-0 start-0 w-100 h-100 d-none d-dark-mode-block"
                     style={{
                         zIndex: -1,
                         background:
-                            'linear-gradient(141deg, rgba(11, 15, 25, 0.01) 17.3%, rgba(255, 255, 255, 0.04) 78.21%)',
+                            "linear-gradient(141deg, rgba(11, 15, 25, 0.01) 17.3%, rgba(255, 255, 255, 0.04) 78.21%)",
                     }}
                 />
-                <Hero/>
+
+                <Hero />
             </section>
-            <Description/>
-            <Solutions/>
-            <About/>
-            <ProjectTimeline/>
-            <HowWork/>
-            <Technology/>
-            <Portfolio/>
-            <Faqs/>
-            <Subscribe/>
-            <Footer/>
+
+            <Description />
+            <Solutions />
+            <About />
+            <ProjectTimeline />
+            <HowWork />
+            <Technology />
+            <Portfolio />
+            <Faqs />
+            <Subscribe />
+            <Footer />
         </>
     );
 };
