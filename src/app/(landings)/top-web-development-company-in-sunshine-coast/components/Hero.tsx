@@ -152,13 +152,13 @@ const Hero = () => {
                                 ref={trustTextRef}
                                 className="text-gradient-primary"
                             >
-                                Top Web Development
+                                Top Web Development Company in Sunshine 
                             </span>{' '}
                             <span
                                 ref={perthTextRef}
                                 className="text-dark"
                             >
-                                 Company in Sunshine Coast for Small Businesses & Tourism
+                                Web Development Sunshine Coast — Websites Built to Convert
                             </span>
                         </h1>
                     </Col>
