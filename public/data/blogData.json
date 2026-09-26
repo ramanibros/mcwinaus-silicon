@@ -1,5 +1,16 @@
 [
-    {
+   {
+    "id": 33,
+    "category": "Blog",
+    "date": "September 26, 2026",
+    "title": "Branding Agency in Perth — Why Your Business Needs Strong Visual Identity | McWIN iTECH",
+    "link": "/blog/branding-agency-perth-why-business-needs-strong-visual-identity",
+    "description": "Discover why a strong visual identity matters for Perth businesses. Learn what a branding agency does, what to expect, and how to choose the right partner.",
+    "image": "/images/blog/5.jpeg",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},{
     "id": 32,
     "category": "Blog",
     "date": "September 22, 2026",
