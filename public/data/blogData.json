@@ -1,6 +1,17 @@
 [
    
-   
+   {
+    "id": 35,
+    "category": "Blog",
+    "date": "October 7, 2026",
+    "title": "Mobile App Development in Perth — Cost, Process & What to Expect | McWIN iTECH",
+    "link": "/blog/mobile-app-development-perth-cost-process-what-to-expect",
+    "description": "Planning a mobile app for your Perth business? Learn app development costs, timelines, native vs cross-platform, and what to expect from the process.",
+    "image": "/images/blog/6.jpeg",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},
    {
     "id": 34,
     "category": "Blog",
