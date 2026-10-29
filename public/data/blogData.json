@@ -1,11 +1,24 @@
-[{
+[
+    
+   {
+    "id": 40,
+    "category": "Blog",
+    "date": "October 28, 2026",
+    "title": "How to Get High-Quality Backlinks in Perth (Without Getting Penalised) | McWIN iTECH",
+    "link": "/blog/how-to-get-high-quality-backlinks-perth-without-penalties",
+    "description": "Learn ethical link building strategies for Perth businesses. Discover tactics that work in 2026 and how to avoid Google penalties.",
+    "image": "/images/blog/oc6.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+}, {
     "id": 39,
     "category": "Blog",
     "date": "October 21, 2026",
     "title": "Website Redesign Perth — When to Rebuild vs Improve | McWIN iTECH",
     "link": "/blog/website-redesign-perth-when-to-rebuild-vs-improve",
     "description": "Not sure if your Perth website needs a rebuild or just improvements? Learn the signs, costs, and decision framework.",
-    "image": "/images/blog/6.jpeg",
+    "image": "/images/blog/oc5.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -17,7 +30,7 @@
     "title": "Facebook Ads vs Google Ads Perth — Which Platform Works Better? | McWIN iTECH",
     "link": "/blog/facebook-ads-vs-google-ads-perth-which-platform-works-better",
     "description": "Facebook Ads or Google Ads for Perth businesses? Compare costs, targeting, and results to choose the right platform for your goals.",
-    "image": "/images/blog/6.jpeg",
+    "image": "/images/blog/oc4.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -28,7 +41,7 @@
     "title": "Conversion Rate Optimisation Perth — Turn Traffic Into Customers | McWIN iTECH",
     "link": "/blog/conversion-rate-optimisation-perth-turn-traffic-into-customers",
     "description": "Learn how CRO helps Perth businesses turn more visitors into customers. Strategies, tools, and expected results explained.",
-    "image": "/images/blog/6.jpeg",
+    "image": "/images/blog/oc3.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -39,7 +52,7 @@
     "title": "Google Business Profile Optimisation Perth — Complete Guide | McWIN iTECH",
     "link": "/blog/google-business-profile-optimisation-perth-complete-guide",
     "description": "Learn how to optimise your Google Business Profile for Perth searches. Step-by-step guide to rankings, reviews, and local visibility.",
-    "image": "/images/blog/6.jpeg",
+    "image": "/images/blog/oc2.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
@@ -52,7 +65,7 @@
     "title": "Mobile App Development in Perth — Cost, Process & What to Expect | McWIN iTECH",
     "link": "/blog/mobile-app-development-perth-cost-process-what-to-expect",
     "description": "Planning a mobile app for your Perth business? Learn app development costs, timelines, native vs cross-platform, and what to expect from the process.",
-    "image": "/images/blog/6.jpeg",
+    "image": "/images/blog/oc1.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
