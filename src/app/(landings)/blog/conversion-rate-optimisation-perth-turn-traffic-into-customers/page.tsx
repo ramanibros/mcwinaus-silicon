@@ -99,7 +99,7 @@ const Page = () => {
                 </nav>
             </nav>
             <PostTitle/>
-            <PostContent/>
+            <PostContent/>hii my name is kunika gera hii i
             <Subscribe/>
             <Footer/>
         </>

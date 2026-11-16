@@ -1,5 +1,16 @@
 [
-    
+  {
+    "id": 41,
+    "category": "Blog",
+    "date": "November 16, 2026",
+    "title": "Google Analytics 4 for Perth Small Businesses — What to Track and Why | McWIN iTECH",
+    "link": "/blog/google-analytics-4-perth-small-businesses-what-to-track-why",
+    "description": "Learn what to track in Google Analytics 4 for your Perth business. Focus on key events, engaged sessions, and traffic sources that actually drive revenue.",
+    "image": "/images/blog/1nov.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},
    {
     "id": 40,
     "category": "Blog",
