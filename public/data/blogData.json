@@ -1,4 +1,16 @@
 [
+    {
+    "id": 42,
+    "category": "Blog",
+    "date": "November 18, 2026",
+    "title": "UX Design Agency Perth — What Good UX Actually Delivers | McWIN iTECH",
+    "link": "/blog/ux-design-agency-perth-what-good-ux-actually-delivers",
+    "description": "Learn what a UX design agency in Perth actually delivers. Research-led design, usability testing, and conversion improvements explained.",
+    "image": "/images/blog/blog_02.png",
+    "likes": 0,
+    "comments": 0,
+    "shares": 0
+},
   {
     "id": 41,
     "category": "Blog",
@@ -6,7 +18,7 @@
     "title": "Google Analytics 4 for Perth Small Businesses — What to Track and Why | McWIN iTECH",
     "link": "/blog/google-analytics-4-perth-small-businesses-what-to-track-why",
     "description": "Learn what to track in Google Analytics 4 for your Perth business. Focus on key events, engaged sessions, and traffic sources that actually drive revenue.",
-    "image": "/images/blog/1nov.png",
+    "image": "/images/blog/blog_01.png",
     "likes": 0,
     "comments": 0,
     "shares": 0
