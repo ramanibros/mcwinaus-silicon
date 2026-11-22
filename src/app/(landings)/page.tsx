@@ -12,6 +12,7 @@ import NewsSlider from "@/app/(landings)/home/components/NewsSlider";
 import Industry from "@/app/(landings)/home/components/Industry";
 import Faqs from "@/app/(landings)/home/components/Faqs";
 import Integrations from "@/app/(landings)/home/components/Integrations";
+import FestivalOffer from "@/app/(landings)/home/components/FestivalOffer";
 import Subscribe from "@/components/common/subscribe";
 import Footer from "@/components/common/Footer";
 import Hero from "@/app/(landings)/home/components/Hero";
@@ -95,6 +96,7 @@ const Page = () => {
             />
             <Hero/>
             <Integrations/>
+            <FestivalOffer/>
             <Features/>
             <About/>
             <Choose/>
