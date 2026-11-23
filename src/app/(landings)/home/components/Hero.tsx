@@ -1,84 +1,12 @@
 "use client";
 
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import herobg from "@/assets/img/landing/software-agency-2/hero-bg.png";
 import {Col, Container, Row} from "react-bootstrap";
 import Link from "next/link";
 import IconifyIcon from "@/components/IconifyIcon";
 
 const Hero = () => {
-    const headingRef = useRef<HTMLHeadingElement>(null);
-    const bgImageRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const initAnimation = async () => {
-            try {
-                const gsap = (await import("gsap")).default;
-
-                if (bgImageRef.current) {
-                    gsap.fromTo(
-                        bgImageRef.current,
-                        {scale: 1.1, opacity: 0.8},
-                        {scale: 1, opacity: 1, duration: 1.5, ease: "power2.out"}
-                    );
-                }
-
-                if (headingRef.current) {
-                    const originalHTML = headingRef.current.innerHTML;
-                    headingRef.current.innerHTML = "";
-
-                    const wrapper = document.createElement("div");
-                    wrapper.style.display = "inline-block";
-
-                    const tempDiv = document.createElement("div");
-                    tempDiv.innerHTML = originalHTML;
-
-                    tempDiv.childNodes.forEach((node) => {
-                        if (node.nodeType === Node.TEXT_NODE) {
-                            const words = (node.textContent || "").split(" ");
-                            words.forEach((word) => {
-                                if (!word) return;
-                                const span = document.createElement("span");
-                                span.className = "animated-word";
-                                span.style.display = "inline-block";
-                                span.style.opacity = "0";
-                                span.style.transform = "translateY(30px)";
-                                span.style.color = "white";
-                                span.textContent = word + " ";
-                                wrapper.appendChild(span);
-                            });
-                        }
-
-                        if (node.nodeType === Node.ELEMENT_NODE) {
-                            const span = node.cloneNode(true) as HTMLElement;
-                            span.className = "animated-word text-gradient-primary";
-                            span.style.display = "inline-block";
-                            span.style.opacity = "0";
-                            span.style.transform = "translateY(30px)";
-                            wrapper.appendChild(span);
-                            wrapper.appendChild(document.createTextNode(" "));
-                        }
-                    });
-
-                    headingRef.current.appendChild(wrapper);
-
-                    gsap.to(wrapper.querySelectorAll(".animated-word"), {
-                        opacity: 1,
-                        y: 0,
-                        stagger: 0.08,
-                        duration: 0.8,
-                        delay: 0.3,
-                        ease: "power3.out",
-                    });
-                }
-            } catch (e) {
-                console.error(e);
-            }
-        };
-
-        initAnimation();
-    }, []);
-
     return (
         <>
             <section
@@ -94,8 +22,7 @@ const Hero = () => {
         />
 
                 <div
-                    ref={bgImageRef}
-                    className="jarallax-img"
+                    className="jarallax-img home-hero-bg"
                     style={{
                         backgroundImage: `url(${herobg.src})`,
                         opacity: 0.8,
@@ -106,9 +33,12 @@ const Hero = () => {
                     <Container className="position-relative text-center zindex-5 pt-4 pt-md-5 pb-5 mt-auto">
                         <Row className="mt-5">
                             <Col xl={10} className="mx-auto">
-                                <h1 ref={headingRef} className="display-1 mb-md-4 pb-3">
-                                    <span className="text-gradient-primary">Perth's</span> Leading
-                                    Digital Growth Partner
+                                <h1 className="display-1 mb-md-4 pb-3">
+                                    <span className="home-hero-word text-gradient-primary">Perth&apos;s</span>{' '}
+                                    <span className="home-hero-word">Leading</span>{' '}
+                                    <span className="home-hero-word">Digital</span>{' '}
+                                    <span className="home-hero-word">Growth</span>{' '}
+                                    <span className="home-hero-word">Partner</span>
                                 </h1>
 
                                 <p
@@ -148,6 +78,45 @@ const Hero = () => {
 
             {/* ✅ HERO BUTTON CSS — SAME PAGE */}
             <style>{`
+        .home-hero-word {
+          display: inline-block;
+          color: #fff;
+          animation: home-hero-word-in .8s cubic-bezier(.22, 1, .36, 1) both;
+        }
+
+        .home-hero-word.text-gradient-primary {
+          color: transparent;
+        }
+
+        .home-hero-word:nth-child(1) { animation-delay: .18s; }
+        .home-hero-word:nth-child(2) { animation-delay: .26s; }
+        .home-hero-word:nth-child(3) { animation-delay: .34s; }
+        .home-hero-word:nth-child(4) { animation-delay: .42s; }
+        .home-hero-word:nth-child(5) { animation-delay: .5s; }
+
+        .home-hero-bg {
+          animation: home-hero-bg-in 1.5s ease-out both;
+        }
+
+        @keyframes home-hero-word-in {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes home-hero-bg-in {
+          from { opacity: .8; transform: scale(1.1); }
+          to { opacity: .8; transform: scale(1); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .home-hero-word,
+          .home-hero-bg {
+            animation: none;
+            opacity: 1;
+            transform: none;
+          }
+        }
+
         .hero-btn {
           width: 255px;
           height: 52px;

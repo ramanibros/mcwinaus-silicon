@@ -111,9 +111,17 @@ const NotesAndCta = () => (
                         </p>
 
                         <div className="d-flex flex-wrap gap-3">
-                            <Link href="/contact" className="hero-btn">
-                                <IconifyIcon icon="bx:phone-call" className="fs-5"/>
-                                Contact Us Now
+                            <Link href="/contact" className="nc-contact-cta">
+                                <span className="nc-contact-cta__icon" aria-hidden="true">
+                                    <IconifyIcon icon="bx:phone-call"/>
+                                </span>
+                                <span className="nc-contact-cta__copy">
+                                    <small>Start your festival project</small>
+                                    <strong>Contact Us Now</strong>
+                                </span>
+                                <span className="nc-contact-cta__arrow" aria-hidden="true">
+                                    <IconifyIcon icon="bx:right-arrow-alt"/>
+                                </span>
                             </Link>
                         </div>
                     </Col>
@@ -232,6 +240,120 @@ const NotesAndCta = () => (
             }
             @media (max-width: 480px) {
                 .nc-trust-grid { grid-template-columns: 1fr; }
+            }
+        `}</style>
+
+        <style jsx global>{`
+            .nc-contact-cta {
+                position: relative;
+                isolation: isolate;
+                min-width: 20rem;
+                display: inline-grid;
+                grid-template-columns: 3rem 1fr 2.5rem;
+                align-items: center;
+                gap: .85rem;
+                overflow: hidden;
+                padding: .7rem .8rem;
+                border: 1px solid rgba(255, 255, 255, .22);
+                border-radius: 1rem;
+                background: linear-gradient(125deg, #7c3aed 0%, #a832c6 52%, #e11d68 100%);
+                box-shadow: 0 18px 42px rgba(124, 58, 237, .32);
+                color: #fff;
+                text-decoration: none;
+                transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+            }
+
+            .nc-contact-cta::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                inset: 0;
+                background: linear-gradient(105deg, transparent 24%, rgba(255,255,255,.2) 42%, transparent 60%);
+                transform: translateX(-120%);
+                transition: transform .65s ease;
+            }
+
+            .nc-contact-cta:hover {
+                transform: translateY(-3px);
+                border-color: rgba(255, 255, 255, .42);
+                box-shadow: 0 24px 52px rgba(190, 36, 148, .4);
+                color: #fff;
+            }
+
+            .nc-contact-cta:hover::before {
+                transform: translateX(120%);
+            }
+
+            .nc-contact-cta:focus-visible {
+                outline: 3px solid #fde68a;
+                outline-offset: 4px;
+            }
+
+            .nc-contact-cta__icon,
+            .nc-contact-cta__arrow {
+                display: grid;
+                place-items: center;
+                border: 1px solid rgba(255,255,255,.18);
+                background: rgba(255,255,255,.12);
+                color: #fff;
+            }
+
+            .nc-contact-cta__icon {
+                width: 3rem;
+                height: 3rem;
+                border-radius: .8rem;
+                font-size: 1.35rem;
+                box-shadow: inset 0 1px 0 rgba(255,255,255,.12);
+            }
+
+            .nc-contact-cta__copy {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                line-height: 1.2;
+            }
+
+            .nc-contact-cta__copy small {
+                margin-bottom: .22rem;
+                color: rgba(255,255,255,.68);
+                font-size: .65rem;
+                font-weight: 700;
+                letter-spacing: .07em;
+                text-transform: uppercase;
+            }
+
+            .nc-contact-cta__copy strong {
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 800;
+            }
+
+            .nc-contact-cta__arrow {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                font-size: 1.3rem;
+                transition: transform .25s ease, background .25s ease;
+            }
+
+            .nc-contact-cta:hover .nc-contact-cta__arrow {
+                transform: translateX(3px);
+                background: rgba(255,255,255,.2);
+            }
+
+            @media (max-width: 480px) {
+                .nc-contact-cta {
+                    width: 100%;
+                    min-width: 0;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .nc-contact-cta,
+                .nc-contact-cta::before,
+                .nc-contact-cta__arrow {
+                    transition: none;
+                }
             }
         `}</style>
     </>

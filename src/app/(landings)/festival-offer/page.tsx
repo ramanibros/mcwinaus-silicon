@@ -5,6 +5,7 @@ import ServicesSection from './components/ServicesSection';
 import HowWeWork from './components/HowWeWork';
 import NotesAndCta from './components/NotesAndCta';
 import Footer from '@/components/common/Footer';
+import FestivalAnimations from './components/FestivalAnimations';
 
 export const metadata = {
     metadataBase: new URL('https://www.mcwinitech.com.au/'),
@@ -69,6 +70,7 @@ export const metadata = {
 const Page = () => {
     return (
         <>
+            <FestivalAnimations/>
             <Navbar
                 Headerclass="header navbar navbar-expand-lg navbar-dark position-absolute navbar-sticky"
                 headerSticky="navbar-stuck"
