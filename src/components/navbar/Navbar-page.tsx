@@ -12,6 +12,7 @@ import brandIcon from '@/assets/img/services/brand.png';
 import growIcon from '@/assets/img/services/grow.png';
 import buildIcon from '@/assets/img/services/build.png';
 import scaleIcon from '@/assets/img/services/scale.png';
+import FestivalOfferMarquee from './FestivalOfferMarquee';
 
 type DropdownItem = {
     label: string;
@@ -436,7 +437,8 @@ const Navbar = ({
                 }
             `}</style>
 
-            <header className={`${Headerclass} ${isSticky && headerSticky ? headerSticky : ''}`}>
+            <header className={`${Headerclass} festival-offer-header ${isSticky && headerSticky ? headerSticky : ''}`}>
+                <FestivalOfferMarquee/>
                 <div className="container px-3">
                     <Link href="/" className="navbar-brand pe-3 d-dark-mode-none d-block">
                         <Image src={Logo} width={200} alt="Silicon"/>
