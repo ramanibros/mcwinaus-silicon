@@ -9,29 +9,30 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
     metadataBase: new URL("https://www.mcwinitech.com.au/"),
 
-    title: "Customer Reviews and SEO Perth: Turn Feedback Into Rankings | McWIN iTECH"
-,
+    title: "Web Development Company in Geelong — Local Business Guide | McWIN iTECH",
     description:
-        "Learn how customer reviews boost SEO for Perth businesses. Discover strategies to get more Google reviews, improve local rankings, and turn feedback into growth.",
+        "Looking for a web development company in Geelong? Learn what to check, real costs, SEO foundations, and how to choose the right agency.",
     keywords: [
-        "Software Development Services",
-        "Custom Software Development",
-        "Web Application Development",
-        "Mobile App Development",
-        "Full-Stack Development",
+        "web development company Geelong",
+        "web design Geelong",
+        "website development Geelong",
+        "Geelong web developer",
+        "local business website Geelong",
+        "website cost Geelong",
+        "Geelong web design agency",
     ],
 
     alternates: {
-        canonical: "https://www.mcwinitech.com.au/blog/customer-reviews-seo-perth-turn-feedback-into-rankings",
+        canonical: "https://www.mcwinitech.com.au/blog/web-development-company-geelong-local-business-guide",
     },
 
     openGraph: {
-        type: "website",
+        type: "article",
         locale: "en_AU",
-        url: "https://www.mcwinitech.com.au/blog/customer-reviews-seo-perth-turn-feedback-into-rankings",
+        url: "https://www.mcwinitech.com.au/blog/web-development-company-geelong-local-business-guide",
         siteName: "McWIN iTECH",
-        title: "Customer Reviews and SEO Perth: Turn Feedback Into Rankings | McWIN iTECH",
-        description: "Learn how customer reviews boost SEO for Perth businesses. Discover strategies to get more Google reviews, improve local rankings, and turn feedback into growth.",
+        title: "Web Development Company in Geelong — Local Business Guide",
+        description: "Looking for a web development company in Geelong? Learn what to check, real costs, SEO foundations, and how to choose the right agency.",
         images: [
             {
                 url: "https://www.mcwinitech.com.au/images/McWIN_iTECH.png",
@@ -47,8 +48,8 @@ export const metadata = {
         card: "summary_large_image",
         site: "@mcwinitech",
         creator: "@mcwinitech",
-        title: "Scale Your Business – #1 Digital Growth Services in Perth WA (2026)",
-        description: "Scale your business with McWIN iTECH's top Perth WA growth services. Expert strategies, faster results & measurable success for business growth in 2026.",
+        title: "Web Development Company in Geelong — Local Business Guide",
+        description: "Looking for a web development company in Geelong? Learn what to check, real costs, SEO foundations, and how to choose the right agency.",
         images: ["https://www.mcwinitech.com.au/images/McWIN_iTECH.png"],
     },
 
@@ -84,16 +85,16 @@ const Page = () => {
                             </Link>
                         </li>
                         <span className="d-flex align-items-center mx-2">
-              <IconifyIcon icon="bx:chevrons-right"/>
-            </span>
+                            <IconifyIcon icon="bx:chevrons-right"/>
+                        </span>
                         <li className="breadcrumb-item">
                             <Link href="/blog">Blog</Link>
                         </li>
                         <span className="d-flex align-items-center mx-2">
-              <IconifyIcon icon="bx:chevrons-right"/>
-            </span>
+                            <IconifyIcon icon="bx:chevrons-right"/>
+                        </span>
                         <li className="breadcrumb-item active" aria-current="page">
-Website Maintenance Checklist for Perth Companies | McWIN iTECH
+                            Web Development Company in Geelong — Local Business Guide
                         </li>
                     </ol>
                 </nav>
